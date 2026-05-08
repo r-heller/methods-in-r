@@ -1,0 +1,72 @@
+---
+title: "12. Bioinformatics"
+---
+
+# Bioinformatics {#sec-ch-12-bioinformatics}
+
+RNA-seq differential expression, pathway and GO enrichment, and single-cell RNA-seq. The chapter assumes basic familiarity with `Bioconductor` and points back to the regression and ML chapters for the underlying machinery.
+
+This chapter contains **50 method pages** and **3 labs**. If you are not sure which method to read, return to [Chapter 0](../../ch00-find-your-method.qmd) and follow the decision tree to the right node.
+
+## Method pages
+
+| Method | Source slug |
+|---|---|
+| [Alignment with BWA and Bowtie](bwa-bowtie-alignment.qmd) | `bwa-bowtie-alignment` |
+| [ATAC-Seq Analysis](atac-seq-analysis.qmd) | `atac-seq-analysis` |
+| [Batch Correction with ComBat](batch-correction-combat.qmd) | `batch-correction-combat` |
+| [Bulk RNA-seq Differential Expression with DESeq2](bulk-rnaseq-differential-expression.qmd) | `bulk-rnaseq-differential-expression` |
+| [Cell-Type Annotation](scrna-cell-type-annotation.qmd) | `scrna-cell-type-annotation` |
+| [ChIP-Seq Analysis](chip-seq-analysis.qmd) | `chip-seq-analysis` |
+| [Copy Number Variation Analysis](cnv-analysis.qmd) | `cnv-analysis` |
+| [Counting Reads with featureCounts](counting-reads-feature-counts.qmd) | `counting-reads-feature-counts` |
+| [Differential Expression with edgeR](edger-differential-expression.qmd) | `edger-differential-expression` |
+| [Differential Expression with limma-voom](limma-voom.qmd) | `limma-voom` |
+| [DNA Methylation Analysis](methylation-analysis.qmd) | `methylation-analysis` |
+| [Drug-Target Interaction Mining](drug-target-interaction.qmd) | `drug-target-interaction` |
+| [FASTQ Quality Control](fastq-quality-control.qmd) | `fastq-quality-control` |
+| [Finding Marker Genes](scrna-marker-genes.qmd) | `scrna-marker-genes` |
+| [Gene Annotation with biomaRt](biomart-annotation.qmd) | `biomart-annotation` |
+| [Gene Ontology Enrichment](gene-ontology-enrichment.qmd) | `gene-ontology-enrichment` |
+| [GSEA Preranked Analysis](gsea-preranked.qmd) | `gsea-preranked` |
+| [GSVA Single-Sample Enrichment](gsva-single-sample.qmd) | `gsva-single-sample` |
+| [Heatmaps for RNA-seq](heatmaps-rnaseq.qmd) | `heatmaps-rnaseq` |
+| [Integration with Harmony](scrna-integration-harmony.qmd) | `scrna-integration-harmony` |
+| [KEGG Pathway Enrichment](pathway-enrichment-kegg.qmd) | `pathway-enrichment-kegg` |
+| [MA Plots](ma-plots.qmd) | `ma-plots` |
+| [Metagenomic Profiling](metagenomic-profiling.qmd) | `metagenomic-profiling` |
+| [Microbiome Analysis with DADA2](microbiome-dada2.qmd) | `microbiome-dada2` |
+| [Microbiome Diversity Metrics](microbiome-diversity.qmd) | `microbiome-diversity` |
+| [Multi-Omics Integration](multiomics-integration.qmd) | `multiomics-integration` |
+| [Multiple Sequence Alignment](msa-biostrings.qmd) | `msa-biostrings` |
+| [PCA of RNA-seq Samples](pca-of-rnaseq.qmd) | `pca-of-rnaseq` |
+| [Phylogenetic Trees with ape](phylogenetic-trees-ape.qmd) | `phylogenetic-trees-ape` |
+| [Population Genetics Basics](population-genetics-basics.qmd) | `population-genetics-basics` |
+| [Protein Structure Prediction](protein-structure-prediction.qmd) | `protein-structure-prediction` |
+| [Proteomics with MSstats](proteomics-msstats.qmd) | `proteomics-msstats` |
+| [Pseudoalignment with Salmon and Kallisto](salmon-kallisto-pseudoalignment.qmd) | `salmon-kallisto-pseudoalignment` |
+| [Read Trimming and Adapter Removal](read-trimming-adapters.qmd) | `read-trimming-adapters` |
+| [RNA-seq Normalisation](rnaseq-normalization.qmd) | `rnaseq-normalization` |
+| [scRNA Clustering](scrna-clustering.qmd) | `scrna-clustering` |
+| [scRNA Normalisation](scrna-normalization.qmd) | `scrna-normalization` |
+| [scRNA QC and Filtering](scrna-qc-filtering.qmd) | `scrna-qc-filtering` |
+| [Sequence Alignment: Overview](sequence-alignment-overview.qmd) | `sequence-alignment-overview` |
+| [Single-Cell with Seurat](single-cell-seurat-intro.qmd) | `single-cell-seurat-intro` |
+| [Spatial Transcriptomics](spatial-transcriptomics.qmd) | `spatial-transcriptomics` |
+| [STAR: Spliced Alignment](star-spliced-alignment.qmd) | `star-spliced-alignment` |
+| [Structural Variant Detection](structural-variant-detection.qmd) | `structural-variant-detection` |
+| [Surrogate Variable Analysis (SVA)](surrogate-variable-analysis-sva.qmd) | `surrogate-variable-analysis-sva` |
+| [Trajectory Analysis](scrna-trajectory-analysis.qmd) | `scrna-trajectory-analysis` |
+| [Transcript-to-Gene Summarisation](tx-to-gene-summarization.qmd) | `tx-to-gene-summarization` |
+| [Variant Annotation with VEP](annotation-variant-vep.qmd) | `annotation-variant-vep` |
+| [Variant Calling with GATK](variant-calling-gatk.qmd) | `variant-calling-gatk` |
+| [VCF Manipulation](vcf-manipulation.qmd) | `vcf-manipulation` |
+| [Volcano Plots](volcano-plots.qmd) | `volcano-plots` |
+
+## Labs
+
+| # | Lab | Course / week / session |
+|---|---|---|
+| C4.16 | [Week 4, Session 1 — RNA-seq with DESeq2 / edgeR](labs/lab-rna-seq-with-deseq2-edger.qmd) | Course 4, week 4, session 1 |
+| C4.17 | [Week 4, Session 2 — Enrichment analysis (GSEA / ORA)](labs/lab-enrichment-analysis-gsea-ora.qmd) | Course 4, week 4, session 2 |
+| C4.18 | [Week 4, Session 3 — scRNA-seq with Seurat](labs/lab-scrna-seq-with-seurat.qmd) | Course 4, week 4, session 3 |

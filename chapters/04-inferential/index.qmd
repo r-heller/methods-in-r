@@ -1,0 +1,73 @@
+---
+title: "04. Inferential Statistics"
+---
+
+# Inferential Statistics {#sec-ch-04-inferential}
+
+Classical inference: the Central Limit Theorem, MLE, NHST and its philosophy, t-tests and proportions, goodness-of-fit, correlation, and the non-parametric counterparts. This is the largest chapter and the one most peer reviewers will read first.
+
+This chapter contains **45 method pages** and **9 labs**. If you are not sure which method to read, return to [Chapter 0](../../ch00-find-your-method.qmd) and follow the decision tree to the right node.
+
+## Method pages
+
+| Method | Source slug |
+|---|---|
+| [Anderson-Darling Test](anderson-darling-test.qmd) | `anderson-darling-test` |
+| [Bartlett's Test](bartlett-test.qmd) | `bartlett-test` |
+| [Benjamini-Hochberg FDR](benjamini-hochberg-fdr.qmd) | `benjamini-hochberg-fdr` |
+| [Benjamini-Yekutieli FDR](benjamini-yekutieli.qmd) | `benjamini-yekutieli` |
+| [Bonferroni Correction](bonferroni-correction.qmd) | `bonferroni-correction` |
+| [Bootstrap Confidence Intervals](bootstrap-confidence-intervals.qmd) | `bootstrap-confidence-intervals` |
+| [Chi-Squared Goodness-of-Fit Test](chi-squared-goodness-of-fit.qmd) | `chi-squared-goodness-of-fit` |
+| [Chi-Squared Test of Independence](chi-squared-independence.qmd) | `chi-squared-independence` |
+| [Cochran-Mantel-Haenszel Test](cochran-mantel-haenszel.qmd) | `cochran-mantel-haenszel` |
+| [Effect Sizes: Overview](effect-sizes-overview.qmd) | `effect-sizes-overview` |
+| [Equivalence Testing with TOST](equivalence-tost.qmd) | `equivalence-tost` |
+| [Fisher's Exact Test](fisher-exact-test.qmd) | `fisher-exact-test` |
+| [Friedman Test](friedman-test.qmd) | `friedman-test` |
+| [Holm's Step-Down Correction](holm-correction.qmd) | `holm-correction` |
+| [Kendall's Tau](kendall-tau.qmd) | `kendall-tau` |
+| [Kolmogorov-Smirnov Test](kolmogorov-smirnov-test.qmd) | `kolmogorov-smirnov-test` |
+| [Kruskal-Wallis Test](kruskal-wallis.qmd) | `kruskal-wallis` |
+| [Levene's Test of Variances](levene-test.qmd) | `levene-test` |
+| [Mann-Whitney U Test](mann-whitney-u.qmd) | `mann-whitney-u` |
+| [McNemar's Test](mcnemar-test.qmd) | `mcnemar-test` |
+| [Mixed ANOVA](mixed-anova.qmd) | `mixed-anova` |
+| [Multiple Comparisons: Overview](multiple-comparisons-overview.qmd) | `multiple-comparisons-overview` |
+| [Null and Alternative Hypotheses](null-alternative-hypotheses.qmd) | `null-alternative-hypotheses` |
+| [One-Proportion Test](one-proportion-test.qmd) | `one-proportion-test` |
+| [One-Sample t-Test](one-sample-t-test.qmd) | `one-sample-t-test` |
+| [One-Sample z-Test](one-sample-z-test.qmd) | `one-sample-z-test` |
+| [One-Way ANOVA](one-way-anova.qmd) | `one-way-anova` |
+| [P-Values Explained](p-values-explained.qmd) | `p-values-explained` |
+| [Paired t-Test](paired-t-test.qmd) | `paired-t-test` |
+| [Pearson Correlation Test](pearson-correlation-test.qmd) | `pearson-correlation-test` |
+| [Permutation Tests](permutation-tests.qmd) | `permutation-tests` |
+| [Post-Hoc Tests with Tukey HSD](post-hoc-tests-tukey.qmd) | `post-hoc-tests-tukey` |
+| [Repeated-Measures ANOVA](repeated-measures-anova.qmd) | `repeated-measures-anova` |
+| [Shapiro-Wilk Normality Test](shapiro-wilk-test.qmd) | `shapiro-wilk-test` |
+| [Spearman Rank Correlation Test](spearman-correlation-test.qmd) | `spearman-correlation-test` |
+| [The Bootstrap: Introduction](bootstrap-introduction.qmd) | `bootstrap-introduction` |
+| [The Jackknife](jackknife.qmd) | `jackknife` |
+| [The Runs Test](runs-test.qmd) | `runs-test` |
+| [The Sign Test](sign-test.qmd) | `sign-test` |
+| [Two-Proportion Test](two-proportion-test.qmd) | `two-proportion-test` |
+| [Two-Sample t-Test](two-sample-t-test.qmd) | `two-sample-t-test` |
+| [Two-Way ANOVA](two-way-anova.qmd) | `two-way-anova` |
+| [Type I and Type II Errors](type-i-type-ii-errors.qmd) | `type-i-type-ii-errors` |
+| [Welch's t-Test](welch-t-test.qmd) | `welch-t-test` |
+| [Wilcoxon Signed-Rank Test](wilcoxon-signed-rank.qmd) | `wilcoxon-signed-rank` |
+
+## Labs
+
+| # | Lab | Course / week / session |
+|---|---|---|
+| C1.11 | [Week 3, Session 1 — Populations, samples, and the central limit theorem](labs/lab-populations-samples-and-the-central-limit-theorem.qmd) | Course 1, week 3, session 1 |
+| C1.12 | [Week 3, Session 2 — Bootstrap and permutation tests](labs/lab-bootstrap-and-permutation-tests.qmd) | Course 1, week 3, session 2 |
+| C1.13 | [Week 3, Session 3 — Maximum likelihood estimation](labs/lab-maximum-likelihood-estimation.qmd) | Course 1, week 3, session 3 |
+| C1.14 | [Week 3, Session 4 — One-sample t-test and one-proportion test](labs/lab-one-sample-t-test-and-one-proportion-test.qmd) | Course 1, week 3, session 4 |
+| C1.15 | [Week 3, Session 5 — Hypothesis testing, p-values, type I/II errors](labs/lab-hypothesis-testing-p-values-type-i-ii-errors.qmd) | Course 1, week 3, session 5 |
+| C1.16 | [Week 4, Session 1 — Two-sample and paired t-tests](labs/lab-two-sample-and-paired-t-tests.qmd) | Course 1, week 4, session 1 |
+| C1.17 | [Week 4, Session 2 — Two proportions, chi-square, risk and odds](labs/lab-two-proportions-chi-square-risk-and-odds.qmd) | Course 1, week 4, session 2 |
+| C1.18 | [Week 4, Session 3 — Pearson and Spearman correlation](labs/lab-pearson-and-spearman-correlation.qmd) | Course 1, week 4, session 3 |
+| C1.19 | [Week 4, Session 4 — Non-parametric tests](labs/lab-non-parametric-tests.qmd) | Course 1, week 4, session 4 |

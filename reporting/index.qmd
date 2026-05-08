@@ -1,0 +1,17 @@
+---
+title: "Reporting Templates"
+---
+
+# Reporting Templates
+
+Copy-paste Methods + Results paragraphs, organised by reporting guideline. Pages here are deliberately formulaic: fill the bracketed *italics* with your numbers, replace the placeholder package versions with what you actually used, and check the **Reviewer checklist** link for each method to confirm you have reported every diagnostic a reviewer expects to see.
+
+Templates are organised by guideline:
+
+- **[STROBE — observational studies](strobe.qmd)** — 186 method templates
+- **[CONSORT — randomised trials](consort.qmd)** — 141 method templates
+- **[TRIPOD-AI — prediction models](tripod-ai.qmd)** — 163 method templates
+- **[PRISMA — systematic reviews & meta-analyses](prisma.qmd)** — 25 method templates
+- **[ARRIVE — animal research](arrive.qmd)** — 50 method templates
+
+Every page is currently a **skeleton**: placeholders, no narrative text. The prose is written by hand into the slots marked `<!-- TODO:reporting-template -->`.

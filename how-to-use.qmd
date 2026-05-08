@@ -1,0 +1,62 @@
+---
+title: "How to use this book"
+---
+
+The book is organised around **method topics**, not courses. There are
+sixteen topic chapters, plus Chapter 0 (the decision tree),
+five reporting-template chapters, and five appendices.
+
+## Three reading modes
+
+**As an author with data.**
+Open @sec-find-your-method. Answer the question
+*"what are you trying to do?"* until you land on a method. Read the
+method page top to bottom: the R Implementation block runs; the Output
+& Results section tells you what to read off; the Reporting Templates
+part has a paragraph you can paste into the Methods section of your
+paper.
+
+**As a peer reviewer.**
+Search for the method by name and jump straight to the
+**For Reviewers** section at the bottom of the page. It tells you what
+should be in the Methods paragraph, which diagnostics should have been
+reported, and where the typical failures live. Then skim Theory and
+Assumptions to confirm the application is sound.
+
+**As a learner.**
+Each topic chapter has labs under `chapters/<topic>/labs/`. Labs follow
+*Hypothesis → Visualise → Assumptions → Conduct → Conclude*. Work
+through them in order; the methods they exercise live in the same
+chapter and are linked from the labs.
+
+## Conventions
+
+- All examples are R. The R Implementation block runs as written when
+  the listed packages are installed. Seeds are pinned (`set.seed(2026)`
+  for tutorials, `set.seed(42)` for some labs) so numbers reproduce.
+- Every method page has the same ten sections, in this order:
+  *Introduction · Prerequisites · Theory · Assumptions · R
+  Implementation · Output & Results · Interpretation · Practical Tips
+  · Reporting · For Reviewers*.
+- The Reporting Templates part is the **only** place with copy-paste
+  Methods + Results prose. The reporting block on each method page
+  links to the corresponding template entry.
+
+## What this book is not
+
+It is not a linear introductory textbook. It does not derive every
+result from first principles. It does not cover SAS, Stata, SPSS, or
+Python. It does not host the interactive decision-tree wizard
+(Shiny apps remain on the live site).
+
+## Building locally
+
+```bash
+git clone https://github.com/r-heller/methods-in-r
+cd methods-in-r
+R -e 'renv::restore()'
+quarto render
+```
+
+Output goes to `docs/`. The HTML book is the canonical format; the PDF
+build is provided for offline reference.

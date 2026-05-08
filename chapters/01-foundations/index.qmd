@@ -1,0 +1,54 @@
+---
+title: "01. Statistical Foundations"
+---
+
+# Statistical Foundations {#sec-ch-01-foundations}
+
+This chapter covers the prerequisites that every later chapter assumes: the scientific process, tidy data, the R/Quarto/`renv` toolchain, measurement quality, missingness, and reproducibility. If you have never built a project with `renv` or written a pre-registration, start here.
+
+This chapter contains **31 method pages** and **4 labs**. If you are not sure which method to read, return to [Chapter 0](../../ch00-find-your-method.qmd) and follow the decision tree to the right node.
+
+## Method pages
+
+| Method | Source slug |
+|---|---|
+| [Bias and Variance of Estimators](bias-and-variance.qmd) | `bias-and-variance` |
+| [Big-Op and Little-op Notation](big-op-little-op.qmd) | `big-op-little-op` |
+| [Characteristic Functions](characteristic-functions.qmd) | `characteristic-functions` |
+| [Confidence Intervals: Introduction](confidence-intervals-introduction.qmd) | `confidence-intervals-introduction` |
+| [Convergence in Distribution](convergence-in-distribution.qmd) | `convergence-in-distribution` |
+| [Convergence in Probability](convergence-in-probability.qmd) | `convergence-in-probability` |
+| [Estimators and Estimation](estimators-and-estimation.qmd) | `estimators-and-estimation` |
+| [Fisher Information](fisher-information.qmd) | `fisher-information` |
+| [Jensen's Inequality](jensens-inequality.qmd) | `jensens-inequality` |
+| [Likelihood Ratio Tests](likelihood-ratio-tests.qmd) | `likelihood-ratio-tests` |
+| [Markov and Chebyshev Inequalities](chebyshev-markov.qmd) | `chebyshev-markov` |
+| [Maximum Likelihood Estimation](maximum-likelihood-estimation.qmd) | `maximum-likelihood-estimation` |
+| [Moments and Moment Generating Functions](moments-and-mgfs.qmd) | `moments-and-mgfs` |
+| [Order Statistics](order-statistics.qmd) | `order-statistics` |
+| [Pivotal Quantities](pivotal-quantities.qmd) | `pivotal-quantities` |
+| [Population vs. Sample](population-vs-sample.qmd) | `population-vs-sample` |
+| [Sampling Distributions](sampling-distributions.qmd) | `sampling-distributions` |
+| [Sampling Methods](sampling-methods.qmd) | `sampling-methods` |
+| [Scales of Measurement](scales-of-measurement.qmd) | `scales-of-measurement` |
+| [Slutsky's Theorem](slutsky-theorem.qmd) | `slutsky-theorem` |
+| [Sufficient Statistics](sufficient-statistics.qmd) | `sufficient-statistics` |
+| [The Cauchy-Schwarz Inequality](cauchy-schwarz.qmd) | `cauchy-schwarz` |
+| [The Central Limit Theorem](central-limit-theorem.qmd) | `central-limit-theorem` |
+| [The Cramer-Rao Lower Bound](cramer-rao-lower-bound.qmd) | `cramer-rao-lower-bound` |
+| [The Delta Method](delta-method.qmd) | `delta-method` |
+| [The Empirical Distribution Function](empirical-distribution-function.qmd) | `empirical-distribution-function` |
+| [The Glivenko-Cantelli Theorem](glivenko-cantelli.qmd) | `glivenko-cantelli` |
+| [The Law of Large Numbers](law-of-large-numbers.qmd) | `law-of-large-numbers` |
+| [The Method of Moments](method-of-moments.qmd) | `method-of-moments` |
+| [The Standard Error](standard-error.qmd) | `standard-error` |
+| [Unbiasedness, Consistency, Efficiency](unbiasedness-consistency-efficiency.qmd) | `unbiasedness-consistency-efficiency` |
+
+## Labs
+
+| # | Lab | Course / week / session |
+|---|---|---|
+| C1.1 | [Week 1, Session 1 — Scientific process and research workflow](labs/lab-scientific-process-and-research-workflow.qmd) | Course 1, week 1, session 1 |
+| C1.2 | [Week 1, Session 2 — R, RStudio, Quarto, and renv toolchain](labs/lab-r-rstudio-quarto-and-renv-toolchain.qmd) | Course 1, week 1, session 2 |
+| C1.3 | [Week 1, Session 3 — Data types, tidy data, accuracy and precision](labs/lab-data-types-tidy-data-accuracy-and-precision.qmd) | Course 1, week 1, session 3 |
+| C1.4 | [Week 1, Session 4 — Import, joins, and missingness with dplyr](labs/lab-import-joins-and-missingness-with-dplyr.qmd) | Course 1, week 1, session 4 |

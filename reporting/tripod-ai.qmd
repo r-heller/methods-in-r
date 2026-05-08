@@ -1,0 +1,2291 @@
+---
+title: "TRIPOD-AI — prediction models"
+---
+
+# TRIPOD-AI — prediction models
+
+TRIPOD-AI — *Transparent Reporting of a multivariable prediction model for Individual Prognosis Or Diagnosis, AI extension* — covers prediction models, including those built with machine learning. The checklist is at <https://www.tripod-statement.org/>. The templates below cover model development, validation, calibration, and fairness reporting.
+
+This page contains **163 method-specific templates**. Each is a skeleton with placeholders in italics; the prose is written so you can paste it into a manuscript and replace only the bracketed values.
+
+### A Complete mlr3 Workflow
+
+**Methods paragraph (copy-paste, fill in italics):**
+
+> *[N=]* participants/observations were analysed using **A Complete mlr3 Workflow** as implemented in *[package vX.Y]* in R *[vX.Y]*. Assumptions were checked: *[list checks performed]*. *[Effect size with 95% confidence interval reported as the primary outcome]*. Two-sided p-values use *α = 0.05*; *[multiple-comparison adjustment if any]*.
+
+**Results paragraph (copy-paste):**
+
+> A Complete mlr3 Workflow yielded *[estimate]* (95% CI *[lower, upper]*, p = *[value]*). *[Diagnostic / assumption summary]*. *[Sensitivity analysis result]*.
+
+**Reviewer checklist for this method.** → [`mlr3-workflow` — For Reviewers](../chapters/13-ml/mlr3-workflow.qmd#for-reviewers)
+
+<!-- TODO:reporting-template -->
+
+### A Complete tidymodels Workflow
+
+**Methods paragraph (copy-paste, fill in italics):**
+
+> *[N=]* participants/observations were analysed using **A Complete tidymodels Workflow** as implemented in *[package vX.Y]* in R *[vX.Y]*. Assumptions were checked: *[list checks performed]*. *[Effect size with 95% confidence interval reported as the primary outcome]*. Two-sided p-values use *α = 0.05*; *[multiple-comparison adjustment if any]*.
+
+**Results paragraph (copy-paste):**
+
+> A Complete tidymodels Workflow yielded *[estimate]* (95% CI *[lower, upper]*, p = *[value]*). *[Diagnostic / assumption summary]*. *[Sensitivity analysis result]*.
+
+**Reviewer checklist for this method.** → [`tidymodels-workflow` — For Reviewers](../chapters/13-ml/tidymodels-workflow.qmd#for-reviewers)
+
+<!-- TODO:reporting-template -->
+
+### Accelerated Failure Time Models
+
+**Methods paragraph (copy-paste, fill in italics):**
+
+> *[N=]* participants/observations were analysed using **Accelerated Failure Time Models** as implemented in *[package vX.Y]* in R *[vX.Y]*. Assumptions were checked: *[list checks performed]*. *[Effect size with 95% confidence interval reported as the primary outcome]*. Two-sided p-values use *α = 0.05*; *[multiple-comparison adjustment if any]*.
+
+**Results paragraph (copy-paste):**
+
+> Accelerated Failure Time Models yielded *[estimate]* (95% CI *[lower, upper]*, p = *[value]*). *[Diagnostic / assumption summary]*. *[Sensitivity analysis result]*.
+
+**Reviewer checklist for this method.** → [`accelerated-failure-time` — For Reviewers](../chapters/11-survival/accelerated-failure-time.qmd#for-reviewers)
+
+<!-- TODO:reporting-template -->
+
+### Adaptive Trial Designs
+
+**Methods paragraph (copy-paste, fill in italics):**
+
+> *[N=]* participants/observations were analysed using **Adaptive Trial Designs** as implemented in *[package vX.Y]* in R *[vX.Y]*. Assumptions were checked: *[list checks performed]*. *[Effect size with 95% confidence interval reported as the primary outcome]*. Two-sided p-values use *α = 0.05*; *[multiple-comparison adjustment if any]*.
+
+**Results paragraph (copy-paste):**
+
+> Adaptive Trial Designs yielded *[estimate]* (95% CI *[lower, upper]*, p = *[value]*). *[Diagnostic / assumption summary]*. *[Sensitivity analysis result]*.
+
+**Reviewer checklist for this method.** → [`adaptive-design` — For Reviewers](../chapters/14-clinical/adaptive-design.qmd#for-reviewers)
+
+<!-- TODO:reporting-template -->
+
+### Added-Variable Plots
+
+**Methods paragraph (copy-paste, fill in italics):**
+
+> *[N=]* participants/observations were analysed using **Added-Variable Plots** as implemented in *[package vX.Y]* in R *[vX.Y]*. Assumptions were checked: *[list checks performed]*. *[Effect size with 95% confidence interval reported as the primary outcome]*. Two-sided p-values use *α = 0.05*; *[multiple-comparison adjustment if any]*.
+
+**Results paragraph (copy-paste):**
+
+> Added-Variable Plots yielded *[estimate]* (95% CI *[lower, upper]*, p = *[value]*). *[Diagnostic / assumption summary]*. *[Sensitivity analysis result]*.
+
+**Reviewer checklist for this method.** → [`added-variable-plots` — For Reviewers](../chapters/07-regression/added-variable-plots.qmd#for-reviewers)
+
+<!-- TODO:reporting-template -->
+
+### Alpha-Spending Functions
+
+**Methods paragraph (copy-paste, fill in italics):**
+
+> *[N=]* participants/observations were analysed using **Alpha-Spending Functions** as implemented in *[package vX.Y]* in R *[vX.Y]*. Assumptions were checked: *[list checks performed]*. *[Effect size with 95% confidence interval reported as the primary outcome]*. Two-sided p-values use *α = 0.05*; *[multiple-comparison adjustment if any]*.
+
+**Results paragraph (copy-paste):**
+
+> Alpha-Spending Functions yielded *[estimate]* (95% CI *[lower, upper]*, p = *[value]*). *[Diagnostic / assumption summary]*. *[Sensitivity analysis result]*.
+
+**Reviewer checklist for this method.** → [`alpha-spending` — For Reviewers](../chapters/14-clinical/alpha-spending.qmd#for-reviewers)
+
+<!-- TODO:reporting-template -->
+
+### Anomaly Detection
+
+**Methods paragraph (copy-paste, fill in italics):**
+
+> *[N=]* participants/observations were analysed using **Anomaly Detection** as implemented in *[package vX.Y]* in R *[vX.Y]*. Assumptions were checked: *[list checks performed]*. *[Effect size with 95% confidence interval reported as the primary outcome]*. Two-sided p-values use *α = 0.05*; *[multiple-comparison adjustment if any]*.
+
+**Results paragraph (copy-paste):**
+
+> Anomaly Detection yielded *[estimate]* (95% CI *[lower, upper]*, p = *[value]*). *[Diagnostic / assumption summary]*. *[Sensitivity analysis result]*.
+
+**Reviewer checklist for this method.** → [`anomaly-detection` — For Reviewers](../chapters/13-ml/anomaly-detection.qmd#for-reviewers)
+
+<!-- TODO:reporting-template -->
+
+### Bagging
+
+**Methods paragraph (copy-paste, fill in italics):**
+
+> *[N=]* participants/observations were analysed using **Bagging** as implemented in *[package vX.Y]* in R *[vX.Y]*. Assumptions were checked: *[list checks performed]*. *[Effect size with 95% confidence interval reported as the primary outcome]*. Two-sided p-values use *α = 0.05*; *[multiple-comparison adjustment if any]*.
+
+**Results paragraph (copy-paste):**
+
+> Bagging yielded *[estimate]* (95% CI *[lower, upper]*, p = *[value]*). *[Diagnostic / assumption summary]*. *[Sensitivity analysis result]*.
+
+**Reviewer checklist for this method.** → [`bagging` — For Reviewers](../chapters/13-ml/bagging.qmd#for-reviewers)
+
+<!-- TODO:reporting-template -->
+
+### Baseline Adjustment with ANCOVA
+
+**Methods paragraph (copy-paste, fill in italics):**
+
+> *[N=]* participants/observations were analysed using **Baseline Adjustment with ANCOVA** as implemented in *[package vX.Y]* in R *[vX.Y]*. Assumptions were checked: *[list checks performed]*. *[Effect size with 95% confidence interval reported as the primary outcome]*. Two-sided p-values use *α = 0.05*; *[multiple-comparison adjustment if any]*.
+
+**Results paragraph (copy-paste):**
+
+> Baseline Adjustment with ANCOVA yielded *[estimate]* (95% CI *[lower, upper]*, p = *[value]*). *[Diagnostic / assumption summary]*. *[Sensitivity analysis result]*.
+
+**Reviewer checklist for this method.** → [`baseline-adjustment-ancova` — For Reviewers](../chapters/14-clinical/baseline-adjustment-ancova.qmd#for-reviewers)
+
+<!-- TODO:reporting-template -->
+
+### Best Subset Selection
+
+**Methods paragraph (copy-paste, fill in italics):**
+
+> *[N=]* participants/observations were analysed using **Best Subset Selection** as implemented in *[package vX.Y]* in R *[vX.Y]*. Assumptions were checked: *[list checks performed]*. *[Effect size with 95% confidence interval reported as the primary outcome]*. Two-sided p-values use *α = 0.05*; *[multiple-comparison adjustment if any]*.
+
+**Results paragraph (copy-paste):**
+
+> Best Subset Selection yielded *[estimate]* (95% CI *[lower, upper]*, p = *[value]*). *[Diagnostic / assumption summary]*. *[Sensitivity analysis result]*.
+
+**Reviewer checklist for this method.** → [`best-subset-selection` — For Reviewers](../chapters/07-regression/best-subset-selection.qmd#for-reviewers)
+
+<!-- TODO:reporting-template -->
+
+### Beta Regression
+
+**Methods paragraph (copy-paste, fill in italics):**
+
+> *[N=]* participants/observations were analysed using **Beta Regression** as implemented in *[package vX.Y]* in R *[vX.Y]*. Assumptions were checked: *[list checks performed]*. *[Effect size with 95% confidence interval reported as the primary outcome]*. Two-sided p-values use *α = 0.05*; *[multiple-comparison adjustment if any]*.
+
+**Results paragraph (copy-paste):**
+
+> Beta Regression yielded *[estimate]* (95% CI *[lower, upper]*, p = *[value]*). *[Diagnostic / assumption summary]*. *[Sensitivity analysis result]*.
+
+**Reviewer checklist for this method.** → [`beta-regression` — For Reviewers](../chapters/07-regression/beta-regression.qmd#for-reviewers)
+
+<!-- TODO:reporting-template -->
+
+### Bland-Altman Limits of Agreement
+
+**Methods paragraph (copy-paste, fill in italics):**
+
+> *[N=]* participants/observations were analysed using **Bland-Altman Limits of Agreement** as implemented in *[package vX.Y]* in R *[vX.Y]*. Assumptions were checked: *[list checks performed]*. *[Effect size with 95% confidence interval reported as the primary outcome]*. Two-sided p-values use *α = 0.05*; *[multiple-comparison adjustment if any]*.
+
+**Results paragraph (copy-paste):**
+
+> Bland-Altman Limits of Agreement yielded *[estimate]* (95% CI *[lower, upper]*, p = *[value]*). *[Diagnostic / assumption summary]*. *[Sensitivity analysis result]*.
+
+**Reviewer checklist for this method.** → [`bland-altman-analysis` — For Reviewers](../chapters/14-clinical/bland-altman-analysis.qmd#for-reviewers)
+
+<!-- TODO:reporting-template -->
+
+### Blinding Procedures
+
+**Methods paragraph (copy-paste, fill in italics):**
+
+> *[N=]* participants/observations were analysed using **Blinding Procedures** as implemented in *[package vX.Y]* in R *[vX.Y]*. Assumptions were checked: *[list checks performed]*. *[Effect size with 95% confidence interval reported as the primary outcome]*. Two-sided p-values use *α = 0.05*; *[multiple-comparison adjustment if any]*.
+
+**Results paragraph (copy-paste):**
+
+> Blinding Procedures yielded *[estimate]* (95% CI *[lower, upper]*, p = *[value]*). *[Diagnostic / assumption summary]*. *[Sensitivity analysis result]*.
+
+**Reviewer checklist for this method.** → [`blinding-procedures` — For Reviewers](../chapters/14-clinical/blinding-procedures.qmd#for-reviewers)
+
+<!-- TODO:reporting-template -->
+
+### Block Randomisation
+
+**Methods paragraph (copy-paste, fill in italics):**
+
+> *[N=]* participants/observations were analysed using **Block Randomisation** as implemented in *[package vX.Y]* in R *[vX.Y]*. Assumptions were checked: *[list checks performed]*. *[Effect size with 95% confidence interval reported as the primary outcome]*. Two-sided p-values use *α = 0.05*; *[multiple-comparison adjustment if any]*.
+
+**Results paragraph (copy-paste):**
+
+> Block Randomisation yielded *[estimate]* (95% CI *[lower, upper]*, p = *[value]*). *[Diagnostic / assumption summary]*. *[Sensitivity analysis result]*.
+
+**Reviewer checklist for this method.** → [`block-randomization` — For Reviewers](../chapters/14-clinical/block-randomization.qmd#for-reviewers)
+
+<!-- TODO:reporting-template -->
+
+### Calibration Plots
+
+**Methods paragraph (copy-paste, fill in italics):**
+
+> *[N=]* participants/observations were analysed using **Calibration Plots** as implemented in *[package vX.Y]* in R *[vX.Y]*. Assumptions were checked: *[list checks performed]*. *[Effect size with 95% confidence interval reported as the primary outcome]*. Two-sided p-values use *α = 0.05*; *[multiple-comparison adjustment if any]*.
+
+**Results paragraph (copy-paste):**
+
+> Calibration Plots yielded *[estimate]* (95% CI *[lower, upper]*, p = *[value]*). *[Diagnostic / assumption summary]*. *[Sensitivity analysis result]*.
+
+**Reviewer checklist for this method.** → [`calibration-plots` — For Reviewers](../chapters/13-ml/calibration-plots.qmd#for-reviewers)
+
+<!-- TODO:reporting-template -->
+
+### CatBoost
+
+**Methods paragraph (copy-paste, fill in italics):**
+
+> *[N=]* participants/observations were analysed using **CatBoost** as implemented in *[package vX.Y]* in R *[vX.Y]*. Assumptions were checked: *[list checks performed]*. *[Effect size with 95% confidence interval reported as the primary outcome]*. Two-sided p-values use *α = 0.05*; *[multiple-comparison adjustment if any]*.
+
+**Results paragraph (copy-paste):**
+
+> CatBoost yielded *[estimate]* (95% CI *[lower, upper]*, p = *[value]*). *[Diagnostic / assumption summary]*. *[Sensitivity analysis result]*.
+
+**Reviewer checklist for this method.** → [`catboost` — For Reviewers](../chapters/13-ml/catboost.qmd#for-reviewers)
+
+<!-- TODO:reporting-template -->
+
+### Censoring Types
+
+**Methods paragraph (copy-paste, fill in italics):**
+
+> *[N=]* participants/observations were analysed using **Censoring Types** as implemented in *[package vX.Y]* in R *[vX.Y]*. Assumptions were checked: *[list checks performed]*. *[Effect size with 95% confidence interval reported as the primary outcome]*. Two-sided p-values use *α = 0.05*; *[multiple-comparison adjustment if any]*.
+
+**Results paragraph (copy-paste):**
+
+> Censoring Types yielded *[estimate]* (95% CI *[lower, upper]*, p = *[value]*). *[Diagnostic / assumption summary]*. *[Sensitivity analysis result]*.
+
+**Reviewer checklist for this method.** → [`censoring-types` — For Reviewers](../chapters/11-survival/censoring-types.qmd#for-reviewers)
+
+<!-- TODO:reporting-template -->
+
+### Centring and Scaling Predictors
+
+**Methods paragraph (copy-paste, fill in italics):**
+
+> *[N=]* participants/observations were analysed using **Centring and Scaling Predictors** as implemented in *[package vX.Y]* in R *[vX.Y]*. Assumptions were checked: *[list checks performed]*. *[Effect size with 95% confidence interval reported as the primary outcome]*. Two-sided p-values use *α = 0.05*; *[multiple-comparison adjustment if any]*.
+
+**Results paragraph (copy-paste):**
+
+> Centring and Scaling Predictors yielded *[estimate]* (95% CI *[lower, upper]*, p = *[value]*). *[Diagnostic / assumption summary]*. *[Sensitivity analysis result]*.
+
+**Reviewer checklist for this method.** → [`centered-scaled-predictors` — For Reviewers](../chapters/07-regression/centered-scaled-predictors.qmd#for-reviewers)
+
+<!-- TODO:reporting-template -->
+
+### Checking Cox Assumptions
+
+**Methods paragraph (copy-paste, fill in italics):**
+
+> *[N=]* participants/observations were analysed using **Checking Cox Assumptions** as implemented in *[package vX.Y]* in R *[vX.Y]*. Assumptions were checked: *[list checks performed]*. *[Effect size with 95% confidence interval reported as the primary outcome]*. Two-sided p-values use *α = 0.05*; *[multiple-comparison adjustment if any]*.
+
+**Results paragraph (copy-paste):**
+
+> Checking Cox Assumptions yielded *[estimate]* (95% CI *[lower, upper]*, p = *[value]*). *[Diagnostic / assumption summary]*. *[Sensitivity analysis result]*.
+
+**Reviewer checklist for this method.** → [`cox-assumptions-check` — For Reviewers](../chapters/11-survival/cox-assumptions-check.qmd#for-reviewers)
+
+<!-- TODO:reporting-template -->
+
+### Class Weights for Imbalanced Data
+
+**Methods paragraph (copy-paste, fill in italics):**
+
+> *[N=]* participants/observations were analysed using **Class Weights for Imbalanced Data** as implemented in *[package vX.Y]* in R *[vX.Y]*. Assumptions were checked: *[list checks performed]*. *[Effect size with 95% confidence interval reported as the primary outcome]*. Two-sided p-values use *α = 0.05*; *[multiple-comparison adjustment if any]*.
+
+**Results paragraph (copy-paste):**
+
+> Class Weights for Imbalanced Data yielded *[estimate]* (95% CI *[lower, upper]*, p = *[value]*). *[Diagnostic / assumption summary]*. *[Sensitivity analysis result]*.
+
+**Reviewer checklist for this method.** → [`class-weights-imbalanced` — For Reviewers](../chapters/13-ml/class-weights-imbalanced.qmd#for-reviewers)
+
+<!-- TODO:reporting-template -->
+
+### Clinical Equivalence Trials
+
+**Methods paragraph (copy-paste, fill in italics):**
+
+> *[N=]* participants/observations were analysed using **Clinical Equivalence Trials** as implemented in *[package vX.Y]* in R *[vX.Y]*. Assumptions were checked: *[list checks performed]*. *[Effect size with 95% confidence interval reported as the primary outcome]*. Two-sided p-values use *α = 0.05*; *[multiple-comparison adjustment if any]*.
+
+**Results paragraph (copy-paste):**
+
+> Clinical Equivalence Trials yielded *[estimate]* (95% CI *[lower, upper]*, p = *[value]*). *[Diagnostic / assumption summary]*. *[Sensitivity analysis result]*.
+
+**Reviewer checklist for this method.** → [`equivalence-clinical` — For Reviewers](../chapters/14-clinical/equivalence-clinical.qmd#for-reviewers)
+
+<!-- TODO:reporting-template -->
+
+### Cluster-Randomised Trials
+
+**Methods paragraph (copy-paste, fill in italics):**
+
+> *[N=]* participants/observations were analysed using **Cluster-Randomised Trials** as implemented in *[package vX.Y]* in R *[vX.Y]*. Assumptions were checked: *[list checks performed]*. *[Effect size with 95% confidence interval reported as the primary outcome]*. Two-sided p-values use *α = 0.05*; *[multiple-comparison adjustment if any]*.
+
+**Results paragraph (copy-paste):**
+
+> Cluster-Randomised Trials yielded *[estimate]* (95% CI *[lower, upper]*, p = *[value]*). *[Diagnostic / assumption summary]*. *[Sensitivity analysis result]*.
+
+**Reviewer checklist for this method.** → [`cluster-rct` — For Reviewers](../chapters/14-clinical/cluster-rct.qmd#for-reviewers)
+
+<!-- TODO:reporting-template -->
+
+### Cohen's Kappa
+
+**Methods paragraph (copy-paste, fill in italics):**
+
+> *[N=]* participants/observations were analysed using **Cohen's Kappa** as implemented in *[package vX.Y]* in R *[vX.Y]*. Assumptions were checked: *[list checks performed]*. *[Effect size with 95% confidence interval reported as the primary outcome]*. Two-sided p-values use *α = 0.05*; *[multiple-comparison adjustment if any]*.
+
+**Results paragraph (copy-paste):**
+
+> Cohen's Kappa yielded *[estimate]* (95% CI *[lower, upper]*, p = *[value]*). *[Diagnostic / assumption summary]*. *[Sensitivity analysis result]*.
+
+**Reviewer checklist for this method.** → [`cohens-kappa` — For Reviewers](../chapters/14-clinical/cohens-kappa.qmd#for-reviewers)
+
+<!-- TODO:reporting-template -->
+
+### Competing Risks: Cumulative Incidence
+
+**Methods paragraph (copy-paste, fill in italics):**
+
+> *[N=]* participants/observations were analysed using **Competing Risks: Cumulative Incidence** as implemented in *[package vX.Y]* in R *[vX.Y]*. Assumptions were checked: *[list checks performed]*. *[Effect size with 95% confidence interval reported as the primary outcome]*. Two-sided p-values use *α = 0.05*; *[multiple-comparison adjustment if any]*.
+
+**Results paragraph (copy-paste):**
+
+> Competing Risks: Cumulative Incidence yielded *[estimate]* (95% CI *[lower, upper]*, p = *[value]*). *[Diagnostic / assumption summary]*. *[Sensitivity analysis result]*.
+
+**Reviewer checklist for this method.** → [`competing-risks-cif` — For Reviewers](../chapters/11-survival/competing-risks-cif.qmd#for-reviewers)
+
+<!-- TODO:reporting-template -->
+
+### Concordance and the C-Index
+
+**Methods paragraph (copy-paste, fill in italics):**
+
+> *[N=]* participants/observations were analysed using **Concordance and the C-Index** as implemented in *[package vX.Y]* in R *[vX.Y]*. Assumptions were checked: *[list checks performed]*. *[Effect size with 95% confidence interval reported as the primary outcome]*. Two-sided p-values use *α = 0.05*; *[multiple-comparison adjustment if any]*.
+
+**Results paragraph (copy-paste):**
+
+> Concordance and the C-Index yielded *[estimate]* (95% CI *[lower, upper]*, p = *[value]*). *[Diagnostic / assumption summary]*. *[Sensitivity analysis result]*.
+
+**Reviewer checklist for this method.** → [`concordance-c-index` — For Reviewers](../chapters/11-survival/concordance-c-index.qmd#for-reviewers)
+
+<!-- TODO:reporting-template -->
+
+### Conditional Power
+
+**Methods paragraph (copy-paste, fill in italics):**
+
+> *[N=]* participants/observations were analysed using **Conditional Power** as implemented in *[package vX.Y]* in R *[vX.Y]*. Assumptions were checked: *[list checks performed]*. *[Effect size with 95% confidence interval reported as the primary outcome]*. Two-sided p-values use *α = 0.05*; *[multiple-comparison adjustment if any]*.
+
+**Results paragraph (copy-paste):**
+
+> Conditional Power yielded *[estimate]* (95% CI *[lower, upper]*, p = *[value]*). *[Diagnostic / assumption summary]*. *[Sensitivity analysis result]*.
+
+**Reviewer checklist for this method.** → [`conditional-power` — For Reviewers](../chapters/14-clinical/conditional-power.qmd#for-reviewers)
+
+<!-- TODO:reporting-template -->
+
+### Conditional Survival
+
+**Methods paragraph (copy-paste, fill in italics):**
+
+> *[N=]* participants/observations were analysed using **Conditional Survival** as implemented in *[package vX.Y]* in R *[vX.Y]*. Assumptions were checked: *[list checks performed]*. *[Effect size with 95% confidence interval reported as the primary outcome]*. Two-sided p-values use *α = 0.05*; *[multiple-comparison adjustment if any]*.
+
+**Results paragraph (copy-paste):**
+
+> Conditional Survival yielded *[estimate]* (95% CI *[lower, upper]*, p = *[value]*). *[Diagnostic / assumption summary]*. *[Sensitivity analysis result]*.
+
+**Reviewer checklist for this method.** → [`conditional-survival` — For Reviewers](../chapters/11-survival/conditional-survival.qmd#for-reviewers)
+
+<!-- TODO:reporting-template -->
+
+### Contrasts in R
+
+**Methods paragraph (copy-paste, fill in italics):**
+
+> *[N=]* participants/observations were analysed using **Contrasts in R** as implemented in *[package vX.Y]* in R *[vX.Y]*. Assumptions were checked: *[list checks performed]*. *[Effect size with 95% confidence interval reported as the primary outcome]*. Two-sided p-values use *α = 0.05*; *[multiple-comparison adjustment if any]*.
+
+**Results paragraph (copy-paste):**
+
+> Contrasts in R yielded *[estimate]* (95% CI *[lower, upper]*, p = *[value]*). *[Diagnostic / assumption summary]*. *[Sensitivity analysis result]*.
+
+**Reviewer checklist for this method.** → [`contrasts-in-r` — For Reviewers](../chapters/07-regression/contrasts-in-r.qmd#for-reviewers)
+
+<!-- TODO:reporting-template -->
+
+### Convolutional Neural Networks: Introduction
+
+**Methods paragraph (copy-paste, fill in italics):**
+
+> *[N=]* participants/observations were analysed using **Convolutional Neural Networks: Introduction** as implemented in *[package vX.Y]* in R *[vX.Y]*. Assumptions were checked: *[list checks performed]*. *[Effect size with 95% confidence interval reported as the primary outcome]*. Two-sided p-values use *α = 0.05*; *[multiple-comparison adjustment if any]*.
+
+**Results paragraph (copy-paste):**
+
+> Convolutional Neural Networks: Introduction yielded *[estimate]* (95% CI *[lower, upper]*, p = *[value]*). *[Diagnostic / assumption summary]*. *[Sensitivity analysis result]*.
+
+**Reviewer checklist for this method.** → [`cnn-introduction` — For Reviewers](../chapters/13-ml/cnn-introduction.qmd#for-reviewers)
+
+<!-- TODO:reporting-template -->
+
+### Cook's Distance
+
+**Methods paragraph (copy-paste, fill in italics):**
+
+> *[N=]* participants/observations were analysed using **Cook's Distance** as implemented in *[package vX.Y]* in R *[vX.Y]*. Assumptions were checked: *[list checks performed]*. *[Effect size with 95% confidence interval reported as the primary outcome]*. Two-sided p-values use *α = 0.05*; *[multiple-comparison adjustment if any]*.
+
+**Results paragraph (copy-paste):**
+
+> Cook's Distance yielded *[estimate]* (95% CI *[lower, upper]*, p = *[value]*). *[Diagnostic / assumption summary]*. *[Sensitivity analysis result]*.
+
+**Reviewer checklist for this method.** → [`cooks-distance` — For Reviewers](../chapters/07-regression/cooks-distance.qmd#for-reviewers)
+
+<!-- TODO:reporting-template -->
+
+### Cox Proportional Hazards Regression
+
+**Methods paragraph (copy-paste, fill in italics):**
+
+> *[N=]* participants/observations were analysed using **Cox Proportional Hazards Regression** as implemented in *[package vX.Y]* in R *[vX.Y]*. Assumptions were checked: *[list checks performed]*. *[Effect size with 95% confidence interval reported as the primary outcome]*. Two-sided p-values use *α = 0.05*; *[multiple-comparison adjustment if any]*.
+
+**Results paragraph (copy-paste):**
+
+> Cox Proportional Hazards Regression yielded *[estimate]* (95% CI *[lower, upper]*, p = *[value]*). *[Diagnostic / assumption summary]*. *[Sensitivity analysis result]*.
+
+**Reviewer checklist for this method.** → [`cox-proportional-hazards` — For Reviewers](../chapters/11-survival/cox-proportional-hazards.qmd#for-reviewers)
+
+<!-- TODO:reporting-template -->
+
+### Cox Regression as Regression
+
+**Methods paragraph (copy-paste, fill in italics):**
+
+> *[N=]* participants/observations were analysed using **Cox Regression as Regression** as implemented in *[package vX.Y]* in R *[vX.Y]*. Assumptions were checked: *[list checks performed]*. *[Effect size with 95% confidence interval reported as the primary outcome]*. Two-sided p-values use *α = 0.05*; *[multiple-comparison adjustment if any]*.
+
+**Results paragraph (copy-paste):**
+
+> Cox Regression as Regression yielded *[estimate]* (95% CI *[lower, upper]*, p = *[value]*). *[Diagnostic / assumption summary]*. *[Sensitivity analysis result]*.
+
+**Reviewer checklist for this method.** → [`survival-regression-cox` — For Reviewers](../chapters/07-regression/survival-regression-cox.qmd#for-reviewers)
+
+<!-- TODO:reporting-template -->
+
+### Cross-Validation
+
+**Methods paragraph (copy-paste, fill in italics):**
+
+> *[N=]* participants/observations were analysed using **Cross-Validation** as implemented in *[package vX.Y]* in R *[vX.Y]*. Assumptions were checked: *[list checks performed]*. *[Effect size with 95% confidence interval reported as the primary outcome]*. Two-sided p-values use *α = 0.05*; *[multiple-comparison adjustment if any]*.
+
+**Results paragraph (copy-paste):**
+
+> Cross-Validation yielded *[estimate]* (95% CI *[lower, upper]*, p = *[value]*). *[Diagnostic / assumption summary]*. *[Sensitivity analysis result]*.
+
+**Reviewer checklist for this method.** → [`cross-validation` — For Reviewers](../chapters/13-ml/cross-validation.qmd#for-reviewers)
+
+<!-- TODO:reporting-template -->
+
+### Crossover RCT Design
+
+**Methods paragraph (copy-paste, fill in italics):**
+
+> *[N=]* participants/observations were analysed using **Crossover RCT Design** as implemented in *[package vX.Y]* in R *[vX.Y]*. Assumptions were checked: *[list checks performed]*. *[Effect size with 95% confidence interval reported as the primary outcome]*. Two-sided p-values use *α = 0.05*; *[multiple-comparison adjustment if any]*.
+
+**Results paragraph (copy-paste):**
+
+> Crossover RCT Design yielded *[estimate]* (95% CI *[lower, upper]*, p = *[value]*). *[Diagnostic / assumption summary]*. *[Sensitivity analysis result]*.
+
+**Reviewer checklist for this method.** → [`rct-design-crossover` — For Reviewers](../chapters/14-clinical/rct-design-crossover.qmd#for-reviewers)
+
+<!-- TODO:reporting-template -->
+
+### Cutpoint Selection
+
+**Methods paragraph (copy-paste, fill in italics):**
+
+> *[N=]* participants/observations were analysed using **Cutpoint Selection** as implemented in *[package vX.Y]* in R *[vX.Y]*. Assumptions were checked: *[list checks performed]*. *[Effect size with 95% confidence interval reported as the primary outcome]*. Two-sided p-values use *α = 0.05*; *[multiple-comparison adjustment if any]*.
+
+**Results paragraph (copy-paste):**
+
+> Cutpoint Selection yielded *[estimate]* (95% CI *[lower, upper]*, p = *[value]*). *[Diagnostic / assumption summary]*. *[Sensitivity analysis result]*.
+
+**Reviewer checklist for this method.** → [`cutpoint-selection` — For Reviewers](../chapters/14-clinical/cutpoint-selection.qmd#for-reviewers)
+
+<!-- TODO:reporting-template -->
+
+### DBSCAN as an ML Tool
+
+**Methods paragraph (copy-paste, fill in italics):**
+
+> *[N=]* participants/observations were analysed using **DBSCAN as an ML Tool** as implemented in *[package vX.Y]* in R *[vX.Y]*. Assumptions were checked: *[list checks performed]*. *[Effect size with 95% confidence interval reported as the primary outcome]*. Two-sided p-values use *α = 0.05*; *[multiple-comparison adjustment if any]*.
+
+**Results paragraph (copy-paste):**
+
+> DBSCAN as an ML Tool yielded *[estimate]* (95% CI *[lower, upper]*, p = *[value]*). *[Diagnostic / assumption summary]*. *[Sensitivity analysis result]*.
+
+**Reviewer checklist for this method.** → [`clustering-dbscan-ml` — For Reviewers](../chapters/13-ml/clustering-dbscan-ml.qmd#for-reviewers)
+
+<!-- TODO:reporting-template -->
+
+### Decision Trees (CART)
+
+**Methods paragraph (copy-paste, fill in italics):**
+
+> *[N=]* participants/observations were analysed using **Decision Trees (CART)** as implemented in *[package vX.Y]* in R *[vX.Y]*. Assumptions were checked: *[list checks performed]*. *[Effect size with 95% confidence interval reported as the primary outcome]*. Two-sided p-values use *α = 0.05*; *[multiple-comparison adjustment if any]*.
+
+**Results paragraph (copy-paste):**
+
+> Decision Trees (CART) yielded *[estimate]* (95% CI *[lower, upper]*, p = *[value]*). *[Diagnostic / assumption summary]*. *[Sensitivity analysis result]*.
+
+**Reviewer checklist for this method.** → [`decision-trees-cart` — For Reviewers](../chapters/13-ml/decision-trees-cart.qmd#for-reviewers)
+
+<!-- TODO:reporting-template -->
+
+### Diagnostic Test Accuracy
+
+**Methods paragraph (copy-paste, fill in italics):**
+
+> *[N=]* participants/observations were analysed using **Diagnostic Test Accuracy** as implemented in *[package vX.Y]* in R *[vX.Y]*. Assumptions were checked: *[list checks performed]*. *[Effect size with 95% confidence interval reported as the primary outcome]*. Two-sided p-values use *α = 0.05*; *[multiple-comparison adjustment if any]*.
+
+**Results paragraph (copy-paste):**
+
+> Diagnostic Test Accuracy yielded *[estimate]* (95% CI *[lower, upper]*, p = *[value]*). *[Diagnostic / assumption summary]*. *[Sensitivity analysis result]*.
+
+**Reviewer checklist for this method.** → [`diagnostic-accuracy` — For Reviewers](../chapters/14-clinical/diagnostic-accuracy.qmd#for-reviewers)
+
+<!-- TODO:reporting-template -->
+
+### Dirichlet Regression
+
+**Methods paragraph (copy-paste, fill in italics):**
+
+> *[N=]* participants/observations were analysed using **Dirichlet Regression** as implemented in *[package vX.Y]* in R *[vX.Y]*. Assumptions were checked: *[list checks performed]*. *[Effect size with 95% confidence interval reported as the primary outcome]*. Two-sided p-values use *α = 0.05*; *[multiple-comparison adjustment if any]*.
+
+**Results paragraph (copy-paste):**
+
+> Dirichlet Regression yielded *[estimate]* (95% CI *[lower, upper]*, p = *[value]*). *[Diagnostic / assumption summary]*. *[Sensitivity analysis result]*.
+
+**Reviewer checklist for this method.** → [`dirichlet-regression` — For Reviewers](../chapters/07-regression/dirichlet-regression.qmd#for-reviewers)
+
+<!-- TODO:reporting-template -->
+
+### Dropout and Early Stopping
+
+**Methods paragraph (copy-paste, fill in italics):**
+
+> *[N=]* participants/observations were analysed using **Dropout and Early Stopping** as implemented in *[package vX.Y]* in R *[vX.Y]*. Assumptions were checked: *[list checks performed]*. *[Effect size with 95% confidence interval reported as the primary outcome]*. Two-sided p-values use *α = 0.05*; *[multiple-comparison adjustment if any]*.
+
+**Results paragraph (copy-paste):**
+
+> Dropout and Early Stopping yielded *[estimate]* (95% CI *[lower, upper]*, p = *[value]*). *[Diagnostic / assumption summary]*. *[Sensitivity analysis result]*.
+
+**Reviewer checklist for this method.** → [`dropout-early-stopping` — For Reviewers](../chapters/13-ml/dropout-early-stopping.qmd#for-reviewers)
+
+<!-- TODO:reporting-template -->
+
+### Dummy Coding
+
+**Methods paragraph (copy-paste, fill in italics):**
+
+> *[N=]* participants/observations were analysed using **Dummy Coding** as implemented in *[package vX.Y]* in R *[vX.Y]*. Assumptions were checked: *[list checks performed]*. *[Effect size with 95% confidence interval reported as the primary outcome]*. Two-sided p-values use *α = 0.05*; *[multiple-comparison adjustment if any]*.
+
+**Results paragraph (copy-paste):**
+
+> Dummy Coding yielded *[estimate]* (95% CI *[lower, upper]*, p = *[value]*). *[Diagnostic / assumption summary]*. *[Sensitivity analysis result]*.
+
+**Reviewer checklist for this method.** → [`dummy-coding` — For Reviewers](../chapters/07-regression/dummy-coding.qmd#for-reviewers)
+
+<!-- TODO:reporting-template -->
+
+### Effect (Deviation) Coding
+
+**Methods paragraph (copy-paste, fill in italics):**
+
+> *[N=]* participants/observations were analysed using **Effect (Deviation) Coding** as implemented in *[package vX.Y]* in R *[vX.Y]*. Assumptions were checked: *[list checks performed]*. *[Effect size with 95% confidence interval reported as the primary outcome]*. Two-sided p-values use *α = 0.05*; *[multiple-comparison adjustment if any]*.
+
+**Results paragraph (copy-paste):**
+
+> Effect (Deviation) Coding yielded *[estimate]* (95% CI *[lower, upper]*, p = *[value]*). *[Diagnostic / assumption summary]*. *[Sensitivity analysis result]*.
+
+**Reviewer checklist for this method.** → [`effect-coding` — For Reviewers](../chapters/07-regression/effect-coding.qmd#for-reviewers)
+
+<!-- TODO:reporting-template -->
+
+### Elastic Net
+
+**Methods paragraph (copy-paste, fill in italics):**
+
+> *[N=]* participants/observations were analysed using **Elastic Net** as implemented in *[package vX.Y]* in R *[vX.Y]*. Assumptions were checked: *[list checks performed]*. *[Effect size with 95% confidence interval reported as the primary outcome]*. Two-sided p-values use *α = 0.05*; *[multiple-comparison adjustment if any]*.
+
+**Results paragraph (copy-paste):**
+
+> Elastic Net yielded *[estimate]* (95% CI *[lower, upper]*, p = *[value]*). *[Diagnostic / assumption summary]*. *[Sensitivity analysis result]*.
+
+**Reviewer checklist for this method.** → [`elastic-net` — For Reviewers](../chapters/07-regression/elastic-net.qmd#for-reviewers)
+
+<!-- TODO:reporting-template -->
+
+### Extremely Randomised Trees
+
+**Methods paragraph (copy-paste, fill in italics):**
+
+> *[N=]* participants/observations were analysed using **Extremely Randomised Trees** as implemented in *[package vX.Y]* in R *[vX.Y]*. Assumptions were checked: *[list checks performed]*. *[Effect size with 95% confidence interval reported as the primary outcome]*. Two-sided p-values use *α = 0.05*; *[multiple-comparison adjustment if any]*.
+
+**Results paragraph (copy-paste):**
+
+> Extremely Randomised Trees yielded *[estimate]* (95% CI *[lower, upper]*, p = *[value]*). *[Diagnostic / assumption summary]*. *[Sensitivity analysis result]*.
+
+**Reviewer checklist for this method.** → [`extremely-randomized-trees` — For Reviewers](../chapters/13-ml/extremely-randomized-trees.qmd#for-reviewers)
+
+<!-- TODO:reporting-template -->
+
+### Factorial Trials
+
+**Methods paragraph (copy-paste, fill in italics):**
+
+> *[N=]* participants/observations were analysed using **Factorial Trials** as implemented in *[package vX.Y]* in R *[vX.Y]*. Assumptions were checked: *[list checks performed]*. *[Effect size with 95% confidence interval reported as the primary outcome]*. Two-sided p-values use *α = 0.05*; *[multiple-comparison adjustment if any]*.
+
+**Results paragraph (copy-paste):**
+
+> Factorial Trials yielded *[estimate]* (95% CI *[lower, upper]*, p = *[value]*). *[Diagnostic / assumption summary]*. *[Sensitivity analysis result]*.
+
+**Reviewer checklist for this method.** → [`factorial-trial` — For Reviewers](../chapters/14-clinical/factorial-trial.qmd#for-reviewers)
+
+<!-- TODO:reporting-template -->
+
+### Feature Engineering
+
+**Methods paragraph (copy-paste, fill in italics):**
+
+> *[N=]* participants/observations were analysed using **Feature Engineering** as implemented in *[package vX.Y]* in R *[vX.Y]*. Assumptions were checked: *[list checks performed]*. *[Effect size with 95% confidence interval reported as the primary outcome]*. Two-sided p-values use *α = 0.05*; *[multiple-comparison adjustment if any]*.
+
+**Results paragraph (copy-paste):**
+
+> Feature Engineering yielded *[estimate]* (95% CI *[lower, upper]*, p = *[value]*). *[Diagnostic / assumption summary]*. *[Sensitivity analysis result]*.
+
+**Reviewer checklist for this method.** → [`feature-engineering` — For Reviewers](../chapters/13-ml/feature-engineering.qmd#for-reviewers)
+
+<!-- TODO:reporting-template -->
+
+### Feature Selection
+
+**Methods paragraph (copy-paste, fill in italics):**
+
+> *[N=]* participants/observations were analysed using **Feature Selection** as implemented in *[package vX.Y]* in R *[vX.Y]*. Assumptions were checked: *[list checks performed]*. *[Effect size with 95% confidence interval reported as the primary outcome]*. Two-sided p-values use *α = 0.05*; *[multiple-comparison adjustment if any]*.
+
+**Results paragraph (copy-paste):**
+
+> Feature Selection yielded *[estimate]* (95% CI *[lower, upper]*, p = *[value]*). *[Diagnostic / assumption summary]*. *[Sensitivity analysis result]*.
+
+**Reviewer checklist for this method.** → [`feature-selection` — For Reviewers](../chapters/13-ml/feature-selection.qmd#for-reviewers)
+
+<!-- TODO:reporting-template -->
+
+### Feedforward Networks in torch
+
+**Methods paragraph (copy-paste, fill in italics):**
+
+> *[N=]* participants/observations were analysed using **Feedforward Networks in torch** as implemented in *[package vX.Y]* in R *[vX.Y]*. Assumptions were checked: *[list checks performed]*. *[Effect size with 95% confidence interval reported as the primary outcome]*. Two-sided p-values use *α = 0.05*; *[multiple-comparison adjustment if any]*.
+
+**Results paragraph (copy-paste):**
+
+> Feedforward Networks in torch yielded *[estimate]* (95% CI *[lower, upper]*, p = *[value]*). *[Diagnostic / assumption summary]*. *[Sensitivity analysis result]*.
+
+**Reviewer checklist for this method.** → [`feedforward-networks-torch` — For Reviewers](../chapters/13-ml/feedforward-networks-torch.qmd#for-reviewers)
+
+<!-- TODO:reporting-template -->
+
+### Fine-Gray Subdistribution Hazards
+
+**Methods paragraph (copy-paste, fill in italics):**
+
+> *[N=]* participants/observations were analysed using **Fine-Gray Subdistribution Hazards** as implemented in *[package vX.Y]* in R *[vX.Y]*. Assumptions were checked: *[list checks performed]*. *[Effect size with 95% confidence interval reported as the primary outcome]*. Two-sided p-values use *α = 0.05*; *[multiple-comparison adjustment if any]*.
+
+**Results paragraph (copy-paste):**
+
+> Fine-Gray Subdistribution Hazards yielded *[estimate]* (95% CI *[lower, upper]*, p = *[value]*). *[Diagnostic / assumption summary]*. *[Sensitivity analysis result]*.
+
+**Reviewer checklist for this method.** → [`fine-gray-regression` — For Reviewers](../chapters/11-survival/fine-gray-regression.qmd#for-reviewers)
+
+<!-- TODO:reporting-template -->
+
+### Frailty Models
+
+**Methods paragraph (copy-paste, fill in italics):**
+
+> *[N=]* participants/observations were analysed using **Frailty Models** as implemented in *[package vX.Y]* in R *[vX.Y]*. Assumptions were checked: *[list checks performed]*. *[Effect size with 95% confidence interval reported as the primary outcome]*. Two-sided p-values use *α = 0.05*; *[multiple-comparison adjustment if any]*.
+
+**Results paragraph (copy-paste):**
+
+> Frailty Models yielded *[estimate]* (95% CI *[lower, upper]*, p = *[value]*). *[Diagnostic / assumption summary]*. *[Sensitivity analysis result]*.
+
+**Reviewer checklist for this method.** → [`frailty-models` — For Reviewers](../chapters/11-survival/frailty-models.qmd#for-reviewers)
+
+<!-- TODO:reporting-template -->
+
+### GAMMs: Additive Mixed Models
+
+**Methods paragraph (copy-paste, fill in italics):**
+
+> *[N=]* participants/observations were analysed using **GAMMs: Additive Mixed Models** as implemented in *[package vX.Y]* in R *[vX.Y]*. Assumptions were checked: *[list checks performed]*. *[Effect size with 95% confidence interval reported as the primary outcome]*. Two-sided p-values use *α = 0.05*; *[multiple-comparison adjustment if any]*.
+
+**Results paragraph (copy-paste):**
+
+> GAMMs: Additive Mixed Models yielded *[estimate]* (95% CI *[lower, upper]*, p = *[value]*). *[Diagnostic / assumption summary]*. *[Sensitivity analysis result]*.
+
+**Reviewer checklist for this method.** → [`gamm-additive-mixed` — For Reviewers](../chapters/07-regression/gamm-additive-mixed.qmd#for-reviewers)
+
+<!-- TODO:reporting-template -->
+
+### GAMs: Introduction
+
+**Methods paragraph (copy-paste, fill in italics):**
+
+> *[N=]* participants/observations were analysed using **GAMs: Introduction** as implemented in *[package vX.Y]* in R *[vX.Y]*. Assumptions were checked: *[list checks performed]*. *[Effect size with 95% confidence interval reported as the primary outcome]*. Two-sided p-values use *α = 0.05*; *[multiple-comparison adjustment if any]*.
+
+**Results paragraph (copy-paste):**
+
+> GAMs: Introduction yielded *[estimate]* (95% CI *[lower, upper]*, p = *[value]*). *[Diagnostic / assumption summary]*. *[Sensitivity analysis result]*.
+
+**Reviewer checklist for this method.** → [`gam-introduction` — For Reviewers](../chapters/07-regression/gam-introduction.qmd#for-reviewers)
+
+<!-- TODO:reporting-template -->
+
+### Generalised Estimating Equations
+
+**Methods paragraph (copy-paste, fill in italics):**
+
+> *[N=]* participants/observations were analysed using **Generalised Estimating Equations** as implemented in *[package vX.Y]* in R *[vX.Y]*. Assumptions were checked: *[list checks performed]*. *[Effect size with 95% confidence interval reported as the primary outcome]*. Two-sided p-values use *α = 0.05*; *[multiple-comparison adjustment if any]*.
+
+**Results paragraph (copy-paste):**
+
+> Generalised Estimating Equations yielded *[estimate]* (95% CI *[lower, upper]*, p = *[value]*). *[Diagnostic / assumption summary]*. *[Sensitivity analysis result]*.
+
+**Reviewer checklist for this method.** → [`generalized-estimating-equations` — For Reviewers](../chapters/07-regression/generalized-estimating-equations.qmd#for-reviewers)
+
+<!-- TODO:reporting-template -->
+
+### glmer: Generalised Mixed Models
+
+**Methods paragraph (copy-paste, fill in italics):**
+
+> *[N=]* participants/observations were analysed using **glmer: Generalised Mixed Models** as implemented in *[package vX.Y]* in R *[vX.Y]*. Assumptions were checked: *[list checks performed]*. *[Effect size with 95% confidence interval reported as the primary outcome]*. Two-sided p-values use *α = 0.05*; *[multiple-comparison adjustment if any]*.
+
+**Results paragraph (copy-paste):**
+
+> glmer: Generalised Mixed Models yielded *[estimate]* (95% CI *[lower, upper]*, p = *[value]*). *[Diagnostic / assumption summary]*. *[Sensitivity analysis result]*.
+
+**Reviewer checklist for this method.** → [`glmer-generalized-mixed` — For Reviewers](../chapters/07-regression/glmer-generalized-mixed.qmd#for-reviewers)
+
+<!-- TODO:reporting-template -->
+
+### Gradient Boosting
+
+**Methods paragraph (copy-paste, fill in italics):**
+
+> *[N=]* participants/observations were analysed using **Gradient Boosting** as implemented in *[package vX.Y]* in R *[vX.Y]*. Assumptions were checked: *[list checks performed]*. *[Effect size with 95% confidence interval reported as the primary outcome]*. Two-sided p-values use *α = 0.05*; *[multiple-comparison adjustment if any]*.
+
+**Results paragraph (copy-paste):**
+
+> Gradient Boosting yielded *[estimate]* (95% CI *[lower, upper]*, p = *[value]*). *[Diagnostic / assumption summary]*. *[Sensitivity analysis result]*.
+
+**Reviewer checklist for this method.** → [`gradient-boosting` — For Reviewers](../chapters/13-ml/gradient-boosting.qmd#for-reviewers)
+
+<!-- TODO:reporting-template -->
+
+### Hazard, Survival, and Cumulative Hazard
+
+**Methods paragraph (copy-paste, fill in italics):**
+
+> *[N=]* participants/observations were analysed using **Hazard, Survival, and Cumulative Hazard** as implemented in *[package vX.Y]* in R *[vX.Y]*. Assumptions were checked: *[list checks performed]*. *[Effect size with 95% confidence interval reported as the primary outcome]*. Two-sided p-values use *α = 0.05*; *[multiple-comparison adjustment if any]*.
+
+**Results paragraph (copy-paste):**
+
+> Hazard, Survival, and Cumulative Hazard yielded *[estimate]* (95% CI *[lower, upper]*, p = *[value]*). *[Diagnostic / assumption summary]*. *[Sensitivity analysis result]*.
+
+**Reviewer checklist for this method.** → [`hazard-survival-cumulative` — For Reviewers](../chapters/11-survival/hazard-survival-cumulative.qmd#for-reviewers)
+
+<!-- TODO:reporting-template -->
+
+### Hurdle Models
+
+**Methods paragraph (copy-paste, fill in italics):**
+
+> *[N=]* participants/observations were analysed using **Hurdle Models** as implemented in *[package vX.Y]* in R *[vX.Y]*. Assumptions were checked: *[list checks performed]*. *[Effect size with 95% confidence interval reported as the primary outcome]*. Two-sided p-values use *α = 0.05*; *[multiple-comparison adjustment if any]*.
+
+**Results paragraph (copy-paste):**
+
+> Hurdle Models yielded *[estimate]* (95% CI *[lower, upper]*, p = *[value]*). *[Diagnostic / assumption summary]*. *[Sensitivity analysis result]*.
+
+**Reviewer checklist for this method.** → [`hurdle-models` — For Reviewers](../chapters/07-regression/hurdle-models.qmd#for-reviewers)
+
+<!-- TODO:reporting-template -->
+
+### Interactions in Regression
+
+**Methods paragraph (copy-paste, fill in italics):**
+
+> *[N=]* participants/observations were analysed using **Interactions in Regression** as implemented in *[package vX.Y]* in R *[vX.Y]*. Assumptions were checked: *[list checks performed]*. *[Effect size with 95% confidence interval reported as the primary outcome]*. Two-sided p-values use *α = 0.05*; *[multiple-comparison adjustment if any]*.
+
+**Results paragraph (copy-paste):**
+
+> Interactions in Regression yielded *[estimate]* (95% CI *[lower, upper]*, p = *[value]*). *[Diagnostic / assumption summary]*. *[Sensitivity analysis result]*.
+
+**Reviewer checklist for this method.** → [`interactions-in-regression` — For Reviewers](../chapters/07-regression/interactions-in-regression.qmd#for-reviewers)
+
+<!-- TODO:reporting-template -->
+
+### Interim Analyses and Group Sequential Designs
+
+**Methods paragraph (copy-paste, fill in italics):**
+
+> *[N=]* participants/observations were analysed using **Interim Analyses and Group Sequential Designs** as implemented in *[package vX.Y]* in R *[vX.Y]*. Assumptions were checked: *[list checks performed]*. *[Effect size with 95% confidence interval reported as the primary outcome]*. Two-sided p-values use *α = 0.05*; *[multiple-comparison adjustment if any]*.
+
+**Results paragraph (copy-paste):**
+
+> Interim Analyses and Group Sequential Designs yielded *[estimate]* (95% CI *[lower, upper]*, p = *[value]*). *[Diagnostic / assumption summary]*. *[Sensitivity analysis result]*.
+
+**Reviewer checklist for this method.** → [`interim-analysis-group-sequential` — For Reviewers](../chapters/14-clinical/interim-analysis-group-sequential.qmd#for-reviewers)
+
+<!-- TODO:reporting-template -->
+
+### Interval-Censored Data
+
+**Methods paragraph (copy-paste, fill in italics):**
+
+> *[N=]* participants/observations were analysed using **Interval-Censored Data** as implemented in *[package vX.Y]* in R *[vX.Y]*. Assumptions were checked: *[list checks performed]*. *[Effect size with 95% confidence interval reported as the primary outcome]*. Two-sided p-values use *α = 0.05*; *[multiple-comparison adjustment if any]*.
+
+**Results paragraph (copy-paste):**
+
+> Interval-Censored Data yielded *[estimate]* (95% CI *[lower, upper]*, p = *[value]*). *[Diagnostic / assumption summary]*. *[Sensitivity analysis result]*.
+
+**Reviewer checklist for this method.** → [`interval-censored-data` — For Reviewers](../chapters/11-survival/interval-censored-data.qmd#for-reviewers)
+
+<!-- TODO:reporting-template -->
+
+### Intraclass Correlation Coefficient (ICC)
+
+**Methods paragraph (copy-paste, fill in italics):**
+
+> *[N=]* participants/observations were analysed using **Intraclass Correlation Coefficient (ICC)** as implemented in *[package vX.Y]* in R *[vX.Y]*. Assumptions were checked: *[list checks performed]*. *[Effect size with 95% confidence interval reported as the primary outcome]*. Two-sided p-values use *α = 0.05*; *[multiple-comparison adjustment if any]*.
+
+**Results paragraph (copy-paste):**
+
+> Intraclass Correlation Coefficient (ICC) yielded *[estimate]* (95% CI *[lower, upper]*, p = *[value]*). *[Diagnostic / assumption summary]*. *[Sensitivity analysis result]*.
+
+**Reviewer checklist for this method.** → [`icc-continuous-agreement` — For Reviewers](../chapters/14-clinical/icc-continuous-agreement.qmd#for-reviewers)
+
+<!-- TODO:reporting-template -->
+
+### Isolation Forest
+
+**Methods paragraph (copy-paste, fill in italics):**
+
+> *[N=]* participants/observations were analysed using **Isolation Forest** as implemented in *[package vX.Y]* in R *[vX.Y]*. Assumptions were checked: *[list checks performed]*. *[Effect size with 95% confidence interval reported as the primary outcome]*. Two-sided p-values use *α = 0.05*; *[multiple-comparison adjustment if any]*.
+
+**Results paragraph (copy-paste):**
+
+> Isolation Forest yielded *[estimate]* (95% CI *[lower, upper]*, p = *[value]*). *[Diagnostic / assumption summary]*. *[Sensitivity analysis result]*.
+
+**Reviewer checklist for this method.** → [`isolation-forest` — For Reviewers](../chapters/13-ml/isolation-forest.qmd#for-reviewers)
+
+<!-- TODO:reporting-template -->
+
+### Isotonic Regression Calibration
+
+**Methods paragraph (copy-paste, fill in italics):**
+
+> *[N=]* participants/observations were analysed using **Isotonic Regression Calibration** as implemented in *[package vX.Y]* in R *[vX.Y]*. Assumptions were checked: *[list checks performed]*. *[Effect size with 95% confidence interval reported as the primary outcome]*. Two-sided p-values use *α = 0.05*; *[multiple-comparison adjustment if any]*.
+
+**Results paragraph (copy-paste):**
+
+> Isotonic Regression Calibration yielded *[estimate]* (95% CI *[lower, upper]*, p = *[value]*). *[Diagnostic / assumption summary]*. *[Sensitivity analysis result]*.
+
+**Reviewer checklist for this method.** → [`isotonic-regression` — For Reviewers](../chapters/13-ml/isotonic-regression.qmd#for-reviewers)
+
+<!-- TODO:reporting-template -->
+
+### ITT vs Per-Protocol Analysis
+
+**Methods paragraph (copy-paste, fill in italics):**
+
+> *[N=]* participants/observations were analysed using **ITT vs Per-Protocol Analysis** as implemented in *[package vX.Y]* in R *[vX.Y]*. Assumptions were checked: *[list checks performed]*. *[Effect size with 95% confidence interval reported as the primary outcome]*. Two-sided p-values use *α = 0.05*; *[multiple-comparison adjustment if any]*.
+
+**Results paragraph (copy-paste):**
+
+> ITT vs Per-Protocol Analysis yielded *[estimate]* (95% CI *[lower, upper]*, p = *[value]*). *[Diagnostic / assumption summary]*. *[Sensitivity analysis result]*.
+
+**Reviewer checklist for this method.** → [`itt-vs-pp-analysis` — For Reviewers](../chapters/14-clinical/itt-vs-pp-analysis.qmd#for-reviewers)
+
+<!-- TODO:reporting-template -->
+
+### Joint Longitudinal-Survival Models
+
+**Methods paragraph (copy-paste, fill in italics):**
+
+> *[N=]* participants/observations were analysed using **Joint Longitudinal-Survival Models** as implemented in *[package vX.Y]* in R *[vX.Y]*. Assumptions were checked: *[list checks performed]*. *[Effect size with 95% confidence interval reported as the primary outcome]*. Two-sided p-values use *α = 0.05*; *[multiple-comparison adjustment if any]*.
+
+**Results paragraph (copy-paste):**
+
+> Joint Longitudinal-Survival Models yielded *[estimate]* (95% CI *[lower, upper]*, p = *[value]*). *[Diagnostic / assumption summary]*. *[Sensitivity analysis result]*.
+
+**Reviewer checklist for this method.** → [`joint-longitudinal-survival` — For Reviewers](../chapters/11-survival/joint-longitudinal-survival.qmd#for-reviewers)
+
+<!-- TODO:reporting-template -->
+
+### k-Means as an ML Tool
+
+**Methods paragraph (copy-paste, fill in italics):**
+
+> *[N=]* participants/observations were analysed using **k-Means as an ML Tool** as implemented in *[package vX.Y]* in R *[vX.Y]*. Assumptions were checked: *[list checks performed]*. *[Effect size with 95% confidence interval reported as the primary outcome]*. Two-sided p-values use *α = 0.05*; *[multiple-comparison adjustment if any]*.
+
+**Results paragraph (copy-paste):**
+
+> k-Means as an ML Tool yielded *[estimate]* (95% CI *[lower, upper]*, p = *[value]*). *[Diagnostic / assumption summary]*. *[Sensitivity analysis result]*.
+
+**Reviewer checklist for this method.** → [`clustering-kmeans-ml` — For Reviewers](../chapters/13-ml/clustering-kmeans-ml.qmd#for-reviewers)
+
+<!-- TODO:reporting-template -->
+
+### k-Nearest Neighbours Classification
+
+**Methods paragraph (copy-paste, fill in italics):**
+
+> *[N=]* participants/observations were analysed using **k-Nearest Neighbours Classification** as implemented in *[package vX.Y]* in R *[vX.Y]*. Assumptions were checked: *[list checks performed]*. *[Effect size with 95% confidence interval reported as the primary outcome]*. Two-sided p-values use *α = 0.05*; *[multiple-comparison adjustment if any]*.
+
+**Results paragraph (copy-paste):**
+
+> k-Nearest Neighbours Classification yielded *[estimate]* (95% CI *[lower, upper]*, p = *[value]*). *[Diagnostic / assumption summary]*. *[Sensitivity analysis result]*.
+
+**Reviewer checklist for this method.** → [`knn-classification` — For Reviewers](../chapters/13-ml/knn-classification.qmd#for-reviewers)
+
+<!-- TODO:reporting-template -->
+
+### k-Nearest Neighbours Regression
+
+**Methods paragraph (copy-paste, fill in italics):**
+
+> *[N=]* participants/observations were analysed using **k-Nearest Neighbours Regression** as implemented in *[package vX.Y]* in R *[vX.Y]*. Assumptions were checked: *[list checks performed]*. *[Effect size with 95% confidence interval reported as the primary outcome]*. Two-sided p-values use *α = 0.05*; *[multiple-comparison adjustment if any]*.
+
+**Results paragraph (copy-paste):**
+
+> k-Nearest Neighbours Regression yielded *[estimate]* (95% CI *[lower, upper]*, p = *[value]*). *[Diagnostic / assumption summary]*. *[Sensitivity analysis result]*.
+
+**Reviewer checklist for this method.** → [`knn-regression` — For Reviewers](../chapters/13-ml/knn-regression.qmd#for-reviewers)
+
+<!-- TODO:reporting-template -->
+
+### Kaplan-Meier Estimation
+
+**Methods paragraph (copy-paste, fill in italics):**
+
+> *[N=]* participants/observations were analysed using **Kaplan-Meier Estimation** as implemented in *[package vX.Y]* in R *[vX.Y]*. Assumptions were checked: *[list checks performed]*. *[Effect size with 95% confidence interval reported as the primary outcome]*. Two-sided p-values use *α = 0.05*; *[multiple-comparison adjustment if any]*.
+
+**Results paragraph (copy-paste):**
+
+> Kaplan-Meier Estimation yielded *[estimate]* (95% CI *[lower, upper]*, p = *[value]*). *[Diagnostic / assumption summary]*. *[Sensitivity analysis result]*.
+
+**Reviewer checklist for this method.** → [`kaplan-meier` — For Reviewers](../chapters/11-survival/kaplan-meier.qmd#for-reviewers)
+
+<!-- TODO:reporting-template -->
+
+### Kernel SVMs
+
+**Methods paragraph (copy-paste, fill in italics):**
+
+> *[N=]* participants/observations were analysed using **Kernel SVMs** as implemented in *[package vX.Y]* in R *[vX.Y]*. Assumptions were checked: *[list checks performed]*. *[Effect size with 95% confidence interval reported as the primary outcome]*. Two-sided p-values use *α = 0.05*; *[multiple-comparison adjustment if any]*.
+
+**Results paragraph (copy-paste):**
+
+> Kernel SVMs yielded *[estimate]* (95% CI *[lower, upper]*, p = *[value]*). *[Diagnostic / assumption summary]*. *[Sensitivity analysis result]*.
+
+**Reviewer checklist for this method.** → [`svm-kernel` — For Reviewers](../chapters/13-ml/svm-kernel.qmd#for-reviewers)
+
+<!-- TODO:reporting-template -->
+
+### Landmark Analysis
+
+**Methods paragraph (copy-paste, fill in italics):**
+
+> *[N=]* participants/observations were analysed using **Landmark Analysis** as implemented in *[package vX.Y]* in R *[vX.Y]*. Assumptions were checked: *[list checks performed]*. *[Effect size with 95% confidence interval reported as the primary outcome]*. Two-sided p-values use *α = 0.05*; *[multiple-comparison adjustment if any]*.
+
+**Results paragraph (copy-paste):**
+
+> Landmark Analysis yielded *[estimate]* (95% CI *[lower, upper]*, p = *[value]*). *[Diagnostic / assumption summary]*. *[Sensitivity analysis result]*.
+
+**Reviewer checklist for this method.** → [`landmark-analysis` — For Reviewers](../chapters/11-survival/landmark-analysis.qmd#for-reviewers)
+
+<!-- TODO:reporting-template -->
+
+### Lasso Regression
+
+**Methods paragraph (copy-paste, fill in italics):**
+
+> *[N=]* participants/observations were analysed using **Lasso Regression** as implemented in *[package vX.Y]* in R *[vX.Y]*. Assumptions were checked: *[list checks performed]*. *[Effect size with 95% confidence interval reported as the primary outcome]*. Two-sided p-values use *α = 0.05*; *[multiple-comparison adjustment if any]*.
+
+**Results paragraph (copy-paste):**
+
+> Lasso Regression yielded *[estimate]* (95% CI *[lower, upper]*, p = *[value]*). *[Diagnostic / assumption summary]*. *[Sensitivity analysis result]*.
+
+**Reviewer checklist for this method.** → [`lasso-regression` — For Reviewers](../chapters/07-regression/lasso-regression.qmd#for-reviewers)
+
+<!-- TODO:reporting-template -->
+
+### Left Truncation
+
+**Methods paragraph (copy-paste, fill in italics):**
+
+> *[N=]* participants/observations were analysed using **Left Truncation** as implemented in *[package vX.Y]* in R *[vX.Y]*. Assumptions were checked: *[list checks performed]*. *[Effect size with 95% confidence interval reported as the primary outcome]*. Two-sided p-values use *α = 0.05*; *[multiple-comparison adjustment if any]*.
+
+**Results paragraph (copy-paste):**
+
+> Left Truncation yielded *[estimate]* (95% CI *[lower, upper]*, p = *[value]*). *[Diagnostic / assumption summary]*. *[Sensitivity analysis result]*.
+
+**Reviewer checklist for this method.** → [`left-truncation` — For Reviewers](../chapters/11-survival/left-truncation.qmd#for-reviewers)
+
+<!-- TODO:reporting-template -->
+
+### Leverage and Influence
+
+**Methods paragraph (copy-paste, fill in italics):**
+
+> *[N=]* participants/observations were analysed using **Leverage and Influence** as implemented in *[package vX.Y]* in R *[vX.Y]*. Assumptions were checked: *[list checks performed]*. *[Effect size with 95% confidence interval reported as the primary outcome]*. Two-sided p-values use *α = 0.05*; *[multiple-comparison adjustment if any]*.
+
+**Results paragraph (copy-paste):**
+
+> Leverage and Influence yielded *[estimate]* (95% CI *[lower, upper]*, p = *[value]*). *[Diagnostic / assumption summary]*. *[Sensitivity analysis result]*.
+
+**Reviewer checklist for this method.** → [`leverage-influence` — For Reviewers](../chapters/07-regression/leverage-influence.qmd#for-reviewers)
+
+<!-- TODO:reporting-template -->
+
+### LightGBM
+
+**Methods paragraph (copy-paste, fill in italics):**
+
+> *[N=]* participants/observations were analysed using **LightGBM** as implemented in *[package vX.Y]* in R *[vX.Y]*. Assumptions were checked: *[list checks performed]*. *[Effect size with 95% confidence interval reported as the primary outcome]*. Two-sided p-values use *α = 0.05*; *[multiple-comparison adjustment if any]*.
+
+**Results paragraph (copy-paste):**
+
+> LightGBM yielded *[estimate]* (95% CI *[lower, upper]*, p = *[value]*). *[Diagnostic / assumption summary]*. *[Sensitivity analysis result]*.
+
+**Reviewer checklist for this method.** → [`lightgbm` — For Reviewers](../chapters/13-ml/lightgbm.qmd#for-reviewers)
+
+<!-- TODO:reporting-template -->
+
+### Likelihood Ratios
+
+**Methods paragraph (copy-paste, fill in italics):**
+
+> *[N=]* participants/observations were analysed using **Likelihood Ratios** as implemented in *[package vX.Y]* in R *[vX.Y]*. Assumptions were checked: *[list checks performed]*. *[Effect size with 95% confidence interval reported as the primary outcome]*. Two-sided p-values use *α = 0.05*; *[multiple-comparison adjustment if any]*.
+
+**Results paragraph (copy-paste):**
+
+> Likelihood Ratios yielded *[estimate]* (95% CI *[lower, upper]*, p = *[value]*). *[Diagnostic / assumption summary]*. *[Sensitivity analysis result]*.
+
+**Reviewer checklist for this method.** → [`likelihood-ratios` — For Reviewers](../chapters/14-clinical/likelihood-ratios.qmd#for-reviewers)
+
+<!-- TODO:reporting-template -->
+
+### LIME Explanations
+
+**Methods paragraph (copy-paste, fill in italics):**
+
+> *[N=]* participants/observations were analysed using **LIME Explanations** as implemented in *[package vX.Y]* in R *[vX.Y]*. Assumptions were checked: *[list checks performed]*. *[Effect size with 95% confidence interval reported as the primary outcome]*. Two-sided p-values use *α = 0.05*; *[multiple-comparison adjustment if any]*.
+
+**Results paragraph (copy-paste):**
+
+> LIME Explanations yielded *[estimate]* (95% CI *[lower, upper]*, p = *[value]*). *[Diagnostic / assumption summary]*. *[Sensitivity analysis result]*.
+
+**Reviewer checklist for this method.** → [`lime-explanations` — For Reviewers](../chapters/13-ml/lime-explanations.qmd#for-reviewers)
+
+<!-- TODO:reporting-template -->
+
+### Linear Discriminant as ML
+
+**Methods paragraph (copy-paste, fill in italics):**
+
+> *[N=]* participants/observations were analysed using **Linear Discriminant as ML** as implemented in *[package vX.Y]* in R *[vX.Y]*. Assumptions were checked: *[list checks performed]*. *[Effect size with 95% confidence interval reported as the primary outcome]*. Two-sided p-values use *α = 0.05*; *[multiple-comparison adjustment if any]*.
+
+**Results paragraph (copy-paste):**
+
+> Linear Discriminant as ML yielded *[estimate]* (95% CI *[lower, upper]*, p = *[value]*). *[Diagnostic / assumption summary]*. *[Sensitivity analysis result]*.
+
+**Reviewer checklist for this method.** → [`linear-discriminant-ml` — For Reviewers](../chapters/13-ml/linear-discriminant-ml.qmd#for-reviewers)
+
+<!-- TODO:reporting-template -->
+
+### Linear Regression Assumptions
+
+**Methods paragraph (copy-paste, fill in italics):**
+
+> *[N=]* participants/observations were analysed using **Linear Regression Assumptions** as implemented in *[package vX.Y]* in R *[vX.Y]*. Assumptions were checked: *[list checks performed]*. *[Effect size with 95% confidence interval reported as the primary outcome]*. Two-sided p-values use *α = 0.05*; *[multiple-comparison adjustment if any]*.
+
+**Results paragraph (copy-paste):**
+
+> Linear Regression Assumptions yielded *[estimate]* (95% CI *[lower, upper]*, p = *[value]*). *[Diagnostic / assumption summary]*. *[Sensitivity analysis result]*.
+
+**Reviewer checklist for this method.** → [`regression-assumptions` — For Reviewers](../chapters/07-regression/regression-assumptions.qmd#for-reviewers)
+
+<!-- TODO:reporting-template -->
+
+### Linear Support Vector Machines
+
+**Methods paragraph (copy-paste, fill in italics):**
+
+> *[N=]* participants/observations were analysed using **Linear Support Vector Machines** as implemented in *[package vX.Y]* in R *[vX.Y]*. Assumptions were checked: *[list checks performed]*. *[Effect size with 95% confidence interval reported as the primary outcome]*. Two-sided p-values use *α = 0.05*; *[multiple-comparison adjustment if any]*.
+
+**Results paragraph (copy-paste):**
+
+> Linear Support Vector Machines yielded *[estimate]* (95% CI *[lower, upper]*, p = *[value]*). *[Diagnostic / assumption summary]*. *[Sensitivity analysis result]*.
+
+**Reviewer checklist for this method.** → [`svm-linear` — For Reviewers](../chapters/13-ml/svm-linear.qmd#for-reviewers)
+
+<!-- TODO:reporting-template -->
+
+### Log-Rank Test: Details
+
+**Methods paragraph (copy-paste, fill in italics):**
+
+> *[N=]* participants/observations were analysed using **Log-Rank Test: Details** as implemented in *[package vX.Y]* in R *[vX.Y]*. Assumptions were checked: *[list checks performed]*. *[Effect size with 95% confidence interval reported as the primary outcome]*. Two-sided p-values use *α = 0.05*; *[multiple-comparison adjustment if any]*.
+
+**Results paragraph (copy-paste):**
+
+> Log-Rank Test: Details yielded *[estimate]* (95% CI *[lower, upper]*, p = *[value]*). *[Diagnostic / assumption summary]*. *[Sensitivity analysis result]*.
+
+**Reviewer checklist for this method.** → [`log-rank-test-details` — For Reviewers](../chapters/11-survival/log-rank-test-details.qmd#for-reviewers)
+
+<!-- TODO:reporting-template -->
+
+### Logistic Regression
+
+**Methods paragraph (copy-paste, fill in italics):**
+
+> *[N=]* participants/observations were analysed using **Logistic Regression** as implemented in *[package vX.Y]* in R *[vX.Y]*. Assumptions were checked: *[list checks performed]*. *[Effect size with 95% confidence interval reported as the primary outcome]*. Two-sided p-values use *α = 0.05*; *[multiple-comparison adjustment if any]*.
+
+**Results paragraph (copy-paste):**
+
+> Logistic Regression yielded *[estimate]* (95% CI *[lower, upper]*, p = *[value]*). *[Diagnostic / assumption summary]*. *[Sensitivity analysis result]*.
+
+**Reviewer checklist for this method.** → [`logistic-regression` — For Reviewers](../chapters/07-regression/logistic-regression.qmd#for-reviewers)
+
+<!-- TODO:reporting-template -->
+
+### Logistic Regression as ML
+
+**Methods paragraph (copy-paste, fill in italics):**
+
+> *[N=]* participants/observations were analysed using **Logistic Regression as ML** as implemented in *[package vX.Y]* in R *[vX.Y]*. Assumptions were checked: *[list checks performed]*. *[Effect size with 95% confidence interval reported as the primary outcome]*. Two-sided p-values use *α = 0.05*; *[multiple-comparison adjustment if any]*.
+
+**Results paragraph (copy-paste):**
+
+> Logistic Regression as ML yielded *[estimate]* (95% CI *[lower, upper]*, p = *[value]*). *[Diagnostic / assumption summary]*. *[Sensitivity analysis result]*.
+
+**Reviewer checklist for this method.** → [`logistic-regression-ml` — For Reviewers](../chapters/13-ml/logistic-regression-ml.qmd#for-reviewers)
+
+<!-- TODO:reporting-template -->
+
+### Logistic Regression Diagnostics
+
+**Methods paragraph (copy-paste, fill in italics):**
+
+> *[N=]* participants/observations were analysed using **Logistic Regression Diagnostics** as implemented in *[package vX.Y]* in R *[vX.Y]*. Assumptions were checked: *[list checks performed]*. *[Effect size with 95% confidence interval reported as the primary outcome]*. Two-sided p-values use *α = 0.05*; *[multiple-comparison adjustment if any]*.
+
+**Results paragraph (copy-paste):**
+
+> Logistic Regression Diagnostics yielded *[estimate]* (95% CI *[lower, upper]*, p = *[value]*). *[Diagnostic / assumption summary]*. *[Sensitivity analysis result]*.
+
+**Reviewer checklist for this method.** → [`logistic-regression-diagnostics` — For Reviewers](../chapters/07-regression/logistic-regression-diagnostics.qmd#for-reviewers)
+
+<!-- TODO:reporting-template -->
+
+### Minimisation Algorithm
+
+**Methods paragraph (copy-paste, fill in italics):**
+
+> *[N=]* participants/observations were analysed using **Minimisation Algorithm** as implemented in *[package vX.Y]* in R *[vX.Y]*. Assumptions were checked: *[list checks performed]*. *[Effect size with 95% confidence interval reported as the primary outcome]*. Two-sided p-values use *α = 0.05*; *[multiple-comparison adjustment if any]*.
+
+**Results paragraph (copy-paste):**
+
+> Minimisation Algorithm yielded *[estimate]* (95% CI *[lower, upper]*, p = *[value]*). *[Diagnostic / assumption summary]*. *[Sensitivity analysis result]*.
+
+**Reviewer checklist for this method.** → [`minimization-algorithm` — For Reviewers](../chapters/14-clinical/minimization-algorithm.qmd#for-reviewers)
+
+<!-- TODO:reporting-template -->
+
+### Missing Data in RCTs
+
+**Methods paragraph (copy-paste, fill in italics):**
+
+> *[N=]* participants/observations were analysed using **Missing Data in RCTs** as implemented in *[package vX.Y]* in R *[vX.Y]*. Assumptions were checked: *[list checks performed]*. *[Effect size with 95% confidence interval reported as the primary outcome]*. Two-sided p-values use *α = 0.05*; *[multiple-comparison adjustment if any]*.
+
+**Results paragraph (copy-paste):**
+
+> Missing Data in RCTs yielded *[estimate]* (95% CI *[lower, upper]*, p = *[value]*). *[Diagnostic / assumption summary]*. *[Sensitivity analysis result]*.
+
+**Reviewer checklist for this method.** → [`missing-data-rct` — For Reviewers](../chapters/14-clinical/missing-data-rct.qmd#for-reviewers)
+
+<!-- TODO:reporting-template -->
+
+### Mixed-Effects Models: Introduction
+
+**Methods paragraph (copy-paste, fill in italics):**
+
+> *[N=]* participants/observations were analysed using **Mixed-Effects Models: Introduction** as implemented in *[package vX.Y]* in R *[vX.Y]*. Assumptions were checked: *[list checks performed]*. *[Effect size with 95% confidence interval reported as the primary outcome]*. Two-sided p-values use *α = 0.05*; *[multiple-comparison adjustment if any]*.
+
+**Results paragraph (copy-paste):**
+
+> Mixed-Effects Models: Introduction yielded *[estimate]* (95% CI *[lower, upper]*, p = *[value]*). *[Diagnostic / assumption summary]*. *[Sensitivity analysis result]*.
+
+**Reviewer checklist for this method.** → [`mixed-models-intro` — For Reviewers](../chapters/07-regression/mixed-models-intro.qmd#for-reviewers)
+
+<!-- TODO:reporting-template -->
+
+### Model Selection with AIC and BIC
+
+**Methods paragraph (copy-paste, fill in italics):**
+
+> *[N=]* participants/observations were analysed using **Model Selection with AIC and BIC** as implemented in *[package vX.Y]* in R *[vX.Y]*. Assumptions were checked: *[list checks performed]*. *[Effect size with 95% confidence interval reported as the primary outcome]*. Two-sided p-values use *α = 0.05*; *[multiple-comparison adjustment if any]*.
+
+**Results paragraph (copy-paste):**
+
+> Model Selection with AIC and BIC yielded *[estimate]* (95% CI *[lower, upper]*, p = *[value]*). *[Diagnostic / assumption summary]*. *[Sensitivity analysis result]*.
+
+**Reviewer checklist for this method.** → [`model-selection-aic-bic` — For Reviewers](../chapters/07-regression/model-selection-aic-bic.qmd#for-reviewers)
+
+<!-- TODO:reporting-template -->
+
+### Multi-State Models
+
+**Methods paragraph (copy-paste, fill in italics):**
+
+> *[N=]* participants/observations were analysed using **Multi-State Models** as implemented in *[package vX.Y]* in R *[vX.Y]*. Assumptions were checked: *[list checks performed]*. *[Effect size with 95% confidence interval reported as the primary outcome]*. Two-sided p-values use *α = 0.05*; *[multiple-comparison adjustment if any]*.
+
+**Results paragraph (copy-paste):**
+
+> Multi-State Models yielded *[estimate]* (95% CI *[lower, upper]*, p = *[value]*). *[Diagnostic / assumption summary]*. *[Sensitivity analysis result]*.
+
+**Reviewer checklist for this method.** → [`multi-state-models` — For Reviewers](../chapters/11-survival/multi-state-models.qmd#for-reviewers)
+
+<!-- TODO:reporting-template -->
+
+### Multicollinearity and VIF
+
+**Methods paragraph (copy-paste, fill in italics):**
+
+> *[N=]* participants/observations were analysed using **Multicollinearity and VIF** as implemented in *[package vX.Y]* in R *[vX.Y]*. Assumptions were checked: *[list checks performed]*. *[Effect size with 95% confidence interval reported as the primary outcome]*. Two-sided p-values use *α = 0.05*; *[multiple-comparison adjustment if any]*.
+
+**Results paragraph (copy-paste):**
+
+> Multicollinearity and VIF yielded *[estimate]* (95% CI *[lower, upper]*, p = *[value]*). *[Diagnostic / assumption summary]*. *[Sensitivity analysis result]*.
+
+**Reviewer checklist for this method.** → [`multicollinearity-vif` — For Reviewers](../chapters/07-regression/multicollinearity-vif.qmd#for-reviewers)
+
+<!-- TODO:reporting-template -->
+
+### Multinomial Logistic Regression
+
+**Methods paragraph (copy-paste, fill in italics):**
+
+> *[N=]* participants/observations were analysed using **Multinomial Logistic Regression** as implemented in *[package vX.Y]* in R *[vX.Y]*. Assumptions were checked: *[list checks performed]*. *[Effect size with 95% confidence interval reported as the primary outcome]*. Two-sided p-values use *α = 0.05*; *[multiple-comparison adjustment if any]*.
+
+**Results paragraph (copy-paste):**
+
+> Multinomial Logistic Regression yielded *[estimate]* (95% CI *[lower, upper]*, p = *[value]*). *[Diagnostic / assumption summary]*. *[Sensitivity analysis result]*.
+
+**Reviewer checklist for this method.** → [`multinomial-logistic` — For Reviewers](../chapters/07-regression/multinomial-logistic.qmd#for-reviewers)
+
+<!-- TODO:reporting-template -->
+
+### Multiple Imputation
+
+**Methods paragraph (copy-paste, fill in italics):**
+
+> *[N=]* participants/observations were analysed using **Multiple Imputation** as implemented in *[package vX.Y]* in R *[vX.Y]*. Assumptions were checked: *[list checks performed]*. *[Effect size with 95% confidence interval reported as the primary outcome]*. Two-sided p-values use *α = 0.05*; *[multiple-comparison adjustment if any]*.
+
+**Results paragraph (copy-paste):**
+
+> Multiple Imputation yielded *[estimate]* (95% CI *[lower, upper]*, p = *[value]*). *[Diagnostic / assumption summary]*. *[Sensitivity analysis result]*.
+
+**Reviewer checklist for this method.** → [`multiple-imputation` — For Reviewers](../chapters/14-clinical/multiple-imputation.qmd#for-reviewers)
+
+<!-- TODO:reporting-template -->
+
+### Multiple Linear Regression
+
+**Methods paragraph (copy-paste, fill in italics):**
+
+> *[N=]* participants/observations were analysed using **Multiple Linear Regression** as implemented in *[package vX.Y]* in R *[vX.Y]*. Assumptions were checked: *[list checks performed]*. *[Effect size with 95% confidence interval reported as the primary outcome]*. Two-sided p-values use *α = 0.05*; *[multiple-comparison adjustment if any]*.
+
+**Results paragraph (copy-paste):**
+
+> Multiple Linear Regression yielded *[estimate]* (95% CI *[lower, upper]*, p = *[value]*). *[Diagnostic / assumption summary]*. *[Sensitivity analysis result]*.
+
+**Reviewer checklist for this method.** → [`multiple-linear-regression` — For Reviewers](../chapters/07-regression/multiple-linear-regression.qmd#for-reviewers)
+
+<!-- TODO:reporting-template -->
+
+### Naive Bayes
+
+**Methods paragraph (copy-paste, fill in italics):**
+
+> *[N=]* participants/observations were analysed using **Naive Bayes** as implemented in *[package vX.Y]* in R *[vX.Y]*. Assumptions were checked: *[list checks performed]*. *[Effect size with 95% confidence interval reported as the primary outcome]*. Two-sided p-values use *α = 0.05*; *[multiple-comparison adjustment if any]*.
+
+**Results paragraph (copy-paste):**
+
+> Naive Bayes yielded *[estimate]* (95% CI *[lower, upper]*, p = *[value]*). *[Diagnostic / assumption summary]*. *[Sensitivity analysis result]*.
+
+**Reviewer checklist for this method.** → [`naive-bayes` — For Reviewers](../chapters/13-ml/naive-bayes.qmd#for-reviewers)
+
+<!-- TODO:reporting-template -->
+
+### Negative Binomial Regression
+
+**Methods paragraph (copy-paste, fill in italics):**
+
+> *[N=]* participants/observations were analysed using **Negative Binomial Regression** as implemented in *[package vX.Y]* in R *[vX.Y]*. Assumptions were checked: *[list checks performed]*. *[Effect size with 95% confidence interval reported as the primary outcome]*. Two-sided p-values use *α = 0.05*; *[multiple-comparison adjustment if any]*.
+
+**Results paragraph (copy-paste):**
+
+> Negative Binomial Regression yielded *[estimate]* (95% CI *[lower, upper]*, p = *[value]*). *[Diagnostic / assumption summary]*. *[Sensitivity analysis result]*.
+
+**Reviewer checklist for this method.** → [`negative-binomial-regression` — For Reviewers](../chapters/07-regression/negative-binomial-regression.qmd#for-reviewers)
+
+<!-- TODO:reporting-template -->
+
+### Nested Cross-Validation
+
+**Methods paragraph (copy-paste, fill in italics):**
+
+> *[N=]* participants/observations were analysed using **Nested Cross-Validation** as implemented in *[package vX.Y]* in R *[vX.Y]*. Assumptions were checked: *[list checks performed]*. *[Effect size with 95% confidence interval reported as the primary outcome]*. Two-sided p-values use *α = 0.05*; *[multiple-comparison adjustment if any]*.
+
+**Results paragraph (copy-paste):**
+
+> Nested Cross-Validation yielded *[estimate]* (95% CI *[lower, upper]*, p = *[value]*). *[Diagnostic / assumption summary]*. *[Sensitivity analysis result]*.
+
+**Reviewer checklist for this method.** → [`nested-cv` — For Reviewers](../chapters/13-ml/nested-cv.qmd#for-reviewers)
+
+<!-- TODO:reporting-template -->
+
+### Nested vs Crossed Random Effects
+
+**Methods paragraph (copy-paste, fill in italics):**
+
+> *[N=]* participants/observations were analysed using **Nested vs Crossed Random Effects** as implemented in *[package vX.Y]* in R *[vX.Y]*. Assumptions were checked: *[list checks performed]*. *[Effect size with 95% confidence interval reported as the primary outcome]*. Two-sided p-values use *α = 0.05*; *[multiple-comparison adjustment if any]*.
+
+**Results paragraph (copy-paste):**
+
+> Nested vs Crossed Random Effects yielded *[estimate]* (95% CI *[lower, upper]*, p = *[value]*). *[Diagnostic / assumption summary]*. *[Sensitivity analysis result]*.
+
+**Reviewer checklist for this method.** → [`nested-crossed-random-effects` — For Reviewers](../chapters/07-regression/nested-crossed-random-effects.qmd#for-reviewers)
+
+<!-- TODO:reporting-template -->
+
+### Neural Networks: Introduction
+
+**Methods paragraph (copy-paste, fill in italics):**
+
+> *[N=]* participants/observations were analysed using **Neural Networks: Introduction** as implemented in *[package vX.Y]* in R *[vX.Y]*. Assumptions were checked: *[list checks performed]*. *[Effect size with 95% confidence interval reported as the primary outcome]*. Two-sided p-values use *α = 0.05*; *[multiple-comparison adjustment if any]*.
+
+**Results paragraph (copy-paste):**
+
+> Neural Networks: Introduction yielded *[estimate]* (95% CI *[lower, upper]*, p = *[value]*). *[Diagnostic / assumption summary]*. *[Sensitivity analysis result]*.
+
+**Reviewer checklist for this method.** → [`neural-networks-intro` — For Reviewers](../chapters/13-ml/neural-networks-intro.qmd#for-reviewers)
+
+<!-- TODO:reporting-template -->
+
+### Non-Inferiority Margin Selection
+
+**Methods paragraph (copy-paste, fill in italics):**
+
+> *[N=]* participants/observations were analysed using **Non-Inferiority Margin Selection** as implemented in *[package vX.Y]* in R *[vX.Y]*. Assumptions were checked: *[list checks performed]*. *[Effect size with 95% confidence interval reported as the primary outcome]*. Two-sided p-values use *α = 0.05*; *[multiple-comparison adjustment if any]*.
+
+**Results paragraph (copy-paste):**
+
+> Non-Inferiority Margin Selection yielded *[estimate]* (95% CI *[lower, upper]*, p = *[value]*). *[Diagnostic / assumption summary]*. *[Sensitivity analysis result]*.
+
+**Reviewer checklist for this method.** → [`non-inferiority-margin` — For Reviewers](../chapters/14-clinical/non-inferiority-margin.qmd#for-reviewers)
+
+<!-- TODO:reporting-template -->
+
+### O'Brien-Fleming Boundary
+
+**Methods paragraph (copy-paste, fill in italics):**
+
+> *[N=]* participants/observations were analysed using **O'Brien-Fleming Boundary** as implemented in *[package vX.Y]* in R *[vX.Y]*. Assumptions were checked: *[list checks performed]*. *[Effect size with 95% confidence interval reported as the primary outcome]*. Two-sided p-values use *α = 0.05*; *[multiple-comparison adjustment if any]*.
+
+**Results paragraph (copy-paste):**
+
+> O'Brien-Fleming Boundary yielded *[estimate]* (95% CI *[lower, upper]*, p = *[value]*). *[Diagnostic / assumption summary]*. *[Sensitivity analysis result]*.
+
+**Reviewer checklist for this method.** → [`obrien-fleming-boundary` — For Reviewers](../chapters/14-clinical/obrien-fleming-boundary.qmd#for-reviewers)
+
+<!-- TODO:reporting-template -->
+
+### Offsets in Regression
+
+**Methods paragraph (copy-paste, fill in italics):**
+
+> *[N=]* participants/observations were analysed using **Offsets in Regression** as implemented in *[package vX.Y]* in R *[vX.Y]*. Assumptions were checked: *[list checks performed]*. *[Effect size with 95% confidence interval reported as the primary outcome]*. Two-sided p-values use *α = 0.05*; *[multiple-comparison adjustment if any]*.
+
+**Results paragraph (copy-paste):**
+
+> Offsets in Regression yielded *[estimate]* (95% CI *[lower, upper]*, p = *[value]*). *[Diagnostic / assumption summary]*. *[Sensitivity analysis result]*.
+
+**Reviewer checklist for this method.** → [`offsets-in-regression` — For Reviewers](../chapters/07-regression/offsets-in-regression.qmd#for-reviewers)
+
+<!-- TODO:reporting-template -->
+
+### Ordinal Logistic Regression
+
+**Methods paragraph (copy-paste, fill in italics):**
+
+> *[N=]* participants/observations were analysed using **Ordinal Logistic Regression** as implemented in *[package vX.Y]* in R *[vX.Y]*. Assumptions were checked: *[list checks performed]*. *[Effect size with 95% confidence interval reported as the primary outcome]*. Two-sided p-values use *α = 0.05*; *[multiple-comparison adjustment if any]*.
+
+**Results paragraph (copy-paste):**
+
+> Ordinal Logistic Regression yielded *[estimate]* (95% CI *[lower, upper]*, p = *[value]*). *[Diagnostic / assumption summary]*. *[Sensitivity analysis result]*.
+
+**Reviewer checklist for this method.** → [`ordinal-logistic` — For Reviewers](../chapters/07-regression/ordinal-logistic.qmd#for-reviewers)
+
+<!-- TODO:reporting-template -->
+
+### Parallel-Group RCT Design
+
+**Methods paragraph (copy-paste, fill in italics):**
+
+> *[N=]* participants/observations were analysed using **Parallel-Group RCT Design** as implemented in *[package vX.Y]* in R *[vX.Y]*. Assumptions were checked: *[list checks performed]*. *[Effect size with 95% confidence interval reported as the primary outcome]*. Two-sided p-values use *α = 0.05*; *[multiple-comparison adjustment if any]*.
+
+**Results paragraph (copy-paste):**
+
+> Parallel-Group RCT Design yielded *[estimate]* (95% CI *[lower, upper]*, p = *[value]*). *[Diagnostic / assumption summary]*. *[Sensitivity analysis result]*.
+
+**Reviewer checklist for this method.** → [`rct-design-parallel` — For Reviewers](../chapters/14-clinical/rct-design-parallel.qmd#for-reviewers)
+
+<!-- TODO:reporting-template -->
+
+### Parametric Survival: Log-Normal
+
+**Methods paragraph (copy-paste, fill in italics):**
+
+> *[N=]* participants/observations were analysed using **Parametric Survival: Log-Normal** as implemented in *[package vX.Y]* in R *[vX.Y]*. Assumptions were checked: *[list checks performed]*. *[Effect size with 95% confidence interval reported as the primary outcome]*. Two-sided p-values use *α = 0.05*; *[multiple-comparison adjustment if any]*.
+
+**Results paragraph (copy-paste):**
+
+> Parametric Survival: Log-Normal yielded *[estimate]* (95% CI *[lower, upper]*, p = *[value]*). *[Diagnostic / assumption summary]*. *[Sensitivity analysis result]*.
+
+**Reviewer checklist for this method.** → [`parametric-survival-lognormal` — For Reviewers](../chapters/11-survival/parametric-survival-lognormal.qmd#for-reviewers)
+
+<!-- TODO:reporting-template -->
+
+### Parametric Survival: Weibull
+
+**Methods paragraph (copy-paste, fill in italics):**
+
+> *[N=]* participants/observations were analysed using **Parametric Survival: Weibull** as implemented in *[package vX.Y]* in R *[vX.Y]*. Assumptions were checked: *[list checks performed]*. *[Effect size with 95% confidence interval reported as the primary outcome]*. Two-sided p-values use *α = 0.05*; *[multiple-comparison adjustment if any]*.
+
+**Results paragraph (copy-paste):**
+
+> Parametric Survival: Weibull yielded *[estimate]* (95% CI *[lower, upper]*, p = *[value]*). *[Diagnostic / assumption summary]*. *[Sensitivity analysis result]*.
+
+**Reviewer checklist for this method.** → [`parametric-survival-weibull` — For Reviewers](../chapters/11-survival/parametric-survival-weibull.qmd#for-reviewers)
+
+<!-- TODO:reporting-template -->
+
+### Partial Correlation
+
+**Methods paragraph (copy-paste, fill in italics):**
+
+> *[N=]* participants/observations were analysed using **Partial Correlation** as implemented in *[package vX.Y]* in R *[vX.Y]*. Assumptions were checked: *[list checks performed]*. *[Effect size with 95% confidence interval reported as the primary outcome]*. Two-sided p-values use *α = 0.05*; *[multiple-comparison adjustment if any]*.
+
+**Results paragraph (copy-paste):**
+
+> Partial Correlation yielded *[estimate]* (95% CI *[lower, upper]*, p = *[value]*). *[Diagnostic / assumption summary]*. *[Sensitivity analysis result]*.
+
+**Reviewer checklist for this method.** → [`partial-correlation` — For Reviewers](../chapters/07-regression/partial-correlation.qmd#for-reviewers)
+
+<!-- TODO:reporting-template -->
+
+### Partial Dependence Plots
+
+**Methods paragraph (copy-paste, fill in italics):**
+
+> *[N=]* participants/observations were analysed using **Partial Dependence Plots** as implemented in *[package vX.Y]* in R *[vX.Y]*. Assumptions were checked: *[list checks performed]*. *[Effect size with 95% confidence interval reported as the primary outcome]*. Two-sided p-values use *α = 0.05*; *[multiple-comparison adjustment if any]*.
+
+**Results paragraph (copy-paste):**
+
+> Partial Dependence Plots yielded *[estimate]* (95% CI *[lower, upper]*, p = *[value]*). *[Diagnostic / assumption summary]*. *[Sensitivity analysis result]*.
+
+**Reviewer checklist for this method.** → [`partial-dependence-plots` — For Reviewers](../chapters/13-ml/partial-dependence-plots.qmd#for-reviewers)
+
+<!-- TODO:reporting-template -->
+
+### Platt Scaling
+
+**Methods paragraph (copy-paste, fill in italics):**
+
+> *[N=]* participants/observations were analysed using **Platt Scaling** as implemented in *[package vX.Y]* in R *[vX.Y]*. Assumptions were checked: *[list checks performed]*. *[Effect size with 95% confidence interval reported as the primary outcome]*. Two-sided p-values use *α = 0.05*; *[multiple-comparison adjustment if any]*.
+
+**Results paragraph (copy-paste):**
+
+> Platt Scaling yielded *[estimate]* (95% CI *[lower, upper]*, p = *[value]*). *[Diagnostic / assumption summary]*. *[Sensitivity analysis result]*.
+
+**Reviewer checklist for this method.** → [`platt-scaling` — For Reviewers](../chapters/13-ml/platt-scaling.qmd#for-reviewers)
+
+<!-- TODO:reporting-template -->
+
+### Pocock Boundary
+
+**Methods paragraph (copy-paste, fill in italics):**
+
+> *[N=]* participants/observations were analysed using **Pocock Boundary** as implemented in *[package vX.Y]* in R *[vX.Y]*. Assumptions were checked: *[list checks performed]*. *[Effect size with 95% confidence interval reported as the primary outcome]*. Two-sided p-values use *α = 0.05*; *[multiple-comparison adjustment if any]*.
+
+**Results paragraph (copy-paste):**
+
+> Pocock Boundary yielded *[estimate]* (95% CI *[lower, upper]*, p = *[value]*). *[Diagnostic / assumption summary]*. *[Sensitivity analysis result]*.
+
+**Reviewer checklist for this method.** → [`pocock-boundary` — For Reviewers](../chapters/14-clinical/pocock-boundary.qmd#for-reviewers)
+
+<!-- TODO:reporting-template -->
+
+### Poisson Regression
+
+**Methods paragraph (copy-paste, fill in italics):**
+
+> *[N=]* participants/observations were analysed using **Poisson Regression** as implemented in *[package vX.Y]* in R *[vX.Y]*. Assumptions were checked: *[list checks performed]*. *[Effect size with 95% confidence interval reported as the primary outcome]*. Two-sided p-values use *α = 0.05*; *[multiple-comparison adjustment if any]*.
+
+**Results paragraph (copy-paste):**
+
+> Poisson Regression yielded *[estimate]* (95% CI *[lower, upper]*, p = *[value]*). *[Diagnostic / assumption summary]*. *[Sensitivity analysis result]*.
+
+**Reviewer checklist for this method.** → [`poisson-regression` — For Reviewers](../chapters/07-regression/poisson-regression.qmd#for-reviewers)
+
+<!-- TODO:reporting-template -->
+
+### Polynomial Regression
+
+**Methods paragraph (copy-paste, fill in italics):**
+
+> *[N=]* participants/observations were analysed using **Polynomial Regression** as implemented in *[package vX.Y]* in R *[vX.Y]*. Assumptions were checked: *[list checks performed]*. *[Effect size with 95% confidence interval reported as the primary outcome]*. Two-sided p-values use *α = 0.05*; *[multiple-comparison adjustment if any]*.
+
+**Results paragraph (copy-paste):**
+
+> Polynomial Regression yielded *[estimate]* (95% CI *[lower, upper]*, p = *[value]*). *[Diagnostic / assumption summary]*. *[Sensitivity analysis result]*.
+
+**Reviewer checklist for this method.** → [`polynomial-regression` — For Reviewers](../chapters/07-regression/polynomial-regression.qmd#for-reviewers)
+
+<!-- TODO:reporting-template -->
+
+### Predictive Values and Prevalence
+
+**Methods paragraph (copy-paste, fill in italics):**
+
+> *[N=]* participants/observations were analysed using **Predictive Values and Prevalence** as implemented in *[package vX.Y]* in R *[vX.Y]*. Assumptions were checked: *[list checks performed]*. *[Effect size with 95% confidence interval reported as the primary outcome]*. Two-sided p-values use *α = 0.05*; *[multiple-comparison adjustment if any]*.
+
+**Results paragraph (copy-paste):**
+
+> Predictive Values and Prevalence yielded *[estimate]* (95% CI *[lower, upper]*, p = *[value]*). *[Diagnostic / assumption summary]*. *[Sensitivity analysis result]*.
+
+**Reviewer checklist for this method.** → [`predictive-values-prevalence` — For Reviewers](../chapters/14-clinical/predictive-values-prevalence.qmd#for-reviewers)
+
+<!-- TODO:reporting-template -->
+
+### Preprocessing with recipes
+
+**Methods paragraph (copy-paste, fill in italics):**
+
+> *[N=]* participants/observations were analysed using **Preprocessing with recipes** as implemented in *[package vX.Y]* in R *[vX.Y]*. Assumptions were checked: *[list checks performed]*. *[Effect size with 95% confidence interval reported as the primary outcome]*. Two-sided p-values use *α = 0.05*; *[multiple-comparison adjustment if any]*.
+
+**Results paragraph (copy-paste):**
+
+> Preprocessing with recipes yielded *[estimate]* (95% CI *[lower, upper]*, p = *[value]*). *[Diagnostic / assumption summary]*. *[Sensitivity analysis result]*.
+
+**Reviewer checklist for this method.** → [`recipes-preprocessing` — For Reviewers](../chapters/13-ml/recipes-preprocessing.qmd#for-reviewers)
+
+<!-- TODO:reporting-template -->
+
+### Probit Regression
+
+**Methods paragraph (copy-paste, fill in italics):**
+
+> *[N=]* participants/observations were analysed using **Probit Regression** as implemented in *[package vX.Y]* in R *[vX.Y]*. Assumptions were checked: *[list checks performed]*. *[Effect size with 95% confidence interval reported as the primary outcome]*. Two-sided p-values use *α = 0.05*; *[multiple-comparison adjustment if any]*.
+
+**Results paragraph (copy-paste):**
+
+> Probit Regression yielded *[estimate]* (95% CI *[lower, upper]*, p = *[value]*). *[Diagnostic / assumption summary]*. *[Sensitivity analysis result]*.
+
+**Reviewer checklist for this method.** → [`probit-regression` — For Reviewers](../chapters/07-regression/probit-regression.qmd#for-reviewers)
+
+<!-- TODO:reporting-template -->
+
+### Quantile Regression
+
+**Methods paragraph (copy-paste, fill in italics):**
+
+> *[N=]* participants/observations were analysed using **Quantile Regression** as implemented in *[package vX.Y]* in R *[vX.Y]*. Assumptions were checked: *[list checks performed]*. *[Effect size with 95% confidence interval reported as the primary outcome]*. Two-sided p-values use *α = 0.05*; *[multiple-comparison adjustment if any]*.
+
+**Results paragraph (copy-paste):**
+
+> Quantile Regression yielded *[estimate]* (95% CI *[lower, upper]*, p = *[value]*). *[Diagnostic / assumption summary]*. *[Sensitivity analysis result]*.
+
+**Reviewer checklist for this method.** → [`quantile-regression` — For Reviewers](../chapters/07-regression/quantile-regression.qmd#for-reviewers)
+
+<!-- TODO:reporting-template -->
+
+### Quasi-Poisson Regression
+
+**Methods paragraph (copy-paste, fill in italics):**
+
+> *[N=]* participants/observations were analysed using **Quasi-Poisson Regression** as implemented in *[package vX.Y]* in R *[vX.Y]*. Assumptions were checked: *[list checks performed]*. *[Effect size with 95% confidence interval reported as the primary outcome]*. Two-sided p-values use *α = 0.05*; *[multiple-comparison adjustment if any]*.
+
+**Results paragraph (copy-paste):**
+
+> Quasi-Poisson Regression yielded *[estimate]* (95% CI *[lower, upper]*, p = *[value]*). *[Diagnostic / assumption summary]*. *[Sensitivity analysis result]*.
+
+**Reviewer checklist for this method.** → [`quasi-poisson` — For Reviewers](../chapters/07-regression/quasi-poisson.qmd#for-reviewers)
+
+<!-- TODO:reporting-template -->
+
+### R-Squared and Adjusted R-Squared
+
+**Methods paragraph (copy-paste, fill in italics):**
+
+> *[N=]* participants/observations were analysed using **R-Squared and Adjusted R-Squared** as implemented in *[package vX.Y]* in R *[vX.Y]*. Assumptions were checked: *[list checks performed]*. *[Effect size with 95% confidence interval reported as the primary outcome]*. Two-sided p-values use *α = 0.05*; *[multiple-comparison adjustment if any]*.
+
+**Results paragraph (copy-paste):**
+
+> R-Squared and Adjusted R-Squared yielded *[estimate]* (95% CI *[lower, upper]*, p = *[value]*). *[Diagnostic / assumption summary]*. *[Sensitivity analysis result]*.
+
+**Reviewer checklist for this method.** → [`r-squared-adjusted` — For Reviewers](../chapters/07-regression/r-squared-adjusted.qmd#for-reviewers)
+
+<!-- TODO:reporting-template -->
+
+### Random Forests
+
+**Methods paragraph (copy-paste, fill in italics):**
+
+> *[N=]* participants/observations were analysed using **Random Forests** as implemented in *[package vX.Y]* in R *[vX.Y]*. Assumptions were checked: *[list checks performed]*. *[Effect size with 95% confidence interval reported as the primary outcome]*. Two-sided p-values use *α = 0.05*; *[multiple-comparison adjustment if any]*.
+
+**Results paragraph (copy-paste):**
+
+> Random Forests yielded *[estimate]* (95% CI *[lower, upper]*, p = *[value]*). *[Diagnostic / assumption summary]*. *[Sensitivity analysis result]*.
+
+**Reviewer checklist for this method.** → [`random-forest` — For Reviewers](../chapters/13-ml/random-forest.qmd#for-reviewers)
+
+<!-- TODO:reporting-template -->
+
+### Random-Intercept Models
+
+**Methods paragraph (copy-paste, fill in italics):**
+
+> *[N=]* participants/observations were analysed using **Random-Intercept Models** as implemented in *[package vX.Y]* in R *[vX.Y]*. Assumptions were checked: *[list checks performed]*. *[Effect size with 95% confidence interval reported as the primary outcome]*. Two-sided p-values use *α = 0.05*; *[multiple-comparison adjustment if any]*.
+
+**Results paragraph (copy-paste):**
+
+> Random-Intercept Models yielded *[estimate]* (95% CI *[lower, upper]*, p = *[value]*). *[Diagnostic / assumption summary]*. *[Sensitivity analysis result]*.
+
+**Reviewer checklist for this method.** → [`random-intercepts` — For Reviewers](../chapters/07-regression/random-intercepts.qmd#for-reviewers)
+
+<!-- TODO:reporting-template -->
+
+### Random-Slope Models
+
+**Methods paragraph (copy-paste, fill in italics):**
+
+> *[N=]* participants/observations were analysed using **Random-Slope Models** as implemented in *[package vX.Y]* in R *[vX.Y]*. Assumptions were checked: *[list checks performed]*. *[Effect size with 95% confidence interval reported as the primary outcome]*. Two-sided p-values use *α = 0.05*; *[multiple-comparison adjustment if any]*.
+
+**Results paragraph (copy-paste):**
+
+> Random-Slope Models yielded *[estimate]* (95% CI *[lower, upper]*, p = *[value]*). *[Diagnostic / assumption summary]*. *[Sensitivity analysis result]*.
+
+**Reviewer checklist for this method.** → [`random-slopes` — For Reviewers](../chapters/07-regression/random-slopes.qmd#for-reviewers)
+
+<!-- TODO:reporting-template -->
+
+### Randomisation Methods
+
+**Methods paragraph (copy-paste, fill in italics):**
+
+> *[N=]* participants/observations were analysed using **Randomisation Methods** as implemented in *[package vX.Y]* in R *[vX.Y]*. Assumptions were checked: *[list checks performed]*. *[Effect size with 95% confidence interval reported as the primary outcome]*. Two-sided p-values use *α = 0.05*; *[multiple-comparison adjustment if any]*.
+
+**Results paragraph (copy-paste):**
+
+> Randomisation Methods yielded *[estimate]* (95% CI *[lower, upper]*, p = *[value]*). *[Diagnostic / assumption summary]*. *[Sensitivity analysis result]*.
+
+**Reviewer checklist for this method.** → [`randomization-methods` — For Reviewers](../chapters/14-clinical/randomization-methods.qmd#for-reviewers)
+
+<!-- TODO:reporting-template -->
+
+### Recurrent Events
+
+**Methods paragraph (copy-paste, fill in italics):**
+
+> *[N=]* participants/observations were analysed using **Recurrent Events** as implemented in *[package vX.Y]* in R *[vX.Y]*. Assumptions were checked: *[list checks performed]*. *[Effect size with 95% confidence interval reported as the primary outcome]*. Two-sided p-values use *α = 0.05*; *[multiple-comparison adjustment if any]*.
+
+**Results paragraph (copy-paste):**
+
+> Recurrent Events yielded *[estimate]* (95% CI *[lower, upper]*, p = *[value]*). *[Diagnostic / assumption summary]*. *[Sensitivity analysis result]*.
+
+**Reviewer checklist for this method.** → [`recurrent-events` — For Reviewers](../chapters/11-survival/recurrent-events.qmd#for-reviewers)
+
+<!-- TODO:reporting-template -->
+
+### Regularisation in ML
+
+**Methods paragraph (copy-paste, fill in italics):**
+
+> *[N=]* participants/observations were analysed using **Regularisation in ML** as implemented in *[package vX.Y]* in R *[vX.Y]*. Assumptions were checked: *[list checks performed]*. *[Effect size with 95% confidence interval reported as the primary outcome]*. Two-sided p-values use *α = 0.05*; *[multiple-comparison adjustment if any]*.
+
+**Results paragraph (copy-paste):**
+
+> Regularisation in ML yielded *[estimate]* (95% CI *[lower, upper]*, p = *[value]*). *[Diagnostic / assumption summary]*. *[Sensitivity analysis result]*.
+
+**Reviewer checklist for this method.** → [`regularization-ridge-lasso-ml` — For Reviewers](../chapters/13-ml/regularization-ridge-lasso-ml.qmd#for-reviewers)
+
+<!-- TODO:reporting-template -->
+
+### Reliability and Cronbach's Alpha
+
+**Methods paragraph (copy-paste, fill in italics):**
+
+> *[N=]* participants/observations were analysed using **Reliability and Cronbach's Alpha** as implemented in *[package vX.Y]* in R *[vX.Y]*. Assumptions were checked: *[list checks performed]*. *[Effect size with 95% confidence interval reported as the primary outcome]*. Two-sided p-values use *α = 0.05*; *[multiple-comparison adjustment if any]*.
+
+**Results paragraph (copy-paste):**
+
+> Reliability and Cronbach's Alpha yielded *[estimate]* (95% CI *[lower, upper]*, p = *[value]*). *[Diagnostic / assumption summary]*. *[Sensitivity analysis result]*.
+
+**Reviewer checklist for this method.** → [`reliability-cronbach-alpha` — For Reviewers](../chapters/14-clinical/reliability-cronbach-alpha.qmd#for-reviewers)
+
+<!-- TODO:reporting-template -->
+
+### Residual Diagnostics
+
+**Methods paragraph (copy-paste, fill in italics):**
+
+> *[N=]* participants/observations were analysed using **Residual Diagnostics** as implemented in *[package vX.Y]* in R *[vX.Y]*. Assumptions were checked: *[list checks performed]*. *[Effect size with 95% confidence interval reported as the primary outcome]*. Two-sided p-values use *α = 0.05*; *[multiple-comparison adjustment if any]*.
+
+**Results paragraph (copy-paste):**
+
+> Residual Diagnostics yielded *[estimate]* (95% CI *[lower, upper]*, p = *[value]*). *[Diagnostic / assumption summary]*. *[Sensitivity analysis result]*.
+
+**Reviewer checklist for this method.** → [`residual-diagnostics` — For Reviewers](../chapters/07-regression/residual-diagnostics.qmd#for-reviewers)
+
+<!-- TODO:reporting-template -->
+
+### Restricted Mean Survival Time (RMST)
+
+**Methods paragraph (copy-paste, fill in italics):**
+
+> *[N=]* participants/observations were analysed using **Restricted Mean Survival Time (RMST)** as implemented in *[package vX.Y]* in R *[vX.Y]*. Assumptions were checked: *[list checks performed]*. *[Effect size with 95% confidence interval reported as the primary outcome]*. Two-sided p-values use *α = 0.05*; *[multiple-comparison adjustment if any]*.
+
+**Results paragraph (copy-paste):**
+
+> Restricted Mean Survival Time (RMST) yielded *[estimate]* (95% CI *[lower, upper]*, p = *[value]*). *[Diagnostic / assumption summary]*. *[Sensitivity analysis result]*.
+
+**Reviewer checklist for this method.** → [`restricted-mean-survival-time` — For Reviewers](../chapters/11-survival/restricted-mean-survival-time.qmd#for-reviewers)
+
+<!-- TODO:reporting-template -->
+
+### Ridge Regression
+
+**Methods paragraph (copy-paste, fill in italics):**
+
+> *[N=]* participants/observations were analysed using **Ridge Regression** as implemented in *[package vX.Y]* in R *[vX.Y]*. Assumptions were checked: *[list checks performed]*. *[Effect size with 95% confidence interval reported as the primary outcome]*. Two-sided p-values use *α = 0.05*; *[multiple-comparison adjustment if any]*.
+
+**Results paragraph (copy-paste):**
+
+> Ridge Regression yielded *[estimate]* (95% CI *[lower, upper]*, p = *[value]*). *[Diagnostic / assumption summary]*. *[Sensitivity analysis result]*.
+
+**Reviewer checklist for this method.** → [`ridge-regression` — For Reviewers](../chapters/07-regression/ridge-regression.qmd#for-reviewers)
+
+<!-- TODO:reporting-template -->
+
+### RNNs and LSTMs: Introduction
+
+**Methods paragraph (copy-paste, fill in italics):**
+
+> *[N=]* participants/observations were analysed using **RNNs and LSTMs: Introduction** as implemented in *[package vX.Y]* in R *[vX.Y]*. Assumptions were checked: *[list checks performed]*. *[Effect size with 95% confidence interval reported as the primary outcome]*. Two-sided p-values use *α = 0.05*; *[multiple-comparison adjustment if any]*.
+
+**Results paragraph (copy-paste):**
+
+> RNNs and LSTMs: Introduction yielded *[estimate]* (95% CI *[lower, upper]*, p = *[value]*). *[Diagnostic / assumption summary]*. *[Sensitivity analysis result]*.
+
+**Reviewer checklist for this method.** → [`rnn-lstm-intro` — For Reviewers](../chapters/13-ml/rnn-lstm-intro.qmd#for-reviewers)
+
+<!-- TODO:reporting-template -->
+
+### Robust Regression
+
+**Methods paragraph (copy-paste, fill in italics):**
+
+> *[N=]* participants/observations were analysed using **Robust Regression** as implemented in *[package vX.Y]* in R *[vX.Y]*. Assumptions were checked: *[list checks performed]*. *[Effect size with 95% confidence interval reported as the primary outcome]*. Two-sided p-values use *α = 0.05*; *[multiple-comparison adjustment if any]*.
+
+**Results paragraph (copy-paste):**
+
+> Robust Regression yielded *[estimate]* (95% CI *[lower, upper]*, p = *[value]*). *[Diagnostic / assumption summary]*. *[Sensitivity analysis result]*.
+
+**Reviewer checklist for this method.** → [`robust-regression` — For Reviewers](../chapters/07-regression/robust-regression.qmd#for-reviewers)
+
+<!-- TODO:reporting-template -->
+
+### ROC Analysis
+
+**Methods paragraph (copy-paste, fill in italics):**
+
+> *[N=]* participants/observations were analysed using **ROC Analysis** as implemented in *[package vX.Y]* in R *[vX.Y]*. Assumptions were checked: *[list checks performed]*. *[Effect size with 95% confidence interval reported as the primary outcome]*. Two-sided p-values use *α = 0.05*; *[multiple-comparison adjustment if any]*.
+
+**Results paragraph (copy-paste):**
+
+> ROC Analysis yielded *[estimate]* (95% CI *[lower, upper]*, p = *[value]*). *[Diagnostic / assumption summary]*. *[Sensitivity analysis result]*.
+
+**Reviewer checklist for this method.** → [`roc-analysis` — For Reviewers](../chapters/14-clinical/roc-analysis.qmd#for-reviewers)
+
+<!-- TODO:reporting-template -->
+
+### ROC and AUC for Logistic Models
+
+**Methods paragraph (copy-paste, fill in italics):**
+
+> *[N=]* participants/observations were analysed using **ROC and AUC for Logistic Models** as implemented in *[package vX.Y]* in R *[vX.Y]*. Assumptions were checked: *[list checks performed]*. *[Effect size with 95% confidence interval reported as the primary outcome]*. Two-sided p-values use *α = 0.05*; *[multiple-comparison adjustment if any]*.
+
+**Results paragraph (copy-paste):**
+
+> ROC and AUC for Logistic Models yielded *[estimate]* (95% CI *[lower, upper]*, p = *[value]*). *[Diagnostic / assumption summary]*. *[Sensitivity analysis result]*.
+
+**Reviewer checklist for this method.** → [`roc-auc-for-logistic` — For Reviewers](../chapters/07-regression/roc-auc-for-logistic.qmd#for-reviewers)
+
+<!-- TODO:reporting-template -->
+
+### Royston-Parmar Flexible Parametric Models
+
+**Methods paragraph (copy-paste, fill in italics):**
+
+> *[N=]* participants/observations were analysed using **Royston-Parmar Flexible Parametric Models** as implemented in *[package vX.Y]* in R *[vX.Y]*. Assumptions were checked: *[list checks performed]*. *[Effect size with 95% confidence interval reported as the primary outcome]*. Two-sided p-values use *α = 0.05*; *[multiple-comparison adjustment if any]*.
+
+**Results paragraph (copy-paste):**
+
+> Royston-Parmar Flexible Parametric Models yielded *[estimate]* (95% CI *[lower, upper]*, p = *[value]*). *[Diagnostic / assumption summary]*. *[Sensitivity analysis result]*.
+
+**Reviewer checklist for this method.** → [`flexible-parametric-royston-parmar` — For Reviewers](../chapters/11-survival/flexible-parametric-royston-parmar.qmd#for-reviewers)
+
+<!-- TODO:reporting-template -->
+
+### Sample Size Re-Estimation
+
+**Methods paragraph (copy-paste, fill in italics):**
+
+> *[N=]* participants/observations were analysed using **Sample Size Re-Estimation** as implemented in *[package vX.Y]* in R *[vX.Y]*. Assumptions were checked: *[list checks performed]*. *[Effect size with 95% confidence interval reported as the primary outcome]*. Two-sided p-values use *α = 0.05*; *[multiple-comparison adjustment if any]*.
+
+**Results paragraph (copy-paste):**
+
+> Sample Size Re-Estimation yielded *[estimate]* (95% CI *[lower, upper]*, p = *[value]*). *[Diagnostic / assumption summary]*. *[Sensitivity analysis result]*.
+
+**Reviewer checklist for this method.** → [`sample-size-reestimation` — For Reviewers](../chapters/14-clinical/sample-size-reestimation.qmd#for-reviewers)
+
+<!-- TODO:reporting-template -->
+
+### Schoenfeld Residuals
+
+**Methods paragraph (copy-paste, fill in italics):**
+
+> *[N=]* participants/observations were analysed using **Schoenfeld Residuals** as implemented in *[package vX.Y]* in R *[vX.Y]*. Assumptions were checked: *[list checks performed]*. *[Effect size with 95% confidence interval reported as the primary outcome]*. Two-sided p-values use *α = 0.05*; *[multiple-comparison adjustment if any]*.
+
+**Results paragraph (copy-paste):**
+
+> Schoenfeld Residuals yielded *[estimate]* (95% CI *[lower, upper]*, p = *[value]*). *[Diagnostic / assumption summary]*. *[Sensitivity analysis result]*.
+
+**Reviewer checklist for this method.** → [`schoenfeld-residuals` — For Reviewers](../chapters/11-survival/schoenfeld-residuals.qmd#for-reviewers)
+
+<!-- TODO:reporting-template -->
+
+### Sensitivity Analyses in Clinical Trials
+
+**Methods paragraph (copy-paste, fill in italics):**
+
+> *[N=]* participants/observations were analysed using **Sensitivity Analyses in Clinical Trials** as implemented in *[package vX.Y]* in R *[vX.Y]*. Assumptions were checked: *[list checks performed]*. *[Effect size with 95% confidence interval reported as the primary outcome]*. Two-sided p-values use *α = 0.05*; *[multiple-comparison adjustment if any]*.
+
+**Results paragraph (copy-paste):**
+
+> Sensitivity Analyses in Clinical Trials yielded *[estimate]* (95% CI *[lower, upper]*, p = *[value]*). *[Diagnostic / assumption summary]*. *[Sensitivity analysis result]*.
+
+**Reviewer checklist for this method.** → [`sensitivity-analysis-clinical` — For Reviewers](../chapters/14-clinical/sensitivity-analysis-clinical.qmd#for-reviewers)
+
+<!-- TODO:reporting-template -->
+
+### SHAP Values
+
+**Methods paragraph (copy-paste, fill in italics):**
+
+> *[N=]* participants/observations were analysed using **SHAP Values** as implemented in *[package vX.Y]* in R *[vX.Y]*. Assumptions were checked: *[list checks performed]*. *[Effect size with 95% confidence interval reported as the primary outcome]*. Two-sided p-values use *α = 0.05*; *[multiple-comparison adjustment if any]*.
+
+**Results paragraph (copy-paste):**
+
+> SHAP Values yielded *[estimate]* (95% CI *[lower, upper]*, p = *[value]*). *[Diagnostic / assumption summary]*. *[Sensitivity analysis result]*.
+
+**Reviewer checklist for this method.** → [`shap-values` — For Reviewers](../chapters/13-ml/shap-values.qmd#for-reviewers)
+
+<!-- TODO:reporting-template -->
+
+### Simple Linear Regression
+
+**Methods paragraph (copy-paste, fill in italics):**
+
+> *[N=]* participants/observations were analysed using **Simple Linear Regression** as implemented in *[package vX.Y]* in R *[vX.Y]*. Assumptions were checked: *[list checks performed]*. *[Effect size with 95% confidence interval reported as the primary outcome]*. Two-sided p-values use *α = 0.05*; *[multiple-comparison adjustment if any]*.
+
+**Results paragraph (copy-paste):**
+
+> Simple Linear Regression yielded *[estimate]* (95% CI *[lower, upper]*, p = *[value]*). *[Diagnostic / assumption summary]*. *[Sensitivity analysis result]*.
+
+**Reviewer checklist for this method.** → [`simple-linear-regression` — For Reviewers](../chapters/07-regression/simple-linear-regression.qmd#for-reviewers)
+
+<!-- TODO:reporting-template -->
+
+### Simulating Survival Data
+
+**Methods paragraph (copy-paste, fill in italics):**
+
+> *[N=]* participants/observations were analysed using **Simulating Survival Data** as implemented in *[package vX.Y]* in R *[vX.Y]*. Assumptions were checked: *[list checks performed]*. *[Effect size with 95% confidence interval reported as the primary outcome]*. Two-sided p-values use *α = 0.05*; *[multiple-comparison adjustment if any]*.
+
+**Results paragraph (copy-paste):**
+
+> Simulating Survival Data yielded *[estimate]* (95% CI *[lower, upper]*, p = *[value]*). *[Diagnostic / assumption summary]*. *[Sensitivity analysis result]*.
+
+**Reviewer checklist for this method.** → [`survival-simulation` — For Reviewers](../chapters/11-survival/survival-simulation.qmd#for-reviewers)
+
+<!-- TODO:reporting-template -->
+
+### SMOTE for Imbalanced Classes
+
+**Methods paragraph (copy-paste, fill in italics):**
+
+> *[N=]* participants/observations were analysed using **SMOTE for Imbalanced Classes** as implemented in *[package vX.Y]* in R *[vX.Y]*. Assumptions were checked: *[list checks performed]*. *[Effect size with 95% confidence interval reported as the primary outcome]*. Two-sided p-values use *α = 0.05*; *[multiple-comparison adjustment if any]*.
+
+**Results paragraph (copy-paste):**
+
+> SMOTE for Imbalanced Classes yielded *[estimate]* (95% CI *[lower, upper]*, p = *[value]*). *[Diagnostic / assumption summary]*. *[Sensitivity analysis result]*.
+
+**Reviewer checklist for this method.** → [`smote-imbalanced` — For Reviewers](../chapters/13-ml/smote-imbalanced.qmd#for-reviewers)
+
+<!-- TODO:reporting-template -->
+
+### Spline Regression
+
+**Methods paragraph (copy-paste, fill in italics):**
+
+> *[N=]* participants/observations were analysed using **Spline Regression** as implemented in *[package vX.Y]* in R *[vX.Y]*. Assumptions were checked: *[list checks performed]*. *[Effect size with 95% confidence interval reported as the primary outcome]*. Two-sided p-values use *α = 0.05*; *[multiple-comparison adjustment if any]*.
+
+**Results paragraph (copy-paste):**
+
+> Spline Regression yielded *[estimate]* (95% CI *[lower, upper]*, p = *[value]*). *[Diagnostic / assumption summary]*. *[Sensitivity analysis result]*.
+
+**Reviewer checklist for this method.** → [`spline-regression` — For Reviewers](../chapters/07-regression/spline-regression.qmd#for-reviewers)
+
+<!-- TODO:reporting-template -->
+
+### Stacking Ensembles
+
+**Methods paragraph (copy-paste, fill in italics):**
+
+> *[N=]* participants/observations were analysed using **Stacking Ensembles** as implemented in *[package vX.Y]* in R *[vX.Y]*. Assumptions were checked: *[list checks performed]*. *[Effect size with 95% confidence interval reported as the primary outcome]*. Two-sided p-values use *α = 0.05*; *[multiple-comparison adjustment if any]*.
+
+**Results paragraph (copy-paste):**
+
+> Stacking Ensembles yielded *[estimate]* (95% CI *[lower, upper]*, p = *[value]*). *[Diagnostic / assumption summary]*. *[Sensitivity analysis result]*.
+
+**Reviewer checklist for this method.** → [`stacking-ensembles` — For Reviewers](../chapters/13-ml/stacking-ensembles.qmd#for-reviewers)
+
+<!-- TODO:reporting-template -->
+
+### Stepped-Wedge Trial
+
+**Methods paragraph (copy-paste, fill in italics):**
+
+> *[N=]* participants/observations were analysed using **Stepped-Wedge Trial** as implemented in *[package vX.Y]* in R *[vX.Y]*. Assumptions were checked: *[list checks performed]*. *[Effect size with 95% confidence interval reported as the primary outcome]*. Two-sided p-values use *α = 0.05*; *[multiple-comparison adjustment if any]*.
+
+**Results paragraph (copy-paste):**
+
+> Stepped-Wedge Trial yielded *[estimate]* (95% CI *[lower, upper]*, p = *[value]*). *[Diagnostic / assumption summary]*. *[Sensitivity analysis result]*.
+
+**Reviewer checklist for this method.** → [`stepped-wedge-trial` — For Reviewers](../chapters/14-clinical/stepped-wedge-trial.qmd#for-reviewers)
+
+<!-- TODO:reporting-template -->
+
+### Stepwise Regression: Pitfalls
+
+**Methods paragraph (copy-paste, fill in italics):**
+
+> *[N=]* participants/observations were analysed using **Stepwise Regression: Pitfalls** as implemented in *[package vX.Y]* in R *[vX.Y]*. Assumptions were checked: *[list checks performed]*. *[Effect size with 95% confidence interval reported as the primary outcome]*. Two-sided p-values use *α = 0.05*; *[multiple-comparison adjustment if any]*.
+
+**Results paragraph (copy-paste):**
+
+> Stepwise Regression: Pitfalls yielded *[estimate]* (95% CI *[lower, upper]*, p = *[value]*). *[Diagnostic / assumption summary]*. *[Sensitivity analysis result]*.
+
+**Reviewer checklist for this method.** → [`stepwise-regression-pitfalls` — For Reviewers](../chapters/07-regression/stepwise-regression-pitfalls.qmd#for-reviewers)
+
+<!-- TODO:reporting-template -->
+
+### Stratified Cox Models
+
+**Methods paragraph (copy-paste, fill in italics):**
+
+> *[N=]* participants/observations were analysed using **Stratified Cox Models** as implemented in *[package vX.Y]* in R *[vX.Y]*. Assumptions were checked: *[list checks performed]*. *[Effect size with 95% confidence interval reported as the primary outcome]*. Two-sided p-values use *α = 0.05*; *[multiple-comparison adjustment if any]*.
+
+**Results paragraph (copy-paste):**
+
+> Stratified Cox Models yielded *[estimate]* (95% CI *[lower, upper]*, p = *[value]*). *[Diagnostic / assumption summary]*. *[Sensitivity analysis result]*.
+
+**Reviewer checklist for this method.** → [`stratified-cox` — For Reviewers](../chapters/11-survival/stratified-cox.qmd#for-reviewers)
+
+<!-- TODO:reporting-template -->
+
+### Stratified Randomisation
+
+**Methods paragraph (copy-paste, fill in italics):**
+
+> *[N=]* participants/observations were analysed using **Stratified Randomisation** as implemented in *[package vX.Y]* in R *[vX.Y]*. Assumptions were checked: *[list checks performed]*. *[Effect size with 95% confidence interval reported as the primary outcome]*. Two-sided p-values use *α = 0.05*; *[multiple-comparison adjustment if any]*.
+
+**Results paragraph (copy-paste):**
+
+> Stratified Randomisation yielded *[estimate]* (95% CI *[lower, upper]*, p = *[value]*). *[Diagnostic / assumption summary]*. *[Sensitivity analysis result]*.
+
+**Reviewer checklist for this method.** → [`stratified-randomization` — For Reviewers](../chapters/14-clinical/stratified-randomization.qmd#for-reviewers)
+
+<!-- TODO:reporting-template -->
+
+### Subgroup Analyses
+
+**Methods paragraph (copy-paste, fill in italics):**
+
+> *[N=]* participants/observations were analysed using **Subgroup Analyses** as implemented in *[package vX.Y]* in R *[vX.Y]*. Assumptions were checked: *[list checks performed]*. *[Effect size with 95% confidence interval reported as the primary outcome]*. Two-sided p-values use *α = 0.05*; *[multiple-comparison adjustment if any]*.
+
+**Results paragraph (copy-paste):**
+
+> Subgroup Analyses yielded *[estimate]* (95% CI *[lower, upper]*, p = *[value]*). *[Diagnostic / assumption summary]*. *[Sensitivity analysis result]*.
+
+**Reviewer checklist for this method.** → [`subgroup-analysis` — For Reviewers](../chapters/14-clinical/subgroup-analysis.qmd#for-reviewers)
+
+<!-- TODO:reporting-template -->
+
+### Subgroup Forest Plots
+
+**Methods paragraph (copy-paste, fill in italics):**
+
+> *[N=]* participants/observations were analysed using **Subgroup Forest Plots** as implemented in *[package vX.Y]* in R *[vX.Y]*. Assumptions were checked: *[list checks performed]*. *[Effect size with 95% confidence interval reported as the primary outcome]*. Two-sided p-values use *α = 0.05*; *[multiple-comparison adjustment if any]*.
+
+**Results paragraph (copy-paste):**
+
+> Subgroup Forest Plots yielded *[estimate]* (95% CI *[lower, upper]*, p = *[value]*). *[Diagnostic / assumption summary]*. *[Sensitivity analysis result]*.
+
+**Reviewer checklist for this method.** → [`forest-plot-subgroup` — For Reviewers](../chapters/14-clinical/forest-plot-subgroup.qmd#for-reviewers)
+
+<!-- TODO:reporting-template -->
+
+### Supervised Learning: Overview
+
+**Methods paragraph (copy-paste, fill in italics):**
+
+> *[N=]* participants/observations were analysed using **Supervised Learning: Overview** as implemented in *[package vX.Y]* in R *[vX.Y]*. Assumptions were checked: *[list checks performed]*. *[Effect size with 95% confidence interval reported as the primary outcome]*. Two-sided p-values use *α = 0.05*; *[multiple-comparison adjustment if any]*.
+
+**Results paragraph (copy-paste):**
+
+> Supervised Learning: Overview yielded *[estimate]* (95% CI *[lower, upper]*, p = *[value]*). *[Diagnostic / assumption summary]*. *[Sensitivity analysis result]*.
+
+**Reviewer checklist for this method.** → [`supervised-learning-overview` — For Reviewers](../chapters/13-ml/supervised-learning-overview.qmd#for-reviewers)
+
+<!-- TODO:reporting-template -->
+
+### The Bias-Variance Tradeoff
+
+**Methods paragraph (copy-paste, fill in italics):**
+
+> *[N=]* participants/observations were analysed using **The Bias-Variance Tradeoff** as implemented in *[package vX.Y]* in R *[vX.Y]*. Assumptions were checked: *[list checks performed]*. *[Effect size with 95% confidence interval reported as the primary outcome]*. Two-sided p-values use *α = 0.05*; *[multiple-comparison adjustment if any]*.
+
+**Results paragraph (copy-paste):**
+
+> The Bias-Variance Tradeoff yielded *[estimate]* (95% CI *[lower, upper]*, p = *[value]*). *[Diagnostic / assumption summary]*. *[Sensitivity analysis result]*.
+
+**Reviewer checklist for this method.** → [`bias-variance-tradeoff` — For Reviewers](../chapters/13-ml/bias-variance-tradeoff.qmd#for-reviewers)
+
+<!-- TODO:reporting-template -->
+
+### The Brier Score for Survival
+
+**Methods paragraph (copy-paste, fill in italics):**
+
+> *[N=]* participants/observations were analysed using **The Brier Score for Survival** as implemented in *[package vX.Y]* in R *[vX.Y]*. Assumptions were checked: *[list checks performed]*. *[Effect size with 95% confidence interval reported as the primary outcome]*. Two-sided p-values use *α = 0.05*; *[multiple-comparison adjustment if any]*.
+
+**Results paragraph (copy-paste):**
+
+> The Brier Score for Survival yielded *[estimate]* (95% CI *[lower, upper]*, p = *[value]*). *[Diagnostic / assumption summary]*. *[Sensitivity analysis result]*.
+
+**Reviewer checklist for this method.** → [`brier-score-survival` — For Reviewers](../chapters/11-survival/brier-score-survival.qmd#for-reviewers)
+
+<!-- TODO:reporting-template -->
+
+### The Nelson-Aalen Estimator
+
+**Methods paragraph (copy-paste, fill in italics):**
+
+> *[N=]* participants/observations were analysed using **The Nelson-Aalen Estimator** as implemented in *[package vX.Y]* in R *[vX.Y]*. Assumptions were checked: *[list checks performed]*. *[Effect size with 95% confidence interval reported as the primary outcome]*. Two-sided p-values use *α = 0.05*; *[multiple-comparison adjustment if any]*.
+
+**Results paragraph (copy-paste):**
+
+> The Nelson-Aalen Estimator yielded *[estimate]* (95% CI *[lower, upper]*, p = *[value]*). *[Diagnostic / assumption summary]*. *[Sensitivity analysis result]*.
+
+**Reviewer checklist for this method.** → [`nelson-aalen-estimator` — For Reviewers](../chapters/11-survival/nelson-aalen-estimator.qmd#for-reviewers)
+
+<!-- TODO:reporting-template -->
+
+### Time-Dependent ROC
+
+**Methods paragraph (copy-paste, fill in italics):**
+
+> *[N=]* participants/observations were analysed using **Time-Dependent ROC** as implemented in *[package vX.Y]* in R *[vX.Y]*. Assumptions were checked: *[list checks performed]*. *[Effect size with 95% confidence interval reported as the primary outcome]*. Two-sided p-values use *α = 0.05*; *[multiple-comparison adjustment if any]*.
+
+**Results paragraph (copy-paste):**
+
+> Time-Dependent ROC yielded *[estimate]* (95% CI *[lower, upper]*, p = *[value]*). *[Diagnostic / assumption summary]*. *[Sensitivity analysis result]*.
+
+**Reviewer checklist for this method.** → [`time-dependent-roc` — For Reviewers](../chapters/11-survival/time-dependent-roc.qmd#for-reviewers)
+
+<!-- TODO:reporting-template -->
+
+### Time-Varying Covariates
+
+**Methods paragraph (copy-paste, fill in italics):**
+
+> *[N=]* participants/observations were analysed using **Time-Varying Covariates** as implemented in *[package vX.Y]* in R *[vX.Y]*. Assumptions were checked: *[list checks performed]*. *[Effect size with 95% confidence interval reported as the primary outcome]*. Two-sided p-values use *α = 0.05*; *[multiple-comparison adjustment if any]*.
+
+**Results paragraph (copy-paste):**
+
+> Time-Varying Covariates yielded *[estimate]* (95% CI *[lower, upper]*, p = *[value]*). *[Diagnostic / assumption summary]*. *[Sensitivity analysis result]*.
+
+**Reviewer checklist for this method.** → [`time-varying-covariates` — For Reviewers](../chapters/11-survival/time-varying-covariates.qmd#for-reviewers)
+
+<!-- TODO:reporting-template -->
+
+### Tobit Regression
+
+**Methods paragraph (copy-paste, fill in italics):**
+
+> *[N=]* participants/observations were analysed using **Tobit Regression** as implemented in *[package vX.Y]* in R *[vX.Y]*. Assumptions were checked: *[list checks performed]*. *[Effect size with 95% confidence interval reported as the primary outcome]*. Two-sided p-values use *α = 0.05*; *[multiple-comparison adjustment if any]*.
+
+**Results paragraph (copy-paste):**
+
+> Tobit Regression yielded *[estimate]* (95% CI *[lower, upper]*, p = *[value]*). *[Diagnostic / assumption summary]*. *[Sensitivity analysis result]*.
+
+**Reviewer checklist for this method.** → [`tobit-regression` — For Reviewers](../chapters/07-regression/tobit-regression.qmd#for-reviewers)
+
+<!-- TODO:reporting-template -->
+
+### Train-Test Splits
+
+**Methods paragraph (copy-paste, fill in italics):**
+
+> *[N=]* participants/observations were analysed using **Train-Test Splits** as implemented in *[package vX.Y]* in R *[vX.Y]*. Assumptions were checked: *[list checks performed]*. *[Effect size with 95% confidence interval reported as the primary outcome]*. Two-sided p-values use *α = 0.05*; *[multiple-comparison adjustment if any]*.
+
+**Results paragraph (copy-paste):**
+
+> Train-Test Splits yielded *[estimate]* (95% CI *[lower, upper]*, p = *[value]*). *[Diagnostic / assumption summary]*. *[Sensitivity analysis result]*.
+
+**Reviewer checklist for this method.** → [`train-test-split` — For Reviewers](../chapters/13-ml/train-test-split.qmd#for-reviewers)
+
+<!-- TODO:reporting-template -->
+
+### Transformers: Overview
+
+**Methods paragraph (copy-paste, fill in italics):**
+
+> *[N=]* participants/observations were analysed using **Transformers: Overview** as implemented in *[package vX.Y]* in R *[vX.Y]*. Assumptions were checked: *[list checks performed]*. *[Effect size with 95% confidence interval reported as the primary outcome]*. Two-sided p-values use *α = 0.05*; *[multiple-comparison adjustment if any]*.
+
+**Results paragraph (copy-paste):**
+
+> Transformers: Overview yielded *[estimate]* (95% CI *[lower, upper]*, p = *[value]*). *[Diagnostic / assumption summary]*. *[Sensitivity analysis result]*.
+
+**Reviewer checklist for this method.** → [`transformer-overview` — For Reviewers](../chapters/13-ml/transformer-overview.qmd#for-reviewers)
+
+<!-- TODO:reporting-template -->
+
+### Truncated Regression
+
+**Methods paragraph (copy-paste, fill in italics):**
+
+> *[N=]* participants/observations were analysed using **Truncated Regression** as implemented in *[package vX.Y]* in R *[vX.Y]*. Assumptions were checked: *[list checks performed]*. *[Effect size with 95% confidence interval reported as the primary outcome]*. Two-sided p-values use *α = 0.05*; *[multiple-comparison adjustment if any]*.
+
+**Results paragraph (copy-paste):**
+
+> Truncated Regression yielded *[estimate]* (95% CI *[lower, upper]*, p = *[value]*). *[Diagnostic / assumption summary]*. *[Sensitivity analysis result]*.
+
+**Reviewer checklist for this method.** → [`truncated-regression` — For Reviewers](../chapters/07-regression/truncated-regression.qmd#for-reviewers)
+
+<!-- TODO:reporting-template -->
+
+### Variable Importance
+
+**Methods paragraph (copy-paste, fill in italics):**
+
+> *[N=]* participants/observations were analysed using **Variable Importance** as implemented in *[package vX.Y]* in R *[vX.Y]*. Assumptions were checked: *[list checks performed]*. *[Effect size with 95% confidence interval reported as the primary outcome]*. Two-sided p-values use *α = 0.05*; *[multiple-comparison adjustment if any]*.
+
+**Results paragraph (copy-paste):**
+
+> Variable Importance yielded *[estimate]* (95% CI *[lower, upper]*, p = *[value]*). *[Diagnostic / assumption summary]*. *[Sensitivity analysis result]*.
+
+**Reviewer checklist for this method.** → [`variable-importance` — For Reviewers](../chapters/13-ml/variable-importance.qmd#for-reviewers)
+
+<!-- TODO:reporting-template -->
+
+### Weighted Kappa
+
+**Methods paragraph (copy-paste, fill in italics):**
+
+> *[N=]* participants/observations were analysed using **Weighted Kappa** as implemented in *[package vX.Y]* in R *[vX.Y]*. Assumptions were checked: *[list checks performed]*. *[Effect size with 95% confidence interval reported as the primary outcome]*. Two-sided p-values use *α = 0.05*; *[multiple-comparison adjustment if any]*.
+
+**Results paragraph (copy-paste):**
+
+> Weighted Kappa yielded *[estimate]* (95% CI *[lower, upper]*, p = *[value]*). *[Diagnostic / assumption summary]*. *[Sensitivity analysis result]*.
+
+**Reviewer checklist for this method.** → [`weighted-kappa` — For Reviewers](../chapters/14-clinical/weighted-kappa.qmd#for-reviewers)
+
+<!-- TODO:reporting-template -->
+
+### Weighted Log-Rank Tests
+
+**Methods paragraph (copy-paste, fill in italics):**
+
+> *[N=]* participants/observations were analysed using **Weighted Log-Rank Tests** as implemented in *[package vX.Y]* in R *[vX.Y]*. Assumptions were checked: *[list checks performed]*. *[Effect size with 95% confidence interval reported as the primary outcome]*. Two-sided p-values use *α = 0.05*; *[multiple-comparison adjustment if any]*.
+
+**Results paragraph (copy-paste):**
+
+> Weighted Log-Rank Tests yielded *[estimate]* (95% CI *[lower, upper]*, p = *[value]*). *[Diagnostic / assumption summary]*. *[Sensitivity analysis result]*.
+
+**Reviewer checklist for this method.** → [`weighted-log-rank` — For Reviewers](../chapters/11-survival/weighted-log-rank.qmd#for-reviewers)
+
+<!-- TODO:reporting-template -->
+
+### Worked lme4::lmer Examples
+
+**Methods paragraph (copy-paste, fill in italics):**
+
+> *[N=]* participants/observations were analysed using **Worked lme4::lmer Examples** as implemented in *[package vX.Y]* in R *[vX.Y]*. Assumptions were checked: *[list checks performed]*. *[Effect size with 95% confidence interval reported as the primary outcome]*. Two-sided p-values use *α = 0.05*; *[multiple-comparison adjustment if any]*.
+
+**Results paragraph (copy-paste):**
+
+> Worked lme4::lmer Examples yielded *[estimate]* (95% CI *[lower, upper]*, p = *[value]*). *[Diagnostic / assumption summary]*. *[Sensitivity analysis result]*.
+
+**Reviewer checklist for this method.** → [`lme4-lmer-examples` — For Reviewers](../chapters/07-regression/lme4-lmer-examples.qmd#for-reviewers)
+
+<!-- TODO:reporting-template -->
+
+### XGBoost
+
+**Methods paragraph (copy-paste, fill in italics):**
+
+> *[N=]* participants/observations were analysed using **XGBoost** as implemented in *[package vX.Y]* in R *[vX.Y]*. Assumptions were checked: *[list checks performed]*. *[Effect size with 95% confidence interval reported as the primary outcome]*. Two-sided p-values use *α = 0.05*; *[multiple-comparison adjustment if any]*.
+
+**Results paragraph (copy-paste):**
+
+> XGBoost yielded *[estimate]* (95% CI *[lower, upper]*, p = *[value]*). *[Diagnostic / assumption summary]*. *[Sensitivity analysis result]*.
+
+**Reviewer checklist for this method.** → [`xgboost` — For Reviewers](../chapters/13-ml/xgboost.qmd#for-reviewers)
+
+<!-- TODO:reporting-template -->
+
+### Zero-Inflated Models
+
+**Methods paragraph (copy-paste, fill in italics):**
+
+> *[N=]* participants/observations were analysed using **Zero-Inflated Models** as implemented in *[package vX.Y]* in R *[vX.Y]*. Assumptions were checked: *[list checks performed]*. *[Effect size with 95% confidence interval reported as the primary outcome]*. Two-sided p-values use *α = 0.05*; *[multiple-comparison adjustment if any]*.
+
+**Results paragraph (copy-paste):**
+
+> Zero-Inflated Models yielded *[estimate]* (95% CI *[lower, upper]*, p = *[value]*). *[Diagnostic / assumption summary]*. *[Sensitivity analysis result]*.
+
+**Reviewer checklist for this method.** → [`zero-inflated-models` — For Reviewers](../chapters/07-regression/zero-inflated-models.qmd#for-reviewers)
+
+<!-- TODO:reporting-template -->

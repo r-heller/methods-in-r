@@ -1,0 +1,47 @@
+---
+title: "15. Meta-Analysis"
+---
+
+# Meta-Analysis {#sec-ch-15-metaanalysis}
+
+Pairwise random- and fixed-effects meta-analysis, network meta-analysis, individual-patient-data meta-analysis, and PRISMA-aligned reporting. Heterogeneity is treated as the main result, not a nuisance.
+
+This chapter contains **25 method pages** and **3 labs**. If you are not sure which method to read, return to [Chapter 0](../../ch00-find-your-method.qmd) and follow the decision tree to the right node.
+
+## Method pages
+
+| Method | Source slug |
+|---|---|
+| [Bivariate SROC Curves](bivariate-sroc.qmd) | `bivariate-sroc` |
+| [Converting Between Effect Sizes](effect-size-conversion.qmd) | `effect-size-conversion` |
+| [Cumulative Meta-Analysis](cumulative-meta-analysis.qmd) | `cumulative-meta-analysis` |
+| [Egger's Test for Funnel Asymmetry](egger-test.qmd) | `egger-test` |
+| [Fixed-Effect vs. Random-Effects Meta-Analysis](fixed-vs-random-effects.qmd) | `fixed-vs-random-effects` |
+| [Forest Plots in Meta-Analysis](forest-plot-meta.qmd) | `forest-plot-meta` |
+| [Funnel Plots](funnel-plot-meta.qmd) | `funnel-plot-meta` |
+| [Individual Participant Data Meta-Analysis](ipd-meta-analysis.qmd) | `ipd-meta-analysis` |
+| [Leave-One-Out Meta-Analysis](leave-one-out.qmd) | `leave-one-out` |
+| [Meta-Analysis of Diagnostic Accuracy](diagnostic-test-meta.qmd) | `diagnostic-test-meta` |
+| [Meta-Regression](meta-regression.qmd) | `meta-regression` |
+| [Network Meta-Analysis: Introduction](network-meta-analysis-intro.qmd) | `network-meta-analysis-intro` |
+| [NMA Consistency and Inconsistency](nma-consistency.qmd) | `nma-consistency` |
+| [NMA League Tables](nma-league-tables.qmd) | `nma-league-tables` |
+| [Pooling Correlation Coefficients](correlation-pooling.qmd) | `correlation-pooling` |
+| [Pooling Log-Odds Ratios](log-odds-ratio-pooling.qmd) | `log-odds-ratio-pooling` |
+| [Pooling Risk Ratios](risk-ratio-pooling.qmd) | `risk-ratio-pooling` |
+| [Prediction Intervals in Meta-Analysis](prediction-interval-meta.qmd) | `prediction-interval-meta` |
+| [Quantifying Heterogeneity: Q and I^2](heterogeneity-q-i2.qmd) | `heterogeneity-q-i2` |
+| [Selection Models for Publication Bias](selection-models-bias.qmd) | `selection-models-bias` |
+| [Standardised Mean Difference: Hedges' g](smd-hedges-g.qmd) | `smd-hedges-g` |
+| [Subgroup Meta-Analysis](subgroup-meta-analysis.qmd) | `subgroup-meta-analysis` |
+| [SUCRA Rankings](nma-sucra.qmd) | `nma-sucra` |
+| [Tau-Squared Estimation](tau-squared-estimation.qmd) | `tau-squared-estimation` |
+| [Trim-and-Fill](trim-and-fill.qmd) | `trim-and-fill` |
+
+## Labs
+
+| # | Lab | Course / week / session |
+|---|---|---|
+| C3.16 | [Week 4, Session 1 — Systematic reviews and PRISMA](labs/lab-systematic-reviews-and-prisma.qmd) | Course 3, week 4, session 1 |
+| C3.17 | [Week 4, Session 2 — Meta-analysis basics](labs/lab-meta-analysis-basics.qmd) | Course 3, week 4, session 2 |
+| C3.18 | [Week 4, Session 3 — Network meta-analysis](labs/lab-network-meta-analysis.qmd) | Course 3, week 4, session 3 |

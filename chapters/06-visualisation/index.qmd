@@ -1,0 +1,55 @@
+---
+title: "06. Data Visualisation"
+---
+
+# Data Visualisation {#sec-ch-06-visualisation}
+
+The `ggplot2` grammar, panelled and faceted layouts, statistical graphics for regression and survival, and visual diagnostics. Style choices are biased toward what reproduces in print and what survives a black-and-white photocopy.
+
+This chapter contains **35 method pages** and **1 lab**. If you are not sure which method to read, return to [Chapter 0](../../ch00-find-your-method.qmd) and follow the decision tree to the right node.
+
+## Method pages
+
+| Method | Source slug |
+|---|---|
+| [Aesthetics and Geoms](aesthetics-and-geoms.qmd) | `aesthetics-and-geoms` |
+| [Annotations and Labels](annotations-and-labels.qmd) | `annotations-and-labels` |
+| [Bar Charts](bar-charts.qmd) | `bar-charts` |
+| [Bland-Altman Plots](bland-altman-plots.qmd) | `bland-altman-plots` |
+| [Boxplots](boxplots.qmd) | `boxplots` |
+| [Bubble Plots](bubble-plots.qmd) | `bubble-plots` |
+| [Colour Palettes](colour-palettes.qmd) | `colour-palettes` |
+| [Colour-Blind-Safe Plots](colour-blind-safe-plots.qmd) | `colour-blind-safe-plots` |
+| [Contour Plots](contour-plots.qmd) | `contour-plots` |
+| [Correlation Heatmaps](correlation-heatmaps.qmd) | `correlation-heatmaps` |
+| [Density Plots](density-plots.qmd) | `density-plots` |
+| [Dot Plots](dot-plots.qmd) | `dot-plots` |
+| [Facets and Panels](facets-and-panels.qmd) | `facets-and-panels` |
+| [Forest Plots (Visualisation)](forest-plots-viz.qmd) | `forest-plots-viz` |
+| [Funnel Plots (Visualisation)](funnel-plots-viz.qmd) | `funnel-plots-viz` |
+| [ggplot2 Themes](ggplot-themes.qmd) | `ggplot-themes` |
+| [Heatmaps](heatmaps.qmd) | `heatmaps` |
+| [Hexbin Plots](hexbin-plots.qmd) | `hexbin-plots` |
+| [Histograms](histograms.qmd) | `histograms` |
+| [Interactive Plots with ggiraph](interactive-ggiraph.qmd) | `interactive-ggiraph` |
+| [Interactive Plots with plotly](interactive-plotly.qmd) | `interactive-plotly` |
+| [Line Plots](line-plots.qmd) | `line-plots` |
+| [Pairs Plots](pairs-plots.qmd) | `pairs-plots` |
+| [Patchwork: Multi-Plot Composition](patchwork-composition.qmd) | `patchwork-composition` |
+| [Raincloud Plots](raincloud-plots.qmd) | `raincloud-plots` |
+| [Ridge Plots](ridge-plots.qmd) | `ridge-plots` |
+| [ROC Curves](roc-curves-plot.qmd) | `roc-curves-plot` |
+| [Saving and Exporting Figures](ggsave-and-export.qmd) | `ggsave-and-export` |
+| [Scales and Coordinates](scales-and-coordinates.qmd) | `scales-and-coordinates` |
+| [Scatter Plots](scatter-plots.qmd) | `scatter-plots` |
+| [Stacked and Dodged Bars](stacked-dodged-bars.qmd) | `stacked-dodged-bars` |
+| [Survival Curves](survival-curves-plot.qmd) | `survival-curves-plot` |
+| [The Grammar of Graphics](grammar-of-graphics.qmd) | `grammar-of-graphics` |
+| [Time Series Plots](time-series-plots.qmd) | `time-series-plots` |
+| [Violin Plots](violin-plots.qmd) | `violin-plots` |
+
+## Labs
+
+| # | Lab | Course / week / session |
+|---|---|---|
+| C1.5 | [Week 1, Session 5 — ggplot2 grammar and multi-panel layouts](labs/lab-ggplot2-grammar-and-multi-panel-layouts.qmd) | Course 1, week 1, session 5 |

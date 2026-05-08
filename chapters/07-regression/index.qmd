@@ -1,0 +1,87 @@
+---
+title: "07. Regression & Modelling"
+---
+
+# Regression & Modelling {#sec-ch-07-regression}
+
+Linear models, GLMs, GAMs, non-linear least squares, the ANOVA family, ANCOVA, robust regression, residual diagnostics, calibration, and decision-curve analysis. The chapter treats regression as a single object viewed from different angles.
+
+This chapter contains **51 method pages** and **17 labs**. If you are not sure which method to read, return to [Chapter 0](../../ch00-find-your-method.qmd) and follow the decision tree to the right node.
+
+## Method pages
+
+| Method | Source slug |
+|---|---|
+| [Added-Variable Plots](added-variable-plots.qmd) | `added-variable-plots` |
+| [Best Subset Selection](best-subset-selection.qmd) | `best-subset-selection` |
+| [Beta Regression](beta-regression.qmd) | `beta-regression` |
+| [Centring and Scaling Predictors](centered-scaled-predictors.qmd) | `centered-scaled-predictors` |
+| [Contrasts in R](contrasts-in-r.qmd) | `contrasts-in-r` |
+| [Cook's Distance](cooks-distance.qmd) | `cooks-distance` |
+| [Cox Regression as Regression](survival-regression-cox.qmd) | `survival-regression-cox` |
+| [Dirichlet Regression](dirichlet-regression.qmd) | `dirichlet-regression` |
+| [Dummy Coding](dummy-coding.qmd) | `dummy-coding` |
+| [Effect (Deviation) Coding](effect-coding.qmd) | `effect-coding` |
+| [Elastic Net](elastic-net.qmd) | `elastic-net` |
+| [GAMMs: Additive Mixed Models](gamm-additive-mixed.qmd) | `gamm-additive-mixed` |
+| [GAMs: Introduction](gam-introduction.qmd) | `gam-introduction` |
+| [Generalised Estimating Equations](generalized-estimating-equations.qmd) | `generalized-estimating-equations` |
+| [glmer: Generalised Mixed Models](glmer-generalized-mixed.qmd) | `glmer-generalized-mixed` |
+| [Hurdle Models](hurdle-models.qmd) | `hurdle-models` |
+| [Interactions in Regression](interactions-in-regression.qmd) | `interactions-in-regression` |
+| [Lasso Regression](lasso-regression.qmd) | `lasso-regression` |
+| [Leverage and Influence](leverage-influence.qmd) | `leverage-influence` |
+| [Linear Regression Assumptions](regression-assumptions.qmd) | `regression-assumptions` |
+| [Logistic Regression](logistic-regression.qmd) | `logistic-regression` |
+| [Logistic Regression Diagnostics](logistic-regression-diagnostics.qmd) | `logistic-regression-diagnostics` |
+| [Mixed-Effects Models: Introduction](mixed-models-intro.qmd) | `mixed-models-intro` |
+| [Model Selection with AIC and BIC](model-selection-aic-bic.qmd) | `model-selection-aic-bic` |
+| [Multicollinearity and VIF](multicollinearity-vif.qmd) | `multicollinearity-vif` |
+| [Multinomial Logistic Regression](multinomial-logistic.qmd) | `multinomial-logistic` |
+| [Multiple Linear Regression](multiple-linear-regression.qmd) | `multiple-linear-regression` |
+| [Negative Binomial Regression](negative-binomial-regression.qmd) | `negative-binomial-regression` |
+| [Nested vs Crossed Random Effects](nested-crossed-random-effects.qmd) | `nested-crossed-random-effects` |
+| [Offsets in Regression](offsets-in-regression.qmd) | `offsets-in-regression` |
+| [Ordinal Logistic Regression](ordinal-logistic.qmd) | `ordinal-logistic` |
+| [Partial Correlation](partial-correlation.qmd) | `partial-correlation` |
+| [Poisson Regression](poisson-regression.qmd) | `poisson-regression` |
+| [Polynomial Regression](polynomial-regression.qmd) | `polynomial-regression` |
+| [Probit Regression](probit-regression.qmd) | `probit-regression` |
+| [Quantile Regression](quantile-regression.qmd) | `quantile-regression` |
+| [Quasi-Poisson Regression](quasi-poisson.qmd) | `quasi-poisson` |
+| [R-Squared and Adjusted R-Squared](r-squared-adjusted.qmd) | `r-squared-adjusted` |
+| [Random-Intercept Models](random-intercepts.qmd) | `random-intercepts` |
+| [Random-Slope Models](random-slopes.qmd) | `random-slopes` |
+| [Residual Diagnostics](residual-diagnostics.qmd) | `residual-diagnostics` |
+| [Ridge Regression](ridge-regression.qmd) | `ridge-regression` |
+| [Robust Regression](robust-regression.qmd) | `robust-regression` |
+| [ROC and AUC for Logistic Models](roc-auc-for-logistic.qmd) | `roc-auc-for-logistic` |
+| [Simple Linear Regression](simple-linear-regression.qmd) | `simple-linear-regression` |
+| [Spline Regression](spline-regression.qmd) | `spline-regression` |
+| [Stepwise Regression: Pitfalls](stepwise-regression-pitfalls.qmd) | `stepwise-regression-pitfalls` |
+| [Tobit Regression](tobit-regression.qmd) | `tobit-regression` |
+| [Truncated Regression](truncated-regression.qmd) | `truncated-regression` |
+| [Worked lme4::lmer Examples](lme4-lmer-examples.qmd) | `lme4-lmer-examples` |
+| [Zero-Inflated Models](zero-inflated-models.qmd) | `zero-inflated-models` |
+
+## Labs
+
+| # | Lab | Course / week / session |
+|---|---|---|
+| C2.1 | [Week 1, Session 1 — Correlation vs regression; Model-I/II regression](labs/lab-correlation-vs-regression-model-i-ii-regression.qmd) | Course 2, week 1, session 1 |
+| C2.2 | [Week 1, Session 2 — Simple linear regression](labs/lab-simple-linear-regression.qmd) | Course 2, week 1, session 2 |
+| C2.3 | [Week 1, Session 3 — Multiple regression: confounding, interaction, centring](labs/lab-multiple-regression-confounding-interaction-centring.qmd) | Course 2, week 1, session 3 |
+| C2.4 | [Week 1, Session 4 — Diagnostics: residuals, QQ, leverage, Cook's distance, VIF](labs/lab-diagnostics-residuals-qq-leverage-cook-s-distance-vif.qmd) | Course 2, week 1, session 4 |
+| C2.5 | [Week 1, Session 5 — Robust regression, weighted LS, HC (sandwich) standard errors](labs/lab-robust-regression-weighted-ls-hc-sandwich-standard-errors.qmd) | Course 2, week 1, session 5 |
+| C2.6 | [Week 2, Session 1 — One-way ANOVA and contrasts (emmeans)](labs/lab-one-way-anova-and-contrasts-emmeans.qmd) | Course 2, week 2, session 1 |
+| C2.7 | [Week 2, Session 2 — Two-way / factorial ANOVA with interaction](labs/lab-two-way-factorial-anova-with-interaction.qmd) | Course 2, week 2, session 2 |
+| C2.8 | [Week 2, Session 3 — RCBD and repeated measures → mixed models](labs/lab-rcbd-and-repeated-measures-mixed-models.qmd) | Course 2, week 2, session 3 |
+| C2.9 | [Week 2, Session 4 — GAMs with mgcv](labs/lab-gams-with-mgcv.qmd) | Course 2, week 2, session 4 |
+| C2.10 | [Week 2, Session 5 — Non-linear regression with nls](labs/lab-non-linear-regression-with-nls.qmd) | Course 2, week 2, session 5 |
+| C2.11 | [Week 3, Session 1 — Logistic regression (binomial GLM)](labs/lab-logistic-regression-binomial-glm.qmd) | Course 2, week 3, session 1 |
+| C2.12 | [Week 3, Session 2 — ANCOVA in RCTs (baseline adjustment)](labs/lab-ancova-in-rcts-baseline-adjustment.qmd) | Course 2, week 3, session 2 |
+| C2.13 | [Week 3, Session 3 — Ordinal and multinomial regression](labs/lab-ordinal-and-multinomial-regression.qmd) | Course 2, week 3, session 3 |
+| C2.14 | [Week 3, Session 4 — Poisson and negative-binomial regression](labs/lab-poisson-and-negative-binomial-regression.qmd) | Course 2, week 3, session 4 |
+| C2.15 | [Week 3, Session 5 — Calibration, discrimination, ROC/AUC, Brier score](labs/lab-calibration-discrimination-roc-auc-brier-score.qmd) | Course 2, week 3, session 5 |
+| C2.16 | [Week 4, Session 1 — Dichotomisation, change scores, regression to the mean](labs/lab-dichotomisation-change-scores-regression-to-the-mean.qmd) | Course 2, week 4, session 1 |
+| C2.19 | [Week 4, Session 4 — Decision curves, NRI, IDI](labs/lab-decision-curves-nri-idi.qmd) | Course 2, week 4, session 4 |

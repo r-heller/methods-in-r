@@ -1,0 +1,50 @@
+---
+title: "09. Time-Series Analysis"
+---
+
+# Time-Series Analysis {#sec-ch-09-timeseries}
+
+Stationarity, ARIMA, exponential smoothing, state-space models, spectral analysis, and forecasting evaluation. Examples use biomedical signals — heart rate, glucose, EEG — rather than macroeconomic data.
+
+This chapter contains **30 method pages** and **1 lab**. If you are not sure which method to read, return to [Chapter 0](../../ch00-find-your-method.qmd) and follow the decision tree to the right node.
+
+## Method pages
+
+| Method | Source slug |
+|---|---|
+| [ARIMA Models](arima-models.qmd) | `arima-models` |
+| [Augmented Dickey-Fuller Test](adf-test.qmd) | `adf-test` |
+| [Bayesian Changepoint Detection](bcp-bayesian-changepoint.qmd) | `bcp-bayesian-changepoint` |
+| [Changepoint Detection](changepoint-detection.qmd) | `changepoint-detection` |
+| [Diebold-Mariano Test](diebold-mariano.qmd) | `diebold-mariano` |
+| [Differencing a Time Series](differencing.qmd) | `differencing` |
+| [ETS Models](ets-models.qmd) | `ets-models` |
+| [Exponential Smoothing](exponential-smoothing.qmd) | `exponential-smoothing` |
+| [Forecast Accuracy Metrics](forecast-accuracy-metrics.qmd) | `forecast-accuracy-metrics` |
+| [GARCH Models](garch-volatility.qmd) | `garch-volatility` |
+| [Granger Causality](granger-causality.qmd) | `granger-causality` |
+| [Holt-Winters Method](holt-winters.qmd) | `holt-winters` |
+| [Interpreting ACF and PACF](acf-pacf-interpretation.qmd) | `acf-pacf-interpretation` |
+| [KPSS Test](kpss-test.qmd) | `kpss-test` |
+| [Moving Averages](moving-averages.qmd) | `moving-averages` |
+| [Phillips-Perron Test](phillips-perron.qmd) | `phillips-perron` |
+| [Rolling-Origin Cross-Validation](rolling-origin-cv.qmd) | `rolling-origin-cv` |
+| [Seasonal ARIMA (SARIMA)](seasonal-arima.qmd) | `seasonal-arima` |
+| [Seasonal Decomposition (STL)](seasonal-decomposition-stl.qmd) | `seasonal-decomposition-stl` |
+| [Spectral Analysis](spectral-analysis.qmd) | `spectral-analysis` |
+| [State-Space Models](state-space-models.qmd) | `state-space-models` |
+| [Stationarity Tests](stationarity-tests.qmd) | `stationarity-tests` |
+| [The Kalman Filter](kalman-filter.qmd) | `kalman-filter` |
+| [The Ljung-Box Test](ljung-box.qmd) | `ljung-box` |
+| [Time Series: Introduction](time-series-introduction.qmd) | `time-series-introduction` |
+| [VECM and Cointegration](vecm-cointegration.qmd) | `vecm-cointegration` |
+| [Vector Autoregression (VAR)](multivariate-var.qmd) | `multivariate-var` |
+| [Wavelet Analysis](wavelet-analysis.qmd) | `wavelet-analysis` |
+| [White Noise Tests](white-noise-tests.qmd) | `white-noise-tests` |
+| [X-13ARIMA-SEATS Decomposition](x13-decomposition.qmd) | `x13-decomposition` |
+
+## Labs
+
+| # | Lab | Course / week / session |
+|---|---|---|
+| C3.10 | [Week 2, Session 5 — Time series basics](labs/lab-time-series-basics.qmd) | Course 3, week 2, session 5 |

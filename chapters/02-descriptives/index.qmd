@@ -1,0 +1,45 @@
+---
+title: "02. Descriptive Statistics"
+---
+
+# Descriptive Statistics {#sec-ch-02-descriptives}
+
+Methods for summarising a dataset before any inference: Table 1 construction, numerical summaries, and visual exploratory data analysis. Most papers in biomedicine open with a Table 1 — this chapter covers what belongs in it and how to render it cleanly with `gtsummary`.
+
+This chapter contains **25 method pages** and **1 lab**. If you are not sure which method to read, return to [Chapter 0](../../ch00-find-your-method.qmd) and follow the decision tree to the right node.
+
+## Method pages
+
+| Method | Source slug |
+|---|---|
+| [Coefficient of Variation](coefficient-of-variation.qmd) | `coefficient-of-variation` |
+| [Contingency Tables](contingency-tables.qmd) | `contingency-tables` |
+| [Cross-Tabulations](cross-tabulations.qmd) | `cross-tabulations` |
+| [Descriptive vs Inferential Statistics](descriptive-vs-inferential.qmd) | `descriptive-vs-inferential` |
+| [Five-Number Summary](five-number-summary.qmd) | `five-number-summary` |
+| [Frequency Tables](frequency-tables.qmd) | `frequency-tables` |
+| [Kurtosis](kurtosis.qmd) | `kurtosis` |
+| [Mean Absolute Deviation](mean-absolute-deviation.qmd) | `mean-absolute-deviation` |
+| [Measures of Central Tendency](measures-of-location.qmd) | `measures-of-location` |
+| [Measures of Dispersion](measures-of-dispersion.qmd) | `measures-of-dispersion` |
+| [Measures of Shape](measures-of-shape.qmd) | `measures-of-shape` |
+| [Outlier Detection Rules](outlier-detection-rules.qmd) | `outlier-detection-rules` |
+| [Percentile Ranks](percentile-rank.qmd) | `percentile-rank` |
+| [Quantiles and Percentiles](quantiles-and-percentiles.qmd) | `quantiles-and-percentiles` |
+| [Robust Statistics: An Overview](robust-statistics-overview.qmd) | `robust-statistics-overview` |
+| [Skewness](skewness.qmd) | `skewness` |
+| [Standardisation and z-Scores](standardisation-zscore.qmd) | `standardisation-zscore` |
+| [Stem-and-Leaf Plots](stem-and-leaf-plots.qmd) | `stem-and-leaf-plots` |
+| [Summary by Group](summary-by-group.qmd) | `summary-by-group` |
+| [The Geometric Mean](geometric-mean.qmd) | `geometric-mean` |
+| [The Harmonic Mean](harmonic-mean.qmd) | `harmonic-mean` |
+| [The Interquartile Range](interquartile-range.qmd) | `interquartile-range` |
+| [The Weighted Mean](weighted-mean.qmd) | `weighted-mean` |
+| [Trimmed and Winsorised Means](trimmed-winsorized-mean.qmd) | `trimmed-winsorized-mean` |
+| [Variance and Standard Deviation](variance-and-sd.qmd) | `variance-and-sd` |
+
+## Labs
+
+| # | Lab | Course / week / session |
+|---|---|---|
+| C1.6 | [Week 2, Session 1 — Descriptive statistics and Table 1](labs/lab-descriptive-statistics-and-table-1.qmd) | Course 1, week 2, session 1 |

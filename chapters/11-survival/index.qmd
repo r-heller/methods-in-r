@@ -1,0 +1,54 @@
+---
+title: "11. Survival Analysis"
+---
+
+# Survival Analysis {#sec-ch-11-survival}
+
+Time-to-event methods: Kaplan-Meier, Cox regression, time-varying covariates, competing risks, multistate models, and survival-targeted machine learning. Censoring is treated as a first-class concept, not a footnote.
+
+This chapter contains **30 method pages** and **5 labs**. If you are not sure which method to read, return to [Chapter 0](../../ch00-find-your-method.qmd) and follow the decision tree to the right node.
+
+## Method pages
+
+| Method | Source slug |
+|---|---|
+| [Accelerated Failure Time Models](accelerated-failure-time.qmd) | `accelerated-failure-time` |
+| [Censoring Types](censoring-types.qmd) | `censoring-types` |
+| [Checking Cox Assumptions](cox-assumptions-check.qmd) | `cox-assumptions-check` |
+| [Competing Risks: Cumulative Incidence](competing-risks-cif.qmd) | `competing-risks-cif` |
+| [Concordance and the C-Index](concordance-c-index.qmd) | `concordance-c-index` |
+| [Conditional Survival](conditional-survival.qmd) | `conditional-survival` |
+| [Cox Proportional Hazards Regression](cox-proportional-hazards.qmd) | `cox-proportional-hazards` |
+| [Fine-Gray Subdistribution Hazards](fine-gray-regression.qmd) | `fine-gray-regression` |
+| [Frailty Models](frailty-models.qmd) | `frailty-models` |
+| [Hazard, Survival, and Cumulative Hazard](hazard-survival-cumulative.qmd) | `hazard-survival-cumulative` |
+| [Interval-Censored Data](interval-censored-data.qmd) | `interval-censored-data` |
+| [Joint Longitudinal-Survival Models](joint-longitudinal-survival.qmd) | `joint-longitudinal-survival` |
+| [Kaplan-Meier Estimation](kaplan-meier.qmd) | `kaplan-meier` |
+| [Landmark Analysis](landmark-analysis.qmd) | `landmark-analysis` |
+| [Left Truncation](left-truncation.qmd) | `left-truncation` |
+| [Log-Rank Test: Details](log-rank-test-details.qmd) | `log-rank-test-details` |
+| [Multi-State Models](multi-state-models.qmd) | `multi-state-models` |
+| [Parametric Survival: Log-Normal](parametric-survival-lognormal.qmd) | `parametric-survival-lognormal` |
+| [Parametric Survival: Weibull](parametric-survival-weibull.qmd) | `parametric-survival-weibull` |
+| [Recurrent Events](recurrent-events.qmd) | `recurrent-events` |
+| [Restricted Mean Survival Time (RMST)](restricted-mean-survival-time.qmd) | `restricted-mean-survival-time` |
+| [Royston-Parmar Flexible Parametric Models](flexible-parametric-royston-parmar.qmd) | `flexible-parametric-royston-parmar` |
+| [Schoenfeld Residuals](schoenfeld-residuals.qmd) | `schoenfeld-residuals` |
+| [Simulating Survival Data](survival-simulation.qmd) | `survival-simulation` |
+| [Stratified Cox Models](stratified-cox.qmd) | `stratified-cox` |
+| [The Brier Score for Survival](brier-score-survival.qmd) | `brier-score-survival` |
+| [The Nelson-Aalen Estimator](nelson-aalen-estimator.qmd) | `nelson-aalen-estimator` |
+| [Time-Dependent ROC](time-dependent-roc.qmd) | `time-dependent-roc` |
+| [Time-Varying Covariates](time-varying-covariates.qmd) | `time-varying-covariates` |
+| [Weighted Log-Rank Tests](weighted-log-rank.qmd) | `weighted-log-rank` |
+
+## Labs
+
+| # | Lab | Course / week / session |
+|---|---|---|
+| C2.18 | [Week 4, Session 3 — Survival primer: KM, log-rank, Cox PH](labs/lab-survival-primer-km-log-rank-cox-ph.qmd) | Course 2, week 4, session 3 |
+| C3.11 | [Week 3, Session 1 — Time-varying covariates and immortal-time bias](labs/lab-time-varying-covariates-and-immortal-time-bias.qmd) | Course 3, week 3, session 1 |
+| C3.12 | [Week 3, Session 2 — Competing risks and multistate models](labs/lab-competing-risks-and-multistate-models.qmd) | Course 3, week 3, session 2 |
+| C4.14 | [Week 3, Session 4 — Survival ML (random survival forest, DeepSurv)](labs/lab-survival-ml-random-survival-forest-deepsurv.qmd) | Course 4, week 3, session 4 |
+| C4.15 | [Week 3, Session 5 — Time-dependent Brier, IPA, external validation](labs/lab-time-dependent-brier-ipa-external-validation.qmd) | Course 4, week 3, session 5 |

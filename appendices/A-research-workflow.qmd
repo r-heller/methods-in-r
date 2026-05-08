@@ -1,0 +1,100 @@
+---
+title: "The research workflow"
+toc: true
+---
+
+::: {.hero}
+::: {.kicker}
+APPENDIX · RESEARCH WORKFLOW
+:::
+# The research workflow
+::: {.lead}
+Nine stages from a research question to knowledge that survives
+replication.
+:::
+:::
+
+Statistics is a thread running through a much longer process. The diagram
+below names the stages of that process and links each to the parts of
+the curriculum that cover it in detail. No stage is optional; errors
+made at one are paid for at the next.
+
+```{mermaid}
+flowchart TD
+  Q[1. Question] --> M[2. Measurements]
+  M --> D[3. Design]
+  D --> A[4. Acquisition]
+  A --> Desc[5. Description]
+  Desc --> An[6. Analysis]
+  An --> I[7. Interpretation / Prediction]
+  I --> V[8. Validation]
+  V --> K[9. Knowledge / Decisions]
+```
+
+## 1. Question
+
+A well-formed research question has a population, an exposure or
+intervention, a comparator, an outcome, and a time frame. The PICO
+framework from evidence-based medicine is a useful checklist.
+A vague question leads to a vague design and a vague answer; a
+well-formed question survives peer review before a single datum is
+collected.
+*Covered in:* [Course 1 W1 S1](../chapters/01-foundations/labs/lab-scientific-process-and-research-workflow.qmd),
+[Course 3 W4 S1](../chapters/15-metaanalysis/labs/lab-systematic-reviews-and-prisma.qmd).
+
+## 2. Measurements
+
+Every question depends on the measurement scale you choose to answer it.
+Accuracy, precision, reliability, and the difference between a measurement
+and a proxy are the vocabulary.
+*Covered in:* [Course 1 W1 S3](../chapters/01-foundations/labs/lab-data-types-tidy-data-accuracy-and-precision.qmd),
+[Course 2 W4 S2](../chapters/14-clinical/labs/lab-kappa-icc-bland-altman.qmd).
+
+## 3. Design
+
+Design is where you choose what the data can and cannot tell you. A
+well-designed observational study answers some questions better than a
+badly designed RCT; a good RCT answers them all.
+*Covered in:* [Course 3 W1](../chapters/16-design/labs/lab-observational-designs-and-strobe.qmd).
+
+## 4. Acquisition
+
+Getting the data into a computer faithfully is itself a statistical
+problem: missingness, measurement error, and batch effects start here.
+*Covered in:* [Course 1 W1 S4](../chapters/01-foundations/labs/lab-import-joins-and-missingness-with-dplyr.qmd),
+[Course 3 W2](../chapters/16-design/labs/lab-mcar-mar-mnar.qmd).
+
+## 5. Description
+
+Before any inference, look at the data. A well-designed plot is often
+the whole answer.
+*Covered in:* [Course 1 W1 S5](../chapters/06-visualisation/labs/lab-ggplot2-grammar-and-multi-panel-layouts.qmd),
+[Course 1 W2 S1](../chapters/02-descriptives/labs/lab-descriptive-statistics-and-table-1.qmd).
+
+## 6. Analysis
+
+The formal model that takes the data and returns an estimate, an
+interval, and a decision.
+*Covered in:* Courses 1–4, throughout.
+
+## 7. Interpretation / prediction
+
+What does the estimate mean in the scale of the science? Effect size,
+clinical significance, and the distinction between an average and an
+individual prediction live here.
+*Covered in:* [Course 2 W3 S5](../chapters/07-regression/labs/lab-calibration-discrimination-roc-auc-brier-score.qmd),
+[Course 4 W3 S5](../chapters/11-survival/labs/lab-time-dependent-brier-ipa-external-validation.qmd).
+
+## 8. Validation
+
+Does the finding hold in data not used to find it? External validation,
+nested CV, and replication pool here.
+*Covered in:* [Course 4 W1 S1](../chapters/13-ml/labs/lab-cross-validation-nested-cv-bootstrap-632.qmd),
+[Course 4 W3 S5](../chapters/11-survival/labs/lab-time-dependent-brier-ipa-external-validation.qmd).
+
+## 9. Knowledge / decisions
+
+The act of writing it down so that others can trust, cite, and build on
+the finding.
+*Covered in:* [Writing a report](D-writing-a-report.qmd),
+[Course 2 W4 S5](../reporting/lab-explanation-vs-prediction-reporting.qmd).

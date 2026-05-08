@@ -1,0 +1,78 @@
+---
+title: "Preface"
+---
+
+# Methods in R {.unnumbered}
+
+*A topic reference for biomedical research and peer review.*
+
+## Why this book exists
+
+The R/biostatistics shelf is crowded — Moscarelli's *Biostatistics With 'R'*,
+Srinivasan's *R for Basic Biostatistics in Medical Research*, Harrell's
+*Biostatistics for Biomedical Research*, Shahbaba's *Biostatistics with R*,
+the Cambridge text, the Springer epidemiology volume, and Lepš & Šmilauer
+on the ecological side. They are good books. They are also linear
+textbooks: open at page one, work to the end.
+
+This book is shaped differently, around two readers it expects to serve
+in the same week:
+
+1. **The author** who has data in front of them and needs to pick a
+   method, run it correctly in R, and write the Methods paragraph.
+2. **The peer reviewer** who has a manuscript on their desk and needs
+   to know — for the method the authors used — what a competent
+   application looks like, which diagnostics should have been reported,
+   and what red flags to flag.
+
+Every method page therefore ends with a **For Reviewers** section: the
+misapplications, the missing diagnostics, the red flags in tables and
+figures, and the things to verify against the authors' references and
+arithmetic. The book opens at @sec-find-your-method (Chapter 0), a
+decision tree from research question to method, not at a glossy
+introduction. A final part, *Reporting Templates*, gives copy-paste
+Methods + Results paragraphs tagged with
+**STROBE / CONSORT / TRIPOD-AI / PRISMA / ARRIVE**.
+
+## Provenance and attribution
+
+The substantive content is consolidated and re-organised from two of my
+existing public repositories, both MIT-licensed, both authored under
+*CTTIR*:
+
+- **`CTTIR/courses`** — <https://github.com/CTTIR/courses>. Four courses,
+  twenty labs each, eighty labs total. The labs have been re-homed by
+  topic rather than by week.
+- **`CTTIR/tutorials`** — <https://github.com/CTTIR/tutorials>. Five
+  hundred and sixty-nine method pages across sixteen topic areas, each
+  written to a nine-section template. The template is preserved and
+  extended with the *For Reviewers* tenth section.
+
+Two pieces of original material are added on top:
+
+- The **For Reviewers** sections, written specifically for this volume.
+- The **Reporting Templates** part, which aggregates Methods + Results
+  paragraphs by reporting guideline.
+
+The decision-tree wizard remains live at
+<https://cttir.github.io/tutorials/decision-tree/> — Chapter 0 mirrors
+the static tree and links out to the wizard for clickable navigation.
+
+## Sibling volume
+
+This is the second volume in the *…in R* series. The first, on a
+different topic, is **`r-heller/strategy-in-r`** — *Strategy in R: Game
+Theory, Simulation, and Machine Intelligence*. The two share branding,
+build conventions (Quarto book, `renv`, GitHub Pages deploy), and a
+preference for R-only worked examples over toy abstractions.
+
+## How to read
+
+If you already know the method, jump to its chapter. If not, start at
+@sec-find-your-method. If you are reviewing a paper, search for the
+method by name and read the *For Reviewers* section first.
+
+## Licence
+
+Code under MIT. Prose under CC BY 4.0 with attribution to *R. Heller,
+Methods in R*.

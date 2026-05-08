@@ -1,0 +1,25 @@
+/.quarto/
+/docs/
+/_book/
+/_freeze/
+.Rproj.user/
+.Rhistory
+.RData
+.Ruserdata
+*.html
+!docs/**/*.html
+.DS_Store
+Thumbs.db
+
+# renv
+renv/library/
+renv/local/
+renv/lock/
+renv/python/
+renv/staging/
+
+# Python (manifest builder)
+__pycache__/
+*.pyc
+
+**/*.quarto_ipynb

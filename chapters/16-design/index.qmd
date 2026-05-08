@@ -1,0 +1,62 @@
+---
+title: "16. Experimental Design"
+---
+
+# Experimental Design {#sec-ch-16-design}
+
+Study design across the spectrum: observational designs and STROBE, randomised trials, missing-data mechanisms and multiple imputation, mixed-effects models, DAGs and confounding, propensity scores, the g-methods family (IV, DiD, RDD, HTE), compartmental models for outbreaks, and the pre-registration / SAP / replication-crisis literature.
+
+This chapter contains **30 method pages** and **13 labs**. If you are not sure which method to read, return to [Chapter 0](../../ch00-find-your-method.qmd) and follow the decision tree to the right node.
+
+## Method pages
+
+| Method | Source slug |
+|---|---|
+| [2^k Factorial Designs](factorial-2k.qmd) | `factorial-2k` |
+| [3^k Factorial Designs](factorial-3k.qmd) | `factorial-3k` |
+| [Balanced Incomplete Block Designs](balanced-incomplete-block.qmd) | `balanced-incomplete-block` |
+| [Box-Behnken Designs](box-behnken-design.qmd) | `box-behnken-design` |
+| [Central Composite Designs](central-composite-design.qmd) | `central-composite-design` |
+| [Completely Randomised Design](completely-randomized-design.qmd) | `completely-randomized-design` |
+| [Constrained Mixture Designs](constrained-mixture.qmd) | `constrained-mixture` |
+| [Crossover Designs](crossover-designs.qmd) | `crossover-designs` |
+| [Desirability Functions](desirability-function.qmd) | `desirability-function` |
+| [Fractional Factorial Designs](fractional-factorial-design.qmd) | `fractional-factorial-design` |
+| [Graeco-Latin Square Designs](graeco-latin-square.qmd) | `graeco-latin-square` |
+| [Latin Square Designs](latin-square.qmd) | `latin-square` |
+| [Method of Steepest Ascent](steepest-ascent.qmd) | `steepest-ascent` |
+| [Optimal Designs: D, A, I](optimal-design-d-a-i.qmd) | `optimal-design-d-a-i` |
+| [Orthogonal Arrays](orthogonal-arrays.qmd) | `orthogonal-arrays` |
+| [Plackett-Burman Designs](plackett-burman.qmd) | `plackett-burman` |
+| [Power Analysis for DOE](power-in-doe.qmd) | `power-in-doe` |
+| [Principles of Blocking](blocking-principles.qmd) | `blocking-principles` |
+| [Randomisation in Design](randomization-in-design.qmd) | `randomization-in-design` |
+| [Randomised Complete Block Design](randomised-complete-block.qmd) | `randomised-complete-block` |
+| [Repeated-Measures Designs](repeated-measures-design.qmd) | `repeated-measures-design` |
+| [Resolution and Aliasing](resolution-aliasing.qmd) | `resolution-aliasing` |
+| [Response Surface Methodology](response-surface-methodology.qmd) | `response-surface-methodology` |
+| [Robust Parameter Design](robust-parameter-design.qmd) | `robust-parameter-design` |
+| [Signal-to-Noise Ratios](signal-to-noise-ratio.qmd) | `signal-to-noise-ratio` |
+| [Simplex Centroid Designs](mixture-centroid.qmd) | `mixture-centroid` |
+| [Simplex Lattice Mixture Designs](mixture-designs-simplex.qmd) | `mixture-designs-simplex` |
+| [Split-Plot Designs](split-plot-design.qmd) | `split-plot-design` |
+| [Strip-Plot Designs](strip-plot-design.qmd) | `strip-plot-design` |
+| [Taguchi Methods](taguchi-methods.qmd) | `taguchi-methods` |
+
+## Labs
+
+| # | Lab | Course / week / session |
+|---|---|---|
+| C3.1 | [Week 1, Session 1 — Observational designs and STROBE](labs/lab-observational-designs-and-strobe.qmd) | Course 3, week 1, session 1 |
+| C3.2 | [Week 1, Session 2 — Randomised controlled trials](labs/lab-randomised-controlled-trials.qmd) | Course 3, week 1, session 2 |
+| C3.3 | [Week 1, Session 3 — Adaptive, non-inferiority, equivalence trials](labs/lab-adaptive-non-inferiority-equivalence-trials.qmd) | Course 3, week 1, session 3 |
+| C3.4 | [Week 1, Session 4 — Bench and translational design](labs/lab-bench-and-translational-design.qmd) | Course 3, week 1, session 4 |
+| C3.6 | [Week 2, Session 1 — MCAR, MAR, MNAR](labs/lab-mcar-mar-mnar.qmd) | Course 3, week 2, session 1 |
+| C3.7 | [Week 2, Session 2 — Multiple imputation with mice](labs/lab-multiple-imputation-with-mice.qmd) | Course 3, week 2, session 2 |
+| C3.8 | [Week 2, Session 3 — Linear mixed models with lme4](labs/lab-linear-mixed-models-with-lme4.qmd) | Course 3, week 2, session 3 |
+| C3.9 | [Week 2, Session 4 — GLMMs and GEE](labs/lab-glmms-and-gee.qmd) | Course 3, week 2, session 4 |
+| C3.13 | [Week 3, Session 3 — DAGs with dagitty and ggdag](labs/lab-dags-with-dagitty-and-ggdag.qmd) | Course 3, week 3, session 3 |
+| C3.14 | [Week 3, Session 4 — Propensity scores and IPTW](labs/lab-propensity-scores-and-iptw.qmd) | Course 3, week 3, session 4 |
+| C3.15 | [Week 3, Session 5 — G-methods, IV, DiD, RDD; heterogeneity of treatment effect](labs/lab-g-methods-iv-did-rdd-heterogeneity-of-treatment-effect.qmd) | Course 3, week 3, session 5 |
+| C3.19 | [Week 4, Session 4 — SIR and SEIR models with deSolve](labs/lab-sir-and-seir-models-with-desolve.qmd) | Course 3, week 4, session 4 |
+| C3.20 | [Week 4, Session 5 — Pre-registration and statistical analysis plans](labs/lab-pre-registration-and-statistical-analysis-plans.qmd) | Course 3, week 4, session 5 |
