@@ -23,13 +23,17 @@ jobs:
         with:
           use-public-rspm: true
 
+      - uses: r-lib/actions/setup-r-dependencies@v2
+        with:
+          packages: knitr, rmarkdown
+
       - uses: quarto-dev/quarto-actions/setup@v2
 
       # Code execution is disabled book-wide (`execute.enabled: false`),
-      # so we install R only to satisfy Quarto's knitr-engine probe and
-      # skip renv entirely. Re-enable code execution and add
-      # `r-lib/actions/setup-renv@v2` when labs are curated against a
-      # working renv environment.
+      # so we install only knitr+rmarkdown to satisfy Quarto's knitr-engine
+      # probe and skip the full renv restore. Re-enable code execution and
+      # switch to `r-lib/actions/setup-renv@v2` when labs are curated
+      # against a working renv environment.
       - name: Render HTML
         run: quarto render --to html
 
