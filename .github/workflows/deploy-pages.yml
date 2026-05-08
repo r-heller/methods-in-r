@@ -25,6 +25,12 @@ jobs:
       # the same form by `scripts/static_labs.py` (see MIGRATION_LOG).
       # Nothing here invokes the knitr engine, so R / renv are not needed.
       - name: Render HTML
+        env:
+          # The book has ~680 chapters, which pushes the default 8 GB
+          # deno heap during the final book-assembly step. Lift the V8
+          # old-space cap to 14 GB to fit on the standard ubuntu-latest
+          # runner (16 GB RAM).
+          QUARTO_DENO_V8_OPTIONS: "--max-old-space-size=14336"
         run: quarto render --to html
 
       - name: Upload Pages artifact
