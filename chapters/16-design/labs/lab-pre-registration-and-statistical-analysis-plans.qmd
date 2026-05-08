@@ -73,7 +73,7 @@ A SAP adds:
 
 ## 3. Execution — template
 
-```{markdown}
+```markdown
 # Pre-registration — Trial X
 
 Protocol version 1.0 | Date 2026-04-18 | PI [NAME]

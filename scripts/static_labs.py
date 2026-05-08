@@ -16,13 +16,13 @@ from pathlib import Path
 
 ROOT = Path(__file__).resolve().parents[1]
 
-CHUNK_RE = re.compile(r"^```\{r[^}]*\}\s*$", re.M)
-INLINE_RE = re.compile(r"`r\s+([^`]+?)`")
+CHUNK_RE = re.compile(r"^```\{([a-zA-Z][a-zA-Z0-9_]*)[^}]*\}\s*$", re.M)
+INLINE_RE = re.compile(r"`(r|python|julia)\s+([^`]+?)`")
 
 
 def transform(text: str) -> str:
-    text = CHUNK_RE.sub("```r", text)
-    text = INLINE_RE.sub(r"`\1`", text)
+    text = CHUNK_RE.sub(lambda m: f"```{m.group(1)}", text)
+    text = INLINE_RE.sub(r"`\2`", text)
     return text
 
 
