@@ -119,6 +119,7 @@ def main() -> None:
     out.append('    fig-pos: "H"')
     out.append("")
     out.append("execute:")
+    out.append("  enabled: false")
     out.append("  freeze: auto")
     out.append("")
 

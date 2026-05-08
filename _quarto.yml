@@ -736,4 +736,5 @@ format:
     fig-pos: "H"
 
 execute:
+  enabled: false
   freeze: auto
