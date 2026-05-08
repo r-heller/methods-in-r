@@ -42,8 +42,7 @@ exactly which one.
 
 ## Setup
 
-```{r}
-#| label: setup
+```#| label: setup
 library(tidyverse)
 set.seed(42)
 theme_set(theme_minimal(base_size = 12))
@@ -61,8 +60,7 @@ reduce systolic blood pressure compared with placebo in adults with
 hypertension?* We will generate data that reflect a realistic effect and
 walk through the workflow.
 
-```{r}
-n <- 120
+```n <- 120
 df <- tibble(
   id    = seq_len(n),
   arm   = rep(c("placebo", "drug"), each = n / 2),
@@ -73,8 +71,7 @@ df <- tibble(
 
 ## 3. Execution
 
-```{r}
-#| fig-width: 6
+```#| fig-width: 6
 #| fig-height: 3.5
 df |>
   mutate(delta = sbp_1 - sbp_0) |>
@@ -90,8 +87,7 @@ change are visible before a single calculation.
 
 ## 4. Check
 
-```{r}
-fit <- t.test(sbp_1 - sbp_0 ~ arm, data = df)
+```fit <- t.test(sbp_1 - sbp_0 ~ arm, data = df)
 fit
 ```
 
@@ -101,9 +97,9 @@ compatible with a clinically meaningful effect.
 ## 5. Report
 
 > In a simulated two-arm trial (*n* = 120), mean change in systolic
-> blood pressure was `r round(diff(tapply(df$sbp_1 - df$sbp_0, df$arm, mean)), 1)` mmHg lower in the drug arm than in
-> placebo (95% CI: `r round(fit$conf.int[1], 1)` to
-> `r round(fit$conf.int[2], 1)`; *p* = `r signif(fit$p.value, 2)`).
+> blood pressure was `round(diff(tapply(df$sbp_1 - df$sbp_0, df$arm, mean)), 1)` mmHg lower in the drug arm than in
+> placebo (95% CI: `round(fit$conf.int[1], 1)` to
+> `round(fit$conf.int[2], 1)`; *p* = `signif(fit$p.value, 2)`).
 
 Note the three pieces every report needs: direction and magnitude, an
 interval, and a *p*-value reported alongside — never instead of — the
@@ -138,8 +134,7 @@ presentation. Most reviewers catch this, most readers do not.
 
 ## Session info
 
-```{r}
-sessionInfo()
+```sessionInfo()
 ```
 
 <!-- BEGIN see-also (auto-injected) -->

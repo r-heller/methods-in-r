@@ -45,8 +45,7 @@ predictors are truly redundant.
 
 ## Setup
 
-```{r}
-#| label: setup
+```#| label: setup
 library(tidyverse)
 library(broom)
 library(car)
@@ -63,8 +62,7 @@ problem.
 
 ## 2. Visualise
 
-```{r}
-n <- 150
+```n <- 150
 x1 <- rnorm(n, 0, 1)
 x2 <- x1 + rnorm(n, 0, 0.3)      # x1 and x2 correlated
 x3 <- rnorm(n, 0, 1)
@@ -80,8 +78,7 @@ ggplot(dat, aes(x1, y)) +
 
 ## 3. Assumptions
 
-```{r}
-fit <- lm(y ~ x1 + x2 + x3, data = dat)
+```fit <- lm(y ~ x1 + x2 + x3, data = dat)
 par(mfrow = c(2, 2))
 plot(fit)
 par(mfrow = c(1, 1))
@@ -95,22 +92,19 @@ should have no points outside the Cook's-distance contours.
 
 Influence diagnostics:
 
-```{r}
-infl <- augment(fit) |> mutate(row = row_number())
+```infl <- augment(fit) |> mutate(row = row_number())
 infl |> arrange(desc(.cooksd)) |> head(5) |>
   select(row, .fitted, .resid, .hat, .cooksd)
 ```
 
 VIF:
 
-```{r}
-vif(fit)
+```vif(fit)
 ```
 
 Performance summary:
 
-```{r}
-#| fig-width: 7
+```#| fig-width: 7
 #| fig-height: 6
 check_model(fit, check = c("vif", "qq", "outliers", "linearity"))
 ```
@@ -121,8 +115,8 @@ VIF for x1 and x2 should be high; x3 should be fine. The first row
 ## 5. Concluding statement
 
 > Regression diagnostics identified one high-influence observation
-> (Cook's *D* = `r round(max(infl$.cooksd), 2)`) and collinearity
-> between x1 and x2 (VIF = `r round(max(vif(fit)), 1)`). Refitting
+> (Cook's *D* = `round(max(infl$.cooksd), 2)`) and collinearity
+> between x1 and x2 (VIF = `round(max(vif(fit)), 1)`). Refitting
 > without the influential point or after combining the collinear
 > predictors would be the next step before reporting coefficients.
 
@@ -148,8 +142,7 @@ any findings.
 
 ## Session info
 
-```{r}
-sessionInfo()
+```sessionInfo()
 ```
 
 <!-- BEGIN see-also (auto-injected) -->

@@ -41,8 +41,7 @@ each to be labelled when reported.
 
 ## Setup
 
-```{r}
-#| label: setup
+```#| label: setup
 library(tidyverse)
 set.seed(42)
 theme_set(theme_minimal(base_size = 12))
@@ -141,8 +140,7 @@ change, it requires disclosure of change.
 
 ## Session info
 
-```{r}
-sessionInfo()
+```sessionInfo()
 ```
 
 <!-- BEGIN see-also (auto-injected) -->

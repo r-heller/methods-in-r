@@ -45,8 +45,7 @@ outbreak, an intervention) live in what remains.
 
 ## Setup
 
-```{r}
-#| label: setup
+```#| label: setup
 library(tidyverse)
 library(forecast)
 library(changepoint)
@@ -62,8 +61,7 @@ change-point detection should each recover an interpretable piece.
 
 ## 2. Visualise
 
-```{r}
-months <- 144
+```months <- 144
 t  <- seq_len(months)
 trend <- 0.08 * t
 season <- 4 * sin(2 * pi * t / 12)
@@ -84,29 +82,24 @@ constant — change-points in variance would need `cpt.var`.
 
 ## 4. Conduct
 
-```{r}
-decomp <- stl(ts_y, s.window = "periodic")
+```decomp <- stl(ts_y, s.window = "periodic")
 autoplot(decomp)
 ```
 
-```{r}
-fit_arima <- auto.arima(ts_y)
+```fit_arima <- auto.arima(ts_y)
 fit_arima
 ```
 
-```{r}
-fc <- forecast(fit_arima, h = 12)
+```fc <- forecast(fit_arima, h = 12)
 autoplot(fc) +
   labs(x = "Year", y = "Simulated rate")
 ```
 
-```{r}
-cpt <- cpt.mean(as.numeric(ts_y), method = "PELT")
+```cpt <- cpt.mean(as.numeric(ts_y), method = "PELT")
 cpts(cpt)
 ```
 
-```{r}
-#| fig-width: 6
+```#| fig-width: 6
 #| fig-height: 3
 tibble(t = t, y = as.numeric(ts_y)) |>
   ggplot(aes(t, y)) +
@@ -120,9 +113,9 @@ tibble(t = t, y = as.numeric(ts_y)) |>
 
 > STL cleanly separated a linear trend, a 12-month seasonal cycle,
 > and a residual containing the simulated mean shift. `auto.arima`
-> selected `r fit_arima$arma |> paste(collapse = ", ")`
+> selected `fit_arima$arma |> paste(collapse = ", ")`
 > (p, q, P, Q, frequency, d, D). PELT detected change-points at
-> months `r paste(cpts(cpt), collapse = ", ")`, close to the
+> months `paste(cpts(cpt), collapse = ", ")`, close to the
 > simulated truth of 80.
 
 ::: {.notes}
@@ -151,8 +144,7 @@ interpretation.
 
 ## Session info
 
-```{r}
-sessionInfo()
+```sessionInfo()
 ```
 
 <!-- BEGIN see-also (auto-injected) -->

@@ -46,8 +46,7 @@ cell × gene matrix so the reasoning is visible in every render.
 
 ## Setup
 
-```{r}
-#| label: setup
+```#| label: setup
 library(tidyverse)
 library(uwot)
 set.seed(42)
@@ -64,8 +63,7 @@ cell × gene matrix, ending at a 2-D embedding with cluster labels.
 300 cells, 500 genes, three cell types with partly overlapping
 expression programmes.
 
-```{r}
-n_cell <- 300; n_gene <- 500
+```n_cell <- 300; n_gene <- 500
 cell_type <- rep(c("T", "B", "myeloid"), each = n_cell / 3)
 mu_base <- exp(rnorm(n_gene, 1, 1))
 X <- matrix(0, n_cell, n_gene)
@@ -85,8 +83,7 @@ tibble(lib = rowSums(X), ct = cell_type) |>
 
 Log-normalise, select variable genes, PCA, UMAP, cluster.
 
-```{r}
-logX <- log1p(sweep(X, 1, rowSums(X), FUN = "/") * 1e4)
+```logX <- log1p(sweep(X, 1, rowSums(X), FUN = "/") * 1e4)
 gene_var <- apply(logX, 2, var)
 keep <- order(gene_var, decreasing = TRUE)[1:100]
 pcs <- prcomp(logX[, keep])$x[, 1:10]
@@ -103,8 +100,7 @@ tibble(x = emb[, 1], y = emb[, 2],
 
 A Seurat call pattern (not run).
 
-```{r}
-#| eval: false
+```#| eval: false
 library(Seurat)
 obj <- CreateSeuratObject(counts = t(X))
 obj <- NormalizeData(obj)
@@ -121,8 +117,7 @@ DimPlot(obj, label = TRUE)
 
 Contingency of cluster vs true cell type.
 
-```{r}
-table(cluster = km$cluster, truth = cell_type)
+```table(cluster = km$cluster, truth = cell_type)
 ```
 
 ## 5. Report
@@ -161,8 +156,7 @@ classic mistake.
 
 ## Session info
 
-```{r}
-sessionInfo()
+```sessionInfo()
 ```
 
 <!-- BEGIN see-also (auto-injected) -->

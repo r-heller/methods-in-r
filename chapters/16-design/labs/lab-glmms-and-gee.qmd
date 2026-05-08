@@ -51,8 +51,7 @@ want a GEE (or a marginalised GLMM).
 
 ## Setup
 
-```{r}
-#| label: setup
+```#| label: setup
 library(tidyverse)
 library(lme4)
 library(glmmTMB)
@@ -69,8 +68,7 @@ effect is −0.5.
 
 ## 2. Visualise
 
-```{r}
-J  <- 30
+```J  <- 30
 nj <- 20
 dat <- tibble(
   clinic = factor(rep(seq_len(J), each = nj)),
@@ -96,8 +94,7 @@ correlation.
 
 ## 4. Conduct
 
-```{r}
-fit_glmer <- glmer(y ~ trt + (1 | clinic),
+```fit_glmer <- glmer(y ~ trt + (1 | clinic),
                    data = dat, family = binomial)
 fit_tmb   <- glmmTMB(y ~ trt + (1 | clinic),
                      data = dat, family = binomial)
@@ -109,8 +106,7 @@ summary(fit_tmb)$coefficients$cond
 summary(fit_gee)$coefficients
 ```
 
-```{r}
-bind_rows(
+```bind_rows(
   glmer   = broom.mixed::tidy(fit_glmer, effects = "fixed"),
   glmmTMB = broom.mixed::tidy(fit_tmb,   effects = "fixed"),
   gee     = broom::tidy(fit_gee),
@@ -123,9 +119,9 @@ bind_rows(
 ## 5. Concluding statement
 
 > The GLMM gave a subject-specific treatment log-odds of about
-> `r round(fixef(fit_glmer)["trt"], 2)`; the GEE gave a population-
+> `round(fixef(fit_glmer)["trt"], 2)`; the GEE gave a population-
 > averaged log-odds of about
-> `r round(coef(fit_gee)["trt"], 2)`. The GEE estimate is typically
+> `round(coef(fit_gee)["trt"], 2)`. The GEE estimate is typically
 > attenuated toward zero relative to the GLMM; both are correct
 > answers to different questions.
 
@@ -157,8 +153,7 @@ errors are robust.
 
 ## Session info
 
-```{r}
-sessionInfo()
+```sessionInfo()
 ```
 
 <!-- BEGIN see-also (auto-injected) -->

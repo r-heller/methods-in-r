@@ -46,8 +46,7 @@ different slopes signal a quantitative interaction.
 
 ## Setup
 
-```{r}
-#| label: setup
+```#| label: setup
 library(tidyverse)
 library(broom)
 library(car)
@@ -65,8 +64,7 @@ Alternative: the dose effect differs by supp.
 
 ## 2. Visualise
 
-```{r}
-tg <- ToothGrowth |> mutate(dose = factor(dose))
+```tg <- ToothGrowth |> mutate(dose = factor(dose))
 
 ggplot(tg, aes(dose, len, colour = supp, group = supp)) +
   stat_summary(fun = mean, geom = "point", size = 3) +
@@ -77,8 +75,7 @@ ggplot(tg, aes(dose, len, colour = supp, group = supp)) +
 
 ## 3. Assumptions
 
-```{r}
-fit <- aov(len ~ supp * dose, data = tg)
+```fit <- aov(len ~ supp * dose, data = tg)
 par(mfrow = c(2, 2))
 plot(fit)
 par(mfrow = c(1, 1))
@@ -86,8 +83,7 @@ par(mfrow = c(1, 1))
 
 ## 4. Conduct
 
-```{r}
-# Type-II sums of squares for a balanced design
+```# Type-II sums of squares for a balanced design
 Anova(lm(len ~ supp * dose, data = tg), type = 2)
 
 emm <- emmeans(fit, ~ supp | dose)
@@ -124,8 +120,7 @@ is only a summary, not the headline.
 
 ## Session info
 
-```{r}
-sessionInfo()
+```sessionInfo()
 ```
 
 <!-- BEGIN see-also (auto-injected) -->

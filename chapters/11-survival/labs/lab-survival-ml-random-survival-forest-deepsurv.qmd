@@ -45,8 +45,7 @@ a single test set is weak evidence.
 
 ## Setup
 
-```{r}
-#| label: setup
+```#| label: setup
 library(tidyverse)
 library(survival)
 library(randomForestSRC)
@@ -61,8 +60,7 @@ Harrell's concordance.
 
 ## 2. Approach
 
-```{r}
-d <- survival::pbc |>
+```d <- survival::pbc |>
   as_tibble() |>
   drop_na(bili, albumin, age, edema, protime, stage) |>
   mutate(status = ifelse(status == 2, 1, 0))
@@ -74,8 +72,7 @@ ggplot(d, aes(time / 365.25, fill = factor(status))) +
 
 ## 3. Execution
 
-```{r}
-fit_cox <- coxph(Surv(time, status) ~ bili + albumin + age + edema +
+```fit_cox <- coxph(Surv(time, status) ~ bili + albumin + age + edema +
                    protime + stage, data = d)
 fit_rsf <- rfsrc(Surv(time, status) ~ bili + albumin + age + edema +
                    protime + stage,
@@ -84,8 +81,7 @@ fit_rsf <- rfsrc(Surv(time, status) ~ bili + albumin + age + edema +
 fit_rsf
 ```
 
-```{r}
-tibble(var = names(fit_rsf$importance),
+```tibble(var = names(fit_rsf$importance),
        imp = as.numeric(fit_rsf$importance)) |>
   arrange(desc(imp)) |>
   ggplot(aes(reorder(var, imp), imp)) +
@@ -96,8 +92,7 @@ tibble(var = names(fit_rsf$importance),
 
 Compare concordance on held-out data.
 
-```{r}
-idx <- sample(nrow(d), 0.7 * nrow(d))
+```idx <- sample(nrow(d), 0.7 * nrow(d))
 tr <- d[idx, ]; te <- d[-idx, ]
 cox2 <- coxph(Surv(time, status) ~ bili + albumin + age + edema +
                 protime + stage, data = tr)
@@ -113,8 +108,7 @@ c(cox = c_cox, rsf = c_rsf)
 
 DeepSurv conceptual sketch.
 
-```{r}
-#| eval: false
+```#| eval: false
 library(torch)
 # A DeepSurv-style loss computes the partial log-likelihood on the
 # sorted risk set. The network output h(x) replaces the Cox linear
@@ -130,8 +124,8 @@ deepsurv_loss <- function(risk, time, event) {
 ## 5. Report
 
 > On `survival::pbc`, a random survival forest achieved test
-> concordance `r round(c_rsf, 3)` compared with
-> `r round(c_cox, 3)` for a multivariable Cox model. Bilirubin,
+> concordance `round(c_rsf, 3)` compared with
+> `round(c_cox, 3)` for a multivariable Cox model. Bilirubin,
 > albumin, and age dominated VIMP. A DeepSurv network with the
 > partial-likelihood loss would be the natural next step on a larger
 > cohort.
@@ -162,8 +156,7 @@ preferring for correlated predictors.
 
 ## Session info
 
-```{r}
-sessionInfo()
+```sessionInfo()
 ```
 
 <!-- BEGIN see-also (auto-injected) -->

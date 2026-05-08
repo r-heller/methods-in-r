@@ -49,8 +49,7 @@ analysts sample controls from the risk set instead.
 
 ## Setup
 
-```{r}
-#| label: setup
+```#| label: setup
 library(tidyverse)
 set.seed(42)
 theme_set(theme_minimal(base_size = 12))
@@ -69,8 +68,7 @@ binary outcome whose probability depends on exposure and a confounder
 (age). We then (a) analyse the full cohort and (b) draw a
 case-control sample with four controls per case.
 
-```{r}
-n_pop <- 5000
+```n_pop <- 5000
 pop <- tibble(
   id       = seq_len(n_pop),
   age      = rnorm(n_pop, 55, 10),
@@ -83,8 +81,7 @@ pop <- pop |>
          outcome = rbinom(n_pop, 1, prob))
 ```
 
-```{r}
-#| fig-width: 6
+```#| fig-width: 6
 #| fig-height: 3.5
 pop |>
   count(exposure, outcome) |>
@@ -97,15 +94,13 @@ pop |>
 
 ## 3. Execution
 
-```{r}
-# Cohort analysis on full population
+```# Cohort analysis on full population
 fit_cohort <- glm(outcome ~ exposure + age, data = pop, family = binomial)
 coef_cohort <- broom::tidy(fit_cohort, conf.int = TRUE, exponentiate = TRUE)
 coef_cohort
 ```
 
-```{r}
-# Nested case-control: all cases, 4 controls per case
+```# Nested case-control: all cases, 4 controls per case
 cases    <- pop |> filter(outcome == 1)
 controls <- pop |>
   filter(outcome == 0) |>
@@ -123,8 +118,7 @@ to that from the cohort, because the outcome is uncommon. Precision
 is worse in the case-control sample but the point estimate is not
 biased by the sampling scheme.
 
-```{r}
-bind_rows(
+```bind_rows(
   cohort = coef_cohort |> filter(term == "exposure"),
   ncc    = coef_ncc    |> filter(term == "exposure"),
   .id = "design"
@@ -136,12 +130,12 @@ bind_rows(
 
 > In a simulated source population of 5000 adults, exposure was
 > associated with the outcome with an adjusted odds ratio of
-> `r round(coef_cohort$estimate[2], 2)` (95% CI:
-> `r round(coef_cohort$conf.low[2], 2)` to
-> `r round(coef_cohort$conf.high[2], 2)`) in a full-cohort analysis,
-> and `r round(coef_ncc$estimate[2], 2)` (95% CI:
-> `r round(coef_ncc$conf.low[2], 2)` to
-> `r round(coef_ncc$conf.high[2], 2)`) in a 1:4 nested case-control
+> `round(coef_cohort$estimate[2], 2)` (95% CI:
+> `round(coef_cohort$conf.low[2], 2)` to
+> `round(coef_cohort$conf.high[2], 2)`) in a full-cohort analysis,
+> and `round(coef_ncc$estimate[2], 2)` (95% CI:
+> `round(coef_ncc$conf.low[2], 2)` to
+> `round(coef_ncc$conf.high[2], 2)`) in a 1:4 nested case-control
 > sample.
 
 ### STROBE in one paragraph
@@ -175,8 +169,7 @@ slides.
 
 ## Session info
 
-```{r}
-sessionInfo()
+```sessionInfo()
 ```
 
 <!-- BEGIN see-also (auto-injected) -->

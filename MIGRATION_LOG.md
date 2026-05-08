@@ -42,6 +42,12 @@ Re-running the full pipeline is a no-op apart from minor reformatting.
 - Original 5-step content (Hypothesis → Visualise → Assumptions →
   Conduct → Conclude) preserved verbatim. No reviewer section.
 - *See also* H2 appended once.
+- `scripts/static_labs.py` converts ` ```{r ...} ` chunks to ` ```r `
+  (display-only) and inline `` `r EXPR` `` to `` `EXPR` ``. The R code
+  text is preserved verbatim; only the chunk-engine fences and inline
+  evaluation markers are stripped, so the labs render as a static
+  reference without requiring a running R + renv environment. Re-run
+  `scripts/static_labs.py` after re-importing labs from source.
 
 ## Per-file table
 

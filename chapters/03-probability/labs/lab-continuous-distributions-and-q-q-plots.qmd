@@ -47,8 +47,7 @@ and denominator — that come from the chi-squares in its ratio.
 
 ## Setup
 
-```{r}
-#| label: setup
+```#| label: setup
 library(tidyverse)
 set.seed(42)
 theme_set(theme_minimal(base_size = 12))
@@ -64,8 +63,7 @@ consistent with a model.
 
 Plot densities side by side.
 
-```{r}
-grid <- tibble(x = seq(-5, 5, length.out = 400))
+```grid <- tibble(x = seq(-5, 5, length.out = 400))
 
 densities <- bind_rows(
   grid |> mutate(density = dnorm(x),         dist = "Normal(0,1)"),
@@ -74,8 +72,7 @@ densities <- bind_rows(
 )
 ```
 
-```{r}
-#| fig-width: 7
+```#| fig-width: 7
 #| fig-height: 3.5
 ggplot(densities, aes(x, density, colour = dist)) +
   geom_line(linewidth = 1) +
@@ -85,8 +82,7 @@ ggplot(densities, aes(x, density, colour = dist)) +
 The *t* with 3 df has visibly heavier tails; at 30 df it is nearly
 normal.
 
-```{r}
-chi_grid <- tibble(x = seq(0.01, 20, length.out = 400))
+```chi_grid <- tibble(x = seq(0.01, 20, length.out = 400))
 chi <- bind_rows(
   chi_grid |> mutate(density = dchisq(x, df = 2), dist = "chi-sq(2)"),
   chi_grid |> mutate(density = dchisq(x, df = 5), dist = "chi-sq(5)"),
@@ -94,8 +90,7 @@ chi <- bind_rows(
 )
 ```
 
-```{r}
-#| fig-width: 7
+```#| fig-width: 7
 #| fig-height: 3.5
 ggplot(chi, aes(x, density, colour = dist)) +
   geom_line(linewidth = 1) +
@@ -108,8 +103,7 @@ We assume samples are independent and identically distributed. For the
 Q-Q check, the sample must be reasonably sized (say, at least 20
 observations) for the plot to be informative.
 
-```{r}
-# Facet across df for the F distribution.
+```# Facet across df for the F distribution.
 f_grid <- expand_grid(
   x  = seq(0.01, 5, length.out = 300),
   df1 = c(2, 5, 10),
@@ -118,8 +112,7 @@ f_grid <- expand_grid(
   mutate(density = df(x, df1, df2))
 ```
 
-```{r}
-#| fig-width: 7
+```#| fig-width: 7
 #| fig-height: 4
 f_grid |>
   ggplot(aes(x, density, colour = factor(df1))) +
@@ -132,8 +125,7 @@ f_grid |>
 
 Q-Q plots. Simulate data, compare to a hypothesised distribution.
 
-```{r}
-n <- 200
+```n <- 200
 samples <- tibble(
   normal_sample = rnorm(n),
   heavy_tail    = rt(n, df = 3),
@@ -141,8 +133,7 @@ samples <- tibble(
 )
 ```
 
-```{r}
-#| fig-width: 8
+```#| fig-width: 8
 #| fig-height: 3.5
 samples |>
   pivot_longer(everything(), names_to = "sample", values_to = "value") |>
@@ -159,8 +150,7 @@ sample splays at both ends; the exponential curves away on one side.
 
 Shapiro-Wilk as a quick numerical check on the three samples.
 
-```{r}
-sw_results <- samples |>
+```sw_results <- samples |>
   pivot_longer(everything(), names_to = "sample", values_to = "value") |>
   group_by(sample) |>
   summarise(p = shapiro.test(value)$p.value, .groups = "drop")
@@ -169,11 +159,11 @@ sw_results
 
 ## 5. Concluding statement
 
-> The normal sample (*n* = `r n`) was consistent with normality both
+> The normal sample (*n* = `n`) was consistent with normality both
 > visually (Q-Q line) and by Shapiro-Wilk
-> (*p* = `r signif(sw_results$p[sw_results$sample=="normal_sample"], 2)`).
+> (*p* = `signif(sw_results$p[sw_results$sample=="normal_sample"], 2)`).
 > The *t*(3) sample showed clear tail departures, Shapiro-Wilk
-> *p* = `r signif(sw_results$p[sw_results$sample=="heavy_tail"], 2)`.
+> *p* = `signif(sw_results$p[sw_results$sample=="heavy_tail"], 2)`.
 > The exponential sample was strongly right-skewed, *p* < 0.001.
 
 A Q-Q plot is the most information-dense way to inspect a
@@ -202,8 +192,7 @@ significant even when the distribution is wrong.
 
 ## Session info
 
-```{r}
-sessionInfo()
+```sessionInfo()
 ```
 
 <!-- BEGIN see-also (auto-injected) -->

@@ -47,8 +47,7 @@ be false positives, regardless of the test's quality.
 
 ## Setup
 
-```{r}
-#| label: setup
+```#| label: setup
 library(tidyverse)
 set.seed(42)
 theme_set(theme_minimal(base_size = 12))
@@ -66,8 +65,7 @@ specificity in a population of known prevalence.
 Simulate a population of 100,000 people. Prevalence of disease = 1%.
 Test sensitivity = 95%. Test specificity = 95%.
 
-```{r}
-N <- 100000
+```N <- 100000
 prev <- 0.01
 sens <- 0.95
 spec <- 0.95
@@ -83,13 +81,11 @@ pop <- tibble(
   )
 ```
 
-```{r}
-tab <- table(disease = pop$disease, test = pop$test)
+```tab <- table(disease = pop$disease, test = pop$test)
 tab
 ```
 
-```{r}
-#| fig-width: 5
+```#| fig-width: 5
 #| fig-height: 3.5
 as_tibble(tab) |>
   mutate(disease = recode(disease, `0` = "no disease", `1` = "disease"),
@@ -108,8 +104,7 @@ characteristics are fixed, and no selection bias. Real screening has
 verification bias, spectrum bias, and imperfect gold standards; we
 are ignoring all of them to isolate the Bayesian calculation.
 
-```{r}
-p_disease <- mean(pop$disease)
+```p_disease <- mean(pop$disease)
 p_positive <- mean(pop$test)
 p_pos_given_disease <- mean(pop$test[pop$disease == 1])
 p_pos_given_no_disease <- mean(pop$test[pop$disease == 0])
@@ -124,8 +119,7 @@ tibble(quantity = c("P(D)", "P(T+)",
 
 Apply Bayes' theorem by hand.
 
-```{r}
-ppv_bayes <- (sens * prev) / (sens * prev + (1 - spec) * (1 - prev))
+```ppv_bayes <- (sens * prev) / (sens * prev + (1 - spec) * (1 - prev))
 ppv_bayes
 
 # By direct counting from the simulation.
@@ -137,16 +131,14 @@ Same quantity, two routes. Bayes is algebra on the marginals;
 simulation is counting from the table. They must agree, within
 sampling error.
 
-```{r}
-# Sweep prevalence from 0.001 to 0.5 and see PPV change.
+```# Sweep prevalence from 0.001 to 0.5 and see PPV change.
 sweep <- tibble(
   prev = seq(0.001, 0.5, length.out = 200),
   ppv = (sens * prev) / (sens * prev + (1 - spec) * (1 - prev))
 )
 ```
 
-```{r}
-#| fig-width: 6
+```#| fig-width: 6
 #| fig-height: 3.5
 sweep |>
   ggplot(aes(prev, ppv)) +
@@ -157,12 +149,12 @@ sweep |>
 
 ## 5. Concluding statement
 
-> With sensitivity = `r sens` and specificity = `r spec`, a test
-> applied in a population of prevalence = `r prev` has a positive
-> predictive value of `r round(ppv_bayes, 3)` — that is, fewer than
+> With sensitivity = `sens` and specificity = `spec`, a test
+> applied in a population of prevalence = `prev` has a positive
+> predictive value of `round(ppv_bayes, 3)` — that is, fewer than
 > one in five positive results is a true positive. In a simulated
-> population of `r format(N, big.mark = ",")`, the PPV recovered by
-> direct counting was `r round(ppv_count, 3)`. Negative predictive
+> population of `format(N, big.mark = ",")`, the PPV recovered by
+> direct counting was `round(ppv_count, 3)`. Negative predictive
 > value was correspondingly high.
 
 When prevalence is low, even a very accurate test produces mostly
@@ -190,8 +182,7 @@ mammography, PSA, COVID rapid testing. The numbers are memorable.
 
 ## Session info
 
-```{r}
-sessionInfo()
+```sessionInfo()
 ```
 
 <!-- BEGIN see-also (auto-injected) -->

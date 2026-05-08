@@ -47,8 +47,7 @@ model-building.
 
 ## Setup
 
-```{r}
-#| label: setup
+```#| label: setup
 library(tidyverse)
 set.seed(42)
 theme_set(theme_minimal(base_size = 12))
@@ -64,8 +63,7 @@ above 0.2?
 
 Prior vs posterior for three priors.
 
-```{r}
-k <- 7; n <- 20
+```k <- 7; n <- 20
 theta <- seq(0, 1, length.out = 400)
 priors <- tibble(
   name = c("uniform (Beta(1,1))", "sceptical (Beta(2,8))", "flat informative (Beta(4,4))"),
@@ -97,8 +95,7 @@ priors through and compare decisions.
 
 Posterior summaries.
 
-```{r}
-summ <- priors |>
+```summ <- priors |>
   rowwise() |>
   mutate(
     post_mean = (a0 + k) / (a0 + b0 + n),
@@ -112,8 +109,7 @@ summ
 
 A frequentist analogue for comparison.
 
-```{r}
-bt <- binom.test(k, n, p = 0.2, alternative = "greater")
+```bt <- binom.test(k, n, p = 0.2, alternative = "greater")
 c(estimate = bt$estimate, p_value = bt$p.value,
   ci_lo = bt$conf.int[1], ci_hi = bt$conf.int[2])
 ```
@@ -121,10 +117,10 @@ c(estimate = bt$estimate, p_value = bt$p.value,
 ## 5. Conclude
 
 > With 7 responders out of 20, the posterior probability that the
-> response rate exceeds 0.2 is `r round(summ$p_gt_0_2[1], 2)` under a
-> flat prior and `r round(summ$p_gt_0_2[2], 2)` under a sceptical prior.
+> response rate exceeds 0.2 is `round(summ$p_gt_0_2[1], 2)` under a
+> flat prior and `round(summ$p_gt_0_2[2], 2)` under a sceptical prior.
 > A one-sided exact binomial test against p₀ = 0.2 gives
-> *p* = `r signif(bt$p.value, 2)`.
+> *p* = `signif(bt$p.value, 2)`.
 
 All three priors point the same direction, but the strength of the
 conclusion depends on the prior. For a go/no-go decision, reporting
@@ -155,8 +151,7 @@ interest.
 
 ## Session info
 
-```{r}
-sessionInfo()
+```sessionInfo()
 ```
 
 <!-- BEGIN see-also (auto-injected) -->

@@ -48,8 +48,7 @@ for.
 
 ## Setup
 
-```{r}
-#| label: setup
+```#| label: setup
 library(tidyverse)
 library(lme4)
 library(lmerTest)
@@ -64,8 +63,7 @@ sleep deprivation, and the *rate* of increase varies by subject.
 
 ## 2. Visualise
 
-```{r}
-data(sleepstudy, package = "lme4")
+```data(sleepstudy, package = "lme4")
 
 sleepstudy |>
   ggplot(aes(Days, Reaction, group = Subject)) +
@@ -85,29 +83,25 @@ variance.
 
 ## 4. Conduct
 
-```{r}
-ri <- lmer(Reaction ~ Days + (1 | Subject),
+```ri <- lmer(Reaction ~ Days + (1 | Subject),
            data = sleepstudy, REML = TRUE)
 rs <- lmer(Reaction ~ Days + (Days | Subject),
            data = sleepstudy, REML = TRUE)
 summary(rs)
 ```
 
-```{r}
-# LRT on REML OK here because only random-effects structure differs,
+```# LRT on REML OK here because only random-effects structure differs,
 # but we use REFIT = TRUE in anova() to get correct comparison.
 anova(ri, rs, refit = FALSE)
 ```
 
-```{r}
-# Fit with ML if the fixed effects changed
+```# Fit with ML if the fixed effects changed
 fm_ml <- lmer(Reaction ~ Days + (Days | Subject),
               data = sleepstudy, REML = FALSE)
 fm_ml
 ```
 
-```{r}
-#| fig-width: 6
+```#| fig-width: 6
 #| fig-height: 3.5
 sleepstudy |>
   mutate(fit_rs = predict(rs)) |>
@@ -121,9 +115,9 @@ sleepstudy |>
 ## 5. Concluding statement
 
 > In the sleepstudy data, reaction time increased by about
-> `r round(fixef(rs)["Days"], 1)` ms per day of deprivation, with
+> `round(fixef(rs)["Days"], 1)` ms per day of deprivation, with
 > substantial subject-to-subject variation in slope (SD
-> ≈ `r round(sqrt(VarCorr(rs)$Subject[2, 2]), 1)` ms/day). Adding a
+> ≈ `round(sqrt(VarCorr(rs)$Subject[2, 2]), 1)` ms/day). Adding a
 > random slope significantly improved fit over a random-intercept
 > model (likelihood-ratio test *p* < 0.001).
 
@@ -150,8 +144,7 @@ mixture of chi-squares. `lmerTest` and `anova()` do this for you.
 
 ## Session info
 
-```{r}
-sessionInfo()
+```sessionInfo()
 ```
 
 <!-- BEGIN see-also (auto-injected) -->

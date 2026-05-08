@@ -37,8 +37,7 @@ for every pairwise comparison.
 
 ## Setup
 
-```{r}
-#| label: setup
+```#| label: setup
 library(tidyverse)
 library(netmeta)
 set.seed(42)
@@ -52,8 +51,7 @@ differ.
 
 ## 2. Visualise
 
-```{r}
-data(Senn2013)
+```data(Senn2013)
 head(Senn2013)
 
 net <- netmeta(TE, seTE, treat1, treat2, studlab,
@@ -62,8 +60,7 @@ net <- netmeta(TE, seTE, treat1, treat2, studlab,
                reference.group = "plac")
 ```
 
-```{r}
-#| fig-width: 6
+```#| fig-width: 6
 #| fig-height: 6
 netgraph(net, plastic = FALSE, thickness = "number.of.studies",
          points = TRUE, cex.points = 2, cex = 0.8)
@@ -71,8 +68,7 @@ netgraph(net, plastic = FALSE, thickness = "number.of.studies",
 
 ## 3. Assumptions
 
-```{r}
-decomp.design(net)
+```decomp.design(net)
 ```
 
 The within-design heterogeneity and between-design inconsistency
@@ -80,27 +76,25 @@ variances are the key diagnostics.
 
 ## 4. Conduct
 
-```{r}
-summary(net)
+```summary(net)
 rank_df <- netrank(net, small.values = "good")
 rank_df
 ```
 
 ## 5. Concluding statement
 
-```{r}
-#| echo: false
+```#| echo: false
 ranked <- as_tibble(rank_df$ranking.random, rownames = "treatment") |>
   rename(sucra = value) |>
   arrange(desc(sucra))
 top <- head(ranked, 1)
 ```
 
-> In a network meta-analysis of `r length(unique(c(Senn2013$treat1, Senn2013$treat2)))`
-> treatments across `r length(unique(Senn2013$studlab))` studies
-> (`r nrow(Senn2013)` pairwise comparisons), the treatment with the
-> highest SUCRA for HbA1c lowering was **`r top$treatment`**
-> (SUCRA = `r round(top$sucra, 2)`). SUCRA rankings should be
+> In a network meta-analysis of `length(unique(c(Senn2013$treat1, Senn2013$treat2)))`
+> treatments across `length(unique(Senn2013$studlab))` studies
+> (`nrow(Senn2013)` pairwise comparisons), the treatment with the
+> highest SUCRA for HbA1c lowering was **`top$treatment`**
+> (SUCRA = `round(top$sucra, 2)`). SUCRA rankings should be
 > interpreted alongside the pairwise effect estimates and their
 > intervals, not as a standalone conclusion.
 
@@ -124,8 +118,7 @@ as "best by pairwise CI".
 
 ## Session info
 
-```{r}
-sessionInfo()
+```sessionInfo()
 ```
 
 <!-- BEGIN see-also (auto-injected) -->

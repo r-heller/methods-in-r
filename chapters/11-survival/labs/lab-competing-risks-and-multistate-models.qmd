@@ -51,8 +51,7 @@ cumulative incidence.
 
 ## Setup
 
-```{r}
-#| label: setup
+```#| label: setup
 library(tidyverse)
 library(survival)
 library(tidycmprsk)
@@ -70,8 +69,7 @@ cumulative incidence of each.
 
 ## 2. Visualise
 
-```{r}
-data(colon, package = "survival")
+```data(colon, package = "survival")
 # Keep death records (etype == 2) + recurrence merged; for teaching
 # we build a two-event dataset:
 dat <- colon |>
@@ -109,27 +107,23 @@ on current state).
 
 ## 4. Conduct
 
-```{r}
-cif <- cuminc(Surv(etime, etype_f) ~ rx, data = dat)
+```cif <- cuminc(Surv(etime, etype_f) ~ rx, data = dat)
 cif
 ```
 
-```{r}
-#| fig-width: 6
+```#| fig-width: 6
 #| fig-height: 4
 ggsurvfit::ggcuminc(cif, outcome = c("recurrence", "death")) +
   labs(x = "Days", y = "Cumulative incidence")
 ```
 
-```{r}
-# Fine-Gray subdistribution hazard for recurrence
+```# Fine-Gray subdistribution hazard for recurrence
 fg <- crr(Surv(etime, etype_f) ~ rx + age + sex, data = dat,
           failcode = "recurrence")
 fg
 ```
 
-```{r}
-# Multistate: illness-death using mstate on a simple simulated dataset
+```# Multistate: illness-death using mstate on a simple simulated dataset
 n <- 300
 sim <- tibble(
   id = seq_len(n),
@@ -182,8 +176,7 @@ The most common reviewer comment on competing-risks papers is
 
 ## Session info
 
-```{r}
-sessionInfo()
+```sessionInfo()
 ```
 
 <!-- BEGIN see-also (auto-injected) -->

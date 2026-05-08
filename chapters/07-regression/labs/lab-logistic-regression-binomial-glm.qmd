@@ -45,8 +45,7 @@ give a threshold-free view of the same model.
 
 ## Setup
 
-```{r}
-#| label: setup
+```#| label: setup
 library(tidyverse)
 library(broom)
 library(MASS)
@@ -61,8 +60,7 @@ status (`type`)?
 
 ## 2. Visualise
 
-```{r}
-pima <- as_tibble(Pima.tr) |>
+```pima <- as_tibble(Pima.tr) |>
   mutate(type = factor(type, levels = c("No", "Yes")))
 
 ggplot(pima, aes(type, glu, fill = type)) +
@@ -76,8 +74,7 @@ ggplot(pima, aes(type, glu, fill = type)) +
 Binary outcome, independent observations, log-odds linear in the
 predictors (or handled explicitly with a smooth/transformation).
 
-```{r}
-fit <- glm(type ~ glu, data = pima, family = binomial)
+```fit <- glm(type ~ glu, data = pima, family = binomial)
 # residuals are less informative in GLMs; check for linearity on the logit scale
 pima |>
   mutate(p = fitted(fit),
@@ -90,26 +87,24 @@ pima |>
 
 ## 4. Conduct
 
-```{r}
-tidy(fit, conf.int = TRUE, exponentiate = TRUE)
+```tidy(fit, conf.int = TRUE, exponentiate = TRUE)
 glance(fit)
 ```
 
-```{r}
-pred_prob <- predict(fit, type = "response")
+```pred_prob <- predict(fit, type = "response")
 pred_class <- ifelse(pred_prob > 0.5, "Yes", "No")
 table(pred_class, truth = pima$type)
 ```
 
 ## 5. Concluding statement
 
-> In `r nrow(pima)` women, each 10 mg/dL increase in plasma glucose
+> In `nrow(pima)` women, each 10 mg/dL increase in plasma glucose
 > was associated with an odds ratio for diabetes of
-> `r round(exp(10 * coef(fit)["glu"]), 2)` (95% CI from profile:
-> `r round(exp(10 * confint(fit)["glu", 1]), 2)` to
-> `r round(exp(10 * confint(fit)["glu", 2]), 2)`). At a 0.5 threshold
+> `round(exp(10 * coef(fit)["glu"]), 2)` (95% CI from profile:
+> `round(exp(10 * confint(fit)["glu", 1]), 2)` to
+> `round(exp(10 * confint(fit)["glu", 2]), 2)`). At a 0.5 threshold
 > the classifier had
-> `r round(100 * mean(pred_class == pima$type), 1)`% accuracy; a
+> `round(100 * mean(pred_class == pima$type), 1)`% accuracy; a
 > threshold-free assessment appears in Week 3 Session 5.
 
 ::: {.notes}
@@ -132,8 +127,7 @@ implausibly close to 1.
 
 ## Session info
 
-```{r}
-sessionInfo()
+```sessionInfo()
 ```
 
 <!-- BEGIN see-also (auto-injected) -->

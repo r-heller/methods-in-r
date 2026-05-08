@@ -44,8 +44,7 @@ plots of smooths, partial effects, and derivatives.
 
 ## Setup
 
-```{r}
-#| label: setup
+```#| label: setup
 library(tidyverse)
 library(mgcv)
 library(gratia)
@@ -61,8 +60,7 @@ recovers it while a linear model misses it.
 
 ## 2. Visualise
 
-```{r}
-n <- 300
+```n <- 300
 x <- runif(n, 0, 4 * pi)
 y <- sin(x) + rnorm(n, 0, 0.4)
 dat <- tibble(x, y)
@@ -79,8 +77,7 @@ response distribution. The smooth flexibility is chosen automatically;
 the user chooses the basis and, if relevant, the upper limit on
 flexibility via `k`.
 
-```{r}
-fit_lm  <- lm(y ~ x, data = dat)
+```fit_lm  <- lm(y ~ x, data = dat)
 fit_gam <- gam(y ~ s(x, bs = "cr", k = 20), data = dat, method = "REML")
 
 plot(fit_gam, residuals = TRUE, pch = 1, shade = TRUE)
@@ -92,13 +89,11 @@ whether `k` is large enough.
 
 ## 4. Conduct
 
-```{r}
-summary(fit_gam)
+```summary(fit_gam)
 AIC(fit_lm, fit_gam)
 ```
 
-```{r}
-#| fig-width: 6
+```#| fig-width: 6
 #| fig-height: 4
 draw(fit_gam)
 ```
@@ -106,7 +101,7 @@ draw(fit_gam)
 ## 5. Concluding statement
 
 > A GAM with a single smooth of x captured the non-linear relationship
-> (edf = `r round(summary(fit_gam)$s.table[,"edf"], 1)`; approximate
+> (edf = `round(summary(fit_gam)$s.table[,"edf"], 1)`; approximate
 > *p* < 0.001). A linear model gave a near-zero slope because the
 > underlying function is a full sine wave. The GAM is preferred when
 > the shape, not a scalar slope, is the scientific object.
@@ -131,8 +126,7 @@ is approximate.
 
 ## Session info
 
-```{r}
-sessionInfo()
+```sessionInfo()
 ```
 
 <!-- BEGIN see-also (auto-injected) -->

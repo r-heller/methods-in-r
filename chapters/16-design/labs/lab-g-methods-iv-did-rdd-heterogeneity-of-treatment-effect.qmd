@@ -42,8 +42,7 @@ hierarchical models to estimate conditional average treatment effects
 
 ## Setup
 
-```{r}
-#| label: setup
+```#| label: setup
 library(tidyverse)
 library(broom)
 set.seed(42)
@@ -58,8 +57,7 @@ with a simple HTE estimate.
 
 ## 2. Approach
 
-```{r}
-n <- 2000
+```n <- 2000
 df <- tibble(
   l0 = rnorm(n),
   a0 = rbinom(n, 1, plogis(0.2 * l0)),
@@ -77,16 +75,14 @@ both `a1` and `y`.
 
 Naive regression adjusting for `l1` blocks part of the `a0` effect.
 
-```{r}
-naive <- lm(y ~ a0 + a1 + l0 + l1, data = df)
+```naive <- lm(y ~ a0 + a1 + l0 + l1, data = df)
 tidy(naive, conf.int = TRUE) |>
   filter(term %in% c("a0", "a1"))
 ```
 
 IPTW with stabilised weights:
 
-```{r}
-num0 <- glm(a0 ~ 1, data = df, family = binomial)
+```num0 <- glm(a0 ~ 1, data = df, family = binomial)
 den0 <- glm(a0 ~ l0, data = df, family = binomial)
 num1 <- glm(a1 ~ a0, data = df, family = binomial)
 den1 <- glm(a1 ~ a0 + l0 + l1, data = df, family = binomial)
@@ -106,8 +102,7 @@ tidy(msm, conf.int = TRUE) |>
 
 Balance and weight sanity:
 
-```{r}
-summary(df$sw)
+```summary(df$sw)
 ```
 
 Stabilised weights should centre on 1 with no extreme tail. If they do
@@ -149,8 +144,7 @@ restriction; DiD: parallel trends; RDD: continuity at the cutoff.
 
 ## Session info
 
-```{r}
-sessionInfo()
+```sessionInfo()
 ```
 
 <!-- BEGIN see-also (auto-injected) -->

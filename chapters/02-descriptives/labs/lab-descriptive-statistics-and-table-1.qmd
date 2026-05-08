@@ -44,8 +44,7 @@ non-standard behaviour, you override per-variable.
 
 ## Setup
 
-```{r}
-#| label: setup
+```#| label: setup
 library(tidyverse)
 library(palmerpenguins)
 library(gtsummary)
@@ -60,8 +59,7 @@ and back the choice of summary with a diagnostic plot.
 
 ## 2. Approach
 
-```{r}
-dat <- penguins |>
+```dat <- penguins |>
   drop_na(species, sex, bill_length_mm, bill_depth_mm,
           flipper_length_mm, body_mass_g)
 ```
@@ -70,8 +68,7 @@ dat <- penguins |>
 
 Pick the right summary per variable. First, eyeball the shapes.
 
-```{r}
-#| fig-width: 7
+```#| fig-width: 7
 #| fig-height: 4
 dat |>
   pivot_longer(c(bill_length_mm, bill_depth_mm,
@@ -88,8 +85,7 @@ All four continuous variables are approximately symmetric within
 species, so mean (SD) is defensible. If a variable were skewed, we
 would switch to median (IQR).
 
-```{r}
-t1 <- dat |>
+```t1 <- dat |>
   select(species, sex, bill_length_mm, bill_depth_mm,
          flipper_length_mm, body_mass_g) |>
   tbl_summary(
@@ -120,8 +116,7 @@ defaults for sample size.
 
 Validate the gtsummary output against a hand computation.
 
-```{r}
-dat |>
+```dat |>
   group_by(species) |>
   summarise(
     n = n(),
@@ -136,10 +131,10 @@ body-mass row of the Table 1.
 
 ## 5. Report
 
-> Table 1 describes `r nrow(dat)` penguins from three species in the
+> Table 1 describes `nrow(dat)` penguins from three species in the
 > Palmer Archipelago. Body mass was highest in Gentoo
-> (`r round(mean(dat$body_mass_g[dat$species == "Gentoo"]), 0)`
-> ± `r round(sd(dat$body_mass_g[dat$species == "Gentoo"]), 0)` g) and
+> (`round(mean(dat$body_mass_g[dat$species == "Gentoo"]), 0)`
+> ± `round(sd(dat$body_mass_g[dat$species == "Gentoo"]), 0)` g) and
 > lower in Adelie and Chinstrap. All four continuous variables were
 > approximately symmetric within species and are summarised as mean
 > (SD); sex was approximately balanced within each species.
@@ -172,8 +167,7 @@ inference. The audience will carry the habit into their own writing.
 
 ## Session info
 
-```{r}
-sessionInfo()
+```sessionInfo()
 ```
 
 <!-- BEGIN see-also (auto-injected) -->

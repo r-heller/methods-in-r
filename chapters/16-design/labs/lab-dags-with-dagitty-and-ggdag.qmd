@@ -48,8 +48,7 @@ This is why "adjust for everything" is bad advice.
 
 ## Setup
 
-```{r}
-#| label: setup
+```#| label: setup
 library(tidyverse)
 library(dagitty)
 library(ggdag)
@@ -64,8 +63,7 @@ Write a confounder, mediator, and collider scenario as DAGs; ask
 
 ## 2. Approach
 
-```{r}
-dag1 <- dagitty('dag {
+```dag1 <- dagitty('dag {
   X -> Y
   C -> X
   C -> Y
@@ -95,21 +93,18 @@ ggdag(dag3) + theme_dag()
 
 ## 3. Execution
 
-```{r}
-adjustmentSets(dag1, exposure = "X", outcome = "Y",
+```adjustmentSets(dag1, exposure = "X", outcome = "Y",
                effect = "total")
 ```
 
-```{r}
-# Total vs direct effect when a mediator exists
+```# Total vs direct effect when a mediator exists
 adjustmentSets(dag2, exposure = "X", outcome = "Y",
                effect = "total")
 adjustmentSets(dag2, exposure = "X", outcome = "Y",
                effect = "direct")
 ```
 
-```{r}
-# Collider: do not adjust for Z
+```# Collider: do not adjust for Z
 adjustmentSets(dag3, exposure = "X", outcome = "Y")
 ```
 
@@ -118,8 +113,7 @@ adjustmentSets(dag3, exposure = "X", outcome = "Y")
 Simulate dag1 and verify that adjusting for C recovers the true
 effect while failing to adjust biases it.
 
-```{r}
-n  <- 2000
+```n  <- 2000
 c_ <- rnorm(n)
 x  <- 0.6 * c_ + rnorm(n)
 y  <- 0.4 * x + 0.7 * c_ + rnorm(n)
@@ -164,8 +158,7 @@ procedures.
 
 ## Session info
 
-```{r}
-sessionInfo()
+```sessionInfo()
 ```
 
 <!-- BEGIN see-also (auto-injected) -->

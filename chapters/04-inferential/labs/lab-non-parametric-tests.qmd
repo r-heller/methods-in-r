@@ -43,8 +43,7 @@ stronger assumption than the test itself requires.
 
 ## Setup
 
-```{r}
-#| label: setup
+```#| label: setup
 library(tidyverse)
 set.seed(42)
 theme_set(theme_minimal(base_size = 12))
@@ -62,8 +61,7 @@ C. Three-group comparison: outcome across three centres. H0: same
 
 ## 2. Visualise
 
-```{r}
-# Scenario A: paired, lognormal-ish
+```# Scenario A: paired, lognormal-ish
 n_a <- 25
 pre <- exp(rnorm(n_a, 3, 0.3))
 post <- pre * exp(rnorm(n_a, -0.2, 0.3))
@@ -86,8 +84,7 @@ y_c <- c(exp(rnorm(n_c, 3.0, 0.4)),
 df_c <- tibble(centre, y = y_c)
 ```
 
-```{r}
-#| fig-width: 7
+```#| fig-width: 7
 #| fig-height: 3.5
 df_b |>
   ggplot(aes(grp, y, fill = grp)) +
@@ -106,8 +103,7 @@ observations; same-shape assumption extends to all *k* groups.
 
 ## 4. Conduct
 
-```{r}
-# A: Wilcoxon signed-rank
+```# A: Wilcoxon signed-rank
 wt_a <- wilcox.test(df_a$post, df_a$pre, paired = TRUE,
                     conf.int = TRUE)
 # Sign test: a simple binomial test on positive differences
@@ -128,27 +124,26 @@ list(wilcox_paired = wt_a,
 
 Follow-up pairwise comparisons with Holm correction for C:
 
-```{r}
-pairwise.wilcox.test(df_c$y, df_c$centre, p.adjust.method = "holm")
+```pairwise.wilcox.test(df_c$y, df_c$centre, p.adjust.method = "holm")
 ```
 
 ## 5. Concluding statement
 
 > **Paired comparison (A).** 25 patients, median change =
-> `r round(median(df_a$delta), 2)`; Wilcoxon signed-rank *p* =
-> `r signif(wt_a$p.value, 2)`, 95% CI on the Hodges-Lehmann estimate
-> `r round(wt_a$conf.int[1], 2)` to
-> `r round(wt_a$conf.int[2], 2)`. Sign test *p* =
-> `r signif(sign_test$p.value, 2)`.
+> `round(median(df_a$delta), 2)`; Wilcoxon signed-rank *p* =
+> `signif(wt_a$p.value, 2)`, 95% CI on the Hodges-Lehmann estimate
+> `round(wt_a$conf.int[1], 2)` to
+> `round(wt_a$conf.int[2], 2)`. Sign test *p* =
+> `signif(sign_test$p.value, 2)`.
 >
 > **Two-group (B).** Mann-Whitney *p* =
-> `r signif(wt_b$p.value, 2)`, 95% CI
-> `r round(wt_b$conf.int[1], 2)` to
-> `r round(wt_b$conf.int[2], 2)`.
+> `signif(wt_b$p.value, 2)`, 95% CI
+> `round(wt_b$conf.int[1], 2)` to
+> `round(wt_b$conf.int[2], 2)`.
 >
 > **Three-group (C).** Kruskal-Wallis χ² =
-> `r round(kw_c$statistic, 2)`, df = `r kw_c$parameter`,
-> *p* = `r signif(kw_c$p.value, 2)`. Pairwise Wilcoxon tests with
+> `round(kw_c$statistic, 2)`, df = `kw_c$parameter`,
+> *p* = `signif(kw_c$p.value, 2)`. Pairwise Wilcoxon tests with
 > Holm correction indicated the signal lay in the X vs Z contrast.
 
 Non-parametric tests are not free lunches. They trade a modest amount
@@ -175,8 +170,7 @@ often a cleaner answer than a Wilcoxon on the raw data.
 
 ## Session info
 
-```{r}
-sessionInfo()
+```sessionInfo()
 ```
 
 <!-- BEGIN see-also (auto-injected) -->

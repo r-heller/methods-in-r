@@ -49,8 +49,7 @@ is what the world uses is a separate, harder question.
 
 ## Setup
 
-```{r}
-#| label: setup
+```#| label: setup
 library(tidyverse)
 library(ranger)
 library(DALEX)
@@ -66,8 +65,7 @@ complementary interpretability artefacts.
 
 ## 2. Approach
 
-```{r}
-d <- palmerpenguins::penguins |>
+```d <- palmerpenguins::penguins |>
   tidyr::drop_na() |>
   mutate(species = factor(species))
 ggplot(d, aes(bill_length_mm, body_mass_g, colour = species)) +
@@ -76,8 +74,7 @@ ggplot(d, aes(bill_length_mm, body_mass_g, colour = species)) +
 
 ## 3. Execution
 
-```{r}
-rf <- ranger(species ~ bill_length_mm + bill_depth_mm +
+```rf <- ranger(species ~ bill_length_mm + bill_depth_mm +
                flipper_length_mm + body_mass_g,
              data = d, probability = TRUE, num.trees = 500)
 
@@ -94,8 +91,7 @@ vi <- DALEX::model_parts(explainer, type = "variable_importance")
 plot(vi)
 ```
 
-```{r}
-pdp <- DALEX::model_profile(explainer, variables = "bill_length_mm")
+```pdp <- DALEX::model_profile(explainer, variables = "bill_length_mm")
 plot(pdp)
 ```
 
@@ -103,8 +99,7 @@ plot(pdp)
 
 A Shapley value for one instance.
 
-```{r}
-pred_fun <- function(model, newdata) predict(model, newdata)$predictions[, "Adelie"]
+```pred_fun <- function(model, newdata) predict(model, newdata)$predictions[, "Adelie"]
 predictor <- iml::Predictor$new(rf, data = d[, 3:6],
                                 y = as.integer(d$species == "Adelie"),
                                 predict.function = pred_fun)
@@ -144,8 +139,7 @@ sum of contributions plus the baseline equals the prediction.
 
 ## Session info
 
-```{r}
-sessionInfo()
+```sessionInfo()
 ```
 
 <!-- BEGIN see-also (auto-injected) -->

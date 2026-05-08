@@ -42,8 +42,7 @@ decision curve.
 
 ## Setup
 
-```{r}
-#| label: setup
+```#| label: setup
 library(tidyverse)
 library(broom)
 set.seed(42)
@@ -57,8 +56,7 @@ using decision curves, NRI, and IDI.
 
 ## 2. Approach
 
-```{r}
-n <- 800
+```n <- 800
 x1 <- rnorm(n)
 x2 <- rnorm(n) + 0.3 * x1
 lp <- -1 + 0.9 * x1 + 0.6 * x2
@@ -74,8 +72,7 @@ df <- df |>
 
 ## 3. Execution — decision curve (hand-coded)
 
-```{r}
-net_benefit <- function(y, p, thr) {
+```net_benefit <- function(y, p, thr) {
   n <- length(y)
   pred_pos <- p >= thr
   tp <- sum(pred_pos &  y == 1)
@@ -95,8 +92,7 @@ dc <- tibble(
   pivot_longer(-threshold, names_to = "strategy", values_to = "net_benefit")
 ```
 
-```{r}
-#| fig-width: 6.5
+```#| fig-width: 6.5
 #| fig-height: 4
 ggplot(dc, aes(threshold, net_benefit, colour = strategy)) +
   geom_line(linewidth = 0.8) +
@@ -107,8 +103,7 @@ ggplot(dc, aes(threshold, net_benefit, colour = strategy)) +
 
 ## 4. Check — NRI and IDI
 
-```{r}
-nri <- function(y, p_old, p_new) {
+```nri <- function(y, p_old, p_new) {
   up   <- mean((p_new > p_old)[y == 1]) - mean((p_new < p_old)[y == 1])
   down <- mean((p_new < p_old)[y == 0]) - mean((p_new > p_old)[y == 0])
   c(events = up, non_events = down, overall = up + down)
@@ -153,8 +148,7 @@ criticised for optimism under misspecification — do not rely on it.
 
 ## Session info
 
-```{r}
-sessionInfo()
+```sessionInfo()
 ```
 
 <!-- BEGIN see-also (auto-injected) -->

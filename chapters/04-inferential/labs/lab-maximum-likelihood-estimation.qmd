@@ -40,8 +40,7 @@ Poisson — but the machinery generalises to any likelihood.
 
 ## Setup
 
-```{r}
-#| label: setup
+```#| label: setup
 library(tidyverse)
 set.seed(42)
 theme_set(theme_minimal(base_size = 12))
@@ -57,15 +56,13 @@ and build Wald confidence intervals.
 
 Normal data with known σ = 2.
 
-```{r}
-n <- 50
+```n <- 50
 mu_true <- 5
 sigma <- 2
 x <- rnorm(n, mean = mu_true, sd = sigma)
 ```
 
-```{r}
-#| fig-width: 6
+```#| fig-width: 6
 #| fig-height: 3.5
 grid <- tibble(mu = seq(3.5, 6.5, length.out = 300)) |>
   mutate(loglik = sapply(mu, function(m) sum(dnorm(x, m, sigma, log = TRUE))))
@@ -87,8 +84,7 @@ MLE* for the Wald standard error.
 
 ### Normal mean by MLE
 
-```{r}
-mle_mu <- mean(x)
+```mle_mu <- mean(x)
 # Fisher information for mu in normal with known sigma is n / sigma^2.
 I_mu <- n / sigma^2
 se_mu <- 1 / sqrt(I_mu)
@@ -99,8 +95,7 @@ tibble(mle = mle_mu, se = se_mu,
 
 ### Normal mean by numeric optimisation (sanity check)
 
-```{r}
-nll <- function(mu) -sum(dnorm(x, mu, sigma, log = TRUE))
+```nll <- function(mu) -sum(dnorm(x, mu, sigma, log = TRUE))
 opt <- optim(0, nll, method = "Brent", lower = 0, upper = 10, hessian = TRUE)
 opt$par        # MLE
 sqrt(1 / opt$hessian[1, 1])  # SE from observed information
@@ -108,8 +103,7 @@ sqrt(1 / opt$hessian[1, 1])  # SE from observed information
 
 ### Poisson rate by MLE
 
-```{r}
-y <- rpois(100, lambda = 3.2)
+```y <- rpois(100, lambda = 3.2)
 mle_lambda <- mean(y)
 # Fisher information for lambda: n / lambda. At MLE use 1/mle_lambda per obs.
 I_lambda <- length(y) / mle_lambda
@@ -121,8 +115,7 @@ tibble(mle = mle_lambda, se = se_lambda,
 
 ### Likelihood surface for a two-parameter model (μ, σ)
 
-```{r}
-surf <- expand_grid(
+```surf <- expand_grid(
   mu = seq(3.5, 6.5, length.out = 80),
   s  = seq(1, 3.5, length.out = 80)
 ) |>
@@ -131,8 +124,7 @@ surf <- expand_grid(
   ungroup()
 ```
 
-```{r}
-#| fig-width: 5
+```#| fig-width: 5
 #| fig-height: 4
 ggplot(surf, aes(mu, s, fill = ll)) +
   geom_tile() +
@@ -143,13 +135,13 @@ ggplot(surf, aes(mu, s, fill = ll)) +
 
 ## 5. Concluding statement
 
-> The MLE of the normal mean from *n* = `r n` observations at σ = 2
-> was `r round(mle_mu, 3)` (Fisher-information SE = `r round(se_mu, 3)`;
-> 95% Wald CI `r round(ci_mu[1], 2)` to `r round(ci_mu[2], 2)`),
+> The MLE of the normal mean from *n* = `n` observations at σ = 2
+> was `round(mle_mu, 3)` (Fisher-information SE = `round(se_mu, 3)`;
+> 95% Wald CI `round(ci_mu[1], 2)` to `round(ci_mu[2], 2)`),
 > recovering the true μ = 5. The MLE of the Poisson rate from *n* =
-> 100 observations was `r round(mle_lambda, 3)` (SE
-> `r round(se_lambda, 3)`; CI `r round(ci_lambda[1], 2)` to
-> `r round(ci_lambda[2], 2)`). Observed-information SEs from `optim`
+> 100 observations was `round(mle_lambda, 3)` (SE
+> `round(se_lambda, 3)`; CI `round(ci_lambda[1], 2)` to
+> `round(ci_lambda[2], 2)`). Observed-information SEs from `optim`
 > agreed with the expected-information calculation.
 
 The MLE is the general-purpose engine behind linear regression,
@@ -179,8 +171,7 @@ intuition the students should take away.
 
 ## Session info
 
-```{r}
-sessionInfo()
+```sessionInfo()
 ```
 
 <!-- BEGIN see-also (auto-injected) -->

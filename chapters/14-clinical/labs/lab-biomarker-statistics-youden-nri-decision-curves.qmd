@@ -47,8 +47,7 @@ answer depends on that ratio.
 
 ## Setup
 
-```{r}
-#| label: setup
+```#| label: setup
 library(tidyverse)
 library(pROC)
 library(MASS)
@@ -64,8 +63,7 @@ decision?
 
 ## 2. Visualise
 
-```{r}
-d <- as_tibble(MASS::Pima.tr)
+```d <- as_tibble(MASS::Pima.tr)
 ggplot(d, aes(glu, bmi, colour = type)) + geom_point(alpha = 0.7)
 ```
 
@@ -78,8 +76,7 @@ the linear predictor; no missingness.
 
 Fit a simple logistic regression and compute discrimination.
 
-```{r}
-fit <- glm(type ~ glu + bmi + age, data = d, family = binomial())
+```fit <- glm(type ~ glu + bmi + age, data = d, family = binomial())
 d$p <- predict(fit, type = "response")
 r  <- roc(d$type, d$p, direction = "<", quiet = TRUE)
 auc(r)
@@ -89,8 +86,7 @@ coords(r, "best", ret = c("threshold", "sensitivity", "specificity",
 
 NRI against a glucose-only baseline.
 
-```{r}
-fit0 <- glm(type ~ glu, data = d, family = binomial())
+```fit0 <- glm(type ~ glu, data = d, family = binomial())
 p0 <- predict(fit0, type = "response")
 p1 <- d$p
 # Continuous NRI
@@ -103,8 +99,7 @@ c(nri_cases = nri_up, nri_noncases = nri_dn, nri_total = nri)
 
 A manual decision curve.
 
-```{r}
-thr <- seq(0.05, 0.6, by = 0.02)
+```thr <- seq(0.05, 0.6, by = 0.02)
 dca <- sapply(thr, function(t) {
   treat <- p1 > t
   tp <- sum(treat &  case); fp <- sum(treat & !case); N <- length(case)
@@ -124,11 +119,11 @@ tibble(threshold = thr, model = dca, treat_all = nb_all, treat_none = 0) |>
 
 > A logistic model using glucose, BMI, and age discriminated diabetic
 > from non-diabetic patients in `MASS::Pima.tr` with AUC
-> `r round(as.numeric(auc(r)), 3)`. The Youden-optimal cut-point
+> `round(as.numeric(auc(r)), 3)`. The Youden-optimal cut-point
 > occurred at a predicted probability of
-> `r round(coords(r, "best", ret = "threshold", transpose = FALSE)[1, 1], 2)`.
+> `round(coords(r, "best", ret = "threshold", transpose = FALSE)[1, 1], 2)`.
 > Adding BMI and age to a glucose-only baseline produced an NRI of
-> `r round(nri, 2)`; the decision curve showed net benefit above
+> `round(nri, 2)`; the decision curve showed net benefit above
 > "treat all" for threshold probabilities from roughly 0.15 to 0.5.
 
 Decision curves give the clinical context: if the decision to
@@ -157,8 +152,7 @@ benefit with resampling.
 
 ## Session info
 
-```{r}
-sessionInfo()
+```sessionInfo()
 ```
 
 <!-- BEGIN see-also (auto-injected) -->

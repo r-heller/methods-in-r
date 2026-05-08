@@ -42,8 +42,7 @@ muscle memory here pays dividends throughout the rest of the course.
 
 ## Setup
 
-```{r}
-#| label: setup
+```#| label: setup
 library(tidyverse)
 set.seed(42)
 theme_set(theme_minimal(base_size = 12))
@@ -68,13 +67,11 @@ programme, *k* = 78 accepted. Reference acceptance rate π₀ = 0.60.
 
 ## 2. Visualise
 
-```{r}
-n <- 40
+```n <- 40
 glucose <- rnorm(n, mean = 100, sd = 12)
 ```
 
-```{r}
-#| fig-width: 6
+```#| fig-width: 6
 #| fig-height: 3.5
 tibble(glucose) |>
   ggplot(aes(glucose)) +
@@ -84,8 +81,7 @@ tibble(glucose) |>
   labs(x = "Fasting glucose (mg/dL)", y = "Count")
 ```
 
-```{r}
-accept <- 78
+```accept <- 78
 total  <- 120
 tibble(state = c("accepted", "declined"),
        count = c(accept, total - accept))
@@ -97,8 +93,7 @@ tibble(state = c("accepted", "declined"),
 central limit theorem — holds for *n* = 40 unless the underlying
 distribution is strongly skewed. Check with a Q-Q plot.
 
-```{r}
-#| fig-width: 5
+```#| fig-width: 5
 #| fig-height: 3.5
 tibble(glucose) |>
   ggplot(aes(sample = glucose)) +
@@ -112,34 +107,32 @@ For `prop.test` the large-sample normal approximation needs
 
 ## 4. Conduct
 
-```{r}
-tt <- t.test(glucose, mu = 95)
+```tt <- t.test(glucose, mu = 95)
 tt
 ```
 
-```{r}
-pt_large <- prop.test(x = accept, n = total, p = 0.60)
+```pt_large <- prop.test(x = accept, n = total, p = 0.60)
 pt_exact <- binom.test(x = accept, n = total, p = 0.60)
 list(prop_test = pt_large, binom_test = pt_exact)
 ```
 
 ## 5. Concluding statement
 
-> **Scenario A.** In a sample of `r n` patients, mean fasting glucose
-> was `r round(mean(glucose), 1)` mg/dL (SD
-> `r round(sd(glucose), 1)`). The one-sample *t*-test against μ₀ = 95
-> gave *t*(`r tt$parameter`) = `r round(tt$statistic, 2)`,
-> *p* = `r signif(tt$p.value, 2)`, mean difference
-> `r round(mean(glucose) - 95, 1)` (95% CI
-> `r round(tt$conf.int[1] - 95, 1)` to
-> `r round(tt$conf.int[2] - 95, 1)`).
+> **Scenario A.** In a sample of `n` patients, mean fasting glucose
+> was `round(mean(glucose), 1)` mg/dL (SD
+> `round(sd(glucose), 1)`). The one-sample *t*-test against μ₀ = 95
+> gave *t*(`tt$parameter`) = `round(tt$statistic, 2)`,
+> *p* = `signif(tt$p.value, 2)`, mean difference
+> `round(mean(glucose) - 95, 1)` (95% CI
+> `round(tt$conf.int[1] - 95, 1)` to
+> `round(tt$conf.int[2] - 95, 1)`).
 
-> **Scenario B.** Acceptance was `r accept` of `r total`
-> (`r round(100 * accept / total, 1)`%); the exact one-proportion
+> **Scenario B.** Acceptance was `accept` of `total`
+> (`round(100 * accept / total, 1)`%); the exact one-proportion
 > test against π₀ = 0.60 gave *p* =
-> `r signif(pt_exact$p.value, 2)`, 95% CI
-> `r round(pt_exact$conf.int[1], 2)` to
-> `r round(pt_exact$conf.int[2], 2)`.
+> `signif(pt_exact$p.value, 2)`, 95% CI
+> `round(pt_exact$conf.int[1], 2)` to
+> `round(pt_exact$conf.int[2], 2)`.
 
 The two scenarios share a template. The glossary changes — mean and
 SD for continuous, count and proportion for binary — but the five
@@ -166,8 +159,7 @@ riff on it; the rigidity at this stage is the anchor.
 
 ## Session info
 
-```{r}
-sessionInfo()
+```sessionInfo()
 ```
 
 <!-- BEGIN see-also (auto-injected) -->

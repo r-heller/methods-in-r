@@ -52,8 +52,7 @@ on each mouse, the cage is the unit.
 
 ## Setup
 
-```{r}
-#| label: setup
+```#| label: setup
 library(tidyverse)
 set.seed(42)
 theme_set(theme_minimal(base_size = 12))
@@ -66,8 +65,7 @@ combination may have a non-additive effect (interaction).
 
 ## 2. Visualise
 
-```{r}
-n_per_cell <- 10
+```n_per_cell <- 10
 fact <- expand_grid(
   drug = c("no", "yes"),
   diet = c("standard", "modified"),
@@ -94,16 +92,14 @@ separate biological unit), approximately normal residuals, and equal
 variance across cells. For the pseudoreplication demonstration we
 deliberately break the independence assumption.
 
-```{r}
-fact |>
+```fact |>
   group_by(drug, diet) |>
   summarise(mean = mean(y), sd = sd(y), n = n(), .groups = "drop")
 ```
 
 ## 4. Conduct
 
-```{r}
-fit <- lm(y ~ drug * diet, data = fact)
+```fit <- lm(y ~ drug * diet, data = fact)
 anova(fit)
 ```
 
@@ -111,8 +107,7 @@ Now a pseudoreplication error. Suppose each biological replicate was
 measured three times (technical replicates) and we naively treated
 the 3 × rows as independent.
 
-```{r}
-pseudo <- fact |>
+```pseudo <- fact |>
   slice(rep(seq_len(n()), each = 3)) |>
   mutate(tech_noise = rnorm(n(), 0, 0.3),
          y = y + tech_noise)
@@ -165,8 +160,7 @@ pseudoreplication to a wet-lab audience.
 
 ## Session info
 
-```{r}
-sessionInfo()
+```sessionInfo()
 ```
 
 <!-- BEGIN see-also (auto-injected) -->

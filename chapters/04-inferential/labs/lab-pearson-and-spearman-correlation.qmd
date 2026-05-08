@@ -44,8 +44,7 @@ causation"; in this course it means exactly what `cor.test()` returns.
 
 ## Setup
 
-```{r}
-#| label: setup
+```#| label: setup
 library(tidyverse)
 library(datasauRus)
 set.seed(42)
@@ -63,8 +62,7 @@ H0 in each case: ρ = 0. H1: ρ ≠ 0.
 
 ## 2. Visualise
 
-```{r}
-n <- 200
+```n <- 200
 x <- rnorm(n)
 y_linear   <- 0.6 * x + rnorm(n, 0, 0.8)
 y_monotone <- exp(x) + rnorm(n, 0, 0.5)
@@ -72,8 +70,7 @@ df <- tibble(x, y_linear, y_monotone) |>
   pivot_longer(starts_with("y_"), names_to = "type", values_to = "y")
 ```
 
-```{r}
-#| fig-width: 7
+```#| fig-width: 7
 #| fig-height: 3.5
 df |>
   ggplot(aes(x, y)) +
@@ -92,8 +89,7 @@ is huge.
 
 ## 4. Conduct
 
-```{r}
-p1_pearson  <- cor.test(x, y_linear,   method = "pearson")
+```p1_pearson  <- cor.test(x, y_linear,   method = "pearson")
 p1_spearman <- cor.test(x, y_linear,   method = "spearman", exact = FALSE)
 p2_pearson  <- cor.test(x, y_monotone, method = "pearson")
 p2_spearman <- cor.test(x, y_monotone, method = "spearman", exact = FALSE)
@@ -113,8 +109,7 @@ than Pearson — the rank correlation sees the perfect monotonicity.
 
 ### The DatasauRus demonstration
 
-```{r}
-ds_summary <- datasaurus_dozen |>
+```ds_summary <- datasaurus_dozen |>
   group_by(dataset) |>
   summarise(mean_x = mean(x),
             mean_y = mean(y),
@@ -124,8 +119,7 @@ ds_summary <- datasaurus_dozen |>
 head(ds_summary)
 ```
 
-```{r}
-#| fig-width: 8
+```#| fig-width: 8
 #| fig-height: 6
 datasaurus_dozen |>
   ggplot(aes(x, y)) +
@@ -140,12 +134,12 @@ and 26, and Pearson *r* ≈ −0.06. The shapes are wildly different.
 ## 5. Concluding statement
 
 > In the linear case, Pearson *r* =
-> `r round(p1_pearson$estimate, 2)` (*p* =
-> `r signif(p1_pearson$p.value, 2)`) and Spearman
-> ρ = `r round(p1_spearman$estimate, 2)`; the two agreed. In the
+> `round(p1_pearson$estimate, 2)` (*p* =
+> `signif(p1_pearson$p.value, 2)`) and Spearman
+> ρ = `round(p1_spearman$estimate, 2)`; the two agreed. In the
 > monotonic non-linear case, Pearson *r* =
-> `r round(p2_pearson$estimate, 2)` was substantially smaller
-> than Spearman ρ = `r round(p2_spearman$estimate, 2)`, revealing
+> `round(p2_pearson$estimate, 2)` was substantially smaller
+> than Spearman ρ = `round(p2_spearman$estimate, 2)`, revealing
 > that the association was strong but not linear. The DatasauRus
 > dozen reproduced identical summary statistics across 13 radically
 > different shapes, reinforcing the rule: never report a correlation
@@ -177,8 +171,7 @@ visual impact makes the point that no verbal argument can.
 
 ## Session info
 
-```{r}
-sessionInfo()
+```sessionInfo()
 ```
 
 <!-- BEGIN see-also (auto-injected) -->

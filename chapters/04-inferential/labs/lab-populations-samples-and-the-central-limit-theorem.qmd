@@ -47,8 +47,7 @@ visible.
 
 ## Setup
 
-```{r}
-#| label: setup
+```#| label: setup
 library(tidyverse)
 set.seed(42)
 theme_set(theme_minimal(base_size = 12))
@@ -65,16 +64,14 @@ distribution as *n* increases, with shrinking standard error.
 Draw from an exponential population and show the distribution of
 individual observations.
 
-```{r}
-rate <- 1
+```rate <- 1
 pop_mean <- 1 / rate
 pop_sd   <- 1 / rate
 
 pop_sample <- tibble(x = rexp(2000, rate = rate))
 ```
 
-```{r}
-#| fig-width: 6
+```#| fig-width: 6
 #| fig-height: 3.5
 pop_sample |>
   ggplot(aes(x)) +
@@ -89,8 +86,7 @@ CLT assumes iid sampling and finite variance. Exponential qualifies.
 The speed of convergence is set by how skewed the parent is — the
 more skewed, the larger the *n* needed for normality.
 
-```{r}
-# Bias-variance sanity check on the sample mean as an estimator of the
+```# Bias-variance sanity check on the sample mean as an estimator of the
 # population mean, across sample sizes.
 summarise_means <- function(n, B = 2000) {
   xbars <- replicate(B, mean(rexp(n, rate = rate)))
@@ -108,8 +104,7 @@ bv
 
 Plot the sampling distribution of the mean across growing *n*.
 
-```{r}
-sim_means <- function(n, B = 4000) {
+```sim_means <- function(n, B = 4000) {
   replicate(B, mean(rexp(n, rate = rate)))
 }
 
@@ -122,8 +117,7 @@ means_df <- bind_rows(
   mutate(n = factor(n, levels = c("n = 2", "n = 5", "n = 30", "n = 100")))
 ```
 
-```{r}
-#| fig-width: 8
+```#| fig-width: 8
 #| fig-height: 3.5
 means_df |>
   ggplot(aes(mean)) +
@@ -136,8 +130,7 @@ means_df |>
 The histograms widen (more spread with small *n*) and are strongly
 right-skewed at *n* = 2. By *n* = 30 they are close to symmetric.
 
-```{r}
-# Check SE shrinking like pop_sd / sqrt(n).
+```# Check SE shrinking like pop_sd / sqrt(n).
 bv |> mutate(expected_se = pop_sd / sqrt(n),
              ratio = se / expected_se)
 ```
@@ -177,8 +170,7 @@ sure to let the audience see it large, not crowded into a side slide.
 
 ## Session info
 
-```{r}
-sessionInfo()
+```sessionInfo()
 ```
 
 <!-- BEGIN see-also (auto-injected) -->

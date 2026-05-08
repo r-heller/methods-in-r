@@ -45,8 +45,7 @@ pattern, change-score analysis pretends it does not exist.
 
 ## Setup
 
-```{r}
-#| label: setup
+```#| label: setup
 library(tidyverse)
 library(broom)
 set.seed(42)
@@ -60,8 +59,7 @@ then compare the three analyses.
 
 ## 2. Visualise
 
-```{r}
-n <- 200
+```n <- 200
 baseline <- rnorm(n, 140, 15)
 arm <- rep(c("placebo", "active"), each = n / 2)
 # true treatment effect on follow-up: -5
@@ -82,8 +80,7 @@ ggplot(dat, aes(baseline, followup, colour = arm)) +
 Randomisation; linear relationship between baseline and follow-up;
 equal slopes across arms (tested with an interaction term).
 
-```{r}
-fit_int <- lm(followup ~ arm * baseline, data = dat)
+```fit_int <- lm(followup ~ arm * baseline, data = dat)
 tidy(fit_int) |> filter(term == "armactive:baseline")
 ```
 
@@ -91,8 +88,7 @@ If the interaction is small, pool the slopes in the ANCOVA.
 
 ## 4. Conduct
 
-```{r}
-fit_post   <- lm(followup ~ arm, data = dat)
+```fit_post   <- lm(followup ~ arm, data = dat)
 fit_change <- lm(change ~ arm, data = dat)
 fit_ancova <- lm(followup ~ arm + baseline, data = dat)
 
@@ -110,11 +106,11 @@ should be the smallest.
 
 ## 5. Concluding statement
 
-> In a simulated trial (*n* = `r nrow(dat)`), ANCOVA estimated the
+> In a simulated trial (*n* = `nrow(dat)`), ANCOVA estimated the
 > treatment effect at
-> `r round(coef(fit_ancova)["armactive"], 2)` units (95% CI
-> `r round(confint(fit_ancova)["armactive", 1], 2)` to
-> `r round(confint(fit_ancova)["armactive", 2], 2)`) with a smaller
+> `round(coef(fit_ancova)["armactive"], 2)` units (95% CI
+> `round(confint(fit_ancova)["armactive", 1], 2)` to
+> `round(confint(fit_ancova)["armactive", 2], 2)`) with a smaller
 > standard error than either the post-only or change-score analyses.
 > ANCOVA is the prespecified primary analysis in most continuous-outcome
 > RCTs.
@@ -141,8 +137,7 @@ choosing to inflate the effect* — it is fixed before randomisation.
 
 ## Session info
 
-```{r}
-sessionInfo()
+```sessionInfo()
 ```
 
 <!-- BEGIN see-also (auto-injected) -->

@@ -44,8 +44,7 @@ the interpretation of the log-rate ratio.
 
 ## Setup
 
-```{r}
-#| label: setup
+```#| label: setup
 library(tidyverse)
 library(broom)
 library(MASS)
@@ -60,8 +59,7 @@ Simulate counts of events with a dispersion parameter larger than 1
 
 ## 2. Visualise
 
-```{r}
-n <- 300
+```n <- 300
 x <- rnorm(n)
 exposure <- runif(n, 0.5, 2)
 mu <- exposure * exp(0.5 + 0.4 * x)
@@ -78,8 +76,7 @@ ggplot(dat, aes(x, y)) +
 
 Independent counts; correct mean structure; for Poisson, variance = mean.
 
-```{r}
-fit_p <- glm(y ~ x + offset(log(exposure)), data = dat, family = poisson)
+```fit_p <- glm(y ~ x + offset(log(exposure)), data = dat, family = poisson)
 # dispersion
 dev_over_df <- deviance(fit_p) / df.residual(fit_p)
 dev_over_df
@@ -89,8 +86,7 @@ Dispersion >> 1 signals negative-binomial.
 
 ## 4. Conduct
 
-```{r}
-fit_nb <- glm.nb(y ~ x + offset(log(exposure)), data = dat)
+```fit_nb <- glm.nb(y ~ x + offset(log(exposure)), data = dat)
 
 bind_rows(
   tidy(fit_p, conf.int = TRUE, exponentiate = TRUE) |> mutate(model = "Poisson"),
@@ -106,9 +102,9 @@ honest.
 ## 5. Concluding statement
 
 > Event counts increased with x (NB IRR per unit x =
-> `r round(exp(coef(fit_nb))["x"], 2)`; 95% CI
-> `r round(exp(confint(fit_nb))["x", 1], 2)` to
-> `r round(exp(confint(fit_nb))["x", 2], 2)`). Poisson residual
+> `round(exp(coef(fit_nb))["x"], 2)`; 95% CI
+> `round(exp(confint(fit_nb))["x", 1], 2)` to
+> `round(exp(confint(fit_nb))["x", 2], 2)`). Poisson residual
 > deviance indicated overdispersion; we therefore report the
 > negative-binomial fit as primary.
 
@@ -131,8 +127,7 @@ dispersion is above 1.2 or so; it will very rarely hurt.
 
 ## Session info
 
-```{r}
-sessionInfo()
+```sessionInfo()
 ```
 
 <!-- BEGIN see-also (auto-injected) -->

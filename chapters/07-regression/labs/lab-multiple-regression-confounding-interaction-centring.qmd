@@ -46,8 +46,7 @@ coefficients hard to interpret and inflates their standard errors.
 
 ## Setup
 
-```{r}
-#| label: setup
+```#| label: setup
 library(tidyverse)
 library(broom)
 set.seed(42)
@@ -61,8 +60,7 @@ then add an interaction to show effect modification.
 
 ## 2. Visualise
 
-```{r}
-n <- 300
+```n <- 300
 age <- rnorm(n, 55, 10)
 # smoker more common among older people in this simulation (confounding)
 smoker <- rbinom(n, 1, plogis(-3 + 0.05 * age))
@@ -85,8 +83,7 @@ more steeply.
 The usual linear-model assumptions, plus an implicit assumption that
 all relevant confounders are in the model.
 
-```{r}
-fit_full <- lm(y ~ age * smoker, data = dat)
+```fit_full <- lm(y ~ age * smoker, data = dat)
 par(mfrow = c(2, 2))
 plot(fit_full)
 par(mfrow = c(1, 1))
@@ -96,8 +93,7 @@ par(mfrow = c(1, 1))
 
 Crude smoker effect, then adjusted for age, then with interaction:
 
-```{r}
-crude    <- lm(y ~ smoker, data = dat)
+```crude    <- lm(y ~ smoker, data = dat)
 adjusted <- lm(y ~ smoker + age, data = dat)
 inter    <- lm(y ~ smoker * age, data = dat)
 
@@ -113,8 +109,7 @@ bind_rows(
 Now with centred age, which makes the `smokeryes` coefficient the
 smoker effect *at mean age*:
 
-```{r}
-dat_c <- dat |> mutate(age_c = age - mean(age))
+```dat_c <- dat |> mutate(age_c = age - mean(age))
 inter_c <- lm(y ~ smoker * age_c, data = dat_c)
 tidy(inter_c, conf.int = TRUE)
 ```
@@ -123,11 +118,11 @@ tidy(inter_c, conf.int = TRUE)
 
 > After adjusting for age, the estimated smoker-effect at the sample
 > mean age was
-> `r round(coef(inter_c)["smokeryes"], 1)` units (95% CI:
-> `r round(confint(inter_c)["smokeryes", 1], 1)` to
-> `r round(confint(inter_c)["smokeryes", 2], 1)`), with evidence of
+> `round(coef(inter_c)["smokeryes"], 1)` units (95% CI:
+> `round(confint(inter_c)["smokeryes", 1], 1)` to
+> `round(confint(inter_c)["smokeryes", 2], 1)`), with evidence of
 > effect modification by age (interaction coefficient
-> `r round(coef(inter_c)["smokeryes:age_c"], 2)`).
+> `round(coef(inter_c)["smokeryes:age_c"], 2)`).
 
 ::: {.notes}
 The point here is that *adjusted* is not a synonym for *causal*, and
@@ -150,8 +145,7 @@ that centring is a small habit with a large readability payoff.
 
 ## Session info
 
-```{r}
-sessionInfo()
+```sessionInfo()
 ```
 
 <!-- BEGIN see-also (auto-injected) -->

@@ -46,8 +46,7 @@ with a named model?"
 
 ## Setup
 
-```{r}
-#| label: setup
+```#| label: setup
 library(tidyverse)
 set.seed(42)
 theme_set(theme_minimal(base_size = 12))
@@ -65,8 +64,7 @@ Two-by-two: `treatment` vs `control`, outcome `event` vs `none`.
 
 Simulate: 200 per arm, event rate 0.25 in control, 0.15 in treatment.
 
-```{r}
-n_per <- 200
+```n_per <- 200
 sim <- tibble(
   arm = rep(c("control", "treatment"), each = n_per),
   event = c(rbinom(n_per, 1, 0.25),
@@ -76,8 +74,7 @@ tab <- table(arm = sim$arm, event = sim$event)
 tab
 ```
 
-```{r}
-#| fig-width: 5
+```#| fig-width: 5
 #| fig-height: 3.5
 as_tibble(tab) |>
   mutate(arm = factor(arm, levels = c("control", "treatment")),
@@ -94,16 +91,14 @@ constraint and is exact at any size. Random assignment or
 representative sampling is assumed. Independence of observations is
 essential.
 
-```{r}
-chisq.test(tab)$expected
+```chisq.test(tab)$expected
 ```
 
 All expected counts large; chi-square is appropriate.
 
 ## 4. Conduct
 
-```{r}
-ct <- chisq.test(tab, correct = FALSE)
+```ct <- chisq.test(tab, correct = FALSE)
 ft <- fisher.test(tab)
 pt <- prop.test(x = tab[, "1"], n = rowSums(tab), correct = FALSE)
 list(chisq = ct, fisher = ft, prop = pt)
@@ -111,8 +106,7 @@ list(chisq = ct, fisher = ft, prop = pt)
 
 ### Effect sizes: RD, RR, OR
 
-```{r}
-p_ctrl <- tab["control",   "1"] / sum(tab["control", ])
+```p_ctrl <- tab["control",   "1"] / sum(tab["control", ])
 p_trt  <- tab["treatment", "1"] / sum(tab["treatment", ])
 
 rd <- p_trt - p_ctrl
@@ -141,8 +135,7 @@ tibble(effect = c("RD", "RR", "OR"),
 Test whether 600 simulated genotype counts match Hardy-Weinberg
 proportions at allele frequency 0.3.
 
-```{r}
-obs <- c(AA = 260, Aa = 290, aa = 50)
+```obs <- c(AA = 260, Aa = 290, aa = 50)
 pAA <- 0.7^2; paa <- 0.3^2; pAa <- 2 * 0.7 * 0.3
 exp_probs <- c(AA = pAA, Aa = pAa, aa = paa)
 gof <- chisq.test(obs, p = exp_probs)
@@ -151,17 +144,17 @@ gof
 
 ## 5. Concluding statement
 
-> Event rates were `r round(p_ctrl, 3)` in control and
-> `r round(p_trt, 3)` in treatment (RD
-> `r round(rd, 3)`; RR `r round(rr, 2)`, 95% CI
-> `r round(ci_rr[1], 2)` to `r round(ci_rr[2], 2)`; OR
-> `r round(or, 2)`, 95% CI `r round(ci_or[1], 2)` to
-> `r round(ci_or[2], 2)`). Chi-square test χ² =
-> `r round(ct$statistic, 2)`, df = `r ct$parameter`,
-> *p* = `r signif(ct$p.value, 2)`. The Hardy-Weinberg
+> Event rates were `round(p_ctrl, 3)` in control and
+> `round(p_trt, 3)` in treatment (RD
+> `round(rd, 3)`; RR `round(rr, 2)`, 95% CI
+> `round(ci_rr[1], 2)` to `round(ci_rr[2], 2)`; OR
+> `round(or, 2)`, 95% CI `round(ci_or[1], 2)` to
+> `round(ci_or[2], 2)`). Chi-square test χ² =
+> `round(ct$statistic, 2)`, df = `ct$parameter`,
+> *p* = `signif(ct$p.value, 2)`. The Hardy-Weinberg
 > goodness-of-fit test on simulated genotypes gave χ² =
-> `r round(gof$statistic, 2)` (df = `r gof$parameter`, *p* =
-> `r signif(gof$p.value, 2)`).
+> `round(gof$statistic, 2)` (df = `gof$parameter`, *p* =
+> `signif(gof$p.value, 2)`).
 
 Report RR or OR alongside the *p*-value. In a cohort design prefer
 RR, which is the quantity clinicians translate directly to practice.
@@ -187,8 +180,7 @@ This is the single most-quoted basic epidemiology point in Course 2.
 
 ## Session info
 
-```{r}
-sessionInfo()
+```sessionInfo()
 ```
 
 <!-- BEGIN see-also (auto-injected) -->

@@ -48,8 +48,7 @@ appears.
 
 ## Setup
 
-```{r}
-#| label: setup
+```#| label: setup
 library(tidyverse)
 set.seed(42)
 theme_set(theme_minimal(base_size = 12))
@@ -63,8 +62,7 @@ processes.
 
 ## 2. Visualise
 
-```{r}
-n  <- 1000
+```n  <- 1000
 df <- tibble(
   x = rnorm(n, 50, 10),
   y = 2 + 0.5 * x + rnorm(n, 0, 5)
@@ -101,8 +99,7 @@ observed rows for each mechanism and compare with the true mean.
 
 ## 4. Conduct
 
-```{r}
-results <- all |>
+```results <- all |>
   group_by(mech) |>
   summarise(
     truth = mean(y),
@@ -113,8 +110,7 @@ results <- all |>
 results
 ```
 
-```{r}
-#| fig-width: 6
+```#| fig-width: 6
 #| fig-height: 3
 results |>
   ggplot(aes(mech, bias)) +
@@ -126,10 +122,10 @@ results |>
 ## 5. Concluding statement
 
 > Complete-case estimation of the mean of Y was unbiased under MCAR
-> (bias ≈ `r round(results$bias[results$mech == "MCAR"], 2)`) and
+> (bias ≈ `round(results$bias[results$mech == "MCAR"], 2)`) and
 > meaningfully biased under MAR
-> (`r round(results$bias[results$mech == "MAR"], 2)`) and MNAR
-> (`r round(results$bias[results$mech == "MNAR"], 2)`), despite the
+> (`round(results$bias[results$mech == "MAR"], 2)`) and MNAR
+> (`round(results$bias[results$mech == "MNAR"], 2)`), despite the
 > same true mean and similar missingness proportions.
 
 ::: {.notes}
@@ -156,8 +152,7 @@ rests on argument, not on a *p*-value.
 
 ## Session info
 
-```{r}
-sessionInfo()
+```sessionInfo()
 ```
 
 <!-- BEGIN see-also (auto-injected) -->

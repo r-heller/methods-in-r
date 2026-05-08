@@ -52,8 +52,7 @@ under reasonable assumptions. The choice should follow the science:
 
 ## Setup
 
-```{r}
-#| label: setup
+```#| label: setup
 library(tidyverse)
 library(broom)
 set.seed(42)
@@ -72,8 +71,7 @@ Working alternative: they are positively associated, with a slope near
 
 ## 2. Visualise
 
-```{r}
-n <- 200
+```n <- 200
 true_size <- rnorm(n, mean = 50, sd = 10)
 x <- true_size + rnorm(n, 0, 3)
 y <- true_size + rnorm(n, 0, 3)
@@ -93,8 +91,7 @@ OLS assumes X is measured without error and residuals in Y are
 approximately normal with constant variance. SMA assumes errors in both
 variables are comparable in scale. Both assume linearity.
 
-```{r}
-fit_ols <- lm(y ~ x, data = dat)
+```fit_ols <- lm(y ~ x, data = dat)
 par(mfrow = c(1, 2))
 plot(fit_ols, which = c(1, 2))
 par(mfrow = c(1, 1))
@@ -106,8 +103,7 @@ also noisy.
 
 ## 4. Conduct
 
-```{r}
-cor.test(dat$x, dat$y)
+```cor.test(dat$x, dat$y)
 
 fit_ols <- lm(y ~ x, data = dat)
 tidy(fit_ols, conf.int = TRUE)
@@ -116,8 +112,7 @@ tidy(fit_ols, conf.int = TRUE)
 Now a hand-coded SMA slope. The SMA slope is the ratio of standard
 deviations, signed by the correlation:
 
-```{r}
-sma_slope <- function(x, y) sign(cor(x, y)) * sd(y) / sd(x)
+```sma_slope <- function(x, y) sign(cor(x, y)) * sd(y) / sd(x)
 sma_intercept <- function(x, y) mean(y) - sma_slope(x, y) * mean(x)
 
 b_sma <- sma_slope(dat$x, dat$y)
@@ -127,8 +122,7 @@ b_ols <- coef(fit_ols)[2]
 c(ols_slope = unname(b_ols), sma_slope = b_sma)
 ```
 
-```{r}
-ggplot(dat, aes(x, y)) +
+```ggplot(dat, aes(x, y)) +
   geom_point(alpha = 0.5, colour = "grey40") +
   geom_abline(intercept = coef(fit_ols)[1], slope = b_ols,
               colour = "steelblue", linewidth = 0.9) +
@@ -144,8 +138,8 @@ fixed when it is not.
 ## 5. Concluding statement
 
 > In simulated data (*n* = 200), instrument 2 increased with instrument
-> 1 (Pearson *r* = `r round(cor(dat$x, dat$y), 2)`; OLS slope
-> `r round(unname(b_ols), 2)`; SMA slope `r round(b_sma, 2)`). Because
+> 1 (Pearson *r* = `round(cor(dat$x, dat$y), 2)`; OLS slope
+> `round(unname(b_ols), 2)`; SMA slope `round(b_sma, 2)`). Because
 > both instruments carry measurement error, we report the SMA slope as
 > the functional relationship and note the OLS slope for comparison.
 
@@ -170,8 +164,7 @@ drives the choice, not a preference for one method.
 
 ## Session info
 
-```{r}
-sessionInfo()
+```sessionInfo()
 ```
 
 <!-- BEGIN see-also (auto-injected) -->

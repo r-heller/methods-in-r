@@ -38,8 +38,7 @@ quality.
 
 ## Setup
 
-```{r}
-#| label: setup
+```#| label: setup
 library(tidyverse)
 set.seed(42)
 theme_set(theme_minimal(base_size = 12))
@@ -68,8 +67,7 @@ AND (randomised[tiab] OR randomized[tiab] OR trial[tiab] OR RCT[tiab])
 
 ## 3. Execution — simulated screening counts
 
-```{r}
-prisma <- tibble(
+```prisma <- tibble(
   stage = c("Identified (PubMed)", "Identified (Embase)",
             "After deduplication",
             "Title/abstract screened", "Full-text assessed",
@@ -80,8 +78,7 @@ prisma <- tibble(
 prisma
 ```
 
-```{r}
-#| fig-width: 6.5
+```#| fig-width: 6.5
 #| fig-height: 4
 prisma |>
   mutate(stage = factor(stage, levels = rev(stage))) |>
@@ -130,8 +127,7 @@ Emphasise the two high-risk items: deduplication and full-text exclusions
 
 ## Session info
 
-```{r}
-sessionInfo()
+```sessionInfo()
 ```
 
 <!-- BEGIN see-also (auto-injected) -->

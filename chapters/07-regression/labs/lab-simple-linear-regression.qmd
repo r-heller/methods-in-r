@@ -43,8 +43,7 @@ standard error, and then plot the line on the data to sanity-check.
 
 ## Setup
 
-```{r}
-#| label: setup
+```#| label: setup
 library(tidyverse)
 library(broom)
 library(palmerpenguins)
@@ -61,8 +60,7 @@ Alternative: slope is non-zero.
 
 ## 2. Visualise
 
-```{r}
-ad <- penguins |>
+```ad <- penguins |>
   filter(species == "Adelie") |>
   drop_na(bill_length_mm, body_mass_g)
 
@@ -80,8 +78,7 @@ honest guess at the conditional mean.
 Linearity, independence, homoscedasticity, and approximate normality of
 residuals.
 
-```{r}
-fit <- lm(body_mass_g ~ bill_length_mm, data = ad)
+```fit <- lm(body_mass_g ~ bill_length_mm, data = ad)
 par(mfrow = c(2, 2))
 plot(fit)
 par(mfrow = c(1, 1))
@@ -92,24 +89,22 @@ point dominates.
 
 ## 4. Conduct
 
-```{r}
-tidy(fit, conf.int = TRUE)
+```tidy(fit, conf.int = TRUE)
 glance(fit) |> select(r.squared, adj.r.squared, sigma, p.value)
 ```
 
-```{r}
-slope <- coef(fit)[2]
+```slope <- coef(fit)[2]
 ci <- confint(fit)[2, ]
 ```
 
 ## 5. Concluding statement
 
-> Among Adelie penguins (*n* = `r nrow(ad)`), each additional mm of
+> Among Adelie penguins (*n* = `nrow(ad)`), each additional mm of
 > bill length was associated with an increase of
-> `r round(slope, 0)` g in body mass (95% CI:
-> `r round(ci[1], 0)` to `r round(ci[2], 0)` g;
-> *p* = `r signif(glance(fit)$p.value, 2)`). Bill length explained
-> `r round(100 * glance(fit)$r.squared, 1)`% of the variance in body
+> `round(slope, 0)` g in body mass (95% CI:
+> `round(ci[1], 0)` to `round(ci[2], 0)` g;
+> *p* = `signif(glance(fit)$p.value, 2)`). Bill length explained
+> `round(100 * glance(fit)$r.squared, 1)`% of the variance in body
 > mass.
 
 ::: {.notes}
@@ -131,8 +126,7 @@ story, not the variance explained.
 
 ## Session info
 
-```{r}
-sessionInfo()
+```sessionInfo()
 ```
 
 <!-- BEGIN see-also (auto-injected) -->

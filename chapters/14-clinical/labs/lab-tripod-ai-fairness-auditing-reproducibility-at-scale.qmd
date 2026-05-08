@@ -51,8 +51,7 @@ cost of doing the work as a scripted DAG is paid back many times.
 
 ## Setup
 
-```{r}
-#| label: setup
+```#| label: setup
 library(tidyverse)
 library(pROC)
 library(MASS)
@@ -71,8 +70,7 @@ analysis.
 Attach a synthetic subgroup label — imagine this were clinic of
 enrolment — and compare performance.
 
-```{r}
-d <- as_tibble(MASS::Pima.tr) |>
+```d <- as_tibble(MASS::Pima.tr) |>
   mutate(subgroup = sample(c("A", "B"), n(), replace = TRUE,
                            prob = c(0.7, 0.3)))
 ggplot(d, aes(glu, fill = subgroup)) +
@@ -81,8 +79,7 @@ ggplot(d, aes(glu, fill = subgroup)) +
 
 ## 3. Execution
 
-```{r}
-fit <- glm(type ~ glu + bmi + age, data = d, family = binomial())
+```fit <- glm(type ~ glu + bmi + age, data = d, family = binomial())
 d$p <- predict(fit, type = "response")
 
 auc_overall <- as.numeric(auc(roc(d$type, d$p, quiet = TRUE)))
@@ -95,8 +92,7 @@ auc_by
 
 Calibration stratified by subgroup.
 
-```{r}
-d |>
+```d |>
   mutate(bin = cut(p, quantile(p, seq(0, 1, by = 0.2)),
                    include.lowest = TRUE)) |>
   group_by(subgroup, bin) |>
@@ -110,8 +106,7 @@ d |>
 
 A minimal `targets` pipeline (sketch).
 
-```{r}
-#| eval: false
+```#| eval: false
 library(targets)
 tar_script({
   library(tidyverse); library(MASS); library(pROC)
@@ -131,8 +126,7 @@ tar_read(report)
 
 TRIPOD-AI-style checklist (abbreviated).
 
-```{r}
-checklist <- tribble(
+```checklist <- tribble(
   ~item,                            ~status,
   "Study design stated",            "yes",
   "Source and eligibility",         "yes",
@@ -154,10 +148,10 @@ checklist
 ## 5. Report
 
 > A logistic prediction model on `Pima.tr` achieved overall AUC
-> `r round(auc_overall, 2)`. A fairness audit by synthetic subgroup
+> `round(auc_overall, 2)`. A fairness audit by synthetic subgroup
 > revealed AUCs of
-> `r round(auc_by$auc[1], 2)` in subgroup A (n = `r auc_by$n[1]`)
-> and `r round(auc_by$auc[2], 2)` in subgroup B (n = `r auc_by$n[2]`).
+> `round(auc_by$auc[1], 2)` in subgroup A (n = `auc_by$n[1]`)
+> and `round(auc_by$auc[2], 2)` in subgroup B (n = `auc_by$n[2]`).
 > A `targets` pipeline capturing raw data, fit, evaluation, and report
 > would make the entire analysis re-runnable by any collaborator.
 
@@ -192,8 +186,7 @@ appropriate governance.
 
 ## Session info
 
-```{r}
-sessionInfo()
+```sessionInfo()
 ```
 
 <!-- BEGIN see-also (auto-injected) -->

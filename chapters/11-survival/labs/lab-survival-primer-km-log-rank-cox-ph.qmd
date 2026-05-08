@@ -41,8 +41,7 @@ the right fix.
 
 ## Setup
 
-```{r}
-#| label: setup
+```#| label: setup
 library(tidyverse)
 library(survival)
 library(ggsurvfit)
@@ -58,8 +57,7 @@ patients. H₀: hazard ratio = 1. H₁: hazard ratio ≠ 1. α = 0.05.
 
 ## 2. Visualise
 
-```{r}
-#| fig-width: 6.5
+```#| fig-width: 6.5
 #| fig-height: 4
 lung2 <- lung |>
   mutate(sex = factor(sex, levels = 1:2, labels = c("male", "female")))
@@ -79,8 +77,7 @@ Two assumptions are worth checking: non-informative censoring (patients
 censored at a given time are representative of those still at risk) and
 proportional hazards.
 
-```{r}
-cox_fit <- coxph(Surv(time, status) ~ sex + age, data = lung2)
+```cox_fit <- coxph(Surv(time, status) ~ sex + age, data = lung2)
 cox.zph(cox_fit)
 ```
 
@@ -90,8 +87,7 @@ coefficient or stratification.
 
 ## 4. Conduct
 
-```{r}
-lr <- survdiff(Surv(time, status) ~ sex, data = lung2)
+```lr <- survdiff(Surv(time, status) ~ sex, data = lung2)
 lr
 
 tidy(cox_fit, exponentiate = TRUE, conf.int = TRUE)
@@ -99,16 +95,15 @@ tidy(cox_fit, exponentiate = TRUE, conf.int = TRUE)
 
 ## 5. Concluding statement
 
-```{r}
-#| echo: false
+```#| echo: false
 hr_row <- tidy(cox_fit, exponentiate = TRUE, conf.int = TRUE) |>
   filter(term == "sexfemale")
 ```
 
 > Female sex was associated with a lower risk of death relative to male
-> sex (HR `r round(hr_row$estimate, 2)`; 95% CI
-> `r round(hr_row$conf.low, 2)` to `r round(hr_row$conf.high, 2)`;
-> *p* = `r signif(hr_row$p.value, 2)`), adjusted for age. The
+> sex (HR `round(hr_row$estimate, 2)`; 95% CI
+> `round(hr_row$conf.low, 2)` to `round(hr_row$conf.high, 2)`;
+> *p* = `signif(hr_row$p.value, 2)`), adjusted for age. The
 > proportional-hazards assumption was not clearly violated
 > (Schoenfeld test, all *p* > 0.05).
 
@@ -134,8 +129,7 @@ requires enough events) and a Cox model (which uses every event time).
 
 ## Session info
 
-```{r}
-sessionInfo()
+```sessionInfo()
 ```
 
 <!-- BEGIN see-also (auto-injected) -->

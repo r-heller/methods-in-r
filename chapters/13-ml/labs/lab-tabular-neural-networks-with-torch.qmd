@@ -46,8 +46,7 @@ what is installed.
 
 ## Setup
 
-```{r}
-#| label: setup
+```#| label: setup
 library(tidyverse)
 set.seed(42)
 theme_set(theme_minimal(base_size = 12))
@@ -60,8 +59,7 @@ equivalent `torch` code with `#| eval: false`.
 
 ## 2. Approach
 
-```{r}
-n <- 500; p <- 10
+```n <- 500; p <- 10
 X <- matrix(rnorm(n * p), n, p)
 beta <- c(2, -1, 0.5, rep(0, p - 3))
 y <- as.numeric(X %*% beta + rnorm(n, 0, 0.5))
@@ -73,8 +71,7 @@ tibble(i = seq_len(n), y = y) |>
 
 Base-R gradient descent on the same problem.
 
-```{r}
-w <- rep(0, p); lr <- 0.01
+```w <- rep(0, p); lr <- 0.01
 losses <- numeric(200)
 for (step in 1:200) {
   yhat <- X %*% w
@@ -90,8 +87,7 @@ tibble(step = 1:200, loss = losses) |>
 
 The equivalent `torch` code.
 
-```{r}
-#| eval: false
+```#| eval: false
 library(torch)
 
 x_t <- torch_tensor(X, dtype = torch_float())
@@ -117,8 +113,7 @@ for (epoch in 1:200) {
 
 Compare our gradient-descent weights against the OLS solution.
 
-```{r}
-lm_coef <- as.numeric(coef(lm(y ~ X - 1)))
+```lm_coef <- as.numeric(coef(lm(y ~ X - 1)))
 tibble(var = seq_along(w), gd = as.numeric(w), lm = lm_coef, truth = beta) |>
   pivot_longer(-var) |>
   ggplot(aes(var, value, colour = name)) +
@@ -160,8 +155,7 @@ representation must be learned.
 
 ## Session info
 
-```{r}
-sessionInfo()
+```sessionInfo()
 ```
 
 <!-- BEGIN see-also (auto-injected) -->

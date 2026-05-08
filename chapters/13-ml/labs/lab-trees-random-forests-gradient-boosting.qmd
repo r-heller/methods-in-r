@@ -46,8 +46,7 @@ to cross-check the default Gini/gain importance.
 
 ## Setup
 
-```{r}
-#| label: setup
+```#| label: setup
 library(tidyverse)
 library(rpart)
 library(ranger)
@@ -63,16 +62,14 @@ gradient boosting; compare errors and importances.
 
 ## 2. Approach
 
-```{r}
-d <- mtcars
+```d <- mtcars
 ggplot(d, aes(wt, mpg, colour = factor(cyl))) +
   geom_point() + labs(colour = "cyl")
 ```
 
 ## 3. Execution
 
-```{r}
-tree_fit <- rpart(mpg ~ ., data = d, cp = 0.01)
+```tree_fit <- rpart(mpg ~ ., data = d, cp = 0.01)
 rf_fit   <- ranger(mpg ~ ., data = d, importance = "permutation",
                    num.trees = 500)
 xg_fit   <- xgboost(
@@ -86,8 +83,7 @@ xg_fit   <- xgboost(
 
 Honest error: CV for the tree and xgboost, OOB for ranger.
 
-```{r}
-K <- 5
+```K <- 5
 folds <- sample(rep(1:K, length.out = nrow(d)))
 mse <- function(y, yhat) mean((y - yhat)^2)
 
@@ -113,8 +109,7 @@ errs <- get_err()
 errs
 ```
 
-```{r}
-tibble(var = names(rf_fit$variable.importance),
+```tibble(var = names(rf_fit$variable.importance),
        imp = as.numeric(rf_fit$variable.importance)) |>
   arrange(desc(imp)) |>
   ggplot(aes(reorder(var, imp), imp)) + geom_col() +
@@ -124,9 +119,9 @@ tibble(var = names(rf_fit$variable.importance),
 ## 5. Report
 
 > On `mtcars` (*n* = 32), 5-fold CV MSEs were
-> `r round(errs["tree"], 2)` (single tree),
-> `r round(errs["rf"], 2)` (random forest), and
-> `r round(errs["xgb"], 2)` (gradient boosting). Permutation
+> `round(errs["tree"], 2)` (single tree),
+> `round(errs["rf"], 2)` (random forest), and
+> `round(errs["xgb"], 2)` (gradient boosting). Permutation
 > importance from the random forest identified weight and displacement
 > as the dominant predictors.
 
@@ -156,8 +151,7 @@ variability. The example is pedagogical, not a benchmark.
 
 ## Session info
 
-```{r}
-sessionInfo()
+```sessionInfo()
 ```
 
 <!-- BEGIN see-also (auto-injected) -->

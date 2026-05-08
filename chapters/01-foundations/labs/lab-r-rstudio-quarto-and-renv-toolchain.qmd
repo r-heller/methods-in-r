@@ -50,8 +50,7 @@ longer remember how to draw.
 
 ## Setup
 
-```{r}
-#| label: setup
+```#| label: setup
 library(tidyverse)
 set.seed(42)
 theme_set(theme_minimal(base_size = 12))
@@ -70,8 +69,7 @@ directory, a package lockfile, a document that can be re-rendered, and
 a record of the R session. In this lab we simulate a tiny dataset, draw
 a figure from it, and record the environment used to produce both.
 
-```{r}
-lab <- tibble(
+```lab <- tibble(
   subject = seq_len(30),
   group   = rep(c("A", "B"), each = 15),
   value   = c(rnorm(15, mean = 10, sd = 2),
@@ -82,8 +80,7 @@ lab
 
 ## 3. Execution
 
-```{r}
-#| fig-width: 6
+```#| fig-width: 6
 #| fig-height: 3.5
 lab |>
   ggplot(aes(group, value, fill = group)) +
@@ -111,8 +108,7 @@ A minimal project contains:
 
 ### renv in three commands
 
-```{r}
-#| eval: false
+```#| eval: false
 # run once per project, after creating the .Rproj
 renv::init()
 
@@ -130,12 +126,10 @@ lockfile", do not commit.
 
 ## 4. Check
 
-```{r}
-R.version.string
+```R.version.string
 ```
 
-```{r}
-# A minimal package-version report we can include in any write-up.
+```# A minimal package-version report we can include in any write-up.
 installed_versions <- tibble(
   package = c("tidyverse", "ggplot2", "dplyr"),
   version = sapply(c("tidyverse", "ggplot2", "dplyr"),
@@ -155,7 +149,7 @@ larger (`sessionInfo()`) lives at the bottom of the document.
 > narrative plus code in a Quarto document. In this lab, 30 simulated
 > observations were generated from two normal distributions and plotted
 > as a boxplot; the document was rendered with R
-> `r R.version.string` and tidyverse `r packageVersion("tidyverse")`.
+> `R.version.string` and tidyverse `packageVersion("tidyverse")`.
 
 The important phrase is *self-contained*. A file that someone else can
 run by cloning the repository and typing `quarto render` is the unit
@@ -185,8 +179,7 @@ Walk through a cold `renv::restore()` on a fresh clone.
 
 ## Session info
 
-```{r}
-sessionInfo()
+```sessionInfo()
 ```
 
 <!-- BEGIN see-also (auto-injected) -->

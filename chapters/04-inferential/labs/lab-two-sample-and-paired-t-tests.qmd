@@ -43,8 +43,7 @@ still a warning that a larger study might find a real effect.
 
 ## Setup
 
-```{r}
-#| label: setup
+```#| label: setup
 library(tidyverse)
 library(effectsize)
 set.seed(42)
@@ -65,8 +64,7 @@ the same 30 patients.
 
 ## 2. Visualise
 
-```{r}
-n <- 40
+```n <- 40
 trt <- rnorm(n, mean = 135, sd = 12)
 pla <- rnorm(n, mean = 142, sd = 12)
 df_ind <- tibble(
@@ -75,8 +73,7 @@ df_ind <- tibble(
 )
 ```
 
-```{r}
-#| fig-width: 6
+```#| fig-width: 6
 #| fig-height: 3.5
 df_ind |>
   ggplot(aes(arm, sbp, fill = arm)) +
@@ -85,16 +82,14 @@ df_ind |>
   theme(legend.position = "none")
 ```
 
-```{r}
-n2 <- 30
+```n2 <- 30
 pre  <- rnorm(n2, 148, 10)
 post <- pre - rnorm(n2, 5, 7)  # true mean drop of 5
 df_pair <- tibble(id = seq_len(n2), pre = pre, post = post) |>
   mutate(delta = post - pre)
 ```
 
-```{r}
-#| fig-width: 6
+```#| fig-width: 6
 #| fig-height: 3.5
 df_pair |>
   pivot_longer(c(pre, post), names_to = "time", values_to = "sbp") |>
@@ -111,8 +106,7 @@ Independent *t*: approximate normality of the sample means; Welch's
 does not require equal variances. Paired *t*: approximate normality
 of the within-subject differences.
 
-```{r}
-#| fig-width: 5
+```#| fig-width: 5
 #| fig-height: 3
 df_pair |>
   ggplot(aes(sample = delta)) +
@@ -124,29 +118,25 @@ df_pair |>
 
 ### Two-sample (Welch)
 
-```{r}
-tt_welch <- t.test(sbp ~ arm, data = df_ind, var.equal = FALSE)
+```tt_welch <- t.test(sbp ~ arm, data = df_ind, var.equal = FALSE)
 tt_welch
 ```
 
 ### Two-sample Student (for comparison)
 
-```{r}
-tt_student <- t.test(sbp ~ arm, data = df_ind, var.equal = TRUE)
+```tt_student <- t.test(sbp ~ arm, data = df_ind, var.equal = TRUE)
 tt_student
 ```
 
 ### Paired
 
-```{r}
-tt_paired <- t.test(df_pair$post, df_pair$pre, paired = TRUE)
+```tt_paired <- t.test(df_pair$post, df_pair$pre, paired = TRUE)
 tt_paired
 ```
 
 ### Effect size
 
-```{r}
-d_ind    <- cohens_d(sbp ~ arm, data = df_ind)
+```d_ind    <- cohens_d(sbp ~ arm, data = df_ind)
 g_ind    <- hedges_g(sbp ~ arm, data = df_ind)
 d_paired <- cohens_d(df_pair$post, df_pair$pre, paired = TRUE)
 list(d_ind = d_ind, g_ind = g_ind, d_paired = d_paired)
@@ -155,25 +145,25 @@ list(d_ind = d_ind, g_ind = g_ind, d_paired = d_paired)
 ## 5. Concluding statement
 
 > **Independent comparison.** Mean SBP was
-> `r round(mean(trt), 1)` mmHg (SD `r round(sd(trt), 1)`) in the
-> treatment arm and `r round(mean(pla), 1)` (SD
-> `r round(sd(pla), 1)`) in placebo. A Welch's *t*-test gave
-> *t*(`r round(tt_welch$parameter, 1)`) =
-> `r round(tt_welch$statistic, 2)`, *p* =
-> `r signif(tt_welch$p.value, 2)`, mean difference
-> `r round(diff(rev(tt_welch$estimate)), 1)` mmHg (95% CI
-> `r round(-tt_welch$conf.int[2], 1)` to
-> `r round(-tt_welch$conf.int[1], 1)`). Cohen's *d* =
-> `r round(d_ind$Cohens_d, 2)` (Hedges' *g* =
-> `r round(g_ind$Hedges_g, 2)`), a small-to-medium effect.
+> `round(mean(trt), 1)` mmHg (SD `round(sd(trt), 1)`) in the
+> treatment arm and `round(mean(pla), 1)` (SD
+> `round(sd(pla), 1)`) in placebo. A Welch's *t*-test gave
+> *t*(`round(tt_welch$parameter, 1)`) =
+> `round(tt_welch$statistic, 2)`, *p* =
+> `signif(tt_welch$p.value, 2)`, mean difference
+> `round(diff(rev(tt_welch$estimate)), 1)` mmHg (95% CI
+> `round(-tt_welch$conf.int[2], 1)` to
+> `round(-tt_welch$conf.int[1], 1)`). Cohen's *d* =
+> `round(d_ind$Cohens_d, 2)` (Hedges' *g* =
+> `round(g_ind$Hedges_g, 2)`), a small-to-medium effect.
 
 > **Paired comparison.** The within-subject change
-> (post − pre) had mean `r round(mean(df_pair$delta), 1)` mmHg (SD
-> `r round(sd(df_pair$delta), 1)`); paired *t*-test *t*(`r tt_paired$parameter`)
-> = `r round(tt_paired$statistic, 2)`, *p* =
-> `r signif(tt_paired$p.value, 2)`, 95% CI
-> `r round(tt_paired$conf.int[1], 1)` to
-> `r round(tt_paired$conf.int[2], 1)`.
+> (post − pre) had mean `round(mean(df_pair$delta), 1)` mmHg (SD
+> `round(sd(df_pair$delta), 1)`); paired *t*-test *t*(`tt_paired$parameter`)
+> = `round(tt_paired$statistic, 2)`, *p* =
+> `signif(tt_paired$p.value, 2)`, 95% CI
+> `round(tt_paired$conf.int[1], 1)` to
+> `round(tt_paired$conf.int[2], 1)`.
 
 The effect size is the number that generalises. A *p*-value tells
 you whether to reject; *d* and its CI tell you how much.
@@ -199,8 +189,7 @@ The before/after line plot is pretty; the Q-Q plot is diagnostic.
 
 ## Session info
 
-```{r}
-sessionInfo()
+```sessionInfo()
 ```
 
 <!-- BEGIN see-also (auto-injected) -->

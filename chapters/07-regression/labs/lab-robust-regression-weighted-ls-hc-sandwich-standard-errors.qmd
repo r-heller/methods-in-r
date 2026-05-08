@@ -48,8 +48,7 @@ samples; HC0 is classical but liberal.
 
 ## Setup
 
-```{r}
-#| label: setup
+```#| label: setup
 library(tidyverse)
 library(broom)
 library(MASS)        # rlm; load before tidyverse dplyr::select is not needed here
@@ -66,8 +65,7 @@ compare. Then repeat the OLS with sandwich standard errors.
 
 ## 2. Visualise
 
-```{r}
-n <- 200
+```n <- 200
 x <- runif(n, 0, 10)
 eps <- rnorm(n, 0, 0.3 + 0.2 * x)     # heteroscedastic
 # a few extreme outliers
@@ -83,8 +81,7 @@ ggplot(dat, aes(x, y)) +
 
 ## 3. Assumptions
 
-```{r}
-fit_ols <- lm(y ~ x, data = dat)
+```fit_ols <- lm(y ~ x, data = dat)
 par(mfrow = c(2, 2))
 plot(fit_ols)
 par(mfrow = c(1, 1))
@@ -97,8 +94,7 @@ sandwich treatment.
 
 OLS, robust, and weighted fits:
 
-```{r}
-fit_rlm <- MASS::rlm(y ~ x, data = dat)
+```fit_rlm <- MASS::rlm(y ~ x, data = dat)
 # variance grows roughly with x; weight by 1 / (fitted variance proxy)
 w <- 1 / (0.3 + 0.2 * dat$x)^2
 fit_wls <- lm(y ~ x, data = dat, weights = w)
@@ -117,17 +113,16 @@ bind_rows(
 
 Sandwich SEs on the OLS fit:
 
-```{r}
-coeftest(fit_ols, vcov. = vcovHC(fit_ols, type = "HC3"))
+```coeftest(fit_ols, vcov. = vcovHC(fit_ols, type = "HC3"))
 ```
 
 ## 5. Concluding statement
 
 > OLS, robust, and weighted fits gave similar slope estimates
 > (approximately
-> `r round(coef(fit_ols)[2], 2)`,
-> `r round(coef(fit_rlm)[2], 2)`, and
-> `r round(coef(fit_wls)[2], 2)` respectively). Classical OLS
+> `round(coef(fit_ols)[2], 2)`,
+> `round(coef(fit_rlm)[2], 2)`, and
+> `round(coef(fit_wls)[2], 2)` respectively). Classical OLS
 > standard errors were biased by heteroscedasticity; HC3 sandwich
 > standard errors were preferred for inference.
 
@@ -153,8 +148,7 @@ variance pattern → sandwich.
 
 ## Session info
 
-```{r}
-sessionInfo()
+```sessionInfo()
 ```
 
 <!-- BEGIN see-also (auto-injected) -->

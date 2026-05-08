@@ -50,8 +50,7 @@ outcome ascertainment.
 
 ## Setup
 
-```{r}
-#| label: setup
+```#| label: setup
 library(tidyverse)
 set.seed(42)
 theme_set(theme_minimal(base_size = 12))
@@ -65,8 +64,7 @@ cross over from treatment to placebo after randomisation.
 
 ## 2. Visualise
 
-```{r}
-n <- 200
+```n <- 200
 trial <- tibble(
   id    = seq_len(n),
   arm   = sample(rep(c("placebo", "treatment"), each = n / 2)),
@@ -92,16 +90,14 @@ arm. We do not assume equal variances; `t.test()` uses Welch by
 default. The more important assumption is that randomisation worked —
 that the allocation is independent of every baseline covariate.
 
-```{r}
-trial |>
+```trial |>
   group_by(arm) |>
   summarise(mean = mean(y), sd = sd(y), n = n())
 ```
 
 ## 4. Conduct
 
-```{r}
-itt <- t.test(y ~ arm, data = trial)
+```itt <- t.test(y ~ arm, data = trial)
 pp  <- t.test(y ~ received, data = trial)
 itt
 pp
@@ -114,11 +110,11 @@ crossed-over patients pull the treatment arm mean toward placebo.
 
 > In a simulated parallel-group RCT (*n* = 200), the ITT analysis
 > showed a mean difference of
-> `r round(diff(itt$estimate) * -1, 1)` (95% CI:
-> `r round(-itt$conf.int[2], 1)` to `r round(-itt$conf.int[1], 1)`)
+> `round(diff(itt$estimate) * -1, 1)` (95% CI:
+> `round(-itt$conf.int[2], 1)` to `round(-itt$conf.int[1], 1)`)
 > on the symptom score; a per-protocol analysis gave a larger
 > estimated benefit of
-> `r round(diff(pp$estimate) * -1, 1)`, illustrating the usual
+> `round(diff(pp$estimate) * -1, 1)`, illustrating the usual
 > direction of disagreement when non-adherence is informative.
 
 ::: {.notes}
@@ -145,8 +141,7 @@ good is a quiet form of bias.
 
 ## Session info
 
-```{r}
-sessionInfo()
+```sessionInfo()
 ```
 
 <!-- BEGIN see-also (auto-injected) -->

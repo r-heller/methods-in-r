@@ -52,8 +52,7 @@ optional extras.
 
 ## Setup
 
-```{r}
-#| label: setup
+```#| label: setup
 library(tidyverse)
 set.seed(42)
 theme_set(theme_minimal(base_size = 12))
@@ -66,8 +65,7 @@ uncorrected, Bonferroni, and BH discovery sets.
 
 ## 2. Approach
 
-```{r}
-m <- 1000
+```m <- 1000
 m1 <- 50
 is_alt <- c(rep(TRUE, m1), rep(FALSE, m - m1))
 mu <- ifelse(is_alt, 3, 0)
@@ -82,8 +80,7 @@ tibble(p = p, is_alt = is_alt) |>
 
 ## 3. Execution
 
-```{r}
-bonf <- p.adjust(p, method = "bonferroni")
+```bonf <- p.adjust(p, method = "bonferroni")
 bh   <- p.adjust(p, method = "BH")
 
 res <- tibble(
@@ -103,8 +100,7 @@ res
 
 Knockoff discussion — the idea, in words.
 
-```{r}
-#| eval: false
+```#| eval: false
 library(knockoff)
 # For a linear regression y ~ X with X gaussian, construct
 # Xk matching the second-order structure of X but conditionally
@@ -118,11 +114,11 @@ ko$selected
 ## 5. Report
 
 > On 1 000 simulated tests (50 alternative, 950 null), raw *p*-value
-> cut-off at 0.05 produced `r res$discovered[1]` discoveries with a
-> false-discovery proportion of `r round(res$fdp[1], 2)`. Bonferroni
-> correction produced `r res$discovered[2]` discoveries; the BH
-> procedure at *q* < 0.05 produced `r res$discovered[3]` with a
-> false-discovery proportion of `r round(res$fdp[3], 2)`.
+> cut-off at 0.05 produced `res$discovered[1]` discoveries with a
+> false-discovery proportion of `round(res$fdp[1], 2)`. Bonferroni
+> correction produced `res$discovered[2]` discoveries; the BH
+> procedure at *q* < 0.05 produced `res$discovered[3]` with a
+> false-discovery proportion of `round(res$fdp[3], 2)`.
 
 Knockoffs would give a similar FDR guarantee via a different route,
 and would remain valid under correlation between features provided
@@ -152,8 +148,7 @@ for analyses that were tried but not reported.
 
 ## Session info
 
-```{r}
-sessionInfo()
+```sessionInfo()
 ```
 
 <!-- BEGIN see-also (auto-injected) -->

@@ -51,8 +51,7 @@ nearly automatic.
 
 ## Setup
 
-```{r}
-#| label: setup
+```#| label: setup
 library(tidyverse)
 library(pwr)
 library(gtsummary)
@@ -73,18 +72,16 @@ table we can paste into the protocol.
 Closed-form first. Cohen's *d* for a 5 mmHg effect on a scale with SD
 10 mmHg is *d* = 0.5 — a medium effect by convention.
 
-```{r}
-pwr_calc <- pwr.t.test(
+```pwr_calc <- pwr.t.test(
   d = 0.5, power = 0.80, sig.level = 0.05,
   type = "two.sample", alternative = "two.sided"
 )
 pwr_calc
 ```
 
-The formula calls for about `r ceiling(pwr_calc$n)` per arm.
+The formula calls for about `ceiling(pwr_calc$n)` per arm.
 
-```{r}
-#| fig-width: 6
+```#| fig-width: 6
 #| fig-height: 3.8
 ns <- seq(10, 200, by = 5)
 powers <- sapply(ns, function(n) {
@@ -104,8 +101,7 @@ tibble(n_per_arm = ns, power = powers) |>
 Verify by simulation. A function that runs the trial once and returns
 the p-value:
 
-```{r}
-sim_trial <- function(n_per_arm, delta = 5, sd = 10) {
+```sim_trial <- function(n_per_arm, delta = 5, sd = 10) {
   placebo <- rnorm(n_per_arm, 0, sd)
   drug    <- rnorm(n_per_arm, -delta, sd)
   t.test(drug, placebo, var.equal = FALSE)$p.value
@@ -126,8 +122,7 @@ Within Monte-Carlo error of the analytic 0.80, as expected.
 Now imagine the data have been collected. We simulate one realisation and
 fit the planned analysis.
 
-```{r}
-n <- ceiling(pwr_calc$n)
+```n <- ceiling(pwr_calc$n)
 trial <- tibble(
   arm = rep(c("placebo", "drug"), each = n),
   sbp_change = c(rnorm(n, 0, 10), rnorm(n, -5, 10))
@@ -139,8 +134,7 @@ broom::tidy(fit)
 
 ## 5. Report
 
-```{r}
-#| results: asis
+```#| results: asis
 trial |>
   tbl_summary(
     by = arm,
@@ -152,11 +146,11 @@ trial |>
   modify_caption("**Table 1. Change in systolic blood pressure, by arm.**")
 ```
 
-> In a simulated two-arm trial (*n* = `r n` per arm), mean change in
+> In a simulated two-arm trial (*n* = `n` per arm), mean change in
 > systolic blood pressure was lower in the drug arm than in placebo by
-> `r round(-diff(fit$estimate), 1)` mmHg (95% CI:
-> `r round(-fit$conf.int[2], 1)` to `r round(-fit$conf.int[1], 1)`;
-> *p* = `r signif(fit$p.value, 2)`).
+> `round(-diff(fit$estimate), 1)` mmHg (95% CI:
+> `round(-fit$conf.int[2], 1)` to `round(-fit$conf.int[1], 1)`;
+> *p* = `signif(fit$p.value, 2)`).
 
 ::: {.notes}
 Build the habit early: no results paragraph without an interval; no
@@ -182,8 +176,7 @@ interval without an effect size; no effect size without units.
 
 ## Session info
 
-```{r}
-sessionInfo()
+```sessionInfo()
 ```
 
 <!-- BEGIN see-also (auto-injected) -->

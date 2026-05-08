@@ -46,8 +46,7 @@ genes actually tested in the upstream analysis.
 
 ## Setup
 
-```{r}
-#| label: setup
+```#| label: setup
 library(tidyverse)
 set.seed(42)
 theme_set(theme_minimal(base_size = 12))
@@ -63,8 +62,7 @@ call pattern for a running-sum GSEA.
 Simulate a universe of 5 000 genes; a pathway of 80 members is
 enriched for differentially expressed (DE) genes.
 
-```{r}
-N <- 5000
+```N <- 5000
 pathway <- sample(seq_len(N), 80)
 true_de <- unique(c(sample(pathway, 40), sample(setdiff(seq_len(N), pathway), 60)))
 
@@ -80,8 +78,7 @@ tibble(in_pathway = seq_len(N) %in% pathway,
 
 Hypergeometric test by hand.
 
-```{r}
-n_de <- length(true_de)
+```n_de <- length(true_de)
 k_in <- sum(true_de %in% pathway)
 p_hyper <- phyper(k_in - 1, 80, N - 80, n_de, lower.tail = FALSE)
 c(overlap = k_in, expected = n_de * 80 / N, p = p_hyper)
@@ -89,8 +86,7 @@ c(overlap = k_in, expected = n_de * 80 / N, p = p_hyper)
 
 Make a ranked gene list (as if from DE) and sketch `fgsea`.
 
-```{r}
-stat <- rnorm(N)
+```stat <- rnorm(N)
 stat[pathway] <- stat[pathway] + 1.2    # shift pathway genes up
 names(stat) <- paste0("g", seq_len(N))
 stat <- sort(stat, decreasing = TRUE)
@@ -109,8 +105,7 @@ tibble(i = seq_along(run_sum), rs = run_sum) |>
 
 `fgsea` sketch.
 
-```{r}
-#| eval: false
+```#| eval: false
 library(fgsea)
 gene_sets <- list(pathway = paste0("g", pathway))
 fgsea_res <- fgsea(pathways = gene_sets, stats = stat,
@@ -121,8 +116,7 @@ fgsea_res <- fgsea(pathways = gene_sets, stats = stat,
 
 Compare the ORA result for different shortlist sizes.
 
-```{r}
-sweep_ora <- sapply(c(50, 100, 200, 500), function(top) {
+```sweep_ora <- sapply(c(50, 100, 200, 500), function(top) {
   short <- names(stat)[seq_len(top)]
   k <- sum(short %in% paste0("g", pathway))
   phyper(k - 1, 80, N - 80, top, lower.tail = FALSE)
@@ -134,9 +128,9 @@ tibble(top = c(50, 100, 200, 500), p = sweep_ora)
 
 > In a simulated universe of 5 000 genes with a pathway of 80
 > members enriched for DE, the hypergeometric ORA for the full DE
-> shortlist gave *p* = `r signif(p_hyper, 2)`. A running-sum GSEA on
+> shortlist gave *p* = `signif(p_hyper, 2)`. A running-sum GSEA on
 > the full ranked list produced an enrichment score of
-> `r round(ES, 2)` with the running sum peaking near the top.
+> `round(ES, 2)` with the running sum peaking near the top.
 
 ORA is a quick, interpretable first pass; GSEA is better when the
 effect is diffuse. The two answer different questions and sometimes
@@ -165,8 +159,7 @@ gene symbols, but your measured genes may be a biased subset.
 
 ## Session info
 
-```{r}
-sessionInfo()
+```sessionInfo()
 ```
 
 <!-- BEGIN see-also (auto-injected) -->

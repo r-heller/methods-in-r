@@ -49,8 +49,7 @@ answer.
 
 ## Setup
 
-```{r}
-#| label: setup
+```#| label: setup
 library(tidyverse)
 library(pwr)
 library(lme4)
@@ -69,8 +68,7 @@ detect a fixed effect of 0.3.
 
 ## 2. Visualise
 
-```{r}
-ns <- seq(20, 400, by = 20)
+```ns <- seq(20, 400, by = 20)
 pw <- map_dbl(ns, \(n) pwr.t.test(
   n = n / 2, d = 0.4, sig.level = 0.05, type = "two.sample"
 )$power)
@@ -91,14 +89,12 @@ independence.
 
 ## 4. Conduct
 
-```{r}
-# Closed-form
+```# Closed-form
 res <- pwr.t.test(d = 0.4, power = 0.8, sig.level = 0.05, type = "two.sample")
 res
 ```
 
-```{r}
-# Simulation: a small two-arm cluster study
+```# Simulation: a small two-arm cluster study
 J   <- 20                              # clusters
 nj  <- 10                              # obs per cluster
 dat <- tibble(
@@ -117,8 +113,7 @@ m0 <- makeLmer(
 m0
 ```
 
-```{r}
-#| cache: true
+```#| cache: true
 ps <- powerSim(m0, nsim = 50, test = fixed("arm"), progress = FALSE)
 ps
 ```
@@ -129,9 +124,9 @@ least 1000 for a stable estimate.
 ## 5. Concluding statement
 
 > A two-sample *t*-test targeting *d* = 0.4 at 80% power requires
-> about `r ceiling(res$n) * 2` participants in total. A mixed
+> about `ceiling(res$n) * 2` participants in total. A mixed
 > model with 20 clusters of size 10 and a fixed effect of 0.3 has
-> estimated power of `r round(summary(ps)$mean * 100)`% in this
+> estimated power of `round(summary(ps)$mean * 100)`% in this
 > simulation (50 replicates).
 
 ::: {.notes}
@@ -160,8 +155,7 @@ fine for teaching but too loose for planning.
 
 ## Session info
 
-```{r}
-sessionInfo()
+```sessionInfo()
 ```
 
 <!-- BEGIN see-also (auto-injected) -->

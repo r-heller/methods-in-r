@@ -47,8 +47,7 @@ very effect you are studying.
 
 ## Setup
 
-```{r}
-#| label: setup
+```#| label: setup
 library(tidyverse)
 library(survival)
 library(ggsurvfit)
@@ -65,8 +64,7 @@ protective effect.
 
 ## 2. Visualise
 
-```{r}
-n <- 500
+```n <- 500
 dat <- tibble(
   id = seq_len(n),
   t_event = rexp(n, rate = 0.02),        # true event time
@@ -92,14 +90,12 @@ is deliberately biased by construction.
 
 ## 4. Conduct
 
-```{r}
-# Naive (biased) analysis
+```# Naive (biased) analysis
 fit_naive <- coxph(Surv(t_obs, event) ~ ever_drug, data = dat)
 summary(fit_naive)
 ```
 
-```{r}
-# Landmark at time 20: only include patients still at risk at 20,
+```# Landmark at time 20: only include patients still at risk at 20,
 # classify by drug status as of 20.
 landmark <- 20
 dat_lm <- dat |>
@@ -111,8 +107,7 @@ fit_lm <- coxph(Surv(t_obs_lm, event) ~ drug_lm, data = dat_lm)
 summary(fit_lm)
 ```
 
-```{r}
-# Time-dependent Cox: counting-process format
+```# Time-dependent Cox: counting-process format
 td <- dat |>
   transmute(
     id,
@@ -140,11 +135,11 @@ summary(fit_td)
 ## 5. Concluding statement
 
 > The naive Cox analysis produced a hazard ratio of
-> `r round(exp(coef(fit_naive)), 2)` for ever-drug — spuriously
+> `round(exp(coef(fit_naive)), 2)` for ever-drug — spuriously
 > protective, because immortal time was counted as exposed
 > follow-up. A landmark analysis at time 20 gave HR
-> `r round(exp(coef(fit_lm)), 2)`, and a time-dependent Cox model
-> gave HR `r round(exp(coef(fit_td)), 2)`, both close to the null
+> `round(exp(coef(fit_lm)), 2)`, and a time-dependent Cox model
+> gave HR `round(exp(coef(fit_td)), 2)`, both close to the null
 > as expected from the simulated truth.
 
 ::: {.notes}
@@ -172,8 +167,7 @@ follow-up" is suspiciously longer in the exposed group.
 
 ## Session info
 
-```{r}
-sessionInfo()
+```sessionInfo()
 ```
 
 <!-- BEGIN see-also (auto-injected) -->

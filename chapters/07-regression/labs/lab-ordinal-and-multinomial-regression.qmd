@@ -46,8 +46,7 @@ than a single *p*-value.
 
 ## Setup
 
-```{r}
-#| label: setup
+```#| label: setup
 library(tidyverse)
 library(broom)
 library(MASS)
@@ -64,8 +63,7 @@ multinomial analyses.
 
 ## 2. Visualise
 
-```{r}
-n <- 400
+```n <- 400
 x <- rnorm(n)
 eta <- 1.2 * x
 # cumulative cutpoints
@@ -90,8 +88,7 @@ ggplot(dat, aes(y, x, fill = y)) +
 Proportional-odds (same β across cumulative splits) for `polr`;
 independent observations for both models.
 
-```{r}
-# quick graphical check: fit logistic at each cumulative split and compare slopes
+```# quick graphical check: fit logistic at each cumulative split and compare slopes
 splits <- tibble(cut = c("mild vs rest", "mild+mod vs severe")) |>
   mutate(coef = c(
     coef(glm(I(as.numeric(y) >= 2) ~ x, data = dat, family = binomial))[2],
@@ -104,8 +101,7 @@ If the two slopes are close, proportional odds is plausible.
 
 ## 4. Conduct
 
-```{r}
-fit_polr <- polr(y ~ x, data = dat, Hess = TRUE)
+```fit_polr <- polr(y ~ x, data = dat, Hess = TRUE)
 summary(fit_polr)
 # approximate p-values
 coef_summary <- coef(summary(fit_polr))
@@ -116,8 +112,7 @@ exp(coef(fit_polr))  # cumulative odds ratio
 
 Multinomial:
 
-```{r}
-fit_multi <- multinom(y ~ x, data = dat, trace = FALSE)
+```fit_multi <- multinom(y ~ x, data = dat, trace = FALSE)
 summary(fit_multi)
 z <- summary(fit_multi)$coefficients / summary(fit_multi)$standard.errors
 p_multi <- (1 - pnorm(abs(z), 0, 1)) * 2
@@ -127,7 +122,7 @@ round(p_multi, 3)
 ## 5. Concluding statement
 
 > The proportional-odds model returned a cumulative odds ratio per
-> unit of x of `r round(exp(coef(fit_polr))[1], 2)`, meaning larger x
+> unit of x of `round(exp(coef(fit_polr))[1], 2)`, meaning larger x
 > shifted symptom severity upward. The multinomial model returned two
 > logits (moderate vs mild and severe vs mild) with effects in the same
 > direction; deviance-based comparison did not reject the
@@ -153,8 +148,7 @@ A nice classroom moment: show both models side-by-side and note that
 
 ## Session info
 
-```{r}
-sessionInfo()
+```sessionInfo()
 ```
 
 <!-- BEGIN see-also (auto-injected) -->

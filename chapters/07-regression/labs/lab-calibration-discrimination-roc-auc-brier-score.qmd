@@ -49,8 +49,7 @@ probability. A 45° reference line is perfect calibration. Smoothed
 
 ## Setup
 
-```{r}
-#| label: setup
+```#| label: setup
 library(tidyverse)
 library(broom)
 library(MASS)
@@ -67,8 +66,7 @@ Brier score.
 
 ## 2. Visualise
 
-```{r}
-train <- as_tibble(Pima.tr) |> mutate(y = as.integer(type == "Yes"))
+```train <- as_tibble(Pima.tr) |> mutate(y = as.integer(type == "Yes"))
 test  <- as_tibble(Pima.te) |> mutate(y = as.integer(type == "Yes"))
 
 fit <- glm(y ~ glu + bmi + age + ped, data = train, family = binomial)
@@ -88,8 +86,7 @@ evaluation is on held-out data.
 
 Discrimination:
 
-```{r}
-roc_obj <- roc(test$y, test$p, quiet = TRUE)
+```roc_obj <- roc(test$y, test$p, quiet = TRUE)
 auc(roc_obj)
 ci.auc(roc_obj)
 
@@ -98,8 +95,7 @@ plot(roc_obj, main = sprintf("ROC — AUC = %.2f", auc(roc_obj)))
 
 Calibration (decile binning):
 
-```{r}
-cal <- test |>
+```cal <- test |>
   mutate(bin = ntile(p, 10)) |>
   group_by(bin) |>
   summarise(predicted = mean(p), observed = mean(y), n = n())
@@ -115,19 +111,18 @@ ggplot(cal, aes(predicted, observed)) +
 
 Brier score:
 
-```{r}
-brier <- mean((test$p - test$y)^2)
+```brier <- mean((test$p - test$y)^2)
 brier
 ```
 
 ## 5. Concluding statement
 
-> On the held-out test set (*n* = `r nrow(test)`), the four-predictor
+> On the held-out test set (*n* = `nrow(test)`), the four-predictor
 > logistic model achieved AUC =
-> `r round(as.numeric(auc(roc_obj)), 2)` (95% CI:
-> `r round(ci.auc(roc_obj)[1], 2)` to
-> `r round(ci.auc(roc_obj)[3], 2)`) and a Brier score of
-> `r round(brier, 3)`. Calibration by decile was close to the 45° line.
+> `round(as.numeric(auc(roc_obj)), 2)` (95% CI:
+> `round(ci.auc(roc_obj)[1], 2)` to
+> `round(ci.auc(roc_obj)[3], 2)`) and a Brier score of
+> `round(brier, 3)`. Calibration by decile was close to the 45° line.
 
 ::: {.notes}
 Emphasise that AUC alone is a performance *half-story*. Clinicians
@@ -148,8 +143,7 @@ using the predicted probability as a risk need calibration too.
 
 ## Session info
 
-```{r}
-sessionInfo()
+```sessionInfo()
 ```
 
 <!-- BEGIN see-also (auto-injected) -->

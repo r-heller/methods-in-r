@@ -44,8 +44,7 @@ intervals (`confint(fit)` uses profiles) are more honest.
 
 ## Setup
 
-```{r}
-#| label: setup
+```#| label: setup
 library(tidyverse)
 library(broom)
 set.seed(42)
@@ -58,8 +57,7 @@ Simulate dose-response data and fit a three-parameter logistic.
 
 ## 2. Visualise
 
-```{r}
-n <- 60
+```n <- 60
 dose <- rep(c(0.1, 0.3, 1, 3, 10, 30), each = 10)
 # true params: asym = 100, xmid = log(3), scal = 0.7 (log-scale)
 true_resp <- 100 / (1 + exp(-(log(dose) - log(3)) / 0.7))
@@ -77,8 +75,7 @@ ggplot(dat, aes(dose, resp)) +
 Correct model form, independent normal errors with constant variance
 on the response scale, and informative starting values.
 
-```{r}
-fit <- nls(resp ~ SSlogis(log(dose), Asym, xmid, scal), data = dat)
+```fit <- nls(resp ~ SSlogis(log(dose), Asym, xmid, scal), data = dat)
 resid_plot <- tibble(fitted = fitted(fit), resid = resid(fit))
 ggplot(resid_plot, aes(fitted, resid)) +
   geom_point() +
@@ -88,8 +85,7 @@ ggplot(resid_plot, aes(fitted, resid)) +
 
 ## 4. Conduct
 
-```{r}
-summary(fit)
+```summary(fit)
 confint(fit)
 
 pred <- tibble(dose = 10 ^ seq(-1, 1.5, length.out = 100))
@@ -105,8 +101,8 @@ ggplot(dat, aes(dose, resp)) +
 ## 5. Concluding statement
 
 > A three-parameter logistic fitted on the log-dose scale returned an
-> asymptote of `r round(coef(fit)["Asym"], 1)` units and a mid-dose
-> (EC50) at `r round(exp(coef(fit)["xmid"]), 2)`. Confidence intervals
+> asymptote of `round(coef(fit)["Asym"], 1)` units and a mid-dose
+> (EC50) at `round(exp(coef(fit)["xmid"]), 2)`. Confidence intervals
 > were obtained via the likelihood profile (see `confint`).
 
 ::: {.notes}
@@ -130,8 +126,7 @@ scratch, which distracts from the concept.
 
 ## Session info
 
-```{r}
-sessionInfo()
+```sessionInfo()
 ```
 
 <!-- BEGIN see-also (auto-injected) -->

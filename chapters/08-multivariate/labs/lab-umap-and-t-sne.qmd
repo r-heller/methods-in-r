@@ -46,8 +46,7 @@ not claim a trajectory unless you used a trajectory method.
 
 ## Setup
 
-```{r}
-#| label: setup
+```#| label: setup
 library(tidyverse)
 library(uwot)
 library(Rtsne)
@@ -62,8 +61,7 @@ dimensions using UMAP and t-SNE, and compare against PCA.
 
 ## 2. Approach
 
-```{r}
-make_blob <- function(n, mu, sd = 1, d = 20) matrix(rnorm(n * d, 0, sd), n, d) +
+```make_blob <- function(n, mu, sd = 1, d = 20) matrix(rnorm(n * d, 0, sd), n, d) +
   rep(mu, each = n)
 X <- rbind(
   make_blob(100, c(0, 0, rep(0, 18))),
@@ -75,8 +73,7 @@ lbl <- rep(c("A", "B", "C"), each = 100)
 
 ## 3. Execution
 
-```{r}
-#| fig-width: 9
+```#| fig-width: 9
 #| fig-height: 3.5
 emb_pca  <- prcomp(X)$x[, 1:2]
 emb_umap <- umap(X, n_neighbors = 15, min_dist = 0.1)
@@ -97,8 +94,7 @@ ggplot(df, aes(x, y, colour = lbl)) +
 
 Sensitivity to `n_neighbors`.
 
-```{r}
-#| fig-width: 9
+```#| fig-width: 9
 #| fig-height: 3.5
 do_umap <- function(k) {
   e <- umap(X, n_neighbors = k, min_dist = 0.1)
@@ -144,8 +140,7 @@ structure, not exchangeable labels.
 
 ## Session info
 
-```{r}
-sessionInfo()
+```sessionInfo()
 ```
 
 <!-- BEGIN see-also (auto-injected) -->

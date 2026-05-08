@@ -43,8 +43,7 @@ differ and by how much.
 
 ## Setup
 
-```{r}
-#| label: setup
+```#| label: setup
 library(tidyverse)
 library(broom)
 library(emmeans)
@@ -62,8 +61,7 @@ Alternative: at least one dose differs.
 
 ## 2. Visualise
 
-```{r}
-tg <- ToothGrowth |> mutate(dose = factor(dose))
+```tg <- ToothGrowth |> mutate(dose = factor(dose))
 ggplot(tg, aes(dose, len, fill = dose)) +
   geom_boxplot(alpha = 0.6, colour = "grey30") +
   labs(x = "Dose (mg/day)", y = "Tooth length") +
@@ -74,8 +72,7 @@ ggplot(tg, aes(dose, len, fill = dose)) +
 
 Approximate normality within groups and equal variances.
 
-```{r}
-fit <- aov(len ~ dose, data = tg)
+```fit <- aov(len ~ dose, data = tg)
 par(mfrow = c(2, 2))
 plot(fit)
 par(mfrow = c(1, 1))
@@ -84,8 +81,7 @@ bartlett.test(len ~ dose, data = tg)
 
 ## 4. Conduct
 
-```{r}
-summary(fit)
+```summary(fit)
 
 emm <- emmeans(fit, ~ dose)
 emm
@@ -95,8 +91,8 @@ pairs(emm, adjust = "tukey")
 ## 5. Concluding statement
 
 > Tooth length increased with dose of vitamin C (one-way ANOVA
-> *F* = `r round(summary(fit)[[1]]$"F value"[1], 2)`; *p* =
-> `r signif(summary(fit)[[1]]$"Pr(>F)"[1], 2)`). Tukey-adjusted
+> *F* = `round(summary(fit)[[1]]$"F value"[1], 2)`; *p* =
+> `signif(summary(fit)[[1]]$"Pr(>F)"[1], 2)`). Tukey-adjusted
 > contrasts indicated that the 2 mg/day dose gave longer teeth than
 > both lower doses (all adjusted *p* < 0.05).
 
@@ -120,8 +116,7 @@ mostly about what functions you want on top.
 
 ## Session info
 
-```{r}
-sessionInfo()
+```sessionInfo()
 ```
 
 <!-- BEGIN see-also (auto-injected) -->

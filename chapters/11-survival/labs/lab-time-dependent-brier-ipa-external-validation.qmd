@@ -47,8 +47,7 @@ has no basis for deploying the model.
 
 ## Setup
 
-```{r}
-#| label: setup
+```#| label: setup
 library(tidyverse)
 library(survival)
 library(pROC)
@@ -64,8 +63,7 @@ distribution.
 
 ## 2. Visualise
 
-```{r}
-make_cohort <- function(n, mu_x = 0, beta = 0.6) {
+```make_cohort <- function(n, mu_x = 0, beta = 0.6) {
   x <- rnorm(n, mu_x)
   lp <- beta * x
   t <- rexp(n, rate = exp(lp - 1))
@@ -91,8 +89,7 @@ development cohort; no time-varying covariates.
 
 Fit on dev; predict survival at a fixed horizon on both cohorts.
 
-```{r}
-fit <- coxph(Surv(time, event) ~ x, data = dev)
+```fit <- coxph(Surv(time, event) ~ x, data = dev)
 horizon <- 3
 
 predict_surv <- function(fit, newdata, t) {
@@ -127,8 +124,7 @@ tibble(cohort = c("dev", "ext"),
 
 A calibration plot at the horizon.
 
-```{r}
-mk_cal <- function(p, y, lab) {
+```mk_cal <- function(p, y, lab) {
   tibble(p = p, y = y, cohort = lab) |>
     mutate(bin = cut(p, quantile(p, seq(0, 1, by = 0.1)),
                      include.lowest = TRUE)) |>
@@ -148,8 +144,8 @@ bind_rows(mk_cal(1 - s_dev, obs_dev, "dev"),
 
 > On a simulated external cohort with shifted covariate distribution,
 > a Cox model fit on the development cohort retained discrimination
-> (AUC `r round(auc_ext, 2)`) but lost calibration, with IPA falling
-> from `r round(ipa_dev, 2)` (development) to `r round(ipa_ext, 2)`
+> (AUC `round(auc_ext, 2)`) but lost calibration, with IPA falling
+> from `round(ipa_dev, 2)` (development) to `round(ipa_ext, 2)`
 > (external). The calibration plot showed systematic
 > over-prediction in the shifted cohort.
 
@@ -180,8 +176,7 @@ retraining the whole model.
 
 ## Session info
 
-```{r}
-sessionInfo()
+```sessionInfo()
 ```
 
 <!-- BEGIN see-also (auto-injected) -->

@@ -48,8 +48,7 @@ guarantees RTM.
 
 ## Setup
 
-```{r}
-#| label: setup
+```#| label: setup
 library(tidyverse)
 library(broom)
 set.seed(42)
@@ -67,8 +66,7 @@ Two simulations:
 
 ## 2. Visualise
 
-```{r}
-n <- 200
+```n <- 200
 x <- rnorm(n)
 y <- 0.3 * x + rnorm(n, 0, 1)
 dat1 <- tibble(x, y, x_bin = factor(ifelse(x > median(x), "high", "low")))
@@ -87,8 +85,7 @@ Independence, approximate normality; standard regression assumptions.
 
 Power loss from dichotomisation:
 
-```{r}
-tidy(lm(y ~ x, data = dat1))     # continuous
+```tidy(lm(y ~ x, data = dat1))     # continuous
 tidy(lm(y ~ x_bin, data = dat1)) # median split
 ```
 
@@ -97,8 +94,7 @@ error is larger and the estimate is attenuated.
 
 Regression to the mean:
 
-```{r}
-n2 <- 1000
+```n2 <- 1000
 pre  <- rnorm(n2, 100, 15)
 post <- 0.7 * (pre - 100) + 100 + rnorm(n2, 0, 11)
 dat2 <- tibble(pre, post) |>
@@ -113,8 +109,7 @@ dat2 |>
 The "high baseline" group shows a large negative mean change; the rest
 of the sample shows a small positive change. No intervention occurred.
 
-```{r}
-ggplot(dat2, aes(pre, post)) +
+```ggplot(dat2, aes(pre, post)) +
   geom_point(alpha = 0.3) +
   geom_abline(slope = 1, intercept = 0, linetype = 2, colour = "grey50") +
   geom_smooth(method = "lm", colour = "firebrick") +
@@ -127,11 +122,11 @@ RTM.
 ## 5. Concluding statement
 
 > Dichotomising the continuous predictor inflated its *p*-value from
-> `r signif(tidy(lm(y ~ x, data = dat1))$p.value[2], 2)` to
-> `r signif(tidy(lm(y ~ x_bin, data = dat1))$p.value[2], 2)` and
+> `signif(tidy(lm(y ~ x, data = dat1))$p.value[2], 2)` to
+> `signif(tidy(lm(y ~ x_bin, data = dat1))$p.value[2], 2)` and
 > widened its standard error. In the pre-post simulation with no
 > intervention, the top-baseline quintile showed a mean decline of
-> `r round(dat2 |> filter(high_baseline) |> summarise(mean(post - pre)) |> pull(), 1)`
+> `round(dat2 |> filter(high_baseline) |> summarise(mean(post - pre)) |> pull(), 1)`
 > units, entirely attributable to regression to the mean.
 
 ::: {.notes}
@@ -154,8 +149,7 @@ to make the power loss visceral.
 
 ## Session info
 
-```{r}
-sessionInfo()
+```sessionInfo()
 ```
 
 <!-- BEGIN see-also (auto-injected) -->

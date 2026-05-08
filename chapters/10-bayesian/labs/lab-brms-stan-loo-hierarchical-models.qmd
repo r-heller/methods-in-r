@@ -45,8 +45,7 @@ end-to-end.
 
 ## Setup
 
-```{r}
-#| label: setup
+```#| label: setup
 library(tidyverse)
 library(lme4)
 set.seed(42)
@@ -64,8 +63,7 @@ a random-slope model.
 Simulate 20 centres with varying mean outcomes and varying dose
 effects.
 
-```{r}
-n_centre <- 20; per_centre <- 15
+```n_centre <- 20; per_centre <- 15
 centre <- rep(seq_len(n_centre), each = per_centre)
 alpha0 <- rnorm(n_centre, 0, 1)
 beta0  <- rnorm(n_centre, 0.5, 0.3)
@@ -82,8 +80,7 @@ ggplot(d, aes(dose, y, colour = centre)) +
 A classical `lmer` random-intercept-and-slope fit as a stand-in we can
 run.
 
-```{r}
-fit_lmer_ri  <- lmer(y ~ dose + (1 | centre), data = d)
+```fit_lmer_ri  <- lmer(y ~ dose + (1 | centre), data = d)
 fit_lmer_rs  <- lmer(y ~ dose + (dose | centre), data = d)
 summary(fit_lmer_rs)$varcor
 anova(fit_lmer_ri, fit_lmer_rs)
@@ -92,8 +89,7 @@ anova(fit_lmer_ri, fit_lmer_rs)
 Prior predictive simulation (frequentist-style) for the Bayesian
 counterpart we are about to sketch.
 
-```{r}
-prior_sim <- replicate(20, {
+```prior_sim <- replicate(20, {
   a <- rnorm(1, 0, 1); b <- rnorm(1, 0, 1); sd_a <- abs(rnorm(1, 0, 1))
   a + b * dose + rnorm(length(dose), 0, sd_a)
 })
@@ -104,8 +100,7 @@ ggplot(tibble(y = as.numeric(prior_sim)), aes(y)) +
 
 The `brms` counterpart.
 
-```{r}
-#| eval: false
+```#| eval: false
 library(brms)
 priors <- c(
   prior(normal(0, 2), class = "Intercept"),
@@ -124,8 +119,7 @@ loo_compare(loo(m_ri), loo(m_rs))
 
 Compare to `lmer` and report pooled vs unpooled estimates.
 
-```{r}
-fixef_lmer <- fixef(fit_lmer_rs)
+```fixef_lmer <- fixef(fit_lmer_rs)
 fixef_lmer
 ```
 
@@ -133,7 +127,7 @@ fixef_lmer
 
 > On simulated hierarchical data (20 centres × 15 patients), a
 > random-slope `lmer` model recovered an average dose effect of
-> `r round(fixef_lmer["dose"], 2)` (SE from `lmer`), with substantial
+> `round(fixef_lmer["dose"], 2)` (SE from `lmer`), with substantial
 > centre-to-centre variation. The `brms` sketch shown in the
 > accompanying code would fit the same structure with explicit priors,
 > and `loo_compare` would rank the random-slope model against the
@@ -167,8 +161,7 @@ values above 0.7 on many observations invalidate the comparison.
 
 ## Session info
 
-```{r}
-sessionInfo()
+```sessionInfo()
 ```
 
 <!-- BEGIN see-also (auto-injected) -->

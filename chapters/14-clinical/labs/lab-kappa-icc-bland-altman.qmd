@@ -47,8 +47,7 @@ agreement. Always report both and let the picture tell the pattern.
 
 ## Setup
 
-```{r}
-#| label: setup
+```#| label: setup
 library(tidyverse)
 library(broom)
 library(psych)
@@ -69,8 +68,7 @@ For the categorical example, simulate 100 radiograph classifications
 agreement. For the continuous example, simulate 60 measurements by
 two instruments, one with a small constant bias.
 
-```{r}
-# categorical
+```# categorical
 cats <- c("normal", "mild", "severe")
 truth <- sample(cats, 100, replace = TRUE, prob = c(0.5, 0.3, 0.2))
 r1 <- ifelse(runif(100) < 0.2, sample(cats, 100, replace = TRUE), truth)
@@ -90,20 +88,17 @@ meas <- tibble(inst1, inst2)
 
 Cohen's kappa:
 
-```{r}
-kappa2(kap_tbl[, c("r1", "r2")])
+```kappa2(kap_tbl[, c("r1", "r2")])
 ```
 
 ICC via `psych`:
 
-```{r}
-ICC(as.matrix(meas))
+```ICC(as.matrix(meas))
 ```
 
 Bland–Altman:
 
-```{r}
-ba <- meas |>
+```ba <- meas |>
   mutate(mean_val = (inst1 + inst2) / 2,
          diff_val = inst2 - inst1)
 loa <- mean(ba$diff_val) + c(-1.96, 0, 1.96) * sd(ba$diff_val)
@@ -126,12 +121,12 @@ about 2 units higher on average).
 ## 5. Report
 
 > Cohen's kappa for the two radiograph readers was
-> `r round(kappa2(kap_tbl[, c("r1","r2")])$value, 2)`. For the two
+> `round(kappa2(kap_tbl[, c("r1","r2")])$value, 2)`. For the two
 > instruments, the ICC (absolute agreement, two-way random) was
-> `r round(ICC(as.matrix(meas))$results$ICC[2], 2)`, but the
+> `round(ICC(as.matrix(meas))$results$ICC[2], 2)`, but the
 > Bland–Altman plot revealed a mean bias of
-> `r round(mean(ba$diff_val), 1)` units with 95% limits of agreement
-> from `r round(loa[1], 1)` to `r round(loa[3], 1)`.
+> `round(mean(ba$diff_val), 1)` units with 95% limits of agreement
+> from `round(loa[1], 1)` to `round(loa[3], 1)`.
 
 ::: {.notes}
 Two takeaways: bias and precision are separate components of
@@ -152,8 +147,7 @@ agreement, and neither kappa nor a single correlation captures both.
 
 ## Session info
 
-```{r}
-sessionInfo()
+```sessionInfo()
 ```
 
 <!-- BEGIN see-also (auto-injected) -->

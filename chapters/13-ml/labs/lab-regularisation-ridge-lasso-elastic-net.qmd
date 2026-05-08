@@ -49,8 +49,7 @@ it is worth knowing what the coefficients refer to when you plot them.
 
 ## Setup
 
-```{r}
-#| label: setup
+```#| label: setup
 library(tidyverse)
 library(glmnet)
 set.seed(42)
@@ -68,8 +67,7 @@ regression problem and pick a final model.
 signals, to exercise both the sparsity of lasso and the group-handling
 of elastic net.
 
-```{r}
-n <- 100; p <- 200
+```n <- 100; p <- 200
 Z <- matrix(rnorm(n * (p / 10)), n, p / 10)
 X <- Z[, rep(seq_len(p / 10), each = 10)] + 0.2 * matrix(rnorm(n * p), n, p)
 beta <- c(rep(2, 5), rep(-1.5, 5), rep(0, p - 10))
@@ -82,8 +80,7 @@ tibble(i = seq_along(beta), beta = beta) |>
 
 ## 3. Execution
 
-```{r}
-#| fig-width: 7
+```#| fig-width: 7
 #| fig-height: 4
 fit_ridge <- glmnet(X, y, alpha = 0)
 fit_lasso <- glmnet(X, y, alpha = 1)
@@ -98,8 +95,7 @@ plot(fit_enet,  xvar = "lambda"); title("elastic net")
 
 Pick `lambda` by CV for each; compare minimum CV MSE.
 
-```{r}
-cv_ridge <- cv.glmnet(X, y, alpha = 0,   nfolds = 5)
+```cv_ridge <- cv.glmnet(X, y, alpha = 0,   nfolds = 5)
 cv_lasso <- cv.glmnet(X, y, alpha = 1,   nfolds = 5)
 cv_enet  <- cv.glmnet(X, y, alpha = 0.5, nfolds = 5)
 tibble(
@@ -115,8 +111,8 @@ tibble(
 
 > On a simulated `n = 100`, `p = 200` regression with 10 true signals,
 > elastic net (α = 0.5) achieved the lowest 5-fold CV MSE
-> (`r round(min(cv_enet$cvm), 2)`) and retained
-> `r sum(coef(cv_enet, s = "lambda.min") != 0) - 1` features. Lasso
+> (`round(min(cv_enet$cvm), 2)`) and retained
+> `sum(coef(cv_enet, s = "lambda.min") != 0) - 1` features. Lasso
 > was comparable but dropped one member of each correlated signal pair;
 > ridge was smoothest but produced no sparse shortlist.
 
@@ -147,8 +143,7 @@ minimum-CV model.
 
 ## Session info
 
-```{r}
-sessionInfo()
+```sessionInfo()
 ```
 
 <!-- BEGIN see-also (auto-injected) -->

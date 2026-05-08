@@ -50,8 +50,7 @@ treatment is never seen — cannot be fixed statistically.
 
 ## Setup
 
-```{r}
-#| label: setup
+```#| label: setup
 library(tidyverse)
 library(MatchIt)
 library(cobalt)
@@ -67,8 +66,7 @@ with the simulated truth.
 
 ## 2. Visualise
 
-```{r}
-n <- 1000
+```n <- 1000
 dat <- tibble(
   age  = rnorm(n, 60, 10),
   sev  = rnorm(n, 0,   1),
@@ -92,14 +90,12 @@ specification of the propensity model.
 
 ## 4. Conduct
 
-```{r}
-# Naive regression
+```# Naive regression
 fit_naive <- lm(y ~ trt + age + sev + sex, data = dat)
 coef(fit_naive)["trt"]
 ```
 
-```{r}
-# Nearest-neighbour matching
+```# Nearest-neighbour matching
 m <- matchit(trt ~ age + sev + sex, data = dat,
              method = "nearest", ratio = 1)
 m
@@ -110,16 +106,14 @@ fit_match <- lm(y ~ trt, data = matched,
 coef(fit_match)["trt"]
 ```
 
-```{r}
-# IPTW
+```# IPTW
 dat <- dat |>
   mutate(w = if_else(trt == 1, 1 / ps, 1 / (1 - ps)))
 fit_iptw <- lm(y ~ trt, data = dat, weights = w)
 coef(fit_iptw)["trt"]
 ```
 
-```{r}
-#| fig-width: 6
+```#| fig-width: 6
 #| fig-height: 4
 love.plot(m, thresholds = c(m = 0.1), abs = TRUE)
 ```
@@ -127,9 +121,9 @@ love.plot(m, thresholds = c(m = 0.1), abs = TRUE)
 ## 5. Concluding statement
 
 > The simulated treatment effect was −1.5. The naive regression
-> gave `r round(coef(fit_naive)["trt"], 2)`; nearest-neighbour
-> matching gave `r round(coef(fit_match)["trt"], 2)`; IPTW gave
-> `r round(coef(fit_iptw)["trt"], 2)`. Balance plots showed that
+> gave `round(coef(fit_naive)["trt"], 2)`; nearest-neighbour
+> matching gave `round(coef(fit_match)["trt"], 2)`; IPTW gave
+> `round(coef(fit_iptw)["trt"], 2)`. Balance plots showed that
 > matching reduced all SMDs below 0.1.
 
 ::: {.notes}
@@ -157,8 +151,7 @@ estimate.
 
 ## Session info
 
-```{r}
-sessionInfo()
+```sessionInfo()
 ```
 
 <!-- BEGIN see-also (auto-injected) -->

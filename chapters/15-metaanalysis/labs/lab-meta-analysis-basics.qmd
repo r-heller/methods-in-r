@@ -39,8 +39,7 @@ missing are all part of the routine.
 
 ## Setup
 
-```{r}
-#| label: setup
+```#| label: setup
 library(tidyverse)
 library(metafor)
 set.seed(42)
@@ -54,14 +53,12 @@ H₀: pooled log risk ratio = 0 (no overall effect). H₁: pooled log RR ≠ 0.
 
 ## 2. Visualise — use a built-in dataset
 
-```{r}
-dat <- escalc(measure = "RR",
+```dat <- escalc(measure = "RR",
               ai = tpos, bi = tneg, ci = cpos, di = cneg,
               data = dat.bcg, slab = paste(author, year))
 ```
 
-```{r}
-#| fig-width: 7
+```#| fig-width: 7
 #| fig-height: 5
 forest(rma(yi, vi, data = dat), header = TRUE, cex = 0.8)
 ```
@@ -76,13 +73,11 @@ forest(rma(yi, vi, data = dat), header = TRUE, cex = 0.8)
 
 ## 4. Conduct
 
-```{r}
-fit <- rma(yi, vi, data = dat, method = "REML")
+```fit <- rma(yi, vi, data = dat, method = "REML")
 fit
 ```
 
-```{r}
-#| fig-width: 6
+```#| fig-width: 6
 #| fig-height: 4.5
 funnel(fit, main = "Funnel plot — BCG vaccine dataset")
 regtest(fit, model = "lm")
@@ -90,17 +85,16 @@ regtest(fit, model = "lm")
 
 ## 5. Concluding statement
 
-```{r}
-#| echo: false
+```#| echo: false
 rr   <- exp(fit$b[1])
 lo   <- exp(fit$ci.lb)
 hi   <- exp(fit$ci.ub)
 ```
 
-> Across `r nrow(dat)` trials of the BCG vaccine, the pooled risk ratio
-> for tuberculosis was `r round(rr, 2)` (95% CI `r round(lo, 2)` to
-> `r round(hi, 2)`; τ² = `r round(fit$tau2, 2)`, I² =
-> `r round(fit$I2, 1)`%). Between-trial heterogeneity was substantial;
+> Across `nrow(dat)` trials of the BCG vaccine, the pooled risk ratio
+> for tuberculosis was `round(rr, 2)` (95% CI `round(lo, 2)` to
+> `round(hi, 2)`; τ² = `round(fit$tau2, 2)`, I² =
+> `round(fit$I2, 1)`%). Between-trial heterogeneity was substantial;
 > the pooled estimate should be interpreted with the heterogeneity
 > statistics in view.
 
@@ -124,8 +118,7 @@ effect with I² = 90% is a different creature from one with I² = 10%.
 
 ## Session info
 
-```{r}
-sessionInfo()
+```sessionInfo()
 ```
 
 <!-- BEGIN see-also (auto-injected) -->

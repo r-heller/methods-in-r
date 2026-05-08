@@ -43,8 +43,7 @@ touched exactly once.
 
 ## Setup
 
-```{r}
-#| label: setup
+```#| label: setup
 library(tidyverse)
 library(tidymodels)
 library(MASS)
@@ -59,8 +58,7 @@ Fit an elastic-net logistic regression to predict diabetes status on
 
 ## 2. Approach
 
-```{r}
-d <- as_tibble(MASS::Pima.tr)
+```d <- as_tibble(MASS::Pima.tr)
 ggplot(d, aes(glu, bmi, colour = type)) + geom_point(alpha = 0.7)
 ```
 
@@ -68,8 +66,7 @@ ggplot(d, aes(glu, bmi, colour = type)) + geom_point(alpha = 0.7)
 
 Split, recipe, model, workflow, tune.
 
-```{r}
-d_split <- initial_split(d, prop = 0.75, strata = type)
+```d_split <- initial_split(d, prop = 0.75, strata = type)
 d_train <- training(d_split); d_test <- testing(d_split)
 folds <- vfold_cv(d_train, v = 5, strata = type)
 
@@ -94,8 +91,7 @@ collect_metrics(res) |>
 
 Select best, finalise, evaluate on the test set.
 
-```{r}
-best <- select_best(res, metric = "roc_auc")
+```best <- select_best(res, metric = "roc_auc")
 wf_final <- finalize_workflow(wf, best)
 fit_final <- fit(wf_final, data = d_train)
 preds <- predict(fit_final, d_test, type = "prob") |>
@@ -104,8 +100,7 @@ roc_auc(preds, truth = type, .pred_Yes, event_level = "second")
 accuracy(preds, truth = type, estimate = .pred_class)
 ```
 
-```{r}
-roc_curve(preds, truth = type, .pred_Yes, event_level = "second") |>
+```roc_curve(preds, truth = type, .pred_Yes, event_level = "second") |>
   autoplot()
 ```
 
@@ -113,7 +108,7 @@ roc_curve(preds, truth = type, .pred_Yes, event_level = "second") |>
 
 > An elastic-net logistic regression tuned on 5-fold CV, using a
 > 5×5 grid over `penalty` and `mixture`, achieved a test ROC-AUC of
-> `r round(roc_auc(preds, truth = type, .pred_Yes, event_level = "second")$.estimate, 3)`
+> `round(roc_auc(preds, truth = type, .pred_Yes, event_level = "second")$.estimate, 3)`
 > on `MASS::Pima.tr`.
 
 The pipeline pattern — recipe + workflow + tune + finalise — is the
@@ -137,8 +132,7 @@ if time.
 
 ## Session info
 
-```{r}
-sessionInfo()
+```sessionInfo()
 ```
 
 <!-- BEGIN see-also (auto-injected) -->

@@ -40,8 +40,7 @@ butter of public-health modelling.
 
 ## Setup
 
-```{r}
-#| label: setup
+```#| label: setup
 library(tidyverse)
 library(deSolve)
 set.seed(42)
@@ -55,8 +54,7 @@ Simulate an SIR outbreak in a population of 1 million, for R₀ values
 
 ## 2. Approach
 
-```{r}
-sir <- function(time, state, params) {
+```sir <- function(time, state, params) {
   with(as.list(c(state, params)), {
     N  <- S + I + R
     dS <- -beta * S * I / N
@@ -69,8 +67,7 @@ sir <- function(time, state, params) {
 
 ## 3. Execution
 
-```{r}
-run_sir <- function(R0, gamma = 1/7, days = 180, N = 1e6, I0 = 10) {
+```run_sir <- function(R0, gamma = 1/7, days = 180, N = 1e6, I0 = 10) {
   params <- c(beta = R0 * gamma, gamma = gamma)
   state  <- c(S = N - I0, I = I0, R = 0)
   times  <- seq(0, days, by = 1)
@@ -85,8 +82,7 @@ trajectories <- bind_rows(
   pivot_longer(c(S, I, R), names_to = "compartment", values_to = "n")
 ```
 
-```{r}
-#| fig-width: 7.5
+```#| fig-width: 7.5
 #| fig-height: 4.5
 ggplot(trajectories, aes(time, n, colour = compartment)) +
   geom_line(linewidth = 0.8) +
@@ -98,8 +94,7 @@ ggplot(trajectories, aes(time, n, colour = compartment)) +
 
 Peak prevalence and attack rate should rise with R₀.
 
-```{r}
-trajectories |>
+```trajectories |>
   filter(compartment == "I") |>
   group_by(R0) |>
   summarise(peak_I = max(n), peak_day = time[which.max(n)]) |>
@@ -136,8 +131,7 @@ case counts, and the uncertainty in R₀ propagates from that inference.
 
 ## Session info
 
-```{r}
-sessionInfo()
+```sessionInfo()
 ```
 
 <!-- BEGIN see-also (auto-injected) -->

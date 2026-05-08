@@ -57,8 +57,7 @@ not.
 
 ## Setup
 
-```{r}
-#| label: setup
+```#| label: setup
 library(tidyverse)
 library(glmnet)
 set.seed(42)
@@ -78,8 +77,7 @@ only 5 are true signal. We will (i) fit a single `cv.glmnet`, (ii)
 report the CV-minimising error, then (iii) wrap that in an outer 5-fold
 loop to show that the inner CV error is optimistic.
 
-```{r}
-n <- 120; p <- 40
+```n <- 120; p <- 40
 X <- matrix(rnorm(n * p), n, p)
 beta <- c(rep(1.5, 5), rep(0, p - 5))
 y <- as.numeric(X %*% beta + rnorm(n, sd = 1.0))
@@ -95,8 +93,7 @@ tibble(yhat_naive = as.numeric(X %*% beta), y = y) |>
 
 **Naive single-layer CV.**
 
-```{r}
-cv1 <- cv.glmnet(X, y, alpha = 1, nfolds = 5)
+```cv1 <- cv.glmnet(X, y, alpha = 1, nfolds = 5)
 naive_mse <- min(cv1$cvm)
 naive_mse
 ```
@@ -104,8 +101,7 @@ naive_mse
 **Nested CV.** The inner `cv.glmnet` picks `lambda`; the outer 5 folds
 produce the reported MSE.
 
-```{r}
-K <- 5
+```K <- 5
 folds <- sample(rep(1:K, length.out = n))
 outer_mse <- numeric(K)
 for (k in 1:K) {
@@ -122,8 +118,7 @@ c(naive = naive_mse, nested = nested_mse)
 
 Bootstrap .632+ error as a cross-check.
 
-```{r}
-B <- 50
+```B <- 50
 errs_in <- errs_oob <- numeric(B)
 for (b in 1:B) {
   idx <- sample.int(n, n, replace = TRUE)
@@ -144,10 +139,10 @@ c(apparent = err_app, oob = err_oob, boot632 = err_632,
 
 > On simulated data (*n* = 120, *p* = 40, five true signals), a lasso
 > with tuning parameter chosen by 5-fold CV achieved an out-of-sample
-> MSE of `r round(nested_mse, 2)` under nested 5 × 5 CV. The naive
+> MSE of `round(nested_mse, 2)` under nested 5 × 5 CV. The naive
 > single-layer CV understated the error at
-> `r round(naive_mse, 2)`; the bootstrap .632 estimator gave
-> `r round(err_632, 2)`, which bracketed the nested estimate.
+> `round(naive_mse, 2)`; the bootstrap .632 estimator gave
+> `round(err_632, 2)`, which bracketed the nested estimate.
 
 The naive number looks tighter, but it reflects the choice of `lambda`
 as well as the fit. Only the nested number is a fair estimate of what
@@ -177,8 +172,7 @@ nested scheme. The crime is reporting it as the final error.
 
 ## Session info
 
-```{r}
-sessionInfo()
+```sessionInfo()
 ```
 
 <!-- BEGIN see-also (auto-injected) -->

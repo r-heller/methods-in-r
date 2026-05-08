@@ -45,8 +45,7 @@ attenuates the estimated effect in the pooled analysis.
 
 ## Setup
 
-```{r}
-#| label: setup
+```#| label: setup
 library(tidyverse)
 library(mice)
 set.seed(42)
@@ -61,13 +60,11 @@ relationship under MI.
 
 ## 2. Visualise
 
-```{r}
-data(nhanes, package = "mice")
+```data(nhanes, package = "mice")
 md.pattern(nhanes, plot = FALSE)
 ```
 
-```{r}
-nhanes |>
+```nhanes |>
   mutate(missing_chl = is.na(chl)) |>
   ggplot(aes(bmi, chl, colour = missing_chl)) +
   geom_point(size = 2) +
@@ -83,26 +80,22 @@ standard errors.
 
 ## 4. Conduct
 
-```{r}
-imp <- mice(nhanes, m = 10, method = "pmm",
+```imp <- mice(nhanes, m = 10, method = "pmm",
             printFlag = FALSE, seed = 42)
 imp
 ```
 
-```{r}
-#| fig-width: 6
+```#| fig-width: 6
 #| fig-height: 4
 plot(imp)
 ```
 
-```{r}
-#| fig-width: 6
+```#| fig-width: 6
 #| fig-height: 4
 densityplot(imp)
 ```
 
-```{r}
-fit   <- with(imp, lm(chl ~ age + bmi))
+```fit   <- with(imp, lm(chl ~ age + bmi))
 pooled <- pool(fit)
 summary(pooled, conf.int = TRUE)
 ```
@@ -111,7 +104,7 @@ summary(pooled, conf.int = TRUE)
 
 > Multiple imputation of the `nhanes` dataset (*m* = 10, predictive
 > mean matching) gave a pooled coefficient for BMI on cholesterol of
-> `r round(summary(pooled)$estimate[summary(pooled)$term == "bmi"], 2)`
+> `round(summary(pooled)$estimate[summary(pooled)$term == "bmi"], 2)`
 > (see pooled table above), with standard errors reflecting both
 > within- and between-imputation uncertainty through Rubin's rules.
 
@@ -141,8 +134,7 @@ MNAR". It does not.
 
 ## Session info
 
-```{r}
-sessionInfo()
+```sessionInfo()
 ```
 
 <!-- BEGIN see-also (auto-injected) -->

@@ -44,8 +44,7 @@ is much easier than one filled in at submission.
 
 ## Setup
 
-```{r}
-#| label: setup
+```#| label: setup
 library(tidyverse)
 library(gtsummary)
 library(broom)
@@ -62,15 +61,13 @@ predictive model (can we predict body mass on held-out birds?).
 
 ## 2. Approach
 
-```{r}
-peng <- penguins |> drop_na(body_mass_g, flipper_length_mm, sex, species)
+```peng <- penguins |> drop_na(body_mass_g, flipper_length_mm, sex, species)
 fit_expl <- lm(body_mass_g ~ flipper_length_mm + sex + species, data = peng)
 ```
 
 ## 3. Execution
 
-```{r}
-#| fig-width: 6.5
+```#| fig-width: 6.5
 #| fig-height: 4
 peng |>
   ggplot(aes(flipper_length_mm, body_mass_g, colour = species)) +
@@ -84,15 +81,13 @@ peng |>
 Explanatory evaluation: effect sizes with intervals, residual
 diagnostics, and adjusted *R*².
 
-```{r}
-glance(fit_expl) |> select(r.squared, adj.r.squared, sigma, df, df.residual)
+```glance(fit_expl) |> select(r.squared, adj.r.squared, sigma, df, df.residual)
 ```
 
 Predictive evaluation: a 5-fold split, hand-coded to keep the example
 transparent.
 
-```{r}
-k <- 5
+```k <- 5
 folds <- sample(rep(seq_len(k), length.out = nrow(peng)))
 rmse_k <- sapply(seq_len(k), function(i) {
   tr <- peng[folds != i, ]
@@ -106,17 +101,16 @@ mean_rmse
 
 ## 5. Report
 
-```{r}
-#| results: asis
+```#| results: asis
 tbl_regression(fit_expl, intercept = TRUE) |>
   modify_caption("**Table 1. Linear-regression estimates for body mass (g).**")
 ```
 
-> In the Palmer penguins dataset (*n* = `r nrow(peng)`), body mass was
+> In the Palmer penguins dataset (*n* = `nrow(peng)`), body mass was
 > associated with flipper length, sex, and species (adjusted *R*² =
-> `r round(summary(fit_expl)$adj.r.squared, 2)`). Out-of-sample
+> `round(summary(fit_expl)$adj.r.squared, 2)`). Out-of-sample
 > performance, estimated by 5-fold cross-validation, was RMSE =
-> `r round(mean_rmse, 0)` g.
+> `round(mean_rmse, 0)` g.
 
 ### Reporting-guideline map
 
@@ -150,6 +144,5 @@ model it is an implementation detail.
 
 ## Session info
 
-```{r}
-sessionInfo()
+```sessionInfo()
 ```

@@ -45,8 +45,7 @@ any environment.
 
 ## Setup
 
-```{r}
-#| label: setup
+```#| label: setup
 library(tidyverse)
 library(MASS)
 set.seed(42)
@@ -64,8 +63,7 @@ negative-binomial GLM that actually runs.
 Simulate 500 genes × 10 samples (5 per group). Ten genes are truly
 differentially expressed.
 
-```{r}
-n_gene <- 500; n_samp <- 10
+```n_gene <- 500; n_samp <- 10
 group <- rep(c("A", "B"), each = 5)
 mu <- 2 * runif(n_gene, 1, 10)   # baseline mean per gene
 lfc <- c(rep(log(3), 10), rep(0, n_gene - 10))
@@ -87,8 +85,7 @@ tibble(mean = rowMeans(counts), var = apply(counts, 1, var)) |>
 
 A DESeq2 call pattern (not run).
 
-```{r}
-#| eval: false
+```#| eval: false
 library(DESeq2)
 dds <- DESeqDataSetFromMatrix(
   countData = counts,
@@ -102,8 +99,7 @@ head(res[order(res$padj), ])
 
 An edgeR call pattern (not run).
 
-```{r}
-#| eval: false
+```#| eval: false
 library(edgeR)
 dge <- DGEList(counts = counts, group = group)
 dge <- calcNormFactors(dge)
@@ -116,8 +112,7 @@ topTags(qlf)
 
 A per-gene negative-binomial GLM that runs.
 
-```{r}
-pvals <- numeric(n_gene)
+```pvals <- numeric(n_gene)
 logfcs <- numeric(n_gene)
 for (g in seq_len(n_gene)) {
   y <- counts[g, ]
@@ -134,8 +129,7 @@ padj <- p.adjust(pvals, method = "BH")
 
 Volcano plot with the truly DE genes flagged.
 
-```{r}
-truth <- c(rep("DE", 10), rep("null", n_gene - 10))
+```truth <- c(rep("DE", 10), rep("null", n_gene - 10))
 tibble(lfc = logfcs, padj = padj, truth = truth) |>
   drop_na() |>
   ggplot(aes(lfc, -log10(padj), colour = truth)) +
@@ -143,8 +137,7 @@ tibble(lfc = logfcs, padj = padj, truth = truth) |>
   labs(x = "log fold change (B vs A)", y = "-log10(padj)")
 ```
 
-```{r}
-mean(padj[1:10] < 0.05, na.rm = TRUE)
+```mean(padj[1:10] < 0.05, na.rm = TRUE)
 mean(padj[11:n_gene] < 0.05, na.rm = TRUE)
 ```
 
@@ -154,10 +147,10 @@ mean(padj[11:n_gene] < 0.05, na.rm = TRUE)
 > differentially expressed genes (log fold change ≈ 1.1),
 > per-gene negative-binomial GLMs followed by Benjamini–Hochberg
 > adjustment recovered
-> `r round(mean(padj[1:10] < 0.05, na.rm = TRUE) * 100, 0)`% of the
+> `round(mean(padj[1:10] < 0.05, na.rm = TRUE) * 100, 0)`% of the
 > true DE genes at FDR < 0.05 and yielded a false-discovery rate
 > among null genes of
-> `r round(mean(padj[11:n_gene] < 0.05, na.rm = TRUE) * 100, 1)`%.
+> `round(mean(padj[11:n_gene] < 0.05, na.rm = TRUE) * 100, 1)`%.
 
 DESeq2 and edgeR would improve power by shrinking gene-wise
 dispersion across the experiment; the per-gene fit shown here is a
@@ -184,8 +177,7 @@ PCA or clustering; raw counts should not be used for those tasks.
 
 ## Session info
 
-```{r}
-sessionInfo()
+```sessionInfo()
 ```
 
 <!-- BEGIN see-also (auto-injected) -->

@@ -47,8 +47,7 @@ problems with different consequences for the analysis.
 
 ## Setup
 
-```{r}
-#| label: setup
+```#| label: setup
 library(tidyverse)
 library(palmerpenguins)
 set.seed(42)
@@ -62,12 +61,10 @@ derived table back on, and describe the pattern of missingness.
 
 ## 2. Approach
 
-```{r}
-glimpse(penguins)
+```glimpse(penguins)
 ```
 
-```{r}
-# Standard five verbs.
+```# Standard five verbs.
 penguins |>
   filter(!is.na(body_mass_g)) |>
   select(species, sex, bill_length_mm, body_mass_g) |>
@@ -76,8 +73,7 @@ penguins |>
   head(5)
 ```
 
-```{r}
-# group_by + summarise: the grammar of a Table 1 row.
+```# group_by + summarise: the grammar of a Table 1 row.
 species_summary <- penguins |>
   group_by(species, sex) |>
   summarise(
@@ -94,8 +90,7 @@ species_summary
 Simulate a small "islands" table with information not in `penguins`,
 and join it back.
 
-```{r}
-islands <- tibble(
+```islands <- tibble(
   island = c("Biscoe", "Dream", "Torgersen"),
   lat    = c(-65.43, -64.73, -64.77),
   researcher = c("Anna", "Ben", "Carla")
@@ -109,14 +104,12 @@ penguins_aug |>
   head(5)
 ```
 
-```{r}
-# anti_join finds rows in penguins with no matching island row.
+```# anti_join finds rows in penguins with no matching island row.
 penguins |>
   anti_join(islands, by = "island")
 ```
 
-```{r}
-# inner_join keeps only matches on both sides.
+```# inner_join keeps only matches on both sides.
 inner_join(penguins, islands, by = "island") |>
   nrow()
 ```
@@ -125,8 +118,7 @@ inner_join(penguins, islands, by = "island") |>
 
 Quantify missingness at a glance.
 
-```{r}
-missingness <- penguins |>
+```missingness <- penguins |>
   summarise(across(everything(), ~ mean(is.na(.)))) |>
   pivot_longer(everything(),
                names_to = "variable",
@@ -135,8 +127,7 @@ missingness <- penguins |>
 missingness
 ```
 
-```{r}
-#| fig-width: 6
+```#| fig-width: 6
 #| fig-height: 3.5
 missingness |>
   ggplot(aes(frac_missing, reorder(variable, frac_missing))) +
@@ -146,8 +137,7 @@ missingness |>
 
 Now inject missingness to show how NAs move through a pipeline.
 
-```{r}
-n <- nrow(penguins)
+```n <- nrow(penguins)
 inj <- penguins |>
   mutate(body_mass_g = if_else(runif(n) < 0.1, NA_real_, body_mass_g))
 mean(inj$body_mass_g)            # NA — propagates
@@ -157,7 +147,7 @@ mean(inj$body_mass_g, na.rm = TRUE)
 ## 5. Report
 
 > Of the 344 rows in `palmerpenguins::penguins`, sex was missing in
-> `r sum(is.na(penguins$sex))` rows (`r round(100 * mean(is.na(penguins$sex)), 1)`%)
+> `sum(is.na(penguins$sex))` rows (`round(100 * mean(is.na(penguins$sex)), 1)`%)
 > and the four morphometric variables were missing in two rows apiece.
 > After an inner join with a three-row `islands` table, all rows
 > matched. Missingness was quantified per-variable and any summary that
@@ -188,8 +178,7 @@ data-quality checks, and under-used in practice.
 
 ## Session info
 
-```{r}
-sessionInfo()
+```sessionInfo()
 ```
 
 <!-- BEGIN see-also (auto-injected) -->

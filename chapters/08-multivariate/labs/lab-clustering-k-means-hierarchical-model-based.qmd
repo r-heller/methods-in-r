@@ -47,8 +47,7 @@ labels; that circularity is a classic error.
 
 ## Setup
 
-```{r}
-#| label: setup
+```#| label: setup
 library(tidyverse)
 library(mclust)
 library(cluster)
@@ -65,8 +64,7 @@ algorithms, and see which recovers the structure.
 
 Three Gaussian blobs in 5 dimensions with different sizes.
 
-```{r}
-make_blob <- function(n, mu, sd = 1) matrix(rnorm(n * 5, 0, sd), n, 5) +
+```make_blob <- function(n, mu, sd = 1) matrix(rnorm(n * 5, 0, sd), n, 5) +
   rep(mu, each = n)
 X <- rbind(
   make_blob(60, c(0, 0, 0, 0, 0)),
@@ -84,8 +82,7 @@ tibble(PC1 = pc[, 1], PC2 = pc[, 2], group = true_lbl) |>
 
 K-means with k sweep; silhouette.
 
-```{r}
-wss <- sapply(2:8, function(k) kmeans(X, centers = k, nstart = 10)$tot.withinss)
+```wss <- sapply(2:8, function(k) kmeans(X, centers = k, nstart = 10)$tot.withinss)
 sil <- sapply(2:8, function(k) {
   km <- kmeans(X, centers = k, nstart = 10)
   mean(silhouette(km$cluster, dist(X))[, 3])
@@ -98,8 +95,7 @@ tibble(k = 2:8, wss = wss, sil = sil) |>
 
 Hierarchical with Ward linkage.
 
-```{r}
-hc <- hclust(dist(X), method = "ward.D2")
+```hc <- hclust(dist(X), method = "ward.D2")
 plot(hc, labels = FALSE, main = "Ward hierarchical clustering")
 ```
 
@@ -107,17 +103,16 @@ plot(hc, labels = FALSE, main = "Ward hierarchical clustering")
 
 Model-based clustering by BIC.
 
-```{r}
-mc <- Mclust(X, G = 1:6)
+```mc <- Mclust(X, G = 1:6)
 summary(mc)
 ```
 
 ## 5. Report
 
 > On three simulated Gaussian blobs (n = 130 in R⁵), model-based
-> clustering selected G = `r mc$G` by BIC; k-means with
-> k = `r which.max(sil) + 1` maximised mean silhouette
-> (`r round(max(sil), 2)`). Hierarchical clustering with Ward linkage
+> clustering selected G = `mc$G` by BIC; k-means with
+> k = `which.max(sil) + 1` maximised mean silhouette
+> (`round(max(sil), 2)`). Hierarchical clustering with Ward linkage
 > produced a dendrogram consistent with three primary branches.
 
 When the generating model is actually Gaussian, `mclust` tends to win.
@@ -147,8 +142,7 @@ resamples to quantify stability if time.
 
 ## Session info
 
-```{r}
-sessionInfo()
+```sessionInfo()
 ```
 
 <!-- BEGIN see-also (auto-injected) -->

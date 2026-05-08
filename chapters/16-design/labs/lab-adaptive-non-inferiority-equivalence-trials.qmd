@@ -54,8 +54,7 @@ cross the margin line.
 
 ## Setup
 
-```{r}
-#| label: setup
+```#| label: setup
 library(tidyverse)
 set.seed(42)
 theme_set(theme_minimal(base_size = 12))
@@ -69,8 +68,7 @@ H1: the new treatment is not worse by more than Δ.
 
 ## 2. Visualise
 
-```{r}
-n <- 150
+```n <- 150
 trial <- tibble(
   arm = rep(c("comparator", "new"), each = n),
   y   = c(rnorm(n, 70, 10), rnorm(n, 69, 10))
@@ -92,21 +90,18 @@ the mean difference (new − comparator) is above −Δ.
 
 ## 4. Conduct
 
-```{r}
-fit <- t.test(y ~ arm, data = trial)
+```fit <- t.test(y ~ arm, data = trial)
 fit
 ```
 
-```{r}
-delta <- 3
+```delta <- 3
 ci <- fit$conf.int
 est <- diff(rev(fit$estimate))  # new - comparator
 ni_pass <- ci[1] > -delta
 tibble(estimate = est, low = ci[1], high = ci[2], margin = -delta, ni_pass)
 ```
 
-```{r}
-#| fig-width: 5
+```#| fig-width: 5
 #| fig-height: 2.5
 tibble(estimate = est, low = ci[1], high = ci[2]) |>
   ggplot(aes(x = estimate, y = 1)) +
@@ -120,12 +115,12 @@ tibble(estimate = est, low = ci[1], high = ci[2]) |>
 
 ## 5. Concluding statement
 
-> The new treatment had a mean difference of `r round(est, 2)` versus
-> comparator (95% CI: `r round(ci[1], 2)` to `r round(ci[2], 2)`).
+> The new treatment had a mean difference of `round(est, 2)` versus
+> comparator (95% CI: `round(ci[1], 2)` to `round(ci[2], 2)`).
 > With a pre-specified non-inferiority margin of Δ = 3, the new
-> treatment `r if (ni_pass) "met" else "did not meet"` the
+> treatment `if (ni_pass) "met" else "did not meet"` the
 > non-inferiority criterion because the lower bound
-> `r if (ni_pass) "exceeded" else "fell below"` −Δ.
+> `if (ni_pass) "exceeded" else "fell below"` −Δ.
 
 ### A word on adaptive designs
 
@@ -158,8 +153,7 @@ A common exam trap is to confuse "fails to reject superiority" with
 
 ## Session info
 
-```{r}
-sessionInfo()
+```sessionInfo()
 ```
 
 <!-- BEGIN see-also (auto-injected) -->

@@ -48,8 +48,7 @@ than trials), so the binomial is strictly better.
 
 ## Setup
 
-```{r}
-#| label: setup
+```#| label: setup
 library(tidyverse)
 set.seed(42)
 theme_set(theme_minimal(base_size = 12))
@@ -65,8 +64,7 @@ No hypothesis is tested.
 
 A Bernoulli trial: one coin, success probability 0.3.
 
-```{r}
-n_trials <- 1000
+```n_trials <- 1000
 bern <- rbinom(n_trials, 1, 0.3)
 mean(bern)   # empirical p
 ```
@@ -74,8 +72,7 @@ mean(bern)   # empirical p
 A binomial count: how many successes in 20 trials each at *p* = 0.3,
 repeated 10,000 times.
 
-```{r}
-n_rep <- 10000
+```n_rep <- 10000
 bin  <- rbinom(n_rep, size = 20, prob = 0.3)
 
 bin_tibble <- tibble(k = bin) |>
@@ -84,8 +81,7 @@ bin_tibble <- tibble(k = bin) |>
          theo = dbinom(k, 20, 0.3))
 ```
 
-```{r}
-#| fig-width: 6
+```#| fig-width: 6
 #| fig-height: 3.5
 bin_tibble |>
   ggplot(aes(k, prop)) +
@@ -102,8 +98,7 @@ assumes a constant rate and independent counts over disjoint
 intervals. When *n* is large and *p* is small with *np* = *λ*, the
 binomial approaches Poisson.
 
-```{r}
-# n=1000, p=0.003, so np = 3. Compare binomial and Poisson probabilities.
+```# n=1000, p=0.003, so np = 3. Compare binomial and Poisson probabilities.
 probs <- tibble(
   k = 0:10,
   binom  = dbinom(k, 1000, 0.003),
@@ -116,8 +111,7 @@ probs
 
 Answer two specific questions.
 
-```{r}
-# Q1: In a trial of 20 patients at p=0.3 response rate, what is
+```# Q1: In a trial of 20 patients at p=0.3 response rate, what is
 # P(at least 8 responders)?
 p_ge8 <- 1 - pbinom(7, size = 20, prob = 0.3)
 p_ge8
@@ -130,13 +124,11 @@ p_pois_ge7
 
 Simulate Q2 to confirm.
 
-```{r}
-sim <- rpois(10000, lambda = 3)
+```sim <- rpois(10000, lambda = 3)
 mean(sim >= 7)
 ```
 
-```{r}
-#| fig-width: 6
+```#| fig-width: 6
 #| fig-height: 3.5
 tibble(k = 0:15) |>
   mutate(pois_density = dpois(k, 3)) |>
@@ -148,11 +140,11 @@ tibble(k = 0:15) |>
 ## 5. Concluding statement
 
 > A response rate of 0.3 in a 20-patient trial implies a probability
-> of `r round(p_ge8, 3)` of observing eight or more responders.
+> of `round(p_ge8, 3)` of observing eight or more responders.
 > An ER with a mean admission rate of 3/hour has a probability of
-> `r round(p_pois_ge7, 3)` of receiving seven or more admissions in
+> `round(p_pois_ge7, 3)` of receiving seven or more admissions in
 > a given hour; 10,000 simulated hours recovered an empirical
-> proportion of `r round(mean(sim >= 7), 3)`. The binomial with
+> proportion of `round(mean(sim >= 7), 3)`. The binomial with
 > *n* = 1000, *p* = 0.003 and the Poisson with λ = 3 gave nearly
 > indistinguishable probabilities across *k* = 0–10.
 
@@ -182,8 +174,7 @@ same axes at decreasing *p* and watch them converge.
 
 ## Session info
 
-```{r}
-sessionInfo()
+```sessionInfo()
 ```
 
 <!-- BEGIN see-also (auto-injected) -->

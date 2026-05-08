@@ -47,8 +47,7 @@ data is then a substitution, not a rewrite.
 
 ## Setup
 
-```{r}
-#| label: setup
+```#| label: setup
 library(tidyverse)
 library(palmerpenguins)
 library(patchwork)
@@ -64,15 +63,13 @@ a faceted scatter plot, assembled with patchwork.
 
 ## 2. Approach
 
-```{r}
-p <- penguins |>
+```p <- penguins |>
   drop_na(bill_length_mm, bill_depth_mm, body_mass_g, species, sex)
 ```
 
 The plot object is built in three lines: data, aesthetics, geom.
 
-```{r}
-#| fig-width: 5
+```#| fig-width: 5
 #| fig-height: 3.5
 p1 <- p |>
   ggplot(aes(bill_length_mm, bill_depth_mm, colour = species)) +
@@ -85,8 +82,7 @@ p1
 
 ## 3. Execution
 
-```{r}
-#| fig-width: 5
+```#| fig-width: 5
 #| fig-height: 3.5
 p2 <- p |>
   ggplot(aes(species, body_mass_g, fill = species)) +
@@ -96,8 +92,7 @@ p2 <- p |>
 p2
 ```
 
-```{r}
-#| fig-width: 7
+```#| fig-width: 7
 #| fig-height: 3.5
 p3 <- p |>
   ggplot(aes(bill_length_mm, body_mass_g, colour = sex)) +
@@ -117,8 +112,7 @@ between-species differences.
 
 Assemble the three panels with patchwork.
 
-```{r}
-#| fig-width: 10
+```#| fig-width: 10
 #| fig-height: 7
 (p1 | p2) / p3 +
   plot_annotation(
@@ -134,7 +128,7 @@ manuscripts.
 ## 5. Report
 
 > A three-panel figure was assembled from the `palmerpenguins` data
-> (*n* = `r nrow(p)` complete cases) using ggplot2 and patchwork.
+> (*n* = `nrow(p)` complete cases) using ggplot2 and patchwork.
 > Panel A shows a clear separation of bill morphology among the three
 > species. Panel B shows Gentoo as markedly heavier than the other two.
 > Panel C, faceted by species, reveals a within-species positive
@@ -168,8 +162,7 @@ pedagogy is in watching a plot grow.
 
 ## Session info
 
-```{r}
-sessionInfo()
+```sessionInfo()
 ```
 
 <!-- BEGIN see-also (auto-injected) -->

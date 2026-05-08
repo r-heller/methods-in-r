@@ -43,8 +43,7 @@ uninformative.
 
 ## Setup
 
-```{r}
-#| label: setup
+```#| label: setup
 library(tidyverse)
 set.seed(42)
 theme_set(theme_minimal(base_size = 12))
@@ -61,8 +60,7 @@ characterising a test's discrimination.
 Simulate a biomarker that is higher in diseased cases than in
 disease-free controls, with overlap.
 
-```{r}
-N <- 500
+```N <- 500
 prev <- 0.2
 pop <- tibble(
   id = seq_len(N),
@@ -71,8 +69,7 @@ pop <- tibble(
 )
 ```
 
-```{r}
-#| fig-width: 6
+```#| fig-width: 6
 #| fig-height: 3.5
 pop |>
   mutate(status = if_else(disease == 1, "disease", "no disease")) |>
@@ -89,8 +86,7 @@ is continuous and must be dichotomised at some cutoff to behave like
 a positive/negative test. We choose 6 as the cutoff for illustration;
 in practice, the cutoff is itself an outcome of the analysis.
 
-```{r}
-cutoff <- 6
+```cutoff <- 6
 pop <- pop |> mutate(test = as.integer(biomarker > cutoff))
 tab <- table(disease = pop$disease, test = pop$test)
 tab
@@ -98,8 +94,7 @@ tab
 
 ## 4. Conduct
 
-```{r}
-TP <- tab["1", "1"]; FN <- tab["1", "0"]
+```TP <- tab["1", "1"]; FN <- tab["1", "0"]
 FP <- tab["0", "1"]; TN <- tab["0", "0"]
 
 sens <- TP / (TP + FN)
@@ -119,8 +114,7 @@ diag_tbl
 
 Convert pre-test odds to post-test odds with the LR.
 
-```{r}
-pre_prob <- 0.1
+```pre_prob <- 0.1
 pre_odds <- pre_prob / (1 - pre_prob)
 post_odds_pos <- pre_odds * lrp
 post_prob_pos <- post_odds_pos / (1 + post_odds_pos)
@@ -136,8 +130,7 @@ tibble(
 
 Sketch an ROC by sweeping the cutoff.
 
-```{r}
-roc <- tibble(
+```roc <- tibble(
   cut = seq(min(pop$biomarker), max(pop$biomarker), length.out = 200)
 ) |>
   rowwise() |>
@@ -152,8 +145,7 @@ roc <- tibble(
   ungroup()
 ```
 
-```{r}
-#| fig-width: 5
+```#| fig-width: 5
 #| fig-height: 4
 ggplot(roc, aes(fpr, sens)) +
   geom_path(linewidth = 1) +
@@ -165,13 +157,13 @@ ggplot(roc, aes(fpr, sens)) +
 
 ## 5. Concluding statement
 
-> With a cutoff of `r cutoff`, the biomarker had sensitivity
-> `r round(sens, 2)`, specificity `r round(spec, 2)`, PPV
-> `r round(ppv, 2)`, and NPV `r round(npv, 2)`. The positive
-> likelihood ratio was `r round(lrp, 2)` and the negative
-> `r round(lrn, 2)`. A pre-test probability of 10% becomes
-> `r round(post_prob_pos, 2)` after a positive test and
-> `r round(post_prob_neg, 3)` after a negative test.
+> With a cutoff of `cutoff`, the biomarker had sensitivity
+> `round(sens, 2)`, specificity `round(spec, 2)`, PPV
+> `round(ppv, 2)`, and NPV `round(npv, 2)`. The positive
+> likelihood ratio was `round(lrp, 2)` and the negative
+> `round(lrn, 2)`. A pre-test probability of 10% becomes
+> `round(post_prob_pos, 2)` after a positive test and
+> `round(post_prob_neg, 3)` after a negative test.
 
 A single cutoff collapses a rich continuous score into two states. The
 ROC curve shows the trade-off across all cutoffs; the area under it
@@ -201,8 +193,7 @@ relative cost of a false positive vs. a false negative.
 
 ## Session info
 
-```{r}
-sessionInfo()
+```sessionInfo()
 ```
 
 <!-- BEGIN see-also (auto-injected) -->

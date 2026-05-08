@@ -46,8 +46,7 @@ of no association.
 
 ## Setup
 
-```{r}
-#| label: setup
+```#| label: setup
 library(tidyverse)
 set.seed(42)
 theme_set(theme_minimal(base_size = 12))
@@ -67,15 +66,13 @@ Two hypotheses in this lab:
 
 Use `palmerpenguins`.
 
-```{r}
-library(palmerpenguins)
+```library(palmerpenguins)
 dat <- penguins |>
   filter(species %in% c("Gentoo", "Adelie")) |>
   drop_na(body_mass_g, flipper_length_mm)
 ```
 
-```{r}
-#| fig-width: 6
+```#| fig-width: 6
 #| fig-height: 3.5
 dat |>
   ggplot(aes(species, flipper_length_mm, fill = species)) +
@@ -98,8 +95,7 @@ variances.
 
 ### Bootstrap CI for the median body mass of Gentoo
 
-```{r}
-gen <- dat |> filter(species == "Gentoo") |> pull(body_mass_g)
+```gen <- dat |> filter(species == "Gentoo") |> pull(body_mass_g)
 B <- 2000
 boot_meds <- replicate(B, median(sample(gen, replace = TRUE)))
 ci_med <- quantile(boot_meds, c(0.025, 0.975))
@@ -110,8 +106,7 @@ tibble(statistic = "median body mass",
        ci_high = ci_med[2])
 ```
 
-```{r}
-#| fig-width: 6
+```#| fig-width: 6
 #| fig-height: 3.5
 tibble(boot = boot_meds) |>
   ggplot(aes(boot)) +
@@ -123,8 +118,7 @@ tibble(boot = boot_meds) |>
 
 ### Permutation test for flipper length Gentoo vs Adelie
 
-```{r}
-g <- dat$species
+```g <- dat$species
 x <- dat$flipper_length_mm
 observed_diff <- mean(x[g == "Gentoo"]) - mean(x[g == "Adelie"])
 
@@ -136,8 +130,7 @@ p_perm <- mean(abs(perm_diff) >= abs(observed_diff))
 p_perm
 ```
 
-```{r}
-#| fig-width: 6
+```#| fig-width: 6
 #| fig-height: 3.5
 tibble(perm = perm_diff) |>
   ggplot(aes(perm)) +
@@ -149,12 +142,12 @@ tibble(perm = perm_diff) |>
 ## 5. Concluding statement
 
 > Based on *B* = 2000 bootstrap resamples, the median body mass in
-> Gentoo penguins (*n* = `r length(gen)`) was `r round(obs_med, 0)` g
-> (95% percentile bootstrap CI `r round(ci_med[1], 0)` to
-> `r round(ci_med[2], 0)` g). Flipper length was much longer in
+> Gentoo penguins (*n* = `length(gen)`) was `round(obs_med, 0)` g
+> (95% percentile bootstrap CI `round(ci_med[1], 0)` to
+> `round(ci_med[2], 0)` g). Flipper length was much longer in
 > Gentoo than Adelie (mean difference
-> `r round(observed_diff, 1)` mm); a permutation test over 5000
-> reshuffles produced *p* = `r format(p_perm, scientific = FALSE)`,
+> `round(observed_diff, 1)` mm); a permutation test over 5000
+> reshuffles produced *p* = `format(p_perm, scientific = FALSE)`,
 > providing strong evidence against exchangeability.
 
 Bootstrap and permutation give you parametric-free tools for
@@ -184,8 +177,7 @@ They do not compete.
 
 ## Session info
 
-```{r}
-sessionInfo()
+```sessionInfo()
 ```
 
 <!-- BEGIN see-also (auto-injected) -->
