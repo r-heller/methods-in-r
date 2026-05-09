@@ -140,7 +140,7 @@ model it is an implementation detail.
 
 - Breiman L. (2001). *Statistical Modeling: The Two Cultures.*
 - Shmueli G. (2010). *To Explain or to Predict?* Statistical Science.
-- [Writing a report](../../appendices/D-writing-a-report.qmd).
+- [Writing a report](../appendices/D-writing-a-report.qmd).
 
 ## Session info
 

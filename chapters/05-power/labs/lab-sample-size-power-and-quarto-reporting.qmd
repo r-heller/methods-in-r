@@ -170,7 +170,7 @@ interval without an effect size; no effect size without units.
 
 ## Further reading
 
-- [Writing a report](../../appendices/D-writing-a-report.qmd).
+- [Writing a report](../../../appendices/D-writing-a-report.qmd).
 - Champely S. (2024). *pwr: Basic functions for power analysis.*
 - Cohen J. (1988). *Statistical Power Analysis for the Behavioral Sciences.*
 
