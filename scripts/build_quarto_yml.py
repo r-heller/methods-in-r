@@ -1,5 +1,13 @@
 #!/usr/bin/env python3
-"""Regenerate _quarto.yml with all method pages and labs in the chapters list."""
+"""Regenerate _quarto.yml with part-per-chapter nesting.
+
+Each chapter index becomes a ``part:`` entry and its method pages + labs
+become ``chapters:`` underneath, so the sidebar shows a collapsible tree
+instead of 675 flat numbered items.
+
+Quarto 1.7.32 does not support ``file: + sections:`` in book format,
+so we use ``part: filepath`` as the work-around.
+"""
 from __future__ import annotations
 
 import json
@@ -15,24 +23,15 @@ CHAPTER_ORDER = [
     "13-ml", "14-clinical", "15-metaanalysis", "16-design",
 ]
 
-PARTS = [
-    ("Foundations", ["01-foundations", "02-descriptives", "03-probability",
-                     "04-inferential", "05-power", "06-visualisation"]),
-    ("Modelling", ["07-regression", "08-multivariate", "09-timeseries",
-                   "10-bayesian", "11-survival"]),
-    ("Applications", ["12-bioinformatics", "13-ml", "14-clinical",
-                      "15-metaanalysis", "16-design"]),
-]
-
 
 def chapter_files(chapter: str) -> tuple[list[str], list[str]]:
     methods = sorted(
-        [e["target"] for e in MANIFEST["entries"]
-         if e["chapter"] == chapter and e["kind"] == "method"]
+        e["target"] for e in MANIFEST["entries"]
+        if e["chapter"] == chapter and e["kind"] == "method"
     )
     labs = sorted(
-        [e["target"] for e in MANIFEST["entries"]
-         if e["chapter"] == chapter and e["kind"] == "lab"]
+        e["target"] for e in MANIFEST["entries"]
+        if e["chapter"] == chapter and e["kind"] == "lab"
     )
     return methods, labs
 
@@ -67,26 +66,24 @@ def main() -> None:
     out.append("    - how-to-use.qmd")
     out.append("    - ch00-find-your-method.qmd")
 
-    for part_name, chapters in PARTS:
-        out.append(f'    - part: "{part_name}"')
+    for ch in CHAPTER_ORDER:
+        methods, labs = chapter_files(ch)
+        out.append(f"    - part: chapters/{ch}/index.qmd")
         out.append("      chapters:")
-        for ch in chapters:
-            out.append(f"        - chapters/{ch}/index.qmd")
-            methods, labs = chapter_files(ch)
-            for m in methods:
-                out.append(f"        - {m}")
-            for lab in labs:
-                out.append(f"        - {lab}")
+        for m in methods:
+            out.append(f"        - {m}")
+        for lab in labs:
+            out.append(f"        - {lab}")
 
-    out.append('    - part: "Reporting Templates"')
+    out.append("    - part: reporting/index.qmd")
     out.append("      chapters:")
-    out.append("        - reporting/index.qmd")
     out.append("        - reporting/strobe.qmd")
     out.append("        - reporting/consort.qmd")
     out.append("        - reporting/tripod-ai.qmd")
     out.append("        - reporting/prisma.qmd")
     out.append("        - reporting/arrive.qmd")
     out.append("        - reporting/lab-explanation-vs-prediction-reporting.qmd")
+
     out.append("    - references.qmd")
     out.append("")
     out.append("  appendices:")
@@ -112,6 +109,8 @@ def main() -> None:
     out.append("    toc-depth: 3")
     out.append("    fig-cap-location: bottom")
     out.append("    tbl-cap-location: top")
+    out.append("    include-after-body:")
+    out.append("      - _includes/page-pdf.html")
     out.append("  pdf:")
     out.append("    documentclass: scrbook")
     out.append("    papersize: a4")
@@ -123,8 +122,14 @@ def main() -> None:
     out.append("")
 
     (ROOT / "_quarto.yml").write_text("\n".join(out), encoding="utf-8")
-    n = sum(1 for line in out if line.strip().startswith("- chapters/") or line.strip().startswith("- reporting/") or line.strip().startswith("- appendices/"))
-    print(f"wrote _quarto.yml; ~{n} entries listed")
+
+    n_pages = sum(
+        1 for line in out
+        if line.strip().startswith("- chapters/")
+        or line.strip().startswith("- reporting/")
+        or line.strip().startswith("- appendices/")
+    )
+    print(f"wrote _quarto.yml — 16 chapter-parts, {n_pages} sub-pages")
 
 
 if __name__ == "__main__":

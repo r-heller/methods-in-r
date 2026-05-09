@@ -17,7 +17,7 @@ Goal → Approach → Execution → Check → Report.
 
 ## Prerequisites
 
-R, RStudio, and Quarto installed (see [Get started](../../get_started.qmd)).
+R, RStudio, and Quarto installed (see [How to use this book](/how-to-use.qmd)).
 
 ## Background
 
@@ -128,7 +128,7 @@ presentation. Most reviewers catch this, most readers do not.
 
 ## Further reading
 
-- [Research workflow appendix](../../appendices/A-research-workflow.qmd).
+- [Research workflow appendix](/appendices/A-research-workflow.qmd).
 - Altman DG. *Practical Statistics for Medical Research*, ch. 1.
 - Wasserstein RL & Lazar NA (2016), *The ASA's Statement on p-Values*.
 

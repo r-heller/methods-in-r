@@ -1,5 +1,5 @@
 ---
-title: "11. Survival Analysis"
+title: "Survival Analysis"
 ---
 
 # Survival Analysis {#sec-ch-11-survival}

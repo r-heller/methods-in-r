@@ -1,5 +1,5 @@
 ---
-title: "07. Regression & Modelling"
+title: "Regression & Modelling"
 ---
 
 # Regression & Modelling {#sec-ch-07-regression}

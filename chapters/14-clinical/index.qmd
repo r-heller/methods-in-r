@@ -1,5 +1,5 @@
 ---
-title: "14. Clinical Biostatistics"
+title: "Clinical Biostatistics"
 ---
 
 # Clinical Biostatistics {#sec-ch-14-clinical}

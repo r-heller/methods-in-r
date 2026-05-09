@@ -25,9 +25,8 @@ book:
     - index.qmd
     - how-to-use.qmd
     - ch00-find-your-method.qmd
-    - part: "Foundations"
+    - part: chapters/01-foundations/index.qmd
       chapters:
-        - chapters/01-foundations/index.qmd
         - chapters/01-foundations/bias-and-variance.qmd
         - chapters/01-foundations/big-op-little-op.qmd
         - chapters/01-foundations/cauchy-schwarz.qmd
@@ -63,7 +62,8 @@ book:
         - chapters/01-foundations/labs/lab-import-joins-and-missingness-with-dplyr.qmd
         - chapters/01-foundations/labs/lab-r-rstudio-quarto-and-renv-toolchain.qmd
         - chapters/01-foundations/labs/lab-scientific-process-and-research-workflow.qmd
-        - chapters/02-descriptives/index.qmd
+    - part: chapters/02-descriptives/index.qmd
+      chapters:
         - chapters/02-descriptives/coefficient-of-variation.qmd
         - chapters/02-descriptives/contingency-tables.qmd
         - chapters/02-descriptives/cross-tabulations.qmd
@@ -90,7 +90,8 @@ book:
         - chapters/02-descriptives/variance-and-sd.qmd
         - chapters/02-descriptives/weighted-mean.qmd
         - chapters/02-descriptives/labs/lab-descriptive-statistics-and-table-1.qmd
-        - chapters/03-probability/index.qmd
+    - part: chapters/03-probability/index.qmd
+      chapters:
         - chapters/03-probability/bayes-theorem.qmd
         - chapters/03-probability/bernoulli-distribution.qmd
         - chapters/03-probability/beta-distribution.qmd
@@ -134,7 +135,8 @@ book:
         - chapters/03-probability/labs/lab-continuous-distributions-and-q-q-plots.qmd
         - chapters/03-probability/labs/lab-discrete-distributions-bernoulli-binomial-poisson.qmd
         - chapters/03-probability/labs/lab-probability-conditional-probability-bayes-theorem.qmd
-        - chapters/04-inferential/index.qmd
+    - part: chapters/04-inferential/index.qmd
+      chapters:
         - chapters/04-inferential/anderson-darling-test.qmd
         - chapters/04-inferential/bartlett-test.qmd
         - chapters/04-inferential/benjamini-hochberg-fdr.qmd
@@ -164,11 +166,11 @@ book:
         - chapters/04-inferential/one-sample-t-test.qmd
         - chapters/04-inferential/one-sample-z-test.qmd
         - chapters/04-inferential/one-way-anova.qmd
-        - chapters/04-inferential/p-values-explained.qmd
         - chapters/04-inferential/paired-t-test.qmd
         - chapters/04-inferential/pearson-correlation-test.qmd
         - chapters/04-inferential/permutation-tests.qmd
         - chapters/04-inferential/post-hoc-tests-tukey.qmd
+        - chapters/04-inferential/p-values-explained.qmd
         - chapters/04-inferential/repeated-measures-anova.qmd
         - chapters/04-inferential/runs-test.qmd
         - chapters/04-inferential/shapiro-wilk-test.qmd
@@ -189,7 +191,8 @@ book:
         - chapters/04-inferential/labs/lab-populations-samples-and-the-central-limit-theorem.qmd
         - chapters/04-inferential/labs/lab-two-proportions-chi-square-risk-and-odds.qmd
         - chapters/04-inferential/labs/lab-two-sample-and-paired-t-tests.qmd
-        - chapters/05-power/index.qmd
+    - part: chapters/05-power/index.qmd
+      chapters:
         - chapters/05-power/effect-size-cohens-d.qmd
         - chapters/05-power/effect-size-cohens-h.qmd
         - chapters/05-power/effect-size-eta-squared.qmd
@@ -222,7 +225,8 @@ book:
         - chapters/05-power/sensitivity-analysis-sample-size.qmd
         - chapters/05-power/labs/lab-power-closed-form-and-simulation.qmd
         - chapters/05-power/labs/lab-sample-size-power-and-quarto-reporting.qmd
-        - chapters/06-visualisation/index.qmd
+    - part: chapters/06-visualisation/index.qmd
+      chapters:
         - chapters/06-visualisation/aesthetics-and-geoms.qmd
         - chapters/06-visualisation/annotations-and-labels.qmd
         - chapters/06-visualisation/bar-charts.qmd
@@ -259,9 +263,8 @@ book:
         - chapters/06-visualisation/time-series-plots.qmd
         - chapters/06-visualisation/violin-plots.qmd
         - chapters/06-visualisation/labs/lab-ggplot2-grammar-and-multi-panel-layouts.qmd
-    - part: "Modelling"
+    - part: chapters/07-regression/index.qmd
       chapters:
-        - chapters/07-regression/index.qmd
         - chapters/07-regression/added-variable-plots.qmd
         - chapters/07-regression/best-subset-selection.qmd
         - chapters/07-regression/beta-regression.qmd
@@ -281,8 +284,8 @@ book:
         - chapters/07-regression/lasso-regression.qmd
         - chapters/07-regression/leverage-influence.qmd
         - chapters/07-regression/lme4-lmer-examples.qmd
-        - chapters/07-regression/logistic-regression-diagnostics.qmd
         - chapters/07-regression/logistic-regression.qmd
+        - chapters/07-regression/logistic-regression-diagnostics.qmd
         - chapters/07-regression/mixed-models-intro.qmd
         - chapters/07-regression/model-selection-aic-bic.qmd
         - chapters/07-regression/multicollinearity-vif.qmd
@@ -298,7 +301,6 @@ book:
         - chapters/07-regression/probit-regression.qmd
         - chapters/07-regression/quantile-regression.qmd
         - chapters/07-regression/quasi-poisson.qmd
-        - chapters/07-regression/r-squared-adjusted.qmd
         - chapters/07-regression/random-intercepts.qmd
         - chapters/07-regression/random-slopes.qmd
         - chapters/07-regression/regression-assumptions.qmd
@@ -306,6 +308,7 @@ book:
         - chapters/07-regression/ridge-regression.qmd
         - chapters/07-regression/robust-regression.qmd
         - chapters/07-regression/roc-auc-for-logistic.qmd
+        - chapters/07-regression/r-squared-adjusted.qmd
         - chapters/07-regression/simple-linear-regression.qmd
         - chapters/07-regression/spline-regression.qmd
         - chapters/07-regression/stepwise-regression-pitfalls.qmd
@@ -330,7 +333,8 @@ book:
         - chapters/07-regression/labs/lab-robust-regression-weighted-ls-hc-sandwich-standard-errors.qmd
         - chapters/07-regression/labs/lab-simple-linear-regression.qmd
         - chapters/07-regression/labs/lab-two-way-factorial-anova-with-interaction.qmd
-        - chapters/08-multivariate/index.qmd
+    - part: chapters/08-multivariate/index.qmd
+      chapters:
         - chapters/08-multivariate/bray-curtis.qmd
         - chapters/08-multivariate/canonical-correlation.qmd
         - chapters/08-multivariate/cluster-validation-silhouette.qmd
@@ -364,7 +368,8 @@ book:
         - chapters/08-multivariate/labs/lab-clustering-k-means-hierarchical-model-based.qmd
         - chapters/08-multivariate/labs/lab-pca-factor-analysis-cca-lda.qmd
         - chapters/08-multivariate/labs/lab-umap-and-t-sne.qmd
-        - chapters/09-timeseries/index.qmd
+    - part: chapters/09-timeseries/index.qmd
+      chapters:
         - chapters/09-timeseries/acf-pacf-interpretation.qmd
         - chapters/09-timeseries/adf-test.qmd
         - chapters/09-timeseries/arima-models.qmd
@@ -396,15 +401,16 @@ book:
         - chapters/09-timeseries/white-noise-tests.qmd
         - chapters/09-timeseries/x13-decomposition.qmd
         - chapters/09-timeseries/labs/lab-time-series-basics.qmd
-        - chapters/10-bayesian/index.qmd
+    - part: chapters/10-bayesian/index.qmd
+      chapters:
         - chapters/10-bayesian/bayes-factors.qmd
         - chapters/10-bayesian/bayes-hypothesis-testing.qmd
-        - chapters/10-bayesian/bayes-theorem-for-parameters.qmd
         - chapters/10-bayesian/bayesian-anova.qmd
         - chapters/10-bayesian/bayesian-hierarchical-intro.qmd
         - chapters/10-bayesian/bayesian-mediation.qmd
         - chapters/10-bayesian/bayesian-meta-analysis.qmd
         - chapters/10-bayesian/bayesian-mixed-models.qmd
+        - chapters/10-bayesian/bayes-theorem-for-parameters.qmd
         - chapters/10-bayesian/beta-binomial-model.qmd
         - chapters/10-bayesian/brms-basics.qmd
         - chapters/10-bayesian/conjugate-priors.qmd
@@ -434,7 +440,8 @@ book:
         - chapters/10-bayesian/weakly-informative-priors.qmd
         - chapters/10-bayesian/labs/lab-bayesian-thinking-control-vs-decision-error.qmd
         - chapters/10-bayesian/labs/lab-brms-stan-loo-hierarchical-models.qmd
-        - chapters/11-survival/index.qmd
+    - part: chapters/11-survival/index.qmd
+      chapters:
         - chapters/11-survival/accelerated-failure-time.qmd
         - chapters/11-survival/brier-score-survival.qmd
         - chapters/11-survival/censoring-types.qmd
@@ -470,9 +477,8 @@ book:
         - chapters/11-survival/labs/lab-survival-primer-km-log-rank-cox-ph.qmd
         - chapters/11-survival/labs/lab-time-dependent-brier-ipa-external-validation.qmd
         - chapters/11-survival/labs/lab-time-varying-covariates-and-immortal-time-bias.qmd
-    - part: "Applications"
+    - part: chapters/12-bioinformatics/index.qmd
       chapters:
-        - chapters/12-bioinformatics/index.qmd
         - chapters/12-bioinformatics/annotation-variant-vep.qmd
         - chapters/12-bioinformatics/atac-seq-analysis.qmd
         - chapters/12-bioinformatics/batch-correction-combat.qmd
@@ -526,7 +532,8 @@ book:
         - chapters/12-bioinformatics/labs/lab-enrichment-analysis-gsea-ora.qmd
         - chapters/12-bioinformatics/labs/lab-rna-seq-with-deseq2-edger.qmd
         - chapters/12-bioinformatics/labs/lab-scrna-seq-with-seurat.qmd
-        - chapters/13-ml/index.qmd
+    - part: chapters/13-ml/index.qmd
+      chapters:
         - chapters/13-ml/anomaly-detection.qmd
         - chapters/13-ml/bagging.qmd
         - chapters/13-ml/bias-variance-tradeoff.qmd
@@ -581,7 +588,8 @@ book:
         - chapters/13-ml/labs/lab-tabular-neural-networks-with-torch.qmd
         - chapters/13-ml/labs/lab-tidymodels-pipelines.qmd
         - chapters/13-ml/labs/lab-trees-random-forests-gradient-boosting.qmd
-        - chapters/14-clinical/index.qmd
+    - part: chapters/14-clinical/index.qmd
+      chapters:
         - chapters/14-clinical/adaptive-design.qmd
         - chapters/14-clinical/alpha-spending.qmd
         - chapters/14-clinical/baseline-adjustment-ancova.qmd
@@ -622,7 +630,8 @@ book:
         - chapters/14-clinical/labs/lab-diagnostic-testing-se-sp-ppv-npv-lr.qmd
         - chapters/14-clinical/labs/lab-kappa-icc-bland-altman.qmd
         - chapters/14-clinical/labs/lab-tripod-ai-fairness-auditing-reproducibility-at-scale.qmd
-        - chapters/15-metaanalysis/index.qmd
+    - part: chapters/15-metaanalysis/index.qmd
+      chapters:
         - chapters/15-metaanalysis/bivariate-sroc.qmd
         - chapters/15-metaanalysis/correlation-pooling.qmd
         - chapters/15-metaanalysis/cumulative-meta-analysis.qmd
@@ -651,7 +660,8 @@ book:
         - chapters/15-metaanalysis/labs/lab-meta-analysis-basics.qmd
         - chapters/15-metaanalysis/labs/lab-network-meta-analysis.qmd
         - chapters/15-metaanalysis/labs/lab-systematic-reviews-and-prisma.qmd
-        - chapters/16-design/index.qmd
+    - part: chapters/16-design/index.qmd
+      chapters:
         - chapters/16-design/balanced-incomplete-block.qmd
         - chapters/16-design/blocking-principles.qmd
         - chapters/16-design/box-behnken-design.qmd
@@ -685,8 +695,8 @@ book:
         - chapters/16-design/labs/lab-adaptive-non-inferiority-equivalence-trials.qmd
         - chapters/16-design/labs/lab-bench-and-translational-design.qmd
         - chapters/16-design/labs/lab-dags-with-dagitty-and-ggdag.qmd
-        - chapters/16-design/labs/lab-g-methods-iv-did-rdd-heterogeneity-of-treatment-effect.qmd
         - chapters/16-design/labs/lab-glmms-and-gee.qmd
+        - chapters/16-design/labs/lab-g-methods-iv-did-rdd-heterogeneity-of-treatment-effect.qmd
         - chapters/16-design/labs/lab-linear-mixed-models-with-lme4.qmd
         - chapters/16-design/labs/lab-mcar-mar-mnar.qmd
         - chapters/16-design/labs/lab-multiple-imputation-with-mice.qmd
@@ -695,9 +705,8 @@ book:
         - chapters/16-design/labs/lab-propensity-scores-and-iptw.qmd
         - chapters/16-design/labs/lab-randomised-controlled-trials.qmd
         - chapters/16-design/labs/lab-sir-and-seir-models-with-desolve.qmd
-    - part: "Reporting Templates"
+    - part: reporting/index.qmd
       chapters:
-        - reporting/index.qmd
         - reporting/strobe.qmd
         - reporting/consort.qmd
         - reporting/tripod-ai.qmd
@@ -729,6 +738,8 @@ format:
     toc-depth: 3
     fig-cap-location: bottom
     tbl-cap-location: top
+    include-after-body:
+      - _includes/page-pdf.html
   pdf:
     documentclass: scrbook
     papersize: a4

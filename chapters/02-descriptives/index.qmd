@@ -1,5 +1,5 @@
 ---
-title: "02. Descriptive Statistics"
+title: "Descriptive Statistics"
 ---
 
 # Descriptive Statistics {#sec-ch-02-descriptives}

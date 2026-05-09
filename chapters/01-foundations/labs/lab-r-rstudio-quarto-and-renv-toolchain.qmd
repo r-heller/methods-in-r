@@ -19,7 +19,7 @@ Goal → Approach → Execution → Check → Report.
 
 ## Prerequisites
 
-R, RStudio, and Quarto installed (see [Get started](../../get_started.qmd)).
+R, RStudio, and Quarto installed (see [How to use this book](/how-to-use.qmd)).
 
 ## Background
 

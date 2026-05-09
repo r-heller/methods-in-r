@@ -1,5 +1,5 @@
 ---
-title: "10. Bayesian Statistics"
+title: "Bayesian Statistics"
 ---
 
 # Bayesian Statistics {#sec-ch-10-bayesian}

@@ -1,5 +1,5 @@
 ---
-title: "06. Data Visualisation"
+title: "Data Visualisation"
 ---
 
 # Data Visualisation {#sec-ch-06-visualisation}

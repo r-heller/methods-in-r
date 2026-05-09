@@ -1,5 +1,5 @@
 ---
-title: "15. Meta-Analysis"
+title: "Meta-Analysis"
 ---
 
 # Meta-Analysis {#sec-ch-15-metaanalysis}

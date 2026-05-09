@@ -1,5 +1,5 @@
 ---
-title: "05. Sample Size & Power"
+title: "Sample Size & Power"
 ---
 
 # Sample Size & Power {#sec-ch-05-power}

@@ -1,5 +1,6 @@
 ---
-title: "Chapter 0 — Find your method"
+title: "Find Your Method"
+number-sections: false
 ---
 
 # Find your method {#sec-find-your-method}

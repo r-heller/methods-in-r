@@ -1,5 +1,5 @@
 ---
-title: "13. Machine Learning"
+title: "Machine Learning"
 ---
 
 # Machine Learning {#sec-ch-13-ml}

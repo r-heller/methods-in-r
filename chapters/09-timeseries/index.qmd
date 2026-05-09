@@ -1,5 +1,5 @@
 ---
-title: "09. Time-Series Analysis"
+title: "Time-Series Analysis"
 ---
 
 # Time-Series Analysis {#sec-ch-09-timeseries}

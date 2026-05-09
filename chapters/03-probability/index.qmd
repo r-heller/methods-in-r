@@ -1,5 +1,5 @@
 ---
-title: "03. Probability Theory"
+title: "Probability Theory"
 ---
 
 # Probability Theory {#sec-ch-03-probability}

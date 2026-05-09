@@ -1,5 +1,5 @@
 ---
-title: "04. Inferential Statistics"
+title: "Inferential Statistics"
 ---
 
 # Inferential Statistics {#sec-ch-04-inferential}

@@ -1,5 +1,6 @@
 ---
 title: "Preface"
+number-sections: false
 ---
 
 # Methods in R {.unnumbered}
@@ -74,5 +75,5 @@ method by name and read the *For Reviewers* section first.
 
 ## Licence
 
-Code under MIT. Prose under CC BY 4.0 with attribution to *R. Heller,
-Methods in R*.
+Code under MIT (`LICENSE`). Written content under CC-BY-SA 4.0
+(`LICENSE-CONTENT`) with attribution to *R. Heller, Methods in R*.

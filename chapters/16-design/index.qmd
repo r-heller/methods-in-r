@@ -1,5 +1,5 @@
 ---
-title: "16. Experimental Design"
+title: "Experimental Design"
 ---
 
 # Experimental Design {#sec-ch-16-design}

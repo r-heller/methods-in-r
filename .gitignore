@@ -1,25 +1,55 @@
+# Quarto output
 /.quarto/
 /docs/
 /_book/
 /_freeze/
+/site_libs/
+*.html
+
+# Local render artefacts
+render.log
+render.status
+
+# R
 .Rproj.user/
 .Rhistory
 .RData
 .Ruserdata
-*.html
-!docs/**/*.html
-.DS_Store
-Thumbs.db
-
-# renv
 renv/library/
-renv/local/
-renv/lock/
-renv/python/
 renv/staging/
+renv/python/
+renv/sandbox/
 
 # Python (manifest builder)
 __pycache__/
 *.pyc
+.venv/
+venv/
 
+# LaTeX
+*.aux
+*.log
+*.out
+*.toc
+*.bbl
+*.blg
+*.bcf
+*.run.xml
+*.fls
+*.fdb_latexmk
+*.synctex.gz
+*.tex
+!preamble.tex
+
+# OS
+.DS_Store
+Thumbs.db
+desktop.ini
+
+# IDE
+.vscode/
+.idea/
+*.Rproj
+
+# Quarto notebooks
 **/*.quarto_ipynb

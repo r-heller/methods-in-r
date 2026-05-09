@@ -1,5 +1,5 @@
 ---
-title: "08. Multivariate Methods"
+title: "Multivariate Methods"
 ---
 
 # Multivariate Methods {#sec-ch-08-multivariate}

@@ -55,4 +55,4 @@ quarto render          # HTML to docs/, PDF as docs/Methods-in-R.pdf
 ## Licence
 
 - Code: MIT (see `LICENSE`).
-- Prose: CC BY 4.0, attribution to *R. Heller, Methods in R*.
+- Written content: CC-BY-SA 4.0 (see `LICENSE-CONTENT`), attribution to *R. Heller, Methods in R*.

@@ -1,5 +1,5 @@
 ---
-title: "01. Statistical Foundations"
+title: "Statistical Foundations"
 ---
 
 # Statistical Foundations {#sec-ch-01-foundations}
