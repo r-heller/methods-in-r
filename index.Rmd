@@ -15,83 +15,43 @@ description: "A bench reference for biomedical authors and peer reviewers — ev
 cover-image: "images/cover.png"
 ---
 
-# Preface {-}
+# Welcome! {-}
 
-```{r cover, echo = FALSE, eval = TRUE, out.width = "60%", fig.align = "center", fig.alt = "Methods in R book cover"}
+```{r cover, echo = FALSE, eval = TRUE, out.width = "280px", fig.align = "left", fig.alt = "Methods in R book cover"}
 knitr::include_graphics("images/cover.png")
 ```
 
-*A topic reference for biomedical research and peer review.*
+Welcome to *Methods in R*, a topic reference for biomedical research and peer review.
 
-## Why this book exists {-}
+## About this book {-}
 
-The R/biostatistics shelf is crowded — Moscarelli's *Biostatistics With 'R'*,
-Srinivasan's *R for Basic Biostatistics in Medical Research*, Harrell's
-*Biostatistics for Biomedical Research*, Shahbaba's *Biostatistics with R*,
-the Cambridge text, the Springer epidemiology volume, and Lepš & Šmilauer
-on the ecological side. They are good books. They are also linear
-textbooks: open at page one, work to the end.
+The R / biostatistics shelf is crowded with linear textbooks. *Methods in R* is shaped differently: it expects to serve two readers in the same week — the **author** who has data in front of them and needs to pick a method, run it correctly in R, and write the Methods paragraph; and the **peer reviewer** who has a manuscript on their desk and needs to know what a competent application of the method looks like, which diagnostics should have been reported, and what red flags to flag.
 
-This book is shaped differently, around two readers it expects to serve
-in the same week:
+Every method page therefore ends with a *For Reviewers* section: the misapplications, the missing diagnostics, the red flags in tables and figures, and the things to verify against the authors' references and arithmetic. The book opens at Chapter \@ref(sec-find-your-method), a decision tree from research question to method.
 
-1. **The author** who has data in front of them and needs to pick a
-   method, run it correctly in R, and write the Methods paragraph.
-2. **The peer reviewer** who has a manuscript on their desk and needs
-   to know — for the method the authors used — what a competent
-   application looks like, which diagnostics should have been reported,
-   and what red flags to flag.
+The body covers sixteen topic areas — from foundations and inference through regression, survival, Bayesian methods, machine learning, bioinformatics, and study design. Hands-on labs consolidate the methods of each area into a single runnable file. A final part, *Reporting Templates*, gives copy-paste Methods and Results paragraphs tagged by **STROBE / CONSORT / TRIPOD-AI / PRISMA / ARRIVE**.
 
-Every method page therefore ends with a **For Reviewers** section: the
-misapplications, the missing diagnostics, the red flags in tables and
-figures, and the things to verify against the authors' references and
-arithmetic. The book opens at Chapter \@ref(sec-find-your-method), a
-decision tree from research question to method, not at a glossy
-introduction. A final part, *Reporting Templates*, gives copy-paste
-Methods + Results paragraphs tagged with
-**STROBE / CONSORT / TRIPOD-AI / PRISMA / ARRIVE**.
+After reading, you should be able to (a) pick a defensible method for a given research question, (b) run it in R with diagnostics you can defend at peer review, and (c) write up a Methods paragraph that meets the relevant reporting standard.
 
-## Provenance and attribution {-}
+## How to use this book {-}
 
-The substantive content is consolidated and re-organised from two of my
-earlier public, MIT-licensed repositories that served as inspiration:
+- **Linear vs. lookup.** If you already know the method, jump to its chapter. If not, start at Chapter \@ref(sec-find-your-method) and follow the decision tree.
+- **Where the code lives.** Code in each method page and lab is display-only in the rendered book; copy it into an R session with the packages cited in that section attached. Reusable helpers live in `R/helpers.R` in the source repository.
+- **Corrections and suggestions.** Open an issue at <https://github.com/r-heller/methods-in-r/issues>.
+- **Per-chapter PDFs.** Every chapter has a *Download this chapter (PDF)* button at the top of its page (rendered alongside the HTML on each push to `main`).
+- **Whole-book PDF and EPUB.** Use the *Download* menu in the navbar (top of every page) for a single-file PDF or EPUB of the whole book.
 
-- **`CTTIR/courses`** — <https://github.com/CTTIR/courses>. A set of
-  hands-on lab materials. The labs have been re-homed by topic in this
-  book rather than reproduced in their original sequence.
-- **`CTTIR/tutorials`** — <https://github.com/CTTIR/tutorials>. A
-  collection of method pages written to a nine-section template. The
-  template is preserved and extended here with a *For Reviewers* tenth
-  section.
+## License {-}
 
-Two pieces of original material are added on top:
+The book content is released under [CC BY-SA 4.0](LICENSE-CONTENT); source code under the [MIT License](LICENSE). Suggested attribution: *R. Heller, Methods in R*.
 
-- The **For Reviewers** sections, written specifically for this volume.
-- The **Reporting Templates** part, which aggregates Methods + Results
-  paragraphs by reporting guideline.
+## Citation {-}
 
-A decision-tree wizard remains live at
-<https://cttir.github.io/tutorials/decision-tree/> — Chapter 0 mirrors
-the static tree and links out to the wizard for clickable navigation.
+See the dedicated [Citing this Guide](citing-this-guide.html) chapter for the prose citation, BibTeX, and RIS download.
 
-## Sibling volume {-}
+## Acknowledgments {-}
 
-This is the second volume in the *…in R* series. The first, on a
-different topic, is **`r-heller/strategy-in-r`** — *Strategy in R: Game
-Theory, Simulation, and Machine Intelligence*. The two share branding,
-build conventions (bookdown, `renv`, GitHub Pages deploy), and a
-preference for R-only worked examples over toy abstractions.
-
-## How to read {-}
-
-If you already know the method, jump to its chapter. If not, start at
-Chapter \@ref(sec-find-your-method). If you are reviewing a paper, search
-for the method by name and read the *For Reviewers* section first.
-
-## Licence {-}
-
-Code under MIT. Prose under CC BY 4.0 with attribution to *R. Heller,
-Methods in R*.
+Tooling: [bookdown](https://bookdown.org/), R Core, and the wider R ecosystem. Source material consolidated from the MIT-licensed `CTTIR/courses` and `CTTIR/tutorials` repositories (see the dedicated [Acknowledgments](acknowledgments.html) page for the full statement, including LLM-tool use).
 
 ```{r packages-bib, include = FALSE, eval = TRUE}
 knitr::write_bib(c(.packages(), "bookdown", "knitr", "rmarkdown"),
