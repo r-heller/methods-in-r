@@ -37,4 +37,4 @@ Append-only audit trail of significant build/repo changes.
 - 00-acknowledgments.Rmd: added "Use of LLM tools" subsection
   (self-hosted Mistral Le Chat via Ollama/`ollamar` + Copilot in RStudio)
 - 95-colophon.Rmd: added one-line pointer to the acknowledgment
-- Commit: 57a1b91
+- Commit: f124c08
