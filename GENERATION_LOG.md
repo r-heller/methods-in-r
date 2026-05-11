@@ -38,3 +38,31 @@ Append-only audit trail of significant build/repo changes.
   (self-hosted Mistral Le Chat via Ollama/`ollamar` + Copilot in RStudio)
 - 95-colophon.Rmd: added one-line pointer to the acknowledgment
 - Commit: f124c08
+
+## 2026-05-11 — Comprehensive checkup
+
+- Engine: already bookdown (converted in 3fad190; verified `_quarto.yml` absent).
+- Audited structure: 687 chapter entries, 35 first-level headings, 4 parts.
+  Wrote `AUDIT.md` mapping every required item from CLAUDE.md §A1 to ✅/⚠️/❌.
+- Filled missing front matter: `00-notation.Rmd`, `00-about-the-author.Rmd`.
+  Added both to `_bookdown.yml` sequence after `00-acknowledgments.Rmd`.
+- Citation verifier (`scripts/verify-citations.R`) refined to tolerate
+  book entries without DOI/arXiv/ISBN/URL — matches the inline CI workflow.
+  Local run: 0 hard failures, 31 entries flagged for ISBN backfill.
+- 31 entries lacking verifiable identifiers (cohen1988, field2018,
+  faraway2015, fox2019, agresti2013, agresti2010, harrell2015,
+  hollander2014, maxwell2017, kaufman2009, hosmer2013, rousseeuw2005,
+  delacre2017, divine2013, fabrigar1999, bishara2012, gueorguieva2004,
+  dinno2015, ghasemi2012, sharpe2015, agresti1998, bakeman2005,
+  conover1981, newson2002, kendall1938, kerby2014, rstatix, patil2021,
+  rosseel2012, sjoberg2021, wickham2019) — flagged for ISBN backfill.
+- Final render: `bookdown::gitbook` exit 0; `docs/notation.html`,
+  `docs/about-the-author.html`, and `docs/acknowledgments.html` (with
+  "Use of LLM tools" subsection) all present; 36 chapter HTMLs.
+- HTML output: staying on `bookdown::gitbook`; `bs4_book` 0.46 crashes
+  on `tweak_part_screwup` with `# (PART) … {-}` separators. To be
+  revisited when bookdown ships a fix or with a custom assignInNamespace
+  patch.
+- Deferred: whole-book PDF + per-chapter PDFs (require local tinytex
+  setup — CI builds these on push); `v1.0.0` GitHub release + Zenodo DOI
+  (depends on PDF/EPUB assets verified by CI).
