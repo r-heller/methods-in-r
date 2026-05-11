@@ -9,49 +9,69 @@ bibliography: [references.bib, packages.bib]
 biblio-style: apalike
 csl: style/vancouver.csl
 link-citations: yes
-github-repo: r-heller/methods-in-r
+github-repo: "r-heller/methods-in-r"
 url: https://r-heller.github.io/methods-in-r/
+favicon: "favicon.ico"
 description: "A bench reference for biomedical authors and peer reviewers — every common method covered with R code, diagnostics, and reviewer-facing red flags."
 cover-image: "images/cover.png"
 ---
 
 # Welcome! {-}
 
-```{r cover, echo = FALSE, eval = TRUE, out.width = "280px", fig.align = "left", fig.alt = "Methods in R book cover"}
-knitr::include_graphics("images/cover.png")
-```
+---
 
-Welcome to *Methods in R*, a topic reference for biomedical research and peer review.
+<a href="https://r-heller.github.io/methods-in-r/" target="_blank"><img src="images/cover.png" width="250" align="right" alt="Methods in R cover" class="cover" /></a> Welcome to **"Methods in R: A Topic Reference for Biomedical Research and Peer Review"**.
 
-## About this book {-}
+This book is shaped for two readers it expects to serve in the same week: the **author** who has data in front of them and needs to pick a method, run it in R, and write the Methods paragraph; and the **peer reviewer** who has a manuscript on their desk and needs to know what a competent application of that method looks like, which diagnostics should have been reported, and what red flags to flag.
 
-The R / biostatistics shelf is crowded with linear textbooks. *Methods in R* is shaped differently: it expects to serve two readers in the same week — the **author** who has data in front of them and needs to pick a method, run it correctly in R, and write the Methods paragraph; and the **peer reviewer** who has a manuscript on their desk and needs to know what a competent application of the method looks like, which diagnostics should have been reported, and what red flags to flag.
+The body covers sixteen topic areas — from foundations and inference through regression, survival, Bayesian methods, machine learning, bioinformatics, and study design — with hands-on labs that consolidate the methods of each area into a single runnable file. Every method page ends with a *For Reviewers* section: the misapplications, the missing diagnostics, the red flags in tables and figures, and the things to verify against the authors' references and arithmetic. A final part, *Reporting Templates*, gives copy-paste Methods and Results paragraphs tagged by **STROBE / CONSORT / TRIPOD-AI / PRISMA / ARRIVE**.
 
-Every method page therefore ends with a *For Reviewers* section: the misapplications, the missing diagnostics, the red flags in tables and figures, and the things to verify against the authors' references and arithmetic. The book opens at Chapter \@ref(sec-find-your-method), a decision tree from research question to method.
+The book is not a textbook of statistics. It assumes you can read an R session and follow a method already named to you. Where it differs from the existing biostatistics shelf is in being optimised for lookup, not linear reading, and in pairing every method with a concrete review checklist.
 
-The body covers sixteen topic areas — from foundations and inference through regression, survival, Bayesian methods, machine learning, bioinformatics, and study design. Hands-on labs consolidate the methods of each area into a single runnable file. A final part, *Reporting Templates*, gives copy-paste Methods and Results paragraphs tagged by **STROBE / CONSORT / TRIPOD-AI / PRISMA / ARRIVE**.
+<br></br>
 
-After reading, you should be able to (a) pick a defensible method for a given research question, (b) run it in R with diagnostics you can defend at peer review, and (c) write up a Methods paragraph that meets the relevant reporting standard.
+## Open Source Repository {-}
 
-## How to use this book {-}
+---
+
+This book has been built using [**{rmarkdown}**](https://rmarkdown.rstudio.com/docs/) and [**{bookdown}**](https://bookdown.org/). Formulas are rendered using [MathJax](http://docs.mathjax.org/en/latest/index.html). All source files are available on **GitHub**: <https://github.com/r-heller/methods-in-r>. You are free to fork, share, and reuse the contents under the [CC BY-SA 4.0 license](LICENSE-CONTENT).
+
+<br></br>
+
+## How To Use The Guide {-}
+
+---
 
 - **Linear vs. lookup.** If you already know the method, jump to its chapter. If not, start at Chapter \@ref(sec-find-your-method) and follow the decision tree.
-- **Where the code lives.** Code in each method page and lab is display-only in the rendered book; copy it into an R session with the packages cited in that section attached. Reusable helpers live in `R/helpers.R` in the source repository.
+- **Where the code lives.** Code in each method page and lab is display-only in the rendered book; copy it into an R session with the packages cited in that section attached. Reusable helpers are kept in `R/helpers.R` in the source repository.
+- **Per-chapter PDFs.** Every chapter has a *Download this chapter (PDF)* button at the top of its page; the full set is also available at `pdf-chapters/`.
+- **Whole-book PDF and EPUB.** Use the navbar *Download* menu for a single-file PDF or EPUB.
 - **Corrections and suggestions.** Open an issue at <https://github.com/r-heller/methods-in-r/issues>.
-- **Per-chapter PDFs.** Every chapter has a *Download this chapter (PDF)* button at the top of its page (rendered alongside the HTML on each push to `main`).
-- **Whole-book PDF and EPUB.** Use the *Download* menu in the navbar (top of every page) for a single-file PDF or EPUB of the whole book.
 
-## License {-}
+<br></br>
 
-The book content is released under [CC BY-SA 4.0](LICENSE-CONTENT); source code under the [MIT License](LICENSE). Suggested attribution: *R. Heller, Methods in R*.
+## Contributing {-}
+
+---
+
+Issues and pull requests are welcome — see [CONTRIBUTING.md](https://github.com/r-heller/methods-in-r/blob/main/CONTRIBUTING.md).
+<!-- TODO: name reviewers and contributors here once feedback is incorporated. -->
+
+<br></br>
 
 ## Citation {-}
 
-See the dedicated [Citing this Guide](citing-this-guide.html) chapter for the prose citation, BibTeX, and RIS download.
+---
 
-## Acknowledgments {-}
+The suggested citation is:
 
-Tooling: [bookdown](https://bookdown.org/), R Core, and the wider R ecosystem. Source material consolidated from the MIT-licensed `CTTIR/courses` and `CTTIR/tutorials` repositories (see the dedicated [Acknowledgments](acknowledgments.html) page for the full statement, including LLM-tool use).
+```{block, type='boxempty'}
+**Heller, R.** (2026). *Methods in R: A Topic Reference for Biomedical Research and Peer Review* (Version 1.0.0). Self-published via GitHub Pages. <https://r-heller.github.io/methods-in-r/>.
+```
+
+Download the reference as [BibTeX](citation-files/citation.bib) or [.ris](citation-files/citation.ris).
+
+<br></br>
 
 ```{r packages-bib, include = FALSE, eval = TRUE}
 knitr::write_bib(c(.packages(), "bookdown", "knitr", "rmarkdown"),

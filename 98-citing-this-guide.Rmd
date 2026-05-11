@@ -2,6 +2,8 @@
 
 The suggested citation is:
 
-> Heller, R. (2026). *Methods in R: A Topic Reference for Biomedical Research and Peer Review* (Version 1.0.0). Self-published via GitHub Pages. <https://r-heller.github.io/methods-in-r/>.
+```{block, type='boxempty'}
+**Heller, R.** (2026). *Methods in R: A Topic Reference for Biomedical Research and Peer Review* (Version 1.0.0). Self-published via GitHub Pages. <https://r-heller.github.io/methods-in-r/>.
+```
 
-Download the reference as [BibTeX](citation-files/citation.bib) or [RIS](citation-files/citation.ris).
+Download the reference as [BibTeX](citation-files/citation.bib) or [.ris](citation-files/citation.ris).
