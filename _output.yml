@@ -1,8 +1,30 @@
+bookdown::bs4_book:
+  theme:
+    primary: "#1565c0"
+    bg: "#fafafa"
+    fg: "#212121"
+    base_font: { google: "Inter" }
+    heading_font: { google: "Inter" }
+    code_font: { google: "JetBrains Mono" }
+  repo:
+    base: https://github.com/r-heller/methods-in-r
+    branch: main
+  css: style/style.css
+  includes:
+    in_header: style/header.html
+    after_body: style/after-body.html
+  split_by: chapter
+  config:
+    toc:
+      collapse: section
+      scroll_highlight: yes
+    download: ["pdf", "epub"]
+
 bookdown::gitbook:
   css: style/style.css
   includes:
     in_header: style/header.html
-    after_body: style/per-chapter-pdf-button.html
+    after_body: style/after-body.html
   split_by: chapter
   split_bib: no
   config:
