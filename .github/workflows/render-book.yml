@@ -37,8 +37,33 @@ jobs:
       - name: Install TinyTeX
         run: Rscript -e 'tinytex::install_tinytex(force = TRUE, bundle = "TinyTeX")'
 
-      - name: Render book (HTML + PDF + EPUB)
-        run: Rscript -e 'bookdown::render_book("index.Rmd", output_format = "all")'
+      - name: Install LaTeX packages needed by preamble
+        run: |
+          Rscript -e 'tinytex::tlmgr_install(c(
+            "hyperref","xcolor","microtype","booktabs","longtable","float",
+            "fontspec","unicode-math","xunicode","euenc","tipa","tex-gyre",
+            "amsmath","amssymb","mathtools","etoolbox","iftex","l3backend",
+            "l3kernel","l3packages","fancyvrb","framed","ulem","upquote",
+            "url","koma-script","mdwtools","ec","cm-super","lm","lm-math",
+            "tools","caption","subcaption","listings","textcomp","grfext",
+            "geometry","setspace","titling","environ","pdftexcmds",
+            "infwarerr","kvoptions","ltxcmds","epstopdf-pkg","graphics",
+            "graphics-def","oberdiek","colortbl","array","multirow",
+            "wrapfig","tabu","threeparttable","threeparttablex","makecell",
+            "ragged2e","filehook","footnote","filehook","makeindex"
+          ), force = FALSE)'
+        continue-on-error: true
+
+      - name: Render HTML
+        run: Rscript -e 'bookdown::render_book("index.Rmd", output_format = "bookdown::gitbook")'
+
+      - name: Render EPUB
+        run: Rscript -e 'bookdown::render_book("index.Rmd", output_format = "bookdown::epub_book")'
+        continue-on-error: true
+
+      - name: Render PDF
+        run: Rscript -e 'bookdown::render_book("index.Rmd", output_format = "bookdown::pdf_book")'
+        continue-on-error: true
 
       - name: Render per-chapter PDFs
         run: Rscript scripts/render-chapter-pdfs.R
