@@ -11,3 +11,12 @@
 \PassOptionsToPackage{colorlinks=true,linkcolor=linkblue,citecolor=linkblue,urlcolor=linkblue}{hyperref}
 \setcounter{secnumdepth}{4}
 \setcounter{tocdepth}{3}
+
+% LaTeX fallbacks for the Harrer-style HTML callout boxes
+% ({block, type='boxempty'} etc. — see style/style.css). PDF degrades to
+% plain quoted blocks; HTML keeps the styled boxes.
+\newenvironment{boxempty}{\begin{quote}}{\end{quote}}
+\newenvironment{boxinfo}{\begin{quote}}{\end{quote}}
+\newenvironment{boximportant}{\begin{quote}}{\end{quote}}
+\newenvironment{boxreport}{\begin{quote}}{\end{quote}}
+\newenvironment{boxquestion}{\begin{quote}}{\end{quote}}
