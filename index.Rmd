@@ -17,6 +17,10 @@ cover-image: "images/cover.png"
 
 # Preface {-}
 
+```{r cover, echo = FALSE, eval = TRUE, out.width = "60%", fig.align = "center", fig.alt = "Methods in R book cover"}
+knitr::include_graphics("images/cover.png")
+```
+
 *A topic reference for biomedical research and peer review.*
 
 ## Why this book exists {-}

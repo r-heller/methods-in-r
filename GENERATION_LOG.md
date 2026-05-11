@@ -29,3 +29,5 @@ Append-only audit trail of significant build/repo changes.
 - Theme: applied Hugo Coder palette per CLAUDE.md §A6 (`style/style.css`),
   Inter + JetBrains Mono fonts via `style/header.html`.
 - Vancouver CSL fetched into `style/vancouver.csl`.
+
+- 2026-05-11 — added book cover (images/cover.png) to Preface, README thumbnail, EPUB cover-image, OG meta; social-preview.png staged for upload (commit db0c0a0)

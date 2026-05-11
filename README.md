@@ -1,3 +1,9 @@
+<p align="center">
+  <a href="https://r-heller.github.io/methods-in-r/">
+    <img src="images/cover.png" alt="Methods in R book cover" width="280">
+  </a>
+</p>
+
 # Methods in R
 
 *A topic reference for biomedical research and peer review.*

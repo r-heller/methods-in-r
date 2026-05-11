@@ -9,6 +9,7 @@
 packages.bib
 *.html
 !docs/**/*.html
+!style/*.html
 *.log
 *.aux
 *.bbl
