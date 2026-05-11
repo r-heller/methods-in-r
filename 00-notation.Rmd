@@ -1,0 +1,80 @@
+# Notation {-}
+
+This page lists the symbols, conventions, and abbreviations used
+throughout the book. Where a chapter departs from these conventions
+locally, the chapter says so explicitly.
+
+## Greek symbols {-}
+
+| Symbol            | Meaning                                                       |
+|-------------------|---------------------------------------------------------------|
+| $\alpha$          | Type I error rate (significance threshold).                   |
+| $\beta$           | Type II error rate; also a regression coefficient (context).  |
+| $\mu$             | Population mean.                                              |
+| $\sigma$          | Population standard deviation; $\sigma^2$ for variance.       |
+| $\pi$             | Population proportion.                                        |
+| $\theta$          | Generic population parameter; $\hat{\theta}$ for the estimator.|
+| $\tau^2$          | Between-study variance in meta-analysis.                      |
+| $\rho$            | Population correlation; intra-class correlation (ICC).        |
+| $\lambda$         | Rate parameter; eigenvalue (context).                         |
+
+## Latin symbols {-}
+
+| Symbol            | Meaning                                                       |
+|-------------------|---------------------------------------------------------------|
+| $n$               | Sample size.                                                  |
+| $N$               | Population size.                                              |
+| $\bar{x}$         | Sample mean.                                                  |
+| $s$               | Sample standard deviation; $s^2$ for variance.                |
+| $\hat{p}$         | Sample proportion.                                            |
+| $\mathrm{SE}$     | Standard error of an estimator.                               |
+| $p$               | $p$-value.                                                    |
+| $L$, $\ell$       | Likelihood and log-likelihood.                                |
+| $I^2$             | Heterogeneity statistic in meta-analysis.                     |
+
+## Operators and notation {-}
+
+- $\sim$ — "is distributed as".
+- $\hat{\theta}$ — an estimator of the parameter $\theta$.
+- $X \perp Y$ — independence.
+- $E[\cdot]$, $\mathrm{Var}[\cdot]$ — expectation and variance.
+- $X \mid Y$ — $X$ given $Y$ (conditional).
+
+## Abbreviations {-}
+
+| Abbrev.  | Expansion                                                     |
+|----------|---------------------------------------------------------------|
+| CI       | Confidence interval (frequentist); credible interval (Bayesian) — context disambiguates. |
+| RR       | Relative risk (risk ratio).                                   |
+| OR       | Odds ratio.                                                   |
+| HR       | Hazard ratio.                                                 |
+| AUC      | Area under the (ROC) curve.                                   |
+| LR+ / LR−| Positive / negative likelihood ratio.                         |
+| PPV / NPV| Positive / negative predictive value.                         |
+| MLE      | Maximum likelihood estimator.                                 |
+| GLM      | Generalised linear model.                                     |
+| GLMM     | Generalised linear mixed model.                               |
+| GEE      | Generalised estimating equation.                              |
+| RCT      | Randomised controlled trial.                                  |
+| ITT      | Intention to treat.                                           |
+| PP       | Per protocol.                                                 |
+| MI       | Multiple imputation.                                          |
+| FDR      | False discovery rate.                                         |
+| BH       | Benjamini–Hochberg (FDR procedure).                           |
+| TRIPOD   | Transparent Reporting of a multivariable prediction model.    |
+| STROBE   | Strengthening the Reporting of Observational Studies in Epidemiology. |
+| CONSORT  | Consolidated Standards of Reporting Trials.                   |
+| PRISMA   | Preferred Reporting Items for Systematic Reviews and Meta-Analyses. |
+| ARRIVE   | Animal Research: Reporting of In Vivo Experiments.            |
+| STARD    | Standards for Reporting of Diagnostic Accuracy.               |
+
+## Code conventions {-}
+
+- The base R pipe `|>` is used throughout. Files mixing `%>%` and `|>` are
+  flagged in `GENERATION_LOG.md`.
+- Package functions are written qualified the first time they appear in
+  a chapter (`dplyr::filter()`), then bare on subsequent uses.
+- Code blocks shown in the rendered book are display-only; the book is
+  built with `eval = FALSE` globally and verified to knit cleanly without
+  side effects. To run a chunk yourself, copy it into an R session with
+  the libraries cited in that section attached.
