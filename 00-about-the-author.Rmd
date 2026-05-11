@@ -1,0 +1,22 @@
+# About the author {-}
+
+**Raban Heller** is a biomedical researcher and applied statistician.
+This book consolidates the method pages and labs from his earlier public
+repositories (`CTTIR/courses`, `CTTIR/tutorials`) into a single
+topic-organised reference, extended with a *For Reviewers* section on
+every method page.
+
+- ORCID: <https://orcid.org/0000-0001-8006-9742>
+- GitHub: <https://github.com/r-heller>
+- Website: <https://r-heller.github.io/website/>
+
+## Sibling volume {-}
+
+This is the second book in the *…in R* series. The first is
+[`r-heller/strategy-in-r`](https://github.com/r-heller/strategy-in-r) —
+*Strategy in R: Game Theory, Simulation, and Machine Intelligence*. The
+two share branding, build conventions (bookdown, `renv`, GitHub Pages
+deploy), and a preference for R-only worked examples over toy
+abstractions.
+
+<!-- TODO: add affiliation, biography paragraph, and selected publications when available. -->
