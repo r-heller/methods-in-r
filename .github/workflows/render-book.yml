@@ -62,9 +62,10 @@ jobs:
         run: Rscript -e 'bookdown::render_book("index.Rmd", output_format = "bookdown::pdf_book")'
         continue-on-error: true
 
-      - name: Render per-chapter PDFs
-        run: Rscript scripts/render-chapter-pdfs.R
-        continue-on-error: true
+      # Per-chapter PDFs are rendered on demand by a separate manual
+      # workflow (.github/workflows/per-chapter-pdfs.yml) — 687 chapters at
+      # a few seconds each blow past the 90-min job ceiling and were
+      # blocking the gh-pages deploy.
 
       - name: Deploy to gh-pages
         uses: JamesIves/github-pages-deploy-action@v4
