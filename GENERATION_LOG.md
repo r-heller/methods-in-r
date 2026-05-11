@@ -31,3 +31,10 @@ Append-only audit trail of significant build/repo changes.
 - Vancouver CSL fetched into `style/vancouver.csl`.
 
 - 2026-05-11 — added book cover (images/cover.png) to Preface, README thumbnail, EPUB cover-image, OG meta; social-preview.png staged for upload (commit e07c3c4)
+
+## 2026-05-11 — Added LLM-use acknowledgment
+
+- 00-acknowledgments.Rmd: added "Use of LLM tools" subsection
+  (self-hosted Mistral Le Chat via Ollama/`ollamar` + Copilot in RStudio)
+- 95-colophon.Rmd: added one-line pointer to the acknowledgment
+- Commit: f124c08
