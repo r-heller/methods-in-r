@@ -29,7 +29,7 @@
   <meta name="apple-mobile-web-app-capable" content="yes" />
   <meta name="apple-mobile-web-app-status-bar-style" content="black" />
   
-  
+  <link rel="shortcut icon" href="favicon.ico" type="image/x-icon" />
 <link rel="prev" href="notation.html"/>
 <link rel="next" href="sec-find-your-method.html"/>
 <script src="libs/jquery-3.6.0/jquery-3.6.0.min.js"></script>
@@ -55,6 +55,7 @@
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style/font-awesome.min.css">
 
 
 <style type="text/css">
@@ -259,6 +260,34 @@ build is provided for offline reference.</p>
 
 </div>
 </div>
+<!-- Dark / light mode toggle (replaces Harrer's 🌓 with a Font Awesome glyph) -->
+<div class="sticky-item">
+  <button type="button" id="mode-switch" class="btn-circle-mode" aria-label="Toggle dark mode">
+    <i class="fa-solid fa-circle-half-stroke" aria-hidden="true"></i>
+  </button>
+</div>
+
+<script>
+  (function () {
+    var stored = localStorage.getItem('themeMode');
+    var prefersDark = window.matchMedia && window.matchMedia('(prefers-color-scheme: dark)').matches;
+    var initial = stored || (prefersDark ? 'dark' : 'light');
+    document.documentElement.setAttribute('data-theme', initial);
+
+    document.addEventListener('DOMContentLoaded', function () {
+      var btn = document.getElementById('mode-switch');
+      if (!btn) return;
+      btn.addEventListener('click', function () {
+        var current = document.documentElement.getAttribute('data-theme');
+        var next = current === 'dark' ? 'light' : 'dark';
+        document.documentElement.setAttribute('data-theme', next);
+        localStorage.setItem('themeMode', next);
+      });
+    });
+  })();
+</script>
+
+<!-- Per-chapter PDF download button -->
 <script>
   document.addEventListener("DOMContentLoaded", function () {
     var file = window.location.pathname.split("/").pop().replace(".html", ".pdf");
@@ -268,14 +297,15 @@ build is provided for offline reference.</p>
     btn.className = "btn btn-sm btn-outline-secondary per-chapter-pdf-btn";
     btn.style.cssText = "float:right;margin-top:0.5em;";
     btn.textContent = "⬇ Download this chapter (PDF)";
-    var header = document.querySelector("main h1");
+    var header = document.querySelector("main h1, .page-inner h1");
     if (header && !document.querySelector(".per-chapter-pdf-btn")) {
       header.appendChild(btn);
     }
   });
 </script>
 
-<div class="bookdown-attribution" style="text-align:center; padding:1.5rem 0; font-size:0.9em; opacity:0.8;">
+<!-- Footer attribution -->
+<div class="bookdown-attribution">
   This book was built by the <a href="https://bookdown.org/"><strong>bookdown</strong></a> R package.
 </div>
             </section>

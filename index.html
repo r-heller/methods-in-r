@@ -29,7 +29,7 @@
   <meta name="apple-mobile-web-app-capable" content="yes" />
   <meta name="apple-mobile-web-app-status-bar-style" content="black" />
   
-  
+  <link rel="shortcut icon" href="favicon.ico" type="image/x-icon" />
 
 <link rel="next" href="impressum.html"/>
 <script src="libs/jquery-3.6.0/jquery-3.6.0.min.js"></script>
@@ -55,6 +55,7 @@
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style/font-awesome.min.css">
 
 
 <style type="text/css">
@@ -187,39 +188,83 @@ true
 </div>
 <div id="welcome" class="section level1 unnumbered hasAnchor">
 <h1>Welcome!<a href="index.html#welcome" class="anchor-section" aria-label="Anchor link to header"></a></h1>
-<p><img src="images/cover.png" alt="Methods in R book cover" width="280px" style="display: block; margin: auto auto auto 0;" /></p>
-<p>Welcome to <em>Methods in R</em>, a topic reference for biomedical research and peer review.</p>
-<div id="about-this-book" class="section level2 unnumbered hasAnchor">
-<h2>About this book<a href="index.html#about-this-book" class="anchor-section" aria-label="Anchor link to header"></a></h2>
-<p>The R / biostatistics shelf is crowded with linear textbooks. <em>Methods in R</em> is shaped differently: it expects to serve two readers in the same week — the <strong>author</strong> who has data in front of them and needs to pick a method, run it correctly in R, and write the Methods paragraph; and the <strong>peer reviewer</strong> who has a manuscript on their desk and needs to know what a competent application of the method looks like, which diagnostics should have been reported, and what red flags to flag.</p>
-<p>Every method page therefore ends with a <em>For Reviewers</em> section: the misapplications, the missing diagnostics, the red flags in tables and figures, and the things to verify against the authors’ references and arithmetic. The book opens at Chapter <a href="sec-find-your-method.html#sec-find-your-method">1</a>, a decision tree from research question to method.</p>
-<p>The body covers sixteen topic areas — from foundations and inference through regression, survival, Bayesian methods, machine learning, bioinformatics, and study design. Hands-on labs consolidate the methods of each area into a single runnable file. A final part, <em>Reporting Templates</em>, gives copy-paste Methods and Results paragraphs tagged by <strong>STROBE / CONSORT / TRIPOD-AI / PRISMA / ARRIVE</strong>.</p>
-<p>After reading, you should be able to (a) pick a defensible method for a given research question, (b) run it in R with diagnostics you can defend at peer review, and (c) write up a Methods paragraph that meets the relevant reporting standard.</p>
+<hr />
+<p><a href="https://r-heller.github.io/methods-in-r/" target="_blank"><img src="images/cover.png" width="250" align="right" alt="Methods in R cover" class="cover" /></a> Welcome to <strong>“Methods in R: A Topic Reference for Biomedical Research and Peer Review”</strong>.</p>
+<p>This book is shaped for two readers it expects to serve in the same week: the <strong>author</strong> who has data in front of them and needs to pick a method, run it in R, and write the Methods paragraph; and the <strong>peer reviewer</strong> who has a manuscript on their desk and needs to know what a competent application of that method looks like, which diagnostics should have been reported, and what red flags to flag.</p>
+<p>The body covers sixteen topic areas — from foundations and inference through regression, survival, Bayesian methods, machine learning, bioinformatics, and study design — with hands-on labs that consolidate the methods of each area into a single runnable file. Every method page ends with a <em>For Reviewers</em> section: the misapplications, the missing diagnostics, the red flags in tables and figures, and the things to verify against the authors’ references and arithmetic. A final part, <em>Reporting Templates</em>, gives copy-paste Methods and Results paragraphs tagged by <strong>STROBE / CONSORT / TRIPOD-AI / PRISMA / ARRIVE</strong>.</p>
+<p>The book is not a textbook of statistics. It assumes you can read an R session and follow a method already named to you. Where it differs from the existing biostatistics shelf is in being optimised for lookup, not linear reading, and in pairing every method with a concrete review checklist.</p>
+<p><br></br></p>
+<div id="open-source-repository" class="section level2 unnumbered hasAnchor">
+<h2>Open Source Repository<a href="index.html#open-source-repository" class="anchor-section" aria-label="Anchor link to header"></a></h2>
+<hr />
+<p>This book has been built using <a href="https://rmarkdown.rstudio.com/docs/"><strong>{rmarkdown}</strong></a> and <a href="https://bookdown.org/"><strong>{bookdown}</strong></a>. Formulas are rendered using <a href="http://docs.mathjax.org/en/latest/index.html">MathJax</a>. All source files are available on <strong>GitHub</strong>: <a href="https://github.com/r-heller/methods-in-r" class="uri">https://github.com/r-heller/methods-in-r</a>. You are free to fork, share, and reuse the contents under the <a href="LICENSE-CONTENT">CC BY-SA 4.0 license</a>.</p>
+<p><br></br></p>
 </div>
-<div id="how-to-use-this-book" class="section level2 unnumbered hasAnchor">
-<h2>How to use this book<a href="index.html#how-to-use-this-book" class="anchor-section" aria-label="Anchor link to header"></a></h2>
+<div id="how-to-use-the-guide" class="section level2 unnumbered hasAnchor">
+<h2>How To Use The Guide<a href="index.html#how-to-use-the-guide" class="anchor-section" aria-label="Anchor link to header"></a></h2>
+<hr />
 <ul>
 <li><strong>Linear vs. lookup.</strong> If you already know the method, jump to its chapter. If not, start at Chapter <a href="sec-find-your-method.html#sec-find-your-method">1</a> and follow the decision tree.</li>
-<li><strong>Where the code lives.</strong> Code in each method page and lab is display-only in the rendered book; copy it into an R session with the packages cited in that section attached. Reusable helpers live in <code>R/helpers.R</code> in the source repository.</li>
+<li><strong>Where the code lives.</strong> Code in each method page and lab is display-only in the rendered book; copy it into an R session with the packages cited in that section attached. Reusable helpers are kept in <code>R/helpers.R</code> in the source repository.</li>
+<li><strong>Per-chapter PDFs.</strong> Every chapter has a <em>Download this chapter (PDF)</em> button at the top of its page; the full set is also available at <code>pdf-chapters/</code>.</li>
+<li><strong>Whole-book PDF and EPUB.</strong> Use the navbar <em>Download</em> menu for a single-file PDF or EPUB.</li>
 <li><strong>Corrections and suggestions.</strong> Open an issue at <a href="https://github.com/r-heller/methods-in-r/issues" class="uri">https://github.com/r-heller/methods-in-r/issues</a>.</li>
-<li><strong>Per-chapter PDFs.</strong> Every chapter has a <em>Download this chapter (PDF)</em> button at the top of its page (rendered alongside the HTML on each push to <code>main</code>).</li>
-<li><strong>Whole-book PDF and EPUB.</strong> Use the <em>Download</em> menu in the navbar (top of every page) for a single-file PDF or EPUB of the whole book.</li>
 </ul>
+<p><br></br></p>
 </div>
-<div id="license" class="section level2 unnumbered hasAnchor">
-<h2>License<a href="index.html#license" class="anchor-section" aria-label="Anchor link to header"></a></h2>
-<p>The book content is released under <a href="LICENSE-CONTENT">CC BY-SA 4.0</a>; source code under the <a href="LICENSE">MIT License</a>. Suggested attribution: <em>R. Heller, Methods in R</em>.</p>
+<div id="contributing" class="section level2 unnumbered hasAnchor">
+<h2>Contributing<a href="index.html#contributing" class="anchor-section" aria-label="Anchor link to header"></a></h2>
+<hr />
+<p>Issues and pull requests are welcome — see <a href="https://github.com/r-heller/methods-in-r/blob/main/CONTRIBUTING.md">CONTRIBUTING.md</a>.
+<!-- TODO: name reviewers and contributors here once feedback is incorporated. --></p>
+<p><br></br></p>
 </div>
 <div id="citation" class="section level2 unnumbered hasAnchor">
 <h2>Citation<a href="index.html#citation" class="anchor-section" aria-label="Anchor link to header"></a></h2>
-<p>See the dedicated <a href="citing-this-guide.html">Citing this Guide</a> chapter for the prose citation, BibTeX, and RIS download.</p>
+<hr />
+<p>The suggested citation is:</p>
+<div class="boxempty">
+<p>
+<strong>Heller, R.</strong> (2026). <em>Methods in R: A Topic
+Reference for Biomedical Research and Peer Review</em> (Version 1.0.0).
+Self-published via GitHub Pages. <a
+href="https://r-heller.github.io/methods-in-r/"
+class="uri">https://r-heller.github.io/methods-in-r/</a>.
+</p>
 </div>
-<div id="acknowledgments" class="section level2 unnumbered hasAnchor">
-<h2>Acknowledgments<a href="index.html#acknowledgments" class="anchor-section" aria-label="Anchor link to header"></a></h2>
-<p>Tooling: <a href="https://bookdown.org/">bookdown</a>, R Core, and the wider R ecosystem. Source material consolidated from the MIT-licensed <code>CTTIR/courses</code> and <code>CTTIR/tutorials</code> repositories (see the dedicated <a href="acknowledgments.html">Acknowledgments</a> page for the full statement, including LLM-tool use).</p>
+<p>Download the reference as <a href="citation-files/citation.bib">BibTeX</a> or <a href="citation-files/citation.ris">.ris</a>.</p>
+<p><br></br></p>
 
 </div>
 </div>
+<!-- Dark / light mode toggle (replaces Harrer's 🌓 with a Font Awesome glyph) -->
+<div class="sticky-item">
+  <button type="button" id="mode-switch" class="btn-circle-mode" aria-label="Toggle dark mode">
+    <i class="fa-solid fa-circle-half-stroke" aria-hidden="true"></i>
+  </button>
+</div>
+
+<script>
+  (function () {
+    var stored = localStorage.getItem('themeMode');
+    var prefersDark = window.matchMedia && window.matchMedia('(prefers-color-scheme: dark)').matches;
+    var initial = stored || (prefersDark ? 'dark' : 'light');
+    document.documentElement.setAttribute('data-theme', initial);
+
+    document.addEventListener('DOMContentLoaded', function () {
+      var btn = document.getElementById('mode-switch');
+      if (!btn) return;
+      btn.addEventListener('click', function () {
+        var current = document.documentElement.getAttribute('data-theme');
+        var next = current === 'dark' ? 'light' : 'dark';
+        document.documentElement.setAttribute('data-theme', next);
+        localStorage.setItem('themeMode', next);
+      });
+    });
+  })();
+</script>
+
+<!-- Per-chapter PDF download button -->
 <script>
   document.addEventListener("DOMContentLoaded", function () {
     var file = window.location.pathname.split("/").pop().replace(".html", ".pdf");
@@ -229,14 +274,15 @@ true
     btn.className = "btn btn-sm btn-outline-secondary per-chapter-pdf-btn";
     btn.style.cssText = "float:right;margin-top:0.5em;";
     btn.textContent = "⬇ Download this chapter (PDF)";
-    var header = document.querySelector("main h1");
+    var header = document.querySelector("main h1, .page-inner h1");
     if (header && !document.querySelector(".per-chapter-pdf-btn")) {
       header.appendChild(btn);
     }
   });
 </script>
 
-<div class="bookdown-attribution" style="text-align:center; padding:1.5rem 0; font-size:0.9em; opacity:0.8;">
+<!-- Footer attribution -->
+<div class="bookdown-attribution">
   This book was built by the <a href="https://bookdown.org/"><strong>bookdown</strong></a> R package.
 </div>
             </section>
