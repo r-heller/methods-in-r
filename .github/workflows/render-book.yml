@@ -51,8 +51,8 @@ jobs:
           ))'
         continue-on-error: true
 
-      - name: Render HTML
-        run: Rscript -e 'bookdown::render_book("index.Rmd", output_format = "bookdown::gitbook")'
+      - name: Render HTML (bs4_book)
+        run: Rscript -e 'bookdown::render_book("index.Rmd", output_format = "bookdown::bs4_book")'
 
       - name: Render EPUB
         run: Rscript -e 'bookdown::render_book("index.Rmd", output_format = "bookdown::epub_book")'

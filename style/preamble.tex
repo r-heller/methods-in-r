@@ -4,6 +4,10 @@
 \usepackage{float}
 \usepackage{xcolor}
 \definecolor{linkblue}{HTML}{1565C0}
-\hypersetup{colorlinks=true,linkcolor=linkblue,citecolor=linkblue,urlcolor=linkblue}
+% hyperref is loaded by pandoc's default LaTeX template AFTER this
+% header-includes block, so \hypersetup here would error with
+% "Undefined control sequence". Pass options forward so they apply
+% when hyperref actually loads.
+\PassOptionsToPackage{colorlinks=true,linkcolor=linkblue,citecolor=linkblue,urlcolor=linkblue}{hyperref}
 \setcounter{secnumdepth}{4}
 \setcounter{tocdepth}{3}
