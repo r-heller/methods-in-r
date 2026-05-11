@@ -1,7 +1,0 @@
----
-title: "References"
-number-sections: false
----
-
-::: {#refs}
-:::

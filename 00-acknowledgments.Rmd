@@ -1,0 +1,16 @@
+# Acknowledgments {-}
+
+This book is built with [bookdown](https://bookdown.org/) by Yihui Xie and the R Markdown community.
+The wider R ecosystem — base R, the tidyverse, and the many domain-specific packages cited in the body — is the foundation on which every chapter rests.
+
+The original lab and tutorial material that inspired this volume was authored under
+the `CTTIR/courses` and `CTTIR/tutorials` repositories. Those repositories are credited in the Preface and at the points of use.
+
+The decision-tree wizard hosted at `cttir.github.io/tutorials/decision-tree/`
+draws structural inspiration from the University of Zurich's
+*Methodenberatung* (methodenberatung.uzh.ch).
+
+Drafting assistance from Anthropic's Claude was used during preparation;
+all editorial decisions, errors, and omissions remain the author's.
+
+<!-- TODO: name reviewers and contributors here once feedback is incorporated. -->

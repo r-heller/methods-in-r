@@ -1,0 +1,73 @@
+---
+title: "13. Machine Learning"
+---
+
+# Machine Learning {#sec-ch-13-ml}
+
+Cross-validation, regularisation (ridge/LASSO/elastic net), trees and ensembles, neural networks via `torch`/`keras`, SHAP and other interpretability tools, and the `tidymodels` workflow. False-discovery and knockoff-based selection are treated alongside CV as competing answers to the same question.
+
+This chapter contains **46 method pages** and **8 labs**. If you are not sure which method to read, return to [Chapter 0](../../ch00-find-your-method.Rmd) and follow the decision tree to the right node.
+
+## Method pages
+
+| Method | Source slug |
+|---|---|
+| [A Complete mlr3 Workflow](mlr3-workflow.Rmd) | `mlr3-workflow` |
+| [A Complete tidymodels Workflow](tidymodels-workflow.Rmd) | `tidymodels-workflow` |
+| [Anomaly Detection](anomaly-detection.Rmd) | `anomaly-detection` |
+| [Bagging](bagging.Rmd) | `bagging` |
+| [Calibration Plots](calibration-plots.Rmd) | `calibration-plots` |
+| [CatBoost](catboost.Rmd) | `catboost` |
+| [Class Weights for Imbalanced Data](class-weights-imbalanced.Rmd) | `class-weights-imbalanced` |
+| [Convolutional Neural Networks: Introduction](cnn-introduction.Rmd) | `cnn-introduction` |
+| [Cross-Validation](cross-validation.Rmd) | `cross-validation` |
+| [DBSCAN as an ML Tool](clustering-dbscan-ml.Rmd) | `clustering-dbscan-ml` |
+| [Decision Trees (CART)](decision-trees-cart.Rmd) | `decision-trees-cart` |
+| [Dropout and Early Stopping](dropout-early-stopping.Rmd) | `dropout-early-stopping` |
+| [Extremely Randomised Trees](extremely-randomized-trees.Rmd) | `extremely-randomized-trees` |
+| [Feature Engineering](feature-engineering.Rmd) | `feature-engineering` |
+| [Feature Selection](feature-selection.Rmd) | `feature-selection` |
+| [Feedforward Networks in torch](feedforward-networks-torch.Rmd) | `feedforward-networks-torch` |
+| [Gradient Boosting](gradient-boosting.Rmd) | `gradient-boosting` |
+| [Isolation Forest](isolation-forest.Rmd) | `isolation-forest` |
+| [Isotonic Regression Calibration](isotonic-regression.Rmd) | `isotonic-regression` |
+| [k-Means as an ML Tool](clustering-kmeans-ml.Rmd) | `clustering-kmeans-ml` |
+| [k-Nearest Neighbours Classification](knn-classification.Rmd) | `knn-classification` |
+| [k-Nearest Neighbours Regression](knn-regression.Rmd) | `knn-regression` |
+| [Kernel SVMs](svm-kernel.Rmd) | `svm-kernel` |
+| [LightGBM](lightgbm.Rmd) | `lightgbm` |
+| [LIME Explanations](lime-explanations.Rmd) | `lime-explanations` |
+| [Linear Discriminant as ML](linear-discriminant-ml.Rmd) | `linear-discriminant-ml` |
+| [Linear Support Vector Machines](svm-linear.Rmd) | `svm-linear` |
+| [Logistic Regression as ML](logistic-regression-ml.Rmd) | `logistic-regression-ml` |
+| [Naive Bayes](naive-bayes.Rmd) | `naive-bayes` |
+| [Nested Cross-Validation](nested-cv.Rmd) | `nested-cv` |
+| [Neural Networks: Introduction](neural-networks-intro.Rmd) | `neural-networks-intro` |
+| [Partial Dependence Plots](partial-dependence-plots.Rmd) | `partial-dependence-plots` |
+| [Platt Scaling](platt-scaling.Rmd) | `platt-scaling` |
+| [Preprocessing with recipes](recipes-preprocessing.Rmd) | `recipes-preprocessing` |
+| [Random Forests](random-forest.Rmd) | `random-forest` |
+| [Regularisation in ML](regularization-ridge-lasso-ml.Rmd) | `regularization-ridge-lasso-ml` |
+| [RNNs and LSTMs: Introduction](rnn-lstm-intro.Rmd) | `rnn-lstm-intro` |
+| [SHAP Values](shap-values.Rmd) | `shap-values` |
+| [SMOTE for Imbalanced Classes](smote-imbalanced.Rmd) | `smote-imbalanced` |
+| [Stacking Ensembles](stacking-ensembles.Rmd) | `stacking-ensembles` |
+| [Supervised Learning: Overview](supervised-learning-overview.Rmd) | `supervised-learning-overview` |
+| [The Bias-Variance Tradeoff](bias-variance-tradeoff.Rmd) | `bias-variance-tradeoff` |
+| [Train-Test Splits](train-test-split.Rmd) | `train-test-split` |
+| [Transformers: Overview](transformer-overview.Rmd) | `transformer-overview` |
+| [Variable Importance](variable-importance.Rmd) | `variable-importance` |
+| [XGBoost](xgboost.Rmd) | `xgboost` |
+
+## Labs
+
+| Lab |
+|---|
+| [Cross-validation, nested CV, bootstrap .632+](labs/lab-cross-validation-nested-cv-bootstrap-632.Rmd) |
+| [Regularisation: ridge, lasso, elastic net](labs/lab-regularisation-ridge-lasso-elastic-net.Rmd) |
+| [Trees, random forests, gradient boosting](labs/lab-trees-random-forests-gradient-boosting.Rmd) |
+| [Interpretability and SHAP](labs/lab-interpretability-and-shap.Rmd) |
+| [Tabular neural networks with torch](labs/lab-tabular-neural-networks-with-torch.Rmd) |
+| [Imaging and sequence models intro](labs/lab-imaging-and-sequence-models-intro.Rmd) |
+| [tidymodels pipelines](labs/lab-tidymodels-pipelines.Rmd) |
+| [FDR, knockoffs, replication crisis](labs/lab-fdr-knockoffs-replication-crisis.Rmd) |

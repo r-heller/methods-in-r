@@ -1,0 +1,359 @@
+---
+title: "PRISMA — systematic reviews & meta-analyses"
+---
+
+# PRISMA — systematic reviews & meta-analyses
+
+PRISMA — *Preferred Reporting Items for Systematic reviews and Meta-Analyses* — covers systematic reviews and meta-analyses. The 27-item checklist and flow diagram are at <https://www.prisma-statement.org/>. The templates below cover pairwise and network meta-analysis methods.
+
+This page contains **25 method-specific templates**. Each is a skeleton with placeholders in italics; the prose is written so you can paste it into a manuscript and replace only the bracketed values.
+
+### Bivariate SROC Curves
+
+**Methods paragraph (copy-paste, fill in italics):**
+
+> *[N=]* participants/observations were analysed using **Bivariate SROC Curves** as implemented in *[package vX.Y]* in R *[vX.Y]*. Assumptions were checked: *[list checks performed]*. *[Effect size with 95% confidence interval reported as the primary outcome]*. Two-sided p-values use *α = 0.05*; *[multiple-comparison adjustment if any]*.
+
+**Results paragraph (copy-paste):**
+
+> Bivariate SROC Curves yielded *[estimate]* (95% CI *[lower, upper]*, p = *[value]*). *[Diagnostic / assumption summary]*. *[Sensitivity analysis result]*.
+
+**Reviewer checklist for this method.** → [`bivariate-sroc` — For Reviewers](../chapters/15-metaanalysis/bivariate-sroc.Rmd#for-reviewers)
+
+<!-- TODO:reporting-template -->
+
+### Converting Between Effect Sizes
+
+**Methods paragraph (copy-paste, fill in italics):**
+
+> *[N=]* participants/observations were analysed using **Converting Between Effect Sizes** as implemented in *[package vX.Y]* in R *[vX.Y]*. Assumptions were checked: *[list checks performed]*. *[Effect size with 95% confidence interval reported as the primary outcome]*. Two-sided p-values use *α = 0.05*; *[multiple-comparison adjustment if any]*.
+
+**Results paragraph (copy-paste):**
+
+> Converting Between Effect Sizes yielded *[estimate]* (95% CI *[lower, upper]*, p = *[value]*). *[Diagnostic / assumption summary]*. *[Sensitivity analysis result]*.
+
+**Reviewer checklist for this method.** → [`effect-size-conversion` — For Reviewers](../chapters/15-metaanalysis/effect-size-conversion.Rmd#for-reviewers)
+
+<!-- TODO:reporting-template -->
+
+### Cumulative Meta-Analysis
+
+**Methods paragraph (copy-paste, fill in italics):**
+
+> *[N=]* participants/observations were analysed using **Cumulative Meta-Analysis** as implemented in *[package vX.Y]* in R *[vX.Y]*. Assumptions were checked: *[list checks performed]*. *[Effect size with 95% confidence interval reported as the primary outcome]*. Two-sided p-values use *α = 0.05*; *[multiple-comparison adjustment if any]*.
+
+**Results paragraph (copy-paste):**
+
+> Cumulative Meta-Analysis yielded *[estimate]* (95% CI *[lower, upper]*, p = *[value]*). *[Diagnostic / assumption summary]*. *[Sensitivity analysis result]*.
+
+**Reviewer checklist for this method.** → [`cumulative-meta-analysis` — For Reviewers](../chapters/15-metaanalysis/cumulative-meta-analysis.Rmd#for-reviewers)
+
+<!-- TODO:reporting-template -->
+
+### Egger's Test for Funnel Asymmetry
+
+**Methods paragraph (copy-paste, fill in italics):**
+
+> *[N=]* participants/observations were analysed using **Egger's Test for Funnel Asymmetry** as implemented in *[package vX.Y]* in R *[vX.Y]*. Assumptions were checked: *[list checks performed]*. *[Effect size with 95% confidence interval reported as the primary outcome]*. Two-sided p-values use *α = 0.05*; *[multiple-comparison adjustment if any]*.
+
+**Results paragraph (copy-paste):**
+
+> Egger's Test for Funnel Asymmetry yielded *[estimate]* (95% CI *[lower, upper]*, p = *[value]*). *[Diagnostic / assumption summary]*. *[Sensitivity analysis result]*.
+
+**Reviewer checklist for this method.** → [`egger-test` — For Reviewers](../chapters/15-metaanalysis/egger-test.Rmd#for-reviewers)
+
+<!-- TODO:reporting-template -->
+
+### Fixed-Effect vs. Random-Effects Meta-Analysis
+
+**Methods paragraph (copy-paste, fill in italics):**
+
+> *[N=]* participants/observations were analysed using **Fixed-Effect vs. Random-Effects Meta-Analysis** as implemented in *[package vX.Y]* in R *[vX.Y]*. Assumptions were checked: *[list checks performed]*. *[Effect size with 95% confidence interval reported as the primary outcome]*. Two-sided p-values use *α = 0.05*; *[multiple-comparison adjustment if any]*.
+
+**Results paragraph (copy-paste):**
+
+> Fixed-Effect vs. Random-Effects Meta-Analysis yielded *[estimate]* (95% CI *[lower, upper]*, p = *[value]*). *[Diagnostic / assumption summary]*. *[Sensitivity analysis result]*.
+
+**Reviewer checklist for this method.** → [`fixed-vs-random-effects` — For Reviewers](../chapters/15-metaanalysis/fixed-vs-random-effects.Rmd#for-reviewers)
+
+<!-- TODO:reporting-template -->
+
+### Forest Plots in Meta-Analysis
+
+**Methods paragraph (copy-paste, fill in italics):**
+
+> *[N=]* participants/observations were analysed using **Forest Plots in Meta-Analysis** as implemented in *[package vX.Y]* in R *[vX.Y]*. Assumptions were checked: *[list checks performed]*. *[Effect size with 95% confidence interval reported as the primary outcome]*. Two-sided p-values use *α = 0.05*; *[multiple-comparison adjustment if any]*.
+
+**Results paragraph (copy-paste):**
+
+> Forest Plots in Meta-Analysis yielded *[estimate]* (95% CI *[lower, upper]*, p = *[value]*). *[Diagnostic / assumption summary]*. *[Sensitivity analysis result]*.
+
+**Reviewer checklist for this method.** → [`forest-plot-meta` — For Reviewers](../chapters/15-metaanalysis/forest-plot-meta.Rmd#for-reviewers)
+
+<!-- TODO:reporting-template -->
+
+### Funnel Plots
+
+**Methods paragraph (copy-paste, fill in italics):**
+
+> *[N=]* participants/observations were analysed using **Funnel Plots** as implemented in *[package vX.Y]* in R *[vX.Y]*. Assumptions were checked: *[list checks performed]*. *[Effect size with 95% confidence interval reported as the primary outcome]*. Two-sided p-values use *α = 0.05*; *[multiple-comparison adjustment if any]*.
+
+**Results paragraph (copy-paste):**
+
+> Funnel Plots yielded *[estimate]* (95% CI *[lower, upper]*, p = *[value]*). *[Diagnostic / assumption summary]*. *[Sensitivity analysis result]*.
+
+**Reviewer checklist for this method.** → [`funnel-plot-meta` — For Reviewers](../chapters/15-metaanalysis/funnel-plot-meta.Rmd#for-reviewers)
+
+<!-- TODO:reporting-template -->
+
+### Individual Participant Data Meta-Analysis
+
+**Methods paragraph (copy-paste, fill in italics):**
+
+> *[N=]* participants/observations were analysed using **Individual Participant Data Meta-Analysis** as implemented in *[package vX.Y]* in R *[vX.Y]*. Assumptions were checked: *[list checks performed]*. *[Effect size with 95% confidence interval reported as the primary outcome]*. Two-sided p-values use *α = 0.05*; *[multiple-comparison adjustment if any]*.
+
+**Results paragraph (copy-paste):**
+
+> Individual Participant Data Meta-Analysis yielded *[estimate]* (95% CI *[lower, upper]*, p = *[value]*). *[Diagnostic / assumption summary]*. *[Sensitivity analysis result]*.
+
+**Reviewer checklist for this method.** → [`ipd-meta-analysis` — For Reviewers](../chapters/15-metaanalysis/ipd-meta-analysis.Rmd#for-reviewers)
+
+<!-- TODO:reporting-template -->
+
+### Leave-One-Out Meta-Analysis
+
+**Methods paragraph (copy-paste, fill in italics):**
+
+> *[N=]* participants/observations were analysed using **Leave-One-Out Meta-Analysis** as implemented in *[package vX.Y]* in R *[vX.Y]*. Assumptions were checked: *[list checks performed]*. *[Effect size with 95% confidence interval reported as the primary outcome]*. Two-sided p-values use *α = 0.05*; *[multiple-comparison adjustment if any]*.
+
+**Results paragraph (copy-paste):**
+
+> Leave-One-Out Meta-Analysis yielded *[estimate]* (95% CI *[lower, upper]*, p = *[value]*). *[Diagnostic / assumption summary]*. *[Sensitivity analysis result]*.
+
+**Reviewer checklist for this method.** → [`leave-one-out` — For Reviewers](../chapters/15-metaanalysis/leave-one-out.Rmd#for-reviewers)
+
+<!-- TODO:reporting-template -->
+
+### Meta-Analysis of Diagnostic Accuracy
+
+**Methods paragraph (copy-paste, fill in italics):**
+
+> *[N=]* participants/observations were analysed using **Meta-Analysis of Diagnostic Accuracy** as implemented in *[package vX.Y]* in R *[vX.Y]*. Assumptions were checked: *[list checks performed]*. *[Effect size with 95% confidence interval reported as the primary outcome]*. Two-sided p-values use *α = 0.05*; *[multiple-comparison adjustment if any]*.
+
+**Results paragraph (copy-paste):**
+
+> Meta-Analysis of Diagnostic Accuracy yielded *[estimate]* (95% CI *[lower, upper]*, p = *[value]*). *[Diagnostic / assumption summary]*. *[Sensitivity analysis result]*.
+
+**Reviewer checklist for this method.** → [`diagnostic-test-meta` — For Reviewers](../chapters/15-metaanalysis/diagnostic-test-meta.Rmd#for-reviewers)
+
+<!-- TODO:reporting-template -->
+
+### Meta-Regression
+
+**Methods paragraph (copy-paste, fill in italics):**
+
+> *[N=]* participants/observations were analysed using **Meta-Regression** as implemented in *[package vX.Y]* in R *[vX.Y]*. Assumptions were checked: *[list checks performed]*. *[Effect size with 95% confidence interval reported as the primary outcome]*. Two-sided p-values use *α = 0.05*; *[multiple-comparison adjustment if any]*.
+
+**Results paragraph (copy-paste):**
+
+> Meta-Regression yielded *[estimate]* (95% CI *[lower, upper]*, p = *[value]*). *[Diagnostic / assumption summary]*. *[Sensitivity analysis result]*.
+
+**Reviewer checklist for this method.** → [`meta-regression` — For Reviewers](../chapters/15-metaanalysis/meta-regression.Rmd#for-reviewers)
+
+<!-- TODO:reporting-template -->
+
+### Network Meta-Analysis: Introduction
+
+**Methods paragraph (copy-paste, fill in italics):**
+
+> *[N=]* participants/observations were analysed using **Network Meta-Analysis: Introduction** as implemented in *[package vX.Y]* in R *[vX.Y]*. Assumptions were checked: *[list checks performed]*. *[Effect size with 95% confidence interval reported as the primary outcome]*. Two-sided p-values use *α = 0.05*; *[multiple-comparison adjustment if any]*.
+
+**Results paragraph (copy-paste):**
+
+> Network Meta-Analysis: Introduction yielded *[estimate]* (95% CI *[lower, upper]*, p = *[value]*). *[Diagnostic / assumption summary]*. *[Sensitivity analysis result]*.
+
+**Reviewer checklist for this method.** → [`network-meta-analysis-intro` — For Reviewers](../chapters/15-metaanalysis/network-meta-analysis-intro.Rmd#for-reviewers)
+
+<!-- TODO:reporting-template -->
+
+### NMA Consistency and Inconsistency
+
+**Methods paragraph (copy-paste, fill in italics):**
+
+> *[N=]* participants/observations were analysed using **NMA Consistency and Inconsistency** as implemented in *[package vX.Y]* in R *[vX.Y]*. Assumptions were checked: *[list checks performed]*. *[Effect size with 95% confidence interval reported as the primary outcome]*. Two-sided p-values use *α = 0.05*; *[multiple-comparison adjustment if any]*.
+
+**Results paragraph (copy-paste):**
+
+> NMA Consistency and Inconsistency yielded *[estimate]* (95% CI *[lower, upper]*, p = *[value]*). *[Diagnostic / assumption summary]*. *[Sensitivity analysis result]*.
+
+**Reviewer checklist for this method.** → [`nma-consistency` — For Reviewers](../chapters/15-metaanalysis/nma-consistency.Rmd#for-reviewers)
+
+<!-- TODO:reporting-template -->
+
+### NMA League Tables
+
+**Methods paragraph (copy-paste, fill in italics):**
+
+> *[N=]* participants/observations were analysed using **NMA League Tables** as implemented in *[package vX.Y]* in R *[vX.Y]*. Assumptions were checked: *[list checks performed]*. *[Effect size with 95% confidence interval reported as the primary outcome]*. Two-sided p-values use *α = 0.05*; *[multiple-comparison adjustment if any]*.
+
+**Results paragraph (copy-paste):**
+
+> NMA League Tables yielded *[estimate]* (95% CI *[lower, upper]*, p = *[value]*). *[Diagnostic / assumption summary]*. *[Sensitivity analysis result]*.
+
+**Reviewer checklist for this method.** → [`nma-league-tables` — For Reviewers](../chapters/15-metaanalysis/nma-league-tables.Rmd#for-reviewers)
+
+<!-- TODO:reporting-template -->
+
+### Pooling Correlation Coefficients
+
+**Methods paragraph (copy-paste, fill in italics):**
+
+> *[N=]* participants/observations were analysed using **Pooling Correlation Coefficients** as implemented in *[package vX.Y]* in R *[vX.Y]*. Assumptions were checked: *[list checks performed]*. *[Effect size with 95% confidence interval reported as the primary outcome]*. Two-sided p-values use *α = 0.05*; *[multiple-comparison adjustment if any]*.
+
+**Results paragraph (copy-paste):**
+
+> Pooling Correlation Coefficients yielded *[estimate]* (95% CI *[lower, upper]*, p = *[value]*). *[Diagnostic / assumption summary]*. *[Sensitivity analysis result]*.
+
+**Reviewer checklist for this method.** → [`correlation-pooling` — For Reviewers](../chapters/15-metaanalysis/correlation-pooling.Rmd#for-reviewers)
+
+<!-- TODO:reporting-template -->
+
+### Pooling Log-Odds Ratios
+
+**Methods paragraph (copy-paste, fill in italics):**
+
+> *[N=]* participants/observations were analysed using **Pooling Log-Odds Ratios** as implemented in *[package vX.Y]* in R *[vX.Y]*. Assumptions were checked: *[list checks performed]*. *[Effect size with 95% confidence interval reported as the primary outcome]*. Two-sided p-values use *α = 0.05*; *[multiple-comparison adjustment if any]*.
+
+**Results paragraph (copy-paste):**
+
+> Pooling Log-Odds Ratios yielded *[estimate]* (95% CI *[lower, upper]*, p = *[value]*). *[Diagnostic / assumption summary]*. *[Sensitivity analysis result]*.
+
+**Reviewer checklist for this method.** → [`log-odds-ratio-pooling` — For Reviewers](../chapters/15-metaanalysis/log-odds-ratio-pooling.Rmd#for-reviewers)
+
+<!-- TODO:reporting-template -->
+
+### Pooling Risk Ratios
+
+**Methods paragraph (copy-paste, fill in italics):**
+
+> *[N=]* participants/observations were analysed using **Pooling Risk Ratios** as implemented in *[package vX.Y]* in R *[vX.Y]*. Assumptions were checked: *[list checks performed]*. *[Effect size with 95% confidence interval reported as the primary outcome]*. Two-sided p-values use *α = 0.05*; *[multiple-comparison adjustment if any]*.
+
+**Results paragraph (copy-paste):**
+
+> Pooling Risk Ratios yielded *[estimate]* (95% CI *[lower, upper]*, p = *[value]*). *[Diagnostic / assumption summary]*. *[Sensitivity analysis result]*.
+
+**Reviewer checklist for this method.** → [`risk-ratio-pooling` — For Reviewers](../chapters/15-metaanalysis/risk-ratio-pooling.Rmd#for-reviewers)
+
+<!-- TODO:reporting-template -->
+
+### Prediction Intervals in Meta-Analysis
+
+**Methods paragraph (copy-paste, fill in italics):**
+
+> *[N=]* participants/observations were analysed using **Prediction Intervals in Meta-Analysis** as implemented in *[package vX.Y]* in R *[vX.Y]*. Assumptions were checked: *[list checks performed]*. *[Effect size with 95% confidence interval reported as the primary outcome]*. Two-sided p-values use *α = 0.05*; *[multiple-comparison adjustment if any]*.
+
+**Results paragraph (copy-paste):**
+
+> Prediction Intervals in Meta-Analysis yielded *[estimate]* (95% CI *[lower, upper]*, p = *[value]*). *[Diagnostic / assumption summary]*. *[Sensitivity analysis result]*.
+
+**Reviewer checklist for this method.** → [`prediction-interval-meta` — For Reviewers](../chapters/15-metaanalysis/prediction-interval-meta.Rmd#for-reviewers)
+
+<!-- TODO:reporting-template -->
+
+### Quantifying Heterogeneity: Q and I^2
+
+**Methods paragraph (copy-paste, fill in italics):**
+
+> *[N=]* participants/observations were analysed using **Quantifying Heterogeneity: Q and I^2** as implemented in *[package vX.Y]* in R *[vX.Y]*. Assumptions were checked: *[list checks performed]*. *[Effect size with 95% confidence interval reported as the primary outcome]*. Two-sided p-values use *α = 0.05*; *[multiple-comparison adjustment if any]*.
+
+**Results paragraph (copy-paste):**
+
+> Quantifying Heterogeneity: Q and I^2 yielded *[estimate]* (95% CI *[lower, upper]*, p = *[value]*). *[Diagnostic / assumption summary]*. *[Sensitivity analysis result]*.
+
+**Reviewer checklist for this method.** → [`heterogeneity-q-i2` — For Reviewers](../chapters/15-metaanalysis/heterogeneity-q-i2.Rmd#for-reviewers)
+
+<!-- TODO:reporting-template -->
+
+### Selection Models for Publication Bias
+
+**Methods paragraph (copy-paste, fill in italics):**
+
+> *[N=]* participants/observations were analysed using **Selection Models for Publication Bias** as implemented in *[package vX.Y]* in R *[vX.Y]*. Assumptions were checked: *[list checks performed]*. *[Effect size with 95% confidence interval reported as the primary outcome]*. Two-sided p-values use *α = 0.05*; *[multiple-comparison adjustment if any]*.
+
+**Results paragraph (copy-paste):**
+
+> Selection Models for Publication Bias yielded *[estimate]* (95% CI *[lower, upper]*, p = *[value]*). *[Diagnostic / assumption summary]*. *[Sensitivity analysis result]*.
+
+**Reviewer checklist for this method.** → [`selection-models-bias` — For Reviewers](../chapters/15-metaanalysis/selection-models-bias.Rmd#for-reviewers)
+
+<!-- TODO:reporting-template -->
+
+### Standardised Mean Difference: Hedges' g
+
+**Methods paragraph (copy-paste, fill in italics):**
+
+> *[N=]* participants/observations were analysed using **Standardised Mean Difference: Hedges' g** as implemented in *[package vX.Y]* in R *[vX.Y]*. Assumptions were checked: *[list checks performed]*. *[Effect size with 95% confidence interval reported as the primary outcome]*. Two-sided p-values use *α = 0.05*; *[multiple-comparison adjustment if any]*.
+
+**Results paragraph (copy-paste):**
+
+> Standardised Mean Difference: Hedges' g yielded *[estimate]* (95% CI *[lower, upper]*, p = *[value]*). *[Diagnostic / assumption summary]*. *[Sensitivity analysis result]*.
+
+**Reviewer checklist for this method.** → [`smd-hedges-g` — For Reviewers](../chapters/15-metaanalysis/smd-hedges-g.Rmd#for-reviewers)
+
+<!-- TODO:reporting-template -->
+
+### Subgroup Meta-Analysis
+
+**Methods paragraph (copy-paste, fill in italics):**
+
+> *[N=]* participants/observations were analysed using **Subgroup Meta-Analysis** as implemented in *[package vX.Y]* in R *[vX.Y]*. Assumptions were checked: *[list checks performed]*. *[Effect size with 95% confidence interval reported as the primary outcome]*. Two-sided p-values use *α = 0.05*; *[multiple-comparison adjustment if any]*.
+
+**Results paragraph (copy-paste):**
+
+> Subgroup Meta-Analysis yielded *[estimate]* (95% CI *[lower, upper]*, p = *[value]*). *[Diagnostic / assumption summary]*. *[Sensitivity analysis result]*.
+
+**Reviewer checklist for this method.** → [`subgroup-meta-analysis` — For Reviewers](../chapters/15-metaanalysis/subgroup-meta-analysis.Rmd#for-reviewers)
+
+<!-- TODO:reporting-template -->
+
+### SUCRA Rankings
+
+**Methods paragraph (copy-paste, fill in italics):**
+
+> *[N=]* participants/observations were analysed using **SUCRA Rankings** as implemented in *[package vX.Y]* in R *[vX.Y]*. Assumptions were checked: *[list checks performed]*. *[Effect size with 95% confidence interval reported as the primary outcome]*. Two-sided p-values use *α = 0.05*; *[multiple-comparison adjustment if any]*.
+
+**Results paragraph (copy-paste):**
+
+> SUCRA Rankings yielded *[estimate]* (95% CI *[lower, upper]*, p = *[value]*). *[Diagnostic / assumption summary]*. *[Sensitivity analysis result]*.
+
+**Reviewer checklist for this method.** → [`nma-sucra` — For Reviewers](../chapters/15-metaanalysis/nma-sucra.Rmd#for-reviewers)
+
+<!-- TODO:reporting-template -->
+
+### Tau-Squared Estimation
+
+**Methods paragraph (copy-paste, fill in italics):**
+
+> *[N=]* participants/observations were analysed using **Tau-Squared Estimation** as implemented in *[package vX.Y]* in R *[vX.Y]*. Assumptions were checked: *[list checks performed]*. *[Effect size with 95% confidence interval reported as the primary outcome]*. Two-sided p-values use *α = 0.05*; *[multiple-comparison adjustment if any]*.
+
+**Results paragraph (copy-paste):**
+
+> Tau-Squared Estimation yielded *[estimate]* (95% CI *[lower, upper]*, p = *[value]*). *[Diagnostic / assumption summary]*. *[Sensitivity analysis result]*.
+
+**Reviewer checklist for this method.** → [`tau-squared-estimation` — For Reviewers](../chapters/15-metaanalysis/tau-squared-estimation.Rmd#for-reviewers)
+
+<!-- TODO:reporting-template -->
+
+### Trim-and-Fill
+
+**Methods paragraph (copy-paste, fill in italics):**
+
+> *[N=]* participants/observations were analysed using **Trim-and-Fill** as implemented in *[package vX.Y]* in R *[vX.Y]*. Assumptions were checked: *[list checks performed]*. *[Effect size with 95% confidence interval reported as the primary outcome]*. Two-sided p-values use *α = 0.05*; *[multiple-comparison adjustment if any]*.
+
+**Results paragraph (copy-paste):**
+
+> Trim-and-Fill yielded *[estimate]* (95% CI *[lower, upper]*, p = *[value]*). *[Diagnostic / assumption summary]*. *[Sensitivity analysis result]*.
+
+**Reviewer checklist for this method.** → [`trim-and-fill` — For Reviewers](../chapters/15-metaanalysis/trim-and-fill.Rmd#for-reviewers)
+
+<!-- TODO:reporting-template -->

@@ -1,0 +1,52 @@
+---
+title: "08. Multivariate Methods"
+---
+
+# Multivariate Methods {#sec-ch-08-multivariate}
+
+Methods for high-dimensional data without an outcome variable: principal components, factor analysis, canonical correlation, linear discriminant analysis, hierarchical and partition clustering, UMAP, and t-SNE. Both the variance-explained and the visual-projection use cases are covered.
+
+This chapter contains **30 method pages** and **3 labs**. If you are not sure which method to read, return to [Chapter 0](../../ch00-find-your-method.Rmd) and follow the decision tree to the right node.
+
+## Method pages
+
+| Method | Source slug |
+|---|---|
+| [Bray-Curtis Dissimilarity](bray-curtis.Rmd) | `bray-curtis` |
+| [Canonical Correlation Analysis](canonical-correlation.Rmd) | `canonical-correlation` |
+| [Cluster Validation: Silhouette](cluster-validation-silhouette.Rmd) | `cluster-validation-silhouette` |
+| [Confirmatory Factor Analysis](factor-analysis-confirmatory.Rmd) | `factor-analysis-confirmatory` |
+| [Correspondence Analysis](correspondence-analysis.Rmd) | `correspondence-analysis` |
+| [DBSCAN Clustering](dbscan-clustering.Rmd) | `dbscan-clustering` |
+| [Distance and Dissimilarity Measures](distance-measures.Rmd) | `distance-measures` |
+| [Exploratory Factor Analysis](factor-analysis-exploratory.Rmd) | `factor-analysis-exploratory` |
+| [Factor Rotation](factor-rotation.Rmd) | `factor-rotation` |
+| [Gaussian Mixture Models](gaussian-mixture-models.Rmd) | `gaussian-mixture-models` |
+| [Hierarchical Clustering](hierarchical-clustering.Rmd) | `hierarchical-clustering` |
+| [Independent Component Analysis](ica-independent-component-analysis.Rmd) | `ica-independent-component-analysis` |
+| [Jaccard and Dice Dissimilarity](jaccard-dissimilarity.Rmd) | `jaccard-dissimilarity` |
+| [k-Means Clustering](kmeans-clustering.Rmd) | `kmeans-clustering` |
+| [Kernel PCA](kernel-pca.Rmd) | `kernel-pca` |
+| [Linear Discriminant Analysis](linear-discriminant-analysis.Rmd) | `linear-discriminant-analysis` |
+| [Mahalanobis Distance](mahalanobis-distance.Rmd) | `mahalanobis-distance` |
+| [MANOVA](manova.Rmd) | `manova` |
+| [Metric Multidimensional Scaling](mds-metric.Rmd) | `mds-metric` |
+| [Multiple Correspondence Analysis](multiple-correspondence-analysis.Rmd) | `multiple-correspondence-analysis` |
+| [Non-Metric Multidimensional Scaling](mds-nonmetric.Rmd) | `mds-nonmetric` |
+| [Partial Least Squares Regression](pls-regression.Rmd) | `pls-regression` |
+| [Partitioning Around Medoids](pam-kmedoids.Rmd) | `pam-kmedoids` |
+| [PLS Discriminant Analysis](pls-da.Rmd) | `pls-da` |
+| [Principal Component Analysis](principal-component-analysis.Rmd) | `principal-component-analysis` |
+| [Quadratic Discriminant Analysis](quadratic-discriminant-analysis.Rmd) | `quadratic-discriminant-analysis` |
+| [Structural Equation Models](structural-equation-models.Rmd) | `structural-equation-models` |
+| [The Elbow Method](elbow-method.Rmd) | `elbow-method` |
+| [The Gap Statistic](gap-statistic.Rmd) | `gap-statistic` |
+| [UMAP and t-SNE: Overview](umap-tsne-overview.Rmd) | `umap-tsne-overview` |
+
+## Labs
+
+| Lab |
+|---|
+| [PCA, factor analysis, CCA, LDA](labs/lab-pca-factor-analysis-cca-lda.Rmd) |
+| [Clustering: k-means, hierarchical, model-based](labs/lab-clustering-k-means-hierarchical-model-based.Rmd) |
+| [UMAP and t-SNE](labs/lab-umap-and-t-sne.Rmd) |

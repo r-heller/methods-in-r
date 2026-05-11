@@ -1,0 +1,187 @@
+---
+title: "Two proportions, chi-square, risk and odds"
+---
+
+<div class="callout callout-note">
+**Inference labs** use the five-step template:
+Hypothesis → Visualise → Assumptions → Conduct → Conclude.
+</div>
+
+## Learning objectives
+
+- Compare two proportions with `prop.test()` and `fisher.test()` and
+  say when each is preferred.
+- Compute risk ratio, odds ratio, and risk difference with
+  confidence intervals.
+- Run a chi-square goodness-of-fit test against a named distribution.
+
+## Prerequisites
+
+Labs 2.4, 3.4.
+
+## Background
+
+Two-proportion tests ask whether the rate of an event differs between
+two groups. In a 2x2 table, two exposure groups (say, treatment and
+control) each produce a fraction of events. The chi-square test
+compares the observed counts to those expected under independence;
+Fisher's exact test computes the probability of a table as extreme
+or more extreme directly from the hypergeometric distribution and is
+preferred when expected cell counts are small.
+
+The effect can be expressed in several ways. The risk difference is
+the difference of the two proportions. The risk ratio is their ratio —
+the event rate in the treated group, relative to control. The odds
+ratio is the ratio of the odds. In a case-control study the risk
+ratio is not directly estimable; the odds ratio is. In a cohort study
+both are estimable and the risk ratio is usually more intuitive.
+
+Goodness-of-fit tests compare a vector of observed counts to a vector
+of expected proportions under a named distribution — whether a die is
+fair, whether a set of genotype frequencies matches Hardy-Weinberg,
+whether arrivals over an hour are Poisson. The test statistic is the
+same chi-square; the interpretation is "is the distribution consistent
+with a named model?"
+
+## Setup
+
+```r
+library(tidyverse)
+set.seed(42)
+theme_set(theme_minimal(base_size = 12))
+```
+
+## 1. Hypothesis
+
+Two-by-two: `treatment` vs `control`, outcome `event` vs `none`.
+
+- H0: event rate is independent of treatment.
+- H1: rates differ.
+- α = 0.05.
+
+## 2. Visualise
+
+Simulate: 200 per arm, event rate 0.25 in control, 0.15 in treatment.
+
+```r
+sim <- tibble(
+  arm = rep(c("control", "treatment"), each = n_per),
+  event = c(rbinom(n_per, 1, 0.25),
+            rbinom(n_per, 1, 0.15))
+)
+tab <- table(arm = sim$arm, event = sim$event)
+tab
+```
+
+```r
+as_tibble(tab) |>
+  mutate(arm = factor(arm, levels = c("control", "treatment")),
+         event = recode(event, `0` = "no event", `1` = "event")) |>
+  ggplot(aes(arm, n, fill = event)) +
+  geom_col(position = "fill", alpha = 0.7) +
+  labs(x = NULL, y = "Proportion", fill = NULL)
+```
+
+## 3. Assumptions
+
+Chi-square requires expected cell counts ≥ 5. Fisher has no such
+constraint and is exact at any size. Random assignment or
+representative sampling is assumed. Independence of observations is
+essential.
+
+```r
+```
+
+All expected counts large; chi-square is appropriate.
+
+## 4. Conduct
+
+```r
+ft <- fisher.test(tab)
+pt <- prop.test(x = tab[, "1"], n = rowSums(tab), correct = FALSE)
+list(chisq = ct, fisher = ft, prop = pt)
+```
+
+### Effect sizes: RD, RR, OR
+
+```r
+p_trt  <- tab["treatment", "1"] / sum(tab["treatment", ])
+
+rd <- p_trt - p_ctrl
+
+rr <- p_trt / p_ctrl
+# Log-based Wald CI for RR
+se_log_rr <- sqrt(
+  (1 - p_trt)  / (p_trt  * sum(tab["treatment", ])) +
+  (1 - p_ctrl) / (p_ctrl * sum(tab["control",   ]))
+)
+ci_rr <- exp(log(rr) + c(-1, 1) * qnorm(0.975) * se_log_rr)
+
+or <- (tab["treatment", "1"] * tab["control", "0"]) /
+      (tab["treatment", "0"] * tab["control", "1"])
+se_log_or <- sqrt(sum(1 / tab))
+ci_or <- exp(log(or) + c(-1, 1) * qnorm(0.975) * se_log_or)
+
+tibble(effect = c("RD", "RR", "OR"),
+       est = c(rd, rr, or),
+       ci_low = c(pt$conf.int[1], ci_rr[1], ci_or[1]),
+       ci_high = c(pt$conf.int[2], ci_rr[2], ci_or[2]))
+```
+
+### Goodness-of-fit example
+
+Test whether 600 simulated genotype counts match Hardy-Weinberg
+proportions at allele frequency 0.3.
+
+```r
+pAA <- 0.7^2; paa <- 0.3^2; pAa <- 2 * 0.7 * 0.3
+exp_probs <- c(AA = pAA, Aa = pAa, aa = paa)
+gof <- chisq.test(obs, p = exp_probs)
+gof
+```
+
+## 5. Concluding statement
+
+> Event rates were `round(p_ctrl, 3)` in control and
+> `round(p_trt, 3)` in treatment (RD
+> `round(rd, 3)`; RR `round(rr, 2)`, 95% CI
+> `round(ci_rr[1], 2)` to `round(ci_rr[2], 2)`; OR
+> `round(or, 2)`, 95% CI `round(ci_or[1], 2)` to
+> `round(ci_or[2], 2)`). Chi-square test χ² =
+> `round(ct$statistic, 2)`, df = `ct$parameter`,
+> *p* = `signif(ct$p.value, 2)`. The Hardy-Weinberg
+> goodness-of-fit test on simulated genotypes gave χ² =
+> `round(gof$statistic, 2)` (df = `gof$parameter`, *p* =
+> `signif(gof$p.value, 2)`).
+
+Report RR or OR alongside the *p*-value. In a cohort design prefer
+RR, which is the quantity clinicians translate directly to practice.
+
+
+## Common pitfalls
+
+- Reporting an OR when a RR is meaningful and more interpretable.
+- Using the continuity correction (the default in `prop.test` and
+  `chisq.test`) by habit; it is conservative.
+- Running a chi-square when expected counts are small; use Fisher.
+- Treating independent observations as if repeated measures weren't.
+
+## Further reading
+
+- Altman DG. *Practical Statistics for Medical Research*, chapter
+  10–11.
+- Agresti A. *Categorical Data Analysis*.
+
+## Session info
+
+```r
+```
+
+<!-- BEGIN see-also (auto-injected) -->
+
+## See also — chapter index
+
+- [Methods in this chapter](../index.Rmd)
+- [Find your method (Chapter 0)](../../../ch00-find-your-method.Rmd)
+
+<!-- END see-also -->

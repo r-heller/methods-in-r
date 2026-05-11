@@ -1,0 +1,13 @@
+cff-version: 1.2.0
+message: "If you use this book, please cite it as below."
+title: "Methods in R: A Topic Reference for Biomedical Research and Peer Review"
+authors:
+  - family-names: "Heller"
+    given-names: "Raban"
+    orcid: "https://orcid.org/0000-0001-8006-9742"
+type: book
+repository-code: "https://github.com/r-heller/methods-in-r"
+url: "https://r-heller.github.io/methods-in-r/"
+license: "CC-BY-SA-4.0"
+version: "1.0.0"
+date-released: "2026-05-11"

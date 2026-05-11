@@ -1,0 +1,122 @@
+---
+title: "Meta-analysis basics"
+---
+
+<div class="callout callout-note">
+**Inference lab:** Hypothesis → Visualise → Assumptions → Conduct → Conclude.
+</div>
+
+## Learning objectives
+
+- Fit a random-effects meta-analysis with `metafor::rma`.
+- Produce forest and funnel plots, and interpret between-study
+  heterogeneity (τ², I²).
+- Assess small-study effects and publication bias informally.
+
+## Prerequisites
+
+Comfort with effect sizes on the log scale.
+
+## Background
+
+Meta-analysis pools effect estimates across studies to sharpen an
+overall answer. Fixed-effect models assume all studies estimate one true
+effect; random-effects models assume true effects vary around a common
+mean. In biomedical research, heterogeneity is the rule rather than the
+exception, so random effects are the default — and between-study
+variance (τ²) and the proportion of total variance due to heterogeneity
+(I²) become part of the primary reporting, not an afterthought.
+
+Forest plots display each study's estimate with its confidence interval
+next to the pooled estimate. Funnel plots display study precision
+against effect size; asymmetry hints at small-study effects and
+potential publication bias. Neither plot settles the question — Egger's
+test, trim-and-fill, and careful inspection of which small studies are
+missing are all part of the routine.
+
+## Setup
+
+```r
+library(tidyverse)
+library(metafor)
+set.seed(42)
+theme_set(theme_minimal(base_size = 12))
+```
+
+## 1. Hypothesis
+
+H₀: pooled log risk ratio = 0 (no overall effect). H₁: pooled log RR ≠ 0.
+α = 0.05.
+
+## 2. Visualise — use a built-in dataset
+
+```r
+              ai = tpos, bi = tneg, ci = cpos, di = cneg,
+              data = dat.bcg, slab = paste(author, year))
+```
+
+```r
+forest(rma(yi, vi, data = dat), header = TRUE, cex = 0.8)
+```
+
+## 3. Assumptions
+
+- Between-study heterogeneity exists (τ² > 0) in virtually every real
+  meta-analysis — a random-effects model absorbs it, a fixed-effect
+  model does not.
+- Funnel-plot asymmetry does not prove publication bias; it is
+  consistent with several mechanisms.
+
+## 4. Conduct
+
+```r
+fit
+```
+
+```r
+funnel(fit, main = "Funnel plot — BCG vaccine dataset")
+regtest(fit, model = "lm")
+```
+
+## 5. Concluding statement
+
+```r
+rr   <- exp(fit$b[1])
+lo   <- exp(fit$ci.lb)
+hi   <- exp(fit$ci.ub)
+```
+
+> Across `nrow(dat)` trials of the BCG vaccine, the pooled risk ratio
+> for tuberculosis was `round(rr, 2)` (95% CI `round(lo, 2)` to
+> `round(hi, 2)`; τ² = `round(fit$tau2, 2)`, I² =
+> `round(fit$I2, 1)`%). Between-trial heterogeneity was substantial;
+> the pooled estimate should be interpreted with the heterogeneity
+> statistics in view.
+
+
+## Common pitfalls
+
+- Fixed-effect pooling when between-study heterogeneity is real.
+- Quoting a pooled effect without its heterogeneity measures.
+- Treating funnel-plot symmetry as a formal test rather than a visual
+  prompt.
+
+## Further reading
+
+- Viechtbauer W. (2010). *Conducting meta-analyses in R with the metafor
+  package.* J Stat Softw.
+- Higgins JPT et al. *Cochrane Handbook for Systematic Reviews of Interventions.*
+
+## Session info
+
+```r
+```
+
+<!-- BEGIN see-also (auto-injected) -->
+
+## See also — chapter index
+
+- [Methods in this chapter](../index.Rmd)
+- [Find your method (Chapter 0)](../../../ch00-find-your-method.Rmd)
+
+<!-- END see-also -->

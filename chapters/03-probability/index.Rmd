@@ -1,0 +1,62 @@
+---
+title: "03. Probability Theory"
+---
+
+# Probability Theory {#sec-ch-03-probability}
+
+The probability machinery the rest of the book leans on: Bayes' rule, common discrete and continuous distributions, the law of total probability, Q-Q diagnostics, and density estimation. The chapter is short on theory and long on R-side intuition.
+
+This chapter contains **40 method pages** and **3 labs**. If you are not sure which method to read, return to [Chapter 0](../../ch00-find-your-method.Rmd) and follow the decision tree to the right node.
+
+## Method pages
+
+| Method | Source slug |
+|---|---|
+| [Bayes' Theorem](bayes-theorem.Rmd) | `bayes-theorem` |
+| [Conditional Distributions](conditional-distributions.Rmd) | `conditional-distributions` |
+| [Conditional Probability](conditional-probability.Rmd) | `conditional-probability` |
+| [Convolutions of Distributions](convolutions.Rmd) | `convolutions` |
+| [Copulas: An Introduction](copulas-introduction.Rmd) | `copulas-introduction` |
+| [Discrete vs Continuous Variables](discrete-vs-continuous.Rmd) | `discrete-vs-continuous` |
+| [Expectation of a Random Variable](expectation.Rmd) | `expectation` |
+| [Independence](independence.Rmd) | `independence` |
+| [Joint Distributions](joint-distributions.Rmd) | `joint-distributions` |
+| [Kolmogorov's Axioms of Probability](kolmogorov-axioms.Rmd) | `kolmogorov-axioms` |
+| [Law of Total Probability](law-of-total-probability.Rmd) | `law-of-total-probability` |
+| [Marginal Distributions](marginal-distributions.Rmd) | `marginal-distributions` |
+| [Random Variables](random-variables.Rmd) | `random-variables` |
+| [Sample Space and Events](sample-space-events.Rmd) | `sample-space-events` |
+| [Student's t-Distribution](t-distribution.Rmd) | `t-distribution` |
+| [The Bernoulli Distribution](bernoulli-distribution.Rmd) | `bernoulli-distribution` |
+| [The Beta Distribution](beta-distribution.Rmd) | `beta-distribution` |
+| [The Binomial Distribution](binomial-distribution.Rmd) | `binomial-distribution` |
+| [The Chi-Squared Distribution](chi-squared-distribution.Rmd) | `chi-squared-distribution` |
+| [The Correlation Coefficient](correlation-coefficient.Rmd) | `correlation-coefficient` |
+| [The Cumulative Distribution Function](cumulative-distribution-function.Rmd) | `cumulative-distribution-function` |
+| [The Exponential Distribution](exponential-distribution.Rmd) | `exponential-distribution` |
+| [The F Distribution](f-distribution.Rmd) | `f-distribution` |
+| [The Gamma Distribution](gamma-distribution.Rmd) | `gamma-distribution` |
+| [The Geometric Distribution](geometric-distribution.Rmd) | `geometric-distribution` |
+| [The Hazard Function](hazard-function.Rmd) | `hazard-function` |
+| [The Hypergeometric Distribution](hypergeometric-distribution.Rmd) | `hypergeometric-distribution` |
+| [The Log-Normal Distribution](lognormal-distribution.Rmd) | `lognormal-distribution` |
+| [The Multinomial Distribution](multinomial-distribution.Rmd) | `multinomial-distribution` |
+| [The Multivariate Normal Distribution](multivariate-normal.Rmd) | `multivariate-normal` |
+| [The Negative Binomial Distribution](negative-binomial-distribution.Rmd) | `negative-binomial-distribution` |
+| [The Normal Distribution](normal-distribution.Rmd) | `normal-distribution` |
+| [The Poisson Distribution](poisson-distribution.Rmd) | `poisson-distribution` |
+| [The Probability Density Function](probability-density-function.Rmd) | `probability-density-function` |
+| [The Probability Mass Function](probability-mass-function.Rmd) | `probability-mass-function` |
+| [The Survival Function](survival-function.Rmd) | `survival-function` |
+| [The Uniform Distribution](uniform-distribution.Rmd) | `uniform-distribution` |
+| [The Weibull Distribution](weibull-distribution.Rmd) | `weibull-distribution` |
+| [Transformations of Random Variables](transformations-of-rv.Rmd) | `transformations-of-rv` |
+| [Variance and Covariance](variance-covariance-of-rv.Rmd) | `variance-covariance-of-rv` |
+
+## Labs
+
+| Lab |
+|---|
+| [Probability, conditional probability, Bayes' theorem](labs/lab-probability-conditional-probability-bayes-theorem.Rmd) |
+| [Discrete distributions: Bernoulli, binomial, Poisson](labs/lab-discrete-distributions-bernoulli-binomial-poisson.Rmd) |
+| [Continuous distributions and Q-Q plots](labs/lab-continuous-distributions-and-q-q-plots.Rmd) |

@@ -1,0 +1,59 @@
+---
+title: "14. Clinical Biostatistics"
+---
+
+# Clinical Biostatistics {#sec-ch-14-clinical}
+
+Diagnostic test accuracy, agreement (Bland-Altman, kappa, ICC), biomarker development, prediction-model reporting under TRIPOD-AI, and fairness audits. The chapter sits at the intersection of ML and biostatistics for a reason: that is where most regulatory submissions live.
+
+This chapter contains **36 method pages** and **4 labs**. If you are not sure which method to read, return to [Chapter 0](../../ch00-find-your-method.Rmd) and follow the decision tree to the right node.
+
+## Method pages
+
+| Method | Source slug |
+|---|---|
+| [Adaptive Trial Designs](adaptive-design.Rmd) | `adaptive-design` |
+| [Alpha-Spending Functions](alpha-spending.Rmd) | `alpha-spending` |
+| [Baseline Adjustment with ANCOVA](baseline-adjustment-ancova.Rmd) | `baseline-adjustment-ancova` |
+| [Bland-Altman Limits of Agreement](bland-altman-analysis.Rmd) | `bland-altman-analysis` |
+| [Blinding Procedures](blinding-procedures.Rmd) | `blinding-procedures` |
+| [Block Randomisation](block-randomization.Rmd) | `block-randomization` |
+| [Clinical Equivalence Trials](equivalence-clinical.Rmd) | `equivalence-clinical` |
+| [Cluster-Randomised Trials](cluster-rct.Rmd) | `cluster-rct` |
+| [Cohen's Kappa](cohens-kappa.Rmd) | `cohens-kappa` |
+| [Conditional Power](conditional-power.Rmd) | `conditional-power` |
+| [Crossover RCT Design](rct-design-crossover.Rmd) | `rct-design-crossover` |
+| [Cutpoint Selection](cutpoint-selection.Rmd) | `cutpoint-selection` |
+| [Diagnostic Test Accuracy](diagnostic-accuracy.Rmd) | `diagnostic-accuracy` |
+| [Factorial Trials](factorial-trial.Rmd) | `factorial-trial` |
+| [Interim Analyses and Group Sequential Designs](interim-analysis-group-sequential.Rmd) | `interim-analysis-group-sequential` |
+| [Intraclass Correlation Coefficient (ICC)](icc-continuous-agreement.Rmd) | `icc-continuous-agreement` |
+| [ITT vs Per-Protocol Analysis](itt-vs-pp-analysis.Rmd) | `itt-vs-pp-analysis` |
+| [Likelihood Ratios](likelihood-ratios.Rmd) | `likelihood-ratios` |
+| [Minimisation Algorithm](minimization-algorithm.Rmd) | `minimization-algorithm` |
+| [Missing Data in RCTs](missing-data-rct.Rmd) | `missing-data-rct` |
+| [Multiple Imputation](multiple-imputation.Rmd) | `multiple-imputation` |
+| [Non-Inferiority Margin Selection](non-inferiority-margin.Rmd) | `non-inferiority-margin` |
+| [O'Brien-Fleming Boundary](obrien-fleming-boundary.Rmd) | `obrien-fleming-boundary` |
+| [Parallel-Group RCT Design](rct-design-parallel.Rmd) | `rct-design-parallel` |
+| [Pocock Boundary](pocock-boundary.Rmd) | `pocock-boundary` |
+| [Predictive Values and Prevalence](predictive-values-prevalence.Rmd) | `predictive-values-prevalence` |
+| [Randomisation Methods](randomization-methods.Rmd) | `randomization-methods` |
+| [Reliability and Cronbach's Alpha](reliability-cronbach-alpha.Rmd) | `reliability-cronbach-alpha` |
+| [ROC Analysis](roc-analysis.Rmd) | `roc-analysis` |
+| [Sample Size Re-Estimation](sample-size-reestimation.Rmd) | `sample-size-reestimation` |
+| [Sensitivity Analyses in Clinical Trials](sensitivity-analysis-clinical.Rmd) | `sensitivity-analysis-clinical` |
+| [Stepped-Wedge Trial](stepped-wedge-trial.Rmd) | `stepped-wedge-trial` |
+| [Stratified Randomisation](stratified-randomization.Rmd) | `stratified-randomization` |
+| [Subgroup Analyses](subgroup-analysis.Rmd) | `subgroup-analysis` |
+| [Subgroup Forest Plots](forest-plot-subgroup.Rmd) | `forest-plot-subgroup` |
+| [Weighted Kappa](weighted-kappa.Rmd) | `weighted-kappa` |
+
+## Labs
+
+| Lab |
+|---|
+| [Diagnostic testing: Se, Sp, PPV, NPV, LR](labs/lab-diagnostic-testing-se-sp-ppv-npv-lr.Rmd) |
+| [Kappa, ICC, Bland–Altman](labs/lab-kappa-icc-bland-altman.Rmd) |
+| [Biomarker statistics (Youden, NRI, decision curves)](labs/lab-biomarker-statistics-youden-nri-decision-curves.Rmd) |
+| [TRIPOD-AI, fairness auditing, reproducibility at scale](labs/lab-tripod-ai-fairness-auditing-reproducibility-at-scale.Rmd) |

@@ -1,0 +1,156 @@
+---
+title: "Bayesian thinking; α control vs decision error"
+---
+
+<div class="callout callout-note">
+**Testing labs** use the main template:
+Hypothesis → Visualise → Assumptions → Conduct → Conclude.
+</div>
+
+## Learning objectives
+
+- Compute a beta-binomial posterior and interpret its credible
+  intervals in terms of a decision.
+- Contrast frequentist α-control (type I error rate across repeated
+  experiments) with Bayesian decision error for a specific experiment.
+- Show how prior sensitivity translates into decision sensitivity.
+
+## Prerequisites
+
+Probability basics and conjugacy.
+
+## Background
+
+Frequentist testing controls the long-run rate of falsely rejecting a
+true null across repeated experiments; the α = 0.05 convention is a
+statement about procedure, not about the current dataset. Bayesian
+inference instead returns a posterior distribution of the unknown and
+turns that into a decision by weighing costs. For a binomial proportion
+with a beta prior, the posterior is beta again, so the arithmetic is
+clean enough to follow carefully.
+
+The two frameworks answer different questions. "Given these data and
+this model, what is the probability that the treatment is beneficial?"
+is a Bayesian question. "Across many repetitions of this design, how
+often would I reject a true null?" is a frequentist question. In
+applied biomedicine, both questions are relevant; knowing which one you
+are answering prevents confused write-ups.
+
+Prior sensitivity is a useful discipline regardless of philosophy. A
+posterior that shifts materially when the prior is varied across
+reasonable alternatives is less trustworthy than one that does not,
+and sharing that sensitivity is the Bayesian analogue of transparent
+model-building.
+
+## Setup
+
+```r
+library(tidyverse)
+set.seed(42)
+theme_set(theme_minimal(base_size = 12))
+```
+
+## 1. Hypothesis
+
+A small trial observes *k* = 7 successes in *n* = 20 patients of a new
+response-rate biomarker. Is the underlying response rate meaningfully
+above 0.2?
+
+## 2. Visualise
+
+Prior vs posterior for three priors.
+
+```r
+theta <- seq(0, 1, length.out = 400)
+priors <- tibble(
+  name = c("uniform (Beta(1,1))", "sceptical (Beta(2,8))", "flat informative (Beta(4,4))"),
+  a0   = c(1, 2, 4),
+  b0   = c(1, 8, 4)
+)
+post <- priors |>
+  rowwise() |>
+  mutate(data = list(tibble(
+    theta = theta,
+    prior = dbeta(theta, a0, b0),
+    posterior = dbeta(theta, a0 + k, b0 + n - k)
+  ))) |>
+  unnest(data) |>
+  pivot_longer(c(prior, posterior), names_to = "density")
+
+ggplot(post, aes(theta, value, colour = density)) +
+  geom_line() + facet_wrap(~ name) +
+  labs(x = expression(theta), y = "density")
+```
+
+## 3. Assumptions
+
+Bernoulli trials, exchangeable, conjugate beta prior. With no prior
+data on the response rate in this population, we carry all three
+priors through and compare decisions.
+
+## 4. Conduct
+
+Posterior summaries.
+
+```r
+  rowwise() |>
+  mutate(
+    post_mean = (a0 + k) / (a0 + b0 + n),
+    ci_lo = qbeta(0.025, a0 + k, b0 + n - k),
+    ci_hi = qbeta(0.975, a0 + k, b0 + n - k),
+    p_gt_0_2 = 1 - pbeta(0.2, a0 + k, b0 + n - k)
+  ) |>
+  dplyr::select(name, post_mean, ci_lo, ci_hi, p_gt_0_2)
+summ
+```
+
+A frequentist analogue for comparison.
+
+```r
+c(estimate = bt$estimate, p_value = bt$p.value,
+  ci_lo = bt$conf.int[1], ci_hi = bt$conf.int[2])
+```
+
+## 5. Conclude
+
+> With 7 responders out of 20, the posterior probability that the
+> response rate exceeds 0.2 is `round(summ$p_gt_0_2[1], 2)` under a
+> flat prior and `round(summ$p_gt_0_2[2], 2)` under a sceptical prior.
+> A one-sided exact binomial test against p₀ = 0.2 gives
+> *p* = `signif(bt$p.value, 2)`.
+
+All three priors point the same direction, but the strength of the
+conclusion depends on the prior. For a go/no-go decision, reporting
+the posterior probability of exceeding a decision threshold — along
+with its prior-sensitivity — is more decision-relevant than a
+*p*-value.
+
+
+## Common pitfalls
+
+- Treating a 95% credible interval as a 95% confidence interval; they
+  are calibrated for different inferences.
+- Choosing a prior that pushes the posterior toward the desired
+  decision and not reporting the sensitivity.
+- Comparing a one-sided Bayesian tail probability to a two-sided
+  *p*-value.
+
+## Further reading
+
+- Spiegelhalter DJ, Abrams KR, Myles JP, *Bayesian Approaches to
+  Clinical Trials and Health-Care Evaluation*.
+- McElreath R, *Statistical Rethinking*, ch. 2–3.
+
+## Session info
+
+```r
+```
+
+<!-- BEGIN see-also (auto-injected) -->
+
+## See also — chapter index
+
+- [Methods in this chapter](../index.Rmd)
+- [Find your method (Chapter 0)](../../../ch00-find-your-method.Rmd)
+
+<!-- END see-also -->
