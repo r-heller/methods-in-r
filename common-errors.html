@@ -1,0 +1,401 @@
+<!DOCTYPE html>
+<html lang="" xml:lang="">
+<head>
+
+  <meta charset="utf-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <title>Chapter 26 Common errors | Cheatsheets</title>
+  <meta name="description" content="Orthogonal-array designs and signal-to-noise optimisation for quality engineering" />
+  <meta name="generator" content="bookdown 0.46 and GitBook 2.6.7" />
+
+  <meta property="og:title" content="Chapter 26 Common errors | Cheatsheets" />
+  <meta property="og:type" content="book" />
+  <meta property="og:image" content="https://r-heller.github.io/methods-in-r/images/cover.png" />
+  <meta property="og:description" content="Orthogonal-array designs and signal-to-noise optimisation for quality engineering" />
+  <meta name="github-repo" content="r-heller/methods-in-r" />
+
+  <meta name="twitter:card" content="summary" />
+  <meta name="twitter:title" content="Chapter 26 Common errors | Cheatsheets" />
+  
+  <meta name="twitter:description" content="Orthogonal-array designs and signal-to-noise optimisation for quality engineering" />
+  <meta name="twitter:image" content="https://r-heller.github.io/methods-in-r/images/cover.png" />
+
+<meta name="author" content="R. Heller" />
+
+
+<meta name="date" content="2026-04-17" />
+
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta name="apple-mobile-web-app-capable" content="yes" />
+  <meta name="apple-mobile-web-app-status-bar-style" content="black" />
+  
+  
+<link rel="prev" href="glossary.html"/>
+<link rel="next" href="writing-a-report.html"/>
+<script src="libs/jquery-3.6.0/jquery-3.6.0.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/fuse.js@6.4.6/dist/fuse.min.js"></script>
+<link href="libs/gitbook-2.6.7/css/style.css" rel="stylesheet" />
+<link href="libs/gitbook-2.6.7/css/plugin-table.css" rel="stylesheet" />
+<link href="libs/gitbook-2.6.7/css/plugin-bookdown.css" rel="stylesheet" />
+<link href="libs/gitbook-2.6.7/css/plugin-highlight.css" rel="stylesheet" />
+<link href="libs/gitbook-2.6.7/css/plugin-search.css" rel="stylesheet" />
+<link href="libs/gitbook-2.6.7/css/plugin-fontsettings.css" rel="stylesheet" />
+<link href="libs/gitbook-2.6.7/css/plugin-clipboard.css" rel="stylesheet" />
+
+
+
+
+
+
+
+
+<link href="libs/anchor-sections-1.1.0/anchor-sections.css" rel="stylesheet" />
+<link href="libs/anchor-sections-1.1.0/anchor-sections-hash.css" rel="stylesheet" />
+<script src="libs/anchor-sections-1.1.0/anchor-sections.js"></script>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
+
+
+<style type="text/css">
+html { -webkit-text-size-adjust: 100%; }
+pre > code.sourceCode { white-space: pre; position: relative; }
+pre > code.sourceCode > span { display: inline-block; line-height: 1.25; }
+pre > code.sourceCode > span:empty { height: 1.2em; }
+.sourceCode { overflow: visible; }
+code.sourceCode > span { color: inherit; text-decoration: inherit; }
+pre.sourceCode { margin: 0; }
+@media screen {
+div.sourceCode { overflow: auto; }
+}
+@media print {
+pre > code.sourceCode { white-space: pre-wrap; }
+pre > code.sourceCode > span { text-indent: -5em; padding-left: 5em; }
+}
+pre.numberSource code
+  { counter-reset: source-line 0; }
+pre.numberSource code > span
+  { position: relative; left: -4em; counter-increment: source-line; }
+pre.numberSource code > span > a:first-child::before
+  { content: counter(source-line);
+    position: relative; left: -1em; text-align: right; vertical-align: baseline;
+    border: none; display: inline-block;
+    -webkit-touch-callout: none; -webkit-user-select: none;
+    -khtml-user-select: none; -moz-user-select: none;
+    -ms-user-select: none; user-select: none;
+    padding: 0 4px; width: 4em;
+    color: #aaaaaa;
+  }
+pre.numberSource { margin-left: 3em; border-left: 1px solid #aaaaaa;  padding-left: 4px; }
+div.sourceCode
+  {   }
+@media screen {
+pre > code.sourceCode > span > a:first-child::before { text-decoration: underline; }
+}
+code span.al { color: #ff0000; font-weight: bold; } /* Alert */
+code span.an { color: #60a0b0; font-weight: bold; font-style: italic; } /* Annotation */
+code span.at { color: #7d9029; } /* Attribute */
+code span.bn { color: #40a070; } /* BaseN */
+code span.bu { color: #008000; } /* BuiltIn */
+code span.cf { color: #007020; font-weight: bold; } /* ControlFlow */
+code span.ch { color: #4070a0; } /* Char */
+code span.cn { color: #880000; } /* Constant */
+code span.co { color: #60a0b0; font-style: italic; } /* Comment */
+code span.cv { color: #60a0b0; font-weight: bold; font-style: italic; } /* CommentVar */
+code span.do { color: #ba2121; font-style: italic; } /* Documentation */
+code span.dt { color: #902000; } /* DataType */
+code span.dv { color: #40a070; } /* DecVal */
+code span.er { color: #ff0000; font-weight: bold; } /* Error */
+code span.ex { } /* Extension */
+code span.fl { color: #40a070; } /* Float */
+code span.fu { color: #06287e; } /* Function */
+code span.im { color: #008000; font-weight: bold; } /* Import */
+code span.in { color: #60a0b0; font-weight: bold; font-style: italic; } /* Information */
+code span.kw { color: #007020; font-weight: bold; } /* Keyword */
+code span.op { color: #666666; } /* Operator */
+code span.ot { color: #007020; } /* Other */
+code span.pp { color: #bc7a00; } /* Preprocessor */
+code span.sc { color: #4070a0; } /* SpecialChar */
+code span.ss { color: #bb6688; } /* SpecialString */
+code span.st { color: #4070a0; } /* String */
+code span.va { color: #19177c; } /* Variable */
+code span.vs { color: #4070a0; } /* VerbatimString */
+code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warning */
+</style>
+
+<style type="text/css">
+  
+  div.hanging-indent{margin-left: 1.5em; text-indent: -1.5em;}
+</style>
+<style type="text/css">
+/* Used with Pandoc 2.11+ new --citeproc when CSL is used */
+div.csl-bib-body { }
+div.csl-entry {
+  clear: both;
+}
+.hanging div.csl-entry {
+  margin-left:2em;
+  text-indent:-2em;
+}
+div.csl-left-margin {
+  min-width:2em;
+  float:left;
+}
+div.csl-right-inline {
+  margin-left:2em;
+  padding-left:1em;
+}
+div.csl-indent {
+  margin-left: 2em;
+}
+</style>
+
+<link rel="stylesheet" href="style/style.css" type="text/css" />
+</head>
+
+<body>
+
+
+
+  <div class="book without-animation with-summary font-size-2 font-family-1" data-basepath=".">
+
+    <div class="book-summary">
+      <nav role="navigation">
+
+true
+
+      </nav>
+    </div>
+
+    <div class="book-body">
+      <div class="body-inner">
+        <div class="book-header" role="navigation">
+          <h1>
+            <i class="fa fa-circle-o-notch fa-spin"></i><a href="./">Cheatsheets</a>
+          </h1>
+        </div>
+
+        <div class="page-wrapper" tabindex="-1" role="main">
+          <div class="page-inner">
+
+            <section class="normal" id="section-">
+<div id="common-errors" class="section level1 hasAnchor" number="26">
+<h1><span class="header-section-number">Chapter 26</span> Common errors<a href="common-errors.html#common-errors" class="anchor-section" aria-label="Anchor link to header"></a></h1>
+<div class="lead">
+<p>A field guide to the R, Quarto, and <code>renv</code> errors that will bite you
+first.</p>
+</div>
+</div>
+</div>
+<p>Each entry lists the error message, the usual cause, and the fix that
+works most of the time.</p>
+</div>
+<div id="r-1" class="section level2 hasAnchor" number="26.1">
+<h2><span class="header-section-number">26.1</span> R<a href="common-errors.html#r-1" class="anchor-section" aria-label="Anchor link to header"></a></h2>
+<p><strong>Error:</strong>
+<code>there is no package called 'xyz'</code></p>
+<p><em>Cause:</em> the package is not installed in the library R is looking in.</p>
+<p><em>Fix:</em> <code>install.packages("xyz")</code>. If you are using <code>renv</code>, run
+<code>renv::restore()</code> instead to keep the lock file authoritative.</p>
+<p><strong>Error:</strong>
+<code>could not find function "ggplot"</code></p>
+<p><em>Cause:</em> package is installed but not loaded.</p>
+<p><em>Fix:</em> <code>library(ggplot2)</code> (or <code>library(tidyverse)</code>).</p>
+<p><strong>Error:</strong>
+<code>non-finite value supplied by optim</code></p>
+<p><em>Cause:</em> the model failed to converge, often because of extreme starting
+values, perfect separation (logistic regression), or a misspecified
+formula.</p>
+<p><em>Fix:</em> rescale predictors, use sensible starting values, or for logistic
+regression check for zero cells in the outcome-by-predictor table.</p>
+<p><strong>Error:</strong>
+<code>contrasts can be applied only to factors with 2 or more levels</code></p>
+<p><em>Cause:</em> a factor predictor has been filtered down to a single level.</p>
+<p><em>Fix:</em> check <code>table(your_data$predictor)</code> and restore levels, or drop
+that predictor from the model.</p>
+<p><strong>Error:</strong>
+<code>Error in UseMethod("predict") : no applicable method for 'predict' applied to an object of class "c('list')"</code></p>
+<p><em>Cause:</em> you passed the wrong object to <code>predict()</code>. Usually a list
+instead of the fitted model.</p>
+<p><em>Fix:</em> check the object with <code>class()</code> and pass the model object itself,
+e.g. <code>predict(fit, newdata = nd)</code>.</p>
+<p><strong>Error:</strong>
+<code>Loading required package: foo — there is no package called 'foo'</code></p>
+<p><em>Cause:</em> an installed package has a dependency that is missing.</p>
+<p><em>Fix:</em> <code>install.packages("foo", dependencies = TRUE)</code>.</p>
+</div>
+<div id="quarto" class="section level2 hasAnchor" number="26.2">
+<h2><span class="header-section-number">26.2</span> Quarto<a href="common-errors.html#quarto" class="anchor-section" aria-label="Anchor link to header"></a></h2>
+<p><strong>Error:</strong>
+<code>quarto: command not found</code></p>
+<p><em>Cause:</em> Quarto is not on your PATH.</p>
+<p><em>Fix:</em> install from <a href="https://quarto.org" class="uri">https://quarto.org</a> and restart your terminal.
+On macOS, check that <code>/usr/local/bin</code> (or the Homebrew prefix) is in
+your PATH.</p>
+<p><strong>Error:</strong>
+<code>Failed to render: your system is missing pandoc</code></p>
+<p><em>Cause:</em> older versions of R Quarto missed the bundled pandoc.</p>
+<p><em>Fix:</em> upgrade Quarto to the latest release.</p>
+<p><strong>Error:</strong>
+<code>Error running filter shortcodes</code></p>
+<p><em>Cause:</em> a Quarto extension is missing after cloning.</p>
+<p><em>Fix:</em> run <code>quarto add</code> for the extension, or ignore if the extension is
+optional.</p>
+<p><strong>Error:</strong>
+<code>output file: docs/index.html does not exist</code></p>
+<p><em>Cause:</em> <code>quarto render</code> was interrupted or <code>output-dir</code> changed.</p>
+<p><em>Fix:</em> re-run <code>quarto render</code> from a clean state; if the interruption
+wedged <code>.quarto/</code>, delete that cache directory and try again.</p>
+<p><strong>Error:</strong>
+<code>GitHub Pages deployment failed: 404</code></p>
+<p><em>Cause:</em> Pages is pointing at the wrong branch or path.</p>
+<p><em>Fix:</em> in the repo Settings → Pages, select the <code>gh-pages</code> branch and
+the <code>/ (root)</code> folder. Our workflow deploys to <code>gh-pages</code> by default.</p>
+</div>
+<div id="renv" class="section level2 hasAnchor" number="26.3">
+<h2><span class="header-section-number">26.3</span> <code>renv</code><a href="common-errors.html#renv" class="anchor-section" aria-label="Anchor link to header"></a></h2>
+<p><strong>Error:</strong>
+<code>renv::restore() failed with: cannot install package 'xyz' from source</code></p>
+<p><em>Cause:</em> a system library is missing. The error above this line usually
+names the header file.</p>
+<p><em>Fix:</em> install the matching <code>-dev</code> package on Linux, the corresponding
+Homebrew package on macOS, or Rtools on Windows. Common culprits:</p>
+<ul>
+<li><code>libcurl4-openssl-dev</code> for <code>curl</code></li>
+<li><code>libxml2-dev</code> for <code>XML</code> / <code>xml2</code></li>
+<li><code>libssl-dev</code> for <code>openssl</code></li>
+<li><code>libfontconfig1-dev</code>, <code>libfreetype6-dev</code>, <code>libharfbuzz-dev</code>, <code>libfribidi-dev</code> for <code>systemfonts</code>, <code>ragg</code>, <code>textshaping</code></li>
+<li><code>libgit2-dev</code> for <code>gert</code></li>
+</ul>
+<p><strong>Error:</strong>
+<code>renv is out of sync with the lockfile</code></p>
+<p><em>Cause:</em> the project library differs from <code>renv.lock</code>.</p>
+<p><em>Fix:</em> <code>renv::status()</code> to see what, then <code>renv::restore()</code> to synchronise.</p>
+</div>
+<div id="knitr-rmarkdown" class="section level2 hasAnchor" number="26.4">
+<h2><span class="header-section-number">26.4</span> knitr / rmarkdown<a href="common-errors.html#knitr-rmarkdown" class="anchor-section" aria-label="Anchor link to header"></a></h2>
+<p><strong>Error:</strong>
+<code>pandoc document conversion failed with error 2</code></p>
+<p><em>Cause:</em> YAML front matter is malformed — often an unquoted colon in a
+title.</p>
+<p><em>Fix:</em> quote the offending string. <code>title: "Two:peas in a pod"</code>.</p>
+<p><strong>Error:</strong>
+<code>Error in chunkname: object 'xyz' not found</code></p>
+<p><em>Cause:</em> an earlier chunk was skipped or cached stale.</p>
+<p><em>Fix:</em> clear the knitr cache (<code>knitr::clean_cache()</code>) and re-render;
+check chunk evaluation with <code>eval = TRUE</code>.</p>
+</div>
+<div id="git" class="section level2 hasAnchor" number="26.5">
+<h2><span class="header-section-number">26.5</span> Git<a href="common-errors.html#git" class="anchor-section" aria-label="Anchor link to header"></a></h2>
+<p><strong>Error:</strong>
+<code>fatal: refusing to merge unrelated histories</code></p>
+<p><em>Cause:</em> you cloned one repo and then tried to pull from a different
+initialisation.</p>
+<p><em>Fix:</em> only run <code>git pull --allow-unrelated-histories</code> if you are sure
+you want to merge.</p>
+<p><strong>Error:</strong>
+<code>Permission denied (publickey)</code></p>
+<p><em>Cause:</em> your SSH key is not registered with GitHub.</p>
+<p><em>Fix:</em> add your key via Settings → SSH and GPG keys, or switch the
+remote to HTTPS: <code>git remote set-url origin https://github.com/...</code>.</p>
+
+<div class="hero">
+<div class="kicker">
+<p>APPENDIX · WRITING A REPORT</p>
+</div>
+<script>
+  document.addEventListener("DOMContentLoaded", function () {
+    var path = window.location.pathname.split("/").pop().replace(".html", ".pdf");
+    if (!path || path === ".pdf") return;
+    var btn = document.createElement("a");
+    btn.href = "pdf-chapters/" + path;
+    btn.className = "btn btn-sm btn-outline-secondary per-chapter-pdf-btn";
+    btn.style.cssText = "float:right;margin-top:0.5em;";
+    btn.textContent = "⬇ Download this chapter (PDF)";
+    var header = document.querySelector("main h1");
+    if (header && !document.querySelector(".per-chapter-pdf-btn")) {
+      header.appendChild(btn);
+    }
+  });
+</script>
+            </section>
+
+          </div>
+        </div>
+      </div>
+<a href="glossary.html" class="navigation navigation-prev " aria-label="Previous page"><i class="fa fa-angle-left"></i></a>
+<a href="writing-a-report.html" class="navigation navigation-next " aria-label="Next page"><i class="fa fa-angle-right"></i></a>
+    </div>
+  </div>
+<script src="libs/gitbook-2.6.7/js/app.min.js"></script>
+<script src="libs/gitbook-2.6.7/js/clipboard.min.js"></script>
+<script src="libs/gitbook-2.6.7/js/plugin-search.js"></script>
+<script src="libs/gitbook-2.6.7/js/plugin-sharing.js"></script>
+<script src="libs/gitbook-2.6.7/js/plugin-fontsettings.js"></script>
+<script src="libs/gitbook-2.6.7/js/plugin-bookdown.js"></script>
+<script src="libs/gitbook-2.6.7/js/jquery.highlight.js"></script>
+<script src="libs/gitbook-2.6.7/js/plugin-clipboard.js"></script>
+<script>
+gitbook.require(["gitbook"], function(gitbook) {
+gitbook.start({
+  "sharing": {
+    "github": false,
+    "facebook": false,
+    "twitter": false,
+    "linkedin": false,
+    "weibo": false,
+    "instapaper": false,
+    "vk": false,
+    "whatsapp": false,
+    "all": "github"
+  },
+  "fontsettings": {
+    "theme": "white",
+    "family": "sans",
+    "size": 2
+  },
+  "edit": {
+    "link": "https://github.com/r-heller/methods-in-r/edit/main/appendices/C-common-errors.Rmd",
+    "text": "Edit"
+  },
+  "history": {
+    "link": null,
+    "text": null
+  },
+  "view": {
+    "link": null,
+    "text": null
+  },
+  "download": ["methods-in-r.pdf", "methods-in-r.epub"],
+  "search": {
+    "engine": "fuse",
+    "options": null
+  },
+  "toc": {
+    "collapse": "section",
+    "scroll_highlight": true
+  },
+  "toolbar": {
+    "position": "fixed"
+  }
+});
+});
+</script>
+
+<!-- dynamically load mathjax for compatibility with self-contained -->
+<script>
+  (function () {
+    var script = document.createElement("script");
+    script.type = "text/javascript";
+    var src = "true";
+    if (src === "" || src === "true") src = "https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.9/latest.js?config=TeX-MML-AM_CHTML";
+    if (location.protocol !== "file:")
+      if (/^https?:/.test(src))
+        src = src.replace(/^https?:/, '');
+    script.src = src;
+    document.getElementsByTagName("head")[0].appendChild(script);
+  })();
+</script>
+</body>
+
+</html>

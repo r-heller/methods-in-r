@@ -1,0 +1,479 @@
+<!DOCTYPE html>
+<html lang="" xml:lang="">
+<head>
+
+  <meta charset="utf-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <title>Chapter 1 Find your method | Cheatsheets</title>
+  <meta name="description" content="Orthogonal-array designs and signal-to-noise optimisation for quality engineering" />
+  <meta name="generator" content="bookdown 0.46 and GitBook 2.6.7" />
+
+  <meta property="og:title" content="Chapter 1 Find your method | Cheatsheets" />
+  <meta property="og:type" content="book" />
+  <meta property="og:image" content="https://r-heller.github.io/methods-in-r/images/cover.png" />
+  <meta property="og:description" content="Orthogonal-array designs and signal-to-noise optimisation for quality engineering" />
+  <meta name="github-repo" content="r-heller/methods-in-r" />
+
+  <meta name="twitter:card" content="summary" />
+  <meta name="twitter:title" content="Chapter 1 Find your method | Cheatsheets" />
+  
+  <meta name="twitter:description" content="Orthogonal-array designs and signal-to-noise optimisation for quality engineering" />
+  <meta name="twitter:image" content="https://r-heller.github.io/methods-in-r/images/cover.png" />
+
+<meta name="author" content="R. Heller" />
+
+
+<meta name="date" content="2026-04-17" />
+
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta name="apple-mobile-web-app-capable" content="yes" />
+  <meta name="apple-mobile-web-app-status-bar-style" content="black" />
+  
+  
+<link rel="prev" href="about-the-author.html"/>
+<link rel="next" href="sec-ch-01-foundations.html"/>
+<script src="libs/jquery-3.6.0/jquery-3.6.0.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/fuse.js@6.4.6/dist/fuse.min.js"></script>
+<link href="libs/gitbook-2.6.7/css/style.css" rel="stylesheet" />
+<link href="libs/gitbook-2.6.7/css/plugin-table.css" rel="stylesheet" />
+<link href="libs/gitbook-2.6.7/css/plugin-bookdown.css" rel="stylesheet" />
+<link href="libs/gitbook-2.6.7/css/plugin-highlight.css" rel="stylesheet" />
+<link href="libs/gitbook-2.6.7/css/plugin-search.css" rel="stylesheet" />
+<link href="libs/gitbook-2.6.7/css/plugin-fontsettings.css" rel="stylesheet" />
+<link href="libs/gitbook-2.6.7/css/plugin-clipboard.css" rel="stylesheet" />
+
+
+
+
+
+
+
+
+<link href="libs/anchor-sections-1.1.0/anchor-sections.css" rel="stylesheet" />
+<link href="libs/anchor-sections-1.1.0/anchor-sections-hash.css" rel="stylesheet" />
+<script src="libs/anchor-sections-1.1.0/anchor-sections.js"></script>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
+
+
+<style type="text/css">
+html { -webkit-text-size-adjust: 100%; }
+pre > code.sourceCode { white-space: pre; position: relative; }
+pre > code.sourceCode > span { display: inline-block; line-height: 1.25; }
+pre > code.sourceCode > span:empty { height: 1.2em; }
+.sourceCode { overflow: visible; }
+code.sourceCode > span { color: inherit; text-decoration: inherit; }
+pre.sourceCode { margin: 0; }
+@media screen {
+div.sourceCode { overflow: auto; }
+}
+@media print {
+pre > code.sourceCode { white-space: pre-wrap; }
+pre > code.sourceCode > span { text-indent: -5em; padding-left: 5em; }
+}
+pre.numberSource code
+  { counter-reset: source-line 0; }
+pre.numberSource code > span
+  { position: relative; left: -4em; counter-increment: source-line; }
+pre.numberSource code > span > a:first-child::before
+  { content: counter(source-line);
+    position: relative; left: -1em; text-align: right; vertical-align: baseline;
+    border: none; display: inline-block;
+    -webkit-touch-callout: none; -webkit-user-select: none;
+    -khtml-user-select: none; -moz-user-select: none;
+    -ms-user-select: none; user-select: none;
+    padding: 0 4px; width: 4em;
+    color: #aaaaaa;
+  }
+pre.numberSource { margin-left: 3em; border-left: 1px solid #aaaaaa;  padding-left: 4px; }
+div.sourceCode
+  {   }
+@media screen {
+pre > code.sourceCode > span > a:first-child::before { text-decoration: underline; }
+}
+code span.al { color: #ff0000; font-weight: bold; } /* Alert */
+code span.an { color: #60a0b0; font-weight: bold; font-style: italic; } /* Annotation */
+code span.at { color: #7d9029; } /* Attribute */
+code span.bn { color: #40a070; } /* BaseN */
+code span.bu { color: #008000; } /* BuiltIn */
+code span.cf { color: #007020; font-weight: bold; } /* ControlFlow */
+code span.ch { color: #4070a0; } /* Char */
+code span.cn { color: #880000; } /* Constant */
+code span.co { color: #60a0b0; font-style: italic; } /* Comment */
+code span.cv { color: #60a0b0; font-weight: bold; font-style: italic; } /* CommentVar */
+code span.do { color: #ba2121; font-style: italic; } /* Documentation */
+code span.dt { color: #902000; } /* DataType */
+code span.dv { color: #40a070; } /* DecVal */
+code span.er { color: #ff0000; font-weight: bold; } /* Error */
+code span.ex { } /* Extension */
+code span.fl { color: #40a070; } /* Float */
+code span.fu { color: #06287e; } /* Function */
+code span.im { color: #008000; font-weight: bold; } /* Import */
+code span.in { color: #60a0b0; font-weight: bold; font-style: italic; } /* Information */
+code span.kw { color: #007020; font-weight: bold; } /* Keyword */
+code span.op { color: #666666; } /* Operator */
+code span.ot { color: #007020; } /* Other */
+code span.pp { color: #bc7a00; } /* Preprocessor */
+code span.sc { color: #4070a0; } /* SpecialChar */
+code span.ss { color: #bb6688; } /* SpecialString */
+code span.st { color: #4070a0; } /* String */
+code span.va { color: #19177c; } /* Variable */
+code span.vs { color: #4070a0; } /* VerbatimString */
+code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warning */
+</style>
+
+<style type="text/css">
+  
+  div.hanging-indent{margin-left: 1.5em; text-indent: -1.5em;}
+</style>
+<style type="text/css">
+/* Used with Pandoc 2.11+ new --citeproc when CSL is used */
+div.csl-bib-body { }
+div.csl-entry {
+  clear: both;
+}
+.hanging div.csl-entry {
+  margin-left:2em;
+  text-indent:-2em;
+}
+div.csl-left-margin {
+  min-width:2em;
+  float:left;
+}
+div.csl-right-inline {
+  margin-left:2em;
+  padding-left:1em;
+}
+div.csl-indent {
+  margin-left: 2em;
+}
+</style>
+
+<link rel="stylesheet" href="style/style.css" type="text/css" />
+</head>
+
+<body>
+
+
+
+  <div class="book without-animation with-summary font-size-2 font-family-1" data-basepath=".">
+
+    <div class="book-summary">
+      <nav role="navigation">
+
+true
+
+      </nav>
+    </div>
+
+    <div class="book-body">
+      <div class="body-inner">
+        <div class="book-header" role="navigation">
+          <h1>
+            <i class="fa fa-circle-o-notch fa-spin"></i><a href="./">Cheatsheets</a>
+          </h1>
+        </div>
+
+        <div class="page-wrapper" tabindex="-1" role="main">
+          <div class="page-inner">
+
+            <section class="normal" id="section-">
+<div id="sec-find-your-method" class="section level1 hasAnchor" number="1">
+<h1><span class="header-section-number">Chapter 1</span> Find your method<a href="sec-find-your-method.html#sec-find-your-method" class="anchor-section" aria-label="Anchor link to header"></a></h1>
+<p>Open the book here when you don’t know which chapter to read. Three
+routes are offered: a flowchart from research question to statistical
+test, a quick lookup table, and a click-through wizard hosted live.</p>
+<ul>
+<li><strong><a href="https://cttir.github.io/tutorials/decision-tree/decision-assistant.html">Interactive wizard</a></strong>
+— three to five questions, one recommended test.</li>
+<li><strong>Static decision tree</strong> (below) — the same logic, single page, suitable
+for printing.</li>
+<li><strong><a href="sec-find-your-method.html#sec-quick-lookup">Quick lookup table</a></strong> — common scenarios mapped to a
+recommended chapter and section.</li>
+</ul>
+<p>This chapter covers the <em>core</em> tree of classical tests (differences,
+associations, interdependence). Methods outside that core — survival,
+Bayesian, machine learning, time series, multivariate, meta-analysis,
+bioinformatics, study-design choices — are reached through their topic
+chapters or via the lookup table below.</p>
+<div id="the-static-decision-tree" class="section level2 hasAnchor" number="1.1">
+<h2><span class="header-section-number">1.1</span> The static decision tree<a href="sec-find-your-method.html#the-static-decision-tree" class="anchor-section" aria-label="Anchor link to header"></a></h2>
+<p>Colour encodes the scale level of the outcome; a dashed border marks a
+non-parametric test. Click a node in the rendered HTML to jump to the
+method page.</p>
+<pre class="mermaid"><code>%%{init: {&quot;securityLevel&quot;: &quot;loose&quot;, &quot;flowchart&quot;: {&quot;htmlLabels&quot;: true, &quot;useMaxWidth&quot;: true}}}%%
+flowchart TD
+    START[&quot;Research question&quot;]:::root --&gt; Q2{&quot;Differences or&lt;br/&gt;associations?&quot;}
+    START --&gt; Q_INT{&quot;Exploratory&lt;br/&gt;structure?&quot;}
+
+    Q2 --&gt;|Differences| QD1{&quot;Kind of difference?&quot;}
+    Q2 --&gt;|Associations| QA1{&quot;Variable count?&quot;}
+
+    QD1 --&gt;|Central tendency| QD2{&quot;Outcome scale?&quot;}
+    QD1 --&gt;|Variances| VAR[&quot;Variance tests&lt;br/&gt;(chi-sq, F, Levene)&quot;]:::metric
+    QD1 --&gt;|Proportions| QDPROP{&quot;Single variable vs. expected?&quot;}
+
+    QDPROP --&gt;|Dichotomous| BIN[&quot;Binomial test&quot;]:::nominal
+    QDPROP --&gt;|Categorical| CHI_GOF[&quot;Chi-sq goodness-of-fit&quot;]:::nominal
+
+    QD2 --&gt;|Interval/ratio| QD3{&quot;Number of groups?&quot;}
+    QD2 --&gt;|Ordinal| QD6{&quot;Groups &amp;amp; pairing?&quot;}
+    QD2 --&gt;|Nominal| QDPROP
+
+    QD3 --&gt;|2 groups| QD4{&quot;Independent/paired?&quot;}
+    QD3 --&gt;|3+ groups| QD5{&quot;Factors &amp;amp; design?&quot;}
+
+    QD4 --&gt;|Indep. normal| TT[&quot;Independent t-test&quot;]:::metric
+    QD4 --&gt;|Indep. non-normal| MWU[&quot;Mann-Whitney U&quot;]:::metric_np
+    QD4 --&gt;|Paired normal| PT[&quot;Paired t-test&quot;]:::metric
+    QD4 --&gt;|Paired non-normal| WSR[&quot;Wilcoxon signed-rank&quot;]:::metric_np
+    QD4 --&gt;|Paired sign only| SGN[&quot;Sign test&quot;]:::metric_np
+
+    QD5 --&gt;|1 between normal| OWA[&quot;One-way ANOVA&quot;]:::metric
+    QD5 --&gt;|2+ between normal| FA[&quot;Factorial ANOVA&quot;]:::metric
+    QD5 --&gt;|1 within normal| RM1[&quot;One-way rmANOVA&quot;]:::metric
+    QD5 --&gt;|Mixed design| RMM[&quot;Factorial/mixed rmANOVA&quot;]:::metric
+    QD5 --&gt;|Indep. non-normal| KW[&quot;Kruskal-Wallis&quot;]:::metric_np
+    QD5 --&gt;|Paired non-normal| FR[&quot;Friedman&quot;]:::metric_np
+
+    QD6 --&gt;|2 indep.| MWU
+    QD6 --&gt;|2 paired| WSR
+    QD6 --&gt;|&amp;gt;2 indep.| KW
+    QD6 --&gt;|&amp;gt;2 paired| FR
+
+    QA1 --&gt;|Two variables| QA2{&quot;Scale levels?&quot;}
+    QA1 --&gt;|More than two| QA5{&quot;DV scale?&quot;}
+
+    QA2 --&gt;|Both nominal| CHIC[&quot;Chi-sq contingency&quot;]:::nominal
+    QA2 --&gt;|Both ordinal| SPE[&quot;Spearman&quot;]:::ordinal_np
+    QA2 --&gt;|Ord + interval| SPE
+    QA2 --&gt;|Interval linear| PEA[&quot;Pearson&quot;]:::metric
+    QA2 --&gt;|Interval directed| SLR[&quot;Simple linear regression&quot;]:::metric
+    QA2 --&gt;|Interval non-norm| KEN[&quot;Kendall tau&quot;]:::metric_np
+
+    QA5 --&gt;|Interval| MLR[&quot;Multiple linear regression&quot;]:::metric
+    QA5 --&gt;|Dichotomous| LOG[&quot;Logistic regression&quot;]:::nominal
+    QA5 --&gt;|Ordinal| ORL[&quot;Ordinal logistic regression&quot;]:::ordinal
+    QA5 --&gt;|Nominal k+| MNL[&quot;Multinomial logistic regression&quot;]:::nominal
+
+    Q_INT --&gt;|Reduce variables| FAC[&quot;Factor analysis&quot;]:::interdep
+    Q_INT --&gt;|Group cases| QCL{&quot;Scale/size?&quot;}
+
+    QCL --&gt;|Mixed/small| HCL[&quot;Hierarchical clustering&quot;]:::interdep
+    QCL --&gt;|Metric/large| KMC[&quot;K-means&quot;]:::interdep
+    QCL --&gt;|Mixed/xlarge| TSC[&quot;Two-step clustering&quot;]:::interdep
+
+    classDef metric fill:#2A9D8F,stroke:#1d6e65,color:#fff
+    classDef metric_np fill:#2A9D8F,stroke:#1d6e65,color:#fff,stroke-dasharray:6 4
+    classDef nominal fill:#F4A261,stroke:#b4743f,color:#000
+    classDef ordinal fill:#E9C46A,stroke:#a88a42,color:#000
+    classDef ordinal_np fill:#E9C46A,stroke:#a88a42,color:#000,stroke-dasharray:6 4
+    classDef interdep fill:#6A4C93,stroke:#4a3468,color:#fff
+    classDef root fill:#ffffff,stroke:#333,color:#000,font-weight:bold</code></pre>
+</div>
+<div id="sec-quick-lookup" class="section level2 hasAnchor" number="1.2">
+<h2><span class="header-section-number">1.2</span> Quick lookup<a href="sec-find-your-method.html#sec-quick-lookup" class="anchor-section" aria-label="Anchor link to header"></a></h2>
+<p>A small table for the most common biomedical scenarios. The full tree
+above and the live wizard cover everything the table omits.</p>
+<table>
+<colgroup>
+<col width="33%" />
+<col width="33%" />
+<col width="33%" />
+</colgroup>
+<thead>
+<tr class="header">
+<th>Scenario</th>
+<th>Recommended method</th>
+<th>Chapter</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>2 independent groups, metric, normal</td>
+<td>Independent / Welch t-test</td>
+<td><a href="sec-ch-04-inferential.html#sec-ch-04-inferential">5</a></td>
+</tr>
+<tr class="even">
+<td>2 independent groups, non-normal or ordinal</td>
+<td>Mann-Whitney U</td>
+<td><a href="sec-ch-04-inferential.html#sec-ch-04-inferential">5</a></td>
+</tr>
+<tr class="odd">
+<td>2 paired groups, metric</td>
+<td>Paired t-test</td>
+<td><a href="sec-ch-04-inferential.html#sec-ch-04-inferential">5</a></td>
+</tr>
+<tr class="even">
+<td>3+ groups, between, normal</td>
+<td>One-way ANOVA</td>
+<td><a href="sec-ch-04-inferential.html#sec-ch-04-inferential">5</a></td>
+</tr>
+<tr class="odd">
+<td>3+ groups, between, non-normal</td>
+<td>Kruskal-Wallis</td>
+<td><a href="sec-ch-04-inferential.html#sec-ch-04-inferential">5</a></td>
+</tr>
+<tr class="even">
+<td>Two continuous, linear</td>
+<td>Pearson correlation</td>
+<td><a href="sec-ch-04-inferential.html#sec-ch-04-inferential">5</a></td>
+</tr>
+<tr class="odd">
+<td>Continuous outcome, 2+ predictors</td>
+<td>Multiple linear regression</td>
+<td><a href="sec-ch-07-regression.html#sec-ch-07-regression">8</a></td>
+</tr>
+<tr class="even">
+<td>Binary outcome, 1+ predictors</td>
+<td>Logistic regression</td>
+<td><a href="sec-ch-07-regression.html#sec-ch-07-regression">8</a></td>
+</tr>
+<tr class="odd">
+<td>Time-to-event with censoring</td>
+<td>Kaplan-Meier, Cox</td>
+<td><a href="sec-ch-11-survival.html#sec-ch-11-survival">12</a></td>
+</tr>
+<tr class="even">
+<td>Diagnostic test accuracy</td>
+<td>Sensitivity/specificity, ROC</td>
+<td><a href="sec-ch-14-clinical.html#sec-ch-14-clinical">15</a></td>
+</tr>
+<tr class="odd">
+<td>Aggregating effect sizes across studies</td>
+<td>Pairwise meta-analysis</td>
+<td><a href="sec-ch-15-metaanalysis.html#sec-ch-15-metaanalysis">16</a></td>
+</tr>
+<tr class="even">
+<td>Predictive model with cross-validation</td>
+<td>tidymodels workflow</td>
+<td><a href="sec-ch-13-ml.html#sec-ch-13-ml">14</a></td>
+</tr>
+<tr class="odd">
+<td>Posterior inference with priors</td>
+<td>brms / Stan</td>
+<td><a href="sec-ch-10-bayesian.html#sec-ch-10-bayesian">11</a></td>
+</tr>
+<tr class="even">
+<td>Repeated measures within subjects</td>
+<td>Mixed-effects model</td>
+<td><a href="sec-ch-16-design.html#sec-ch-16-design">17</a></td>
+</tr>
+<tr class="odd">
+<td>Two or more variances</td>
+<td>Levene’s test</td>
+<td><a href="sec-ch-04-inferential.html#sec-ch-04-inferential">5</a></td>
+</tr>
+<tr class="even">
+<td>Reduce variables to latent dimensions</td>
+<td>PCA / factor analysis</td>
+<td><a href="sec-ch-08-multivariate.html#sec-ch-08-multivariate">9</a></td>
+</tr>
+</tbody>
+</table>
+<!-- TODO:decision-tree-expansion: extend lookup table from decision_tree tags in source pages -->
+<hr />
+<p>The static tree is mirrored from the decision-tree wizard at
+<a href="https://cttir.github.io/tutorials/decision-tree/" class="uri">https://cttir.github.io/tutorials/decision-tree/</a>. Structure inspired
+by the University of Zurich Methodenberatung
+(methodenberatung.uzh.ch).</p>
+
+</div>
+</div>
+<script>
+  document.addEventListener("DOMContentLoaded", function () {
+    var path = window.location.pathname.split("/").pop().replace(".html", ".pdf");
+    if (!path || path === ".pdf") return;
+    var btn = document.createElement("a");
+    btn.href = "pdf-chapters/" + path;
+    btn.className = "btn btn-sm btn-outline-secondary per-chapter-pdf-btn";
+    btn.style.cssText = "float:right;margin-top:0.5em;";
+    btn.textContent = "⬇ Download this chapter (PDF)";
+    var header = document.querySelector("main h1");
+    if (header && !document.querySelector(".per-chapter-pdf-btn")) {
+      header.appendChild(btn);
+    }
+  });
+</script>
+            </section>
+
+          </div>
+        </div>
+      </div>
+<a href="about-the-author.html" class="navigation navigation-prev " aria-label="Previous page"><i class="fa fa-angle-left"></i></a>
+<a href="sec-ch-01-foundations.html" class="navigation navigation-next " aria-label="Next page"><i class="fa fa-angle-right"></i></a>
+    </div>
+  </div>
+<script src="libs/gitbook-2.6.7/js/app.min.js"></script>
+<script src="libs/gitbook-2.6.7/js/clipboard.min.js"></script>
+<script src="libs/gitbook-2.6.7/js/plugin-search.js"></script>
+<script src="libs/gitbook-2.6.7/js/plugin-sharing.js"></script>
+<script src="libs/gitbook-2.6.7/js/plugin-fontsettings.js"></script>
+<script src="libs/gitbook-2.6.7/js/plugin-bookdown.js"></script>
+<script src="libs/gitbook-2.6.7/js/jquery.highlight.js"></script>
+<script src="libs/gitbook-2.6.7/js/plugin-clipboard.js"></script>
+<script>
+gitbook.require(["gitbook"], function(gitbook) {
+gitbook.start({
+  "sharing": {
+    "github": false,
+    "facebook": false,
+    "twitter": false,
+    "linkedin": false,
+    "weibo": false,
+    "instapaper": false,
+    "vk": false,
+    "whatsapp": false,
+    "all": "github"
+  },
+  "fontsettings": {
+    "theme": "white",
+    "family": "sans",
+    "size": 2
+  },
+  "edit": {
+    "link": "https://github.com/r-heller/methods-in-r/edit/main/ch00-find-your-method.Rmd",
+    "text": "Edit"
+  },
+  "history": {
+    "link": null,
+    "text": null
+  },
+  "view": {
+    "link": null,
+    "text": null
+  },
+  "download": ["methods-in-r.pdf", "methods-in-r.epub"],
+  "search": {
+    "engine": "fuse",
+    "options": null
+  },
+  "toc": {
+    "collapse": "section",
+    "scroll_highlight": true
+  },
+  "toolbar": {
+    "position": "fixed"
+  }
+});
+});
+</script>
+
+<!-- dynamically load mathjax for compatibility with self-contained -->
+<script>
+  (function () {
+    var script = document.createElement("script");
+    script.type = "text/javascript";
+    var src = "true";
+    if (src === "" || src === "true") src = "https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.9/latest.js?config=TeX-MML-AM_CHTML";
+    if (location.protocol !== "file:")
+      if (/^https?:/.test(src))
+        src = src.replace(/^https?:/, '');
+    script.src = src;
+    document.getElementsByTagName("head")[0].appendChild(script);
+  })();
+</script>
+</body>
+
+</html>

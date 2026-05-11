@@ -1,0 +1,1095 @@
+<!DOCTYPE html>
+<html lang="" xml:lang="">
+<head>
+
+  <meta charset="utf-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <title>Chapter 23 ARRIVE — animal research | Cheatsheets</title>
+  <meta name="description" content="Orthogonal-array designs and signal-to-noise optimisation for quality engineering" />
+  <meta name="generator" content="bookdown 0.46 and GitBook 2.6.7" />
+
+  <meta property="og:title" content="Chapter 23 ARRIVE — animal research | Cheatsheets" />
+  <meta property="og:type" content="book" />
+  <meta property="og:image" content="https://r-heller.github.io/methods-in-r/images/cover.png" />
+  <meta property="og:description" content="Orthogonal-array designs and signal-to-noise optimisation for quality engineering" />
+  <meta name="github-repo" content="r-heller/methods-in-r" />
+
+  <meta name="twitter:card" content="summary" />
+  <meta name="twitter:title" content="Chapter 23 ARRIVE — animal research | Cheatsheets" />
+  
+  <meta name="twitter:description" content="Orthogonal-array designs and signal-to-noise optimisation for quality engineering" />
+  <meta name="twitter:image" content="https://r-heller.github.io/methods-in-r/images/cover.png" />
+
+<meta name="author" content="R. Heller" />
+
+
+<meta name="date" content="2026-04-17" />
+
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta name="apple-mobile-web-app-capable" content="yes" />
+  <meta name="apple-mobile-web-app-status-bar-style" content="black" />
+  
+  
+<link rel="prev" href="prisma-systematic-reviews-meta-analyses.html"/>
+<link rel="next" href="the-research-workflow.html"/>
+<script src="libs/jquery-3.6.0/jquery-3.6.0.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/fuse.js@6.4.6/dist/fuse.min.js"></script>
+<link href="libs/gitbook-2.6.7/css/style.css" rel="stylesheet" />
+<link href="libs/gitbook-2.6.7/css/plugin-table.css" rel="stylesheet" />
+<link href="libs/gitbook-2.6.7/css/plugin-bookdown.css" rel="stylesheet" />
+<link href="libs/gitbook-2.6.7/css/plugin-highlight.css" rel="stylesheet" />
+<link href="libs/gitbook-2.6.7/css/plugin-search.css" rel="stylesheet" />
+<link href="libs/gitbook-2.6.7/css/plugin-fontsettings.css" rel="stylesheet" />
+<link href="libs/gitbook-2.6.7/css/plugin-clipboard.css" rel="stylesheet" />
+
+
+
+
+
+
+
+
+<link href="libs/anchor-sections-1.1.0/anchor-sections.css" rel="stylesheet" />
+<link href="libs/anchor-sections-1.1.0/anchor-sections-hash.css" rel="stylesheet" />
+<script src="libs/anchor-sections-1.1.0/anchor-sections.js"></script>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
+
+
+<style type="text/css">
+html { -webkit-text-size-adjust: 100%; }
+pre > code.sourceCode { white-space: pre; position: relative; }
+pre > code.sourceCode > span { display: inline-block; line-height: 1.25; }
+pre > code.sourceCode > span:empty { height: 1.2em; }
+.sourceCode { overflow: visible; }
+code.sourceCode > span { color: inherit; text-decoration: inherit; }
+pre.sourceCode { margin: 0; }
+@media screen {
+div.sourceCode { overflow: auto; }
+}
+@media print {
+pre > code.sourceCode { white-space: pre-wrap; }
+pre > code.sourceCode > span { text-indent: -5em; padding-left: 5em; }
+}
+pre.numberSource code
+  { counter-reset: source-line 0; }
+pre.numberSource code > span
+  { position: relative; left: -4em; counter-increment: source-line; }
+pre.numberSource code > span > a:first-child::before
+  { content: counter(source-line);
+    position: relative; left: -1em; text-align: right; vertical-align: baseline;
+    border: none; display: inline-block;
+    -webkit-touch-callout: none; -webkit-user-select: none;
+    -khtml-user-select: none; -moz-user-select: none;
+    -ms-user-select: none; user-select: none;
+    padding: 0 4px; width: 4em;
+    color: #aaaaaa;
+  }
+pre.numberSource { margin-left: 3em; border-left: 1px solid #aaaaaa;  padding-left: 4px; }
+div.sourceCode
+  {   }
+@media screen {
+pre > code.sourceCode > span > a:first-child::before { text-decoration: underline; }
+}
+code span.al { color: #ff0000; font-weight: bold; } /* Alert */
+code span.an { color: #60a0b0; font-weight: bold; font-style: italic; } /* Annotation */
+code span.at { color: #7d9029; } /* Attribute */
+code span.bn { color: #40a070; } /* BaseN */
+code span.bu { color: #008000; } /* BuiltIn */
+code span.cf { color: #007020; font-weight: bold; } /* ControlFlow */
+code span.ch { color: #4070a0; } /* Char */
+code span.cn { color: #880000; } /* Constant */
+code span.co { color: #60a0b0; font-style: italic; } /* Comment */
+code span.cv { color: #60a0b0; font-weight: bold; font-style: italic; } /* CommentVar */
+code span.do { color: #ba2121; font-style: italic; } /* Documentation */
+code span.dt { color: #902000; } /* DataType */
+code span.dv { color: #40a070; } /* DecVal */
+code span.er { color: #ff0000; font-weight: bold; } /* Error */
+code span.ex { } /* Extension */
+code span.fl { color: #40a070; } /* Float */
+code span.fu { color: #06287e; } /* Function */
+code span.im { color: #008000; font-weight: bold; } /* Import */
+code span.in { color: #60a0b0; font-weight: bold; font-style: italic; } /* Information */
+code span.kw { color: #007020; font-weight: bold; } /* Keyword */
+code span.op { color: #666666; } /* Operator */
+code span.ot { color: #007020; } /* Other */
+code span.pp { color: #bc7a00; } /* Preprocessor */
+code span.sc { color: #4070a0; } /* SpecialChar */
+code span.ss { color: #bb6688; } /* SpecialString */
+code span.st { color: #4070a0; } /* String */
+code span.va { color: #19177c; } /* Variable */
+code span.vs { color: #4070a0; } /* VerbatimString */
+code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warning */
+</style>
+
+<style type="text/css">
+  
+  div.hanging-indent{margin-left: 1.5em; text-indent: -1.5em;}
+</style>
+<style type="text/css">
+/* Used with Pandoc 2.11+ new --citeproc when CSL is used */
+div.csl-bib-body { }
+div.csl-entry {
+  clear: both;
+}
+.hanging div.csl-entry {
+  margin-left:2em;
+  text-indent:-2em;
+}
+div.csl-left-margin {
+  min-width:2em;
+  float:left;
+}
+div.csl-right-inline {
+  margin-left:2em;
+  padding-left:1em;
+}
+div.csl-indent {
+  margin-left: 2em;
+}
+</style>
+
+<link rel="stylesheet" href="style/style.css" type="text/css" />
+</head>
+
+<body>
+
+
+
+  <div class="book without-animation with-summary font-size-2 font-family-1" data-basepath=".">
+
+    <div class="book-summary">
+      <nav role="navigation">
+
+true
+
+      </nav>
+    </div>
+
+    <div class="book-body">
+      <div class="body-inner">
+        <div class="book-header" role="navigation">
+          <h1>
+            <i class="fa fa-circle-o-notch fa-spin"></i><a href="./">Cheatsheets</a>
+          </h1>
+        </div>
+
+        <div class="page-wrapper" tabindex="-1" role="main">
+          <div class="page-inner">
+
+            <section class="normal" id="section-">
+<div id="arrive-animal-research" class="section level1 hasAnchor" number="23">
+<h1><span class="header-section-number">Chapter 23</span> ARRIVE — animal research<a href="arrive-animal-research.html#arrive-animal-research" class="anchor-section" aria-label="Anchor link to header"></a></h1>
+<p>ARRIVE — <em>Animal Research: Reporting of In Vivo Experiments</em> — covers preclinical animal research. The 21-item checklist is at <a href="https://arriveguidelines.org/" class="uri">https://arriveguidelines.org/</a>. The templates below cover the statistical analyses most commonly required.</p>
+<p>This page contains <strong>50 method-specific templates</strong>. Each is a skeleton with placeholders in italics; the prose is written so you can paste it into a manuscript and replace only the bracketed values.</p>
+<div id="alignment-with-bwa-and-bowtie" class="section level3 hasAnchor" number="23.0.1">
+<h3><span class="header-section-number">23.0.1</span> Alignment with BWA and Bowtie<a href="arrive-animal-research.html#alignment-with-bwa-and-bowtie" class="anchor-section" aria-label="Anchor link to header"></a></h3>
+<p><strong>Methods paragraph (copy-paste, fill in italics):</strong></p>
+<blockquote>
+<p><em>[N=]</em> participants/observations were analysed using <strong>Alignment with BWA and Bowtie</strong> as implemented in <em>[package vX.Y]</em> in R <em>[vX.Y]</em>. Assumptions were checked: <em>[list checks performed]</em>. <em>[Effect size with 95% confidence interval reported as the primary outcome]</em>. Two-sided p-values use <em>α = 0.05</em>; <em>[multiple-comparison adjustment if any]</em>.</p>
+</blockquote>
+<p><strong>Results paragraph (copy-paste):</strong></p>
+<blockquote>
+<p>Alignment with BWA and Bowtie yielded <em>[estimate]</em> (95% CI <em>[lower, upper]</em>, p = <em>[value]</em>). <em>[Diagnostic / assumption summary]</em>. <em>[Sensitivity analysis result]</em>.</p>
+</blockquote>
+<p><strong>Reviewer checklist for this method.</strong> → <a href="../chapters/12-bioinformatics/bwa-bowtie-alignment.Rmd#for-reviewers"><code>bwa-bowtie-alignment</code> — For Reviewers</a></p>
+<!-- TODO:reporting-template -->
+</div>
+<div id="atac-seq-analysis" class="section level3 hasAnchor" number="23.0.2">
+<h3><span class="header-section-number">23.0.2</span> ATAC-Seq Analysis<a href="arrive-animal-research.html#atac-seq-analysis" class="anchor-section" aria-label="Anchor link to header"></a></h3>
+<p><strong>Methods paragraph (copy-paste, fill in italics):</strong></p>
+<blockquote>
+<p><em>[N=]</em> participants/observations were analysed using <strong>ATAC-Seq Analysis</strong> as implemented in <em>[package vX.Y]</em> in R <em>[vX.Y]</em>. Assumptions were checked: <em>[list checks performed]</em>. <em>[Effect size with 95% confidence interval reported as the primary outcome]</em>. Two-sided p-values use <em>α = 0.05</em>; <em>[multiple-comparison adjustment if any]</em>.</p>
+</blockquote>
+<p><strong>Results paragraph (copy-paste):</strong></p>
+<blockquote>
+<p>ATAC-Seq Analysis yielded <em>[estimate]</em> (95% CI <em>[lower, upper]</em>, p = <em>[value]</em>). <em>[Diagnostic / assumption summary]</em>. <em>[Sensitivity analysis result]</em>.</p>
+</blockquote>
+<p><strong>Reviewer checklist for this method.</strong> → <a href="../chapters/12-bioinformatics/atac-seq-analysis.Rmd#for-reviewers"><code>atac-seq-analysis</code> — For Reviewers</a></p>
+<!-- TODO:reporting-template -->
+</div>
+<div id="batch-correction-with-combat" class="section level3 hasAnchor" number="23.0.3">
+<h3><span class="header-section-number">23.0.3</span> Batch Correction with ComBat<a href="arrive-animal-research.html#batch-correction-with-combat" class="anchor-section" aria-label="Anchor link to header"></a></h3>
+<p><strong>Methods paragraph (copy-paste, fill in italics):</strong></p>
+<blockquote>
+<p><em>[N=]</em> participants/observations were analysed using <strong>Batch Correction with ComBat</strong> as implemented in <em>[package vX.Y]</em> in R <em>[vX.Y]</em>. Assumptions were checked: <em>[list checks performed]</em>. <em>[Effect size with 95% confidence interval reported as the primary outcome]</em>. Two-sided p-values use <em>α = 0.05</em>; <em>[multiple-comparison adjustment if any]</em>.</p>
+</blockquote>
+<p><strong>Results paragraph (copy-paste):</strong></p>
+<blockquote>
+<p>Batch Correction with ComBat yielded <em>[estimate]</em> (95% CI <em>[lower, upper]</em>, p = <em>[value]</em>). <em>[Diagnostic / assumption summary]</em>. <em>[Sensitivity analysis result]</em>.</p>
+</blockquote>
+<p><strong>Reviewer checklist for this method.</strong> → <a href="../chapters/12-bioinformatics/batch-correction-combat.Rmd#for-reviewers"><code>batch-correction-combat</code> — For Reviewers</a></p>
+<!-- TODO:reporting-template -->
+</div>
+<div id="bulk-rna-seq-differential-expression-with-deseq2" class="section level3 hasAnchor" number="23.0.4">
+<h3><span class="header-section-number">23.0.4</span> Bulk RNA-seq Differential Expression with DESeq2<a href="arrive-animal-research.html#bulk-rna-seq-differential-expression-with-deseq2" class="anchor-section" aria-label="Anchor link to header"></a></h3>
+<p><strong>Methods paragraph (copy-paste, fill in italics):</strong></p>
+<blockquote>
+<p><em>[N=]</em> participants/observations were analysed using <strong>Bulk RNA-seq Differential Expression with DESeq2</strong> as implemented in <em>[package vX.Y]</em> in R <em>[vX.Y]</em>. Assumptions were checked: <em>[list checks performed]</em>. <em>[Effect size with 95% confidence interval reported as the primary outcome]</em>. Two-sided p-values use <em>α = 0.05</em>; <em>[multiple-comparison adjustment if any]</em>.</p>
+</blockquote>
+<p><strong>Results paragraph (copy-paste):</strong></p>
+<blockquote>
+<p>Bulk RNA-seq Differential Expression with DESeq2 yielded <em>[estimate]</em> (95% CI <em>[lower, upper]</em>, p = <em>[value]</em>). <em>[Diagnostic / assumption summary]</em>. <em>[Sensitivity analysis result]</em>.</p>
+</blockquote>
+<p><strong>Reviewer checklist for this method.</strong> → <a href="../chapters/12-bioinformatics/bulk-rnaseq-differential-expression.Rmd#for-reviewers"><code>bulk-rnaseq-differential-expression</code> — For Reviewers</a></p>
+<!-- TODO:reporting-template -->
+</div>
+<div id="cell-type-annotation" class="section level3 hasAnchor" number="23.0.5">
+<h3><span class="header-section-number">23.0.5</span> Cell-Type Annotation<a href="arrive-animal-research.html#cell-type-annotation" class="anchor-section" aria-label="Anchor link to header"></a></h3>
+<p><strong>Methods paragraph (copy-paste, fill in italics):</strong></p>
+<blockquote>
+<p><em>[N=]</em> participants/observations were analysed using <strong>Cell-Type Annotation</strong> as implemented in <em>[package vX.Y]</em> in R <em>[vX.Y]</em>. Assumptions were checked: <em>[list checks performed]</em>. <em>[Effect size with 95% confidence interval reported as the primary outcome]</em>. Two-sided p-values use <em>α = 0.05</em>; <em>[multiple-comparison adjustment if any]</em>.</p>
+</blockquote>
+<p><strong>Results paragraph (copy-paste):</strong></p>
+<blockquote>
+<p>Cell-Type Annotation yielded <em>[estimate]</em> (95% CI <em>[lower, upper]</em>, p = <em>[value]</em>). <em>[Diagnostic / assumption summary]</em>. <em>[Sensitivity analysis result]</em>.</p>
+</blockquote>
+<p><strong>Reviewer checklist for this method.</strong> → <a href="../chapters/12-bioinformatics/scrna-cell-type-annotation.Rmd#for-reviewers"><code>scrna-cell-type-annotation</code> — For Reviewers</a></p>
+<!-- TODO:reporting-template -->
+</div>
+<div id="chip-seq-analysis" class="section level3 hasAnchor" number="23.0.6">
+<h3><span class="header-section-number">23.0.6</span> ChIP-Seq Analysis<a href="arrive-animal-research.html#chip-seq-analysis" class="anchor-section" aria-label="Anchor link to header"></a></h3>
+<p><strong>Methods paragraph (copy-paste, fill in italics):</strong></p>
+<blockquote>
+<p><em>[N=]</em> participants/observations were analysed using <strong>ChIP-Seq Analysis</strong> as implemented in <em>[package vX.Y]</em> in R <em>[vX.Y]</em>. Assumptions were checked: <em>[list checks performed]</em>. <em>[Effect size with 95% confidence interval reported as the primary outcome]</em>. Two-sided p-values use <em>α = 0.05</em>; <em>[multiple-comparison adjustment if any]</em>.</p>
+</blockquote>
+<p><strong>Results paragraph (copy-paste):</strong></p>
+<blockquote>
+<p>ChIP-Seq Analysis yielded <em>[estimate]</em> (95% CI <em>[lower, upper]</em>, p = <em>[value]</em>). <em>[Diagnostic / assumption summary]</em>. <em>[Sensitivity analysis result]</em>.</p>
+</blockquote>
+<p><strong>Reviewer checklist for this method.</strong> → <a href="../chapters/12-bioinformatics/chip-seq-analysis.Rmd#for-reviewers"><code>chip-seq-analysis</code> — For Reviewers</a></p>
+<!-- TODO:reporting-template -->
+</div>
+<div id="copy-number-variation-analysis" class="section level3 hasAnchor" number="23.0.7">
+<h3><span class="header-section-number">23.0.7</span> Copy Number Variation Analysis<a href="arrive-animal-research.html#copy-number-variation-analysis" class="anchor-section" aria-label="Anchor link to header"></a></h3>
+<p><strong>Methods paragraph (copy-paste, fill in italics):</strong></p>
+<blockquote>
+<p><em>[N=]</em> participants/observations were analysed using <strong>Copy Number Variation Analysis</strong> as implemented in <em>[package vX.Y]</em> in R <em>[vX.Y]</em>. Assumptions were checked: <em>[list checks performed]</em>. <em>[Effect size with 95% confidence interval reported as the primary outcome]</em>. Two-sided p-values use <em>α = 0.05</em>; <em>[multiple-comparison adjustment if any]</em>.</p>
+</blockquote>
+<p><strong>Results paragraph (copy-paste):</strong></p>
+<blockquote>
+<p>Copy Number Variation Analysis yielded <em>[estimate]</em> (95% CI <em>[lower, upper]</em>, p = <em>[value]</em>). <em>[Diagnostic / assumption summary]</em>. <em>[Sensitivity analysis result]</em>.</p>
+</blockquote>
+<p><strong>Reviewer checklist for this method.</strong> → <a href="../chapters/12-bioinformatics/cnv-analysis.Rmd#for-reviewers"><code>cnv-analysis</code> — For Reviewers</a></p>
+<!-- TODO:reporting-template -->
+</div>
+<div id="counting-reads-with-featurecounts" class="section level3 hasAnchor" number="23.0.8">
+<h3><span class="header-section-number">23.0.8</span> Counting Reads with featureCounts<a href="arrive-animal-research.html#counting-reads-with-featurecounts" class="anchor-section" aria-label="Anchor link to header"></a></h3>
+<p><strong>Methods paragraph (copy-paste, fill in italics):</strong></p>
+<blockquote>
+<p><em>[N=]</em> participants/observations were analysed using <strong>Counting Reads with featureCounts</strong> as implemented in <em>[package vX.Y]</em> in R <em>[vX.Y]</em>. Assumptions were checked: <em>[list checks performed]</em>. <em>[Effect size with 95% confidence interval reported as the primary outcome]</em>. Two-sided p-values use <em>α = 0.05</em>; <em>[multiple-comparison adjustment if any]</em>.</p>
+</blockquote>
+<p><strong>Results paragraph (copy-paste):</strong></p>
+<blockquote>
+<p>Counting Reads with featureCounts yielded <em>[estimate]</em> (95% CI <em>[lower, upper]</em>, p = <em>[value]</em>). <em>[Diagnostic / assumption summary]</em>. <em>[Sensitivity analysis result]</em>.</p>
+</blockquote>
+<p><strong>Reviewer checklist for this method.</strong> → <a href="../chapters/12-bioinformatics/counting-reads-feature-counts.Rmd#for-reviewers"><code>counting-reads-feature-counts</code> — For Reviewers</a></p>
+<!-- TODO:reporting-template -->
+</div>
+<div id="differential-expression-with-edger" class="section level3 hasAnchor" number="23.0.9">
+<h3><span class="header-section-number">23.0.9</span> Differential Expression with edgeR<a href="arrive-animal-research.html#differential-expression-with-edger" class="anchor-section" aria-label="Anchor link to header"></a></h3>
+<p><strong>Methods paragraph (copy-paste, fill in italics):</strong></p>
+<blockquote>
+<p><em>[N=]</em> participants/observations were analysed using <strong>Differential Expression with edgeR</strong> as implemented in <em>[package vX.Y]</em> in R <em>[vX.Y]</em>. Assumptions were checked: <em>[list checks performed]</em>. <em>[Effect size with 95% confidence interval reported as the primary outcome]</em>. Two-sided p-values use <em>α = 0.05</em>; <em>[multiple-comparison adjustment if any]</em>.</p>
+</blockquote>
+<p><strong>Results paragraph (copy-paste):</strong></p>
+<blockquote>
+<p>Differential Expression with edgeR yielded <em>[estimate]</em> (95% CI <em>[lower, upper]</em>, p = <em>[value]</em>). <em>[Diagnostic / assumption summary]</em>. <em>[Sensitivity analysis result]</em>.</p>
+</blockquote>
+<p><strong>Reviewer checklist for this method.</strong> → <a href="../chapters/12-bioinformatics/edger-differential-expression.Rmd#for-reviewers"><code>edger-differential-expression</code> — For Reviewers</a></p>
+<!-- TODO:reporting-template -->
+</div>
+<div id="differential-expression-with-limma-voom" class="section level3 hasAnchor" number="23.0.10">
+<h3><span class="header-section-number">23.0.10</span> Differential Expression with limma-voom<a href="arrive-animal-research.html#differential-expression-with-limma-voom" class="anchor-section" aria-label="Anchor link to header"></a></h3>
+<p><strong>Methods paragraph (copy-paste, fill in italics):</strong></p>
+<blockquote>
+<p><em>[N=]</em> participants/observations were analysed using <strong>Differential Expression with limma-voom</strong> as implemented in <em>[package vX.Y]</em> in R <em>[vX.Y]</em>. Assumptions were checked: <em>[list checks performed]</em>. <em>[Effect size with 95% confidence interval reported as the primary outcome]</em>. Two-sided p-values use <em>α = 0.05</em>; <em>[multiple-comparison adjustment if any]</em>.</p>
+</blockquote>
+<p><strong>Results paragraph (copy-paste):</strong></p>
+<blockquote>
+<p>Differential Expression with limma-voom yielded <em>[estimate]</em> (95% CI <em>[lower, upper]</em>, p = <em>[value]</em>). <em>[Diagnostic / assumption summary]</em>. <em>[Sensitivity analysis result]</em>.</p>
+</blockquote>
+<p><strong>Reviewer checklist for this method.</strong> → <a href="../chapters/12-bioinformatics/limma-voom.Rmd#for-reviewers"><code>limma-voom</code> — For Reviewers</a></p>
+<!-- TODO:reporting-template -->
+</div>
+<div id="dna-methylation-analysis" class="section level3 hasAnchor" number="23.0.11">
+<h3><span class="header-section-number">23.0.11</span> DNA Methylation Analysis<a href="arrive-animal-research.html#dna-methylation-analysis" class="anchor-section" aria-label="Anchor link to header"></a></h3>
+<p><strong>Methods paragraph (copy-paste, fill in italics):</strong></p>
+<blockquote>
+<p><em>[N=]</em> participants/observations were analysed using <strong>DNA Methylation Analysis</strong> as implemented in <em>[package vX.Y]</em> in R <em>[vX.Y]</em>. Assumptions were checked: <em>[list checks performed]</em>. <em>[Effect size with 95% confidence interval reported as the primary outcome]</em>. Two-sided p-values use <em>α = 0.05</em>; <em>[multiple-comparison adjustment if any]</em>.</p>
+</blockquote>
+<p><strong>Results paragraph (copy-paste):</strong></p>
+<blockquote>
+<p>DNA Methylation Analysis yielded <em>[estimate]</em> (95% CI <em>[lower, upper]</em>, p = <em>[value]</em>). <em>[Diagnostic / assumption summary]</em>. <em>[Sensitivity analysis result]</em>.</p>
+</blockquote>
+<p><strong>Reviewer checklist for this method.</strong> → <a href="../chapters/12-bioinformatics/methylation-analysis.Rmd#for-reviewers"><code>methylation-analysis</code> — For Reviewers</a></p>
+<!-- TODO:reporting-template -->
+</div>
+<div id="drug-target-interaction-mining" class="section level3 hasAnchor" number="23.0.12">
+<h3><span class="header-section-number">23.0.12</span> Drug-Target Interaction Mining<a href="arrive-animal-research.html#drug-target-interaction-mining" class="anchor-section" aria-label="Anchor link to header"></a></h3>
+<p><strong>Methods paragraph (copy-paste, fill in italics):</strong></p>
+<blockquote>
+<p><em>[N=]</em> participants/observations were analysed using <strong>Drug-Target Interaction Mining</strong> as implemented in <em>[package vX.Y]</em> in R <em>[vX.Y]</em>. Assumptions were checked: <em>[list checks performed]</em>. <em>[Effect size with 95% confidence interval reported as the primary outcome]</em>. Two-sided p-values use <em>α = 0.05</em>; <em>[multiple-comparison adjustment if any]</em>.</p>
+</blockquote>
+<p><strong>Results paragraph (copy-paste):</strong></p>
+<blockquote>
+<p>Drug-Target Interaction Mining yielded <em>[estimate]</em> (95% CI <em>[lower, upper]</em>, p = <em>[value]</em>). <em>[Diagnostic / assumption summary]</em>. <em>[Sensitivity analysis result]</em>.</p>
+</blockquote>
+<p><strong>Reviewer checklist for this method.</strong> → <a href="../chapters/12-bioinformatics/drug-target-interaction.Rmd#for-reviewers"><code>drug-target-interaction</code> — For Reviewers</a></p>
+<!-- TODO:reporting-template -->
+</div>
+<div id="fastq-quality-control" class="section level3 hasAnchor" number="23.0.13">
+<h3><span class="header-section-number">23.0.13</span> FASTQ Quality Control<a href="arrive-animal-research.html#fastq-quality-control" class="anchor-section" aria-label="Anchor link to header"></a></h3>
+<p><strong>Methods paragraph (copy-paste, fill in italics):</strong></p>
+<blockquote>
+<p><em>[N=]</em> participants/observations were analysed using <strong>FASTQ Quality Control</strong> as implemented in <em>[package vX.Y]</em> in R <em>[vX.Y]</em>. Assumptions were checked: <em>[list checks performed]</em>. <em>[Effect size with 95% confidence interval reported as the primary outcome]</em>. Two-sided p-values use <em>α = 0.05</em>; <em>[multiple-comparison adjustment if any]</em>.</p>
+</blockquote>
+<p><strong>Results paragraph (copy-paste):</strong></p>
+<blockquote>
+<p>FASTQ Quality Control yielded <em>[estimate]</em> (95% CI <em>[lower, upper]</em>, p = <em>[value]</em>). <em>[Diagnostic / assumption summary]</em>. <em>[Sensitivity analysis result]</em>.</p>
+</blockquote>
+<p><strong>Reviewer checklist for this method.</strong> → <a href="../chapters/12-bioinformatics/fastq-quality-control.Rmd#for-reviewers"><code>fastq-quality-control</code> — For Reviewers</a></p>
+<!-- TODO:reporting-template -->
+</div>
+<div id="finding-marker-genes" class="section level3 hasAnchor" number="23.0.14">
+<h3><span class="header-section-number">23.0.14</span> Finding Marker Genes<a href="arrive-animal-research.html#finding-marker-genes" class="anchor-section" aria-label="Anchor link to header"></a></h3>
+<p><strong>Methods paragraph (copy-paste, fill in italics):</strong></p>
+<blockquote>
+<p><em>[N=]</em> participants/observations were analysed using <strong>Finding Marker Genes</strong> as implemented in <em>[package vX.Y]</em> in R <em>[vX.Y]</em>. Assumptions were checked: <em>[list checks performed]</em>. <em>[Effect size with 95% confidence interval reported as the primary outcome]</em>. Two-sided p-values use <em>α = 0.05</em>; <em>[multiple-comparison adjustment if any]</em>.</p>
+</blockquote>
+<p><strong>Results paragraph (copy-paste):</strong></p>
+<blockquote>
+<p>Finding Marker Genes yielded <em>[estimate]</em> (95% CI <em>[lower, upper]</em>, p = <em>[value]</em>). <em>[Diagnostic / assumption summary]</em>. <em>[Sensitivity analysis result]</em>.</p>
+</blockquote>
+<p><strong>Reviewer checklist for this method.</strong> → <a href="../chapters/12-bioinformatics/scrna-marker-genes.Rmd#for-reviewers"><code>scrna-marker-genes</code> — For Reviewers</a></p>
+<!-- TODO:reporting-template -->
+</div>
+<div id="gene-annotation-with-biomart" class="section level3 hasAnchor" number="23.0.15">
+<h3><span class="header-section-number">23.0.15</span> Gene Annotation with biomaRt<a href="arrive-animal-research.html#gene-annotation-with-biomart" class="anchor-section" aria-label="Anchor link to header"></a></h3>
+<p><strong>Methods paragraph (copy-paste, fill in italics):</strong></p>
+<blockquote>
+<p><em>[N=]</em> participants/observations were analysed using <strong>Gene Annotation with biomaRt</strong> as implemented in <em>[package vX.Y]</em> in R <em>[vX.Y]</em>. Assumptions were checked: <em>[list checks performed]</em>. <em>[Effect size with 95% confidence interval reported as the primary outcome]</em>. Two-sided p-values use <em>α = 0.05</em>; <em>[multiple-comparison adjustment if any]</em>.</p>
+</blockquote>
+<p><strong>Results paragraph (copy-paste):</strong></p>
+<blockquote>
+<p>Gene Annotation with biomaRt yielded <em>[estimate]</em> (95% CI <em>[lower, upper]</em>, p = <em>[value]</em>). <em>[Diagnostic / assumption summary]</em>. <em>[Sensitivity analysis result]</em>.</p>
+</blockquote>
+<p><strong>Reviewer checklist for this method.</strong> → <a href="../chapters/12-bioinformatics/biomart-annotation.Rmd#for-reviewers"><code>biomart-annotation</code> — For Reviewers</a></p>
+<!-- TODO:reporting-template -->
+</div>
+<div id="gene-ontology-enrichment" class="section level3 hasAnchor" number="23.0.16">
+<h3><span class="header-section-number">23.0.16</span> Gene Ontology Enrichment<a href="arrive-animal-research.html#gene-ontology-enrichment" class="anchor-section" aria-label="Anchor link to header"></a></h3>
+<p><strong>Methods paragraph (copy-paste, fill in italics):</strong></p>
+<blockquote>
+<p><em>[N=]</em> participants/observations were analysed using <strong>Gene Ontology Enrichment</strong> as implemented in <em>[package vX.Y]</em> in R <em>[vX.Y]</em>. Assumptions were checked: <em>[list checks performed]</em>. <em>[Effect size with 95% confidence interval reported as the primary outcome]</em>. Two-sided p-values use <em>α = 0.05</em>; <em>[multiple-comparison adjustment if any]</em>.</p>
+</blockquote>
+<p><strong>Results paragraph (copy-paste):</strong></p>
+<blockquote>
+<p>Gene Ontology Enrichment yielded <em>[estimate]</em> (95% CI <em>[lower, upper]</em>, p = <em>[value]</em>). <em>[Diagnostic / assumption summary]</em>. <em>[Sensitivity analysis result]</em>.</p>
+</blockquote>
+<p><strong>Reviewer checklist for this method.</strong> → <a href="../chapters/12-bioinformatics/gene-ontology-enrichment.Rmd#for-reviewers"><code>gene-ontology-enrichment</code> — For Reviewers</a></p>
+<!-- TODO:reporting-template -->
+</div>
+<div id="gsea-preranked-analysis" class="section level3 hasAnchor" number="23.0.17">
+<h3><span class="header-section-number">23.0.17</span> GSEA Preranked Analysis<a href="arrive-animal-research.html#gsea-preranked-analysis" class="anchor-section" aria-label="Anchor link to header"></a></h3>
+<p><strong>Methods paragraph (copy-paste, fill in italics):</strong></p>
+<blockquote>
+<p><em>[N=]</em> participants/observations were analysed using <strong>GSEA Preranked Analysis</strong> as implemented in <em>[package vX.Y]</em> in R <em>[vX.Y]</em>. Assumptions were checked: <em>[list checks performed]</em>. <em>[Effect size with 95% confidence interval reported as the primary outcome]</em>. Two-sided p-values use <em>α = 0.05</em>; <em>[multiple-comparison adjustment if any]</em>.</p>
+</blockquote>
+<p><strong>Results paragraph (copy-paste):</strong></p>
+<blockquote>
+<p>GSEA Preranked Analysis yielded <em>[estimate]</em> (95% CI <em>[lower, upper]</em>, p = <em>[value]</em>). <em>[Diagnostic / assumption summary]</em>. <em>[Sensitivity analysis result]</em>.</p>
+</blockquote>
+<p><strong>Reviewer checklist for this method.</strong> → <a href="../chapters/12-bioinformatics/gsea-preranked.Rmd#for-reviewers"><code>gsea-preranked</code> — For Reviewers</a></p>
+<!-- TODO:reporting-template -->
+</div>
+<div id="gsva-single-sample-enrichment" class="section level3 hasAnchor" number="23.0.18">
+<h3><span class="header-section-number">23.0.18</span> GSVA Single-Sample Enrichment<a href="arrive-animal-research.html#gsva-single-sample-enrichment" class="anchor-section" aria-label="Anchor link to header"></a></h3>
+<p><strong>Methods paragraph (copy-paste, fill in italics):</strong></p>
+<blockquote>
+<p><em>[N=]</em> participants/observations were analysed using <strong>GSVA Single-Sample Enrichment</strong> as implemented in <em>[package vX.Y]</em> in R <em>[vX.Y]</em>. Assumptions were checked: <em>[list checks performed]</em>. <em>[Effect size with 95% confidence interval reported as the primary outcome]</em>. Two-sided p-values use <em>α = 0.05</em>; <em>[multiple-comparison adjustment if any]</em>.</p>
+</blockquote>
+<p><strong>Results paragraph (copy-paste):</strong></p>
+<blockquote>
+<p>GSVA Single-Sample Enrichment yielded <em>[estimate]</em> (95% CI <em>[lower, upper]</em>, p = <em>[value]</em>). <em>[Diagnostic / assumption summary]</em>. <em>[Sensitivity analysis result]</em>.</p>
+</blockquote>
+<p><strong>Reviewer checklist for this method.</strong> → <a href="../chapters/12-bioinformatics/gsva-single-sample.Rmd#for-reviewers"><code>gsva-single-sample</code> — For Reviewers</a></p>
+<!-- TODO:reporting-template -->
+</div>
+<div id="heatmaps-for-rna-seq" class="section level3 hasAnchor" number="23.0.19">
+<h3><span class="header-section-number">23.0.19</span> Heatmaps for RNA-seq<a href="arrive-animal-research.html#heatmaps-for-rna-seq" class="anchor-section" aria-label="Anchor link to header"></a></h3>
+<p><strong>Methods paragraph (copy-paste, fill in italics):</strong></p>
+<blockquote>
+<p><em>[N=]</em> participants/observations were analysed using <strong>Heatmaps for RNA-seq</strong> as implemented in <em>[package vX.Y]</em> in R <em>[vX.Y]</em>. Assumptions were checked: <em>[list checks performed]</em>. <em>[Effect size with 95% confidence interval reported as the primary outcome]</em>. Two-sided p-values use <em>α = 0.05</em>; <em>[multiple-comparison adjustment if any]</em>.</p>
+</blockquote>
+<p><strong>Results paragraph (copy-paste):</strong></p>
+<blockquote>
+<p>Heatmaps for RNA-seq yielded <em>[estimate]</em> (95% CI <em>[lower, upper]</em>, p = <em>[value]</em>). <em>[Diagnostic / assumption summary]</em>. <em>[Sensitivity analysis result]</em>.</p>
+</blockquote>
+<p><strong>Reviewer checklist for this method.</strong> → <a href="../chapters/12-bioinformatics/heatmaps-rnaseq.Rmd#for-reviewers"><code>heatmaps-rnaseq</code> — For Reviewers</a></p>
+<!-- TODO:reporting-template -->
+</div>
+<div id="integration-with-harmony" class="section level3 hasAnchor" number="23.0.20">
+<h3><span class="header-section-number">23.0.20</span> Integration with Harmony<a href="arrive-animal-research.html#integration-with-harmony" class="anchor-section" aria-label="Anchor link to header"></a></h3>
+<p><strong>Methods paragraph (copy-paste, fill in italics):</strong></p>
+<blockquote>
+<p><em>[N=]</em> participants/observations were analysed using <strong>Integration with Harmony</strong> as implemented in <em>[package vX.Y]</em> in R <em>[vX.Y]</em>. Assumptions were checked: <em>[list checks performed]</em>. <em>[Effect size with 95% confidence interval reported as the primary outcome]</em>. Two-sided p-values use <em>α = 0.05</em>; <em>[multiple-comparison adjustment if any]</em>.</p>
+</blockquote>
+<p><strong>Results paragraph (copy-paste):</strong></p>
+<blockquote>
+<p>Integration with Harmony yielded <em>[estimate]</em> (95% CI <em>[lower, upper]</em>, p = <em>[value]</em>). <em>[Diagnostic / assumption summary]</em>. <em>[Sensitivity analysis result]</em>.</p>
+</blockquote>
+<p><strong>Reviewer checklist for this method.</strong> → <a href="../chapters/12-bioinformatics/scrna-integration-harmony.Rmd#for-reviewers"><code>scrna-integration-harmony</code> — For Reviewers</a></p>
+<!-- TODO:reporting-template -->
+</div>
+<div id="kegg-pathway-enrichment" class="section level3 hasAnchor" number="23.0.21">
+<h3><span class="header-section-number">23.0.21</span> KEGG Pathway Enrichment<a href="arrive-animal-research.html#kegg-pathway-enrichment" class="anchor-section" aria-label="Anchor link to header"></a></h3>
+<p><strong>Methods paragraph (copy-paste, fill in italics):</strong></p>
+<blockquote>
+<p><em>[N=]</em> participants/observations were analysed using <strong>KEGG Pathway Enrichment</strong> as implemented in <em>[package vX.Y]</em> in R <em>[vX.Y]</em>. Assumptions were checked: <em>[list checks performed]</em>. <em>[Effect size with 95% confidence interval reported as the primary outcome]</em>. Two-sided p-values use <em>α = 0.05</em>; <em>[multiple-comparison adjustment if any]</em>.</p>
+</blockquote>
+<p><strong>Results paragraph (copy-paste):</strong></p>
+<blockquote>
+<p>KEGG Pathway Enrichment yielded <em>[estimate]</em> (95% CI <em>[lower, upper]</em>, p = <em>[value]</em>). <em>[Diagnostic / assumption summary]</em>. <em>[Sensitivity analysis result]</em>.</p>
+</blockquote>
+<p><strong>Reviewer checklist for this method.</strong> → <a href="../chapters/12-bioinformatics/pathway-enrichment-kegg.Rmd#for-reviewers"><code>pathway-enrichment-kegg</code> — For Reviewers</a></p>
+<!-- TODO:reporting-template -->
+</div>
+<div id="ma-plots" class="section level3 hasAnchor" number="23.0.22">
+<h3><span class="header-section-number">23.0.22</span> MA Plots<a href="arrive-animal-research.html#ma-plots" class="anchor-section" aria-label="Anchor link to header"></a></h3>
+<p><strong>Methods paragraph (copy-paste, fill in italics):</strong></p>
+<blockquote>
+<p><em>[N=]</em> participants/observations were analysed using <strong>MA Plots</strong> as implemented in <em>[package vX.Y]</em> in R <em>[vX.Y]</em>. Assumptions were checked: <em>[list checks performed]</em>. <em>[Effect size with 95% confidence interval reported as the primary outcome]</em>. Two-sided p-values use <em>α = 0.05</em>; <em>[multiple-comparison adjustment if any]</em>.</p>
+</blockquote>
+<p><strong>Results paragraph (copy-paste):</strong></p>
+<blockquote>
+<p>MA Plots yielded <em>[estimate]</em> (95% CI <em>[lower, upper]</em>, p = <em>[value]</em>). <em>[Diagnostic / assumption summary]</em>. <em>[Sensitivity analysis result]</em>.</p>
+</blockquote>
+<p><strong>Reviewer checklist for this method.</strong> → <a href="../chapters/12-bioinformatics/ma-plots.Rmd#for-reviewers"><code>ma-plots</code> — For Reviewers</a></p>
+<!-- TODO:reporting-template -->
+</div>
+<div id="metagenomic-profiling" class="section level3 hasAnchor" number="23.0.23">
+<h3><span class="header-section-number">23.0.23</span> Metagenomic Profiling<a href="arrive-animal-research.html#metagenomic-profiling" class="anchor-section" aria-label="Anchor link to header"></a></h3>
+<p><strong>Methods paragraph (copy-paste, fill in italics):</strong></p>
+<blockquote>
+<p><em>[N=]</em> participants/observations were analysed using <strong>Metagenomic Profiling</strong> as implemented in <em>[package vX.Y]</em> in R <em>[vX.Y]</em>. Assumptions were checked: <em>[list checks performed]</em>. <em>[Effect size with 95% confidence interval reported as the primary outcome]</em>. Two-sided p-values use <em>α = 0.05</em>; <em>[multiple-comparison adjustment if any]</em>.</p>
+</blockquote>
+<p><strong>Results paragraph (copy-paste):</strong></p>
+<blockquote>
+<p>Metagenomic Profiling yielded <em>[estimate]</em> (95% CI <em>[lower, upper]</em>, p = <em>[value]</em>). <em>[Diagnostic / assumption summary]</em>. <em>[Sensitivity analysis result]</em>.</p>
+</blockquote>
+<p><strong>Reviewer checklist for this method.</strong> → <a href="../chapters/12-bioinformatics/metagenomic-profiling.Rmd#for-reviewers"><code>metagenomic-profiling</code> — For Reviewers</a></p>
+<!-- TODO:reporting-template -->
+</div>
+<div id="microbiome-analysis-with-dada2" class="section level3 hasAnchor" number="23.0.24">
+<h3><span class="header-section-number">23.0.24</span> Microbiome Analysis with DADA2<a href="arrive-animal-research.html#microbiome-analysis-with-dada2" class="anchor-section" aria-label="Anchor link to header"></a></h3>
+<p><strong>Methods paragraph (copy-paste, fill in italics):</strong></p>
+<blockquote>
+<p><em>[N=]</em> participants/observations were analysed using <strong>Microbiome Analysis with DADA2</strong> as implemented in <em>[package vX.Y]</em> in R <em>[vX.Y]</em>. Assumptions were checked: <em>[list checks performed]</em>. <em>[Effect size with 95% confidence interval reported as the primary outcome]</em>. Two-sided p-values use <em>α = 0.05</em>; <em>[multiple-comparison adjustment if any]</em>.</p>
+</blockquote>
+<p><strong>Results paragraph (copy-paste):</strong></p>
+<blockquote>
+<p>Microbiome Analysis with DADA2 yielded <em>[estimate]</em> (95% CI <em>[lower, upper]</em>, p = <em>[value]</em>). <em>[Diagnostic / assumption summary]</em>. <em>[Sensitivity analysis result]</em>.</p>
+</blockquote>
+<p><strong>Reviewer checklist for this method.</strong> → <a href="../chapters/12-bioinformatics/microbiome-dada2.Rmd#for-reviewers"><code>microbiome-dada2</code> — For Reviewers</a></p>
+<!-- TODO:reporting-template -->
+</div>
+<div id="microbiome-diversity-metrics" class="section level3 hasAnchor" number="23.0.25">
+<h3><span class="header-section-number">23.0.25</span> Microbiome Diversity Metrics<a href="arrive-animal-research.html#microbiome-diversity-metrics" class="anchor-section" aria-label="Anchor link to header"></a></h3>
+<p><strong>Methods paragraph (copy-paste, fill in italics):</strong></p>
+<blockquote>
+<p><em>[N=]</em> participants/observations were analysed using <strong>Microbiome Diversity Metrics</strong> as implemented in <em>[package vX.Y]</em> in R <em>[vX.Y]</em>. Assumptions were checked: <em>[list checks performed]</em>. <em>[Effect size with 95% confidence interval reported as the primary outcome]</em>. Two-sided p-values use <em>α = 0.05</em>; <em>[multiple-comparison adjustment if any]</em>.</p>
+</blockquote>
+<p><strong>Results paragraph (copy-paste):</strong></p>
+<blockquote>
+<p>Microbiome Diversity Metrics yielded <em>[estimate]</em> (95% CI <em>[lower, upper]</em>, p = <em>[value]</em>). <em>[Diagnostic / assumption summary]</em>. <em>[Sensitivity analysis result]</em>.</p>
+</blockquote>
+<p><strong>Reviewer checklist for this method.</strong> → <a href="../chapters/12-bioinformatics/microbiome-diversity.Rmd#for-reviewers"><code>microbiome-diversity</code> — For Reviewers</a></p>
+<!-- TODO:reporting-template -->
+</div>
+<div id="multi-omics-integration" class="section level3 hasAnchor" number="23.0.26">
+<h3><span class="header-section-number">23.0.26</span> Multi-Omics Integration<a href="arrive-animal-research.html#multi-omics-integration" class="anchor-section" aria-label="Anchor link to header"></a></h3>
+<p><strong>Methods paragraph (copy-paste, fill in italics):</strong></p>
+<blockquote>
+<p><em>[N=]</em> participants/observations were analysed using <strong>Multi-Omics Integration</strong> as implemented in <em>[package vX.Y]</em> in R <em>[vX.Y]</em>. Assumptions were checked: <em>[list checks performed]</em>. <em>[Effect size with 95% confidence interval reported as the primary outcome]</em>. Two-sided p-values use <em>α = 0.05</em>; <em>[multiple-comparison adjustment if any]</em>.</p>
+</blockquote>
+<p><strong>Results paragraph (copy-paste):</strong></p>
+<blockquote>
+<p>Multi-Omics Integration yielded <em>[estimate]</em> (95% CI <em>[lower, upper]</em>, p = <em>[value]</em>). <em>[Diagnostic / assumption summary]</em>. <em>[Sensitivity analysis result]</em>.</p>
+</blockquote>
+<p><strong>Reviewer checklist for this method.</strong> → <a href="../chapters/12-bioinformatics/multiomics-integration.Rmd#for-reviewers"><code>multiomics-integration</code> — For Reviewers</a></p>
+<!-- TODO:reporting-template -->
+</div>
+<div id="multiple-sequence-alignment" class="section level3 hasAnchor" number="23.0.27">
+<h3><span class="header-section-number">23.0.27</span> Multiple Sequence Alignment<a href="arrive-animal-research.html#multiple-sequence-alignment" class="anchor-section" aria-label="Anchor link to header"></a></h3>
+<p><strong>Methods paragraph (copy-paste, fill in italics):</strong></p>
+<blockquote>
+<p><em>[N=]</em> participants/observations were analysed using <strong>Multiple Sequence Alignment</strong> as implemented in <em>[package vX.Y]</em> in R <em>[vX.Y]</em>. Assumptions were checked: <em>[list checks performed]</em>. <em>[Effect size with 95% confidence interval reported as the primary outcome]</em>. Two-sided p-values use <em>α = 0.05</em>; <em>[multiple-comparison adjustment if any]</em>.</p>
+</blockquote>
+<p><strong>Results paragraph (copy-paste):</strong></p>
+<blockquote>
+<p>Multiple Sequence Alignment yielded <em>[estimate]</em> (95% CI <em>[lower, upper]</em>, p = <em>[value]</em>). <em>[Diagnostic / assumption summary]</em>. <em>[Sensitivity analysis result]</em>.</p>
+</blockquote>
+<p><strong>Reviewer checklist for this method.</strong> → <a href="../chapters/12-bioinformatics/msa-biostrings.Rmd#for-reviewers"><code>msa-biostrings</code> — For Reviewers</a></p>
+<!-- TODO:reporting-template -->
+</div>
+<div id="pca-of-rna-seq-samples" class="section level3 hasAnchor" number="23.0.28">
+<h3><span class="header-section-number">23.0.28</span> PCA of RNA-seq Samples<a href="arrive-animal-research.html#pca-of-rna-seq-samples" class="anchor-section" aria-label="Anchor link to header"></a></h3>
+<p><strong>Methods paragraph (copy-paste, fill in italics):</strong></p>
+<blockquote>
+<p><em>[N=]</em> participants/observations were analysed using <strong>PCA of RNA-seq Samples</strong> as implemented in <em>[package vX.Y]</em> in R <em>[vX.Y]</em>. Assumptions were checked: <em>[list checks performed]</em>. <em>[Effect size with 95% confidence interval reported as the primary outcome]</em>. Two-sided p-values use <em>α = 0.05</em>; <em>[multiple-comparison adjustment if any]</em>.</p>
+</blockquote>
+<p><strong>Results paragraph (copy-paste):</strong></p>
+<blockquote>
+<p>PCA of RNA-seq Samples yielded <em>[estimate]</em> (95% CI <em>[lower, upper]</em>, p = <em>[value]</em>). <em>[Diagnostic / assumption summary]</em>. <em>[Sensitivity analysis result]</em>.</p>
+</blockquote>
+<p><strong>Reviewer checklist for this method.</strong> → <a href="../chapters/12-bioinformatics/pca-of-rnaseq.Rmd#for-reviewers"><code>pca-of-rnaseq</code> — For Reviewers</a></p>
+<!-- TODO:reporting-template -->
+</div>
+<div id="phylogenetic-trees-with-ape" class="section level3 hasAnchor" number="23.0.29">
+<h3><span class="header-section-number">23.0.29</span> Phylogenetic Trees with ape<a href="arrive-animal-research.html#phylogenetic-trees-with-ape" class="anchor-section" aria-label="Anchor link to header"></a></h3>
+<p><strong>Methods paragraph (copy-paste, fill in italics):</strong></p>
+<blockquote>
+<p><em>[N=]</em> participants/observations were analysed using <strong>Phylogenetic Trees with ape</strong> as implemented in <em>[package vX.Y]</em> in R <em>[vX.Y]</em>. Assumptions were checked: <em>[list checks performed]</em>. <em>[Effect size with 95% confidence interval reported as the primary outcome]</em>. Two-sided p-values use <em>α = 0.05</em>; <em>[multiple-comparison adjustment if any]</em>.</p>
+</blockquote>
+<p><strong>Results paragraph (copy-paste):</strong></p>
+<blockquote>
+<p>Phylogenetic Trees with ape yielded <em>[estimate]</em> (95% CI <em>[lower, upper]</em>, p = <em>[value]</em>). <em>[Diagnostic / assumption summary]</em>. <em>[Sensitivity analysis result]</em>.</p>
+</blockquote>
+<p><strong>Reviewer checklist for this method.</strong> → <a href="../chapters/12-bioinformatics/phylogenetic-trees-ape.Rmd#for-reviewers"><code>phylogenetic-trees-ape</code> — For Reviewers</a></p>
+<!-- TODO:reporting-template -->
+</div>
+<div id="population-genetics-basics" class="section level3 hasAnchor" number="23.0.30">
+<h3><span class="header-section-number">23.0.30</span> Population Genetics Basics<a href="arrive-animal-research.html#population-genetics-basics" class="anchor-section" aria-label="Anchor link to header"></a></h3>
+<p><strong>Methods paragraph (copy-paste, fill in italics):</strong></p>
+<blockquote>
+<p><em>[N=]</em> participants/observations were analysed using <strong>Population Genetics Basics</strong> as implemented in <em>[package vX.Y]</em> in R <em>[vX.Y]</em>. Assumptions were checked: <em>[list checks performed]</em>. <em>[Effect size with 95% confidence interval reported as the primary outcome]</em>. Two-sided p-values use <em>α = 0.05</em>; <em>[multiple-comparison adjustment if any]</em>.</p>
+</blockquote>
+<p><strong>Results paragraph (copy-paste):</strong></p>
+<blockquote>
+<p>Population Genetics Basics yielded <em>[estimate]</em> (95% CI <em>[lower, upper]</em>, p = <em>[value]</em>). <em>[Diagnostic / assumption summary]</em>. <em>[Sensitivity analysis result]</em>.</p>
+</blockquote>
+<p><strong>Reviewer checklist for this method.</strong> → <a href="../chapters/12-bioinformatics/population-genetics-basics.Rmd#for-reviewers"><code>population-genetics-basics</code> — For Reviewers</a></p>
+<!-- TODO:reporting-template -->
+</div>
+<div id="protein-structure-prediction" class="section level3 hasAnchor" number="23.0.31">
+<h3><span class="header-section-number">23.0.31</span> Protein Structure Prediction<a href="arrive-animal-research.html#protein-structure-prediction" class="anchor-section" aria-label="Anchor link to header"></a></h3>
+<p><strong>Methods paragraph (copy-paste, fill in italics):</strong></p>
+<blockquote>
+<p><em>[N=]</em> participants/observations were analysed using <strong>Protein Structure Prediction</strong> as implemented in <em>[package vX.Y]</em> in R <em>[vX.Y]</em>. Assumptions were checked: <em>[list checks performed]</em>. <em>[Effect size with 95% confidence interval reported as the primary outcome]</em>. Two-sided p-values use <em>α = 0.05</em>; <em>[multiple-comparison adjustment if any]</em>.</p>
+</blockquote>
+<p><strong>Results paragraph (copy-paste):</strong></p>
+<blockquote>
+<p>Protein Structure Prediction yielded <em>[estimate]</em> (95% CI <em>[lower, upper]</em>, p = <em>[value]</em>). <em>[Diagnostic / assumption summary]</em>. <em>[Sensitivity analysis result]</em>.</p>
+</blockquote>
+<p><strong>Reviewer checklist for this method.</strong> → <a href="../chapters/12-bioinformatics/protein-structure-prediction.Rmd#for-reviewers"><code>protein-structure-prediction</code> — For Reviewers</a></p>
+<!-- TODO:reporting-template -->
+</div>
+<div id="proteomics-with-msstats" class="section level3 hasAnchor" number="23.0.32">
+<h3><span class="header-section-number">23.0.32</span> Proteomics with MSstats<a href="arrive-animal-research.html#proteomics-with-msstats" class="anchor-section" aria-label="Anchor link to header"></a></h3>
+<p><strong>Methods paragraph (copy-paste, fill in italics):</strong></p>
+<blockquote>
+<p><em>[N=]</em> participants/observations were analysed using <strong>Proteomics with MSstats</strong> as implemented in <em>[package vX.Y]</em> in R <em>[vX.Y]</em>. Assumptions were checked: <em>[list checks performed]</em>. <em>[Effect size with 95% confidence interval reported as the primary outcome]</em>. Two-sided p-values use <em>α = 0.05</em>; <em>[multiple-comparison adjustment if any]</em>.</p>
+</blockquote>
+<p><strong>Results paragraph (copy-paste):</strong></p>
+<blockquote>
+<p>Proteomics with MSstats yielded <em>[estimate]</em> (95% CI <em>[lower, upper]</em>, p = <em>[value]</em>). <em>[Diagnostic / assumption summary]</em>. <em>[Sensitivity analysis result]</em>.</p>
+</blockquote>
+<p><strong>Reviewer checklist for this method.</strong> → <a href="../chapters/12-bioinformatics/proteomics-msstats.Rmd#for-reviewers"><code>proteomics-msstats</code> — For Reviewers</a></p>
+<!-- TODO:reporting-template -->
+</div>
+<div id="pseudoalignment-with-salmon-and-kallisto" class="section level3 hasAnchor" number="23.0.33">
+<h3><span class="header-section-number">23.0.33</span> Pseudoalignment with Salmon and Kallisto<a href="arrive-animal-research.html#pseudoalignment-with-salmon-and-kallisto" class="anchor-section" aria-label="Anchor link to header"></a></h3>
+<p><strong>Methods paragraph (copy-paste, fill in italics):</strong></p>
+<blockquote>
+<p><em>[N=]</em> participants/observations were analysed using <strong>Pseudoalignment with Salmon and Kallisto</strong> as implemented in <em>[package vX.Y]</em> in R <em>[vX.Y]</em>. Assumptions were checked: <em>[list checks performed]</em>. <em>[Effect size with 95% confidence interval reported as the primary outcome]</em>. Two-sided p-values use <em>α = 0.05</em>; <em>[multiple-comparison adjustment if any]</em>.</p>
+</blockquote>
+<p><strong>Results paragraph (copy-paste):</strong></p>
+<blockquote>
+<p>Pseudoalignment with Salmon and Kallisto yielded <em>[estimate]</em> (95% CI <em>[lower, upper]</em>, p = <em>[value]</em>). <em>[Diagnostic / assumption summary]</em>. <em>[Sensitivity analysis result]</em>.</p>
+</blockquote>
+<p><strong>Reviewer checklist for this method.</strong> → <a href="../chapters/12-bioinformatics/salmon-kallisto-pseudoalignment.Rmd#for-reviewers"><code>salmon-kallisto-pseudoalignment</code> — For Reviewers</a></p>
+<!-- TODO:reporting-template -->
+</div>
+<div id="read-trimming-and-adapter-removal" class="section level3 hasAnchor" number="23.0.34">
+<h3><span class="header-section-number">23.0.34</span> Read Trimming and Adapter Removal<a href="arrive-animal-research.html#read-trimming-and-adapter-removal" class="anchor-section" aria-label="Anchor link to header"></a></h3>
+<p><strong>Methods paragraph (copy-paste, fill in italics):</strong></p>
+<blockquote>
+<p><em>[N=]</em> participants/observations were analysed using <strong>Read Trimming and Adapter Removal</strong> as implemented in <em>[package vX.Y]</em> in R <em>[vX.Y]</em>. Assumptions were checked: <em>[list checks performed]</em>. <em>[Effect size with 95% confidence interval reported as the primary outcome]</em>. Two-sided p-values use <em>α = 0.05</em>; <em>[multiple-comparison adjustment if any]</em>.</p>
+</blockquote>
+<p><strong>Results paragraph (copy-paste):</strong></p>
+<blockquote>
+<p>Read Trimming and Adapter Removal yielded <em>[estimate]</em> (95% CI <em>[lower, upper]</em>, p = <em>[value]</em>). <em>[Diagnostic / assumption summary]</em>. <em>[Sensitivity analysis result]</em>.</p>
+</blockquote>
+<p><strong>Reviewer checklist for this method.</strong> → <a href="../chapters/12-bioinformatics/read-trimming-adapters.Rmd#for-reviewers"><code>read-trimming-adapters</code> — For Reviewers</a></p>
+<!-- TODO:reporting-template -->
+</div>
+<div id="rna-seq-normalisation" class="section level3 hasAnchor" number="23.0.35">
+<h3><span class="header-section-number">23.0.35</span> RNA-seq Normalisation<a href="arrive-animal-research.html#rna-seq-normalisation" class="anchor-section" aria-label="Anchor link to header"></a></h3>
+<p><strong>Methods paragraph (copy-paste, fill in italics):</strong></p>
+<blockquote>
+<p><em>[N=]</em> participants/observations were analysed using <strong>RNA-seq Normalisation</strong> as implemented in <em>[package vX.Y]</em> in R <em>[vX.Y]</em>. Assumptions were checked: <em>[list checks performed]</em>. <em>[Effect size with 95% confidence interval reported as the primary outcome]</em>. Two-sided p-values use <em>α = 0.05</em>; <em>[multiple-comparison adjustment if any]</em>.</p>
+</blockquote>
+<p><strong>Results paragraph (copy-paste):</strong></p>
+<blockquote>
+<p>RNA-seq Normalisation yielded <em>[estimate]</em> (95% CI <em>[lower, upper]</em>, p = <em>[value]</em>). <em>[Diagnostic / assumption summary]</em>. <em>[Sensitivity analysis result]</em>.</p>
+</blockquote>
+<p><strong>Reviewer checklist for this method.</strong> → <a href="../chapters/12-bioinformatics/rnaseq-normalization.Rmd#for-reviewers"><code>rnaseq-normalization</code> — For Reviewers</a></p>
+<!-- TODO:reporting-template -->
+</div>
+<div id="scrna-clustering" class="section level3 hasAnchor" number="23.0.36">
+<h3><span class="header-section-number">23.0.36</span> scRNA Clustering<a href="arrive-animal-research.html#scrna-clustering" class="anchor-section" aria-label="Anchor link to header"></a></h3>
+<p><strong>Methods paragraph (copy-paste, fill in italics):</strong></p>
+<blockquote>
+<p><em>[N=]</em> participants/observations were analysed using <strong>scRNA Clustering</strong> as implemented in <em>[package vX.Y]</em> in R <em>[vX.Y]</em>. Assumptions were checked: <em>[list checks performed]</em>. <em>[Effect size with 95% confidence interval reported as the primary outcome]</em>. Two-sided p-values use <em>α = 0.05</em>; <em>[multiple-comparison adjustment if any]</em>.</p>
+</blockquote>
+<p><strong>Results paragraph (copy-paste):</strong></p>
+<blockquote>
+<p>scRNA Clustering yielded <em>[estimate]</em> (95% CI <em>[lower, upper]</em>, p = <em>[value]</em>). <em>[Diagnostic / assumption summary]</em>. <em>[Sensitivity analysis result]</em>.</p>
+</blockquote>
+<p><strong>Reviewer checklist for this method.</strong> → <a href="../chapters/12-bioinformatics/scrna-clustering.Rmd#for-reviewers"><code>scrna-clustering</code> — For Reviewers</a></p>
+<!-- TODO:reporting-template -->
+</div>
+<div id="scrna-normalisation" class="section level3 hasAnchor" number="23.0.37">
+<h3><span class="header-section-number">23.0.37</span> scRNA Normalisation<a href="arrive-animal-research.html#scrna-normalisation" class="anchor-section" aria-label="Anchor link to header"></a></h3>
+<p><strong>Methods paragraph (copy-paste, fill in italics):</strong></p>
+<blockquote>
+<p><em>[N=]</em> participants/observations were analysed using <strong>scRNA Normalisation</strong> as implemented in <em>[package vX.Y]</em> in R <em>[vX.Y]</em>. Assumptions were checked: <em>[list checks performed]</em>. <em>[Effect size with 95% confidence interval reported as the primary outcome]</em>. Two-sided p-values use <em>α = 0.05</em>; <em>[multiple-comparison adjustment if any]</em>.</p>
+</blockquote>
+<p><strong>Results paragraph (copy-paste):</strong></p>
+<blockquote>
+<p>scRNA Normalisation yielded <em>[estimate]</em> (95% CI <em>[lower, upper]</em>, p = <em>[value]</em>). <em>[Diagnostic / assumption summary]</em>. <em>[Sensitivity analysis result]</em>.</p>
+</blockquote>
+<p><strong>Reviewer checklist for this method.</strong> → <a href="../chapters/12-bioinformatics/scrna-normalization.Rmd#for-reviewers"><code>scrna-normalization</code> — For Reviewers</a></p>
+<!-- TODO:reporting-template -->
+</div>
+<div id="scrna-qc-and-filtering" class="section level3 hasAnchor" number="23.0.38">
+<h3><span class="header-section-number">23.0.38</span> scRNA QC and Filtering<a href="arrive-animal-research.html#scrna-qc-and-filtering" class="anchor-section" aria-label="Anchor link to header"></a></h3>
+<p><strong>Methods paragraph (copy-paste, fill in italics):</strong></p>
+<blockquote>
+<p><em>[N=]</em> participants/observations were analysed using <strong>scRNA QC and Filtering</strong> as implemented in <em>[package vX.Y]</em> in R <em>[vX.Y]</em>. Assumptions were checked: <em>[list checks performed]</em>. <em>[Effect size with 95% confidence interval reported as the primary outcome]</em>. Two-sided p-values use <em>α = 0.05</em>; <em>[multiple-comparison adjustment if any]</em>.</p>
+</blockquote>
+<p><strong>Results paragraph (copy-paste):</strong></p>
+<blockquote>
+<p>scRNA QC and Filtering yielded <em>[estimate]</em> (95% CI <em>[lower, upper]</em>, p = <em>[value]</em>). <em>[Diagnostic / assumption summary]</em>. <em>[Sensitivity analysis result]</em>.</p>
+</blockquote>
+<p><strong>Reviewer checklist for this method.</strong> → <a href="../chapters/12-bioinformatics/scrna-qc-filtering.Rmd#for-reviewers"><code>scrna-qc-filtering</code> — For Reviewers</a></p>
+<!-- TODO:reporting-template -->
+</div>
+<div id="sequence-alignment-overview" class="section level3 hasAnchor" number="23.0.39">
+<h3><span class="header-section-number">23.0.39</span> Sequence Alignment: Overview<a href="arrive-animal-research.html#sequence-alignment-overview" class="anchor-section" aria-label="Anchor link to header"></a></h3>
+<p><strong>Methods paragraph (copy-paste, fill in italics):</strong></p>
+<blockquote>
+<p><em>[N=]</em> participants/observations were analysed using <strong>Sequence Alignment: Overview</strong> as implemented in <em>[package vX.Y]</em> in R <em>[vX.Y]</em>. Assumptions were checked: <em>[list checks performed]</em>. <em>[Effect size with 95% confidence interval reported as the primary outcome]</em>. Two-sided p-values use <em>α = 0.05</em>; <em>[multiple-comparison adjustment if any]</em>.</p>
+</blockquote>
+<p><strong>Results paragraph (copy-paste):</strong></p>
+<blockquote>
+<p>Sequence Alignment: Overview yielded <em>[estimate]</em> (95% CI <em>[lower, upper]</em>, p = <em>[value]</em>). <em>[Diagnostic / assumption summary]</em>. <em>[Sensitivity analysis result]</em>.</p>
+</blockquote>
+<p><strong>Reviewer checklist for this method.</strong> → <a href="../chapters/12-bioinformatics/sequence-alignment-overview.Rmd#for-reviewers"><code>sequence-alignment-overview</code> — For Reviewers</a></p>
+<!-- TODO:reporting-template -->
+</div>
+<div id="single-cell-with-seurat" class="section level3 hasAnchor" number="23.0.40">
+<h3><span class="header-section-number">23.0.40</span> Single-Cell with Seurat<a href="arrive-animal-research.html#single-cell-with-seurat" class="anchor-section" aria-label="Anchor link to header"></a></h3>
+<p><strong>Methods paragraph (copy-paste, fill in italics):</strong></p>
+<blockquote>
+<p><em>[N=]</em> participants/observations were analysed using <strong>Single-Cell with Seurat</strong> as implemented in <em>[package vX.Y]</em> in R <em>[vX.Y]</em>. Assumptions were checked: <em>[list checks performed]</em>. <em>[Effect size with 95% confidence interval reported as the primary outcome]</em>. Two-sided p-values use <em>α = 0.05</em>; <em>[multiple-comparison adjustment if any]</em>.</p>
+</blockquote>
+<p><strong>Results paragraph (copy-paste):</strong></p>
+<blockquote>
+<p>Single-Cell with Seurat yielded <em>[estimate]</em> (95% CI <em>[lower, upper]</em>, p = <em>[value]</em>). <em>[Diagnostic / assumption summary]</em>. <em>[Sensitivity analysis result]</em>.</p>
+</blockquote>
+<p><strong>Reviewer checklist for this method.</strong> → <a href="../chapters/12-bioinformatics/single-cell-seurat-intro.Rmd#for-reviewers"><code>single-cell-seurat-intro</code> — For Reviewers</a></p>
+<!-- TODO:reporting-template -->
+</div>
+<div id="spatial-transcriptomics" class="section level3 hasAnchor" number="23.0.41">
+<h3><span class="header-section-number">23.0.41</span> Spatial Transcriptomics<a href="arrive-animal-research.html#spatial-transcriptomics" class="anchor-section" aria-label="Anchor link to header"></a></h3>
+<p><strong>Methods paragraph (copy-paste, fill in italics):</strong></p>
+<blockquote>
+<p><em>[N=]</em> participants/observations were analysed using <strong>Spatial Transcriptomics</strong> as implemented in <em>[package vX.Y]</em> in R <em>[vX.Y]</em>. Assumptions were checked: <em>[list checks performed]</em>. <em>[Effect size with 95% confidence interval reported as the primary outcome]</em>. Two-sided p-values use <em>α = 0.05</em>; <em>[multiple-comparison adjustment if any]</em>.</p>
+</blockquote>
+<p><strong>Results paragraph (copy-paste):</strong></p>
+<blockquote>
+<p>Spatial Transcriptomics yielded <em>[estimate]</em> (95% CI <em>[lower, upper]</em>, p = <em>[value]</em>). <em>[Diagnostic / assumption summary]</em>. <em>[Sensitivity analysis result]</em>.</p>
+</blockquote>
+<p><strong>Reviewer checklist for this method.</strong> → <a href="../chapters/12-bioinformatics/spatial-transcriptomics.Rmd#for-reviewers"><code>spatial-transcriptomics</code> — For Reviewers</a></p>
+<!-- TODO:reporting-template -->
+</div>
+<div id="star-spliced-alignment" class="section level3 hasAnchor" number="23.0.42">
+<h3><span class="header-section-number">23.0.42</span> STAR: Spliced Alignment<a href="arrive-animal-research.html#star-spliced-alignment" class="anchor-section" aria-label="Anchor link to header"></a></h3>
+<p><strong>Methods paragraph (copy-paste, fill in italics):</strong></p>
+<blockquote>
+<p><em>[N=]</em> participants/observations were analysed using <strong>STAR: Spliced Alignment</strong> as implemented in <em>[package vX.Y]</em> in R <em>[vX.Y]</em>. Assumptions were checked: <em>[list checks performed]</em>. <em>[Effect size with 95% confidence interval reported as the primary outcome]</em>. Two-sided p-values use <em>α = 0.05</em>; <em>[multiple-comparison adjustment if any]</em>.</p>
+</blockquote>
+<p><strong>Results paragraph (copy-paste):</strong></p>
+<blockquote>
+<p>STAR: Spliced Alignment yielded <em>[estimate]</em> (95% CI <em>[lower, upper]</em>, p = <em>[value]</em>). <em>[Diagnostic / assumption summary]</em>. <em>[Sensitivity analysis result]</em>.</p>
+</blockquote>
+<p><strong>Reviewer checklist for this method.</strong> → <a href="../chapters/12-bioinformatics/star-spliced-alignment.Rmd#for-reviewers"><code>star-spliced-alignment</code> — For Reviewers</a></p>
+<!-- TODO:reporting-template -->
+</div>
+<div id="structural-variant-detection" class="section level3 hasAnchor" number="23.0.43">
+<h3><span class="header-section-number">23.0.43</span> Structural Variant Detection<a href="arrive-animal-research.html#structural-variant-detection" class="anchor-section" aria-label="Anchor link to header"></a></h3>
+<p><strong>Methods paragraph (copy-paste, fill in italics):</strong></p>
+<blockquote>
+<p><em>[N=]</em> participants/observations were analysed using <strong>Structural Variant Detection</strong> as implemented in <em>[package vX.Y]</em> in R <em>[vX.Y]</em>. Assumptions were checked: <em>[list checks performed]</em>. <em>[Effect size with 95% confidence interval reported as the primary outcome]</em>. Two-sided p-values use <em>α = 0.05</em>; <em>[multiple-comparison adjustment if any]</em>.</p>
+</blockquote>
+<p><strong>Results paragraph (copy-paste):</strong></p>
+<blockquote>
+<p>Structural Variant Detection yielded <em>[estimate]</em> (95% CI <em>[lower, upper]</em>, p = <em>[value]</em>). <em>[Diagnostic / assumption summary]</em>. <em>[Sensitivity analysis result]</em>.</p>
+</blockquote>
+<p><strong>Reviewer checklist for this method.</strong> → <a href="../chapters/12-bioinformatics/structural-variant-detection.Rmd#for-reviewers"><code>structural-variant-detection</code> — For Reviewers</a></p>
+<!-- TODO:reporting-template -->
+</div>
+<div id="surrogate-variable-analysis-sva" class="section level3 hasAnchor" number="23.0.44">
+<h3><span class="header-section-number">23.0.44</span> Surrogate Variable Analysis (SVA)<a href="arrive-animal-research.html#surrogate-variable-analysis-sva" class="anchor-section" aria-label="Anchor link to header"></a></h3>
+<p><strong>Methods paragraph (copy-paste, fill in italics):</strong></p>
+<blockquote>
+<p><em>[N=]</em> participants/observations were analysed using <strong>Surrogate Variable Analysis (SVA)</strong> as implemented in <em>[package vX.Y]</em> in R <em>[vX.Y]</em>. Assumptions were checked: <em>[list checks performed]</em>. <em>[Effect size with 95% confidence interval reported as the primary outcome]</em>. Two-sided p-values use <em>α = 0.05</em>; <em>[multiple-comparison adjustment if any]</em>.</p>
+</blockquote>
+<p><strong>Results paragraph (copy-paste):</strong></p>
+<blockquote>
+<p>Surrogate Variable Analysis (SVA) yielded <em>[estimate]</em> (95% CI <em>[lower, upper]</em>, p = <em>[value]</em>). <em>[Diagnostic / assumption summary]</em>. <em>[Sensitivity analysis result]</em>.</p>
+</blockquote>
+<p><strong>Reviewer checklist for this method.</strong> → <a href="../chapters/12-bioinformatics/surrogate-variable-analysis-sva.Rmd#for-reviewers"><code>surrogate-variable-analysis-sva</code> — For Reviewers</a></p>
+<!-- TODO:reporting-template -->
+</div>
+<div id="trajectory-analysis" class="section level3 hasAnchor" number="23.0.45">
+<h3><span class="header-section-number">23.0.45</span> Trajectory Analysis<a href="arrive-animal-research.html#trajectory-analysis" class="anchor-section" aria-label="Anchor link to header"></a></h3>
+<p><strong>Methods paragraph (copy-paste, fill in italics):</strong></p>
+<blockquote>
+<p><em>[N=]</em> participants/observations were analysed using <strong>Trajectory Analysis</strong> as implemented in <em>[package vX.Y]</em> in R <em>[vX.Y]</em>. Assumptions were checked: <em>[list checks performed]</em>. <em>[Effect size with 95% confidence interval reported as the primary outcome]</em>. Two-sided p-values use <em>α = 0.05</em>; <em>[multiple-comparison adjustment if any]</em>.</p>
+</blockquote>
+<p><strong>Results paragraph (copy-paste):</strong></p>
+<blockquote>
+<p>Trajectory Analysis yielded <em>[estimate]</em> (95% CI <em>[lower, upper]</em>, p = <em>[value]</em>). <em>[Diagnostic / assumption summary]</em>. <em>[Sensitivity analysis result]</em>.</p>
+</blockquote>
+<p><strong>Reviewer checklist for this method.</strong> → <a href="../chapters/12-bioinformatics/scrna-trajectory-analysis.Rmd#for-reviewers"><code>scrna-trajectory-analysis</code> — For Reviewers</a></p>
+<!-- TODO:reporting-template -->
+</div>
+<div id="transcript-to-gene-summarisation" class="section level3 hasAnchor" number="23.0.46">
+<h3><span class="header-section-number">23.0.46</span> Transcript-to-Gene Summarisation<a href="arrive-animal-research.html#transcript-to-gene-summarisation" class="anchor-section" aria-label="Anchor link to header"></a></h3>
+<p><strong>Methods paragraph (copy-paste, fill in italics):</strong></p>
+<blockquote>
+<p><em>[N=]</em> participants/observations were analysed using <strong>Transcript-to-Gene Summarisation</strong> as implemented in <em>[package vX.Y]</em> in R <em>[vX.Y]</em>. Assumptions were checked: <em>[list checks performed]</em>. <em>[Effect size with 95% confidence interval reported as the primary outcome]</em>. Two-sided p-values use <em>α = 0.05</em>; <em>[multiple-comparison adjustment if any]</em>.</p>
+</blockquote>
+<p><strong>Results paragraph (copy-paste):</strong></p>
+<blockquote>
+<p>Transcript-to-Gene Summarisation yielded <em>[estimate]</em> (95% CI <em>[lower, upper]</em>, p = <em>[value]</em>). <em>[Diagnostic / assumption summary]</em>. <em>[Sensitivity analysis result]</em>.</p>
+</blockquote>
+<p><strong>Reviewer checklist for this method.</strong> → <a href="../chapters/12-bioinformatics/tx-to-gene-summarization.Rmd#for-reviewers"><code>tx-to-gene-summarization</code> — For Reviewers</a></p>
+<!-- TODO:reporting-template -->
+</div>
+<div id="variant-annotation-with-vep" class="section level3 hasAnchor" number="23.0.47">
+<h3><span class="header-section-number">23.0.47</span> Variant Annotation with VEP<a href="arrive-animal-research.html#variant-annotation-with-vep" class="anchor-section" aria-label="Anchor link to header"></a></h3>
+<p><strong>Methods paragraph (copy-paste, fill in italics):</strong></p>
+<blockquote>
+<p><em>[N=]</em> participants/observations were analysed using <strong>Variant Annotation with VEP</strong> as implemented in <em>[package vX.Y]</em> in R <em>[vX.Y]</em>. Assumptions were checked: <em>[list checks performed]</em>. <em>[Effect size with 95% confidence interval reported as the primary outcome]</em>. Two-sided p-values use <em>α = 0.05</em>; <em>[multiple-comparison adjustment if any]</em>.</p>
+</blockquote>
+<p><strong>Results paragraph (copy-paste):</strong></p>
+<blockquote>
+<p>Variant Annotation with VEP yielded <em>[estimate]</em> (95% CI <em>[lower, upper]</em>, p = <em>[value]</em>). <em>[Diagnostic / assumption summary]</em>. <em>[Sensitivity analysis result]</em>.</p>
+</blockquote>
+<p><strong>Reviewer checklist for this method.</strong> → <a href="../chapters/12-bioinformatics/annotation-variant-vep.Rmd#for-reviewers"><code>annotation-variant-vep</code> — For Reviewers</a></p>
+<!-- TODO:reporting-template -->
+</div>
+<div id="variant-calling-with-gatk" class="section level3 hasAnchor" number="23.0.48">
+<h3><span class="header-section-number">23.0.48</span> Variant Calling with GATK<a href="arrive-animal-research.html#variant-calling-with-gatk" class="anchor-section" aria-label="Anchor link to header"></a></h3>
+<p><strong>Methods paragraph (copy-paste, fill in italics):</strong></p>
+<blockquote>
+<p><em>[N=]</em> participants/observations were analysed using <strong>Variant Calling with GATK</strong> as implemented in <em>[package vX.Y]</em> in R <em>[vX.Y]</em>. Assumptions were checked: <em>[list checks performed]</em>. <em>[Effect size with 95% confidence interval reported as the primary outcome]</em>. Two-sided p-values use <em>α = 0.05</em>; <em>[multiple-comparison adjustment if any]</em>.</p>
+</blockquote>
+<p><strong>Results paragraph (copy-paste):</strong></p>
+<blockquote>
+<p>Variant Calling with GATK yielded <em>[estimate]</em> (95% CI <em>[lower, upper]</em>, p = <em>[value]</em>). <em>[Diagnostic / assumption summary]</em>. <em>[Sensitivity analysis result]</em>.</p>
+</blockquote>
+<p><strong>Reviewer checklist for this method.</strong> → <a href="../chapters/12-bioinformatics/variant-calling-gatk.Rmd#for-reviewers"><code>variant-calling-gatk</code> — For Reviewers</a></p>
+<!-- TODO:reporting-template -->
+</div>
+<div id="vcf-manipulation" class="section level3 hasAnchor" number="23.0.49">
+<h3><span class="header-section-number">23.0.49</span> VCF Manipulation<a href="arrive-animal-research.html#vcf-manipulation" class="anchor-section" aria-label="Anchor link to header"></a></h3>
+<p><strong>Methods paragraph (copy-paste, fill in italics):</strong></p>
+<blockquote>
+<p><em>[N=]</em> participants/observations were analysed using <strong>VCF Manipulation</strong> as implemented in <em>[package vX.Y]</em> in R <em>[vX.Y]</em>. Assumptions were checked: <em>[list checks performed]</em>. <em>[Effect size with 95% confidence interval reported as the primary outcome]</em>. Two-sided p-values use <em>α = 0.05</em>; <em>[multiple-comparison adjustment if any]</em>.</p>
+</blockquote>
+<p><strong>Results paragraph (copy-paste):</strong></p>
+<blockquote>
+<p>VCF Manipulation yielded <em>[estimate]</em> (95% CI <em>[lower, upper]</em>, p = <em>[value]</em>). <em>[Diagnostic / assumption summary]</em>. <em>[Sensitivity analysis result]</em>.</p>
+</blockquote>
+<p><strong>Reviewer checklist for this method.</strong> → <a href="../chapters/12-bioinformatics/vcf-manipulation.Rmd#for-reviewers"><code>vcf-manipulation</code> — For Reviewers</a></p>
+<!-- TODO:reporting-template -->
+</div>
+<div id="volcano-plots" class="section level3 hasAnchor" number="23.0.50">
+<h3><span class="header-section-number">23.0.50</span> Volcano Plots<a href="arrive-animal-research.html#volcano-plots" class="anchor-section" aria-label="Anchor link to header"></a></h3>
+<p><strong>Methods paragraph (copy-paste, fill in italics):</strong></p>
+<blockquote>
+<p><em>[N=]</em> participants/observations were analysed using <strong>Volcano Plots</strong> as implemented in <em>[package vX.Y]</em> in R <em>[vX.Y]</em>. Assumptions were checked: <em>[list checks performed]</em>. <em>[Effect size with 95% confidence interval reported as the primary outcome]</em>. Two-sided p-values use <em>α = 0.05</em>; <em>[multiple-comparison adjustment if any]</em>.</p>
+</blockquote>
+<p><strong>Results paragraph (copy-paste):</strong></p>
+<blockquote>
+<p>Volcano Plots yielded <em>[estimate]</em> (95% CI <em>[lower, upper]</em>, p = <em>[value]</em>). <em>[Diagnostic / assumption summary]</em>. <em>[Sensitivity analysis result]</em>.</p>
+</blockquote>
+<p><strong>Reviewer checklist for this method.</strong> → <a href="../chapters/12-bioinformatics/volcano-plots.Rmd#for-reviewers"><code>volcano-plots</code> — For Reviewers</a></p>
+<!-- TODO:reporting-template -->
+
+<div class="callout callout-note">
+<p><strong>Workflow lab:</strong> Goal → Approach → Execution → Check → Report.</p>
+</div>
+</div>
+<div id="learning-objectives-79" class="section level2 hasAnchor" number="23.1">
+<h2><span class="header-section-number">23.1</span> Learning objectives<a href="arrive-animal-research.html#learning-objectives-79" class="anchor-section" aria-label="Anchor link to header"></a></h2>
+<ul>
+<li>Distinguish explanatory from predictive modelling, and choose the
+correct evaluation metric for each.</li>
+<li>Map STROBE, TRIPOD, STARD, and CONSORT onto the study designs each
+is meant for.</li>
+<li>Produce a publication-ready regression table with <code>gtsummary</code> whose
+numbers trace directly to the fitted model.</li>
+</ul>
+</div>
+<div id="prerequisites-648" class="section level2 hasAnchor" number="23.2">
+<h2><span class="header-section-number">23.2</span> Prerequisites<a href="arrive-animal-research.html#prerequisites-648" class="anchor-section" aria-label="Anchor link to header"></a></h2>
+<p>The regression tools covered earlier in the book.</p>
+</div>
+<div id="background-79" class="section level2 hasAnchor" number="23.3">
+<h2><span class="header-section-number">23.3</span> Background<a href="arrive-animal-research.html#background-79" class="anchor-section" aria-label="Anchor link to header"></a></h2>
+<p>Breiman’s 1998 essay <em>The Two Cultures</em> and Shmueli’s 2010 essay <em>To
+Explain or to Predict?</em> draw the same line from opposite sides. In
+explanatory modelling the goal is inference — what is the estimated
+effect of X on Y, adjusted for confounders? — and the right evaluation
+metric is bias-unbiasedness, interval coverage, and interpretability.
+In predictive modelling the goal is accuracy on unseen data, and the
+right evaluation metric is out-of-sample loss, calibration, and
+decision utility. The statistical machinery overlaps but the habits
+around it do not; a regression that makes an excellent explanation often
+makes a lacklustre prediction, and vice versa.</p>
+<p>Reporting guidelines are the mechanism by which the field enforces
+discipline around these two cultures. STROBE for observational studies,
+CONSORT for randomised trials, STARD for diagnostic accuracy, and
+TRIPOD (now TRIPOD-AI) for prediction models each specify the items a
+reader needs to evaluate the claim. A checklist filled in as you write
+is much easier than one filled in at submission.</p>
+</div>
+<div id="setup-79" class="section level2 hasAnchor" number="23.4">
+<h2><span class="header-section-number">23.4</span> Setup<a href="arrive-animal-research.html#setup-79" class="anchor-section" aria-label="Anchor link to header"></a></h2>
+<div class="sourceCode" id="cb1229"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb1229-1"><a href="arrive-animal-research.html#cb1229-1" tabindex="-1"></a><span class="fu">library</span>(tidyverse)</span>
+<span id="cb1229-2"><a href="arrive-animal-research.html#cb1229-2" tabindex="-1"></a><span class="fu">library</span>(gtsummary)</span>
+<span id="cb1229-3"><a href="arrive-animal-research.html#cb1229-3" tabindex="-1"></a><span class="fu">library</span>(broom)</span>
+<span id="cb1229-4"><a href="arrive-animal-research.html#cb1229-4" tabindex="-1"></a><span class="fu">library</span>(palmerpenguins)</span>
+<span id="cb1229-5"><a href="arrive-animal-research.html#cb1229-5" tabindex="-1"></a><span class="fu">set.seed</span>(<span class="dv">42</span>)</span>
+<span id="cb1229-6"><a href="arrive-animal-research.html#cb1229-6" tabindex="-1"></a><span class="fu">theme_set</span>(<span class="fu">theme_minimal</span>(<span class="at">base_size =</span> <span class="dv">12</span>))</span></code></pre></div>
+</div>
+<div id="goal-32" class="section level2 hasAnchor" number="23.5">
+<h2><span class="header-section-number">23.5</span> 1. Goal<a href="arrive-animal-research.html#goal-32" class="anchor-section" aria-label="Anchor link to header"></a></h2>
+<p>Fit a single linear model to the penguins data and present it two ways:
+once as an explanatory analysis (what drives body mass?) and once as a
+predictive model (can we predict body mass on held-out birds?).</p>
+</div>
+<div id="approach-32" class="section level2 hasAnchor" number="23.6">
+<h2><span class="header-section-number">23.6</span> 2. Approach<a href="arrive-animal-research.html#approach-32" class="anchor-section" aria-label="Anchor link to header"></a></h2>
+<div class="sourceCode" id="cb1230"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb1230-1"><a href="arrive-animal-research.html#cb1230-1" tabindex="-1"></a>fit_expl <span class="ot">&lt;-</span> <span class="fu">lm</span>(body_mass_g <span class="sc">~</span> flipper_length_mm <span class="sc">+</span> sex <span class="sc">+</span> species, <span class="at">data =</span> peng)</span></code></pre></div>
+</div>
+<div id="execution-29" class="section level2 hasAnchor" number="23.7">
+<h2><span class="header-section-number">23.7</span> 3. Execution<a href="arrive-animal-research.html#execution-29" class="anchor-section" aria-label="Anchor link to header"></a></h2>
+<div class="sourceCode" id="cb1231"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb1231-1"><a href="arrive-animal-research.html#cb1231-1" tabindex="-1"></a>peng <span class="sc">|&gt;</span></span>
+<span id="cb1231-2"><a href="arrive-animal-research.html#cb1231-2" tabindex="-1"></a>  <span class="fu">ggplot</span>(<span class="fu">aes</span>(flipper_length_mm, body_mass_g, <span class="at">colour =</span> species)) <span class="sc">+</span></span>
+<span id="cb1231-3"><a href="arrive-animal-research.html#cb1231-3" tabindex="-1"></a>  <span class="fu">geom_point</span>(<span class="at">alpha =</span> <span class="fl">0.6</span>) <span class="sc">+</span></span>
+<span id="cb1231-4"><a href="arrive-animal-research.html#cb1231-4" tabindex="-1"></a>  <span class="fu">geom_smooth</span>(<span class="at">method =</span> <span class="st">&quot;lm&quot;</span>, <span class="at">se =</span> <span class="cn">FALSE</span>, <span class="at">linewidth =</span> <span class="fl">0.8</span>) <span class="sc">+</span></span>
+<span id="cb1231-5"><a href="arrive-animal-research.html#cb1231-5" tabindex="-1"></a>  <span class="fu">labs</span>(<span class="at">x =</span> <span class="st">&quot;Flipper length (mm)&quot;</span>, <span class="at">y =</span> <span class="st">&quot;Body mass (g)&quot;</span>)</span></code></pre></div>
+</div>
+<div id="check-31" class="section level2 hasAnchor" number="23.8">
+<h2><span class="header-section-number">23.8</span> 4. Check<a href="arrive-animal-research.html#check-31" class="anchor-section" aria-label="Anchor link to header"></a></h2>
+<p>Explanatory evaluation: effect sizes with intervals, residual
+diagnostics, and adjusted <em>R</em>².</p>
+<div class="sourceCode" id="cb1232"><pre class="sourceCode r"><code class="sourceCode r"></code></pre></div>
+<p>Predictive evaluation: a 5-fold split, hand-coded to keep the example
+transparent.</p>
+<div class="sourceCode" id="cb1233"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb1233-1"><a href="arrive-animal-research.html#cb1233-1" tabindex="-1"></a>folds <span class="ot">&lt;-</span> <span class="fu">sample</span>(<span class="fu">rep</span>(<span class="fu">seq_len</span>(k), <span class="at">length.out =</span> <span class="fu">nrow</span>(peng)))</span>
+<span id="cb1233-2"><a href="arrive-animal-research.html#cb1233-2" tabindex="-1"></a>rmse_k <span class="ot">&lt;-</span> <span class="fu">sapply</span>(<span class="fu">seq_len</span>(k), <span class="cf">function</span>(i) {</span>
+<span id="cb1233-3"><a href="arrive-animal-research.html#cb1233-3" tabindex="-1"></a>  tr <span class="ot">&lt;-</span> peng[folds <span class="sc">!=</span> i, ]</span>
+<span id="cb1233-4"><a href="arrive-animal-research.html#cb1233-4" tabindex="-1"></a>  te <span class="ot">&lt;-</span> peng[folds <span class="sc">==</span> i, ]</span>
+<span id="cb1233-5"><a href="arrive-animal-research.html#cb1233-5" tabindex="-1"></a>  f  <span class="ot">&lt;-</span> <span class="fu">lm</span>(body_mass_g <span class="sc">~</span> flipper_length_mm <span class="sc">+</span> sex <span class="sc">+</span> species, <span class="at">data =</span> tr)</span>
+<span id="cb1233-6"><a href="arrive-animal-research.html#cb1233-6" tabindex="-1"></a>  <span class="fu">sqrt</span>(<span class="fu">mean</span>((<span class="fu">predict</span>(f, te) <span class="sc">-</span> te<span class="sc">$</span>body_mass_g)<span class="sc">^</span><span class="dv">2</span>))</span>
+<span id="cb1233-7"><a href="arrive-animal-research.html#cb1233-7" tabindex="-1"></a>})</span>
+<span id="cb1233-8"><a href="arrive-animal-research.html#cb1233-8" tabindex="-1"></a>mean_rmse <span class="ot">&lt;-</span> <span class="fu">mean</span>(rmse_k)</span>
+<span id="cb1233-9"><a href="arrive-animal-research.html#cb1233-9" tabindex="-1"></a>mean_rmse</span></code></pre></div>
+</div>
+<div id="report-32" class="section level2 hasAnchor" number="23.9">
+<h2><span class="header-section-number">23.9</span> 5. Report<a href="arrive-animal-research.html#report-32" class="anchor-section" aria-label="Anchor link to header"></a></h2>
+<div class="sourceCode" id="cb1234"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb1234-1"><a href="arrive-animal-research.html#cb1234-1" tabindex="-1"></a><span class="fu">tbl_regression</span>(fit_expl, <span class="at">intercept =</span> <span class="cn">TRUE</span>) <span class="sc">|&gt;</span></span>
+<span id="cb1234-2"><a href="arrive-animal-research.html#cb1234-2" tabindex="-1"></a>  <span class="fu">modify_caption</span>(<span class="st">&quot;**Table 1. Linear-regression estimates for body mass (g).**&quot;</span>)</span></code></pre></div>
+<blockquote>
+<p>In the Palmer penguins dataset (<em>n</em> = <code>nrow(peng)</code>), body mass was
+associated with flipper length, sex, and species (adjusted <em>R</em>² =
+<code>round(summary(fit_expl)$adj.r.squared, 2)</code>). Out-of-sample
+performance, estimated by 5-fold cross-validation, was RMSE =
+<code>round(mean_rmse, 0)</code> g.</p>
+</blockquote>
+<div id="reporting-guideline-map" class="section level3 hasAnchor" number="23.9.1">
+<h3><span class="header-section-number">23.9.1</span> Reporting-guideline map<a href="arrive-animal-research.html#reporting-guideline-map" class="anchor-section" aria-label="Anchor link to header"></a></h3>
+<table>
+<colgroup>
+<col width="33%" />
+<col width="33%" />
+<col width="33%" />
+</colgroup>
+<thead>
+<tr class="header">
+<th>Design</th>
+<th>Guideline</th>
+<th>URL</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>Randomised trial</td>
+<td>CONSORT</td>
+<td><a href="https://www.consort-statement.org/" class="uri">https://www.consort-statement.org/</a></td>
+</tr>
+<tr class="even">
+<td>Observational study</td>
+<td>STROBE</td>
+<td><a href="https://www.strobe-statement.org/" class="uri">https://www.strobe-statement.org/</a></td>
+</tr>
+<tr class="odd">
+<td>Diagnostic-accuracy study</td>
+<td>STARD</td>
+<td><a href="https://www.equator-network.org/reporting-guidelines/stard/" class="uri">https://www.equator-network.org/reporting-guidelines/stard/</a></td>
+</tr>
+<tr class="even">
+<td>Prediction-model study</td>
+<td>TRIPOD / TRIPOD-AI</td>
+<td><a href="https://www.tripod-statement.org/" class="uri">https://www.tripod-statement.org/</a></td>
+</tr>
+<tr class="odd">
+<td>Systematic review</td>
+<td>PRISMA</td>
+<td><a href="http://prisma-statement.org/" class="uri">http://prisma-statement.org/</a></td>
+</tr>
+</tbody>
+</table>
+</div>
+</div>
+<div id="common-pitfalls-79" class="section level2 hasAnchor" number="23.10">
+<h2><span class="header-section-number">23.10</span> Common pitfalls<a href="arrive-animal-research.html#common-pitfalls-79" class="anchor-section" aria-label="Anchor link to header"></a></h2>
+<ul>
+<li>Choosing a predictor set by <em>R</em>² and reporting a predictive claim, or
+tuning a predictive model and reporting causal-sounding coefficients.</li>
+<li>Filling in a reporting checklist at submission rather than while
+drafting.</li>
+<li>Assuming in-sample <em>R</em>² generalises.</li>
+</ul>
+</div>
+<div id="further-reading-79" class="section level2 hasAnchor" number="23.11">
+<h2><span class="header-section-number">23.11</span> Further reading<a href="arrive-animal-research.html#further-reading-79" class="anchor-section" aria-label="Anchor link to header"></a></h2>
+<ul>
+<li>Breiman L. (2001). <em>Statistical Modeling: The Two Cultures.</em></li>
+<li>Shmueli G. (2010). <em>To Explain or to Predict?</em> Statistical Science.</li>
+<li><a href="../../appendices/D-writing-a-report.Rmd">Writing a report</a>.</li>
+</ul>
+</div>
+<div id="session-info-79" class="section level2 hasAnchor" number="23.12">
+<h2><span class="header-section-number">23.12</span> Session info<a href="arrive-animal-research.html#session-info-79" class="anchor-section" aria-label="Anchor link to header"></a></h2>
+<div class="sourceCode" id="cb1235"><pre class="sourceCode r"><code class="sourceCode r"></code></pre></div>
+
+<div class="hero">
+<div class="kicker">
+<p>APPENDIX · RESEARCH WORKFLOW</p>
+</div>
+<script>
+  document.addEventListener("DOMContentLoaded", function () {
+    var path = window.location.pathname.split("/").pop().replace(".html", ".pdf");
+    if (!path || path === ".pdf") return;
+    var btn = document.createElement("a");
+    btn.href = "pdf-chapters/" + path;
+    btn.className = "btn btn-sm btn-outline-secondary per-chapter-pdf-btn";
+    btn.style.cssText = "float:right;margin-top:0.5em;";
+    btn.textContent = "⬇ Download this chapter (PDF)";
+    var header = document.querySelector("main h1");
+    if (header && !document.querySelector(".per-chapter-pdf-btn")) {
+      header.appendChild(btn);
+    }
+  });
+</script>
+            </section>
+
+          </div>
+        </div>
+      </div>
+<a href="prisma-systematic-reviews-meta-analyses.html" class="navigation navigation-prev " aria-label="Previous page"><i class="fa fa-angle-left"></i></a>
+<a href="the-research-workflow.html" class="navigation navigation-next " aria-label="Next page"><i class="fa fa-angle-right"></i></a>
+    </div>
+  </div>
+<script src="libs/gitbook-2.6.7/js/app.min.js"></script>
+<script src="libs/gitbook-2.6.7/js/clipboard.min.js"></script>
+<script src="libs/gitbook-2.6.7/js/plugin-search.js"></script>
+<script src="libs/gitbook-2.6.7/js/plugin-sharing.js"></script>
+<script src="libs/gitbook-2.6.7/js/plugin-fontsettings.js"></script>
+<script src="libs/gitbook-2.6.7/js/plugin-bookdown.js"></script>
+<script src="libs/gitbook-2.6.7/js/jquery.highlight.js"></script>
+<script src="libs/gitbook-2.6.7/js/plugin-clipboard.js"></script>
+<script>
+gitbook.require(["gitbook"], function(gitbook) {
+gitbook.start({
+  "sharing": {
+    "github": false,
+    "facebook": false,
+    "twitter": false,
+    "linkedin": false,
+    "weibo": false,
+    "instapaper": false,
+    "vk": false,
+    "whatsapp": false,
+    "all": "github"
+  },
+  "fontsettings": {
+    "theme": "white",
+    "family": "sans",
+    "size": 2
+  },
+  "edit": {
+    "link": "https://github.com/r-heller/methods-in-r/edit/main/reporting/arrive.Rmd",
+    "text": "Edit"
+  },
+  "history": {
+    "link": null,
+    "text": null
+  },
+  "view": {
+    "link": null,
+    "text": null
+  },
+  "download": ["methods-in-r.pdf", "methods-in-r.epub"],
+  "search": {
+    "engine": "fuse",
+    "options": null
+  },
+  "toc": {
+    "collapse": "section",
+    "scroll_highlight": true
+  },
+  "toolbar": {
+    "position": "fixed"
+  }
+});
+});
+</script>
+
+<!-- dynamically load mathjax for compatibility with self-contained -->
+<script>
+  (function () {
+    var script = document.createElement("script");
+    script.type = "text/javascript";
+    var src = "true";
+    if (src === "" || src === "true") src = "https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.9/latest.js?config=TeX-MML-AM_CHTML";
+    if (location.protocol !== "file:")
+      if (/^https?:/.test(src))
+        src = src.replace(/^https?:/, '');
+    script.src = src;
+    document.getElementsByTagName("head")[0].appendChild(script);
+  })();
+</script>
+</body>
+
+</html>
