@@ -66,3 +66,25 @@ Append-only audit trail of significant build/repo changes.
 - Deferred: whole-book PDF + per-chapter PDFs (require local tinytex
   setup — CI builds these on push); `v1.0.0` GitHub release + Zenodo DOI
   (depends on PDF/EPUB assets verified by CI).
+
+## 2026-05-11 — Harrer-style layout adoption (Coder palette)
+
+- Inspiration paragraph in 00-acknowledgments.Rmd credits Harrer et al.
+  and links to their repo (verbatim per spec).
+- style/style.css rebuilt with Harrer's token topology, retokenized to
+  Hugo Coder (light #fafafa/#1565c0, dark #212121/#42a5f5).
+- Dark mode: data-theme attribute + localStorage, vanilla-JS toggle,
+  FA fa-circle-half-stroke glyph (not the 🌓 emoji).
+- Font Awesome 6.5.1 vendored locally in style/webfonts/ —
+  reproducible, no CDN at render.
+- Five callout types: boxinfo, boximportant, boxreport, boxquestion,
+  boxempty (Harrer's boxdmetar dropped — no companion R package yet).
+- Citation block on landing page and 98-citing-this-guide.Rmd uses
+  boxempty.
+- Footer attribution: "Built by the bookdown R package" appended in
+  style/after-body.html (combined with toggle + per-chapter PDF button).
+- _common.R: bs4_book bug patch (no-op of tweak_part_screwup that NA'd
+  on parent class) + citation-files copy hook.
+- bookdown::bs4_book restored in _output.yml; gitbook kept as fallback.
+- Colors match CLAUDE.md §A6 exactly; no Harrer #277DB0 leaked.
+- Commit: a038de0
