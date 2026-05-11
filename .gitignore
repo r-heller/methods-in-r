@@ -2,15 +2,18 @@
 /.quarto/
 /docs/
 /_book/
+/_bookdown_files/
 /_freeze/
 /site_libs/
+/methods-in-r.Rmd
+packages.bib
 *.html
-
-# Local render artefacts
-render.log
-render.status
-
-# R
+!docs/**/*.html
+*.log
+*.aux
+*.bbl
+*.blg
+*.toc
 .Rproj.user/
 .Rhistory
 .RData

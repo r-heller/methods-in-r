@@ -1,0 +1,62 @@
+---
+title: "16. Experimental Design"
+---
+
+# Experimental Design {#sec-ch-16-design}
+
+Study design across the spectrum: observational designs and STROBE, randomised trials, missing-data mechanisms and multiple imputation, mixed-effects models, DAGs and confounding, propensity scores, the g-methods family (IV, DiD, RDD, HTE), compartmental models for outbreaks, and the pre-registration / SAP / replication-crisis literature.
+
+This chapter contains **30 method pages** and **13 labs**. If you are not sure which method to read, return to [Chapter 0](../../ch00-find-your-method.Rmd) and follow the decision tree to the right node.
+
+## Method pages
+
+| Method | Source slug |
+|---|---|
+| [2^k Factorial Designs](factorial-2k.Rmd) | `factorial-2k` |
+| [3^k Factorial Designs](factorial-3k.Rmd) | `factorial-3k` |
+| [Balanced Incomplete Block Designs](balanced-incomplete-block.Rmd) | `balanced-incomplete-block` |
+| [Box-Behnken Designs](box-behnken-design.Rmd) | `box-behnken-design` |
+| [Central Composite Designs](central-composite-design.Rmd) | `central-composite-design` |
+| [Completely Randomised Design](completely-randomized-design.Rmd) | `completely-randomized-design` |
+| [Constrained Mixture Designs](constrained-mixture.Rmd) | `constrained-mixture` |
+| [Crossover Designs](crossover-designs.Rmd) | `crossover-designs` |
+| [Desirability Functions](desirability-function.Rmd) | `desirability-function` |
+| [Fractional Factorial Designs](fractional-factorial-design.Rmd) | `fractional-factorial-design` |
+| [Graeco-Latin Square Designs](graeco-latin-square.Rmd) | `graeco-latin-square` |
+| [Latin Square Designs](latin-square.Rmd) | `latin-square` |
+| [Method of Steepest Ascent](steepest-ascent.Rmd) | `steepest-ascent` |
+| [Optimal Designs: D, A, I](optimal-design-d-a-i.Rmd) | `optimal-design-d-a-i` |
+| [Orthogonal Arrays](orthogonal-arrays.Rmd) | `orthogonal-arrays` |
+| [Plackett-Burman Designs](plackett-burman.Rmd) | `plackett-burman` |
+| [Power Analysis for DOE](power-in-doe.Rmd) | `power-in-doe` |
+| [Principles of Blocking](blocking-principles.Rmd) | `blocking-principles` |
+| [Randomisation in Design](randomization-in-design.Rmd) | `randomization-in-design` |
+| [Randomised Complete Block Design](randomised-complete-block.Rmd) | `randomised-complete-block` |
+| [Repeated-Measures Designs](repeated-measures-design.Rmd) | `repeated-measures-design` |
+| [Resolution and Aliasing](resolution-aliasing.Rmd) | `resolution-aliasing` |
+| [Response Surface Methodology](response-surface-methodology.Rmd) | `response-surface-methodology` |
+| [Robust Parameter Design](robust-parameter-design.Rmd) | `robust-parameter-design` |
+| [Signal-to-Noise Ratios](signal-to-noise-ratio.Rmd) | `signal-to-noise-ratio` |
+| [Simplex Centroid Designs](mixture-centroid.Rmd) | `mixture-centroid` |
+| [Simplex Lattice Mixture Designs](mixture-designs-simplex.Rmd) | `mixture-designs-simplex` |
+| [Split-Plot Designs](split-plot-design.Rmd) | `split-plot-design` |
+| [Strip-Plot Designs](strip-plot-design.Rmd) | `strip-plot-design` |
+| [Taguchi Methods](taguchi-methods.Rmd) | `taguchi-methods` |
+
+## Labs
+
+| Lab |
+|---|
+| [Observational designs and STROBE](labs/lab-observational-designs-and-strobe.Rmd) |
+| [Randomised controlled trials](labs/lab-randomised-controlled-trials.Rmd) |
+| [Adaptive, non-inferiority, equivalence trials](labs/lab-adaptive-non-inferiority-equivalence-trials.Rmd) |
+| [Bench and translational design](labs/lab-bench-and-translational-design.Rmd) |
+| [MCAR, MAR, MNAR](labs/lab-mcar-mar-mnar.Rmd) |
+| [Multiple imputation with mice](labs/lab-multiple-imputation-with-mice.Rmd) |
+| [Linear mixed models with lme4](labs/lab-linear-mixed-models-with-lme4.Rmd) |
+| [GLMMs and GEE](labs/lab-glmms-and-gee.Rmd) |
+| [DAGs with dagitty and ggdag](labs/lab-dags-with-dagitty-and-ggdag.Rmd) |
+| [Propensity scores and IPTW](labs/lab-propensity-scores-and-iptw.Rmd) |
+| [G-methods, IV, DiD, RDD; heterogeneity of treatment effect](labs/lab-g-methods-iv-did-rdd-heterogeneity-of-treatment-effect.Rmd) |
+| [SIR and SEIR models with deSolve](labs/lab-sir-and-seir-models-with-desolve.Rmd) |
+| [Pre-registration and statistical analysis plans](labs/lab-pre-registration-and-statistical-analysis-plans.Rmd) |

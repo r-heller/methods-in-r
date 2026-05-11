@@ -1,0 +1,51 @@
+---
+title: "05. Sample Size & Power"
+---
+
+# Sample Size & Power {#sec-ch-05-power}
+
+Sample-size and power calculations for the designs covered in the rest of the book — t-tests, ANOVA, regression, survival, diagnostic accuracy, equivalence and non-inferiority, sequential designs. Each method page includes the exact `pwr` or simulation call.
+
+This chapter contains **30 method pages** and **2 labs**. If you are not sure which method to read, return to [Chapter 0](../../ch00-find-your-method.Rmd) and follow the decision tree to the right node.
+
+## Method pages
+
+| Method | Source slug |
+|---|---|
+| [Effect Size: Cohen's d](effect-size-cohens-d.Rmd) | `effect-size-cohens-d` |
+| [Effect Size: Cohen's h](effect-size-cohens-h.Rmd) | `effect-size-cohens-h` |
+| [Effect Size: Eta-Squared](effect-size-eta-squared.Rmd) | `effect-size-eta-squared` |
+| [Minimum Detectable Effect](minimum-detectable-effect.Rmd) | `minimum-detectable-effect` |
+| [Post-Hoc Power: A Controversy](post-hoc-power-controversy.Rmd) | `post-hoc-power-controversy` |
+| [Power Analysis: Introduction](power-analysis-introduction.Rmd) | `power-analysis-introduction` |
+| [Power for Agreement (Kappa)](power-agreement-kappa.Rmd) | `power-agreement-kappa` |
+| [Power for Bland-Altman Studies](power-bland-altman.Rmd) | `power-bland-altman` |
+| [Power for Chi-Squared Tests](power-chi-squared.Rmd) | `power-chi-squared` |
+| [Power for Cluster-RCT](power-cluster-rct.Rmd) | `power-cluster-rct` |
+| [Power for Correlation Tests](power-correlation.Rmd) | `power-correlation` |
+| [Power for Cox Regression](power-cox-regression.Rmd) | `power-cox-regression` |
+| [Power for Crossover Trials](power-crossover.Rmd) | `power-crossover` |
+| [Power for Diagnostic Accuracy](power-diagnostic-accuracy.Rmd) | `power-diagnostic-accuracy` |
+| [Power for Equivalence (TOST)](power-equivalence-tost.Rmd) | `power-equivalence-tost` |
+| [Power for ICC](power-icc.Rmd) | `power-icc` |
+| [Power for Linear Regression](power-linear-regression.Rmd) | `power-linear-regression` |
+| [Power for Logistic Regression](power-logistic-regression.Rmd) | `power-logistic-regression` |
+| [Power for McNemar's Test](power-mcnemar.Rmd) | `power-mcnemar` |
+| [Power for Non-Inferiority Trials](power-non-inferiority.Rmd) | `power-non-inferiority` |
+| [Power for One-Proportion Test](power-one-proportion.Rmd) | `power-one-proportion` |
+| [Power for One-Sample t-Test](power-one-sample-t.Rmd) | `power-one-sample-t` |
+| [Power for One-Way ANOVA](power-anova.Rmd) | `power-anova` |
+| [Power for Paired t-Test](power-paired-t.Rmd) | `power-paired-t` |
+| [Power for Repeated-Measures ANOVA](power-repeated-measures.Rmd) | `power-repeated-measures` |
+| [Power for Stepped-Wedge Trials](power-stepped-wedge.Rmd) | `power-stepped-wedge` |
+| [Power for the Log-Rank Test](power-logrank-test.Rmd) | `power-logrank-test` |
+| [Power for Two-Proportion Test](power-two-proportions.Rmd) | `power-two-proportions` |
+| [Sample Size for a Two-Sample t-Test](power-two-sample-t.Rmd) | `power-two-sample-t` |
+| [Sample Size Sensitivity Analysis](sensitivity-analysis-sample-size.Rmd) | `sensitivity-analysis-sample-size` |
+
+## Labs
+
+| Lab |
+|---|
+| [Sample size, power, and Quarto reporting](labs/lab-sample-size-power-and-quarto-reporting.Rmd) |
+| [Power: closed-form and simulation](labs/lab-power-closed-form-and-simulation.Rmd) |

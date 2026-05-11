@@ -1,0 +1,23 @@
+# Colophon {-}
+
+```{r colophon-info, echo = FALSE, eval = TRUE}
+cat("Built with:\n")
+cat("  bookdown:   ", as.character(packageVersion("bookdown")), "\n")
+cat("  rmarkdown:  ", as.character(packageVersion("rmarkdown")), "\n")
+cat("  knitr:      ", as.character(packageVersion("knitr")), "\n")
+cat("  R:          ", R.version.string, "\n")
+cat("  Build date: ", as.character(Sys.Date()), "\n")
+commit <- tryCatch(
+  system("git rev-parse --short HEAD", intern = TRUE, ignore.stderr = TRUE),
+  error = function(e) "unknown"
+)
+cat("  Commit:     ", commit, "\n")
+```
+
+```{r colophon-session, echo = FALSE, eval = TRUE, results = "asis"}
+if (requireNamespace("sessioninfo", quietly = TRUE)) {
+  cat("\n```\n")
+  print(sessioninfo::session_info(pkgs = "attached"))
+  cat("\n```\n")
+}
+```

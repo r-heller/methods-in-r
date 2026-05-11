@@ -1,0 +1,87 @@
+---
+title: "07. Regression & Modelling"
+---
+
+# Regression & Modelling {#sec-ch-07-regression}
+
+Linear models, GLMs, GAMs, non-linear least squares, the ANOVA family, ANCOVA, robust regression, residual diagnostics, calibration, and decision-curve analysis. The chapter treats regression as a single object viewed from different angles.
+
+This chapter contains **51 method pages** and **17 labs**. If you are not sure which method to read, return to [Chapter 0](../../ch00-find-your-method.Rmd) and follow the decision tree to the right node.
+
+## Method pages
+
+| Method | Source slug |
+|---|---|
+| [Added-Variable Plots](added-variable-plots.Rmd) | `added-variable-plots` |
+| [Best Subset Selection](best-subset-selection.Rmd) | `best-subset-selection` |
+| [Beta Regression](beta-regression.Rmd) | `beta-regression` |
+| [Centring and Scaling Predictors](centered-scaled-predictors.Rmd) | `centered-scaled-predictors` |
+| [Contrasts in R](contrasts-in-r.Rmd) | `contrasts-in-r` |
+| [Cook's Distance](cooks-distance.Rmd) | `cooks-distance` |
+| [Cox Regression as Regression](survival-regression-cox.Rmd) | `survival-regression-cox` |
+| [Dirichlet Regression](dirichlet-regression.Rmd) | `dirichlet-regression` |
+| [Dummy Coding](dummy-coding.Rmd) | `dummy-coding` |
+| [Effect (Deviation) Coding](effect-coding.Rmd) | `effect-coding` |
+| [Elastic Net](elastic-net.Rmd) | `elastic-net` |
+| [GAMMs: Additive Mixed Models](gamm-additive-mixed.Rmd) | `gamm-additive-mixed` |
+| [GAMs: Introduction](gam-introduction.Rmd) | `gam-introduction` |
+| [Generalised Estimating Equations](generalized-estimating-equations.Rmd) | `generalized-estimating-equations` |
+| [glmer: Generalised Mixed Models](glmer-generalized-mixed.Rmd) | `glmer-generalized-mixed` |
+| [Hurdle Models](hurdle-models.Rmd) | `hurdle-models` |
+| [Interactions in Regression](interactions-in-regression.Rmd) | `interactions-in-regression` |
+| [Lasso Regression](lasso-regression.Rmd) | `lasso-regression` |
+| [Leverage and Influence](leverage-influence.Rmd) | `leverage-influence` |
+| [Linear Regression Assumptions](regression-assumptions.Rmd) | `regression-assumptions` |
+| [Logistic Regression](logistic-regression.Rmd) | `logistic-regression` |
+| [Logistic Regression Diagnostics](logistic-regression-diagnostics.Rmd) | `logistic-regression-diagnostics` |
+| [Mixed-Effects Models: Introduction](mixed-models-intro.Rmd) | `mixed-models-intro` |
+| [Model Selection with AIC and BIC](model-selection-aic-bic.Rmd) | `model-selection-aic-bic` |
+| [Multicollinearity and VIF](multicollinearity-vif.Rmd) | `multicollinearity-vif` |
+| [Multinomial Logistic Regression](multinomial-logistic.Rmd) | `multinomial-logistic` |
+| [Multiple Linear Regression](multiple-linear-regression.Rmd) | `multiple-linear-regression` |
+| [Negative Binomial Regression](negative-binomial-regression.Rmd) | `negative-binomial-regression` |
+| [Nested vs Crossed Random Effects](nested-crossed-random-effects.Rmd) | `nested-crossed-random-effects` |
+| [Offsets in Regression](offsets-in-regression.Rmd) | `offsets-in-regression` |
+| [Ordinal Logistic Regression](ordinal-logistic.Rmd) | `ordinal-logistic` |
+| [Partial Correlation](partial-correlation.Rmd) | `partial-correlation` |
+| [Poisson Regression](poisson-regression.Rmd) | `poisson-regression` |
+| [Polynomial Regression](polynomial-regression.Rmd) | `polynomial-regression` |
+| [Probit Regression](probit-regression.Rmd) | `probit-regression` |
+| [Quantile Regression](quantile-regression.Rmd) | `quantile-regression` |
+| [Quasi-Poisson Regression](quasi-poisson.Rmd) | `quasi-poisson` |
+| [R-Squared and Adjusted R-Squared](r-squared-adjusted.Rmd) | `r-squared-adjusted` |
+| [Random-Intercept Models](random-intercepts.Rmd) | `random-intercepts` |
+| [Random-Slope Models](random-slopes.Rmd) | `random-slopes` |
+| [Residual Diagnostics](residual-diagnostics.Rmd) | `residual-diagnostics` |
+| [Ridge Regression](ridge-regression.Rmd) | `ridge-regression` |
+| [Robust Regression](robust-regression.Rmd) | `robust-regression` |
+| [ROC and AUC for Logistic Models](roc-auc-for-logistic.Rmd) | `roc-auc-for-logistic` |
+| [Simple Linear Regression](simple-linear-regression.Rmd) | `simple-linear-regression` |
+| [Spline Regression](spline-regression.Rmd) | `spline-regression` |
+| [Stepwise Regression: Pitfalls](stepwise-regression-pitfalls.Rmd) | `stepwise-regression-pitfalls` |
+| [Tobit Regression](tobit-regression.Rmd) | `tobit-regression` |
+| [Truncated Regression](truncated-regression.Rmd) | `truncated-regression` |
+| [Worked lme4::lmer Examples](lme4-lmer-examples.Rmd) | `lme4-lmer-examples` |
+| [Zero-Inflated Models](zero-inflated-models.Rmd) | `zero-inflated-models` |
+
+## Labs
+
+| Lab |
+|---|
+| [Correlation vs regression; Model-I/II regression](labs/lab-correlation-vs-regression-model-i-ii-regression.Rmd) |
+| [Simple linear regression](labs/lab-simple-linear-regression.Rmd) |
+| [Multiple regression: confounding, interaction, centring](labs/lab-multiple-regression-confounding-interaction-centring.Rmd) |
+| [Diagnostics: residuals, QQ, leverage, Cook's distance, VIF](labs/lab-diagnostics-residuals-qq-leverage-cook-s-distance-vif.Rmd) |
+| [Robust regression, weighted LS, HC (sandwich) standard errors](labs/lab-robust-regression-weighted-ls-hc-sandwich-standard-errors.Rmd) |
+| [One-way ANOVA and contrasts (emmeans)](labs/lab-one-way-anova-and-contrasts-emmeans.Rmd) |
+| [Two-way / factorial ANOVA with interaction](labs/lab-two-way-factorial-anova-with-interaction.Rmd) |
+| [RCBD and repeated measures → mixed models](labs/lab-rcbd-and-repeated-measures-mixed-models.Rmd) |
+| [GAMs with mgcv](labs/lab-gams-with-mgcv.Rmd) |
+| [Non-linear regression with nls](labs/lab-non-linear-regression-with-nls.Rmd) |
+| [Logistic regression (binomial GLM)](labs/lab-logistic-regression-binomial-glm.Rmd) |
+| [ANCOVA in RCTs (baseline adjustment)](labs/lab-ancova-in-rcts-baseline-adjustment.Rmd) |
+| [Ordinal and multinomial regression](labs/lab-ordinal-and-multinomial-regression.Rmd) |
+| [Poisson and negative-binomial regression](labs/lab-poisson-and-negative-binomial-regression.Rmd) |
+| [Calibration, discrimination, ROC/AUC, Brier score](labs/lab-calibration-discrimination-roc-auc-brier-score.Rmd) |
+| [Dichotomisation, change scores, regression to the mean](labs/lab-dichotomisation-change-scores-regression-to-the-mean.Rmd) |
+| [Decision curves, NRI, IDI](labs/lab-decision-curves-nri-idi.Rmd) |

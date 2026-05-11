@@ -1,0 +1,56 @@
+---
+title: "10. Bayesian Statistics"
+---
+
+# Bayesian Statistics {#sec-ch-10-bayesian}
+
+Posterior inference via `brms` and Stan: priors, hierarchical models, posterior predictive checks, leave-one-out cross-validation, and Bayes factors. The chapter is opinionated: it treats Bayesian inference as a default, not an alternative.
+
+This chapter contains **35 method pages** and **2 labs**. If you are not sure which method to read, return to [Chapter 0](../../ch00-find-your-method.Rmd) and follow the decision tree to the right node.
+
+## Method pages
+
+| Method | Source slug |
+|---|---|
+| [Bayes Factors](bayes-factors.Rmd) | `bayes-factors` |
+| [Bayes' Theorem for Parameters](bayes-theorem-for-parameters.Rmd) | `bayes-theorem-for-parameters` |
+| [Bayesian ANOVA](bayesian-anova.Rmd) | `bayesian-anova` |
+| [Bayesian Hierarchical Models](bayesian-hierarchical-intro.Rmd) | `bayesian-hierarchical-intro` |
+| [Bayesian Hypothesis Testing](bayes-hypothesis-testing.Rmd) | `bayes-hypothesis-testing` |
+| [Bayesian Linear Regression](linear-regression-bayes.Rmd) | `linear-regression-bayes` |
+| [Bayesian Logistic Regression](logistic-regression-bayes.Rmd) | `logistic-regression-bayes` |
+| [Bayesian Mediation Analysis](bayesian-mediation.Rmd) | `bayesian-mediation` |
+| [Bayesian Meta-Analysis](bayesian-meta-analysis.Rmd) | `bayesian-meta-analysis` |
+| [Bayesian Mixed Models](bayesian-mixed-models.Rmd) | `bayesian-mixed-models` |
+| [brms Basics](brms-basics.Rmd) | `brms-basics` |
+| [Conjugate Priors](conjugate-priors.Rmd) | `conjugate-priors` |
+| [Credible Intervals](credible-intervals.Rmd) | `credible-intervals` |
+| [Divergences and Pairs Plots](divergences-pairs-plots.Rmd) | `divergences-pairs-plots` |
+| [Gibbs Sampling](gibbs-sampling.Rmd) | `gibbs-sampling` |
+| [Hamiltonian Monte Carlo](hamiltonian-monte-carlo.Rmd) | `hamiltonian-monte-carlo` |
+| [Highest Posterior Density Interval](hpd-interval.Rmd) | `hpd-interval` |
+| [Informative Priors](informative-priors.Rmd) | `informative-priors` |
+| [Jeffreys' Prior](jeffreys-prior.Rmd) | `jeffreys-prior` |
+| [Leave-One-Out Cross-Validation](loo-cv.Rmd) | `loo-cv` |
+| [Metropolis-Hastings](metropolis-hastings.Rmd) | `metropolis-hastings` |
+| [Posterior Mean and Variance](posterior-mean-variance.Rmd) | `posterior-mean-variance` |
+| [Posterior Predictive Checks](posterior-predictive-checks.Rmd) | `posterior-predictive-checks` |
+| [Prior Specification](prior-specification.Rmd) | `prior-specification` |
+| [R-hat and ESS Diagnostics](rhat-ess-diagnostics.Rmd) | `rhat-ess-diagnostics` |
+| [rstanarm](rstanarm.Rmd) | `rstanarm` |
+| [Stan: Introduction](stan-introduction.Rmd) | `stan-introduction` |
+| [The Beta-Binomial Model](beta-binomial-model.Rmd) | `beta-binomial-model` |
+| [The Gamma-Poisson Model](gamma-poisson-model.Rmd) | `gamma-poisson-model` |
+| [The Normal-Normal Model](normal-normal-model.Rmd) | `normal-normal-model` |
+| [The Posterior Predictive Distribution](posterior-predictive-distribution.Rmd) | `posterior-predictive-distribution` |
+| [The Savage-Dickey Density Ratio](savage-dickey-ratio.Rmd) | `savage-dickey-ratio` |
+| [tidybayes Workflow](tidybayes-workflow.Rmd) | `tidybayes-workflow` |
+| [WAIC](waic.Rmd) | `waic` |
+| [Weakly Informative Priors](weakly-informative-priors.Rmd) | `weakly-informative-priors` |
+
+## Labs
+
+| Lab |
+|---|
+| [Bayesian thinking; α control vs decision error](labs/lab-bayesian-thinking-control-vs-decision-error.Rmd) |
+| [brms / Stan, LOO, hierarchical models](labs/lab-brms-stan-loo-hierarchical-models.Rmd) |
