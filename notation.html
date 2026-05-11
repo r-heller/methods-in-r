@@ -30,7 +30,7 @@
   <meta name="apple-mobile-web-app-status-bar-style" content="black" />
   
   
-<link rel="prev" href="acknowledgments.html"/>
+<link rel="prev" href="acknowledgments-1.html"/>
 <link rel="next" href="about-the-author.html"/>
 <script src="libs/jquery-3.6.0/jquery-3.6.0.min.js"></script>
 <script src="https://cdn.jsdelivr.net/npm/fuse.js@6.4.6/dist/fuse.min.js"></script>
@@ -426,10 +426,10 @@ the libraries cited in that section attached.</li>
 </div>
 <script>
   document.addEventListener("DOMContentLoaded", function () {
-    var path = window.location.pathname.split("/").pop().replace(".html", ".pdf");
-    if (!path || path === ".pdf") return;
+    var file = window.location.pathname.split("/").pop().replace(".html", ".pdf");
+    if (!file || file === ".pdf") return;
     var btn = document.createElement("a");
-    btn.href = "pdf-chapters/" + path;
+    btn.href = "pdf-chapters/" + file;
     btn.className = "btn btn-sm btn-outline-secondary per-chapter-pdf-btn";
     btn.style.cssText = "float:right;margin-top:0.5em;";
     btn.textContent = "⬇ Download this chapter (PDF)";
@@ -439,12 +439,16 @@ the libraries cited in that section attached.</li>
     }
   });
 </script>
+
+<div class="bookdown-attribution" style="text-align:center; padding:1.5rem 0; font-size:0.9em; opacity:0.8;">
+  This book was built by the <a href="https://bookdown.org/"><strong>bookdown</strong></a> R package.
+</div>
             </section>
 
           </div>
         </div>
       </div>
-<a href="acknowledgments.html" class="navigation navigation-prev " aria-label="Previous page"><i class="fa fa-angle-left"></i></a>
+<a href="acknowledgments-1.html" class="navigation navigation-prev " aria-label="Previous page"><i class="fa fa-angle-left"></i></a>
 <a href="about-the-author.html" class="navigation navigation-next " aria-label="Next page"><i class="fa fa-angle-right"></i></a>
     </div>
   </div>

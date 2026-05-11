@@ -191,8 +191,8 @@ every method page.</p>
 <li>GitHub: <a href="https://github.com/r-heller" class="uri">https://github.com/r-heller</a></li>
 <li>Website: <a href="https://r-heller.github.io/website/" class="uri">https://r-heller.github.io/website/</a></li>
 </ul>
-<div id="sibling-volume-1" class="section level2 unnumbered hasAnchor">
-<h2>Sibling volume<a href="about-the-author.html#sibling-volume-1" class="anchor-section" aria-label="Anchor link to header"></a></h2>
+<div id="sibling-volume" class="section level2 unnumbered hasAnchor">
+<h2>Sibling volume<a href="about-the-author.html#sibling-volume" class="anchor-section" aria-label="Anchor link to header"></a></h2>
 <p>This is the second book in the <em>…in R</em> series. The first is
 <a href="https://github.com/r-heller/strategy-in-r"><code>r-heller/strategy-in-r</code></a> —
 <em>Strategy in R: Game Theory, Simulation, and Machine Intelligence</em>. The
@@ -261,10 +261,10 @@ build is provided for offline reference.</p>
 </div>
 <script>
   document.addEventListener("DOMContentLoaded", function () {
-    var path = window.location.pathname.split("/").pop().replace(".html", ".pdf");
-    if (!path || path === ".pdf") return;
+    var file = window.location.pathname.split("/").pop().replace(".html", ".pdf");
+    if (!file || file === ".pdf") return;
     var btn = document.createElement("a");
-    btn.href = "pdf-chapters/" + path;
+    btn.href = "pdf-chapters/" + file;
     btn.className = "btn btn-sm btn-outline-secondary per-chapter-pdf-btn";
     btn.style.cssText = "float:right;margin-top:0.5em;";
     btn.textContent = "⬇ Download this chapter (PDF)";
@@ -274,6 +274,10 @@ build is provided for offline reference.</p>
     }
   });
 </script>
+
+<div class="bookdown-attribution" style="text-align:center; padding:1.5rem 0; font-size:0.9em; opacity:0.8;">
+  This book was built by the <a href="https://bookdown.org/"><strong>bookdown</strong></a> R package.
+</div>
             </section>
 
           </div>

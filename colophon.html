@@ -31,7 +31,7 @@
   
   
 <link rel="prev" href="cheatsheets.html"/>
-<link rel="next" href="references.html"/>
+<link rel="next" href="citing-this-guide.html"/>
 <script src="libs/jquery-3.6.0/jquery-3.6.0.min.js"></script>
 <script src="https://cdn.jsdelivr.net/npm/fuse.js@6.4.6/dist/fuse.min.js"></script>
 <link href="libs/gitbook-2.6.7/css/style.css" rel="stylesheet" />
@@ -187,7 +187,7 @@ true
 <pre><code>#&gt;   knitr:       1.51</code></pre>
 <pre><code>#&gt;   R:           R version 4.6.0 (2026-04-24)</code></pre>
 <pre><code>#&gt;   Build date:  2026-05-11</code></pre>
-<pre><code>#&gt;   Commit:      0959f19</code></pre>
+<pre><code>#&gt;   Commit:      aeb0be7</code></pre>
 <p>LLM assistance (self-hosted Mistral Le Chat via Ollama/<code>ollamar</code>, plus
 GitHub Copilot in RStudio) was used for copyediting, formatting, and
 scaffolding tasks only — see Acknowledgments.</p>
@@ -211,10 +211,10 @@ scaffolding tasks only — see Acknowledgments.</p>
 </div>
 <script>
   document.addEventListener("DOMContentLoaded", function () {
-    var path = window.location.pathname.split("/").pop().replace(".html", ".pdf");
-    if (!path || path === ".pdf") return;
+    var file = window.location.pathname.split("/").pop().replace(".html", ".pdf");
+    if (!file || file === ".pdf") return;
     var btn = document.createElement("a");
-    btn.href = "pdf-chapters/" + path;
+    btn.href = "pdf-chapters/" + file;
     btn.className = "btn btn-sm btn-outline-secondary per-chapter-pdf-btn";
     btn.style.cssText = "float:right;margin-top:0.5em;";
     btn.textContent = "⬇ Download this chapter (PDF)";
@@ -224,13 +224,17 @@ scaffolding tasks only — see Acknowledgments.</p>
     }
   });
 </script>
+
+<div class="bookdown-attribution" style="text-align:center; padding:1.5rem 0; font-size:0.9em; opacity:0.8;">
+  This book was built by the <a href="https://bookdown.org/"><strong>bookdown</strong></a> R package.
+</div>
             </section>
 
           </div>
         </div>
       </div>
 <a href="cheatsheets.html" class="navigation navigation-prev " aria-label="Previous page"><i class="fa fa-angle-left"></i></a>
-<a href="references.html" class="navigation navigation-next " aria-label="Next page"><i class="fa fa-angle-right"></i></a>
+<a href="citing-this-guide.html" class="navigation navigation-next " aria-label="Next page"><i class="fa fa-angle-right"></i></a>
     </div>
   </div>
 <script src="libs/gitbook-2.6.7/js/app.min.js"></script>

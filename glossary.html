@@ -323,10 +323,10 @@ true
 </div>
 <script>
   document.addEventListener("DOMContentLoaded", function () {
-    var path = window.location.pathname.split("/").pop().replace(".html", ".pdf");
-    if (!path || path === ".pdf") return;
+    var file = window.location.pathname.split("/").pop().replace(".html", ".pdf");
+    if (!file || file === ".pdf") return;
     var btn = document.createElement("a");
-    btn.href = "pdf-chapters/" + path;
+    btn.href = "pdf-chapters/" + file;
     btn.className = "btn btn-sm btn-outline-secondary per-chapter-pdf-btn";
     btn.style.cssText = "float:right;margin-top:0.5em;";
     btn.textContent = "⬇ Download this chapter (PDF)";
@@ -336,6 +336,10 @@ true
     }
   });
 </script>
+
+<div class="bookdown-attribution" style="text-align:center; padding:1.5rem 0; font-size:0.9em; opacity:0.8;">
+  This book was built by the <a href="https://bookdown.org/"><strong>bookdown</strong></a> R package.
+</div>
             </section>
 
           </div>
