@@ -4770,7 +4770,12 @@ never plotted.</li>
   });
 </script><!-- Right-panel "Downloads" section, injected above View source / Edit this page --><script>
   document.addEventListener("DOMContentLoaded", function () {
-    var bookExtra = document.querySelector(".book-extra");
+    // There are TWO .book-extra blocks on each page:
+    //  - sidebar one: contains #book-repo ("View book source")
+    //  - right-nav one: contains #book-source + #book-edit
+    // We want the latter.
+    var bookSource = document.getElementById("book-source");
+    var bookExtra = bookSource ? bookSource.closest(".book-extra") : null;
     if (!bookExtra || document.querySelector(".book-downloads")) return;
 
     var current = window.location.pathname.split("/").pop() || "index.html";
