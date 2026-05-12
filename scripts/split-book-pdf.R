@@ -61,17 +61,24 @@ for (f in html_files) {
 }
 cat("split-book-pdf: ", length(slug_title), " HTML slugs to match\n", sep = "")
 
-# 2) pdf text by page
+# 2) pdf text by page; look only at the TOP of each page so TOC pages
+# (which list every chapter title) don't all match every chapter.
 pages <- pdftools::pdf_text(book_pdf)
 n_pages <- length(pages)
-pages_clean <- vapply(pages, function(p) clean(gsub("[\n\r]+", " ", p)), character(1))
+pages_top <- vapply(pages, function(p) {
+  p <- gsub("[\n\r]+", " ", p)
+  p <- clean(p)
+  substr(p, 1, 200)
+}, character(1))
 
-# 3) for each slug, find first page whose cleaned text contains the title
+# 3) for each slug, find first page whose TOP contains the title
 matches <- list()
 for (slug in names(slug_title)) {
   title <- slug_title[[slug]]
   if (nchar(title) < 3) next
-  hit <- which(vapply(pages_clean, function(p) grepl(title, p, fixed = TRUE), logical(1)))
+  hit <- which(vapply(pages_top,
+                      function(p) grepl(title, p, fixed = TRUE),
+                      logical(1)))
   if (length(hit) == 0) next
   matches[[slug]] <- min(hit)
 }
