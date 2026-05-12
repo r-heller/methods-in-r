@@ -1,4 +1,4 @@
-<!-- Dark / light mode toggle (replaces Harrer's 🌓 with a Font Awesome glyph) -->
+<!-- Dark / light mode toggle (replaces Harrer's emoji with a Font Awesome glyph) -->
 <div class="sticky-item">
   <button type="button" id="mode-switch" class="btn-circle-mode" aria-label="Toggle dark mode">
     <i class="fa-solid fa-circle-half-stroke" aria-hidden="true"></i>
@@ -25,20 +25,53 @@
   })();
 </script>
 
-<!-- Per-chapter PDF download button -->
+<!-- Right-panel "Downloads" section, injected above View source / Edit this page -->
 <script>
   document.addEventListener("DOMContentLoaded", function () {
-    var file = window.location.pathname.split("/").pop().replace(".html", ".pdf");
-    if (!file || file === ".pdf") return;
-    var btn = document.createElement("a");
-    btn.href = "pdf-chapters/" + file;
-    btn.className = "btn btn-sm btn-outline-secondary per-chapter-pdf-btn";
-    btn.style.cssText = "float:right;margin-top:0.5em;";
-    btn.textContent = "⬇ Download this chapter (PDF)";
-    var header = document.querySelector("main h1, .page-inner h1");
-    if (header && !document.querySelector(".per-chapter-pdf-btn")) {
-      header.appendChild(btn);
+    var bookExtra = document.querySelector(".book-extra");
+    if (!bookExtra || document.querySelector(".book-downloads")) return;
+
+    var current = window.location.pathname.split("/").pop() || "index.html";
+    var chapterPdf = current.replace(/\.html$/, ".pdf");
+    var isLanding = current === "" || current === "index.html";
+
+    var wrap = document.createElement("div");
+    wrap.className = "book-downloads";
+
+    var heading = document.createElement("h6");
+    heading.className = "book-downloads-heading";
+    heading.textContent = "Downloads";
+    wrap.appendChild(heading);
+
+    var list = document.createElement("ul");
+    list.className = "list-unstyled";
+
+    var liBook = document.createElement("li");
+    var aBook = document.createElement("a");
+    aBook.id = "book-download-full";
+    aBook.href = "methods-in-r.pdf";
+    aBook.textContent = "Whole book (PDF) ";
+    var iconBook = document.createElement("i");
+    iconBook.className = "fa-solid fa-book";
+    aBook.appendChild(iconBook);
+    liBook.appendChild(aBook);
+    list.appendChild(liBook);
+
+    if (!isLanding) {
+      var liChapter = document.createElement("li");
+      var aChapter = document.createElement("a");
+      aChapter.id = "book-download-chapter";
+      aChapter.href = "pdf-chapters/" + chapterPdf;
+      aChapter.textContent = "This chapter (PDF) ";
+      var iconCh = document.createElement("i");
+      iconCh.className = "fa-solid fa-file-pdf";
+      aChapter.appendChild(iconCh);
+      liChapter.appendChild(aChapter);
+      list.appendChild(liChapter);
     }
+
+    wrap.appendChild(list);
+    bookExtra.parentNode.insertBefore(wrap, bookExtra);
   });
 </script>
 

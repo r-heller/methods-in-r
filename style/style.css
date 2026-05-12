@@ -218,6 +218,45 @@ blockquote {
   padding: 2px 8px 2px 2px;
 }
 
+/* ---------- Right-panel Downloads block ---------- */
+.book-downloads {
+  margin-top: 1.5rem;
+  padding-bottom: 0.8rem;
+  border-bottom: 1px solid var(--border-color);
+}
+
+.book-downloads-heading {
+  font-size: 0.78rem;
+  font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: 0.04em;
+  color: var(--grey-color);
+  margin: 0 0 0.4rem;
+}
+
+.book-downloads ul {
+  margin: 0;
+  padding: 0;
+}
+
+.book-downloads li {
+  margin: 0 0 0.25rem;
+}
+
+.book-downloads a {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.35em;
+}
+
+.book-downloads a i {
+  font-size: 0.9em;
+  opacity: 0.75;
+}
+
+/* Hide any stray remnant of the old per-chapter button injected into h1 */
+.per-chapter-pdf-btn { display: none !important; }
+
 /* ---------- Section-numbering muted ---------- */
 .header-section-number {
   color: var(--grey-color);
