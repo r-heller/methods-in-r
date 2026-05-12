@@ -58,20 +58,18 @@ import sys, json
 from pypdf import PdfReader
 r = PdfReader(sys.argv[1])
 out = []
-def walk(items):
-    for it in items:
-        if isinstance(it, list):
-            walk(it)
-            continue
-        title = getattr(it, 'title', None)
-        if not title:
-            continue
-        try:
-            p = r.get_destination_page_number(it) + 1   # 1-indexed
-        except Exception:
-            continue
-        out.append({'title': title, 'page': p})
-walk(r.outline)
+# Top-level entries only; nested lists are sub-sections (H2/H3) we skip.
+for it in r.outline:
+    if isinstance(it, list):
+        continue
+    title = getattr(it, 'title', None)
+    if not title:
+        continue
+    try:
+        p = r.get_destination_page_number(it) + 1
+    except Exception:
+        continue
+    out.append({'title': title, 'page': p})
 print(json.dumps(out))
 "
 tmp <- tempfile(fileext = ".py")
@@ -91,13 +89,10 @@ if (length(res) == 0 || !nzchar(res[length(res)])) {
 outline <- jsonlite::fromJSON(res[length(res)], simplifyDataFrame = TRUE)
 cat("split-book-pdf: outline has ", nrow(outline), " entries\n", sep = "")
 
-# 3) Match outline titles -> slug
+# 3) Match outline titles -> slug (safe lookup with single-bracket)
 title_to_slug <- setNames(names(slug_title), unlist(slug_title))
 outline$clean <- vapply(outline$title, clean, character(1))
-outline$slug  <- vapply(outline$clean, function(t) {
-  s <- title_to_slug[[t]]
-  if (is.null(s)) NA_character_ else s
-}, character(1))
+outline$slug  <- unname(title_to_slug[outline$clean])
 
 matched <- outline[!is.na(outline$slug), c("slug", "title", "page")]
 matched <- matched[order(matched$page), ]
