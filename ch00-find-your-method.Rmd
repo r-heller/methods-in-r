@@ -1,8 +1,3 @@
----
-title: "Find Your Method"
-number-sections: false
----
-
 # Find your method {#sec-find-your-method}
 
 Open the book here when you don't know which chapter to read. Three
