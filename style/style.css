@@ -218,6 +218,39 @@ blockquote {
   padding: 2px 8px 2px 2px;
 }
 
+/* ---------- Sidebar Part dividers ---------- */
+.book-toc li.part-header {
+  list-style: none;
+  margin: 1.4rem 0 0.35rem;
+  padding: 0.4rem 0 0.25rem;
+  border-top: 1px solid var(--border-color);
+  pointer-events: none;
+}
+
+.book-toc li.part-header:first-child {
+  margin-top: 0.6rem;
+  border-top: 0;
+}
+
+.book-toc li.part-header .part-kicker {
+  display: block;
+  font-size: 0.7rem;
+  font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: 0.07em;
+  color: var(--grey-color);
+  line-height: 1;
+  margin-bottom: 0.2rem;
+}
+
+.book-toc li.part-header .part-title {
+  display: block;
+  font-size: 0.95rem;
+  font-weight: 600;
+  color: var(--text-color);
+  line-height: 1.2;
+}
+
 /* ---------- Right-panel Downloads block ---------- */
 .book-downloads {
   margin-top: 1.5rem;

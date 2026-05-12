@@ -25,6 +25,40 @@
   })();
 </script>
 
+<!-- Left-sidebar Part dividers (bookdown's native (PART) is broken on bs4_book 0.46) -->
+<script>
+  document.addEventListener("DOMContentLoaded", function () {
+    var toc = document.querySelector(".book-toc");
+    if (!toc) return;
+
+    var parts = [
+      { before: "sec-ch-01-foundations.html",  roman: "Part I",   title: "Foundations" },
+      { before: "sec-ch-07-regression.html",   roman: "Part II",  title: "Modelling" },
+      { before: "sec-ch-12-bioinformatics.html",roman: "Part III", title: "Applications" },
+      { before: "reporting-templates.html",    roman: "Part IV",  title: "Reporting Templates" },
+      { before: "the-research-workflow.html",  roman: "Appendix", title: "Reference Material" }
+    ];
+
+    parts.forEach(function (p) {
+      var anchor = toc.querySelector('a[href="' + p.before + '"]');
+      if (!anchor) return;
+      var li = anchor.closest("li");
+      if (!li || li.previousElementSibling && li.previousElementSibling.classList.contains("part-header")) return;
+      var hdr = document.createElement("li");
+      hdr.className = "part-header";
+      var k = document.createElement("span");
+      k.className = "part-kicker";
+      k.textContent = p.roman;
+      var t = document.createElement("span");
+      t.className = "part-title";
+      t.textContent = p.title;
+      hdr.appendChild(k);
+      hdr.appendChild(t);
+      li.parentNode.insertBefore(hdr, li);
+    });
+  });
+</script>
+
 <!-- Right-panel "Downloads" section, injected above View source / Edit this page -->
 <script>
   document.addEventListener("DOMContentLoaded", function () {
@@ -50,7 +84,7 @@
     var aBook = document.createElement("a");
     aBook.id = "book-download-full";
     aBook.href = "methods-in-r.pdf";
-    aBook.textContent = "Whole book (PDF) ";
+    aBook.textContent = "Entire book (PDF) ";
     var iconBook = document.createElement("i");
     iconBook.className = "fa-solid fa-book";
     aBook.appendChild(iconBook);
