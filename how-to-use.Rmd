@@ -1,7 +1,4 @@
----
-title: "How to use this book"
-number-sections: false
----
+# How to use this book {-}
 
 The book is organised around **method topics**, not courses. There are
 sixteen topic chapters, plus Chapter 0 (the decision tree),
