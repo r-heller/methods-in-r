@@ -1,14 +1,3 @@
----
-title: The Beta Distribution
-date: "2026-04-17"
-description: "Distribution over [0, 1] for proportions and probabilities; conjugate prior for the binomial"
-categories:
-  - Probability Theory
-  - beta
-  - proportion
-  - conjugate-prior
----
-
 ## Introduction
 
 The beta distribution is the flexible family of probabilities on the unit interval $[0, 1]$. It is the natural distribution for proportions, success probabilities, and measurements bounded between two fixed limits. In Bayesian inference, it is the conjugate prior for the binomial and Bernoulli likelihoods.

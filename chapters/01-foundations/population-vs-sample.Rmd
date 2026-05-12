@@ -1,16 +1,3 @@
----
-title: Population vs. Sample
-date: "2026-04-17"
-description: "Target population, sampling frame, and the distinction between parameters and statistics"
-categories:
-  - Statistical Foundations
-  - population
-  - sample
-  - parameter
-  - statistic
-  - sampling-frame
----
-
 ## Introduction
 
 Everything in applied statistics rests on a distinction that sounds obvious until one tries to pin it down: the difference between the population a claim is about and the sample from which the claim is drawn. A *parameter* summarises the population; a *statistic* summarises the sample. The goal of inference is to use the statistic to say something defensible about the parameter. Confusion between the two is the single most common source of overreach in scientific reporting.

@@ -1,7 +1,3 @@
----
-title: "Kappa, ICC, Bland–Altman"
----
-
 <div class="callout callout-note">
 **Workflow labs** use the variant template:
 Goal → Approach → Execution → Check → Report.

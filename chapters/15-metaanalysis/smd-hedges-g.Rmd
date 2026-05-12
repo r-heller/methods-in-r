@@ -1,14 +1,3 @@
----
-title: "Standardised Mean Difference: Hedges' g"
-date: "2026-04-17"
-description: Small-sample-corrected standardised effect size for continuous outcomes
-categories:
-  - Meta-Analysis
-  - hedges-g
-  - smd
-  - effect-size
----
-
 ## Introduction
 
 Hedges' $g$ is the small-sample-corrected standardised mean difference (SMD), the preferred effect-size metric for meta-analysis of continuous outcomes. Cohen's $d$ — the unstandardised SMD — over-estimates the population effect in small samples; Hedges' correction factor $J$ de-biases it. The two are nearly identical for studies with combined sample size above 20 or so, but $g$ should be used routinely whenever any included study is small.

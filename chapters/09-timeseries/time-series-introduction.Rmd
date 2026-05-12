@@ -1,15 +1,3 @@
----
-title: "Time Series: Introduction"
-date: "2026-04-17"
-description: "Trend, seasonality, cyclicality, and noise: the four components of a time series"
-categories:
-  - Time Series Analysis
-  - time-series
-  - trend
-  - seasonality
-  - decomposition
----
-
 ## Introduction
 
 A time series is a sequence of observations indexed by time. Time-series analysis decomposes the series into four interpretable components — trend, seasonality, cyclicality, and noise — and models each. The decomposition framework underpins virtually every classical method: ARIMA models the noise after differencing out trend and seasonality; ETS captures all four components in a state-space form; Bayesian structural time series isolates them as latent processes. Understanding the four-component vocabulary is the foundational step before reaching for any specific model.

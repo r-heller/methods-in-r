@@ -1,7 +1,3 @@
----
-title: "PRISMA — systematic reviews & meta-analyses"
----
-
 # PRISMA — systematic reviews & meta-analyses
 
 PRISMA — *Preferred Reporting Items for Systematic reviews and Meta-Analyses* — covers systematic reviews and meta-analyses. The 27-item checklist and flow diagram are at <https://www.prisma-statement.org/>. The templates below cover pairwise and network meta-analysis methods.

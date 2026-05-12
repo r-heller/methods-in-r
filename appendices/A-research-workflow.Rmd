@@ -1,8 +1,6 @@
 ---
-title: "The research workflow"
 toc: true
 ---
-
 <div class="hero">
 <div class="kicker">
 APPENDIX · RESEARCH WORKFLOW

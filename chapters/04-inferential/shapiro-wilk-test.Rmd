@@ -1,14 +1,3 @@
----
-title: Shapiro-Wilk Normality Test
-date: "2026-04-17"
-description: The most powerful commonly used test for normality in small to moderate samples
-categories:
-  - Inferential Statistics
-  - shapiro-wilk
-  - normality
-  - small-sample
----
-
 ## Introduction
 
 The Shapiro-Wilk test, introduced by Shapiro and Wilk in 1965, is the most widely used and generally most powerful test of Normality for small-to-moderate sample sizes. It compares the observed sample order statistics with their expected values under Normality, producing a statistic $W$ that is close to 1 when the sample is well approximated by a Normal distribution and substantially lower otherwise. Shapiro-Wilk is the default Normality test in R for samples between 3 and 5000 observations and is routinely used as a preliminary diagnostic before applying parametric inference (one- and two-sample $t$-tests, ANOVA, regression on the residuals) that nominally requires Normal data.

@@ -1,14 +1,3 @@
----
-title: Contingency Tables
-date: "2026-04-17"
-description: "r × c tables of counts, their expected values under independence, and standardised residuals"
-categories:
-  - Descriptive Statistics
-  - contingency-table
-  - expected-counts
-  - residuals
----
-
 ## Introduction
 
 A contingency table is a cross-tabulation treated as the input to a statistical test of independence. The counts in the cells, the expected counts under the independence null, and the standardised residuals that localise any deviation are its three essential components.

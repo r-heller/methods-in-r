@@ -1,14 +1,3 @@
----
-title: Sensitivity Analyses in Clinical Trials
-date: "2026-04-17"
-description: Exploring robustness of conclusions to assumptions about missing data and model choice
-categories:
-  - Clinical Biostatistics
-  - sensitivity
-  - tipping-point
-  - mnar
----
-
 ## Introduction
 
 Sensitivity analyses complement the primary analysis by varying key assumptions -- missing-data mechanism, model form, inclusion criteria -- to assess how robust conclusions are. Tipping-point analyses identify how extreme assumptions must be before the primary conclusion flips, providing a concrete interpretation.

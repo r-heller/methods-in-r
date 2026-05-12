@@ -1,14 +1,3 @@
----
-title: "Sequence Alignment: Overview"
-date: "2026-04-17"
-description: "Global vs local alignment, scoring matrices, and the core algorithms"
-categories:
-  - Bioinformatics
-  - alignment
-  - needleman-wunsch
-  - smith-waterman
----
-
 ## Introduction
 
 Sequence alignment is the foundational operation of bioinformatics: comparing DNA, RNA, or protein sequences to find similarities, detect mutations, identify conserved regions, or annotate functional domains. The two canonical algorithms are Needleman-Wunsch (global, full-length alignment) and Smith-Waterman (local, best-matching subregion). All modern aligners — BWA, Bowtie, BLAST, minimap2 — are heuristic approximations to these dynamic-programming gold standards, optimised for speed at the cost of theoretical optimality.

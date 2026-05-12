@@ -1,13 +1,3 @@
----
-title: "Parametric Survival: Log-Normal"
-date: "2026-04-17"
-description: Log-normal AFT model for non-monotone hazards
-categories:
-  - Survival Analysis
-  - log-normal-survival
-  - parametric
----
-
 ## Introduction
 
 The log-normal survival model assumes that $\log T$ follows a Normal distribution. Its distinctive feature among parametric survival models is a *non-monotone* hazard — the instantaneous risk rises early in follow-up, peaks, and then declines. This shape suits diseases or processes in which susceptible individuals fail relatively quickly while a hardy subset survives indefinitely: for example, post-surgical mortality (early peri-operative risk that wanes), some cancer recurrences, and time-to-engagement processes in behavioural data. Where Weibull and exponential models lock in monotone hazards, log-normal accommodates the rise-and-fall pattern naturally.

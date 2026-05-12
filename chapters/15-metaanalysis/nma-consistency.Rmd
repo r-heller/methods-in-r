@@ -1,14 +1,3 @@
----
-title: NMA Consistency and Inconsistency
-date: "2026-04-17"
-description: Loop-specific and global tests for direct-indirect evidence agreement
-categories:
-  - Meta-Analysis
-  - consistency
-  - nma
-  - inconsistency
----
-
 ## Introduction
 
 Network meta-analysis combines direct evidence from head-to-head trials with indirect evidence inferred through common comparators. The validity of this synthesis hinges on the consistency assumption: across closed loops in the network, the direct and indirect estimates of any pairwise contrast must agree up to sampling error. When they disagree systematically — when, for example, the direct A-vs-C estimate from head-to-head trials differs materially from the indirect estimate inferred via B — the network is inconsistent, and the pooled NMA estimates cannot be interpreted at face value. Detecting and characterising inconsistency is therefore a mandatory step in any rigorous NMA workflow, and modern guidance (NICE DSU, ISPOR, PRISMA-NMA) requires that consistency be reported alongside the league table and SUCRA results.

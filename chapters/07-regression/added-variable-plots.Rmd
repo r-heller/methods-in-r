@@ -1,13 +1,3 @@
----
-title: Added-Variable Plots
-date: "2026-04-17"
-description: "Partial regression plots showing each predictor's unique contribution"
-categories:
-  - "Regression & Modelling"
-  - added-variable-plot
-  - partial-regression
----
-
 ## Introduction
 
 An added-variable plot (AVP), also called a partial regression plot, displays the relationship between a single predictor and the outcome after adjusting both for all other predictors in the model. It is the geometric expression of a regression coefficient: the slope of the OLS line in the AVP equals the coefficient in the full multiple regression. AVPs are the standard tool for diagnosing whether a partial linear effect is well-supported, whether non-linearity has been missed, and whether one or two observations are driving a particular coefficient.

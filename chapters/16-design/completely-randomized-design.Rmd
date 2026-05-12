@@ -1,14 +1,3 @@
----
-title: Completely Randomised Design
-date: "2026-04-17"
-description: "The simplest experimental design: random assignment of treatments to units"
-categories:
-  - Experimental Design
-  - crd
-  - randomisation
-  - anova
----
-
 ## Introduction
 
 The completely randomised design (CRD) is the simplest and most flexible of all comparative experimental designs: each of the available experimental units is assigned to one of several treatment groups by an unrestricted random mechanism, with no blocking, stratification, or other restriction on randomisation. CRD is the default starting point in any introductory experimental-design course and remains the right choice whenever the experimental units are reasonably homogeneous and no nuisance source of variation justifies the additional complexity of a blocked layout. Its analysis is one-way ANOVA, its assumptions are minimal, and its results are easily generalised to whatever target population the units were sampled from.

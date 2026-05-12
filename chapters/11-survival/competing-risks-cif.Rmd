@@ -1,14 +1,3 @@
----
-title: "Competing Risks: Cumulative Incidence"
-date: "2026-04-17"
-description: Estimating the probability of each event type in the presence of competing risks
-categories:
-  - Survival Analysis
-  - competing-risks
-  - cif
-  - cmprsk
----
-
 ## Introduction
 
 A competing risk is an event whose occurrence prevents the event of interest from happening — death from a non-disease cause prevents disease-specific death, retirement prevents return-to-work, and so on. In this setting the standard Kaplan-Meier estimator overestimates the cumulative incidence of the event of interest, because it treats competing events as censoring rather than as the absorbing states they actually are. The cumulative incidence function (CIF), estimated non-parametrically by Aalen-Johansen, is the correct summary: it gives the probability of having experienced each cause by time $t$ in the presence of all other competing causes.

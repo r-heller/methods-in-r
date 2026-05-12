@@ -1,14 +1,3 @@
----
-title: Canonical Correlation Analysis
-date: "2026-04-17"
-description: Identifying pairs of linear combinations that maximise correlation between two variable sets
-categories:
-  - Multivariate Statistics
-  - cca
-  - canonical-correlation
-  - multivariate
----
-
 ## Introduction
 
 Canonical correlation analysis (CCA) finds pairs of linear combinations — one from each of two variable sets — that are maximally correlated. Where multiple regression has one outcome and many predictors, CCA generalises to many outcomes and many predictors simultaneously: the first canonical pair $(U_1, V_1)$ is the linear combination of the predictor side and the linear combination of the outcome side whose correlation is highest. Successive pairs are constrained to be uncorrelated with previous ones, mirroring the orthogonality of principal components.

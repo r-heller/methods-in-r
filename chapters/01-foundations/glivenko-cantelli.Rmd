@@ -1,14 +1,3 @@
----
-title: The Glivenko-Cantelli Theorem
-date: "2026-04-17"
-description: "The uniform LLN for CDFs: the ECDF converges almost surely to the true CDF at every point simultaneously"
-categories:
-  - Statistical Foundations
-  - glivenko-cantelli
-  - ecdf
-  - uniform-convergence
----
-
 ## Introduction
 
 The Glivenko-Cantelli theorem is sometimes called the "fundamental theorem of statistics". It says that the empirical distribution function converges uniformly, almost surely, to the true CDF as the sample size grows. This is a stronger guarantee than pointwise convergence at every $x$: it says that the *worst-case* error over all $x$ vanishes. Every non-parametric inference built from the ECDF rests on this theorem.

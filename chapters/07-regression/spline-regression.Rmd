@@ -1,14 +1,3 @@
----
-title: Spline Regression
-date: "2026-04-17"
-description: Piecewise-polynomial regression with natural cubic splines for flexible non-linear fits
-categories:
-  - "Regression & Modelling"
-  - spline
-  - natural-cubic-spline
-  - knots
----
-
 ## Introduction
 
 Splines are piecewise polynomials joined smoothly at points called knots. They give flexible non-linear fits without the wild extrapolation behaviour of high-degree polynomials, which makes them the canonical tool for modelling non-linear continuous predictor effects in regression. Natural cubic splines and restricted cubic splines are the workhorses in clinical and epidemiological work; their constraint of linear behaviour beyond the boundary knots prevents the implausible curls that ordinary polynomials produce in the tails.

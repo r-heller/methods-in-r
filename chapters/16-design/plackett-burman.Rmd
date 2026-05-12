@@ -1,14 +1,3 @@
----
-title: Plackett-Burman Designs
-date: "2026-04-17"
-description: Highly efficient two-level screening designs for many factors
-categories:
-  - Experimental Design
-  - plackett-burman
-  - screening
-  - design
----
-
 ## Introduction
 
 Plackett–Burman (PB) designs, introduced by Plackett and Burman in 1946, are two-level orthogonal screening designs with $n$ runs (where $n$ is a multiple of 4) that can accommodate up to $n - 1$ factors. They are widely regarded as the most economical screening tool in industrial DoE: when many candidate factors must be sifted to identify the few that drive the response, a 12-run PB design can screen up to 11 factors, a 20-run PB up to 19, and so on. The price for this economy is a resolution-III aliasing structure in which main effects are confounded with two-factor interactions, so PB designs are appropriate strictly for screening — never for confirmatory or interaction-aware inference.

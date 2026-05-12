@@ -1,7 +1,3 @@
----
-title: "RNA-seq with DESeq2 / edgeR"
----
-
 <div class="callout callout-note">
 **Workflow labs** use the variant template:
 Goal → Approach → Execution → Check → Report.

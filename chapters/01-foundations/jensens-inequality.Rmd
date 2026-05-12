@@ -1,15 +1,3 @@
----
-title: "Jensen's Inequality"
-date: "2026-04-17"
-description: The expectation of a convex function is at least the convex function of the expectation
-categories:
-  - Statistical Foundations
-  - jensen
-  - convex
-  - inequality
-  - expectation
----
-
 ## Introduction
 
 Jensen's inequality relates the expectation of a function to the function of an expectation: for a convex function $g$, $E[g(X)] \geq g(E[X])$, with equality only when $X$ is a constant (or $g$ is linear). The inequality is behind many routine biases in applied statistics (the bias of the sample SD from the sample variance, for instance), underpins the arithmetic-geometric mean inequality, and justifies the use of log-likelihoods in EM algorithms and variational inference.

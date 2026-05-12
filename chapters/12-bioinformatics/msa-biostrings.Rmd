@@ -1,14 +1,3 @@
----
-title: Multiple Sequence Alignment
-date: "2026-04-17"
-description: "Aligning multiple sequences via ClustalW, Muscle, or T-Coffee from R"
-categories:
-  - Bioinformatics
-  - msa
-  - alignment
-  - clustalw
----
-
 ## Introduction
 
 Multiple sequence alignment (MSA) is the precursor to phylogeny, motif discovery, and structural modelling: it arranges residues so homologous positions align in columns. The `msa` Bioconductor package offers ClustalW, ClustalOmega, and Muscle under a unified R interface.

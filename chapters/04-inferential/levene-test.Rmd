@@ -1,14 +1,3 @@
----
-title: "Levene's Test of Variances"
-date: "2026-04-17"
-description: Robust test of variance homogeneity across groups
-categories:
-  - Inferential Statistics
-  - levene
-  - variance-homogeneity
-  - robust
----
-
 ## Introduction
 
 Levene's test checks whether variances are equal across two or more groups, providing the formal diagnostic for the homogeneity-of-variance assumption that underpins classical analysis of variance and the two-sample $t$-test. Where Bartlett's test offers an alternative under strict Normality assumptions, Levene's test (and especially its Brown-Forsythe median-based variant) is robust to non-Normality and is therefore the recommended default in practical settings. Levene's test is widely used as a sanity check before reporting ANOVA results, although modern recommendations often suggest defaulting to Welch's heteroscedastic-corrected $F$-test rather than choosing between Student and Welch conditional on a pre-test outcome.

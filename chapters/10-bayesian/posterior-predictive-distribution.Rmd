@@ -1,14 +1,3 @@
----
-title: The Posterior Predictive Distribution
-date: "2026-04-17"
-description: Distribution of a new observation integrating over posterior uncertainty about parameters
-categories:
-  - Bayesian Statistics
-  - posterior-predictive
-  - prediction
-  - ppd
----
-
 ## Introduction
 
 The posterior predictive distribution (PPD) is the Bayesian answer to the question "what range of values can a future observation plausibly take?" It accounts for two sources of uncertainty simultaneously: the sampling variability that would persist even if the parameters were known, and the residual parameter uncertainty quantified by the posterior. A plug-in prediction that uses only the posterior mean throws away the second source and produces intervals that are too narrow — a frequent and consequential mistake in applied work.

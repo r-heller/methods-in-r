@@ -1,7 +1,3 @@
----
-title: "06. Data Visualisation"
----
-
 # Data Visualisation {#sec-ch-06-visualisation}
 
 The `ggplot2` grammar, panelled and faceted layouts, statistical graphics for regression and survival, and visual diagnostics. Style choices are biased toward what reproduces in print and what survives a black-and-white photocopy.

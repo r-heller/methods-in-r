@@ -1,14 +1,3 @@
----
-title: FASTQ Quality Control
-date: "2026-04-17"
-description: Inspecting sequencing read quality via Phred scores and FastQC-style reports
-categories:
-  - Bioinformatics
-  - fastq
-  - phred
-  - fastqc
----
-
 ## Introduction
 
 Every high-throughput sequencing analysis starts with FASTQ quality control. Before alignment, before quantification, before any downstream interpretation, you should inspect per-base quality, adapter contamination, GC content, and duplicate rate to decide on trimming and filtering strategies. The cost of skipping this step is high: low-quality data quietly degrade alignment accuracy, inflate variant-calling false positives, and bias differential-expression conclusions in ways that are hard to detect retrospectively.

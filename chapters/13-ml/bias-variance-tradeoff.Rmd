@@ -1,14 +1,3 @@
----
-title: The Bias-Variance Tradeoff
-date: "2026-04-17"
-description: Decomposition of prediction error into structural and sampling components
-categories:
-  - Machine Learning
-  - bias-variance
-  - decomposition
-  - flexibility
----
-
 ## Introduction
 
 Every supervised-learning error decomposes into structural bias (the wrong model class cannot fit the truth), variance (sampling noise in the fit), and irreducible noise. The bias-variance tradeoff is the single most important mental model for picking between a rigid and a flexible estimator.

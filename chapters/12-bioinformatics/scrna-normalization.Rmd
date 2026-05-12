@@ -1,14 +1,3 @@
----
-title: scRNA Normalisation
-date: "2026-04-17"
-description: Library-size normalisation and variance stabilisation for scRNA-seq
-categories:
-  - Bioinformatics
-  - scrnaseq
-  - normalization
-  - sctransform
----
-
 ## Introduction
 
 Single-cell RNA-seq cells differ in total UMI count by orders of magnitude — a typical 10x Chromium experiment ranges from a few hundred to tens of thousands of UMIs per cell. This library-size variation swamps biological signal if not corrected. Normalisation removes the library-size effect, and variance stabilisation goes further by flattening the mean-variance relationship so that downstream PCA and clustering are driven by biology rather than count magnitude.

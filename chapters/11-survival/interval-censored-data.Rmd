@@ -1,14 +1,3 @@
----
-title: Interval-Censored Data
-date: "2026-04-17"
-description: "Events known to occur within a time interval, not at an exact time"
-categories:
-  - Survival Analysis
-  - interval-censoring
-  - turnbull
-  - npmle
----
-
 ## Introduction
 
 Interval censoring arises whenever subjects are observed at discrete intervals and the exact event time is therefore unknown — only the interval that contains it is known. Cavity detected at a routine dental check-up, HIV seroconversion identified at a quarterly clinic visit, breakdown of a part discovered at periodic inspection: in each case the event time lies between the last "no event" inspection and the first "event observed" inspection. Treating these as exact event times biases standard survival methods; the Turnbull non-parametric maximum-likelihood estimator (NPMLE) and parametric or semi-parametric extensions handle the interval structure correctly.

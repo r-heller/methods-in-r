@@ -1,14 +1,3 @@
----
-title: Principles of Blocking
-date: "2026-04-17"
-description: Local control of nuisance variability for precision gains
-categories:
-  - Experimental Design
-  - blocking
-  - nuisance
-  - precision
----
-
 ## Introduction
 
 Blocking is the experimental-design technique that groups experimental units by a known source of nuisance variation — batch of raw material, day of measurement, operator, animal litter, plot location — and then randomises treatment assignments within each block. The result is a design that systematically removes block-to-block variation from the error term, thereby shrinking the residual variance and substantially improving the power to detect genuine treatment effects. Fisher's classical mantra — "block what you can, randomise what you cannot" — captures the principle: when a nuisance source of variation is known and identifiable, controlling it through design is far more efficient than relying on randomisation alone to average it out.

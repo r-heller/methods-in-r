@@ -1,15 +1,3 @@
----
-title: Chi-Squared Test of Independence
-date: "2026-04-17"
-description: Testing association between two categorical variables via observed vs. expected counts under independence
-categories:
-  - Inferential Statistics
-  - chi-squared
-  - independence
-  - contingency
-  - cramer-v
----
-
 ## Introduction
 
 The chi-squared test of independence asks whether two categorical variables in a contingency table are associated. Under the null of independence, cell counts follow a predictable pattern determined by the row and column margins; large departures constitute evidence of association.

@@ -1,7 +1,3 @@
----
-title: "SIR and SEIR models with deSolve"
----
-
 <div class="callout callout-note">
 **Workflow lab:** Goal → Approach → Execution → Check → Report.
 </div>

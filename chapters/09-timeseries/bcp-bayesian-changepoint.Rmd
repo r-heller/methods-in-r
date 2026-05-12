@@ -1,14 +1,3 @@
----
-title: Bayesian Changepoint Detection
-date: "2026-04-17"
-description: "Posterior probability of a changepoint at each time, with online and offline variants"
-categories:
-  - Time Series Analysis
-  - bayesian-changepoint
-  - bcp
-  - online
----
-
 ## Introduction
 
 Bayesian changepoint detection returns a posterior probability of a changepoint at each time, rather than a hard list of detected change times. The richer output quantifies uncertainty about both the existence and the location of changes, making it preferable to classical methods (PELT, binary segmentation) when the analyst wants to communicate "the signal probably shifted near time 200, with some uncertainty about the exact time" rather than committing to an arbitrary threshold. Bayesian approaches also support online detection as data stream in.

@@ -1,14 +1,3 @@
----
-title: Fractional Factorial Designs
-date: "2026-04-17"
-description: "A fraction of a 2^k design: economical screening with acceptable confounding"
-categories:
-  - Experimental Design
-  - fractional
-  - screening
-  - confounding
----
-
 ## Introduction
 
 Fractional factorial designs run only a carefully chosen subset of a full $2^k$ factorial, accepting controlled confounding (also called aliasing) among effects in exchange for dramatic reductions in run count. They are the standard screening tool in industrial DoE: when many candidate factors must be evaluated and only a few are expected to matter, a fractional factorial sifts the active factors from the inert ones at a fraction of the cost of a full factorial. The trade-off is that some pairs (or larger groups) of effects share their estimating contrast and cannot be disentangled from the data alone, so design selection requires careful attention to which aliasing patterns are scientifically tolerable.

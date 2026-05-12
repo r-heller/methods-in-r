@@ -1,14 +1,3 @@
----
-title: Bubble Plots
-date: "2026-04-17"
-description: Scatter plots with a third variable encoded by point size
-categories:
-  - Data Visualisation
-  - bubble
-  - size-aesthetic
-  - scatter
----
-
 ## Introduction
 
 A bubble plot is a scatter plot enriched with a third continuous variable encoded by point size. It is a standard idiom in business analytics ("revenue × growth × market share") and in international development reporting (Hans Rosling's life-expectancy × income × population). The third dimension comes at a real perceptual cost — humans judge area less accurately than position — so a bubble plot's size aesthetic should be reserved for variables where rank order and rough magnitude matter more than precise comparison.

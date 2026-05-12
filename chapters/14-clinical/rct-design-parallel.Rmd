@@ -1,14 +1,3 @@
----
-title: Parallel-Group RCT Design
-date: "2026-04-17"
-description: "The two-arm randomised controlled trial: structure, analysis, and reporting"
-categories:
-  - Clinical Biostatistics
-  - rct
-  - parallel-group
-  - design
----
-
 ## Introduction
 
 The parallel-group randomised controlled trial (RCT) is the gold standard for evaluating interventions. Participants are randomly allocated to one of two (or more) arms -- typically a new intervention vs control -- and followed for a pre-specified outcome. Randomisation balances known and unknown confounders in expectation; blinding further reduces bias.

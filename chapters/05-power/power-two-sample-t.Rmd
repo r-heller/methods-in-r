@@ -1,16 +1,3 @@
----
-title: Sample Size for a Two-Sample t-Test
-date: "2026-04-17"
-description: "Power analysis and sample size calculation for comparing two independent group means, with worked examples in R"
-categories:
-  - "Sample Size & Power"
-  - power-analysis
-  - sample-size
-  - t-test
-  - effect-size
-  - study-design
----
-
 ## Introduction
 
 Before running a two-group comparison, the investigator needs to know how many observations per group will be required to detect a difference of scientific importance with acceptable probability. Power analysis for the two-sample t-test answers this question by linking four quantities: the true effect size, the significance level, the power, and the sample size. Given any three, R can solve for the fourth.

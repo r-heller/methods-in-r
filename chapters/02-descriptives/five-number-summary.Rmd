@@ -1,15 +1,3 @@
----
-title: Five-Number Summary
-date: "2026-04-17"
-description: "Min, Q1, median, Q3, max: the compact distribution summary that powers the boxplot"
-categories:
-  - Descriptive Statistics
-  - five-number-summary
-  - boxplot
-  - tukey
-  - quartile
----
-
 ## Introduction
 
 The five-number summary is a compact description of a univariate distribution in five values: minimum, first quartile, median, third quartile, and maximum. It was popularised by John Tukey in his exploratory data analysis tradition and is the numeric backbone of the boxplot. For skewed or non-normal data it conveys more than the mean and SD in the same space.

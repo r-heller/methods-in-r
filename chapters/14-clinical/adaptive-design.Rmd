@@ -1,14 +1,3 @@
----
-title: Adaptive Trial Designs
-date: "2026-04-17"
-description: Pre-specified modifications to trial conduct based on interim data
-categories:
-  - Clinical Biostatistics
-  - adaptive
-  - design
-  - re-estimation
----
-
 ## Introduction
 
 Adaptive designs allow pre-specified modifications -- sample size, randomisation ratios, treatment-arm selection -- based on data accrued during the trial. They promise efficiency but require careful statistical control to preserve Type I error. The FDA and EMA both provide detailed guidance on acceptable adaptive modifications.

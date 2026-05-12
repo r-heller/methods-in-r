@@ -1,14 +1,3 @@
----
-title: Baseline Adjustment with ANCOVA
-date: "2026-04-17"
-description: Adjusting for baseline covariates to improve precision and address regression to the mean
-categories:
-  - Clinical Biostatistics
-  - ancova
-  - baseline
-  - regression-to-mean
----
-
 ## Introduction
 
 Analysis of Covariance (ANCOVA) regresses the outcome on treatment and baseline value jointly. Compared to a naive change-from-baseline t-test, ANCOVA gains precision, handles regression to the mean correctly, and reduces SE roughly by a factor of $\sqrt{1 - \rho^2}$ where $\rho$ is baseline-outcome correlation.

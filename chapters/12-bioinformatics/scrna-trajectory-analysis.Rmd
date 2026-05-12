@@ -1,14 +1,3 @@
----
-title: Trajectory Analysis
-date: "2026-04-17"
-description: Inferring developmental and activation trajectories from scRNA-seq
-categories:
-  - Bioinformatics
-  - scrnaseq
-  - trajectory
-  - pseudotime
----
-
 ## Introduction
 
 Trajectory inference orders single cells along a continuous developmental or activation path, producing a pseudotime value per cell that represents its progress along the trajectory. Biological processes such as cell differentiation, cell-cycle progression, T-cell activation, and disease progression are continuous in nature; clustering imposes discrete categories that conceal the underlying continuous structure. Trajectory methods recover that continuity by fitting smooth curves or graphs through the data in dimensional-reduced space.

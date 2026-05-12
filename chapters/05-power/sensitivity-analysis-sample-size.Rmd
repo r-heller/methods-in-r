@@ -1,14 +1,3 @@
----
-title: Sample Size Sensitivity Analysis
-date: "2026-04-17"
-description: "Reporting sample size across a range of assumed effect sizes, SDs, and dropout rates"
-categories:
-  - "Sample Size & Power"
-  - sensitivity
-  - sample-size
-  - assumptions
----
-
 ## Introduction
 
 Every power calculation rests on assumptions that the investigator cannot know exactly in advance: the true effect size, the outcome SD, the dropout rate, the ICC in a cluster design. Sensitivity analysis reports sample size across a realistic range of these assumptions, rather than a single point estimate.

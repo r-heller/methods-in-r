@@ -1,14 +1,3 @@
----
-title: "Student's t-Distribution"
-date: "2026-04-17"
-description: "Heavier-tailed relative of the normal, used for small-sample inference on means"
-categories:
-  - Probability Theory
-  - t-distribution
-  - degrees-of-freedom
-  - small-sample
----
-
 ## Introduction
 
 The t-distribution (also called Student's t, after W. S. Gosset's pseudonym) arises as the ratio of a standard normal to the scaled square root of an independent chi-squared. It is the reference distribution for t-tests and for small-sample confidence intervals for a normal mean with unknown variance.

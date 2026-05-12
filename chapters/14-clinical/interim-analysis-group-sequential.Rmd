@@ -1,14 +1,3 @@
----
-title: Interim Analyses and Group Sequential Designs
-date: "2026-04-17"
-description: Pre-planned interim looks with alpha-spending and early-stopping boundaries
-categories:
-  - Clinical Biostatistics
-  - interim
-  - group-sequential
-  - alpha-spending
----
-
 ## Introduction
 
 Group-sequential designs schedule a sequence of interim analyses at pre-specified information fractions, each with efficacy and/or futility boundaries. Trials can stop early for benefit, harm, or futility while preserving overall Type I error. They are the standard for confirmatory trials with ethical imperatives for early stopping.

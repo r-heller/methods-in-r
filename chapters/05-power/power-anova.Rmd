@@ -1,15 +1,3 @@
----
-title: Power for One-Way ANOVA
-date: "2026-04-17"
-description: Sample size for detecting a difference among three or more group means
-categories:
-  - "Sample Size & Power"
-  - power
-  - anova
-  - cohen-f
-  - non-central-f
----
-
 ## Introduction
 
 Power analysis for one-way ANOVA computes the per-group sample size needed to detect a specified pattern of differences among three or more group means with adequate probability. Where the two-sample $t$-test handles the simple two-group comparison, the one-way ANOVA generalises the comparison to any number of groups, and its power calculation must therefore handle a multi-group effect-size measure rather than a single mean difference. Cohen's $f$ is the standard standardised effect size; it captures the spread of true group means relative to the within-group standard deviation in a single number that maps cleanly to the non-central $F$ distribution under the alternative hypothesis.

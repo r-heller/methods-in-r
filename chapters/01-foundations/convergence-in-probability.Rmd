@@ -1,14 +1,3 @@
----
-title: Convergence in Probability
-date: "2026-04-17"
-description: The mode of convergence that underpins consistency of estimators
-categories:
-  - Statistical Foundations
-  - convergence-in-probability
-  - consistency
-  - asymptotic
----
-
 ## Introduction
 
 Convergence in probability is the minimal sense in which a sequence of random variables gets close to a limit. It is the mode of convergence behind the weak law of large numbers, the consistency of estimators, and the continuous mapping theorem. Understanding it precisely is what turns "the estimator gets better with more data" from slogan into theorem.

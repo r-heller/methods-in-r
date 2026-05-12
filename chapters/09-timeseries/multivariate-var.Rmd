@@ -1,14 +1,3 @@
----
-title: Vector Autoregression (VAR)
-date: "2026-04-17"
-description: Multivariate time series where each variable depends on lags of all variables
-categories:
-  - Time Series Analysis
-  - var
-  - multivariate
-  - granger
----
-
 ## Introduction
 
 Vector autoregression (VAR) is the multivariate generalisation of an autoregressive model: each variable in a $k$-variate time series depends linearly on lags of itself and lags of every other variable in the system. It is the workhorse of empirical macroeconomics, where modelling GDP, inflation, and interest rates jointly produces forecasts and impulse-response analyses that single-equation models cannot. Outside macro, VAR is the natural tool whenever multiple time series are believed to be jointly determined and forecasting all of them is the goal.

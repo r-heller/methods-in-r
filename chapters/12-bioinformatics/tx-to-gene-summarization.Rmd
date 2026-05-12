@@ -1,14 +1,3 @@
----
-title: Transcript-to-Gene Summarisation
-date: "2026-04-17"
-description: Aggregating transcript-level estimates to gene level for standard differential expression
-categories:
-  - Bioinformatics
-  - tximport
-  - transcript
-  - gene-level
----
-
 ## Introduction
 
 Pseudo-alignment tools (Salmon, Kallisto) and EM-based quantifiers (RSEM) produce transcript-level (isoform-level) counts. Most differential-expression workflows operate at the gene level, so transcript counts must be aggregated to genes via a transcript-to-gene mapping derived from the annotation. The `tximport` package handles this aggregation cleanly and produces output ready for DESeq2, edgeR, or limma-voom; the related `tximeta` extends this with automatic metadata and reference-genome tracking.

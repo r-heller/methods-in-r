@@ -1,14 +1,3 @@
----
-title: Anomaly Detection
-date: "2026-04-17"
-description: "Unsupervised methods for flagging rare, unusual observations"
-categories:
-  - Machine Learning
-  - anomaly-detection
-  - one-class-svm
-  - autoencoder
----
-
 ## Introduction
 
 Anomaly detection flags observations that deviate from typical patterns. It is used for fraud detection, sensor fault monitoring, network intrusion, and adverse-event surveillance. Unlike classification, labels for anomalies are often unavailable at training time -- methods are unsupervised or semi-supervised.

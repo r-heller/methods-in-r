@@ -1,14 +1,3 @@
----
-title: Proteomics with MSstats
-date: "2026-04-17"
-description: Differential protein abundance from label-free or labelled mass-spectrometry data
-categories:
-  - Bioinformatics
-  - proteomics
-  - MSstats
-  - LFQ
----
-
 ## Introduction
 
 MSstats is the standard Bioconductor package for statistical analysis of bottom-up mass-spectrometry proteomics. It ingests peptide-level intensity from any search engine (MaxQuant, Skyline, OpenMS, Spectronaut) and fits mixed-effects models with protein-level contrasts for label-free (LFQ), TMT, and SRM/PRM workflows.

@@ -1,14 +1,3 @@
----
-title: Bayesian Mediation Analysis
-date: "2026-04-17"
-description: Testing indirect effects with posterior samples
-categories:
-  - Bayesian Statistics
-  - mediation
-  - indirect-effect
-  - bayesian
----
-
 ## Introduction
 
 Mediation analysis decomposes a treatment effect into the part that flows through an intermediate variable (the mediator) and the part that does not. Frequentist approaches build confidence intervals around the product $a_1 b_2$ via Sobel tests or non-parametric bootstrapping; both have to compensate for the fact that the product of two normally distributed estimates is itself non-normal. A Bayesian formulation sidesteps the issue: the joint posterior of $(a_1, b_2)$ is sampled directly, the indirect effect is computed draw-by-draw as the product, and any quantile of the resulting posterior is a valid credible interval without distributional assumptions.

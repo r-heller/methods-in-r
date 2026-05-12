@@ -1,14 +1,3 @@
----
-title: Seasonal ARIMA (SARIMA)
-date: "2026-04-17"
-description: "ARIMA extended with seasonal autoregressive, moving-average, and differencing terms"
-categories:
-  - Time Series Analysis
-  - sarima
-  - seasonal-arima
-  - forecast
----
-
 ## Introduction
 
 Seasonal ARIMA (SARIMA) extends the standard ARIMA framework to series with periodic seasonality. The standard notation is $\mathrm{ARIMA}(p, d, q)(P, D, Q)_s$ where the lower-case letters are non-seasonal orders, the upper-case are seasonal orders, and $s$ is the seasonal period (12 for monthly with annual seasonality, 4 for quarterly, 24 for hourly with daily seasonality). SARIMA is the workhorse parametric forecasting tool for economic, financial, and many biomedical time series with stable seasonal patterns.

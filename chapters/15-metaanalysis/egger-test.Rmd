@@ -1,14 +1,3 @@
----
-title: "Egger's Test for Funnel Asymmetry"
-date: "2026-04-17"
-description: Formal regression test for small-study effects and publication bias
-categories:
-  - Meta-Analysis
-  - egger
-  - publication-bias
-  - asymmetry
----
-
 ## Introduction
 
 Egger's regression test, introduced by Egger and colleagues in 1997, provides a formal hypothesis test for funnel-plot asymmetry — the most commonly cited indirect symptom of publication bias and small-study effects. Where the funnel plot offers a visual diagnostic that depends on the eye of the beholder, Egger's test reduces the question to a regression intercept whose distribution under symmetry is known. A statistically significant intercept indicates that small studies systematically report effects of different magnitude than larger studies, which may reflect selective publication, methodological heterogeneity confounded with sample size, or genuine small-study heterogeneity. Although interpretation requires nuance, Egger's test remains the de facto standard quantitative complement to a funnel plot and is recommended by the Cochrane Handbook for meta-analyses with at least ten studies.

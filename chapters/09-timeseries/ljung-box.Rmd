@@ -1,14 +1,3 @@
----
-title: The Ljung-Box Test
-date: "2026-04-17"
-description: Portmanteau test for remaining autocorrelation in residuals across multiple lags
-categories:
-  - Time Series Analysis
-  - ljung-box
-  - portmanteau
-  - residual-autocorrelation
----
-
 ## Introduction
 
 The Ljung-Box test is the standard portmanteau test for residual autocorrelation in time-series models. After fitting an ARIMA, ETS, or other time-series model, the question is whether the residuals are white noise; the Ljung-Box test pools sample autocorrelations over the first several lags into a single chi-squared statistic. A non-significant result supports model adequacy; a significant result indicates missed dynamics that should motivate refining the model.

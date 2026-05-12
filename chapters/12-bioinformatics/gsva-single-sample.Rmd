@@ -1,14 +1,3 @@
----
-title: GSVA Single-Sample Enrichment
-date: "2026-04-17"
-description: Per-sample pathway scores for downstream sample-level analysis
-categories:
-  - Bioinformatics
-  - gsva
-  - ssgsea
-  - single-sample
----
-
 ## Introduction
 
 GSVA (Gene Set Variation Analysis) transforms a gene-by-sample expression matrix into a pathway-by-sample matrix by assigning each sample a per-pathway enrichment score. The transformation enables pathways to be treated as features in any downstream analysis — Cox regression for survival, clustering, classification, or differential analysis at the pathway level. Where over-representation analysis (GO, KEGG over-representation) tells you which pathways are enriched in a hit list, GSVA tells you how each individual sample stands relative to a panel of pathways.

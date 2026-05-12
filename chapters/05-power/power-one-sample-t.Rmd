@@ -1,15 +1,3 @@
----
-title: Power for One-Sample t-Test
-date: "2026-04-17"
-description: Computing sample size and power for a test of one mean against a reference
-categories:
-  - "Sample Size & Power"
-  - power
-  - one-sample
-  - t-test
-  - cohen-d
----
-
 ## Introduction
 
 Power analysis for the one-sample $t$-test determines the sample size required to detect a specified departure of the population mean from a reference value with a given probability, or equivalently the power achievable at a fixed sample size. The one-sample $t$-test arises in many practical contexts: validating a quality-control measurement against a target, comparing a single-arm pilot study against a historical benchmark, testing whether a within-subject change differs from zero. In every case, the planning question is the same — given the smallest effect of scientific interest and the assumed within-population standard deviation, how many observations are needed for an adequately-powered test? Pre-specifying the calculation in the protocol is now standard for any prospective study.

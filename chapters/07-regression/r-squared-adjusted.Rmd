@@ -1,14 +1,3 @@
----
-title: R-Squared and Adjusted R-Squared
-date: "2026-04-17"
-description: "Proportion of variance explained, and the penalty for model complexity"
-categories:
-  - "Regression & Modelling"
-  - r-squared
-  - adjusted-r-squared
-  - variance-explained
----
-
 ## Introduction
 
 $R^2$ is the proportion of variance in the outcome explained by the regression — the most commonly reported summary of regression fit. Its weakness is well known: $R^2$ never decreases when predictors are added, so it cannot distinguish a useful predictor from a noise variable, and high $R^2$ alone does not imply a useful model. Adjusted $R^2$ penalises for the number of predictors and decreases when an added predictor does not earn its complexity. For predictive purposes, cross-validated $R^2$ is more honest still.

@@ -1,14 +1,3 @@
----
-title: The Sign Test
-date: "2026-04-17"
-description: Testing a median or paired difference using only the direction of each observation
-categories:
-  - Inferential Statistics
-  - sign-test
-  - median
-  - non-parametric
----
-
 ## Introduction
 
 The sign test is the most assumption-light procedure for a one-sample median or paired comparison. It ignores the magnitude of deviations and uses only whether each observation is above or below the reference value (or whether each pair increased or decreased).

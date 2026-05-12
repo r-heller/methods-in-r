@@ -1,14 +1,3 @@
----
-title: Quantile Regression
-date: "2026-04-17"
-description: "Modelling conditional quantiles (median, upper/lower percentiles) rather than the mean"
-categories:
-  - "Regression & Modelling"
-  - quantile
-  - median-regression
-  - rq
----
-
 ## Introduction
 
 Quantile regression estimates a chosen conditional quantile of the outcome (median, lower percentile, upper percentile) rather than the conditional mean. The result is a richer description of how covariates affect the outcome distribution: the same covariate may have a different effect at the 10th percentile (where it shifts the lower tail) than at the 90th (where it shifts the upper tail). Median regression is the L1 alternative to OLS and robust to outliers; multi-quantile fits expose heteroscedasticity and asymmetric effects that mean regression hides.

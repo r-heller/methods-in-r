@@ -1,16 +1,3 @@
----
-title: Conjugate Priors
-date: "2026-04-17"
-description: "When the prior and posterior share the same distributional family: the beta-binomial, normal-normal, and gamma-Poisson models"
-categories:
-  - Bayesian Statistics
-  - bayesian
-  - conjugate-priors
-  - beta-binomial
-  - posterior
-  - prior-selection
----
-
 ## Introduction
 
 Before MCMC made arbitrary Bayesian models tractable, conjugate priors provided the only route to a tractable posterior. A prior is **conjugate** to a likelihood if the resulting posterior belongs to the same distributional family as the prior -- the prior and posterior share a form, with updated parameters that have simple closed-form expressions. Conjugate pairs remain pedagogically central because they make the Bayesian update arithmetic, and they remain practically useful as building blocks within larger hierarchical models.

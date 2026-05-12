@@ -1,14 +1,3 @@
----
-title: Partial Least Squares Regression
-date: "2026-04-17"
-description: Regression using latent components optimised for outcome prediction in high dimensions
-categories:
-  - Multivariate Statistics
-  - pls
-  - regression
-  - latent-components
----
-
 ## Introduction
 
 Partial least squares (PLS) regression is a latent-component method designed for the regime where predictors are numerous, correlated, and possibly outnumber observations — exactly the situation in which ordinary least squares fails. It extracts components from the predictor matrix that are simultaneously high-variance and strongly correlated with the outcome, then uses those components as the regression basis. Chemometrics and metabolomics use PLS as their default regression workhorse, and in bioinformatics it competes with elastic net and principal-components regression for high-dimensional prediction tasks.

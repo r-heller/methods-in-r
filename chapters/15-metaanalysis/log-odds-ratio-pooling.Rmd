@@ -1,14 +1,3 @@
----
-title: Pooling Log-Odds Ratios
-date: "2026-04-17"
-description: Fixed and random-effects meta-analysis of binary outcomes on the log scale
-categories:
-  - Meta-Analysis
-  - log-or
-  - pooling
-  - binary
----
-
 ## Introduction
 
 For binary outcomes, the odds ratio (OR) is the most widely reported effect measure across case-control studies, randomised trials with binary endpoints, and observational comparative studies. Because the OR is bounded below at zero with a long right tail, its sampling distribution is markedly skewed and inverse-variance pooling on the natural scale would be poorly behaved. The standard approach is therefore to pool on the log scale, where the distribution is approximately Normal, and back-transform the pooled estimate and its confidence interval to the OR scale for reporting. Pooling on the log scale stabilises variance, allows symmetric confidence intervals on the analysis scale, and keeps the multiplicative-on-back-transform interpretation that clinicians and epidemiologists expect.

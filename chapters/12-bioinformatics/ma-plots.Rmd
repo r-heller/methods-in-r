@@ -1,14 +1,3 @@
----
-title: MA Plots
-date: "2026-04-17"
-description: Mean-average plots for differential expression diagnostics
-categories:
-  - Bioinformatics
-  - visualisation
-  - ma-plot
-  - diagnostics
----
-
 ## Introduction
 
 An MA plot — also known as a mean-difference plot or Bland-Altman-style plot for genomics — displays the log fold change (M) on the y-axis against the mean expression intensity (A) on the x-axis. It is the standard diagnostic for differential-expression results: if the bulk of points (the non-DE genes) clusters around zero independent of mean intensity, normalisation has succeeded; systematic curvature or vertical drift indicates intensity-dependent bias that contaminates the DE calls. The MA plot complements the volcano plot by emphasising the relationship between effect size and expression level rather than effect size and statistical significance.

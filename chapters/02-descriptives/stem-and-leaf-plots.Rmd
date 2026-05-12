@@ -1,14 +1,3 @@
----
-title: Stem-and-Leaf Plots
-date: "2026-04-17"
-description: A text-based compact display of small samples that preserves every data value
-categories:
-  - Descriptive Statistics
-  - stem-and-leaf
-  - tukey
-  - exploratory
----
-
 ## Introduction
 
 The stem-and-leaf plot, introduced by John Tukey, is a compact display that shows the distribution of a small sample while preserving every data value. Each observation is split into a "stem" (leading digits) and a "leaf" (trailing digit); stems are listed vertically and leaves are written next to each stem in order. For samples up to about 100 observations, the resulting ASCII plot is a poor man's histogram that can be typed into a notebook.

@@ -1,15 +1,3 @@
----
-title: Descriptive vs Inferential Statistics
-date: "2026-04-17"
-description: The distinction between summarising the sample and making claims about the population
-categories:
-  - Descriptive Statistics
-  - descriptive
-  - inferential
-  - sample
-  - population
----
-
 ## Introduction
 
 Every applied statistics course opens with a distinction that sounds obvious but is routinely blurred in papers: **descriptive** statistics summarise the sample at hand; **inferential** statistics make claims about the population from which the sample was drawn. Confusing them is the single most common reporting error in published research.

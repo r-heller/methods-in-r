@@ -1,14 +1,3 @@
----
-title: Stacked and Dodged Bars
-date: "2026-04-17"
-description: "Two-factor bar charts: stacking for composition, dodging for side-by-side comparison"
-categories:
-  - Data Visualisation
-  - stacked-bars
-  - dodged-bars
-  - fill
----
-
 ## Introduction
 
 When a bar chart needs to display two categorical variables at once, three layout options compete: stacking the sub-bars within each main bar (showing totals and composition), placing them side by side (showing within-category comparison), or normalising to 100 % (showing proportions independent of total). Each layout answers a different question, and choosing the right one is more important than tweaking colours or fonts. The `position` argument of `geom_bar()` and `geom_col()` selects between the three.

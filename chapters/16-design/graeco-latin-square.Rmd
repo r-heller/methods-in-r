@@ -1,14 +1,3 @@
----
-title: Graeco-Latin Square Designs
-date: "2026-04-17"
-description: Blocking on three nuisance factors by superimposing two orthogonal Latin squares
-categories:
-  - Experimental Design
-  - graeco-latin
-  - blocking
-  - orthogonal
----
-
 ## Introduction
 
 A Graeco-Latin square superimposes two orthogonal Latin squares to block simultaneously on three nuisance factors in a single $t \times t$ layout. Each of the $t$ treatments appears exactly once in every row, every column, and every Greek-letter level, so the four classifications — rows, columns, Greek letters, and Latin treatment letters — are mutually orthogonal. The design is extraordinarily compact: $t^2$ runs accommodate $t$ treatments with three layers of blocking, where a comparable randomised-block design would need $t^3$ runs to achieve the same blocking. This makes Graeco-Latin squares classical tools in industrial and agricultural experiments where each run is expensive and three nuisance factors (operator, machine, day; or row, column, fertiliser-batch) need to be controlled simultaneously.

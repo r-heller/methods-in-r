@@ -1,15 +1,3 @@
----
-title: Forecast Accuracy Metrics
-date: "2026-04-17"
-description: "MAE, RMSE, MAPE, MASE: scaled and scale-dependent measures of forecast error"
-categories:
-  - Time Series Analysis
-  - mae
-  - rmse
-  - mape
-  - mase
----
-
 ## Introduction
 
 Forecast accuracy is evaluated through error metrics that compare predictions against held-out actuals. Each metric encodes a different loss function and has different units, so the choice of metric depends on the substantive cost structure of forecasting errors. The four most widely reported are MAE, RMSE, MAPE, and MASE; understanding their differences and trade-offs is essential for fair comparison across forecasting methods and across series.

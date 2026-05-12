@@ -1,14 +1,3 @@
----
-title: The Survival Function
-date: "2026-04-17"
-description: Probability of surviving past time t; the complement of the CDF for positive random variables
-categories:
-  - Probability Theory
-  - survival-function
-  - complement-cdf
-  - kaplan-meier
----
-
 ## Introduction
 
 For a time-to-event random variable $T \geq 0$, the **survival function** $S(t) = P(T > t)$ is the probability of not having experienced the event by time $t$. It is the complement of the CDF and the single most important descriptive quantity in survival analysis.

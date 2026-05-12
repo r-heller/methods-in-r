@@ -1,14 +1,3 @@
----
-title: The Elbow Method
-date: "2026-04-17"
-description: Choosing the number of clusters by identifying a bend in the within-cluster sum of squares curve
-categories:
-  - Multivariate Statistics
-  - elbow
-  - wss
-  - cluster-number
----
-
 ## Introduction
 
 The elbow method is the simplest heuristic for choosing the number of clusters in $k$-means or any partitioning algorithm. The within-cluster sum of squares (WSS) decreases monotonically with $k$, but the rate of decrease slows once the natural cluster structure has been captured. Plotting WSS against $k$ reveals a "bend" — the elbow — at the point where additional clusters bring diminishing returns. The method is unavoidably subjective but widely used because it is fast, intuitive, and works well when the data have well-separated clusters.

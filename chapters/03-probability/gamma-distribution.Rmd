@@ -1,15 +1,3 @@
----
-title: The Gamma Distribution
-date: "2026-04-17"
-description: Flexible right-skewed distribution for positive continuous data; sum of independent exponentials
-categories:
-  - Probability Theory
-  - gamma
-  - shape
-  - rate
-  - positive-continuous
----
-
 ## Introduction
 
 The gamma distribution is a flexible right-skewed distribution on positive real numbers. It is parameterised by a shape and a rate (or scale) and includes the exponential, Erlang, and chi-squared as special cases. In applied work it models waiting times, concentrations, and response amplitudes -- any positive continuous variable with light-to-moderate right skew.

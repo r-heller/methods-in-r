@@ -1,14 +1,3 @@
----
-title: Checking Cox Assumptions
-date: "2026-04-17"
-description: "Diagnostics for proportional hazards, functional form, and influential observations"
-categories:
-  - Survival Analysis
-  - cox-diagnostics
-  - schoenfeld
-  - martingale
----
-
 ## Introduction
 
 A fitted Cox model is only as good as its assumptions: proportional hazards across covariate levels, the right functional form for continuous predictors, and the absence of one or two highly influential observations driving the coefficient estimates. Three residual families address these in turn — Schoenfeld for proportional hazards, martingale for functional form, and DFBETA-style influence diagnostics for unduly leveraged observations. Reporting all three is now standard for any clinical-trial Cox analysis.

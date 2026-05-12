@@ -1,14 +1,3 @@
----
-title: Mean Absolute Deviation
-date: "2026-04-17"
-description: "Average absolute deviation from the mean or median: a robust alternative to the standard deviation"
-categories:
-  - Descriptive Statistics
-  - mad
-  - mean-absolute-deviation
-  - robust
----
-
 ## Introduction
 
 The mean absolute deviation (MAD) is the average distance of observations from a measure of central tendency. It uses absolute values instead of squares, making it less sensitive to outliers than the standard deviation. In the modern literature, the term "MAD" almost always means the **median absolute deviation from the median**, a robust scale estimator.

@@ -1,14 +1,3 @@
----
-title: Censoring Types
-date: "2026-04-17"
-description: "Right, left, interval, and informative censoring in time-to-event data"
-categories:
-  - Survival Analysis
-  - censoring
-  - right-censored
-  - interval-censored
----
-
 ## Introduction
 
 Censoring is the defining feature of survival data: the exact event time is unknown but partially observed, because follow-up ended, the event was screened periodically, or the subject was lost to observation. Handling censoring correctly is what separates survival analysis from ordinary regression on time-to-event endpoints. The wrong censoring assumption is one of the most consequential analytic errors in clinical studies, so identifying the censoring type and choosing methods that respect it is the first step of any time-to-event workflow.

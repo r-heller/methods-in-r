@@ -1,14 +1,3 @@
----
-title: Fine-Gray Subdistribution Hazards
-date: "2026-04-17"
-description: Regression directly targeting cumulative incidence in competing-risks data
-categories:
-  - Survival Analysis
-  - fine-gray
-  - subdistribution-hazards
-  - competing-risks
----
-
 ## Introduction
 
 In competing-risks data, two questions often co-exist: "what is this covariate's mechanistic effect on the event of interest" and "what is its effect on the population-level probability of experiencing that event by time $t$?" Cause-specific Cox regression answers the first; Fine-Gray subdistribution-hazards regression answers the second. The two questions can disagree dramatically — a covariate can leave the cause-specific hazard unchanged while still raising or lowering the cumulative incidence because it changes the competing-event hazard. Reporting only one when both are relevant is a common analytical mistake.

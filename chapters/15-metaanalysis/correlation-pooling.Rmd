@@ -1,14 +1,3 @@
----
-title: Pooling Correlation Coefficients
-date: "2026-04-17"
-description: Fisher z transformation for meta-analysis of correlations
-categories:
-  - Meta-Analysis
-  - correlation
-  - fisher-z
-  - pooling
----
-
 ## Introduction
 
 Pearson correlation coefficients are bounded to $[-1, 1]$, and their sampling distributions are skewed with heteroscedastic variance — the variance depends on the underlying $\rho$ and on $n$. These properties make raw correlations unsuitable for inverse-variance meta-analysis. Fisher's z transformation converts each correlation to an approximately Normal scale with variance independent of $\rho$, enabling standard random-effects pooling. After pooling on the z scale, the result is back-transformed to a correlation for interpretation.

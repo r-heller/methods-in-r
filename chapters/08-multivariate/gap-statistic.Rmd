@@ -1,14 +1,3 @@
----
-title: The Gap Statistic
-date: "2026-04-17"
-description: Choosing the number of clusters via comparison with a null (uniform) distribution
-categories:
-  - Multivariate Statistics
-  - gap-statistic
-  - cluster-number
-  - bootstrap
----
-
 ## Introduction
 
 The gap statistic, introduced by Tibshirani, Walther, and Hastie in 2001, is a principled way to choose the number of clusters $k$ in any partitioning method. Where the elbow method relies on visual judgement and the silhouette method on per-observation neighbour comparisons, the gap statistic compares the within-cluster dispersion of the data to what would be expected under a null reference distribution with no cluster structure. The point at which the data deviate most from the null is the optimal $k$, with bootstrap-based standard errors that quantify the certainty of the choice.

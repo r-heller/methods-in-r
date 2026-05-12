@@ -1,14 +1,3 @@
----
-title: Variance and Covariance
-date: "2026-04-17"
-description: "Second moments of one and two random variables: dispersion and joint variation"
-categories:
-  - Probability Theory
-  - variance
-  - covariance
-  - second-moment
----
-
 ## Introduction
 
 Variance measures how far a single random variable ranges around its mean; covariance measures how two random variables move together around their means. Together they populate the covariance matrix of a random vector, which is the central object in multivariate statistics, regression, and portfolio theory.

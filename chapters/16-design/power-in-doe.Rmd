@@ -1,14 +1,3 @@
----
-title: Power Analysis for DOE
-date: "2026-04-17"
-description: Calculating power for detecting main effects and interactions in designed experiments
-categories:
-  - Experimental Design
-  - power
-  - sample-size
-  - doe
----
-
 ## Introduction
 
 Power analysis for designed experiments determines the run count required to detect specified main effects and interactions with adequate probability. It bridges experimental-design choice and statistical inference: a design is only useful if its run count gives sensible power for the smallest effect that would be scientifically actionable. Skimping on power means under-powered experiments that fail to detect real effects and waste resources on inconclusive results; over-powering an experiment beyond what is needed wastes resources differently and exposes the design to detecting irrelevantly small effects. A pre-specified power calculation is therefore now standard in any DoE protocol — industrial, agricultural, or clinical — and is increasingly required by regulators and journal reviewers.

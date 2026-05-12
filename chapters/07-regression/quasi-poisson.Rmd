@@ -1,14 +1,3 @@
----
-title: Quasi-Poisson Regression
-date: "2026-04-17"
-description: Poisson regression with a dispersion parameter for moderate overdispersion
-categories:
-  - "Regression & Modelling"
-  - quasi-poisson
-  - overdispersion
-  - dispersion
----
-
 ## Introduction
 
 Quasi-Poisson regression is the simplest fix for overdispersion in count data: keep the Poisson mean structure $\log \mu = X^\top \beta$, but introduce a free dispersion parameter $\phi$ that scales the variance to $\phi \mu$ rather than the Poisson-mandated $\mu$. Coefficient estimates are identical to Poisson; only the standard errors change, multiplied by $\sqrt{\phi}$. It is the workhorse "quick fix" when a Poisson dispersion check fails by a moderate amount and you do not need a likelihood-based comparison.

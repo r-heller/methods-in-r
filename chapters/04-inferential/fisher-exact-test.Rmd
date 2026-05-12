@@ -1,14 +1,3 @@
----
-title: "Fisher's Exact Test"
-date: "2026-04-17"
-description: "Exact test for 2x2 (and r x c) contingency tables, based on the hypergeometric distribution"
-categories:
-  - Inferential Statistics
-  - fisher-exact
-  - hypergeometric
-  - small-samples
----
-
 ## Introduction
 
 Fisher's exact test assesses the association between two categorical variables in a contingency table without relying on the chi-squared large-sample approximation. It is the gold standard for 2x2 tables with small cells, and extends to $r \times c$ tables via network algorithms.

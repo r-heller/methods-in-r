@@ -1,14 +1,3 @@
----
-title: The F Distribution
-date: "2026-04-17"
-description: Ratio of two independent scaled chi-squared random variables; foundation of ANOVA and variance tests
-categories:
-  - Probability Theory
-  - f-distribution
-  - anova
-  - variance-ratio
----
-
 ## Introduction
 
 The F distribution arises as the ratio of two independent scaled chi-squared random variables. It is the reference distribution for the F-statistic in ANOVA, for tests of variance equality between two normal samples, and for omnibus tests in linear regression. Its shape is controlled by two degree-of-freedom parameters, one for the numerator and one for the denominator.

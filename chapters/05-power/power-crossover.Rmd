@@ -1,15 +1,3 @@
----
-title: Power for Crossover Trials
-date: "2026-04-17"
-description: "Sample size for 2x2 crossover designs, exploiting within-subject comparison"
-categories:
-  - "Sample Size & Power"
-  - power
-  - crossover
-  - 2x2
-  - carryover
----
-
 ## Introduction
 
 In a crossover trial, each subject receives multiple treatments in sequence with a washout period between. The paired comparison cancels between-subject variability, often requiring far fewer subjects than parallel-group trials. The classic 2x2 crossover has two treatments and two periods.

@@ -1,14 +1,3 @@
----
-title: Subgroup Analyses
-date: "2026-04-17"
-description: Pre-specified subgroup effects and treatment-by-subgroup interaction tests
-categories:
-  - Clinical Biostatistics
-  - subgroup
-  - interaction
-  - heterogeneity
----
-
 ## Introduction
 
 Subgroup analyses in clinical trials assess whether the overall treatment effect varies across pre-specified baseline characteristics — age, sex, disease severity, comorbidity, biomarker status. They provide important insight into treatment heterogeneity, support guideline development, and inform precision-medicine decisions. They are also notoriously prone to over-interpretation: with enough subgroups and enough cut-points, false-positive heterogeneity findings appear by chance alone, and the literature is replete with cautionary tales of subgroup claims that failed to replicate. Modern guidance (CONSORT, ICH-E9, regulatory subgroup analysis frameworks) emphasises pre-specification, formal interaction tests, and graphical communication via forest plots, while warning against per-subgroup hypothesis testing as a substitute for the interaction test.

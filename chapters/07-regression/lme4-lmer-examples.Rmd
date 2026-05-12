@@ -1,14 +1,3 @@
----
-title: "Worked lme4::lmer Examples"
-date: "2026-04-17"
-description: Common formula patterns for lmer with interpretation of each output block
-categories:
-  - "Regression & Modelling"
-  - lme4
-  - lmer
-  - formula-syntax
----
-
 ## Introduction
 
 `lme4::lmer()` is the standard R implementation of linear mixed-effects models and the de facto reference for the formula syntax used across the broader mixed-models ecosystem (`lmerTest`, `glmmTMB`, `brms`, `nlme`). Mastering the random-effects syntax — what `(1 | group)`, `(x | group)`, `(x || group)`, and nested vs. crossed grouping notation actually mean — is a prerequisite for fluent mixed-models work. The output structure is equally important: each block (fixed effects, random effects, residual variance) carries different inferential weight and must be reported correctly.

@@ -1,15 +1,3 @@
----
-title: Nested vs Crossed Random Effects
-date: "2026-04-17"
-description: Distinguishing hierarchical from partially-overlapping grouping structures in mixed models
-categories:
-  - "Regression & Modelling"
-  - nested
-  - crossed
-  - random-effects
-  - hierarchy
----
-
 ## Introduction
 
 Mixed-effects models require careful specification of the random-effects structure, and the most common confusion is between nested and crossed designs. Nested means one grouping factor's levels sit strictly within another's: patients within hospitals, schools within districts, plots within fields. Crossed means levels of one factor appear across levels of another: subjects each rate the same items, items rated by multiple subjects, students each take the same set of exams. Misspecifying one as the other produces wrong variance components and biased standard errors.

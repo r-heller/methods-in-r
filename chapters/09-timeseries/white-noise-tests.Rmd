@@ -1,14 +1,3 @@
----
-title: White Noise Tests
-date: "2026-04-17"
-description: Testing a residual series for independence and constant variance
-categories:
-  - Time Series Analysis
-  - white-noise
-  - residual-diagnostics
-  - portmanteau
----
-
 ## Introduction
 
 After fitting a time-series model — ARIMA, ETS, regression with ARIMA errors — the residuals should look like white noise: zero mean, constant variance, and no autocorrelation. White-noise tests check these properties formally and are the standard residual-diagnostic battery for time-series modelling. Significant rejection indicates the model has missed structure that should motivate refinement; failure to reject supports model adequacy.

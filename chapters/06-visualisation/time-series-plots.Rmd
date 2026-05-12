@@ -1,14 +1,3 @@
----
-title: Time Series Plots
-date: "2026-04-17"
-description: Dated line plots with forecast bands and decomposition displays
-categories:
-  - Data Visualisation
-  - time-series
-  - dates
-  - forecasting
----
-
 ## Introduction
 
 Time-series plots are deceptively easy to make and surprisingly easy to ruin. The data are ordered, the x-axis is a date, and a single line is often the right geom — but the choice of tick spacing, transformation, and accompanying decomposition or forecast layer determines whether the plot communicates the underlying dynamics or hides them. Trend, seasonality, and forecast uncertainty are three distinct stories the same series can tell, and a good time-series figure usually shows at least two of them.

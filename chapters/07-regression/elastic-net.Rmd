@@ -1,14 +1,3 @@
----
-title: Elastic Net
-date: "2026-04-17"
-description: "Combined L1 and L2 penalty: variable selection plus grouping behaviour"
-categories:
-  - "Regression & Modelling"
-  - elastic-net
-  - l1-l2
-  - alpha
----
-
 ## Introduction
 
 Elastic net combines the L1 penalty of lasso with the L2 penalty of ridge into a single hybrid regulariser. It performs variable selection (like lasso) while retaining the stability under correlated predictors that lasso famously lacks (which is what ridge provides). The mixing parameter $\alpha \in [0, 1]$ moves continuously between the two extremes — $\alpha = 0$ is pure ridge, $\alpha = 1$ is pure lasso, and intermediate values blend their behaviours. For high-dimensional biomedical data with groups of correlated predictors (gene expression, multiple imaging features), elastic net is now the standard default.

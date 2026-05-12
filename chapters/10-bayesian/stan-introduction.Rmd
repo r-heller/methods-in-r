@@ -1,14 +1,3 @@
----
-title: "Stan: Introduction"
-date: "2026-04-17"
-description: "Writing probabilistic models in Stan's data-parameters-model blocks"
-categories:
-  - Bayesian Statistics
-  - stan
-  - rstan
-  - cmdstanr
----
-
 ## Introduction
 
 Stan is a probabilistic programming language with an R-like syntax that compiles to highly optimised C++. Writing a model directly in Stan gives you full control over the likelihood, the prior, and any reparameterisation that improves sampling — control that the higher-level wrappers `brms` and `rstanarm` deliberately abstract away. The cost is verbosity, but the payoff is a transparent specification: every line in the `model` block contributes a term to the log-posterior, and a Stan program can be archived as the canonical statement of an analysis.

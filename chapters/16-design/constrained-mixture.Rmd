@@ -1,14 +1,3 @@
----
-title: Constrained Mixture Designs
-date: "2026-04-17"
-description: Mixture experiments with lower and upper bounds on components
-categories:
-  - Experimental Design
-  - constrained-mixture
-  - extreme-vertices
-  - bounds
----
-
 ## Introduction
 
 In many real-world mixture experiments, each component carries individual lower and upper bounds — salt must remain at least 5 %, alcohol must not exceed 15 %, an active pharmaceutical ingredient must be between 2 and 8 % — so the feasible blend region is no longer the full simplex but a constrained convex polytope inside it. Standard simplex-lattice and simplex-centroid designs do not exploit this structure and would place runs outside the feasible region. Extreme-vertices designs (McLean and Anderson, 1966) instead enumerate the vertices of the constraint polytope and sample them, augmenting with edge midpoints, face centroids, and an overall centroid as the design budget allows. The result is a design that is simultaneously feasible everywhere and informative about the response across the full constrained region.

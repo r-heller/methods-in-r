@@ -1,15 +1,3 @@
----
-title: Multiple Linear Regression
-date: "2026-04-17"
-description: "Linear regression with two or more predictors: coefficient interpretation, partial effects, and collinearity"
-categories:
-  - "Regression & Modelling"
-  - multiple-regression
-  - ols
-  - collinearity
-  - partial-effect
----
-
 ## Introduction
 
 Multiple linear regression extends simple regression to include two or more predictors. Each coefficient represents the partial effect of its predictor, holding all others constant. This allows confounding adjustment, multi-factor prediction, and partial correlations.

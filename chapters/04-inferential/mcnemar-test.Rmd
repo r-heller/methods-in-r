@@ -1,14 +1,3 @@
----
-title: "McNemar's Test"
-date: "2026-04-17"
-description: "Paired / matched binary data: comparing two measurements on the same units, using discordant pairs only"
-categories:
-  - Inferential Statistics
-  - mcnemar
-  - paired-binary
-  - discordant-pairs
----
-
 ## Introduction
 
 When the same units are measured on a binary outcome twice (before/after, two tests, two raters), the observations are paired and a standard two-proportion test is invalid. McNemar's test analyses the 2x2 table of paired responses, using only the **discordant pairs** -- those where the two measurements differ.

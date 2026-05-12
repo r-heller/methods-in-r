@@ -1,15 +1,3 @@
----
-title: Contrasts in R
-date: "2026-04-17"
-description: Built-in and custom contrast matrices for factor variables in regression and ANOVA
-categories:
-  - "Regression & Modelling"
-  - contrasts
-  - factor
-  - orthogonal
-  - helmert
----
-
 ## Introduction
 
 A contrast matrix maps a factor's levels to the numeric indicator columns that enter the regression design matrix. R ships with four built-in schemes — treatment, sum, Helmert, polynomial — each testing different hypotheses about group differences. Beyond these, custom contrasts let analysts test pre-specified comparisons (e.g. "first arm vs the average of the other two") directly in the coefficient table, without post-hoc multiple comparisons. Choosing and reporting the contrast scheme is a routine but consequential modelling decision.

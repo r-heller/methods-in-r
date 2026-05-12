@@ -1,15 +1,3 @@
----
-title: Zero-Inflated Models
-date: "2026-04-17"
-description: Mixture models for count data with more zeros than Poisson or negative binomial predicts
-categories:
-  - "Regression & Modelling"
-  - zero-inflation
-  - zip
-  - zinb
-  - mixture
----
-
 ## Introduction
 
 Zero-inflated models handle count data that contain more zeros than a Poisson or negative binomial distribution would predict — often called "structural zeros" because they arise from a process distinct from the count-generating process. The model is a mixture: one component decides whether each observation is a structural zero (always zero) or a sampling unit (could have been any non-negative count); the other component generates the count for the sampling units. Insurance claims, healthcare-utilisation counts, ecological abundance with absent species — all share this structure.

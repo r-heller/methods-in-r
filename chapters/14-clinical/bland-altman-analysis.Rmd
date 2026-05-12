@@ -1,14 +1,3 @@
----
-title: Bland-Altman Limits of Agreement
-date: "2026-04-17"
-description: Graphical comparison of two measurement methods on the same subjects
-categories:
-  - Clinical Biostatistics
-  - bland-altman
-  - agreement
-  - method-comparison
----
-
 ## Introduction
 
 The Bland-Altman plot (1986) compares two measurement methods by plotting their difference against their mean. It exposes systematic bias, proportional bias, and the 95 % limits of agreement within which most differences fall. It is the standard graphical summary for method-comparison studies and has largely replaced correlation-based summaries.

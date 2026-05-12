@@ -1,14 +1,3 @@
----
-title: Variant Annotation with VEP
-date: "2026-04-17"
-description: Predicting functional consequences of variants using Ensembl VEP
-categories:
-  - Bioinformatics
-  - VEP
-  - annotation
-  - consequence
----
-
 ## Introduction
 
 Ensembl's Variant Effect Predictor (VEP) assigns each variant a predicted consequence (missense, synonymous, splice-donor, intronic, etc.), gene and transcript IDs, and pathogenicity scores from predictors (SIFT, PolyPhen, CADD, REVEL). It is the standard annotator for variant interpretation in clinical genetics and population genomics.

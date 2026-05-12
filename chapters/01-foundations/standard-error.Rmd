@@ -1,15 +1,3 @@
----
-title: The Standard Error
-date: "2026-04-17"
-description: "The standard deviation of a statistic's sampling distribution, and how to compute it in R"
-categories:
-  - Statistical Foundations
-  - standard-error
-  - sampling-distribution
-  - bootstrap
-  - inference
----
-
 ## Introduction
 
 The **standard error** of a statistic is the standard deviation of its sampling distribution. It quantifies how much the statistic would vary across hypothetical repetitions of the sampling process. Every confidence interval and every t- or z-statistic is built on an estimate of the standard error, so understanding and correctly computing SEs is central to competent data analysis.

@@ -1,15 +1,3 @@
----
-title: Maximum Likelihood Estimation
-date: "2026-04-17"
-description: "The likelihood function, score equations, and asymptotic properties of the MLE"
-categories:
-  - Statistical Foundations
-  - mle
-  - likelihood
-  - score
-  - fisher-information
----
-
 ## Introduction
 
 Maximum likelihood is the dominant estimation technique in modern statistics. The idea: given data and a parametric model, choose the parameter values that make the observed data most probable. This intuition supports a powerful general method with well-understood consistency, efficiency, and distributional properties, and it underpins almost every regression model in a statistician's toolkit.

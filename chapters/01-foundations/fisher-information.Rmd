@@ -1,15 +1,3 @@
----
-title: Fisher Information
-date: "2026-04-17"
-description: "How much the data tell you about a parameter, measured by the curvature of the log-likelihood"
-categories:
-  - Statistical Foundations
-  - fisher-information
-  - score
-  - observed-information
-  - efficiency
----
-
 ## Introduction
 
 Fisher information is a numerical summary of how much information a data sample carries about an unknown parameter. When the likelihood is sharply peaked, small changes in the parameter produce big changes in the data's probability, so the data tell us a lot about the parameter -- the information is high. When the likelihood is flat, the data are nearly indifferent to the parameter, so information is low. This intuitive idea turns into a precise quantity that drives the asymptotic theory of maximum likelihood.

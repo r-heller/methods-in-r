@@ -1,14 +1,3 @@
----
-title: Robust Parameter Design
-date: "2026-04-17"
-description: Choosing controllable factor levels to minimise response variance across noise factors
-categories:
-  - Experimental Design
-  - robust-design
-  - taguchi
-  - variance
----
-
 ## Introduction
 
 Robust parameter design (Taguchi, 1950s-60s) seeks combinations of controllable design factors that minimise response variability across noise factors (environmental, batch-to-batch, use-conditions). The goal is a product or process that performs consistently regardless of noise.

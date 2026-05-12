@@ -1,14 +1,3 @@
----
-title: The Savage-Dickey Density Ratio
-date: "2026-04-17"
-description: Bayes factor for a point null via posterior/prior density ratio
-categories:
-  - Bayesian Statistics
-  - savage-dickey
-  - bayes-factor
-  - nested-null
----
-
 ## Introduction
 
 The Savage-Dickey density ratio is a small but powerful identity: when a point-null hypothesis is nested inside a continuous alternative, the Bayes factor in favour of the null can be read off as the ratio of the marginal posterior to the marginal prior, both evaluated at the null value. This sidesteps the notoriously hard computation of the marginal likelihood under each model and turns Bayes-factor calculation into something you can do from MCMC draws and a one-line evaluation of the prior density. It is the Bayesian counterpart of asking "did the data move probability mass away from the null?" and quantifying the answer.

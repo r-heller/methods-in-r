@@ -1,14 +1,3 @@
----
-title: Line Plots
-date: "2026-04-17"
-description: Connecting ordered observations with lines for time-series and trajectory displays
-categories:
-  - Data Visualisation
-  - line
-  - time-series
-  - trajectory
----
-
 ## Introduction
 
 Line plots connect ordered observations and exploit a powerful perceptual cue: the human eye reads slope as rate of change effortlessly. They are the default geom for time-series, dose-response curves, individual-trajectory ("spaghetti") displays, cumulative distributions, and any context where the x-axis carries a meaningful sequence. The same simplicity that makes them effective also makes them dangerous when the x-axis lacks order — connecting unordered categories with a line implies a trajectory that does not exist and misleads readers into seeing trends in noise.

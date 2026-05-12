@@ -1,14 +1,3 @@
----
-title: Dot Plots
-date: "2026-04-17"
-description: Cleveland dot plots and Wilkinson dot plots for compact distributional displays
-categories:
-  - Data Visualisation
-  - dot-plot
-  - cleveland
-  - wilkinson
----
-
 ## Introduction
 
 "Dot plot" refers to two distinct chart types that share a name and a geometry but answer different questions. **Cleveland dot plots** show one value per category as a single point, replacing bar charts for ranked comparisons; they were popularised by William Cleveland's 1985 *Elements of Graphing Data* on the grounds that perceiving position is more accurate than perceiving length. **Wilkinson dot plots** show one point per observation, stacked at the relevant x-value, and act as a hand-drawn histogram that exposes individual observations rather than binned counts.

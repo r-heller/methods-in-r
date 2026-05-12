@@ -1,14 +1,3 @@
----
-title: Multi-Omics Integration
-date: "2026-04-17"
-description: "Joint analysis of transcriptomic, genomic, and epigenomic layers"
-categories:
-  - Bioinformatics
-  - multiomics
-  - MOFA
-  - integration
----
-
 ## Introduction
 
 Multi-omics experiments measure transcriptome, methylome, proteome, etc. on the same samples. Joint analysis exposes coordinated variation across layers that single-layer analyses miss -- cis-regulatory effects of methylation, mRNA-protein correspondence, or integrated disease subtypes.

@@ -1,14 +1,3 @@
----
-title: Trim-and-Fill
-date: "2026-04-17"
-description: Adjusting the pooled estimate for apparent funnel asymmetry
-categories:
-  - Meta-Analysis
-  - trim-and-fill
-  - publication-bias
-  - sensitivity
----
-
 ## Introduction
 
 Trim-and-fill, introduced by Duval and Tweedie in 2000, is the most widely used algorithmic approach for adjusting a pooled meta-analytic estimate when the funnel plot looks asymmetric. The idea is intuitive: if some smaller studies on the side opposite the dominant tail of the funnel appear to be missing — possibly because they were never published, never indexed, or never reached the systematic-review screening stage — the procedure imputes mirror-image counterparts and re-pools the augmented set. The difference between the unadjusted and adjusted estimates quantifies how sensitive the conclusion is to the presence of these hypothetical missing studies. Crucially, trim-and-fill is a sensitivity analysis, not a method of bias correction in the strict statistical sense; it cannot recover the true unbiased effect.

@@ -1,7 +1,3 @@
----
-title: "03. Probability Theory"
----
-
 # Probability Theory {#sec-ch-03-probability}
 
 The probability machinery the rest of the book leans on: Bayes' rule, common discrete and continuous distributions, the law of total probability, Q-Q diagnostics, and density estimation. The chapter is short on theory and long on R-side intuition.

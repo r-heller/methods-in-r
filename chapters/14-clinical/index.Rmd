@@ -1,7 +1,3 @@
----
-title: "14. Clinical Biostatistics"
----
-
 # Clinical Biostatistics {#sec-ch-14-clinical}
 
 Diagnostic test accuracy, agreement (Bland-Altman, kappa, ICC), biomarker development, prediction-model reporting under TRIPOD-AI, and fairness audits. The chapter sits at the intersection of ML and biostatistics for a reason: that is where most regulatory submissions live.

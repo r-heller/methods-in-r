@@ -1,14 +1,3 @@
----
-title: scRNA QC and Filtering
-date: "2026-04-17"
-description: Removing low-quality cells before downstream scRNA-seq analysis
-categories:
-  - Bioinformatics
-  - scrnaseq
-  - qc
-  - filtering
----
-
 ## Introduction
 
 Single-cell RNA-seq experiments routinely contain empty droplets, stressed or apoptotic cells, doublets (two cells captured in one droplet), and various technical artefacts that should not enter downstream clustering or differential-expression analysis. Per-cell QC filtering by library size, detected-gene count, and mitochondrial-read percentage removes the worst offenders. The trade-off is delicate: over-filtering excludes real biology (e.g. plasma cells with naturally low gene counts), while under-filtering produces clusters of damaged cells that mimic real cell types.

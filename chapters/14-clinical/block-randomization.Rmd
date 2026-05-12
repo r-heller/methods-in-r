@@ -1,14 +1,3 @@
----
-title: Block Randomisation
-date: "2026-04-17"
-description: Random permutations within fixed blocks for balanced allocation
-categories:
-  - Clinical Biostatistics
-  - block
-  - randomisation
-  - balance
----
-
 ## Introduction
 
 Block randomisation allocates clinical-trial participants in random permutations within fixed-size blocks, guaranteeing equal numbers of subjects in each treatment arm at every block boundary. It is the standard alternative to simple randomisation in clinical trials because it prevents the substantial arm-size imbalance that simple randomisation can produce in small trials, in early enrolment phases, or at any moment when the trial is paused for an interim analysis. Block randomisation is now mandated or strongly recommended by the ICH-E9 statistical-principles guideline, by CONSORT for randomisation reporting, and by virtually every regulatory authority's clinical-trial guidance.

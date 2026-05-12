@@ -1,14 +1,3 @@
----
-title: Variable Importance
-date: "2026-04-17"
-description: Impurity-based and permutation importance for tree ensembles and beyond
-categories:
-  - Machine Learning
-  - importance
-  - permutation
-  - impurity
----
-
 ## Introduction
 
 Variable importance ranks features by contribution to model accuracy. It is the most common first-pass interpretability tool for black-box models. Tree ensembles offer two native measures: impurity-based (mean decrease in Gini or variance) and permutation-based (drop in accuracy when the feature is shuffled).

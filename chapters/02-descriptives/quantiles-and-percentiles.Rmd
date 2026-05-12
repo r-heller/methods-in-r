@@ -1,15 +1,3 @@
----
-title: Quantiles and Percentiles
-date: "2026-04-17"
-description: "Dividing a distribution by cumulative probability: the median, quartiles, percentiles, and R's nine quantile definitions"
-categories:
-  - Descriptive Statistics
-  - quantile
-  - percentile
-  - median
-  - quartile
----
-
 ## Introduction
 
 A quantile is a cut-point that divides a distribution by cumulative probability: the $p$-quantile is the value below which a proportion $p$ of the data lies. The median is the 0.5-quantile; quartiles are the 0.25, 0.50, and 0.75 quantiles; percentiles are quantiles rescaled to the 0-100 range. Quantiles underlie boxplots, five-number summaries, reference ranges in lab medicine, and non-parametric confidence intervals.

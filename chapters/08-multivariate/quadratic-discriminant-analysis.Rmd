@@ -1,14 +1,3 @@
----
-title: Quadratic Discriminant Analysis
-date: "2026-04-17"
-description: LDA with class-specific covariance matrices; quadratic decision boundaries
-categories:
-  - Multivariate Statistics
-  - qda
-  - classification
-  - quadratic
----
-
 ## Introduction
 
 Quadratic discriminant analysis (QDA) extends linear discriminant analysis (LDA) by allowing each class to have its own covariance matrix instead of pooling across classes. The relaxation transforms the decision boundary from a hyperplane (LDA) into a conic section (ellipse, parabola, or hyperbola) and gives the classifier flexibility to handle classes whose spread differs in shape or orientation. The cost is parameter count: $K$ separate covariance matrices instead of one, which means more training data is required to estimate them precisely.

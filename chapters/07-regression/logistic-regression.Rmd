@@ -1,15 +1,3 @@
----
-title: Logistic Regression
-date: "2026-04-17"
-description: "Regression for binary outcomes: odds ratios, logit link, and MLE fitting"
-categories:
-  - "Regression & Modelling"
-  - logistic
-  - binary-outcome
-  - logit
-  - odds-ratio
----
-
 ## Introduction
 
 Logistic regression models binary outcomes via the logit link, mapping the probability of "event" to the entire real line so that linear regression machinery applies on the log-odds scale. It is the most widely used GLM in clinical, epidemiological, and behavioural research, producing odds ratios that directly answer the question "how does the odds of the outcome change with this covariate?" The fit is by iteratively reweighted least squares (IRLS), maximising the binomial likelihood.

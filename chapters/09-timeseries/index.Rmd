@@ -1,7 +1,3 @@
----
-title: "09. Time-Series Analysis"
----
-
 # Time-Series Analysis {#sec-ch-09-timeseries}
 
 Stationarity, ARIMA, exponential smoothing, state-space models, spectral analysis, and forecasting evaluation. Examples use biomedical signals — heart rate, glucose, EEG — rather than macroeconomic data.

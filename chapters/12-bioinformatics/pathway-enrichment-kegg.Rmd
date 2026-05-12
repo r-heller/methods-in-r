@@ -1,14 +1,3 @@
----
-title: KEGG Pathway Enrichment
-date: "2026-04-17"
-description: Over-representation and visualisation against KEGG metabolic/signalling pathways
-categories:
-  - Bioinformatics
-  - KEGG
-  - enrichment
-  - pathway
----
-
 ## Introduction
 
 KEGG (Kyoto Encyclopedia of Genes and Genomes) is a curated database of metabolic and signalling pathways represented as directed graphs of genes and gene products. KEGG pathway enrichment asks whether the genes in a differential-expression hit list are over-represented in any of the curated pathways, identifying functional themes in the differential signal. The companion visualisation tool `pathview` overlays log-fold-change values directly onto the canonical KEGG pathway diagrams, making it straightforward to communicate which specific genes within a pathway drive the enrichment signal.

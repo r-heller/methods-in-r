@@ -1,14 +1,3 @@
----
-title: "Robust Statistics: An Overview"
-date: "2026-04-17"
-description: "Estimators designed to remain close to the truth under contamination, with key concepts: breakdown point, influence function, efficiency"
-categories:
-  - Descriptive Statistics
-  - robust
-  - breakdown-point
-  - influence-function
----
-
 ## Introduction
 
 A robust statistic is one that remains useful when the data deviate from the idealised model -- heavy tails, outliers, skewed contamination. Classical estimators like the mean and SD are efficient under normality but break down under even modest contamination. Robust alternatives sacrifice a little efficiency for dramatic stability, and are the default in many applied fields where data quality cannot be guaranteed.

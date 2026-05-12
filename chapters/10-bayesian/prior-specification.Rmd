@@ -1,14 +1,3 @@
----
-title: Prior Specification
-date: "2026-04-17"
-description: "Choosing priors: informative, weakly informative, flat, and the risks of each"
-categories:
-  - Bayesian Statistics
-  - prior
-  - weakly-informative
-  - informative
----
-
 ## Introduction
 
 Choosing a prior is the most consequential modelling decision in any Bayesian analysis after the choice of likelihood. The prior shapes the posterior strongly when data are sparse, almost imperceptibly when data are abundant, and unpredictably in the middle ground that most applied work occupies. Three categories cover most needs: flat or improper priors, weakly informative priors that regularise without imposing substantive content, and informative priors that incorporate genuine pre-data knowledge. Modern Bayesian practice has converged on weakly informative priors as the default because they stabilise sampling, regularise small-sample inference, and remain agnostic enough that the data dominate the posterior whenever they are informative.

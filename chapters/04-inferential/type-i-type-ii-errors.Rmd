@@ -1,16 +1,3 @@
----
-title: Type I and Type II Errors
-date: "2026-04-17"
-description: Rejecting a true null (alpha) and failing to reject a false null (beta); power and the trade-off
-categories:
-  - Inferential Statistics
-  - type-i
-  - type-ii
-  - alpha
-  - beta
-  - power
----
-
 ## Introduction
 
 Two kinds of error arise in hypothesis testing: rejecting a true null (Type I) and failing to reject a false null (Type II). Their probabilities -- $\alpha$ and $\beta$ -- are the core quantities of statistical decision theory. Power $1 - \beta$ is one minus the Type II rate, and the rate at which sample size and effect size trade against $\alpha$ is the currency of study design.

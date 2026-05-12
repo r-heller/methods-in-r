@@ -1,14 +1,3 @@
----
-title: Logistic Regression as ML
-date: "2026-04-17"
-description: Linear classifier with log-loss and L1/L2 regularisation
-categories:
-  - Machine Learning
-  - logistic
-  - classifier
-  - regularisation
----
-
 ## Introduction
 
 Logistic regression models class probability as $P(y = 1 \mid x) = \sigma(w^\top x + b)$, where $\sigma$ is the logistic function, and fits parameters by minimising the cross-entropy loss. As an ML workhorse it is well-calibrated by construction, interpretable through coefficients on the log-odds scale, regularisable with L1, L2, or elastic-net penalties, and scales to millions of features — making it the standard baseline for text classification, click-through prediction, and medical risk scoring.

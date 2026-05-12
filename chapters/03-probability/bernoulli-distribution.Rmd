@@ -1,14 +1,3 @@
----
-title: The Bernoulli Distribution
-date: "2026-04-17"
-description: The distribution of a single binary trial with success probability p
-categories:
-  - Probability Theory
-  - bernoulli
-  - binary
-  - trial
----
-
 ## Introduction
 
 The Bernoulli distribution models a single binary trial: success vs. failure, disease vs. healthy, click vs. no click. It is the simplest non-trivial distribution and the building block of the binomial, geometric, and negative binomial distributions.

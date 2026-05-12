@@ -1,15 +1,3 @@
----
-title: Ridge Regression
-date: "2026-04-17"
-description: L2 penalty for coefficient shrinkage; stable fits under collinearity
-categories:
-  - "Regression & Modelling"
-  - ridge
-  - l2-penalty
-  - shrinkage
-  - glmnet
----
-
 ## Introduction
 
 Ridge regression adds an L2 penalty $\lambda \sum_j \beta_j^2$ to the residual sum of squares. It shrinks coefficients toward zero — but never exactly to zero — reducing variance at the cost of a small bias and producing stable fits even when predictors are highly correlated. The classical motivation was multicollinearity: when $X^\top X$ is near-singular, OLS estimates are extremely variable, and the ridge penalty regularises the inverse and yields a well-defined estimator. Modern uses extend to high-dimensional regression where $p > n$ makes OLS undefined.

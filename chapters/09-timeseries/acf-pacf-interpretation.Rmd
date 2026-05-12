@@ -1,14 +1,3 @@
----
-title: Interpreting ACF and PACF
-date: "2026-04-17"
-description: Identifying AR and MA orders from autocorrelation and partial autocorrelation functions
-categories:
-  - Time Series Analysis
-  - acf
-  - pacf
-  - model-identification
----
-
 ## Introduction
 
 The autocorrelation function (ACF) and partial autocorrelation function (PACF) are the foundational diagnostic tools for ARIMA model identification. The Box-Jenkins approach uses their characteristic patterns to guess plausible orders for AR and MA terms before fitting. Even with modern automated tools (`auto.arima`), reading the ACF and PACF remains an essential skill for sanity-checking automated choices, identifying seasonal structure, and diagnosing residuals.

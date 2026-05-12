@@ -1,14 +1,3 @@
----
-title: Kurtosis
-date: "2026-04-17"
-description: "Quantifying tail heaviness of a distribution, and interpreting excess kurtosis"
-categories:
-  - Descriptive Statistics
-  - kurtosis
-  - tail-heaviness
-  - excess-kurtosis
----
-
 ## Introduction
 
 Kurtosis is the fourth standardised moment of a distribution and quantifies tail heaviness relative to the normal. High kurtosis means a few observations contribute disproportionately to the variance (the "fat tails" of finance). Low kurtosis means the distribution has fewer extreme values than the normal. Kurtosis matters because many estimators and tests assume normal-like tails; heavy tails break asymptotic approximations and inflate Type I error.

@@ -1,15 +1,3 @@
----
-title: Model Selection with AIC and BIC
-date: "2026-04-17"
-description: "Information criteria for comparing models: Akaike's and Bayesian"
-categories:
-  - "Regression & Modelling"
-  - aic
-  - bic
-  - model-selection
-  - information-criteria
----
-
 ## Introduction
 
 AIC (Akaike information criterion) and BIC (Bayesian information criterion) are penalised likelihood scores for comparing models on the same data. Both reward fit (high likelihood) and penalise complexity (number of parameters). They differ in how aggressively they penalise: BIC's penalty grows with sample size, so BIC favours simpler models in large samples while AIC retains a constant per-parameter cost. Both are essential tools in any model-selection workflow that goes beyond likelihood-ratio tests.

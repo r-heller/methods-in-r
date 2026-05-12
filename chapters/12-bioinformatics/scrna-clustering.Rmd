@@ -1,15 +1,3 @@
----
-title: scRNA Clustering
-date: "2026-04-17"
-description: Graph-based clustering of cells via Louvain or Leiden community detection
-categories:
-  - Bioinformatics
-  - scrnaseq
-  - clustering
-  - louvain
-  - leiden
----
-
 ## Introduction
 
 Single-cell RNA-seq clustering groups cells into putative cell types or transcriptional states based on transcriptome similarity. The dominant approach is graph-based community detection: construct a shared-nearest-neighbour (SNN) graph of cells in PCA space, then apply the Louvain or Leiden algorithm to identify densely connected communities. The approach scales to millions of cells, produces interpretable cluster boundaries, and is the standard in both Seurat and Bioconductor scRNA-seq workflows.

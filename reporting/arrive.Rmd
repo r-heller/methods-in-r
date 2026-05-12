@@ -1,7 +1,3 @@
----
-title: "ARRIVE — animal research"
----
-
 # ARRIVE — animal research
 
 ARRIVE — *Animal Research: Reporting of In Vivo Experiments* — covers preclinical animal research. The 21-item checklist is at <https://arriveguidelines.org/>. The templates below cover the statistical analyses most commonly required.

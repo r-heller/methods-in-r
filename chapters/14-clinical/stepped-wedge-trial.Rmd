@@ -1,14 +1,3 @@
----
-title: Stepped-Wedge Trial
-date: "2026-04-17"
-description: Sequential rollout cluster design with all clusters eventually treated
-categories:
-  - Clinical Biostatistics
-  - stepped-wedge
-  - rollout
-  - cluster
----
-
 ## Introduction
 
 Stepped-wedge cluster-randomised trials (SW-CRTs) randomise not whether each cluster receives the intervention but the time at which each cluster transitions from control to intervention. By the end of the trial all clusters have received the intervention, which gives the design particular ethical and pragmatic appeal: it is well suited to settings where investigators believe the intervention is likely beneficial (so withholding it from some clusters indefinitely would be ethically uncomfortable), where logistical constraints prevent simultaneous rollout across all clusters, or where a programme rollout is happening anyway and the trial is exploiting the staggered implementation to learn the effect. Analysis must carefully separate the secular time trend that affects all clusters from the treatment effect that is realised at different calendar times in different clusters.

@@ -1,14 +1,3 @@
----
-title: Orthogonal Arrays
-date: "2026-04-17"
-description: "Tabulated fractional-factorial arrays L4, L8, L9, L16, L27"
-categories:
-  - Experimental Design
-  - orthogonal-array
-  - taguchi
-  - fractional
----
-
 ## Introduction
 
 Orthogonal arrays (OAs) are tabulated fractional-factorial designs in which every pair of columns contains every combination of levels an equal number of times. Genichi Taguchi popularised a catalogue of specific OAs — $L_4$, $L_8$, $L_9$, $L_{16}$, $L_{18}$, $L_{27}$, and others — as economical screening designs in his quality-engineering framework, and the labels are now standard shorthand in industrial DoE. The orthogonality property guarantees that main effects of distinct factors are estimated independently and on equal footing, so OAs deliver the cleanest possible main-effect estimates from the smallest possible run count, given the assumed effect-sparsity context.

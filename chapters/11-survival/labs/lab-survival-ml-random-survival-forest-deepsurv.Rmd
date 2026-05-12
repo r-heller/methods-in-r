@@ -1,7 +1,3 @@
----
-title: "Survival ML (random survival forest, DeepSurv)"
----
-
 <div class="callout callout-note">
 **Workflow labs** use the variant template:
 Goal → Approach → Execution → Check → Report.

@@ -1,14 +1,3 @@
----
-title: Granger Causality
-date: "2026-04-17"
-description: Testing whether one time series improves prediction of another beyond its own history
-categories:
-  - Time Series Analysis
-  - granger
-  - causality
-  - predictive
----
-
 ## Introduction
 
 Granger causality tests whether past values of one time series improve the prediction of another, beyond what is already explained by the latter's own history. It is a *statistical* concept, not a *causal* one in the philosophical sense: a series Granger-causes another if including its lags reduces the residual variance of the predicted series, which is a useful but limited notion. Two series can Granger-cause each other without any direct causal link if both are driven by a common unobserved factor.

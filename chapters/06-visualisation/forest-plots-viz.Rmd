@@ -1,14 +1,3 @@
----
-title: Forest Plots (Visualisation)
-date: "2026-04-17"
-description: Point estimates and confidence intervals stacked across studies or subgroups
-categories:
-  - Data Visualisation
-  - forest-plot
-  - meta-analysis
-  - subgroup
----
-
 ## Introduction
 
 The forest plot is the signature visualisation of meta-analysis and of subgroup analyses in clinical trials. Each row shows one study (or one subgroup) as a point estimate and a horizontal confidence interval, with study name and sample size in a margin column and a pooled summary as a diamond at the bottom. The compact layout invites direct visual comparison: heterogeneity reads as horizontal scatter across rows, while consistency reads as alignment near the same vertical position. Done well, a forest plot communicates more about a meta-analysis than the accompanying numerical table.

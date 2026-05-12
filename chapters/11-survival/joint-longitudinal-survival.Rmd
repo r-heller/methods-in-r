@@ -1,14 +1,3 @@
----
-title: Joint Longitudinal-Survival Models
-date: "2026-04-17"
-description: Simultaneously modelling a longitudinal biomarker and time-to-event outcome
-categories:
-  - Survival Analysis
-  - joint-model
-  - longitudinal
-  - shared-random-effects
----
-
 ## Introduction
 
 Joint longitudinal-survival models bring together two submodels — a mixed model for a longitudinally measured biomarker and a survival model for time to an event — via shared random effects so that the evolving biomarker is itself part of the hazard. This solves two problems simultaneously: the time-varying-covariate Cox model that uses last-observation-carried-forward biomarker values ignores measurement error and timing irregularity, and informative dropout (subjects censored because their biomarker is deteriorating) biases naive survival estimates. The joint formulation models both processes together and integrates over the shared random effects, yielding consistent hazard ratios for the underlying biomarker trajectory.

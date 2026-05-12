@@ -1,14 +1,3 @@
----
-title: The Negative Binomial Distribution
-date: "2026-04-17"
-description: "Overdispersed count distribution, derivable as a gamma mixture of Poissons"
-categories:
-  - Probability Theory
-  - negative-binomial
-  - overdispersion
-  - count-data
----
-
 ## Introduction
 
 The negative binomial distribution is the workhorse model for overdispersed counts -- counts whose variance exceeds their mean. It arises naturally as the number of failures before the $r$-th success in a sequence of Bernoulli trials, or as a gamma mixture of Poisson distributions. It dominates modern count-regression practice (RNA-seq, public-health incidence, insurance claims).

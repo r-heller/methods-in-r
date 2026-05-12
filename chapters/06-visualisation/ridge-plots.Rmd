@@ -1,15 +1,3 @@
----
-title: Ridge Plots
-date: "2026-04-17"
-description: "Stacked density curves across groups, also called 'joy plots'"
-categories:
-  - Data Visualisation
-  - ridge
-  - ggridges
-  - density
-  - stacked
----
-
 ## Introduction
 
 A ridge plot stacks kernel-density curves for multiple groups vertically with a small overlap, evoking the cover of a 1979 Joy Division album (hence the alternative name "joy plot"). The idiom is particularly effective for comparing the shape of distributions across many ordered groups — months of the year, dose levels, time periods, ranked categories — where a panel of separate density plots would be too sparse and a violin plot would lose detail in the overlap.

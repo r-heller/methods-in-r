@@ -1,15 +1,3 @@
----
-title: One-Way ANOVA
-date: "2026-04-17"
-description: Comparing means across three or more independent groups via the F-test
-categories:
-  - Inferential Statistics
-  - anova
-  - one-way
-  - f-test
-  - between-groups
----
-
 ## Introduction
 
 One-way ANOVA tests whether the means of three or more independent groups are equal. It generalises the two-sample t-test to multiple groups while controlling overall Type I error. The omnibus F-test tells us whether *any* means differ; post-hoc tests (Tukey HSD, Dunnett) identify which pairs.

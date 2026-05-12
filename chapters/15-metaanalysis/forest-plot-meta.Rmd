@@ -1,14 +1,3 @@
----
-title: Forest Plots in Meta-Analysis
-date: "2026-04-17"
-description: "Standard visualisation of per-study effects, weights, and the pooled estimate"
-categories:
-  - Meta-Analysis
-  - forest-plot
-  - pooled
-  - weights
----
-
 ## Introduction
 
 The forest plot is the canonical meta-analysis figure and the single most important visual artefact a systematic review delivers. Each included study appears as a row with its point estimate, confidence interval, and pooling weight; the overall summary is rendered at the bottom as a diamond whose width represents the pooled confidence interval. This compact layout simultaneously conveys per-study effects, study-level precision, between-study scatter, and the overall conclusion — all in a glance, without needing to consult a separate table. Editorial standards in major clinical journals routinely require a forest plot for every meta-analytic synthesis, and reviewers rely on it to judge whether the pooled estimate fairly represents the constituent studies.

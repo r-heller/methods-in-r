@@ -1,14 +1,3 @@
----
-title: Random-Slope Models
-date: "2026-04-17"
-description: "Mixed model with cluster-specific slopes, allowing effects to vary across groups"
-categories:
-  - "Regression & Modelling"
-  - random-slope
-  - mixed-effects
-  - heterogeneity
----
-
 ## Introduction
 
 Random-slope models allow each cluster its own slope for one or more predictors, capturing between-cluster heterogeneity in how a covariate affects the outcome. Where random-intercept models assume that all clusters share the same effect of $X$ but differ in baseline, random-slope models drop the shared-slope assumption and let the slope vary. They are essential for any longitudinal analysis where individual trajectories diverge over time and where the population-average slope may hide substantial subject-to-subject variability.

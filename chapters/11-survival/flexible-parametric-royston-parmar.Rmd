@@ -1,14 +1,3 @@
----
-title: Royston-Parmar Flexible Parametric Models
-date: "2026-04-17"
-description: Splines on the log-cumulative-hazard for flexible baseline without leaving parametric modelling
-categories:
-  - Survival Analysis
-  - royston-parmar
-  - flexible-parametric
-  - splines
----
-
 ## Introduction
 
 Royston-Parmar models bridge the gap between rigid parametric survival families (exponential, Weibull, log-normal) and the assumption-light Cox semi-parametric model. They place restricted cubic splines on the log cumulative hazard (or on related transforms) so the baseline can take essentially any shape the data demand, while keeping the full parametric likelihood that delivers smooth survival, hazard, and quantile predictions for any covariate pattern. In epidemiological work — particularly population-based cancer studies — they have become the preferred default because they combine Cox-like flexibility with parametric extrapolation.

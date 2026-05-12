@@ -1,16 +1,3 @@
----
-title: Bulk RNA-seq Differential Expression with DESeq2
-date: "2026-04-17"
-description: "A complete DESeq2 workflow: from count matrix through normalisation, dispersion estimation, Wald testing, and LFC shrinkage"
-categories:
-  - Bioinformatics
-  - rna-seq
-  - deseq2
-  - differential-expression
-  - bioconductor
-  - negative-binomial
----
-
 ## Introduction
 
 Bulk RNA-seq asks which genes change in expression between conditions. DESeq2 is the most widely used framework for the analysis: it models counts with a negative binomial distribution, shares dispersion information across genes to stabilise estimates in small samples, and tests each gene's log-fold change for significance with multiple-testing correction. A standard DESeq2 workflow goes from a raw count matrix to a list of differentially expressed genes in a dozen lines of R.

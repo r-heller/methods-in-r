@@ -1,15 +1,3 @@
----
-title: Standardisation and z-Scores
-date: "2026-04-17"
-description: "Centring and scaling a variable, and the robust-z alternative"
-categories:
-  - Descriptive Statistics
-  - z-score
-  - standardisation
-  - scale
-  - robust-z
----
-
 ## Introduction
 
 A z-score expresses each observation as its distance from the mean in units of the standard deviation. Standardisation is often applied before clustering, PCA, ridge/lasso regression, and any procedure whose output is unit-sensitive. For data with outliers, a robust variant using the median and MAD is safer.

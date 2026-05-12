@@ -1,14 +1,3 @@
----
-title: Batch Correction with ComBat
-date: "2026-04-17"
-description: Removing known batch effects from expression data using empirical-Bayes methods
-categories:
-  - Bioinformatics
-  - batch
-  - combat
-  - sva
----
-
 ## Introduction
 
 Batch effects — systematic technical variation introduced by different sequencing dates, instruments, library-prep operators, or reagent lots — bias gene-expression measurements in ways that can swamp biological signal if not addressed. ComBat is the most widely used batch-correction method, applying an empirical-Bayes adjustment to centre and scale each gene's distribution per batch. It is appropriate when batches are known and condition is not confounded with batch; the alternative — including batch as a covariate in differential-expression models — preserves more information when downstream analysis explicitly models batch.

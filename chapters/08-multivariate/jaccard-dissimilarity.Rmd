@@ -1,14 +1,3 @@
----
-title: Jaccard and Dice Dissimilarity
-date: "2026-04-17"
-description: Distance measures for binary / presence-absence data
-categories:
-  - Multivariate Statistics
-  - jaccard
-  - dice
-  - binary-distance
----
-
 ## Introduction
 
 Jaccard and Dice dissimilarities are the standard distance measures for binary (presence/absence) data: ecological community composition, disease symptom panels, gene set membership, document term frequencies after thresholding. Both indices share a key property: they ignore joint absences and focus only on agreements and disagreements among presences. This is exactly what is needed when an absence carries little information — a species absent from two sites might be absent because the habitat is unsuitable, or simply not detected — but is wrong when absences are themselves diagnostic.

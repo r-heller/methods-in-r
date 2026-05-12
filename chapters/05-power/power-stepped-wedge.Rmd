@@ -1,15 +1,3 @@
----
-title: Power for Stepped-Wedge Trials
-date: "2026-04-17"
-description: Variance of the treatment effect in stepped-wedge cluster designs via the Hussey-Hughes formula
-categories:
-  - "Sample Size & Power"
-  - power
-  - stepped-wedge
-  - hussey-hughes
-  - cluster
----
-
 ## Introduction
 
 Stepped-wedge cluster-randomised trials (SW-CRT) progressively introduce an intervention across clusters over time until every cluster receives it. The design is efficient when the intervention is expected to help and must be rolled out anyway. Power calculations use the Hussey-Hughes (2007) formula.

@@ -1,14 +1,3 @@
----
-title: Survival Curves
-date: "2026-04-17"
-description: Publication-quality Kaplan-Meier plots with risk tables and log-rank annotation
-categories:
-  - Data Visualisation
-  - survival
-  - kaplan-meier
-  - survminer
----
-
 ## Introduction
 
 A Kaplan-Meier survival curve is the most recognisable figure in clinical biostatistics. It estimates the probability of surviving (or remaining event-free) past each time point and displays the result as a step function dropping at every observed event. A publication-grade KM plot is rarely just the curve, however — it carries a risk table beneath the panel showing how many subjects remain at each landmark time, a log-rank $p$-value annotating the between-group comparison, and 95 % confidence bands shaded behind the curve. The `survminer` package combines all of these into a single `ggsurvplot()` call that works directly on `survfit` objects from the `survival` package.

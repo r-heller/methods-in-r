@@ -1,15 +1,3 @@
----
-title: Power for One-Proportion Test
-date: "2026-04-17"
-description: "Sample size for testing a single proportion against a reference, with normal and exact methods"
-categories:
-  - "Sample Size & Power"
-  - power
-  - proportion
-  - one-sample
-  - exact
----
-
 ## Introduction
 
 Power analysis for the one-proportion test computes the sample size required to detect a departure from a null proportion $p_0$ with adequate probability. The one-proportion test arises constantly in clinical research — testing whether a single-arm response rate exceeds a historical control benchmark, whether a quality-control defect rate departs from a tolerance threshold, whether a survey-derived proportion differs from a reference. Two complementary approaches are widely used: the Normal-approximation power formula, which gives clean closed-form expressions in terms of Cohen's $h$ effect size, and exact-binomial power, which enumerates the binomial distribution and is preferred for small samples or extreme proportions where the Normal approximation is unreliable.

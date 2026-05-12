@@ -1,14 +1,3 @@
----
-title: Bayesian Hypothesis Testing
-date: "2026-04-17"
-description: Region of practical equivalence (ROPE) and Bayes factors for Bayesian decisions
-categories:
-  - Bayesian Statistics
-  - hypothesis-testing
-  - rope
-  - bayes-factor
----
-
 ## Introduction
 
 Bayesian decision-making about effects splits into two cultural traditions that complement rather than replace each other. The Bayes-factor school computes a ratio of marginal likelihoods and reads strength of evidence from Jeffreys' scale. The Region of Practical Equivalence (ROPE) school, popularised by Kruschke, defines a range of effects that are practically null and asks how much of the posterior lies inside it. Both produce decisions about hypotheses, but they answer slightly different questions: Bayes factors compare models, while ROPE asks whether the data have ruled out a substantively negligible effect.

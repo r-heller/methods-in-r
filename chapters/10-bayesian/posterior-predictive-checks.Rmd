@@ -1,14 +1,3 @@
----
-title: Posterior Predictive Checks
-date: "2026-04-17"
-description: Comparing simulated data from the fitted model to observed data for model criticism
-categories:
-  - Bayesian Statistics
-  - pp-check
-  - model-criticism
-  - posterior-predictive
----
-
 ## Introduction
 
 A posterior predictive check is the Bayesian answer to "does this model produce data that look like ours?" After fitting, you draw replicated datasets from the model — each one using a different posterior parameter draw — and compare them to the observed data through summary statistics, density overlays, or grouped subsets. Systematic discrepancies between observed and replicated quantities are a model criticism: they tell you which feature of the data the current specification fails to capture, which is far more actionable than a single goodness-of-fit $p$-value.

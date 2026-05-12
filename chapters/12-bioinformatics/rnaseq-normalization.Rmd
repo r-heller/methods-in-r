@@ -1,15 +1,3 @@
----
-title: RNA-seq Normalisation
-date: "2026-04-17"
-description: "TMM, RLE, upper-quartile, and CPM: making samples comparable"
-categories:
-  - Bioinformatics
-  - normalization
-  - tmm
-  - rle
-  - cpm
----
-
 ## Introduction
 
 Raw RNA-seq read counts depend on library size and library composition; normalisation removes these technical sources of variation so that samples can be compared on equal footing. The standard methods — TMM (edgeR), RLE (DESeq2), upper-quartile, and CPM — differ in how aggressively they handle compositional differences and which assumption they make about the bulk of genes. Choosing the right normalisation is foundational; downstream differential-expression tools incorporate the normalisation factors as offsets in their GLM, so a poor choice undermines every conclusion that follows.

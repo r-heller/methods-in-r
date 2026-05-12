@@ -1,14 +1,3 @@
----
-title: Spatial Transcriptomics
-date: "2026-04-17"
-description: Spatially resolved expression analysis with Visium and related platforms
-categories:
-  - Bioinformatics
-  - spatial
-  - visium
-  - transcriptomics
----
-
 ## Introduction
 
 Spatial transcriptomics assays (10x Visium, Slide-seq, Stereo-seq, MERFISH) measure gene expression with spatial coordinates. They bridge histology and scRNA-seq: the tissue architecture is preserved, so analyses like spatial domain detection, neighbourhood effects, and tumour-immune interface mapping become possible.

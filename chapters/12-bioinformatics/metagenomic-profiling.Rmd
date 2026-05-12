@@ -1,14 +1,3 @@
----
-title: Metagenomic Profiling
-date: "2026-04-17"
-description: Whole-metagenome taxonomic and functional profiling with MetaPhlAn and Kraken
-categories:
-  - Bioinformatics
-  - metagenomics
-  - metaphlan
-  - kraken
----
-
 ## Introduction
 
 Shotgun metagenomics sequences all DNA in a sample rather than a marker gene, enabling species-level taxonomic and functional profiling. Two dominant approaches: MetaPhlAn (marker-gene alignment to species-specific genes) and Kraken (k-mer matching against a reference database).

@@ -1,14 +1,3 @@
----
-title: "RNNs and LSTMs: Introduction"
-date: "2026-04-17"
-description: Recurrent networks for sequence modelling with gated memory
-categories:
-  - Machine Learning
-  - rnn
-  - lstm
-  - sequence
----
-
 ## Introduction
 
 Recurrent Neural Networks (RNNs) process sequences by maintaining a hidden state that updates at every time step. Long Short-Term Memory units (LSTM; Hochreiter & Schmidhuber, 1997) add gating mechanisms to combat vanishing gradients, enabling long-range dependencies. GRUs (Cho, 2014) are a simpler gated variant.

@@ -1,14 +1,3 @@
----
-title: X-13ARIMA-SEATS Decomposition
-date: "2026-04-17"
-description: The seasonal adjustment tool used by US Census Bureau and statistical agencies
-categories:
-  - Time Series Analysis
-  - x13
-  - census
-  - seasonal-adjustment
----
-
 ## Introduction
 
 X-13ARIMA-SEATS is the seasonal-adjustment workhorse of official statistics. It is the Census Bureau standard, used by Eurostat, the Bank of England, and most national statistical agencies for producing officially published seasonally adjusted economic time series. The combination of RegARIMA-based pre-adjustment (handling outliers, trading-day effects, Easter effects) with either X-11 filter-based or SEATS model-based decomposition makes it the most sophisticated decomposition tool routinely available — and the standard against which simpler methods (STL, classical decomposition) are benchmarked.

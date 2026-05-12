@@ -1,15 +1,3 @@
----
-title: "GAMMs: Additive Mixed Models"
-date: "2026-04-17"
-description: "Combining smooth effects (GAM) with random effects (LMM) via mgcv::gam"
-categories:
-  - "Regression & Modelling"
-  - gamm
-  - additive
-  - smooth
-  - mixed
----
-
 ## Introduction
 
 Generalised additive mixed models (GAMMs) bring together two powerful regression frameworks: smooth non-linear effects from generalised additive models (GAMs) and random effects from linear / generalised linear mixed models. The `mgcv::gam()` interface handles both in a single unified framework by treating random effects as a specific type of penalised smooth, making the combined model no harder to fit than a plain GAM. The result is the natural choice when clustered data also exhibit non-linear effects of continuous covariates — longitudinal trajectories, growth curves, ecological time series with site-level structure.

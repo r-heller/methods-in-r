@@ -1,15 +1,3 @@
----
-title: Benjamini-Hochberg FDR
-date: "2026-04-17"
-description: Controlling the expected proportion of false discoveries among rejected hypotheses
-categories:
-  - Inferential Statistics
-  - fdr
-  - benjamini-hochberg
-  - multiple-testing
-  - discovery
----
-
 ## Introduction
 
 Controlling the family-wise error rate becomes impractical when the number of tests runs into the thousands or millions (genomics, imaging). Benjamini and Hochberg (1995) introduced the **false discovery rate** (FDR) as a less stringent alternative: the expected proportion of false positives among rejected hypotheses. Their procedure is the default multiple-testing correction in high-throughput biology.

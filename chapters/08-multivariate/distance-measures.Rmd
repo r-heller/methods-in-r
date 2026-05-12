@@ -1,14 +1,3 @@
----
-title: Distance and Dissimilarity Measures
-date: "2026-04-17"
-description: "Euclidean, Manhattan, Minkowski, Canberra, and their use in clustering / MDS"
-categories:
-  - Multivariate Statistics
-  - distance
-  - metric
-  - dissimilarity
----
-
 ## Introduction
 
 The choice of distance or dissimilarity is the foundation of most multivariate methods: clustering algorithms (k-means, hierarchical, PAM, DBSCAN) consume a distance, multidimensional scaling and PCoA produce coordinates that approximate one, and $k$-nearest neighbours computes them at every prediction. Different metrics capture different notions of proximity, and the right choice depends on the data type — continuous vs. categorical, abundances vs. presence/absence, magnitudes vs. directions — and on the inferential question. Mismatched metrics produce results that look correct but answer the wrong question.

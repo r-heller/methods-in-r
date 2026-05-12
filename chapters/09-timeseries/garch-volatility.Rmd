@@ -1,14 +1,3 @@
----
-title: GARCH Models
-date: "2026-04-17"
-description: "Conditional heteroscedasticity models: volatility clustering in financial and other series"
-categories:
-  - Time Series Analysis
-  - garch
-  - volatility
-  - conditional-variance
----
-
 ## Introduction
 
 GARCH (Generalised Autoregressive Conditional Heteroscedasticity) models capture time-varying conditional variance — the volatility clustering pattern in which quiet periods alternate with volatile ones. Financial returns are the prototypical application: stock prices show stretches of low daily variability punctuated by high-volatility crisis episodes, a structure that conditional-Normal ARMA models cannot accommodate. GARCH extends ARMA by adding an autoregressive equation for the conditional variance itself, making volatility a forecastable quantity.

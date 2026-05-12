@@ -1,13 +1,3 @@
----
-title: Time-Varying Covariates
-date: "2026-04-17"
-description: "Covariates whose value changes during follow-up: counting-process data layout"
-categories:
-  - Survival Analysis
-  - time-varying-covariates
-  - counting-process
----
-
 ## Introduction
 
 Real survival studies routinely include covariates whose value changes during follow-up: treatment initiation, laboratory measurements repeated at each visit, secondary events that alter prognosis. Including these as time-fixed baseline values misrepresents the exposure history; pretending the baseline value applied throughout follow-up biases hazard-ratio estimates and is a leading cause of immortal-time errors. The standard remedy is the counting-process data layout, which splits each subject's follow-up into intervals during which covariate values are constant and lets the partial likelihood combine the contributions correctly.

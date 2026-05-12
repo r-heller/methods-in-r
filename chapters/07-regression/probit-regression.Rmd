@@ -1,14 +1,3 @@
----
-title: Probit Regression
-date: "2026-04-17"
-description: Binary regression using the cumulative normal link
-categories:
-  - "Regression & Modelling"
-  - probit
-  - binary
-  - glm
----
-
 ## Introduction
 
 Probit regression models a binary outcome through the inverse of the standard Normal cumulative distribution function — the same idea as logistic regression but with a Normal-tailed link instead of a logistic-tailed one. The two methods produce essentially identical predicted probabilities; their coefficients differ by a fixed scaling factor of about 1.6. Probit is the natural choice when a latent Normal-variable interpretation matches the substantive theory; logistic is more common in clinical reporting because odds ratios are easier to communicate.

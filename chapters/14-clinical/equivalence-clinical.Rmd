@@ -1,14 +1,3 @@
----
-title: Clinical Equivalence Trials
-date: "2026-04-17"
-description: Two one-sided tests (TOST) for bioequivalence and clinical equivalence
-categories:
-  - Clinical Biostatistics
-  - equivalence
-  - tost
-  - bioequivalence
----
-
 ## Introduction
 
 Clinical equivalence trials test whether two treatments are clinically interchangeable within a pre-specified equivalence margin — narrow enough that any difference inside the margin is regarded as clinically meaningless. Bioequivalence studies, used to support generic-drug approval, are the archetypal application: regulators require that the ratio of pharmacokinetic parameters between a generic and the reference product fall within 80 % to 125 % of unity, demonstrating that the generic delivers essentially the same exposure as the originator. Equivalence frameworks also apply in clinical contexts where two interventions are competing on safety or convenience and an investigator wishes to show "no clinically meaningful difference" rather than the more usual "test product is better".

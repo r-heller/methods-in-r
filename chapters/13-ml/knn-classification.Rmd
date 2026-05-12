@@ -1,14 +1,3 @@
----
-title: k-Nearest Neighbours Classification
-date: "2026-04-17"
-description: Instance-based learning with majority voting among nearest neighbours
-categories:
-  - Machine Learning
-  - knn
-  - classification
-  - distance
----
-
 ## Introduction
 
 $k$-nearest-neighbours classification assigns each test observation the majority class among its $k$ nearest training points in feature space. It is the simplest instance-based learning method: there is no training step beyond storing the data, and prediction is a search-and-vote operation. kNN is competitive on low-dimensional, well-separated data and serves as a useful baseline against which more complex methods are compared. Performance depends critically on the distance metric and on $k$, both of which require attention.

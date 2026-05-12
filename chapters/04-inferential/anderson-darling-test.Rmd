@@ -1,15 +1,3 @@
----
-title: Anderson-Darling Test
-date: "2026-04-17"
-description: A distribution goodness-of-fit test with emphasis on the tails
-categories:
-  - Inferential Statistics
-  - anderson-darling
-  - goodness-of-fit
-  - normality
-  - tails
----
-
 ## Introduction
 
 The Anderson-Darling (AD) test is a goodness-of-fit test that weights the tails of the distribution more heavily than the Kolmogorov-Smirnov test. It is widely used for normality testing in engineering and quality-control contexts, where tail behaviour often determines pass/fail decisions.

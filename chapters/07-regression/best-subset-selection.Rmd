@@ -1,14 +1,3 @@
----
-title: Best Subset Selection
-date: "2026-04-17"
-description: Enumerate all candidate predictor subsets to find the best by a chosen criterion
-categories:
-  - "Regression & Modelling"
-  - best-subset
-  - leaps
-  - selection
----
-
 ## Introduction
 
 Best subset selection enumerates all $2^p$ possible predictor subsets and identifies the best subset by a chosen criterion (adjusted $R^2$, Mallows' $C_p$, BIC, cross-validation error). It is an exhaustive search and therefore avoids the sequence-dependence that plagues stepwise methods, but the combinatorial cost limits its practical use to modest $p$ — typically up to about 30 predictors with branch-and-bound algorithms (`leaps`).

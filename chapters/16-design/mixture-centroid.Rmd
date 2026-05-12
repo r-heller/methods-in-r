@@ -1,14 +1,3 @@
----
-title: Simplex Centroid Designs
-date: "2026-04-17"
-description: Mixture designs including centroids of all sub-simplices
-categories:
-  - Experimental Design
-  - mixture
-  - centroid
-  - scheffe
----
-
 ## Introduction
 
 Simplex centroid designs are mixture experiments that include the centroids of every sub-simplex of the component simplex: each pure component (vertex), each binary midpoint (edge centroid), each ternary centroid (face centroid), and on up to the overall centroid of the full simplex. The result is a set of $2^q - 1$ design points for $q$ components that spans all blend orders simultaneously, making the design well suited to detecting higher-order synergies — three-way and four-way blend interactions that simpler simplex-lattice designs cannot estimate. They are widely used in food science, pharmaceutical formulation, and chemical product development whenever the response depends on combinations of multiple ingredients and pure components alone do not capture the behaviour.

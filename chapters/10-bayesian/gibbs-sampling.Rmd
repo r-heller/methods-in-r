@@ -1,14 +1,3 @@
----
-title: Gibbs Sampling
-date: "2026-04-17"
-description: MCMC via sequential sampling from conditional distributions
-categories:
-  - Bayesian Statistics
-  - gibbs
-  - mcmc
-  - conditional
----
-
 ## Introduction
 
 Gibbs sampling is one of the oldest practical MCMC algorithms and remains an instructive special case of more general samplers. It exploits a structural property of multidimensional posteriors: even when the joint distribution is intractable, the conditional distribution of one parameter given all others can often be derived in closed form. Cycling through the parameters and updating each from its full conditional generates a Markov chain whose stationary distribution is the joint posterior, with no acceptance step and no tuning of proposals.

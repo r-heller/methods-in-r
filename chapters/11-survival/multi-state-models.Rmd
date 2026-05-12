@@ -1,14 +1,3 @@
----
-title: Multi-State Models
-date: "2026-04-17"
-description: Modelling transitions between discrete states over time
-categories:
-  - Survival Analysis
-  - multi-state
-  - transition
-  - mstate
----
-
 ## Introduction
 
 A multi-state model describes a subject's movement through a discrete set of states over time — healthy to diseased to dead, pre-transplant to post-transplant to rejected, or any clinical pathway with intermediate landmarks. It generalises ordinary survival (two states: alive, dead), competing risks (one origin, several absorbing states), and the illness-death model (one intermediate, one absorbing state). The framework gives a complete probabilistic picture of the disease course rather than collapsing it into a single time-to-first-event summary.

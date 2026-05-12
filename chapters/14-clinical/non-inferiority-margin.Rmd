@@ -1,14 +1,3 @@
----
-title: Non-Inferiority Margin Selection
-date: "2026-04-17"
-description: Defining the clinically acceptable maximum inferiority
-categories:
-  - Clinical Biostatistics
-  - non-inferiority
-  - margin
-  - synthesis
----
-
 ## Introduction
 
 Non-inferiority (NI) trials test whether a new treatment is not worse than an active comparator by more than a pre-specified margin $\Delta$. Margin selection is the most consequential and scrutinised part of NI trial design: too loose and a genuinely inferior treatment is approved; too tight and the study is infeasible.

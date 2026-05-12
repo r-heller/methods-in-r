@@ -1,14 +1,3 @@
----
-title: Gradient Boosting
-date: "2026-04-17"
-description: Stagewise additive modelling with gradient descent on loss
-categories:
-  - Machine Learning
-  - boosting
-  - gbm
-  - stagewise
----
-
 ## Introduction
 
 Gradient boosting, formalised by Friedman in 2001, builds an additive ensemble $F_M(x) = \sum_{m=1}^M \nu h_m(x)$ by fitting each weak learner $h_m$ to the negative gradient of the loss at the current predictions. Decision trees are the canonical weak learner, the learning rate $\nu$ shrinks each tree's contribution to control regularisation, and the resulting framework dominates structured tabular-data benchmarks. Modern implementations (XGBoost, LightGBM, CatBoost) add second-order information, regularisation, missing-value handling, and other improvements over the original Friedman gradient boosting.

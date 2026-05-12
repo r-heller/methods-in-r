@@ -1,8 +1,6 @@
 ---
-title: "Cheatsheets"
 toc: true
 ---
-
 # Cheatsheets
 
 One-page topical summaries, aggregated here as a printable reference. Each is a self-contained reminder of the syntax, the assumptions, and the diagnostics that go with the methods it covers.

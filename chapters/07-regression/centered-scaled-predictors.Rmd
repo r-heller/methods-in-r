@@ -1,14 +1,3 @@
----
-title: Centring and Scaling Predictors
-date: "2026-04-17"
-description: Why and how to centre and scale continuous predictors before regression
-categories:
-  - "Regression & Modelling"
-  - centring
-  - scaling
-  - interpretability
----
-
 ## Introduction
 
 Centring (subtracting the mean) and scaling (dividing by the standard deviation) are simple transformations of continuous predictors that change coefficient interpretation without changing model fit. Centring shifts the intercept to a meaningful value (the predicted outcome at the mean of every predictor) and reduces collinearity between main effects and interaction terms. Scaling makes coefficient magnitudes comparable across predictors that are on different units. Both transformations are routine pre-processing steps in regression with interactions or in any analysis that benchmarks predictor importance by coefficient size.

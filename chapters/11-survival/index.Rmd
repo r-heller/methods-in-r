@@ -1,7 +1,3 @@
----
-title: "11. Survival Analysis"
----
-
 # Survival Analysis {#sec-ch-11-survival}
 
 Time-to-event methods: Kaplan-Meier, Cox regression, time-varying covariates, competing risks, multistate models, and survival-targeted machine learning. Censoring is treated as a first-class concept, not a footnote.

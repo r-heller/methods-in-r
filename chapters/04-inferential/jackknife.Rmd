@@ -1,15 +1,3 @@
----
-title: The Jackknife
-date: "2026-04-17"
-description: Leave-one-out resampling for bias and variance estimation
-categories:
-  - Inferential Statistics
-  - jackknife
-  - leave-one-out
-  - bias
-  - variance
----
-
 ## Introduction
 
 The jackknife is a resampling procedure that predates the bootstrap. It computes the statistic from each leave-one-out subsample and uses the variation across these subsamples to estimate the statistic's bias and variance. It is simpler than the bootstrap but more limited in applicability.

@@ -1,14 +1,3 @@
----
-title: "Supervised Learning: Overview"
-date: "2026-04-17"
-description: "Framework, loss functions, generalisation, and the bias-variance decomposition"
-categories:
-  - Machine Learning
-  - supervised-learning
-  - loss
-  - generalisation
----
-
 ## Introduction
 
 Supervised learning uses labelled data $(x_i, y_i)_{i=1}^{n}$ to learn a function $f$ that predicts $y$ from new $x$. The enterprise is defined by three choices: a **hypothesis class** (tree, linear model, neural net), a **loss function** (squared error, cross-entropy), and an **optimisation** procedure. Generalisation -- performance on unseen data -- is the goal, and the bias-variance decomposition is the classical lens for understanding why models fail.

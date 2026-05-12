@@ -1,7 +1,3 @@
----
-title: "Reporting Templates"
----
-
 # Reporting Templates
 
 Copy-paste Methods + Results paragraphs, organised by reporting guideline. Pages here are deliberately formulaic: fill the bracketed *italics* with your numbers, replace the placeholder package versions with what you actually used, and check the **Reviewer checklist** link for each method to confirm you have reported every diagnostic a reviewer expects to see.

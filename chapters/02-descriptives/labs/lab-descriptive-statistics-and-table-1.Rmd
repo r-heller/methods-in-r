@@ -1,7 +1,3 @@
----
-title: "Descriptive statistics and Table 1"
----
-
 <div class="callout callout-note">
 **Workflow labs** use the variant template:
 Goal → Approach → Execution → Check → Report.

@@ -1,14 +1,3 @@
----
-title: ETS Models
-date: "2026-04-17"
-description: "State-space formulation of exponential smoothing: Error, Trend, Seasonal"
-categories:
-  - Time Series Analysis
-  - ets
-  - state-space
-  - exponential-smoothing
----
-
 ## Introduction
 
 ETS models — Error, Trend, Seasonal — express the exponential-smoothing family in a unified state-space form. Each component (error, trend, seasonal) is independently classified as additive, multiplicative, or absent, giving a small library of well-understood models. The state-space framework allows proper likelihood-based estimation, AIC-based model selection, and principled prediction intervals derived from the underlying stochastic structure rather than ad-hoc heuristics.

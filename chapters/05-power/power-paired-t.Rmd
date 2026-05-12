@@ -1,14 +1,3 @@
----
-title: Power for Paired t-Test
-date: "2026-04-17"
-description: "Sample size for paired designs, taking advantage of within-subject correlation"
-categories:
-  - "Sample Size & Power"
-  - power
-  - paired-t-test
-  - correlation
----
-
 ## Introduction
 
 Paired designs achieve their statistical power gain by cancelling between-subject variability from the treatment contrast. Because each subject acts as their own control, the between-subject component of variance — typically the largest source of noise in clinical-pharmacology, behavioural, and clinical-laboratory studies — drops out of the within-subject difference. The result is that paired designs are substantially more powerful than independent-groups designs of equal total sample size, with the benefit growing as the within-subject correlation increases. Power analysis for the paired $t$-test must therefore explicitly account for this correlation; ignoring it under-uses the design's main analytic advantage and inflates the planned sample size unnecessarily.

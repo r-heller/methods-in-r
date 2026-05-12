@@ -1,14 +1,3 @@
----
-title: Spectral Analysis
-date: "2026-04-17"
-description: Decomposing a time series into frequency components via periodogram and spectral density
-categories:
-  - Time Series Analysis
-  - spectral
-  - periodogram
-  - frequency-domain
----
-
 ## Introduction
 
 Spectral analysis examines a time series in the frequency domain rather than the time domain. Periodicities appear as peaks in the power spectrum, slow trends dominate the low-frequency end, and white noise has a flat spectrum. The view is complementary to autocorrelation-based time-domain analysis: the spectral density and the autocovariance function are Fourier-transform pairs, so neither view contains information the other lacks, but each makes different features easier to see.

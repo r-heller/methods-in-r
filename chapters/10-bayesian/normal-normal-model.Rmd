@@ -1,14 +1,3 @@
----
-title: The Normal-Normal Model
-date: "2026-04-17"
-description: Conjugate Bayesian inference for a normal mean with known variance
-categories:
-  - Bayesian Statistics
-  - normal-normal
-  - conjugate
-  - mean
----
-
 ## Introduction
 
 The Normal-Normal model is the simplest example of conjugate Bayesian updating for a continuous parameter: a Normal prior on the mean, a Normal likelihood with known variance, and a Normal posterior obtained by a transparent precision-weighted average. It is the classical pedagogical example, and despite its simplicity it sits at the heart of every hierarchical model that contains a Normal level — random-effects meta-analysis, partial pooling in mixed models, and the mean structure of Gaussian processes all rely on the same closed-form update.

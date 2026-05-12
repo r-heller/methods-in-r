@@ -1,14 +1,3 @@
----
-title: Changepoint Detection
-date: "2026-04-17"
-description: "Identifying abrupt shifts in mean, variance, or slope of a time series"
-categories:
-  - Time Series Analysis
-  - changepoint
-  - pelt
-  - segmentation
----
-
 ## Introduction
 
 Changepoint detection identifies the times at which the statistical properties of a time series — mean, variance, regression coefficients, or full distribution — change abruptly. Applications range from monitoring physiological signals (heart-rate or EEG state changes), to detecting regime shifts in financial and economic series, to segmenting long sensor recordings into homogeneous epochs. The output is a list of changepoint times together with the within-segment summaries between them; the methodological choices concern the change type, the detection algorithm, and the penalty controlling sensitivity.

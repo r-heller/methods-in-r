@@ -1,15 +1,3 @@
----
-title: The Exponential Distribution
-date: "2026-04-17"
-description: "Waiting time between events in a Poisson process, with the memoryless property"
-categories:
-  - Probability Theory
-  - exponential
-  - waiting-time
-  - memoryless
-  - hazard
----
-
 ## Introduction
 
 The exponential distribution models waiting times between events in a Poisson process with constant rate. It is the only continuous distribution with the memoryless property, and it is the simplest parametric model in survival and reliability analysis.

@@ -1,15 +1,3 @@
----
-title: Simple Linear Regression
-date: "2026-04-17"
-description: "Fitting, diagnosing, and interpreting a linear regression with a single continuous predictor, from first principles"
-categories:
-  - "Regression & Modelling"
-  - linear-regression
-  - ols
-  - residuals
-  - diagnostics
----
-
 ## Introduction
 
 Simple linear regression models the mean of a continuous outcome as a linear function of a single continuous predictor. It is the workhorse of applied statistics: half of all reported analyses are linear regressions in some disguise, and the concepts it introduces (least squares estimation, residuals, fit-vs-data trade-off, R-squared, confidence and prediction bands) generalise to every more complex model.

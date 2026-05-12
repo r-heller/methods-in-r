@@ -1,14 +1,3 @@
----
-title: The Harmonic Mean
-date: "2026-04-17"
-description: "Reciprocal-averaged summary for rates, speeds, and F1-style composite scores"
-categories:
-  - Descriptive Statistics
-  - harmonic-mean
-  - rates
-  - f1-score
----
-
 ## Introduction
 
 The harmonic mean is the reciprocal of the arithmetic mean of reciprocals. It is appropriate when averaging rates, speeds, or ratios where the denominator is fixed -- for example, when a traveller covers equal distances at different speeds and you want the average speed. In machine learning, the harmonic mean of precision and recall gives the F1 score.

@@ -1,14 +1,3 @@
----
-title: Bagging
-date: "2026-04-17"
-description: "Bootstrap aggregation: variance reduction through averaging"
-categories:
-  - Machine Learning
-  - bagging
-  - ensemble
-  - bootstrap
----
-
 ## Introduction
 
 Bagging — bootstrap aggregation, introduced by Breiman in 1996 — trains $B$ models on $B$ bootstrap samples of the training data and averages their predictions. The averaging dramatically reduces variance for high-variance, low-bias learners (deep decision trees, kNN with small $k$) without increasing their bias. Random forests are bagged trees with an additional feature-randomisation step that decorrelates the individual trees and amplifies the variance reduction.

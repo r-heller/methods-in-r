@@ -1,14 +1,3 @@
----
-title: "Hazard, Survival, and Cumulative Hazard"
-date: "2026-04-17"
-description: The three equivalent representations of a time-to-event distribution
-categories:
-  - Survival Analysis
-  - hazard
-  - survival-function
-  - cumulative-hazard
----
-
 ## Introduction
 
 A time-to-event distribution admits three mutually equivalent representations: the survival function $S(t)$, the hazard function $h(t)$, and the cumulative hazard $H(t)$. They contain the same information but emphasise different aspects of the process — surviving probability, instantaneous risk, and accumulated risk respectively. Switching freely among them is one of the foundational fluencies of survival analysis, because each form has natural plotting and inferential conventions and most software exposes all three.

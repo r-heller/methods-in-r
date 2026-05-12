@@ -1,14 +1,3 @@
----
-title: Bar Charts
-date: "2026-04-17"
-description: Counts per category and summarised values per category
-categories:
-  - Data Visualisation
-  - bar-chart
-  - geom_bar
-  - geom_col
----
-
 ## Introduction
 
 Bar charts are the workhorse for categorical data and the geom most frequently misused. The confusion almost always stems from a single distinction: a bar can show how many observations fall in a category (a count) or a summary statistic computed for that category (a mean, a percentage, a proportion). `ggplot2` separates the two cases through `geom_bar()` for counts and `geom_col()` for pre-computed values, and getting the right geom for the data on hand is the first step to a sensible figure.

@@ -1,14 +1,3 @@
----
-title: "O'Brien-Fleming Boundary"
-date: "2026-04-17"
-description: Conservative early stopping boundary in group-sequential trials
-categories:
-  - Clinical Biostatistics
-  - obrien-fleming
-  - boundary
-  - group-sequential
----
-
 ## Introduction
 
 The O'Brien-Fleming (OF) boundary, introduced by Peter O'Brien and Thomas Fleming in 1979, is the most widely used efficacy stopping boundary for group-sequential clinical trials and the de facto regulatory default for confirmatory phase-3 trials. It is conservative early and liberal late: very little type-I error budget is spent at early interim analyses, so stopping early for efficacy requires an unusually large effect, while the final analysis uses nearly the full nominal alpha. The practical consequence is that interim stops are rare and convincing — they happen only when the treatment effect is much larger than the powered alternative — while the final analysis suffers only a tiny multiplicity penalty if no early stop occurs.

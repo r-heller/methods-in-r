@@ -1,14 +1,3 @@
----
-title: "Kendall's Tau"
-date: "2026-04-17"
-description: Rank correlation based on concordant vs discordant pairs; robust to ties and small samples
-categories:
-  - Inferential Statistics
-  - kendall
-  - tau
-  - concordance
----
-
 ## Introduction
 
 Kendall's $\tau$ quantifies association via the proportion of pairs of observations that are **concordant** (both variables increase or both decrease) minus the proportion that are **discordant**. It is more robust than Spearman in small samples and under ties.

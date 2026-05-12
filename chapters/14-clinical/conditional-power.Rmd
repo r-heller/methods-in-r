@@ -1,14 +1,3 @@
----
-title: Conditional Power
-date: "2026-04-17"
-description: Probability of eventual trial success given interim data
-categories:
-  - Clinical Biostatistics
-  - conditional-power
-  - futility
-  - interim
----
-
 ## Introduction
 
 Conditional power is the probability of rejecting the null at the final analysis given the observed interim data and an assumed treatment effect for the remainder. It is the standard tool for futility stopping: a low conditional power indicates the trial is unlikely to succeed even with favourable future data.

@@ -1,14 +1,3 @@
----
-title: ChIP-Seq Analysis
-date: "2026-04-17"
-description: TF binding and histone modification profiling from ChIP-seq data
-categories:
-  - Bioinformatics
-  - chip-seq
-  - peaks
-  - motifs
----
-
 ## Introduction
 
 ChIP-seq (chromatin immunoprecipitation followed by sequencing) localises protein-DNA binding events genome-wide — transcription factor binding sites, histone modifications, chromatin remodellers. The resulting alignment density forms peaks at the binding loci; sharp peaks correspond to point-source binders (TFs), and broad domains correspond to histone-mark territories (H3K27me3, H3K9me3 spanning kilobases). The standard pipeline is alignment, peak calling with MACS2, annotation with ChIPseeker, motif enrichment with HOMER or `motifmatchr`, and differential binding with DiffBind.

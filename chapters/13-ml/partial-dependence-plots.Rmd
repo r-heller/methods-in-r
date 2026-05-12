@@ -1,14 +1,3 @@
----
-title: Partial Dependence Plots
-date: "2026-04-17"
-description: Marginal effect of a feature on model predictions
-categories:
-  - Machine Learning
-  - pdp
-  - partial-dependence
-  - marginal
----
-
 ## Introduction
 
 Partial dependence plots (PDPs), introduced by Friedman in 2001, show the average model prediction as a feature varies while holding other features at their observed values. They provide a visual answer to "how does the model's prediction change with $x_j$?" — exposing non-linear effects and interactions in black-box models that variable-importance scores alone cannot reveal. Combined with variable importance (which features matter) and SHAP values (per-prediction explanations), PDPs are the third pillar of interpretation for opaque ML models.

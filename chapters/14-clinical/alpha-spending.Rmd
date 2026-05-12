@@ -1,14 +1,3 @@
----
-title: Alpha-Spending Functions
-date: "2026-04-17"
-description: Flexible interim alpha allocation via Lan-DeMets spending functions
-categories:
-  - Clinical Biostatistics
-  - alpha-spending
-  - lan-demets
-  - group-sequential
----
-
 ## Introduction
 
 Alpha-spending functions (Lan & DeMets, 1983) allow interim analyses at unscheduled times while preserving overall Type I error. The spending function $f(t)$ specifies the cumulative alpha budget at information fraction $t \in [0, 1]$; nominal alpha at each analysis is the increment $f(t_k) - f(t_{k-1})$.

@@ -1,14 +1,3 @@
----
-title: Copy Number Variation Analysis
-date: "2026-04-17"
-description: Inferring genomic copy-number changes from sequencing or array data
-categories:
-  - Bioinformatics
-  - cnv
-  - segmentation
-  - copy-number
----
-
 ## Introduction
 
 Copy number variations (CNVs) are large-scale gains or losses of genomic regions, critical in oncology (tumour aneuploidy), developmental disorders (trisomies, deletions), and population genetics. WGS, exome, or array-based readouts feed segmentation algorithms that partition the genome into constant-copy-number segments.

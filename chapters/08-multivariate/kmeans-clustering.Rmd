@@ -1,14 +1,3 @@
----
-title: k-Means Clustering
-date: "2026-04-17"
-description: Partitioning observations into k clusters by minimising within-cluster sum of squares
-categories:
-  - Multivariate Statistics
-  - kmeans
-  - clustering
-  - partitioning
----
-
 ## Introduction
 
 $k$-means is the workhorse of partitioning cluster analysis: assign each of $n$ observations to one of $k$ clusters, with the cluster centres as multivariate means and the objective being to minimise the total within-cluster sum of squared distances. It scales to large datasets, is conceptually simple, and produces interpretable centres in the original feature space. Its limitations — sensitivity to outliers, dependence on Euclidean geometry, the need to pre-specify $k$, and the assumption of approximately spherical equal-size clusters — are equally well known and motivate the alternatives (PAM, DBSCAN, Gaussian mixtures) in this category.

@@ -1,14 +1,3 @@
----
-title: Correspondence Analysis
-date: "2026-04-17"
-description: Low-dimensional biplot representation of contingency tables via chi-squared distance
-categories:
-  - Multivariate Statistics
-  - correspondence-analysis
-  - ca
-  - biplot
----
-
 ## Introduction
 
 Correspondence analysis (CA) is the categorical analogue of principal components analysis. It takes a two-way contingency table and produces a low-dimensional map in which rows and columns become points whose proximity reflects association beyond what would be expected under independence. CA decomposes the chi-squared statistic into row and column contributions across a small number of dimensions, much as PCA decomposes covariance variance, and the resulting biplot is one of the most intuitive ways to visualise the association structure of a contingency table.

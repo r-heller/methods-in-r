@@ -1,15 +1,3 @@
----
-title: Kaplan-Meier Estimation
-date: "2026-04-17"
-description: "Non-parametric estimation of the survival function from right-censored data, with confidence intervals and group comparisons"
-categories:
-  - Survival Analysis
-  - kaplan-meier
-  - survival-function
-  - censoring
-  - log-rank-test
----
-
 ## Introduction
 
 The Kaplan-Meier (KM) estimator is the non-parametric maximum-likelihood estimator of the survival function from right-censored time-to-event data. Its signature step-function plot is the single most recognisable figure in clinical research. The estimator makes no distributional assumption about the time-to-event variable; it simply accumulates the conditional probability of surviving each observed event time.

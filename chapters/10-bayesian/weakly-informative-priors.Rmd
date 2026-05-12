@@ -1,14 +1,3 @@
----
-title: Weakly Informative Priors
-date: "2026-04-17"
-description: Priors that regularise without imposing substantive constraints
-categories:
-  - Bayesian Statistics
-  - weakly-informative
-  - regularisation
-  - prior
----
-
 ## Introduction
 
 Weakly informative priors are the modern default in applied Bayesian work. They assign non-trivial probability to a plausible range of parameter values while remaining broad enough that the data dominate the posterior. They differ from "non-informative" priors (which can be improper or pathological) and from informative priors (which encode substantive knowledge): the goal is to regularise the inference, rule out absurd values, and stabilise sampling without injecting domain claims that the data cannot challenge. The result is a posterior that looks much like a frequentist estimate when data are abundant, but that behaves sensibly under separation, sparsity, and high-dimensional regression where likelihood-only methods misbehave.

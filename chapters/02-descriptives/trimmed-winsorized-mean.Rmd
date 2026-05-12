@@ -1,15 +1,3 @@
----
-title: Trimmed and Winsorised Means
-date: "2026-04-17"
-description: Robust location estimators that compromise between the mean and the median
-categories:
-  - Descriptive Statistics
-  - trimmed-mean
-  - winsorized-mean
-  - robust
-  - location
----
-
 ## Introduction
 
 A trimmed mean drops a proportion of observations from each tail before computing the mean. A Winsorised mean replaces those observations with the nearest non-trimmed values and then averages. Both estimators compromise between the arithmetic mean (efficient but sensitive to outliers) and the median (robust but inefficient). They are useful when the data are heavy-tailed but you want to retain most of the sample's information.

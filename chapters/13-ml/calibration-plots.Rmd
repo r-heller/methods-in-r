@@ -1,14 +1,3 @@
----
-title: Calibration Plots
-date: "2026-04-17"
-description: "Reliability diagrams: do predicted probabilities match observed frequencies?"
-categories:
-  - Machine Learning
-  - calibration
-  - reliability
-  - probabilities
----
-
 ## Introduction
 
 A calibration plot (reliability diagram) plots predicted probability against observed frequency. A well-calibrated classifier's curve lies on the diagonal: when it predicts 0.7, events occur 70 % of the time. Poor calibration means probabilities cannot be trusted for decision thresholds or risk communication.

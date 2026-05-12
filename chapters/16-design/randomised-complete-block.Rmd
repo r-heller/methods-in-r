@@ -1,15 +1,3 @@
----
-title: Randomised Complete Block Design
-date: "2026-04-17"
-description: "Blocking to control known nuisance variation, with construction, analysis, and interpretation in R"
-categories:
-  - Experimental Design
-  - rcbd
-  - blocking
-  - anova
-  - experimental-design
----
-
 ## Introduction
 
 A randomised complete block design (RCBD) is one of the most useful experimental designs in applied research. When a known source of variation -- day of measurement, animal cage, plate, subject -- is likely to influence the outcome, RCBD groups experimental units into homogeneous blocks and randomises treatments *within* each block. The block effect is thereby separated from the treatment effect, and the residual error is the within-block variability, which is typically much smaller than the pooled unblocked error.

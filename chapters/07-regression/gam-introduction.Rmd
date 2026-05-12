@@ -1,14 +1,3 @@
----
-title: "GAMs: Introduction"
-date: "2026-04-17"
-description: Generalised additive models with smoothing splines for non-linear predictor effects
-categories:
-  - "Regression & Modelling"
-  - gam
-  - smooth
-  - mgcv
----
-
 ## Introduction
 
 Generalised additive models (GAMs) replace the strict linear predictor of GLMs with a sum of smooth functions of predictors: $g(\mathbb E[Y]) = \beta_0 + \sum_j s_j(X_j)$. Each $s_j$ is a smooth, data-driven function estimated alongside the parametric components, so GAMs combine the interpretability of linear regression (additivity, coefficient-style summaries) with the flexibility of non-parametric smoothers. They are the standard tool whenever a continuous predictor's effect is suspected to be non-linear and theoretical grounds for a specific functional form are absent.

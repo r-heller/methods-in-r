@@ -1,14 +1,3 @@
----
-title: Independent Component Analysis
-date: "2026-04-17"
-description: "Signal separation: recovering independent latent sources from linear mixtures"
-categories:
-  - Multivariate Statistics
-  - ica
-  - independent-components
-  - fastica
----
-
 ## Introduction
 
 Independent component analysis (ICA) is the canonical approach for recovering statistically independent latent signals from observed linear mixtures. The classic application is the "cocktail-party problem" — separating individual conversations from microphone recordings of overlapping speakers — but the technique generalises to any setting where multiple independent sources mix linearly into a smaller set of observed channels. EEG, fMRI, gene-expression data, and audio source separation all use ICA as a primary decomposition method.

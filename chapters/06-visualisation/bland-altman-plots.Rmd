@@ -1,14 +1,3 @@
----
-title: Bland-Altman Plots
-date: "2026-04-17"
-description: Mean-vs-difference plot for comparing two measurement methods
-categories:
-  - Data Visualisation
-  - bland-altman
-  - agreement
-  - limits-of-agreement
----
-
 ## Introduction
 
 The Bland-Altman plot is the standard graphical tool for assessing agreement between two measurement methods, two raters, or two devices. Unlike a correlation coefficient or a 45-degree scatter, which conflate agreement with linear association, a Bland-Altman plot displays the *difference* between paired measurements against their *mean*, exposing systematic bias, proportional bias, and the limits within which 95 % of differences are expected to fall. Since Bland and Altman's 1986 *Lancet* paper, it has become the canonical method-comparison figure in clinical chemistry and laboratory medicine.

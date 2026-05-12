@@ -1,14 +1,3 @@
----
-title: Weighted Kappa
-date: "2026-04-17"
-description: Ordinal inter-rater agreement with linear or quadratic weights
-categories:
-  - Clinical Biostatistics
-  - weighted-kappa
-  - ordinal
-  - agreement
----
-
 ## Introduction
 
 Weighted kappa extends Cohen's kappa to ordinal data by crediting partial agreement: near-miss disagreements (mild vs moderate) weigh less than dramatic disagreements (mild vs severe). It is the standard inter-rater agreement statistic for Likert-type scales, radiology grading, and symptom-severity ratings.

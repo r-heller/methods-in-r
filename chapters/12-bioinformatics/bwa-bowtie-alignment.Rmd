@@ -1,15 +1,3 @@
----
-title: Alignment with BWA and Bowtie
-date: "2026-04-17"
-description: Fast read alignment to a reference genome via Burrows-Wheeler Transform indexing
-categories:
-  - Bioinformatics
-  - bwa
-  - bowtie2
-  - alignment
-  - bwt
----
-
 ## Introduction
 
 BWA-MEM and Bowtie2 are the dominant short-read DNA aligners in modern sequencing pipelines. Both use a Burrows-Wheeler-transformed (BWT) index of the reference genome to achieve rapid exact and approximate matching. The BWT compresses the reference while preserving the ability to query for substrings efficiently — the algorithmic insight that brought genome-scale alignment from hours per sample to minutes. Production alignment runs at the command line; R wrappers (`Rbowtie2`, `BWA` via `Rsubread`) integrate with downstream Bioconductor analyses.

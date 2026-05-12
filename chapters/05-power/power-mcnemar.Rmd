@@ -1,15 +1,3 @@
----
-title: "Power for McNemar's Test"
-date: "2026-04-17"
-description: Sample size for paired binary comparisons driven by the rate of discordant pairs
-categories:
-  - "Sample Size & Power"
-  - power
-  - mcnemar
-  - paired-binary
-  - discordant
----
-
 ## Introduction
 
 Power for McNemar's test depends on the rate of discordant pairs, not on the overall sample size alone. The concordant pairs contribute nothing to the test, so studies with high agreement need proportionally more pairs.

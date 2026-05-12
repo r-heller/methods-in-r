@@ -1,14 +1,3 @@
----
-title: "Bartlett's Test"
-date: "2026-04-17"
-description: "Test of equal variances across groups, most powerful under normality but very sensitive to its violation"
-categories:
-  - Inferential Statistics
-  - bartlett
-  - variance-homogeneity
-  - normality-sensitive
----
-
 ## Introduction
 
 Bartlett's test evaluates homogeneity of variance across $k$ groups. It is the likelihood-ratio test under normality, and it is the most powerful variance-homogeneity test when normality holds. Its major drawback: it is extremely sensitive to non-normality, losing validity as soon as the normality assumption is relaxed.

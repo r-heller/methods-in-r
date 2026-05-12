@@ -1,14 +1,3 @@
----
-title: Conditional Probability
-date: "2026-04-17"
-description: "Probability of one event given another, the product rule, and how conditioning reshapes the sample space"
-categories:
-  - Probability Theory
-  - conditional-probability
-  - product-rule
-  - conditioning
----
-
 ## Introduction
 
 Conditional probability quantifies how information about one event updates the probability of another. It is the lens through which every diagnostic test, every Bayesian update, and every hazard calculation is viewed. The rules are simple; the interpretations are subtle and recurrently misunderstood in applied research.

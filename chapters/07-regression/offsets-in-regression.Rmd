@@ -1,15 +1,3 @@
----
-title: Offsets in Regression
-date: "2026-04-17"
-description: Treating exposure time or person-years as a known component of the linear predictor
-categories:
-  - "Regression & Modelling"
-  - offset
-  - rate
-  - exposure
-  - person-years
----
-
 ## Introduction
 
 In count regression, an offset is a predictor whose coefficient is fixed at 1. It is the standard mechanism for modelling rates per unit exposure: events per person-year of follow-up, infections per 1000 hospital admissions, mutations per kilobase of DNA. Without an offset, the model fits expected counts and treats exposure as a confounder; with an offset, the model fits expected rates and exposure is correctly accounted for. Forgetting the offset is a leading cause of biased coefficient estimates in epidemiological count-data work.

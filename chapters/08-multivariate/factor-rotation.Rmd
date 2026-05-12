@@ -1,15 +1,3 @@
----
-title: Factor Rotation
-date: "2026-04-17"
-description: Orthogonal and oblique rotations to make factor loadings interpretable
-categories:
-  - Multivariate Statistics
-  - rotation
-  - varimax
-  - promax
-  - oblimin
----
-
 ## Introduction
 
 After factor extraction, rotation transforms the loading matrix to make interpretation easier without changing model fit. The mathematical reason is that any rotation of the factor solution produces the same predicted covariance matrix; rotation merely chooses a particular representation among the infinitely many that fit equally well. The choice of rotation method — orthogonal versus oblique, varimax versus promax versus oblimin — substantially affects which interpretation a reader will reach, so disclosing it is part of any responsible EFA report.

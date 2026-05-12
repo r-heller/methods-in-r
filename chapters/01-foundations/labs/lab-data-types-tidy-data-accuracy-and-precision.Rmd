@@ -1,7 +1,3 @@
----
-title: "Data types, tidy data, accuracy and precision"
----
-
 <div class="callout callout-note">
 **Workflow labs** use the variant template:
 Goal → Approach → Execution → Check → Report.

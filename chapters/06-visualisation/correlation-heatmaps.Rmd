@@ -1,14 +1,3 @@
----
-title: Correlation Heatmaps
-date: "2026-04-17"
-description: Visualising a correlation matrix with colour-encoded cells and significance markers
-categories:
-  - Data Visualisation
-  - correlation-matrix
-  - corrplot
-  - ggcorrplot
----
-
 ## Introduction
 
 A correlation heatmap renders a correlation matrix as a grid of colour-encoded cells, with the cell colour mapping the correlation coefficient on a diverging palette centred at zero. It is the natural overview figure for a multivariate dataset: dozens of pairwise correlations that would be impossible to read as a numeric table become a single image where blocks of similarly correlated variables stand out by colour. Hierarchical reordering of rows and columns brings related variables together and reveals cluster structure, often suggesting candidate factors for downstream analysis.

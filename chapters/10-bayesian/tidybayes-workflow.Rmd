@@ -1,14 +1,3 @@
----
-title: tidybayes Workflow
-date: "2026-04-17"
-description: "Extract, manipulate, and visualise posterior draws in tidyverse style"
-categories:
-  - Bayesian Statistics
-  - tidybayes
-  - posterior
-  - ggplot2
----
-
 ## Introduction
 
 `tidybayes` is the bridge between Bayesian model objects and the rest of the tidyverse. After fitting a model with `brms`, `rstanarm`, or raw Stan, you typically want to compare posteriors across parameters, summarise interval estimates by subgroup, or layer credible bands on top of raw observations. Doing this with the matrices that samplers natively produce is awkward; `tidybayes` reshapes them into long-format tibbles in which every draw of every parameter occupies its own row, making the familiar `dplyr` verbs and `ggplot2` geoms work without modification.

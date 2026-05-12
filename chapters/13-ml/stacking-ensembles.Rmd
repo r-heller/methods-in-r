@@ -1,14 +1,3 @@
----
-title: Stacking Ensembles
-date: "2026-04-17"
-description: Combining heterogeneous base models via a meta-learner
-categories:
-  - Machine Learning
-  - stacking
-  - ensemble
-  - meta-learner
----
-
 ## Introduction
 
 Stacking, also called stacked generalisation (Wolpert 1992), combines predictions from several diverse base learners using a second-level meta-learner trained to predict the target from the base-model predictions. Stacking consistently wins competitive ML benchmarks when base models are individually decent and sufficiently diverse — the meta-learner captures complementary strengths that no single model can match. It generalises bagging (one type of model averaged) and boosting (one type of model sequentially trained) to arbitrary heterogeneous ensembles.

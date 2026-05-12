@@ -1,14 +1,3 @@
----
-title: Wavelet Analysis
-date: "2026-04-17"
-description: Time-frequency decomposition capturing localised periodicities that change over time
-categories:
-  - Time Series Analysis
-  - wavelet
-  - time-frequency
-  - cwt
----
-
 ## Introduction
 
 Wavelet analysis decomposes a time series into components localised in both time and frequency simultaneously. Unlike the Fourier transform, which assumes stationarity and produces a single spectrum for the entire series, wavelets capture cyclic components that appear, shift, or disappear over time — essential for non-stationary signals such as EEG recordings, climate proxies, or any series whose periodic content evolves. The output is a scalogram, a 2D map of power across time and frequency that reveals the time-varying structure that Fourier methods miss.

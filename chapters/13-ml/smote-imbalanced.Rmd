@@ -1,14 +1,3 @@
----
-title: SMOTE for Imbalanced Classes
-date: "2026-04-17"
-description: Synthetic Minority Oversampling Technique for class-imbalanced classification
-categories:
-  - Machine Learning
-  - smote
-  - imbalanced
-  - oversampling
----
-
 ## Introduction
 
 On imbalanced classification problems, classifiers trained with standard loss optimise for the majority class and under-predict the minority. SMOTE (Chawla et al., 2002) addresses this by synthesising new minority examples via interpolation between minority neighbours, balancing the training set without duplicating samples.

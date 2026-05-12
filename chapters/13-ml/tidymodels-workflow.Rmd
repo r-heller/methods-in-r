@@ -1,15 +1,3 @@
----
-title: A Complete tidymodels Workflow
-date: "2026-04-17"
-description: "End-to-end modelling in tidymodels: recipes, parsnip, workflows, and tuning"
-categories:
-  - Machine Learning
-  - tidymodels
-  - workflow
-  - recipes
-  - parsnip
----
-
 ## Introduction
 
 `tidymodels` is the R meta-package that wraps `rsample`, `recipes`, `parsnip`, `workflows`, `tune`, and `yardstick` into a consistent, tidyverse-friendly interface for machine-learning pipelines. A complete tidymodels workflow composes a data split, a preprocessing recipe, a model specification, hyperparameter tuning on cross-validation resamples, and final evaluation on a held-out test set. The framework's strength is that the same syntax handles regression, classification, and time-series tasks across dozens of underlying engines (lm, glm, random forest, xgboost, neural networks).

@@ -1,14 +1,3 @@
----
-title: Left Truncation
-date: "2026-04-17"
-description: "Delayed entry: subjects only enter the study after surviving to a certain age or time"
-categories:
-  - Survival Analysis
-  - left-truncation
-  - delayed-entry
-  - age-as-timescale
----
-
 ## Introduction
 
 Left truncation, also called delayed entry, occurs when subjects become observable only after surviving to a certain age or calendar time. Recruiting middle-aged adults into a cohort study means anyone who died as a child or young adult is structurally absent — they could not contribute. Treating delayed-entry data as if every subject had been followed from time zero overestimates survival, because the early period is observed only for the survivors. The counting-process formulation in `survival::Surv(tstart, tstop, event)` handles this naturally by restricting risk sets at each event time to subjects actually under observation then.

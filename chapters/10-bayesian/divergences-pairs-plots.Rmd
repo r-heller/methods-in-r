@@ -1,15 +1,3 @@
----
-title: Divergences and Pairs Plots
-date: "2026-04-17"
-description: Diagnosing HMC sampling problems via divergent transitions and pair-plot visualisations
-categories:
-  - Bayesian Statistics
-  - divergence
-  - hmc
-  - pairs-plot
-  - funnel
----
-
 ## Introduction
 
 A divergent transition is HMC's most informative warning: it tells you that the leapfrog integrator could not navigate a region of the posterior accurately, and the chain therefore did *not* explore that region. Unlike a high $\hat R$, which can sometimes be cured by running longer chains, a divergent transition signals a structural problem with the posterior geometry that no amount of additional sampling will fix. Diagnosing where divergences occur — typically through pairs plots that colour divergent draws — is the path to a reparameterisation that lets the sampler do its job.

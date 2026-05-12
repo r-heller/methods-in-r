@@ -1,14 +1,3 @@
----
-title: Individual Participant Data Meta-Analysis
-date: "2026-04-17"
-description: Two-stage vs one-stage analysis of raw data pooled across studies
-categories:
-  - Meta-Analysis
-  - ipd
-  - two-stage
-  - one-stage
----
-
 ## Introduction
 
 Individual participant data (IPD) meta-analysis pools raw participant-level data from multiple studies, enabling analyses that aggregate-data meta-analyses cannot -- time-to-event across studies, individual-level effect modification, and harmonised outcome definitions. It is the gold standard when feasible but requires data-sharing agreements.

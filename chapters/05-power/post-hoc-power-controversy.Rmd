@@ -1,14 +1,3 @@
----
-title: "Post-Hoc Power: A Controversy"
-date: "2026-04-17"
-description: Why computing power from the observed effect is circular and uninformative
-categories:
-  - "Sample Size & Power"
-  - post-hoc-power
-  - observed-power
-  - critique
----
-
 ## Introduction
 
 Post-hoc power -- also called "observed power" -- is the calculation of power using the observed effect size from the study that just ran. It is common in some fields (especially when a study fails to reject) and near-universally criticised by statisticians.

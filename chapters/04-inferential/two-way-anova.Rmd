@@ -1,15 +1,3 @@
----
-title: Two-Way ANOVA
-date: "2026-04-17"
-description: "Two between-subjects factors: main effects and interaction"
-categories:
-  - Inferential Statistics
-  - anova
-  - two-way
-  - interaction
-  - factorial
----
-
 ## Introduction
 
 Two-way ANOVA tests the effects of two categorical factors on a continuous outcome, plus their interaction. It generalises one-way ANOVA by accommodating designs that manipulate or measure two conditions simultaneously, and is the simplest example of a factorial design.

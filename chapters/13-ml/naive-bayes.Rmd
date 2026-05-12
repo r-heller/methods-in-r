@@ -1,14 +1,3 @@
----
-title: Naive Bayes
-date: "2026-04-17"
-description: Probabilistic classification under conditional independence
-categories:
-  - Machine Learning
-  - naive-bayes
-  - probabilistic
-  - classification
----
-
 ## Introduction
 
 Naive Bayes is the simplest probabilistic classifier and one of the oldest. It applies Bayes' theorem under the strong assumption that features are conditionally independent given the class label. The independence assumption is almost always wrong in practice, yet Naive Bayes performs surprisingly well — often competitively with more sophisticated methods — on text classification, spam filtering, and other high-dimensional sparse problems. It trains in linear time and serves as a strong baseline for any classification pipeline.

@@ -1,14 +1,3 @@
----
-title: One-Sample t-Test
-date: "2026-04-17"
-description: Testing whether a sample mean equals a pre-specified reference value
-categories:
-  - Inferential Statistics
-  - t-test
-  - one-sample
-  - mean-comparison
----
-
 ## Introduction
 
 The one-sample t-test compares the mean of a single continuous variable to a pre-specified reference value. It answers questions of the form "does the average differ from some benchmark?" -- average IQ differs from 100, mean biomarker level differs from a reference, average weight change differs from zero in a pre-post design (via paired differences).

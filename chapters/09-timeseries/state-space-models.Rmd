@@ -1,14 +1,3 @@
----
-title: State-Space Models
-date: "2026-04-17"
-description: "Latent-state time-series framework unifying ARIMA, exponential smoothing, and many others"
-categories:
-  - Time Series Analysis
-  - state-space
-  - latent-state
-  - kalman
----
-
 ## Introduction
 
 State-space models describe a time series via a latent state vector that evolves over time, with observations as a noisy function of the state. This general framework encompasses essentially every classical time-series model — ARIMA, exponential smoothing (ETS), structural time series, hidden Markov models, dynamic linear models — as special cases. The unified framework provides a consistent inference machinery (the Kalman filter for linear Gaussian models; particle and extended-Kalman filters for non-linear or non-Gaussian extensions) and a flexible specification language for custom models.

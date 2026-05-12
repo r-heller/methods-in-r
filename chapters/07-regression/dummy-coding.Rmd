@@ -1,14 +1,3 @@
----
-title: Dummy Coding
-date: "2026-04-17"
-description: "Treatment-contrast coding for categorical predictors: reference category and indicator variables"
-categories:
-  - "Regression & Modelling"
-  - dummy-coding
-  - treatment-contrast
-  - reference-level
----
-
 ## Introduction
 
 Categorical predictors in regression must be encoded as numeric indicator variables before they enter the linear predictor. R's default is treatment-contrast coding (also called dummy coding), where one level is the implicit reference and the remaining $k - 1$ levels each get a 0/1 indicator. The choice of reference level is partly arbitrary and partly substantive: the reference becomes the baseline against which all other levels are compared, so it should be the level that makes scientific sense — placebo in a clinical trial, "no symptom" in symptom-based predictors, the largest stratum in observational studies.

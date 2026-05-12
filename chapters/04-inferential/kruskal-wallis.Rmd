@@ -1,15 +1,3 @@
----
-title: Kruskal-Wallis Test
-date: "2026-04-17"
-description: Non-parametric one-way ANOVA based on ranks across three or more groups
-categories:
-  - Inferential Statistics
-  - kruskal-wallis
-  - non-parametric
-  - ranks
-  - dunn
----
-
 ## Introduction
 
 The Kruskal-Wallis test extends the Mann-Whitney U to three or more independent groups. It tests whether the distributions differ across groups, without assuming normality or equal variances. Post-hoc pairwise comparisons use Dunn's test with a multiple-testing correction.

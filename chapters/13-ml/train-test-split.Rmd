@@ -1,14 +1,3 @@
----
-title: Train-Test Splits
-date: "2026-04-17"
-description: "Holdout evaluation, stratification, and honest generalisation estimates"
-categories:
-  - Machine Learning
-  - holdout
-  - split
-  - stratification
----
-
 ## Introduction
 
 A train-test split reserves a random subset of the data for honest evaluation of model generalisation, separating it cleanly from the data used for fitting and tuning. It is the simplest possible evaluation protocol and the foundation of every supervised-learning workflow. The trade-off is straightforward: a larger test set gives more stable error estimates but leaves less data for fitting; for small datasets, cross-validation extracts more value from the available data than a single fixed split.

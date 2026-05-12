@@ -1,14 +1,3 @@
----
-title: Meta-Regression
-date: "2026-04-17"
-description: Explaining between-study heterogeneity with study-level covariates
-categories:
-  - Meta-Analysis
-  - meta-regression
-  - moderator
-  - heterogeneity
----
-
 ## Introduction
 
 Meta-regression extends the random-effects meta-analysis by allowing study-level covariates — moderators such as publication year, mean participant age, average dose, or risk-of-bias score — to enter the model as predictors of the underlying effect. The fitted slope quantifies how much the true study effect changes per unit of moderator, and a residual between-study variance $\tau^2$ describes whatever heterogeneity the moderator did not explain. Meta-regression is the appropriate tool whenever the candidate moderator is continuous, and is generally more powerful than dichotomising into subgroups, which discards information and can produce a categorisation-dependent answer. It is now standard practice for any meta-analysis with $k \geq 10$ studies and a pre-specified hypothesis about effect modification.

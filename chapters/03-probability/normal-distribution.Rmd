@@ -1,15 +1,3 @@
----
-title: The Normal Distribution
-date: "2026-04-17"
-description: "Definition, properties, and practical use of the normal (Gaussian) distribution, with R examples for every common task"
-categories:
-  - Probability Theory
-  - normal-distribution
-  - gaussian
-  - probability
-  - distributions
----
-
 ## Introduction
 
 The normal distribution -- also called the Gaussian distribution -- is the most important continuous distribution in applied statistics. It arises naturally as the limit of averages (via the central limit theorem), as the distribution of measurement errors, and as the default assumption in classical regression and ANOVA. Even when a raw variable is not itself normal, its transformations, its averages, or its residuals often are.

@@ -1,15 +1,3 @@
----
-title: Spearman Rank Correlation Test
-date: "2026-04-17"
-description: Non-parametric correlation test for monotonic association between two variables
-categories:
-  - Inferential Statistics
-  - spearman
-  - rank-correlation
-  - monotonic
-  - non-parametric
----
-
 ## Introduction
 
 Spearman's $\rho$ (rho) is the Pearson correlation of the ranks of two variables. It detects monotonic associations that need not be linear, and is robust to outliers and heavy tails. It is the default correlation measure for ordinal data or strongly skewed continuous data.

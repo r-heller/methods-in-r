@@ -1,14 +1,3 @@
----
-title: Stratified Randomisation
-date: "2026-04-17"
-description: Separate randomisation lists within levels of baseline covariates
-categories:
-  - Clinical Biostatistics
-  - stratification
-  - randomisation
-  - balance
----
-
 ## Introduction
 
 Stratified randomisation runs a separate block-randomisation list within each stratum defined by one or more baseline covariates — typically centre, sex, age category, disease severity, or other strong prognostic factors. By randomising within strata, the design guarantees balance of the stratification variables across treatment arms, which stabilises subgroup inference, pre-empts the situation in which a strongly prognostic covariate drives apparent arm differences, and is increasingly required by regulators and journals for any multi-centre or prognostically heterogeneous trial. The trade-off is a slight increase in implementation complexity and the risk of empty strata in small trials, both manageable with care.

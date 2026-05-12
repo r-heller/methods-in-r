@@ -1,14 +1,3 @@
----
-title: CatBoost
-date: "2026-04-17"
-description: Gradient boosting with native categorical handling and ordered target encoding
-categories:
-  - Machine Learning
-  - catboost
-  - categorical
-  - boosting
----
-
 ## Introduction
 
 CatBoost (Prokhorenkova et al., 2018) focuses on principled handling of categorical features via ordered target encoding -- computing target statistics only from prior rows to avoid target leakage. It also uses **symmetric (oblivious) trees**: trees where every split at a given depth uses the same feature and threshold, yielding fast inference and natural regularisation.

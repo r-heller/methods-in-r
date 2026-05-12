@@ -1,15 +1,3 @@
----
-title: Big-Op and Little-op Notation
-date: "2026-04-17"
-description: Stochastic order symbols for describing rates of convergence and stochastic magnitudes
-categories:
-  - Statistical Foundations
-  - big-op
-  - little-op
-  - asymptotic
-  - order
----
-
 ## Introduction
 
 Asymptotic statistics constantly deals with sequences that are "approximately" of a given size as $n \to \infty$. Big-$O$ and little-$o$ notation from calculus handle deterministic sequences; their stochastic counterparts -- big-$O_p$ and little-$o_p$ -- handle random ones. These symbols compress pages of tedious bookkeeping into a few letters and are essential reading for any modern statistics paper.

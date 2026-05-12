@@ -1,7 +1,3 @@
----
-title: "Pre-registration and statistical analysis plans"
----
-
 <div class="callout callout-note">
 **Workflow lab:** Goal → Approach → Execution → Check → Report.
 </div>

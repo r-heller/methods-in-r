@@ -1,15 +1,3 @@
----
-title: Robust Regression
-date: "2026-04-17"
-description: M-estimators and MM-estimators for regression resistant to outliers and heavy-tailed errors
-categories:
-  - "Regression & Modelling"
-  - robust
-  - m-estimator
-  - huber
-  - mm-estimator
----
-
 ## Introduction
 
 Robust regression estimators down-weight observations with large residuals to reduce the influence of outliers and heavy-tailed errors. Where ordinary least squares minimises the squared residual — making a single large residual contribute as much as many moderate ones — robust methods cap or smoothly bound the loss function so that extreme observations cannot dominate the fit. Two main families coexist: M-estimators (Huber, bisquare) and MM-estimators that combine a high-breakdown initial fit with a high-efficiency M-step.

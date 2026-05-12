@@ -1,14 +1,3 @@
----
-title: Multiple Correspondence Analysis
-date: "2026-04-17"
-description: Extension of correspondence analysis to more than two categorical variables
-categories:
-  - Multivariate Statistics
-  - mca
-  - multiple-correspondence
-  - categorical
----
-
 ## Introduction
 
 Multiple correspondence analysis (MCA) is the categorical analogue of principal components analysis. Where PCA reduces a matrix of continuous variables to a small number of orthogonal axes capturing maximal variance, MCA reduces a set of categorical variables to axes capturing maximal chi-squared inertia. It is the natural exploratory tool for survey data, lifestyle patterns, ICD code panels, and any context in which several categorical variables jointly characterise units of observation.
