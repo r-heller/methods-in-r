@@ -1,15 +1,3 @@
----
-title: Missing Data in RCTs
-date: "2026-04-17"
-description: "MCAR, MAR, MNAR and their implications for primary analysis"
-categories:
-  - Clinical Biostatistics
-  - missing-data
-  - mcar
-  - mar
-  - mnar
----
-
 ## Introduction
 
 Missing data are ubiquitous in RCTs and can invalidate inference if not handled carefully. Three missingness mechanisms characterise the problem: **MCAR** (missingness is random), **MAR** (missingness depends on observed variables), and **MNAR** (missingness depends on the unobserved value). Valid analyses require assumptions on the mechanism.

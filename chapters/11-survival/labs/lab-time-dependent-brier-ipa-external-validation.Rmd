@@ -1,7 +1,3 @@
----
-title: "Time-dependent Brier, IPA, external validation"
----
-
 <div class="callout callout-note">
 **Testing labs** use the main template:
 Hypothesis → Visualise → Assumptions → Conduct → Conclude.

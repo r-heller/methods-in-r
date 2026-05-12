@@ -1,14 +1,3 @@
----
-title: "STAR: Spliced Alignment"
-date: "2026-04-17"
-description: Fast splice-aware RNA-seq aligner capable of detecting novel junctions
-categories:
-  - Bioinformatics
-  - star
-  - spliced-alignment
-  - rna-seq
----
-
 ## Introduction
 
 STAR (Spliced Transcripts Alignment to a Reference) is the de facto standard short-read RNA-seq aligner. It is designed specifically for the splice-aware alignment problem: reads from mature mRNA cross exon-exon junctions, and a naive aligner that requires contiguous matches misses these split alignments and misclassifies them as multi-mappers or unaligned. STAR's seed-extend algorithm splits reads at candidate junctions, aligns the segments to the reference genome, and assembles them into spliced alignments — including across novel (unannotated) junctions.

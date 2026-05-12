@@ -1,14 +1,3 @@
----
-title: Bivariate SROC Curves
-date: "2026-04-17"
-description: Hierarchical summary ROC modelling for diagnostic-accuracy meta-analysis
-categories:
-  - Meta-Analysis
-  - sroc
-  - bivariate
-  - hierarchical
----
-
 ## Introduction
 
 The summary ROC (SROC) curve visualises the relationship between pooled sensitivity and specificity across a meta-analysis of diagnostic studies. Modern SROCs are derived from bivariate or HSROC models that properly account for the correlation between sensitivity and specificity as thresholds vary.

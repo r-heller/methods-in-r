@@ -1,14 +1,3 @@
----
-title: Convergence in Distribution
-date: "2026-04-17"
-description: "The weakest standard mode of convergence, underlying the central limit theorem"
-categories:
-  - Statistical Foundations
-  - convergence-in-distribution
-  - weak-convergence
-  - clt
----
-
 ## Introduction
 
 Convergence in distribution (also called weak convergence) is the mode of convergence that underlies the central limit theorem. Unlike convergence in probability, which says the random variables themselves get close, convergence in distribution says only that their probability distributions get close. It is the weakest useful mode of convergence in classical probability theory and the one that defines every "asymptotic distribution" quoted in applied statistics.

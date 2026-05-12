@@ -1,14 +1,3 @@
----
-title: Nested Cross-Validation
-date: "2026-04-17"
-description: Honest model evaluation with separate loops for tuning and assessment
-categories:
-  - Machine Learning
-  - nested-cv
-  - tuning
-  - evaluation
----
-
 ## Introduction
 
 When hyperparameters are tuned on the same data used for evaluation, performance estimates are optimistically biased — the chosen hyperparameters fit not only the underlying signal but also the noise in the validation folds, producing CV errors lower than the model achieves on truly new data. Nested cross-validation separates the two concerns: an inner loop tunes hyperparameters on each training fold, and an outer loop evaluates the resulting tuned model on held-out test folds. The outer-loop mean is an honest, low-bias estimate of generalisation error.

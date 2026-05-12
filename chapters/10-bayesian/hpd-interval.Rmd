@@ -1,14 +1,3 @@
----
-title: Highest Posterior Density Interval
-date: "2026-04-17"
-description: Shortest interval containing a specified posterior probability mass
-categories:
-  - Bayesian Statistics
-  - hpd
-  - credible-interval
-  - posterior
----
-
 ## Introduction
 
 The highest posterior density (HPD) interval is the narrowest range that contains a chosen probability mass — typically 95 % — under a posterior distribution. Two intervals can both cover 95 % of the posterior, yet the HPD will always be at least as short as the equal-tailed interval (ETI) and will include only those parameter values whose density is above some threshold. For unimodal posteriors the two intervals are similar; for skewed or bimodal posteriors they can disagree dramatically, and the choice between them shapes how readers perceive the result.

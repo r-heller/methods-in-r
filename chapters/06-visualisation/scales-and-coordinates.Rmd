@@ -1,15 +1,3 @@
----
-title: Scales and Coordinates
-date: "2026-04-17"
-description: Controlling how data values are mapped to visual values (scales) and how the plot area is organised (coordinates)
-categories:
-  - Data Visualisation
-  - ggplot2
-  - scales
-  - coordinates
-  - axes
----
-
 ## Introduction
 
 Scales and coordinates are the two layers of `ggplot2` that turn raw data into visual marks on a page. **Scales** map data values to visual properties — numbers to positions, factor levels to colours, ordered values to sizes — while **coordinates** describe the geometry of the plot area itself — Cartesian, polar, log, fixed aspect ratio. Most figure customisation happens at the scale level; coordinates change less often, but understanding the difference between them is what lets you switch between zooming, transforming, and projecting without breaking the rest of the plot.

@@ -1,14 +1,3 @@
----
-title: Chi-Squared Goodness-of-Fit Test
-date: "2026-04-17"
-description: Testing whether observed category frequencies match an expected distribution
-categories:
-  - Inferential Statistics
-  - chi-squared
-  - goodness-of-fit
-  - categorical
----
-
 ## Introduction
 
 The chi-squared goodness-of-fit test compares observed counts in $k$ categories to a pre-specified expected distribution. It answers questions like "do observed blood-type frequencies match the population reference?" or "does admission-cause distribution differ from last year's benchmark?".

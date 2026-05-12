@@ -1,14 +1,3 @@
----
-title: Exponential Smoothing
-date: "2026-04-17"
-description: "Recursive weighted-average smoothers: simple, Holt (trend), Holt-Winters (seasonal)"
-categories:
-  - Time Series Analysis
-  - exponential-smoothing
-  - holt
-  - holt-winters
----
-
 ## Introduction
 
 Exponential smoothing is a family of forecasting methods that produces predictions as weighted averages of past observations with geometrically declining weights. The simplest form (simple exponential smoothing, SES) handles series with no trend and no seasonality; Holt's method adds a linear trend; Holt-Winters extends to seasonal series with additive or multiplicative seasonality. The methods are competitive with ARIMA at short horizons, conceptually simpler, and the natural choice when the series structure matches one of the supported variants.

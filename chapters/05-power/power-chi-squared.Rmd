@@ -1,15 +1,3 @@
----
-title: Power for Chi-Squared Tests
-date: "2026-04-17"
-description: "Sample size for goodness-of-fit and contingency chi-squared using Cohen's w"
-categories:
-  - "Sample Size & Power"
-  - power
-  - chi-squared
-  - cohen-w
-  - contingency
----
-
 ## Introduction
 
 Power analysis for chi-squared tests — goodness-of-fit against a hypothesised distribution and independence in a two-way contingency table — uses the non-central chi-squared distribution under the alternative hypothesis. The standardised effect size for these tests is Cohen's $w$, which combines the difference between hypothesised and expected cell proportions into a single number that maps directly to the non-centrality parameter of the test statistic. Power calculations are essential in the design of survey research, epidemiological category-association studies, market-segmentation analyses, and any setting where the central question is whether categorical proportions differ from a reference or vary across rows of a contingency table.

@@ -1,14 +1,3 @@
----
-title: Decision Trees (CART)
-date: "2026-04-17"
-description: Recursive binary partitioning with Gini or variance splits
-categories:
-  - Machine Learning
-  - tree
-  - cart
-  - rpart
----
-
 ## Introduction
 
 Decision trees partition the feature space by recursive binary splits, fitting a constant prediction in each terminal region (leaf). The Classification and Regression Trees (CART) algorithm by Breiman, Friedman, Olshen and Stone (1984) is the dominant implementation. Trees are interpretable (a single fitted tree can be read as a sequence of if-else rules), handle mixed numeric and categorical data without preprocessing, require no feature scaling, and serve as the building blocks for random forests and gradient boosting. Their main weakness is high variance — small data perturbations produce very different trees — which motivates ensemble methods that aggregate many trees.

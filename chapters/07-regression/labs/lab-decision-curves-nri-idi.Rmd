@@ -1,7 +1,3 @@
----
-title: "Decision curves, NRI, IDI"
----
-
 <div class="callout callout-note">
 **Workflow lab:** Goal → Approach → Execution → Check → Report.
 </div>

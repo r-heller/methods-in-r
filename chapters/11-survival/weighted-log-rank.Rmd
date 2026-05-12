@@ -1,14 +1,3 @@
----
-title: Weighted Log-Rank Tests
-date: "2026-04-17"
-description: "Peto-Peto, Fleming-Harrington, and other weighted variants for non-proportional hazards"
-categories:
-  - Survival Analysis
-  - weighted-log-rank
-  - peto-peto
-  - fleming-harrington
----
-
 ## Introduction
 
 The standard log-rank test gives every event time equal weight in the comparison between groups. That is the optimal weighting under proportional hazards but loses power when the difference between groups is concentrated at one end of follow-up — early differences that wane (typical of immunotherapy run-in effects), late differences that emerge after a delay (typical of immune-checkpoint inhibitors), or crossing-curve patterns. Weighted log-rank tests recover power in these settings by emphasising the time region where the difference is expected.

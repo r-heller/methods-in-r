@@ -1,14 +1,3 @@
----
-title: Violin Plots
-date: "2026-04-17"
-description: Symmetric kernel density plots for comparing distributions across groups
-categories:
-  - Data Visualisation
-  - violin
-  - density
-  - group-comparison
----
-
 ## Introduction
 
 A violin plot displays a kernel-density estimate vertically and reflects it around the central axis, producing the symmetric outline that gives the geom its name. It combines the clarity of a density plot with the side-by-side grouping that boxplots provide, and — crucially — reveals multi-modality and skew that boxplots flatten into a single rectangle. For comparing the *shape* of distributions across categories, violin plots are often the right default; for comparing only the median and quartile structure, boxplots remain more compact.

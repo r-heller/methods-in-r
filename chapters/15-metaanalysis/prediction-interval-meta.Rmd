@@ -1,14 +1,3 @@
----
-title: Prediction Intervals in Meta-Analysis
-date: "2026-04-17"
-description: "The plausible range of a future study's true effect under random-effects"
-categories:
-  - Meta-Analysis
-  - prediction-interval
-  - heterogeneity
-  - random-effects
----
-
 ## Introduction
 
 A 95 % confidence interval on a pooled meta-analytic estimate describes uncertainty about the **mean** true effect across the included studies. The prediction interval (PI), in contrast, describes the plausible range of the **true effect in a future study** drawn from the same population, propagating both the uncertainty in the mean and the between-study heterogeneity $\tau^2$. Under non-trivial heterogeneity the PI is substantially wider than the CI, and it is far more clinically meaningful: a clinician treating the next patient cares less about uncertainty in the average across past studies than about the range of effects they might plausibly see in their own clinical context. Modern meta-analysis reporting standards (PRISMA, GRADE) increasingly require the PI alongside the CI for any random-effects synthesis.

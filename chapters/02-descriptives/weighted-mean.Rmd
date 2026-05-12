@@ -1,14 +1,3 @@
----
-title: The Weighted Mean
-date: "2026-04-17"
-description: "Averaging with unequal weights: survey inclusion probabilities, meta-analysis pooling, and more"
-categories:
-  - Descriptive Statistics
-  - weighted-mean
-  - survey
-  - pooling
----
-
 ## Introduction
 
 A weighted mean is a generalisation of the arithmetic mean in which each observation carries a positive weight that reflects its importance, reliability, or inclusion probability. Weighted means appear in survey sampling (weights are reciprocals of inclusion probabilities), in meta-analysis (weights are inverse-variance), and in weighted regression.

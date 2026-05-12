@@ -1,15 +1,3 @@
----
-title: The Weibull Distribution
-date: "2026-04-17"
-description: Flexible positive-valued distribution with monotone hazard; reliability and survival analysis
-categories:
-  - Probability Theory
-  - weibull
-  - reliability
-  - survival
-  - hazard
----
-
 ## Introduction
 
 The Weibull distribution generalises the exponential to allow monotone non-constant hazard rates. It is the default parametric model in reliability engineering and a common choice for parametric survival analysis. The shape parameter controls whether hazard is increasing (ageing), decreasing (early failures dominate), or constant (exponential).

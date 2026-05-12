@@ -1,14 +1,3 @@
----
-title: Random-Intercept Models
-date: "2026-04-17"
-description: Mixed model with cluster-specific intercepts but common slopes
-categories:
-  - "Regression & Modelling"
-  - random-intercept
-  - mixed-effects
-  - icc
----
-
 ## Introduction
 
 A random-intercept model allows each cluster (subject, hospital, school) its own baseline intercept while constraining all clusters to share the same regression slope. It is the simplest mixed-effects model and the natural starting point for repeated-measures, longitudinal, or clustered data. The single new parameter beyond ordinary regression — the variance of the random intercept — captures between-cluster heterogeneity in baseline level and is the primary handle for partial pooling and intraclass correlation.

@@ -1,15 +1,3 @@
----
-title: The Uniform Distribution
-date: "2026-04-17"
-description: Equal probability over an interval (continuous) or a set (discrete)
-categories:
-  - Probability Theory
-  - uniform
-  - continuous
-  - discrete
-  - simulation
----
-
 ## Introduction
 
 The uniform distribution spreads probability equally across its support. The continuous uniform on $[a, b]$ is the building block of random-number generation; the discrete uniform on $\{1, \ldots, k\}$ describes fair dice and random selection. It is the simplest non-trivial distribution.

@@ -1,14 +1,3 @@
----
-title: Rolling-Origin Cross-Validation
-date: "2026-04-17"
-description: Time-series-aware cross-validation that respects temporal ordering
-categories:
-  - Time Series Analysis
-  - cv
-  - rolling-origin
-  - time-series-cv
----
-
 ## Introduction
 
 Standard $k$-fold cross-validation shuffles observations across folds, which violates time ordering and leaks future information into the training data. For time series, this invalidates predictive performance estimates entirely. Rolling-origin cross-validation (also called time-series CV or walk-forward validation) preserves temporal ordering by training up to a cutoff and forecasting the subsequent horizon, then sliding the cutoff forward and repeating. It is the only valid CV scheme for time-series forecast evaluation.

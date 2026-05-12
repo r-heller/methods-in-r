@@ -1,16 +1,3 @@
----
-title: Measures of Dispersion
-date: "2026-04-17"
-description: "Quantifying how spread out the data are: variance, SD, MAD, IQR, and range"
-categories:
-  - Descriptive Statistics
-  - dispersion
-  - variance
-  - sd
-  - iqr
-  - mad
----
-
 ## Introduction
 
 A measure of central tendency tells you where the data are centred; a measure of dispersion tells you how far they spread around that centre. Two samples can share the same mean yet behave differently in every downstream calculation because their variability is different. This tutorial covers the five dispersion measures used routinely in applied work, explains when each is appropriate, and shows how to compute them in R.

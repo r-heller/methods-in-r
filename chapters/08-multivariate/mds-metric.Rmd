@@ -1,14 +1,3 @@
----
-title: Metric Multidimensional Scaling
-date: "2026-04-17"
-description: Representing a distance matrix in low-dimensional Euclidean coordinates
-categories:
-  - Multivariate Statistics
-  - mds
-  - classical-mds
-  - pcoa
----
-
 ## Introduction
 
 Metric multidimensional scaling — also known as classical MDS or principal coordinates analysis (PCoA) — takes a pairwise distance matrix and produces a low-dimensional Euclidean configuration whose pairwise distances approximate the input as closely as possible. It is the workhorse for visualising similarity or distance data when raw coordinates are unavailable: think reconstructing a map from inter-city distances, projecting microbial-community Bray-Curtis dissimilarities, or visualising a kernel-derived similarity matrix in a 2D plot.

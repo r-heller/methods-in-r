@@ -1,14 +1,3 @@
----
-title: The Hazard Function
-date: "2026-04-17"
-description: Instantaneous event rate given survival so far; central concept of survival analysis
-categories:
-  - Probability Theory
-  - hazard
-  - survival
-  - instantaneous-rate
----
-
 ## Introduction
 
 The hazard function $h(t)$ gives the instantaneous rate at which events occur at time $t$, given that they have not occurred before $t$. It is the primary object in survival analysis and reliability engineering: proportional-hazards models, accelerated-failure-time models, and competing-risks methods all reason about hazards rather than distributions directly.

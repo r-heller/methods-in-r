@@ -1,14 +1,3 @@
----
-title: The Log-Normal Distribution
-date: "2026-04-17"
-description: Positive-valued distribution whose logarithm is normal; multiplicative processes and biomedical concentrations
-categories:
-  - Probability Theory
-  - lognormal
-  - multiplicative
-  - skewed
----
-
 ## Introduction
 
 If $\log X$ is normally distributed, then $X$ is log-normal. The distribution is strictly positive and right-skewed, and it models variables that result from multiplicative rather than additive processes -- concentrations, income, survival times, and many biomedical lab values.

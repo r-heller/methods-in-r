@@ -1,7 +1,3 @@
----
-title: "13. Machine Learning"
----
-
 # Machine Learning {#sec-ch-13-ml}
 
 Cross-validation, regularisation (ridge/LASSO/elastic net), trees and ensembles, neural networks via `torch`/`keras`, SHAP and other interpretability tools, and the `tidymodels` workflow. False-discovery and knockoff-based selection are treated alongside CV as competing answers to the same question.

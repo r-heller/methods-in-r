@@ -1,14 +1,3 @@
----
-title: Hamiltonian Monte Carlo
-date: "2026-04-17"
-description: Gradient-based MCMC using Hamiltonian dynamics; NUTS variant in Stan
-categories:
-  - Bayesian Statistics
-  - hmc
-  - nuts
-  - gradient-mcmc
----
-
 ## Introduction
 
 Hamiltonian Monte Carlo (HMC) is the current state of the art for sampling from continuous Bayesian posteriors of moderate-to-high dimension. Where random-walk Metropolis takes small, undirected steps and Gibbs cycles through coordinates, HMC uses gradient information to propose long-distance moves that almost always land in regions of high posterior density. The No-U-Turn Sampler (NUTS), Stan's default, automates the choice of trajectory length so that users do not need to tune step counts by hand. The result is mixing rates that are orders of magnitude better than coordinate-wise samplers for posteriors with strong correlations.

@@ -1,14 +1,3 @@
----
-title: Law of Total Probability
-date: "2026-04-17"
-description: Decomposing a marginal probability over a partition of the sample space
-categories:
-  - Probability Theory
-  - total-probability
-  - partition
-  - marginalisation
----
-
 ## Introduction
 
 The law of total probability (LTP) expresses the unconditional probability of an event as a weighted sum of conditional probabilities. It is the bookkeeping rule for "conditioning on every possibility and adding them up", and it appears as the denominator in Bayes' theorem, as the marginalisation step in mixture models, and whenever a probability computation is easier after splitting on a latent variable.

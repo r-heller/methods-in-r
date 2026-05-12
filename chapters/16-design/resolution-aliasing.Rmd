@@ -1,14 +1,3 @@
----
-title: Resolution and Aliasing
-date: "2026-04-17"
-description: Understanding the confounding structure of fractional factorial designs
-categories:
-  - Experimental Design
-  - resolution
-  - aliasing
-  - confounding
----
-
 ## Introduction
 
 In any fractional factorial design, effects are aliased — two or more distinct effects produce the same contrast in the data and cannot be disentangled from the experimental results alone. The choice of fraction determines exactly which effects are aliased with which, and the design's **resolution** summarises the severity of this aliasing in a single Roman numeral. Higher resolution means lower-order effects are protected from aliasing with each other; lower resolution means smaller designs but messier confounding. Understanding resolution and the alias chain is essential for interpreting any fractional-factorial result, because an unrecognised alias is one of the most common sources of misleading DoE conclusions.

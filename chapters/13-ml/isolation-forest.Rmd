@@ -1,14 +1,3 @@
----
-title: Isolation Forest
-date: "2026-04-17"
-description: Tree-based unsupervised anomaly detection via path length
-categories:
-  - Machine Learning
-  - isolation-forest
-  - anomaly-detection
-  - trees
----
-
 ## Introduction
 
 Isolation Forest (Liu, Ting, and Zhou, 2008) is a tree-based unsupervised anomaly-detection method built on a single intuition: outliers are easier to isolate by random splits than densely packed normal points. The algorithm builds many random trees, partitions the data with random feature-and-split-value choices, and uses each observation's average path length to a terminal node as its anomaly score. Short paths mean easy isolation, which means the point is anomalous; long paths mean the point sits in dense regions that take many splits to isolate.

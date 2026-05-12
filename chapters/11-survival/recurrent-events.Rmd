@@ -1,14 +1,3 @@
----
-title: Recurrent Events
-date: "2026-04-17"
-description: "Modelling repeated events per subject: Andersen-Gill, PWP, and frailty approaches"
-categories:
-  - Survival Analysis
-  - recurrent-events
-  - andersen-gill
-  - pwp
----
-
 ## Introduction
 
 Recurrent-event analysis applies whenever a single subject can experience the event of interest multiple times during follow-up — hospital admissions, seizures, infections, asthma exacerbations, recurrent tumours. Treating only the first event collapses information and wastes power; treating all events as independent inflates effective sample size and produces invalid standard errors. Several modelling frameworks balance these extremes, each suited to a different scientific question.

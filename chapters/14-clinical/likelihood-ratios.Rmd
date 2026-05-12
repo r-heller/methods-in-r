@@ -1,14 +1,3 @@
----
-title: Likelihood Ratios
-date: "2026-04-17"
-description: LR+ and LR- as prevalence-independent summaries of diagnostic performance
-categories:
-  - Clinical Biostatistics
-  - likelihood-ratio
-  - diagnostic
-  - fagan
----
-
 ## Introduction
 
 Likelihood ratios (LR+ and LR-) summarise the information content of a diagnostic test in a way that is independent of disease prevalence. Sensitivity and specificity describe how the test performs in known-disease and known-no-disease populations, but they do not directly tell a clinician what to believe after observing a positive or negative test result; predictive values do, but they depend on prevalence and are therefore not portable across populations. Likelihood ratios bridge this gap: they combine multiplicatively with the pre-test odds to yield the post-test odds via Bayes' theorem, making them the natural building blocks of clinical Bayesian reasoning. Modern evidence-based-medicine guidance and core teaching texts present LRs as the preferred diagnostic-performance summary precisely because of this prevalence-independence.

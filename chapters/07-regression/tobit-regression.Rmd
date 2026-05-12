@@ -1,14 +1,3 @@
----
-title: Tobit Regression
-date: "2026-04-17"
-description: Linear regression for outcomes censored at a known threshold
-categories:
-  - "Regression & Modelling"
-  - tobit
-  - censored
-  - latent-variable
----
-
 ## Introduction
 
 Tobit regression handles outcomes that are observed at the boundary value for cases that fall outside a censoring threshold. Income top-coded at \$200,000 (right-censored at the cap), laboratory values below the limit of detection (left-censored at the LOD), drug refill rates that cap at 100 %, all share the same structure: a real underlying value exists, but the observation records the censoring threshold rather than the true value. OLS on the observed outcome is biased toward zero in such cases; Tobit recovers the latent-model coefficients via the appropriate Normal likelihood.

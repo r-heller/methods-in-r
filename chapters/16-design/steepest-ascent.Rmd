@@ -1,14 +1,3 @@
----
-title: Method of Steepest Ascent
-date: "2026-04-17"
-description: Moving along the gradient of a first-order response surface toward the optimum
-categories:
-  - Experimental Design
-  - steepest-ascent
-  - rsm
-  - optimisation
----
-
 ## Introduction
 
 The method of steepest ascent is the workhorse of the first phase of response-surface methodology. After fitting a linear (first-order) model to a small factorial experiment in the current operating region, the gradient vector points in the direction of fastest predicted improvement; subsequent confirmation runs are taken sequentially along this gradient, moving the experimental region toward the neighbourhood of the optimum. The strategy is efficient because it replaces an exhaustive grid search of the factor space with a directed walk informed by the local linear approximation, dramatically reducing the number of runs required to locate the region near a process optimum.

@@ -1,15 +1,3 @@
----
-title: Wilcoxon Signed-Rank Test
-date: "2026-04-17"
-description: Non-parametric paired-sample test based on signed ranks
-categories:
-  - Inferential Statistics
-  - wilcoxon
-  - signed-rank
-  - paired
-  - non-parametric
----
-
 ## Introduction
 
 The Wilcoxon signed-rank test compares two paired measurements without requiring Normality of their differences. It is the rank-based non-parametric analogue of the paired $t$-test and is the appropriate choice when the paired differences are ordinal, when the difference distribution is skewed or heavy-tailed, or when sample sizes are too small for the parametric test's distributional assumptions to be defensible. The Wilcoxon signed-rank test is widely used in pre-post studies, in within-subject A/B comparisons, in sensory evaluation panels, and in any setting where paired measurements are compared and Normality is in doubt.

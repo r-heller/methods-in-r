@@ -1,7 +1,3 @@
----
-title: "15. Meta-Analysis"
----
-
 # Meta-Analysis {#sec-ch-15-metaanalysis}
 
 Pairwise random- and fixed-effects meta-analysis, network meta-analysis, individual-patient-data meta-analysis, and PRISMA-aligned reporting. Heterogeneity is treated as the main result, not a nuisance.

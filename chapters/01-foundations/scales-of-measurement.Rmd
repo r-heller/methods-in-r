@@ -1,17 +1,3 @@
----
-title: Scales of Measurement
-date: "2026-04-17"
-description: "Nominal, ordinal, interval, and ratio scales, and which statistics each legitimately supports"
-categories:
-  - Statistical Foundations
-  - scales
-  - measurement
-  - nominal
-  - ordinal
-  - interval
-  - ratio
----
-
 ## Introduction
 
 Every variable in a dataset carries a scale of measurement, and the scale dictates which statistics are meaningful to compute. Stevens' 1946 taxonomy -- nominal, ordinal, interval, ratio -- remains the default vocabulary for this idea, and even when its strict version is criticised, the underlying distinctions are unavoidable in applied work. Computing a mean of jersey numbers is nonsense because jersey numbers are nominal; computing a median of exam grades is sensible because grades are at least ordinal.

@@ -1,15 +1,3 @@
----
-title: Colour Palettes
-date: "2026-04-17"
-description: "Discrete, continuous, perceptually uniform, and diverging palettes for ggplot2"
-categories:
-  - Data Visualisation
-  - colour
-  - palette
-  - viridis
-  - brewer
----
-
 ## Introduction
 
 Colour in a data visualisation is not decoration — it encodes information. The right palette makes ordered values read as ordered, signed values read as signed, and categorical values read as distinct without implying a ranking. The wrong palette (the infamous rainbow) creates false visual hotspots where the hue cycle bends and obscures structure that a perceptually uniform palette would reveal. Mastering the three palette families and choosing among them deliberately is one of the highest-payoff skills in figure design.

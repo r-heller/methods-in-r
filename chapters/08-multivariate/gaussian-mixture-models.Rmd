@@ -1,15 +1,3 @@
----
-title: Gaussian Mixture Models
-date: "2026-04-17"
-description: "Model-based clustering via mixtures of multivariate normals, fitted by EM"
-categories:
-  - Multivariate Statistics
-  - gmm
-  - mixture-model
-  - em-algorithm
-  - mclust
----
-
 ## Introduction
 
 Gaussian mixture models (GMMs) represent the data as a weighted sum of several multivariate Normal distributions, each component characterising a latent cluster. Unlike $k$-means, which is essentially a hard-assignment heuristic, GMMs are fully probabilistic generative models: each observation has a posterior probability of belonging to each cluster, the clusters can have different shapes (covariance structures), and model-selection criteria (BIC) handle the choice of cluster count without ad-hoc heuristics. The `mclust` package enumerates a small library of covariance structures and selects the best automatically.

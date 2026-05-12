@@ -1,14 +1,3 @@
----
-title: Hexbin Plots
-date: "2026-04-17"
-description: "Binning the 2D plane into hexagons and colouring by count, for large bivariate data"
-categories:
-  - Data Visualisation
-  - hexbin
-  - geom_hex
-  - large-n
----
-
 ## Introduction
 
 A scatterplot of a few hundred points is informative; a scatterplot of a few hundred thousand points is mostly black ink. Once $n$ exceeds a few thousand, individual points overplot to the point of hiding density structure: ridges, modes, and non-linear boundaries vanish under the cloud. Hexbin plots solve this by dividing the plane into hexagonal cells, counting points per cell, and colour-encoding the count. The result preserves the joint distribution at any sample size and renders quickly even for millions of observations.

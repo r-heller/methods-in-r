@@ -1,15 +1,3 @@
----
-title: Stationarity Tests
-date: "2026-04-17"
-description: Testing whether a time series has constant mean and variance over time
-categories:
-  - Time Series Analysis
-  - stationarity
-  - unit-root
-  - adf
-  - kpss
----
-
 ## Introduction
 
 Stationarity — constant mean, variance, and autocovariance over time — is a fundamental prerequisite for most classical time-series models (ARIMA, VAR, spectral analysis). Non-stationary series typically need to be made stationary by differencing, detrending, or transformation before model fitting; forgetting this step produces nonsense estimates and invalid forecasts. Formal stationarity testing combines several tests with complementary nulls to give a robust verdict.

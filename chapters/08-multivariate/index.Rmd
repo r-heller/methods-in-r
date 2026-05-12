@@ -1,7 +1,3 @@
----
-title: "08. Multivariate Methods"
----
-
 # Multivariate Methods {#sec-ch-08-multivariate}
 
 Methods for high-dimensional data without an outcome variable: principal components, factor analysis, canonical correlation, linear discriminant analysis, hierarchical and partition clustering, UMAP, and t-SNE. Both the variance-explained and the visual-projection use cases are covered.

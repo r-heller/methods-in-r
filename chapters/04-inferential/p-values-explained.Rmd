@@ -1,14 +1,3 @@
----
-title: P-Values Explained
-date: "2026-04-17"
-description: "Definition, correct interpretation, and the most common misinterpretations of the p-value"
-categories:
-  - Inferential Statistics
-  - p-value
-  - significance
-  - hypothesis-testing
----
-
 ## Introduction
 
 The p-value is the single most reported statistic in applied research, and the most frequently misinterpreted. Understanding what a p-value is -- and what it is not -- is essential for reading, writing, and reviewing quantitative studies. The American Statistical Association's 2016 statement on p-values laid out six principles that every user of statistics should internalise.

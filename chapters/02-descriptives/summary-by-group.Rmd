@@ -1,15 +1,3 @@
----
-title: Summary by Group
-date: "2026-04-17"
-description: Split-apply-combine pattern for computing summaries within subgroups of the data
-categories:
-  - Descriptive Statistics
-  - dplyr
-  - group-by
-  - summarise
-  - split-apply-combine
----
-
 ## Introduction
 
 Split-apply-combine is the workhorse pattern of applied data analysis: split the data by a grouping variable, apply a summary function to each group, and combine the results. It produces the per-group means, medians, counts, and other statistics that populate Table 1 of most scientific papers.

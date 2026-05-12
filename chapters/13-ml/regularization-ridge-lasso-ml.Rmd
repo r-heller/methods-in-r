@@ -1,15 +1,3 @@
----
-title: Regularisation in ML
-date: "2026-04-17"
-description: "L2 ridge, L1 lasso, and elastic net for controlling model complexity"
-categories:
-  - Machine Learning
-  - regularisation
-  - ridge
-  - lasso
-  - elastic-net
----
-
 ## Introduction
 
 Regularisation adds a complexity penalty to the training loss, preventing overfitting by shrinking coefficients. Ridge (L2) shrinks all coefficients toward zero; lasso (L1) also performs variable selection; elastic net combines both. All three are standard tools across regression and classification.

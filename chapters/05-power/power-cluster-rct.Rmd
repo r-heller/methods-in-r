@@ -1,15 +1,3 @@
----
-title: Power for Cluster-RCT
-date: "2026-04-17"
-description: "Sample size for cluster-randomised trials: design effect from ICC and cluster size"
-categories:
-  - "Sample Size & Power"
-  - power
-  - cluster-rct
-  - icc
-  - design-effect
----
-
 ## Introduction
 
 In cluster-randomised trials (CRTs), treatment is assigned at the cluster (clinic, school, village) rather than individual level. Within-cluster correlation inflates variance, reducing effective sample size and requiring more individuals than an individually randomised trial.

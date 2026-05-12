@@ -1,14 +1,3 @@
----
-title: k-Means as an ML Tool
-date: "2026-04-17"
-description: "Using k-means for feature engineering, quantisation, and pre-segmentation"
-categories:
-  - Machine Learning
-  - kmeans
-  - clustering
-  - feature-engineering
----
-
 ## Introduction
 
 $k$-means is usually taught as a stand-alone unsupervised clustering method, but in ML pipelines it is also a versatile feature-engineering primitive. Pre-clustering observations and using cluster membership (or distance-to-centroid) as new features can substantially improve downstream supervised models, especially when the underlying signal is non-linear and a clustering captures local structure that linear models miss. $k$-means is also the workhorse for vector quantisation, image segmentation, and customer-segmentation tasks.

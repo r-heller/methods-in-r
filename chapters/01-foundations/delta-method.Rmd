@@ -1,15 +1,3 @@
----
-title: The Delta Method
-date: "2026-04-17"
-description: "Asymptotic distributions of smooth functions of estimators, via a first-order Taylor expansion"
-categories:
-  - Statistical Foundations
-  - delta-method
-  - asymptotic
-  - variance
-  - transformation
----
-
 ## Introduction
 
 The delta method is how standard errors propagate through smooth transformations. Given an asymptotically normal estimator $\hat{\theta}$ of $\theta$, the delta method gives the asymptotic distribution of $g(\hat{\theta})$ for a differentiable $g$. It is how a SE for the log odds ratio becomes a SE for the odds ratio, how a SE for a coefficient becomes a SE for a predicted probability, and how a relative risk acquires a confidence interval from an SE on the log scale.

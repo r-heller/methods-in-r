@@ -1,14 +1,3 @@
----
-title: Linear Discriminant Analysis
-date: "2026-04-17"
-description: Classifier assuming multivariate normal within-class distributions with equal covariance
-categories:
-  - Multivariate Statistics
-  - lda
-  - classification
-  - fisher
----
-
 ## Introduction
 
 Linear discriminant analysis (LDA) is the canonical Gaussian classifier for two or more classes. Under the assumption that within-class distributions are multivariate Normal with a common covariance matrix, the optimal Bayes classifier is linear in the predictors, and the corresponding posterior probabilities are simple closed-form functions of class means and the pooled covariance. Fisher's complementary derivation gives a projection onto $K - 1$ axes that maximally separates the $K$ class centroids; this is the most useful low-dimensional visualisation for class structure.

@@ -1,15 +1,3 @@
----
-title: Equivalence Testing with TOST
-date: "2026-04-17"
-description: Two one-sided tests for establishing practical equivalence within a margin
-categories:
-  - Inferential Statistics
-  - tost
-  - equivalence
-  - non-inferiority
-  - bioequivalence
----
-
 ## Introduction
 
 Classical hypothesis tests fail to find a difference and conclude "no evidence of difference" -- not the same as concluding equivalence. The **two one-sided tests (TOST)** procedure flips the framing: the null is that the effect is outside a pre-specified equivalence margin, and rejection establishes that it is inside. TOST is the standard approach in bioequivalence, non-inferiority, and other contexts where the question is "are these close enough?".

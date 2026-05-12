@@ -1,14 +1,3 @@
----
-title: Boxplots
-date: "2026-04-17"
-description: "Five-number summary display: Tukey boxplots with whiskers and outlier rules"
-categories:
-  - Data Visualisation
-  - boxplot
-  - five-number-summary
-  - tukey
----
-
 ## Introduction
 
 A boxplot — also called a box-and-whisker plot — compresses a continuous distribution into a five-number summary: minimum, first quartile, median, third quartile, maximum, with Tukey's fences at $\pm 1.5 \times \mathrm{IQR}$ defining the whiskers and flagging anything beyond as an outlier. Boxplots are the workhorse for compact group-by-group comparisons because they put many groups side by side without ink overload. They are also the geom most often misused: they hide bimodality, hide sample size, and hide the raw observations behind a tidy rectangle, all of which can mislead readers who do not realise what the box actually summarises.

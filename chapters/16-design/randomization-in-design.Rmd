@@ -1,14 +1,3 @@
----
-title: Randomisation in Design
-date: "2026-04-17"
-description: "Purpose, procedures, and role of randomisation in experimental design"
-categories:
-  - Experimental Design
-  - randomisation
-  - doe
-  - protection
----
-
 ## Introduction
 
 Randomisation is the protective heart of experimental design. It ensures that in expectation, unknown sources of variation are balanced across treatments; it validates the model's assumption of independent errors; and it prevents systematic bias from lurking variables.

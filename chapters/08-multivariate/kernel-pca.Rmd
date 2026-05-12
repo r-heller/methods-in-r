@@ -1,14 +1,3 @@
----
-title: Kernel PCA
-date: "2026-04-17"
-description: Non-linear dimensionality reduction via PCA in an implicit feature space
-categories:
-  - Multivariate Statistics
-  - kernel-pca
-  - non-linear
-  - rbf
----
-
 ## Introduction
 
 Kernel principal component analysis performs PCA in a high-dimensional feature space implicitly defined by a kernel function, capturing non-linear structure that linear PCA misses. The classic example — two concentric circles — illustrates the point: linear PCA fails to separate them because no straight axis distinguishes the two classes, but kernel PCA with a radial-basis-function kernel finds the radial coordinate in an implicit infinite-dimensional space and separates the rings cleanly. The technique generalises PCA to data lying on curved manifolds while preserving its eigen-decomposition mathematical structure.

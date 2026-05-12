@@ -1,14 +1,3 @@
----
-title: Read Trimming and Adapter Removal
-date: "2026-04-17"
-description: Removing low-quality bases and sequencing adapters before alignment
-categories:
-  - Bioinformatics
-  - trimming
-  - adapter
-  - rfastp
----
-
 ## Introduction
 
 After FASTQ-level QC has identified low-quality bases and adapter contamination, read trimming removes them before alignment. The motivation is straightforward: sequencing-quality scores typically degrade toward the 3' end of reads, and adapter sequences appear when the insert is shorter than the read length. Both produce mismatched bases that bias alignment and increase mapping rates incorrectly. The `Rfastp` package provides an R-friendly interface to `fastp`, the fast C++ tool that handles trimming, adapter removal, quality filtering, and polytail cleanup in a single pass.

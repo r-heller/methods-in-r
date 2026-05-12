@@ -1,15 +1,3 @@
----
-title: Power for ICC
-date: "2026-04-17"
-description: Sample size for the intraclass correlation coefficient in reliability studies
-categories:
-  - "Sample Size & Power"
-  - power
-  - icc
-  - reliability
-  - continuous-rating
----
-
 ## Introduction
 
 The intraclass correlation coefficient (ICC) is the standard reliability statistic for continuous ratings — agreement between raters on quantitative scales, test-retest stability, instrument repeatability across multiple measurements per subject. Sample-size planning for an ICC study depends on the number of subjects, the number of raters or replicate measurements per subject, the target ICC value to detect (or estimate), and whether the goal is hypothesis testing (rejecting a null ICC value) or precision (achieving a target confidence-interval width). Both questions admit closed-form solutions under standard assumptions, and explicit power planning is now expected for any prospective reliability study aiming for FDA, IVDR, or guideline acceptance.

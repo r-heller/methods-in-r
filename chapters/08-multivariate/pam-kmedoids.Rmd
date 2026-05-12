@@ -1,15 +1,3 @@
----
-title: Partitioning Around Medoids
-date: "2026-04-17"
-description: "PAM: robust k-medoids clustering for non-Euclidean distances and outlier-contaminated data"
-categories:
-  - Multivariate Statistics
-  - pam
-  - k-medoids
-  - robust
-  - gower
----
-
 ## Introduction
 
 Partitioning around medoids (PAM) is the canonical $k$-medoids clustering algorithm. Like $k$-means, it partitions $n$ observations into $k$ clusters; unlike $k$-means, the cluster centres are actual observations (medoids) rather than coordinate means. This single change makes PAM robust to outliers (a single extreme value cannot drag a medoid away from the cluster bulk), enables clustering on arbitrary dissimilarity matrices including those derived from non-Euclidean distances or mixed numeric-categorical data, and produces interpretable centre observations that can be quoted in clinical or biological contexts ("the typical patient in cluster 2 is patient 47").

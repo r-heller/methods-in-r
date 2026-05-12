@@ -1,16 +1,3 @@
----
-title: Outlier Detection Rules
-date: "2026-04-17"
-description: "Univariate rules: 1.5·IQR fences, z-score thresholds, Hampel identifier, and Grubbs' test"
-categories:
-  - Descriptive Statistics
-  - outlier
-  - iqr-fence
-  - z-score
-  - hampel
-  - grubbs
----
-
 ## Introduction
 
 Outlier detection is a diagnostic step, not a cleaning step: flagged points should be investigated, not automatically removed. Several rules produce flags from different premises; each has a different trade-off between sensitivity and robustness. This page covers the common univariate rules and their assumptions.

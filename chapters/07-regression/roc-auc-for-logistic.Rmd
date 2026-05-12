@@ -1,15 +1,3 @@
----
-title: ROC and AUC for Logistic Models
-date: "2026-04-17"
-description: Discrimination quality of logistic regression via receiver operating characteristic curves
-categories:
-  - "Regression & Modelling"
-  - roc
-  - auc
-  - logistic
-  - discrimination
----
-
 ## Introduction
 
 The receiver operating characteristic (ROC) curve and its area-under-curve (AUC) summary quantify how well a logistic regression's predicted probabilities rank observed events above non-events. AUC ranges from 0.5 (chance) to 1.0 (perfect ranking) and is the conventional discrimination metric for binary classifiers in clinical and epidemiological work. It is invariant to the threshold chosen for class assignment, making it a property of the model's ranking ability rather than any specific cut-off.

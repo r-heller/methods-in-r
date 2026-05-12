@@ -1,15 +1,3 @@
----
-title: Fixed-Effect vs. Random-Effects Meta-Analysis
-date: "2026-04-17"
-description: "Two ways to pool study-level effect sizes, and the consequences of each for inference and interpretation"
-categories:
-  - Meta-Analysis
-  - meta-analysis
-  - fixed-effect
-  - random-effects
-  - heterogeneity
----
-
 ## Introduction
 
 A meta-analysis pools effect-size estimates from multiple studies into a single summary. The two classical approaches -- the fixed-effect model and the random-effects model -- rest on different assumptions about what those studies represent. Choosing between them is not a technical afterthought; it is a substantive decision about the scope of inference, and it can change both the point estimate and its uncertainty.

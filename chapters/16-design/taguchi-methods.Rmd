@@ -1,14 +1,3 @@
----
-title: Taguchi Methods
-date: "2026-04-17"
-description: Orthogonal-array designs and signal-to-noise optimisation for quality engineering
-categories:
-  - Experimental Design
-  - taguchi
-  - orthogonal-array
-  - quality
----
-
 ## Introduction
 
 Taguchi methods (1950s-60s) apply orthogonal-array experiments to optimise product and process design for minimum variability. Central ideas: loss functions defining quality as deviation from target, signal-to-noise (SNR) ratios summarising mean and variance jointly, and compact orthogonal arrays for efficient screening.

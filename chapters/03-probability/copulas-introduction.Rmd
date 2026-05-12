@@ -1,15 +1,3 @@
----
-title: "Copulas: An Introduction"
-date: "2026-04-17"
-description: "Separating marginal distributions from the dependence structure via Sklar's theorem"
-categories:
-  - Probability Theory
-  - copula
-  - sklar
-  - dependence-structure
-  - tail-dependence
----
-
 ## Introduction
 
 A copula is a multivariate distribution with uniform marginals. It captures the dependence structure of a joint distribution independently of the marginals. Sklar's theorem says every joint distribution decomposes into its marginals plus a unique copula; this decomposition is the cleanest way to model dependence when the marginals are non-normal.

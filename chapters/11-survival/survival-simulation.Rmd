@@ -1,13 +1,3 @@
----
-title: Simulating Survival Data
-date: "2026-04-17"
-description: Generating realistic censored time-to-event datasets for power analysis and method validation
-categories:
-  - Survival Analysis
-  - simulation
-  - inverse-hazard
----
-
 ## Introduction
 
 Simulating censored time-to-event data is essential for three classes of work: power and sample-size calculations for trials with non-standard designs, validation of new statistical methods (does the estimator recover the truth?), and pedagogy. The inverse-hazard method generates event times from any specified hazard function and lets you build realistic datasets that match a target survival pattern, censoring distribution, and covariate-effect structure.

@@ -1,16 +1,3 @@
----
-title: Diagnostic Test Accuracy
-date: "2026-04-17"
-description: "Sensitivity, specificity, predictive values, likelihood ratios, and ROC analysis for binary diagnostic tests"
-categories:
-  - Clinical Biostatistics
-  - diagnostic-accuracy
-  - sensitivity
-  - specificity
-  - roc
-  - predictive-values
----
-
 ## Introduction
 
 When a new diagnostic test is proposed, the first question is: how accurately does it classify disease status against a reference standard? The answer comes in several complementary numbers -- sensitivity, specificity, positive and negative predictive values, likelihood ratios, and the area under the ROC curve. Each answers a different question, and reporting any one alone is inadequate.

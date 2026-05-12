@@ -1,14 +1,3 @@
----
-title: Informative Priors
-date: "2026-04-17"
-description: "Priors derived from previous studies, expert elicitation, or mechanistic knowledge"
-categories:
-  - Bayesian Statistics
-  - informative-priors
-  - expert-elicitation
-  - meta-analysis
----
-
 ## Introduction
 
 An informative prior encodes genuine pre-data knowledge: a quantitative summary of previous studies, a mechanistic constraint that any plausible parameter must respect, or a structured elicitation from domain experts. Done well, informative priors stabilise inference in small samples, integrate evidence across studies, and let a single analysis quantify how new data update what was already known. Done badly, they paper over weak data and make conclusions look more certain than they should. The discipline is to be explicit about the source, justify the choice quantitatively, and run a sensitivity analysis whenever the prior is doing meaningful work.

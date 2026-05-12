@@ -1,15 +1,3 @@
----
-title: Pearson Correlation Test
-date: "2026-04-17"
-description: Testing whether the Pearson correlation between two continuous variables is non-zero
-categories:
-  - Inferential Statistics
-  - pearson
-  - correlation
-  - fisher-z
-  - t-test
----
-
 ## Introduction
 
 The Pearson correlation test assesses whether two continuous variables are linearly related. It returns a correlation coefficient $r$ and a p-value for the null that the population correlation $\rho = 0$, along with a confidence interval computed via Fisher's z transformation.

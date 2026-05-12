@@ -1,14 +1,3 @@
----
-title: The Gamma-Poisson Model
-date: "2026-04-17"
-description: Conjugate Bayesian inference for a Poisson rate with Gamma prior
-categories:
-  - Bayesian Statistics
-  - gamma-poisson
-  - conjugate
-  - rate
----
-
 ## Introduction
 
 The Gamma–Poisson conjugate pair is the count-data analogue of the Beta–Binomial model: a Gamma prior on a Poisson rate yields a Gamma posterior whose parameters are obtained by adding the observed event count and the observed exposure to the prior shape and rate respectively. It is the natural starting point whenever you are inferring an event rate per unit time, area, or population, and it generalises directly to Poisson regression once predictors enter the linear predictor.

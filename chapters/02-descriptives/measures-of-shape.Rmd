@@ -1,15 +1,3 @@
----
-title: Measures of Shape
-date: "2026-04-17"
-description: "Skewness and kurtosis: summarising the asymmetry and tail heaviness of a distribution beyond location and spread"
-categories:
-  - Descriptive Statistics
-  - skewness
-  - kurtosis
-  - shape
-  - distribution
----
-
 ## Introduction
 
 Central tendency and dispersion alone do not describe a distribution completely: two samples with the same mean and SD can look very different if one is symmetric and the other skewed, or if one has thin tails and the other heavy tails. Skewness and kurtosis are the conventional third- and fourth-moment summaries that capture these shape features.

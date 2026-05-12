@@ -1,15 +1,3 @@
----
-title: Microbiome Analysis with DADA2
-date: "2026-04-17"
-description: Amplicon sequence variant (ASV) inference from 16S/ITS amplicon data
-categories:
-  - Bioinformatics
-  - microbiome
-  - 16S
-  - DADA2
-  - ASV
----
-
 ## Introduction
 
 DADA2 (Divisive Amplicon Denoising Algorithm 2) infers exact amplicon sequence variants (ASVs) from 16S rRNA, 18S, ITS, or other amplicon sequencing data. It replaces the older OTU-clustering approach (which lumps similar sequences together at, typically, 97 % identity) with single-nucleotide resolution. ASVs are reproducible across studies — the same sequence is the same variant regardless of who runs the analysis — and allow finer taxonomic assignment than the threshold-based OTU representation.

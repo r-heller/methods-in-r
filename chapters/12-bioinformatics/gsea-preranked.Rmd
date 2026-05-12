@@ -1,14 +1,3 @@
----
-title: GSEA Preranked Analysis
-date: "2026-04-17"
-description: Enrichment of gene sets in a ranked list without a significance cutoff
-categories:
-  - Bioinformatics
-  - gsea
-  - fgsea
-  - ranked
----
-
 ## Introduction
 
 Gene Set Enrichment Analysis (GSEA) tests whether a gene set is concentrated at the top or bottom of a ranked gene list (e.g., by log fold change or signed p-value). Unlike over-representation analysis, it uses the full ranking and is more sensitive to coordinated modest changes within a pathway.

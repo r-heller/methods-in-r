@@ -1,14 +1,3 @@
----
-title: Non-Metric Multidimensional Scaling
-date: "2026-04-17"
-description: "MDS using only the ranks of distances, minimising Kruskal stress"
-categories:
-  - Multivariate Statistics
-  - nmds
-  - kruskal-stress
-  - ordinal
----
-
 ## Introduction
 
 Non-metric multidimensional scaling (NMDS) preserves the *rank order* of pairwise dissimilarities rather than their absolute magnitudes. This robustness makes it the standard ordination method for ecological community data, where Bray-Curtis and Jaccard dissimilarities are not Euclidean and where distance values themselves carry less meaning than the ordering of similarities. Where classical MDS works on the squared distances directly, NMDS minimises a stress function that depends only on whether the configuration's distances respect the input ranking.

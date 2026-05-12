@@ -1,15 +1,3 @@
----
-title: Repeated-Measures ANOVA
-date: "2026-04-17"
-description: Within-subjects analysis of variance with sphericity checks and corrections
-categories:
-  - Inferential Statistics
-  - rmanova
-  - within-subjects
-  - sphericity
-  - mauchly
----
-
 ## Introduction
 
 Repeated-measures ANOVA (rmANOVA) handles designs where the same subjects are measured at multiple time points or conditions. By treating subject as a blocking factor, it controls between-subject variability and gains power over between-subjects analysis. The main complication is the **sphericity** assumption on the covariance of the repeated measures.

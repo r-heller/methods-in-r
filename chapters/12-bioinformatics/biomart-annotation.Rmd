@@ -1,14 +1,3 @@
----
-title: Gene Annotation with biomaRt
-date: "2026-04-17"
-description: "Programmatic queries against Ensembl for IDs, coordinates, and annotations"
-categories:
-  - Bioinformatics
-  - biomart
-  - annotation
-  - ensembl
----
-
 ## Introduction
 
 `biomaRt` provides a programmatic interface to Ensembl BioMart for converting between gene identifier systems (Ensembl gene IDs, Entrez IDs, HGNC symbols, RefSeq, UniProt), retrieving genomic coordinates, transcript structures, GO term annotations, and orthologues across species. It is indispensable whenever a gene list — from differential expression, GWAS, or any other genomic analysis — needs to be enriched with curated annotation. The `biomaRt` workflow builds queries that filter, attribute, and merge in a single call, replacing dozens of manual lookups across web interfaces.

@@ -1,14 +1,3 @@
----
-title: Power for Correlation Tests
-date: "2026-04-17"
-description: "Sample size for Pearson and Spearman correlations via Fisher's z transformation"
-categories:
-  - "Sample Size & Power"
-  - power
-  - correlation
-  - fisher-z
----
-
 ## Introduction
 
 Power analysis for correlation tests determines the sample size required to detect a specified population correlation $\rho$ different from zero (or different from a non-zero reference) with adequate probability. Correlation studies are pervasive in clinical research, psychometrics, behavioural science, biomarker validation, and any setting where the strength of association between two continuous variables is the central question. The standard analytical approach uses Fisher's $z$-transformation, which converts the sampling distribution of the Pearson correlation into an approximately Normal distribution with a simple variance formula, supporting clean closed-form sample-size calculations.

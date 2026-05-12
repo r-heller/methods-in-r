@@ -1,14 +1,3 @@
----
-title: Feedforward Networks in torch
-date: "2026-04-17"
-description: Building and training deep feedforward networks in R with the torch package
-categories:
-  - Machine Learning
-  - torch
-  - deep-learning
-  - feedforward
----
-
 ## Introduction
 
 `torch` for R is the native R port of PyTorch: an automatic-differentiation library with GPU support, a comprehensive layer library, and modern optimisers (Adam, AdamW). It enables building arbitrary neural-network architectures from scratch and training them with the same APIs Python users know. The companion package `luz` wraps `torch` with a scikit-learn-style `fit`/`predict` interface, abstracting away the manual training loop for routine cases.

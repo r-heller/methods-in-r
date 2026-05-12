@@ -1,14 +1,3 @@
----
-title: ROC Analysis
-date: "2026-04-17"
-description: Receiver Operating Characteristic curves and area under the curve
-categories:
-  - Clinical Biostatistics
-  - roc
-  - auc
-  - diagnostic
----
-
 ## Introduction
 
 The receiver-operating-characteristic (ROC) curve traces sensitivity against $1 - $ specificity across all possible decision thresholds of a continuous-valued diagnostic test or risk score. Where a single sensitivity-specificity pair characterises performance at one cut-off, the ROC curve summarises performance across every cut-off and therefore captures the discriminative ability of the underlying continuous measurement independently of any chosen threshold. The area under the curve (AUC) reduces this curve to a single number with a clean probabilistic interpretation: it equals the probability that a randomly chosen diseased case has a higher biomarker value than a randomly chosen non-diseased case. AUC values of 0.5 indicate chance-level discrimination and 1.0 indicates perfect separation; values between 0.7 and 0.9 are typical for clinically useful biomarkers.

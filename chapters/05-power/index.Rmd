@@ -1,7 +1,3 @@
----
-title: "05. Sample Size & Power"
----
-
 # Sample Size & Power {#sec-ch-05-power}
 
 Sample-size and power calculations for the designs covered in the rest of the book — t-tests, ANOVA, regression, survival, diagnostic accuracy, equivalence and non-inferiority, sequential designs. Each method page includes the exact `pwr` or simulation call.

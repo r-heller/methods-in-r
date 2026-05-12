@@ -1,14 +1,3 @@
----
-title: Desirability Functions
-date: "2026-04-17"
-description: Multi-response optimisation via geometric-mean desirability scores
-categories:
-  - Experimental Design
-  - desirability
-  - multi-response
-  - optimisation
----
-
 ## Introduction
 
 Many experiments produce more than one response that must be optimised jointly: maximise yield while minimising impurity, hit a target dissolution time while keeping particle size within spec, maximise tensile strength while minimising weight. Desirability functions, introduced by Harrington in 1965 and refined by Derringer and Suich in 1980, are the standard tool for combining multiple responses into a single overall optimisation criterion. Each response is converted to a $[0, 1]$ desirability scale via a transformation specific to that response's goal (maximise, minimise, or hit a target), and the individual desirabilities are combined into an overall desirability via the geometric mean. The compound score is then maximised over the factor space, often using the response surfaces fit during the second-order RSM phase.

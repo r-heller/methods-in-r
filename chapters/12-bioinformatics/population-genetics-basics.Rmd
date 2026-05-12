@@ -1,14 +1,3 @@
----
-title: Population Genetics Basics
-date: "2026-04-17"
-description: "Allele frequencies, Hardy-Weinberg equilibrium, and F-statistics"
-categories:
-  - Bioinformatics
-  - population-genetics
-  - hwe
-  - fst
----
-
 ## Introduction
 
 Population genetics quantifies genetic variation within and between populations. Allele frequencies, Hardy-Weinberg equilibrium (HWE), and F-statistics form the foundational toolkit for diagnosing genotyping errors, detecting population structure, and assessing selection or drift.

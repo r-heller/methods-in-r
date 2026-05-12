@@ -1,14 +1,3 @@
----
-title: Cox Proportional Hazards Regression
-date: "2026-04-17"
-description: Semi-parametric regression for survival data with arbitrary baseline hazard
-categories:
-  - Survival Analysis
-  - cox
-  - proportional-hazards
-  - partial-likelihood
----
-
 ## Introduction
 
 Cox proportional hazards regression is the most widely used survival regression model in clinical and epidemiological research. Its central insight is that hazard *ratios* between subjects can be estimated without specifying or estimating the baseline hazard $h_0(t)$. The partial likelihood, introduced by D. R. Cox in 1972, conditions on the risk set at each event time and depends only on the regression coefficients, leaving the baseline hazard unspecified. The result is a semi-parametric model that combines the interpretability of regression with the flexibility of non-parametric survival analysis.

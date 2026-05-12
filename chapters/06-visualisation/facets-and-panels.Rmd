@@ -1,15 +1,3 @@
----
-title: Facets and Panels
-date: "2026-04-17"
-description: Creating small multiples via facet_wrap and facet_grid
-categories:
-  - Data Visualisation
-  - ggplot2
-  - facet
-  - small-multiples
-  - panels
----
-
 ## Introduction
 
 Small multiples — a grid of identical plots, one per subgroup — are one of the most powerful visualisation idioms in modern data analysis. They let the reader compare a relationship across many conditions without overlaying everything on a single set of axes, which becomes unreadable beyond three or four series. `ggplot2` calls this faceting and provides two complementary functions: `facet_wrap()` for a one-dimensional set of panels arranged into rows and columns, and `facet_grid()` for a strict row-by-column matrix indexed by two grouping variables.

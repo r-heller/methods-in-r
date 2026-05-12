@@ -1,14 +1,3 @@
----
-title: Joint Distributions
-date: "2026-04-17"
-description: "The distribution of a pair (or vector) of random variables, encoding their dependence structure"
-categories:
-  - Probability Theory
-  - joint-distribution
-  - bivariate
-  - dependence
----
-
 ## Introduction
 
 A joint distribution describes how two or more random variables behave together. It contains strictly more information than the marginals alone: the marginals tell you about each variable in isolation, while the joint tells you how they interact. Dependence, correlation, and conditional behaviour are all properties of the joint distribution.

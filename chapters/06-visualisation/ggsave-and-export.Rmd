@@ -1,15 +1,3 @@
----
-title: Saving and Exporting Figures
-date: "2026-04-17"
-description: "Exporting ggplot figures to PDF, PNG, SVG, and TIFF with the right dimensions and DPI"
-categories:
-  - Data Visualisation
-  - ggsave
-  - export
-  - dpi
-  - tiff
----
-
 ## Introduction
 
 The final step of any figure pipeline is exporting the plot at the right dimensions and resolution. It is also the step where most figures go wrong: a plot designed and previewed at 1024 × 768 pixels on screen looks fine until it is dropped into a manuscript and reprinted at journal column width, where the fonts have shrunk to illegibility and the raster edges have blurred. `ggsave()` is `ggplot2`'s export function, and the discipline to invoke it with explicit dimensions and an explicit DPI early in the workflow is what separates publication-ready figures from ones that have to be re-made the night before submission.

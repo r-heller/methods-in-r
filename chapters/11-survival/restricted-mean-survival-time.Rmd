@@ -1,13 +1,3 @@
----
-title: Restricted Mean Survival Time (RMST)
-date: "2026-04-17"
-description: Alternative summary robust to non-proportional hazards and censoring
-categories:
-  - Survival Analysis
-  - rmst
-  - mean-survival
----
-
 ## Introduction
 
 The restricted mean survival time (RMST) is the expected survival time truncated at a clinically meaningful horizon $\tau$. Where the hazard ratio from a Cox model summarises a relative effect that requires proportional hazards to be interpretable, RMST quantifies an absolute time difference (in days, months, or years) and remains valid even when the hazard ratio is not constant. It has become an increasingly standard endpoint in oncology trials and immunotherapy studies, where crossing or delayed survival curves are common and where regulators and clinicians want a number expressed on the natural time scale.

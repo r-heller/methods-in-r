@@ -1,14 +1,3 @@
----
-title: Mixed ANOVA
-date: "2026-04-17"
-description: "Designs combining between-subjects and within-subjects factors, with the interaction as key"
-categories:
-  - Inferential Statistics
-  - mixed-anova
-  - split-plot
-  - between-within
----
-
 ## Introduction
 
 A mixed ANOVA combines at least one between-subjects factor (treatment arm, sex) with at least one within-subjects factor (time point, condition). It is the standard analysis for longitudinal trials and for split-plot designs. The typical primary question is the **group-by-time interaction**: does the change over time differ between groups?

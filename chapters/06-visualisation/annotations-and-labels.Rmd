@@ -1,14 +1,3 @@
----
-title: Annotations and Labels
-date: "2026-04-17"
-description: "Adding text, arrows, rectangles, and repelling labels to ggplot2 figures"
-categories:
-  - Data Visualisation
-  - annotation
-  - ggtext
-  - ggrepel
----
-
 ## Introduction
 
 A figure that shows the data without any annotation forces the reader to do the interpretive work alone. A figure with too many annotations buries the data under labels, arrows, and ornamental boxes. The middle ground — a few well-placed labels, an arrow that points at the one observation worth singling out, a rich-text title that names the comparison — is what separates publication-quality plots from informative-but-amateurish ones. The `ggplot2` ecosystem provides three families of annotation tools that cover virtually every requirement: `annotate()` for single hand-placed items, `geom_text` / `geom_label` (and the repelling `ggrepel` variants) for data-driven labels, and `ggtext` for rich Markdown and HTML inside titles, axes, and strip text.

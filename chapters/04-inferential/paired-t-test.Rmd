@@ -1,14 +1,3 @@
----
-title: Paired t-Test
-date: "2026-04-17"
-description: Comparing two dependent measurements by applying a one-sample t-test to their differences
-categories:
-  - Inferential Statistics
-  - paired-t-test
-  - dependent-samples
-  - within-subject
----
-
 ## Introduction
 
 When each unit contributes two measurements (pre and post, left and right, case and matched control), the observations are paired and the usual independent-samples t-test is not valid. The **paired t-test** analyses the within-unit differences, restoring the independence assumption and typically improving power by cancelling between-unit variability.

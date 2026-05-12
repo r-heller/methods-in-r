@@ -1,15 +1,3 @@
----
-title: The Interquartile Range
-date: "2026-04-17"
-description: "Width of the central 50% of the distribution: robust, interpretable, and the basis of Tukey fences"
-categories:
-  - Descriptive Statistics
-  - iqr
-  - quartile
-  - boxplot
-  - robust
----
-
 ## Introduction
 
 The interquartile range (IQR) is the distance between the first and third quartiles, $Q_3 - Q_1$. It measures the width of the central 50% of the distribution and is robust to outliers, since extreme values do not affect the quartiles themselves. The IQR appears in boxplots, Tukey fences, and the median-IQR convention for reporting skewed biomedical variables.

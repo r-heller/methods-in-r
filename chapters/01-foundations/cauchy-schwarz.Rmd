@@ -1,14 +1,3 @@
----
-title: The Cauchy-Schwarz Inequality
-date: "2026-04-17"
-description: The inner-product inequality that bounds correlations and drives many variance inequalities
-categories:
-  - Statistical Foundations
-  - cauchy-schwarz
-  - correlation
-  - inequality
----
-
 ## Introduction
 
 The Cauchy-Schwarz inequality is the single most useful inequality in applied mathematics. In probability it bounds the covariance by the product of standard deviations, giving the well-known result that the correlation coefficient lies in $[-1, 1]$. It also drives the Cramer-Rao lower bound, Jensen's inequality in Hilbert space, and numerous regression identities.

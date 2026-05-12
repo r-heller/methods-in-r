@@ -1,14 +1,3 @@
----
-title: SUCRA Rankings
-date: "2026-04-17"
-description: Surface Under the Cumulative Ranking curve for treatment comparisons
-categories:
-  - Meta-Analysis
-  - sucra
-  - ranking
-  - nma
----
-
 ## Introduction
 
 SUCRA — the Surface Under the Cumulative Ranking curve, introduced by Salanti and colleagues in 2011 — summarises a network meta-analysis's treatment ranking into a single interpretable number between 0 and 1. A SUCRA of 1 means the treatment is always ranked best across the posterior or simulation distribution; a SUCRA of 0 means it is always ranked worst. Because clinicians, guideline panels, and patients want to know "which treatment should I use?", and a triangular league table cannot answer that directly, SUCRA quickly became the most-cited summary in NMA papers. Its widespread use also brings risks: SUCRA is sensitive to the number of treatments included, can exaggerate small effect-size differences, and must always be interpreted alongside the absolute effect estimates and their uncertainty.

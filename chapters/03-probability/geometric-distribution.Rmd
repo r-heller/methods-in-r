@@ -1,14 +1,3 @@
----
-title: The Geometric Distribution
-date: "2026-04-17"
-description: "Number of Bernoulli trials until the first success, with the memoryless property"
-categories:
-  - Probability Theory
-  - geometric
-  - memoryless
-  - waiting-time
----
-
 ## Introduction
 
 The geometric distribution counts the number of Bernoulli trials required to obtain the first success. It is the discrete analogue of the exponential waiting-time distribution and shares the memoryless property: the probability of further trials to success does not depend on how many have already been tried.

@@ -1,14 +1,3 @@
----
-title: Subgroup Forest Plots
-date: "2026-04-17"
-description: Visual summary of subgroup-specific effects and interaction tests
-categories:
-  - Clinical Biostatistics
-  - forest-plot
-  - subgroup
-  - visualisation
----
-
 ## Introduction
 
 Subgroup forest plots display, on a single figure, the treatment effect estimate and confidence interval for each pre-specified subgroup of a clinical trial alongside the overall effect. They are the standard tool for visually communicating effect modification — whether the intervention works differently in men and women, in older and younger patients, in mild and severe disease — and they are now a near-universal element of CONSORT-compliant trial reporting. The compact horizontal-error-bar layout makes the magnitude and precision of each subgroup-specific effect immediately legible, while a vertical reference line at the null anchors interpretation. The plot's strength is also its risk: readers eye-ball heterogeneity at a glance and may infer effect modification where the formal interaction test does not support it.

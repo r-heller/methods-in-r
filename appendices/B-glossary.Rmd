@@ -1,8 +1,6 @@
 ---
-title: "Glossary"
 toc: true
 ---
-
 <div class="hero">
 <div class="kicker">
 APPENDIX · GLOSSARY

@@ -1,15 +1,3 @@
----
-title: "Unbiasedness, Consistency, Efficiency"
-date: "2026-04-17"
-description: Three core finite- and large-sample properties that let us compare estimators
-categories:
-  - Statistical Foundations
-  - unbiased
-  - consistency
-  - efficiency
-  - estimator
----
-
 ## Introduction
 
 When multiple estimators are available for the same parameter, we need criteria to choose among them. Three classical criteria -- unbiasedness, consistency, and efficiency -- cover the most important properties: whether the estimator is correct on average (unbiasedness), whether it approaches the truth as more data arrive (consistency), and whether it uses the data as effectively as possible (efficiency).

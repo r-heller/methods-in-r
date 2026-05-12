@@ -1,14 +1,3 @@
----
-title: Signal-to-Noise Ratios
-date: "2026-04-17"
-description: "Taguchi's SNR metrics combining mean and variance"
-categories:
-  - Experimental Design
-  - snr
-  - taguchi
-  - signal
----
-
 ## Introduction
 
 Signal-to-noise (SNR) ratios in Taguchi's framework jointly summarise the mean and variance of a response. Three variants handle different quality targets: smaller-is-better, larger-is-better, and nominal-is-best. Maximising SNR selects factor combinations that produce both a desirable mean and low variance.

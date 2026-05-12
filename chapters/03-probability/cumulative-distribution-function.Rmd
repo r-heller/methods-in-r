@@ -1,14 +1,3 @@
----
-title: The Cumulative Distribution Function
-date: "2026-04-17"
-description: "F(x) = P(X ≤ x): the universal descriptor of a random variable's distribution"
-categories:
-  - Probability Theory
-  - cdf
-  - quantile
-  - ecdf
----
-
 ## Introduction
 
 The cumulative distribution function (CDF) is the one representation that fits every random variable, whether discrete, continuous, or mixed. It encodes the distribution completely and supports every computation that a PMF or PDF does.

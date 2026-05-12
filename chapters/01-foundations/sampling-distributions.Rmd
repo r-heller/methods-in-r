@@ -1,15 +1,3 @@
----
-title: Sampling Distributions
-date: "2026-04-17"
-description: "The distribution of a statistic across repeated samples: the key object that makes inference possible"
-categories:
-  - Statistical Foundations
-  - sampling-distribution
-  - statistic
-  - standard-error
-  - variability
----
-
 ## Introduction
 
 The sampling distribution of a statistic is the distribution of its values across hypothetical repetitions of the sampling process. Every confidence interval, every p-value, and every standard error is a statement about the sampling distribution of some statistic. Understanding this concept makes inference intuitive; ignoring it makes it a ritual of incantations.

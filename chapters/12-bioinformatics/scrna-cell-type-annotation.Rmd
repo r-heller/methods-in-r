@@ -1,14 +1,3 @@
----
-title: Cell-Type Annotation
-date: "2026-04-17"
-description: Assigning cell types to clusters using reference-based and manual methods
-categories:
-  - Bioinformatics
-  - scrnaseq
-  - annotation
-  - SingleR
----
-
 ## Introduction
 
 After clustering, each cluster must be labelled with a biological identity: T cell, B cell, macrophage, tumour epithelial cell, neuron subtype. Cell-type annotation is the bridge between unsupervised clustering and biological interpretation. Two main approaches compete: reference-based methods (SingleR, Azimuth, scType) that score each cell or cluster against curated reference profiles, and manual annotation that inspects marker genes against literature and reference atlases.

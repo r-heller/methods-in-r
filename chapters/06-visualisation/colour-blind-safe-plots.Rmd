@@ -1,15 +1,3 @@
----
-title: Colour-Blind-Safe Plots
-date: "2026-04-17"
-description: Designing plots that remain readable to viewers with colour-vision deficiencies
-categories:
-  - Data Visualisation
-  - accessibility
-  - colour-blind
-  - palette
-  - wcag
----
-
 ## Introduction
 
 Roughly 8 % of men of European descent and about 0.5 % of women have some form of colour-vision deficiency. Red-green deficiency (deuteranopia and protanopia) is by far the most common; blue-yellow (tritanopia) is rarer but still present in any large readership. A figure that relies on red-versus-green as its only contrast is unreadable for a meaningful fraction of every audience, including journal reviewers. Designing for colour-blind safety is therefore not optional politeness — it is a basic requirement of accessible scientific communication, increasingly mandated by journal style guides and by web-accessibility standards (WCAG 2.x AA).

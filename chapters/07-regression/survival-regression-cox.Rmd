@@ -1,14 +1,3 @@
----
-title: Cox Regression as Regression
-date: "2026-04-17"
-description: The Cox proportional-hazards model in the GLM-family perspective; pointer to the Survival section
-categories:
-  - "Regression & Modelling"
-  - cox
-  - proportional-hazards
-  - survival-regression
----
-
 ## Introduction
 
 Cox proportional-hazards regression models time-to-event outcomes with right censoring and is the de facto standard regression tool for survival analysis. This page gives a regression-modelling-focused summary; the Survival Analysis section contains a more detailed treatment with diagnostics, residuals, and stratification. The headline insight is that Cox is a regression in the same family as GLMs — coefficients, standard errors, confidence intervals, and likelihood-ratio tests all behave familiarly — but the response is a `Surv` object encoding both event time and censoring status.

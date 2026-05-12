@@ -1,14 +1,3 @@
----
-title: "Parametric Survival: Weibull"
-date: "2026-04-17"
-description: Fitting Weibull regression in both PH and AFT parameterisations
-categories:
-  - Survival Analysis
-  - weibull
-  - parametric-survival
-  - aft
----
-
 ## Introduction
 
 The Weibull distribution is the most flexible parametric survival family that has a monotone hazard. Hazard is increasing when the shape parameter $k > 1$, constant (exponential) when $k = 1$, and decreasing when $k < 1$. Among the common parametric families it is unique in admitting both proportional-hazards and accelerated-failure-time interpretations, which makes it the natural starting point for parametric survival analysis whenever PH is plausible. Cleaner extrapolation, smaller standard errors, and explicit hazard shape are the practical pay-offs over the semi-parametric Cox model when its assumptions hold.

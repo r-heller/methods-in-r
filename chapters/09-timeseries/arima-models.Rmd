@@ -1,16 +1,3 @@
----
-title: ARIMA Models
-date: "2026-04-17"
-description: Autoregressive integrated moving average models for forecasting stationary and trending time series
-categories:
-  - Time Series Analysis
-  - arima
-  - sarima
-  - forecasting
-  - stationarity
-  - time-series
----
-
 ## Introduction
 
 ARIMA models are the classical workhorse of time-series forecasting. They combine three ideas: autoregression (the current value depends on lagged values), differencing (the current value depends on changes rather than levels), and moving averages of the errors. An ARIMA model is specified by three integers $(p, d, q)$: the order of autoregression, the order of differencing, and the order of moving averages. With a seasonal extension (SARIMA), the same model captures weekly, monthly, or annual cycles.

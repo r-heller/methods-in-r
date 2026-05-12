@@ -1,14 +1,3 @@
----
-title: "Cook's Distance"
-date: "2026-04-17"
-description: Single-number influence measure combining leverage and residual
-categories:
-  - "Regression & Modelling"
-  - cooks-distance
-  - influence
-  - diagnostic
----
-
 ## Introduction
 
 Cook's distance is the most widely used single-number summary of an observation's influence on a regression fit. It answers a direct question: how much would the fitted values change if we removed this observation? Cook's distance combines the residual (how badly the model fits this point) and the leverage (how unusual this point is in the predictor space) into one quantity, making it the first port of call for influence diagnostics in linear regression.

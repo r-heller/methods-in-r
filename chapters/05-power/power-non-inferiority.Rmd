@@ -1,15 +1,3 @@
----
-title: Power for Non-Inferiority Trials
-date: "2026-04-17"
-description: "One-sided equivalence: is the new treatment no worse than the reference by more than the margin"
-categories:
-  - "Sample Size & Power"
-  - power
-  - non-inferiority
-  - margin
-  - one-sided
----
-
 ## Introduction
 
 Non-inferiority trials aim to establish that a new treatment is "not meaningfully worse" than an active comparator. The non-inferiority margin is a pre-specified loss that defines the boundary. Power calculations use a one-sided test at the margin.

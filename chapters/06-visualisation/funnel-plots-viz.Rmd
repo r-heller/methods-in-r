@@ -1,14 +1,3 @@
----
-title: Funnel Plots (Visualisation)
-date: "2026-04-17"
-description: Study effect vs. precision plot used to detect publication bias in meta-analysis
-categories:
-  - Data Visualisation
-  - funnel-plot
-  - publication-bias
-  - meta-analysis
----
-
 ## Introduction
 
 A funnel plot is the canonical visualisation for diagnosing publication bias in meta-analysis. It plots each study's effect size against its precision (or its standard error), forming an inverted-funnel shape under the null of no bias: large precise studies cluster near the pooled estimate at the narrow top of the funnel, smaller imprecise studies scatter wider at the base. Asymmetry of the funnel — typically a missing wedge of small null or negative studies — suggests that studies have been suppressed for non-statistical reasons, often because the field's preferred direction is positive and significant.

@@ -1,15 +1,3 @@
----
-title: "Bayes' Theorem for Parameters"
-date: "2026-04-17"
-description: "Using Bayes' theorem to update beliefs about parameters given data"
-categories:
-  - Bayesian Statistics
-  - bayes-theorem
-  - posterior
-  - prior
-  - likelihood
----
-
 ## Introduction
 
 Bayesian inference is, mechanically, the application of Bayes' theorem to a parameter rather than to an event. The prior encodes whatever was believed before the data arrived, the likelihood is the data-generating model evaluated at the observed data, and the posterior is the updated belief. The conceptual leap from frequentist statistics is small but consequential: parameters are themselves random quantities whose posterior distribution can be summarised, predicted from, and acted upon, without invoking long-run sampling thought experiments.

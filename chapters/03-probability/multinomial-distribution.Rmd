@@ -1,14 +1,3 @@
----
-title: The Multinomial Distribution
-date: "2026-04-17"
-description: Multi-category generalisation of the binomial with category probabilities summing to one
-categories:
-  - Probability Theory
-  - multinomial
-  - categorical
-  - multi-class
----
-
 ## Introduction
 
 The multinomial distribution generalises the binomial from two categories to $k$: the counts of outcomes falling into each of several categories across $n$ independent trials. It underlies the analysis of categorical variables with more than two levels -- disease stages, treatment responses, species counts -- and sits at the heart of chi-squared goodness-of-fit tests.

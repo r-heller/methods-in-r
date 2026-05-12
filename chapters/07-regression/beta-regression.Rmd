@@ -1,14 +1,3 @@
----
-title: Beta Regression
-date: "2026-04-17"
-description: "Regression for continuous outcomes in (0, 1): proportions, percentages, fractions"
-categories:
-  - "Regression & Modelling"
-  - beta-regression
-  - proportion
-  - betareg
----
-
 ## Introduction
 
 Beta regression models continuous outcomes constrained to the open unit interval $(0, 1)$ — proportions, percentages expressed as fractions, biomarker ratios that range from 0 to 1. Ordinary least squares fails on such data: it can predict values outside $(0, 1)$, the residuals are typically heteroscedastic and asymmetric, and confidence intervals on the boundary are unreliable. Beta regression respects the bound, models heteroscedasticity through a precision parameter, and returns interpretable coefficients on the logit scale (or any other supported link).

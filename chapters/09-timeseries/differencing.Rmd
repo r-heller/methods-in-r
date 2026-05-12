@@ -1,14 +1,3 @@
----
-title: Differencing a Time Series
-date: "2026-04-17"
-description: Removing trend via first differences; seasonal differencing for cyclic patterns
-categories:
-  - Time Series Analysis
-  - differencing
-  - trend
-  - seasonal-difference
----
-
 ## Introduction
 
 Differencing is the simplest tool for making a non-stationary series stationary: replace each observation by its difference from the previous one. First differences remove linear trends; seasonal differences remove fixed-period seasonality; combined regular and seasonal differencing handles both. The order of differencing $d$ in ARIMA$(p, d, q)$ is exactly the count of first differences applied; the seasonal differencing order $D$ in SARIMA$(p,d,q)(P,D,Q)_s$ counts seasonal differences.

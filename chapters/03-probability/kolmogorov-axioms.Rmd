@@ -1,14 +1,3 @@
----
-title: "Kolmogorov's Axioms of Probability"
-date: "2026-04-17"
-description: The three axioms that define a probability measure on a sigma-algebra of events
-categories:
-  - Probability Theory
-  - kolmogorov
-  - axioms
-  - probability-space
----
-
 ## Introduction
 
 Modern probability theory rests on three axioms proposed by Andrey Kolmogorov in 1933. They turn probability from a collection of intuitions into a rigorous mathematical theory consistent with measure theory. Every theorem about probability -- the law of large numbers, the central limit theorem, Bayes' rule -- is ultimately a consequence of these three rules and the definitions that accompany them.

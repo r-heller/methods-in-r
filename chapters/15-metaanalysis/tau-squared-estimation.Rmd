@@ -1,14 +1,3 @@
----
-title: Tau-Squared Estimation
-date: "2026-04-17"
-description: "Estimators of between-study variance: DL, REML, PM, SJ, EB"
-categories:
-  - Meta-Analysis
-  - tau-squared
-  - REML
-  - DerSimonian-Laird
----
-
 ## Introduction
 
 The random-effects meta-analysis requires an estimate of $\tau^2$, the between-study variance. Several estimators exist with different bias-variance trade-offs; the choice affects pooled estimates, CIs, and downstream inference. REML is the modern default; DerSimonian-Laird (DL) the historical default.

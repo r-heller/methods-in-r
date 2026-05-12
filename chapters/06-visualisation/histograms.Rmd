@@ -1,14 +1,3 @@
----
-title: Histograms
-date: "2026-04-17"
-description: Univariate distribution display via binned frequencies or densities
-categories:
-  - Data Visualisation
-  - histogram
-  - distribution
-  - bins
----
-
 ## Introduction
 
 A histogram is the simplest distributional display: bin the range of a continuous variable, count the observations in each bin, and draw bars proportional to those counts. It is the canonical first plot of any exploratory data analysis. It is also the geom most often misled by its own settings — the impression of "skewness" or "bimodality" can be conjured or hidden entirely by the choice of bin width, so a good histogram is one inspected at several resolutions before being committed to print.

@@ -1,15 +1,3 @@
----
-title: "Mixed-Effects Models: Introduction"
-date: "2026-04-17"
-description: "Hierarchical / multilevel regression: fixed effects for population-level structure, random effects for cluster-level variability"
-categories:
-  - "Regression & Modelling"
-  - mixed-effects
-  - multilevel
-  - random-effects
-  - lmer
----
-
 ## Introduction
 
 Mixed-effects models (also called multilevel or hierarchical models) handle data with a clustered or nested structure: patients within hospitals, repeated measures within subjects, plants within plots. The model has **fixed effects** for population-level structure and **random effects** capturing cluster-specific deviations.

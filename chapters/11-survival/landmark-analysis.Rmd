@@ -1,13 +1,3 @@
----
-title: Landmark Analysis
-date: "2026-04-17"
-description: Conditioning on survival to a landmark time to analyse time-varying covariates
-categories:
-  - Survival Analysis
-  - landmark
-  - time-varying
----
-
 ## Introduction
 
 Landmark analysis is the standard fix for the immortal-time bias that arises when subjects are classified by a post-baseline exposure (treatment response, biomarker change, secondary event). Naively grouping subjects by a covariate measured after follow-up begins assigns "responder" status only to subjects who survived long enough to be assessed, automatically biasing comparisons in their favour. Landmark analysis sidesteps this by selecting a fixed landmark time, restricting to subjects alive and observable at that time, classifying them by covariate value *at the landmark*, and then analysing only the post-landmark survival.

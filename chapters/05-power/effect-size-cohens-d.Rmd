@@ -1,14 +1,3 @@
----
-title: "Effect Size: Cohen's d"
-date: "2026-04-17"
-description: "Standardised mean difference: definition, variants, interpretation"
-categories:
-  - "Sample Size & Power"
-  - effect-size
-  - cohen-d
-  - standardised-difference
----
-
 ## Introduction
 
 Cohen's $d$ is the ratio of a mean difference to a standard deviation. It standardises effects for cross-study comparison and power analysis. Although simple in idea, several variants differ in which SD is used as the denominator.

@@ -1,14 +1,3 @@
----
-title: k-Nearest Neighbours Regression
-date: "2026-04-17"
-description: Local averaging for non-parametric regression
-categories:
-  - Machine Learning
-  - knn
-  - regression
-  - nonparametric
----
-
 ## Introduction
 
 $k$-Nearest Neighbours regression predicts a continuous outcome at a query point as the mean (or weighted mean) of the $k$ nearest training targets in feature space. It is the simplest non-parametric regression method, making no assumption about the global functional form and only requiring a distance metric. The trade-off is straightforward: small $k$ produces high variance (each prediction depends on a few neighbours), while large $k$ produces high bias (predictions average over a wide region and miss local structure).

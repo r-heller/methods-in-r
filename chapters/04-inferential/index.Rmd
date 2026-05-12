@@ -1,7 +1,3 @@
----
-title: "04. Inferential Statistics"
----
-
 # Inferential Statistics {#sec-ch-04-inferential}
 
 Classical inference: the Central Limit Theorem, MLE, NHST and its philosophy, t-tests and proportions, goodness-of-fit, correlation, and the non-parametric counterparts. This is the largest chapter and the one most peer reviewers will read first.

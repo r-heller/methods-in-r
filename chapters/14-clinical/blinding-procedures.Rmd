@@ -1,14 +1,3 @@
----
-title: Blinding Procedures
-date: "2026-04-17"
-description: "Masking participants, investigators, assessors, and analysts"
-categories:
-  - Clinical Biostatistics
-  - blinding
-  - masking
-  - bias
----
-
 ## Introduction
 
 Blinding (masking) keeps trial participants and personnel unaware of treatment assignments to minimise performance, assessment, and analyst biases. Single, double, triple, and quadruple blinding refer to which stakeholder groups are masked; each layer blocks a specific bias pathway.

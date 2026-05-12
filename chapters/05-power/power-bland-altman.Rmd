@@ -1,15 +1,3 @@
----
-title: Power for Bland-Altman Studies
-date: "2026-04-17"
-description: Sample size for estimating limits of agreement with adequate precision
-categories:
-  - "Sample Size & Power"
-  - power
-  - bland-altman
-  - limits-of-agreement
-  - method-comparison
----
-
 ## Introduction
 
 Bland-Altman analysis is the standard method for comparing two quantitative measurement methods — a new instrument against a reference standard, two raters' continuous scores, two clinical-laboratory assays. The central output is the 95 % limits of agreement (LoA), defined as the mean difference $\pm 1.96$ SD of paired differences, which describe the range within which 95 % of differences between the two methods are expected to fall. Sample-size planning for a Bland-Altman study therefore targets the precision (CI half-width) of the LoA estimates rather than power to reject a null. With too few subjects, the LoA themselves are estimated imprecisely, and clinical-acceptance decisions about whether the methods are interchangeable become unreliable.

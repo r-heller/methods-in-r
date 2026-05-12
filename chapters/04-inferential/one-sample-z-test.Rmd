@@ -1,14 +1,3 @@
----
-title: One-Sample z-Test
-date: "2026-04-17"
-description: Comparing a sample mean to a reference when the population variance is known -- rare in practice but pedagogically useful
-categories:
-  - Inferential Statistics
-  - z-test
-  - known-variance
-  - normal-distribution
----
-
 ## Introduction
 
 The one-sample z-test is the idealised version of the one-sample t-test: it assumes the population variance $\sigma^2$ is known exactly. This is rarely the case in applied research -- if $\sigma$ is unknown, we estimate it from the sample and use the t-test instead. The z-test remains pedagogically important because it is the simplest exact hypothesis test and the reference for the t-test's more elaborate machinery.

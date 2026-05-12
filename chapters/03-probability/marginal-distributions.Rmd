@@ -1,14 +1,3 @@
----
-title: Marginal Distributions
-date: "2026-04-17"
-description: Recovering the distribution of a single variable from a joint distribution by integrating out the others
-categories:
-  - Probability Theory
-  - marginal
-  - integration
-  - joint
----
-
 ## Introduction
 
 Given a joint distribution of several random variables, the marginal distribution of any one of them is obtained by integrating (or summing) out the others. Marginalisation is the probability-theoretic version of "don't care": collapsing multi-dimensional information into a single dimension.

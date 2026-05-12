@@ -1,14 +1,3 @@
----
-title: "Stepwise Regression: Pitfalls"
-date: "2026-04-17"
-description: Why automated predictor selection by p-value or AIC has serious statistical problems
-categories:
-  - "Regression & Modelling"
-  - stepwise
-  - selection
-  - p-hacking
----
-
 ## Introduction
 
 Stepwise regression — forward, backward, or bidirectional automated selection of predictors based on $p$-values, AIC, or BIC — was the workhorse of model selection for decades and remains widely used despite extensive criticism. Frank Harrell's *Regression Modeling Strategies*, the TRIPOD guideline for clinical prediction models, and a long methodological literature have documented serious statistical pathologies that make stepwise reporting at best misleading and at worst actively wrong. Modern practice increasingly substitutes penalised regression (lasso, elastic net) and pre-specified predictor sets.

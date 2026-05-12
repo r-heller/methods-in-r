@@ -1,14 +1,3 @@
----
-title: Surrogate Variable Analysis (SVA)
-date: "2026-04-17"
-description: Detecting and adjusting for unknown sources of heterogeneity in expression data
-categories:
-  - Bioinformatics
-  - sva
-  - hidden-confounders
-  - batch
----
-
 ## Introduction
 
 Surrogate variable analysis (SVA) estimates latent factors that capture unmodelled heterogeneity in high-dimensional expression data -- unknown batch effects, sample-processing artefacts, or unmeasured biology correlated with technical variables. Including surrogate variables as covariates in downstream regression restores power and controls false positives where ComBat cannot apply (because the batch variable is itself unknown).

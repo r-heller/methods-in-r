@@ -1,15 +1,3 @@
----
-title: Expectation of a Random Variable
-date: "2026-04-17"
-description: "The probability-weighted average of a random variable's values, with its algebraic properties"
-categories:
-  - Probability Theory
-  - expectation
-  - mean
-  - lotus
-  - linearity
----
-
 ## Introduction
 
 The **expectation** $E[X]$ is the probability-weighted average of the values a random variable can take. It is the centre of gravity of the distribution, the long-run average of repeated independent draws, and the first moment in the moment hierarchy. Along with variance, it is the single most commonly reported summary of a distribution.

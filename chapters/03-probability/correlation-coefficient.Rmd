@@ -1,14 +1,3 @@
----
-title: The Correlation Coefficient
-date: "2026-04-17"
-description: "Standardised covariance bounded in [-1, 1], measuring the strength of linear association"
-categories:
-  - Probability Theory
-  - correlation
-  - pearson
-  - linear-association
----
-
 ## Introduction
 
 The correlation coefficient rescales covariance into a unitless number between $-1$ and $+1$, making comparisons across different measurement scales meaningful. A correlation of $+1$ means perfect positive linear dependence, $-1$ perfect negative, and $0$ no linear association. It is the single most reported bivariate summary in applied research.

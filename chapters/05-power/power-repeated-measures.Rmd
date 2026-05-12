@@ -1,15 +1,3 @@
----
-title: Power for Repeated-Measures ANOVA
-date: "2026-04-17"
-description: Sample size for within-subjects designs with within-subject correlation
-categories:
-  - "Sample Size & Power"
-  - power
-  - rmanova
-  - within-subject
-  - correlation
----
-
 ## Introduction
 
 Repeated-measures designs achieve substantial statistical-power gains over independent-groups designs by exploiting the within-subject correlation across the multiple measurements per subject. Each subject contributes information at every time point or condition, so the within-subject component of variance — typically the smaller of the two variance components — drives the sensitivity of the test. Power calculations for repeated-measures ANOVA must therefore explicitly account for the within-subject correlation; ignoring it leads to substantially over-estimated sample-size requirements and wastes resources, while assuming an unrealistically high correlation under-powers the trial when reality intervenes.

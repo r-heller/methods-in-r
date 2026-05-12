@@ -1,15 +1,3 @@
----
-title: Moments and Moment Generating Functions
-date: "2026-04-17"
-description: Moments summarise distributions; the MGF is a generating function that often characterises them uniquely
-categories:
-  - Statistical Foundations
-  - moments
-  - mgf
-  - expectation
-  - generating-function
----
-
 ## Introduction
 
 Moments are the descending sequence of expectations $E[X], E[X^2], E[X^3], \ldots$ that summarise a distribution's location, spread, skewness, kurtosis, and finer shape features. The moment generating function (MGF) packages all moments into a single function; when it exists, the MGF characterises the distribution uniquely. MGFs give elegant proofs of the CLT, the distribution of sums of independent variables, and the closure properties of many distributional families.

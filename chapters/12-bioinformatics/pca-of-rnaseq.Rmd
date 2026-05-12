@@ -1,15 +1,3 @@
----
-title: PCA of RNA-seq Samples
-date: "2026-04-17"
-description: Using PCA on variance-stabilised counts to check sample structure and batches
-categories:
-  - Bioinformatics
-  - pca
-  - rna-seq
-  - qc
-  - batch
----
-
 ## Introduction
 
 Sample-level PCA on transformed RNA-seq counts is the standard quality-control step before differential-expression analysis. It reveals whether biological samples cluster by experimental condition (the desired outcome), by batch or technical covariates (a confounding signal that needs correction), or by neither (which can suggest excessive noise or sample mix-ups). Running PCA early — before any modelling — prevents the most consequential downstream errors and motivates the design choices for the differential-expression step.

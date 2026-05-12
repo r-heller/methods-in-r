@@ -1,14 +1,3 @@
----
-title: Logistic Regression Diagnostics
-date: "2026-04-17"
-description: "Calibration plots, Hosmer-Lemeshow, deviance residuals, and influence for GLM"
-categories:
-  - "Regression & Modelling"
-  - logistic-diagnostics
-  - calibration
-  - hosmer-lemeshow
----
-
 ## Introduction
 
 Logistic regression diagnostics fall into three families that probe different aspects of model adequacy: calibration (do predicted probabilities match observed event rates across the probability range?), discrimination (how well does the model separate cases from controls?), and the functional form of continuous predictors (is linearity on the logit scale a reasonable assumption?). All three should be checked before reporting hazard ratios or recommending a clinical prediction model.

@@ -1,14 +1,3 @@
----
-title: Generalised Estimating Equations
-date: "2026-04-17"
-description: Marginal regression models for clustered data with working correlation structures
-categories:
-  - "Regression & Modelling"
-  - gee
-  - marginal-model
-  - working-correlation
----
-
 ## Introduction
 
 Generalised estimating equations (GEE) fit marginal regression models for clustered data — repeated measures, longitudinal outcomes, familial correlations — without specifying random effects. Where mixed models target subject-specific (conditional) effects, GEE targets population-averaged (marginal) effects, answering the question "what is the average effect across the population?" rather than "what is the effect for a typical subject?" The two interpretations coincide for linear models with identity link but diverge for non-linear links (logistic, log).

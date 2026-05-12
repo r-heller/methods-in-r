@@ -1,15 +1,3 @@
----
-title: Predictive Values and Prevalence
-date: "2026-04-17"
-description: "How disease prevalence determines PPV and NPV via Bayes' theorem"
-categories:
-  - Clinical Biostatistics
-  - ppv
-  - npv
-  - prevalence
-  - bayes
----
-
 ## Introduction
 
 Sensitivity and specificity are properties of a diagnostic test, not its clinical utility. **Positive predictive value (PPV)** -- the probability that a positive test indicates disease -- and **negative predictive value (NPV)** depend on disease prevalence. The same test can have very high PPV in a high-prevalence setting and very low PPV in a screening setting.

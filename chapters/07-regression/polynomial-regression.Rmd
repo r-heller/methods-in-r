@@ -1,14 +1,3 @@
----
-title: Polynomial Regression
-date: "2026-04-17"
-description: "Extending linear regression with powers of predictors: orthogonal polynomials and overfitting risk"
-categories:
-  - "Regression & Modelling"
-  - polynomial
-  - orthogonal
-  - overfitting
----
-
 ## Introduction
 
 Polynomial regression fits the outcome as a sum of powers of a predictor: linear, quadratic, cubic, and higher. It is the simplest way to model a non-linear relationship without moving outside the linear-model framework. Quadratic and cubic terms can capture the curvature of biological dose-response, growth, and saturation curves, and the resulting model retains the familiar OLS inference tools. The principal weakness — wild extrapolation outside the data range and instability at high degrees — motivates the more disciplined alternative of restricted cubic splines.

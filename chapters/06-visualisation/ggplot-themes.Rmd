@@ -1,14 +1,3 @@
----
-title: ggplot2 Themes
-date: "2026-04-17"
-description: Visual styling of plots via complete themes and fine-grained theme() elements
-categories:
-  - Data Visualisation
-  - ggplot2
-  - theme
-  - styling
----
-
 ## Introduction
 
 A `ggplot2` theme controls everything in a plot that is not the data itself — panel background, axis ticks, gridlines, font sizes, legend placement, plot margins. Two layers of control coexist: a **complete theme** (`theme_minimal()`, `theme_bw()`, `theme_classic()`, etc.) sets every non-data element at once and is usually the right starting point, while individual `theme()` calls override specific elements for publication polish. Mastering both layers is what turns a default plot into one that looks at home in a journal article or a polished report.

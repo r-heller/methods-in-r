@@ -1,15 +1,3 @@
----
-title: Markov and Chebyshev Inequalities
-date: "2026-04-17"
-description: "Tail bounds derived from moments, with the LLN as a simple consequence"
-categories:
-  - Statistical Foundations
-  - markov
-  - chebyshev
-  - tail-bound
-  - inequality
----
-
 ## Introduction
 
 Markov's and Chebyshev's inequalities are the most basic *tail bounds* in probability theory. They give universal (distribution-free) upper bounds on the probability that a random variable exceeds some value, using only the first moment (Markov) or first two moments (Chebyshev). They are rarely the tightest bounds in any given problem, but their generality makes them a reliable first step in every probabilistic argument.

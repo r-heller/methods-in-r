@@ -1,15 +1,3 @@
----
-title: "Multiple Comparisons: Overview"
-date: "2026-04-17"
-description: Family-wise error vs false discovery rate and when each applies
-categories:
-  - Inferential Statistics
-  - multiple-testing
-  - fwer
-  - fdr
-  - correction
----
-
 ## Introduction
 
 Testing many hypotheses simultaneously inflates the chance of spurious discoveries. Controlling for this inflation is the goal of multiple-comparison corrections. Two broad families exist: **family-wise error rate (FWER)** methods and **false discovery rate (FDR)** methods. Choosing between them depends on the consequences of a false positive.

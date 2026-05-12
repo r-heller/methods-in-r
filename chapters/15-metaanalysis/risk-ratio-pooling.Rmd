@@ -1,14 +1,3 @@
----
-title: Pooling Risk Ratios
-date: "2026-04-17"
-description: Meta-analysis of binary outcomes on the risk-ratio scale
-categories:
-  - Meta-Analysis
-  - risk-ratio
-  - pooling
-  - binary
----
-
 ## Introduction
 
 Risk ratios (RR) — also called relative risks — are more interpretable than odds ratios for common outcomes; they directly express the ratio of event probabilities between two arms. RR approximates OR only when events are rare (probability below ~10 %); for common outcomes, the two diverge substantially. Meta-analytic pooling of binary outcomes from cohort studies and randomised trials therefore typically proceeds on the log-RR scale, analogously to log-OR pooling.

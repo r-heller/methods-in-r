@@ -1,14 +1,3 @@
----
-title: Raincloud Plots
-date: "2026-04-17"
-description: "Half-violin + jittered raw points + boxplot: a comprehensive distribution display"
-categories:
-  - Data Visualisation
-  - raincloud
-  - ggdist
-  - distribution
----
-
 ## Introduction
 
 A raincloud plot is the modern alternative to the bar-with-error-bar chart for comparing continuous distributions across groups. Proposed by Allen and colleagues in 2019, it combines three pieces of information into one panel: a half-violin showing the kernel density (the "cloud"), jittered raw observations (the "rain"), and a small boxplot encoding the median and quartiles. The result preserves all the distributional information that bars throw away — modes, skew, outliers, sample sizes — while still presenting the central tendency that drives most reporting decisions.

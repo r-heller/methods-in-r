@@ -1,15 +1,3 @@
----
-title: Variance and Standard Deviation
-date: "2026-04-17"
-description: "Squared and unsquared dispersion, the n vs n-1 divisor, and why the sample SD is biased"
-categories:
-  - Descriptive Statistics
-  - variance
-  - sd
-  - bessel-correction
-  - bias
----
-
 ## Introduction
 
 Variance and standard deviation are the most widely used dispersion measures in applied statistics. The variance is the mean squared deviation from the mean; the SD is its square root, returning to the original units. Both underlie the normal distribution, the central limit theorem, regression, and every parametric test that refers to "sigma".

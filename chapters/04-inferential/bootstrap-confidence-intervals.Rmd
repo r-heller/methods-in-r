@@ -1,15 +1,3 @@
----
-title: Bootstrap Confidence Intervals
-date: "2026-04-17"
-description: "Percentile, basic, BCa, and studentised bootstrap CIs"
-categories:
-  - Inferential Statistics
-  - bootstrap
-  - confidence-interval
-  - bca
-  - percentile
----
-
 ## Introduction
 
 The bootstrap offers several ways to construct confidence intervals from resamples. They differ in accuracy (first- vs second-order correctness), in assumptions, and in complexity. Choosing well among them is part of responsible bootstrap use.

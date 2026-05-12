@@ -1,14 +1,3 @@
----
-title: "Convolutional Neural Networks: Introduction"
-date: "2026-04-17"
-description: Spatial filters and pooling for image and signal learning
-categories:
-  - Machine Learning
-  - cnn
-  - convolution
-  - pooling
----
-
 ## Introduction
 
 Convolutional Neural Networks (CNNs; LeCun, 1989) replace fully-connected layers with local, weight-sharing convolutional filters. The shared weights encode translation invariance: a feature detector (edge, texture) learned once applies at every spatial location. CNNs dominate image classification, segmentation, and many signal-processing tasks.

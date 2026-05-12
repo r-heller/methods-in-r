@@ -1,14 +1,3 @@
----
-title: Lasso Regression
-date: "2026-04-17"
-description: L1-penalised regression for simultaneous shrinkage and variable selection
-categories:
-  - "Regression & Modelling"
-  - lasso
-  - l1-penalty
-  - variable-selection
----
-
 ## Introduction
 
 The lasso (least absolute shrinkage and selection operator) adds an L1 penalty to ordinary least squares, simultaneously shrinking coefficients and driving some of them exactly to zero. The L1 geometry — the absolute-value penalty has corners on each axis — makes the lasso the canonical method for high-dimensional regression where simultaneous estimation and variable selection is required. It dominates ridge regression when the truth is sparse (a small number of predictors carry the signal) and competes with stepwise selection while having dramatically better statistical properties.

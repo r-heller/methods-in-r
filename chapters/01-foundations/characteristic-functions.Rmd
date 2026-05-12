@@ -1,14 +1,3 @@
----
-title: Characteristic Functions
-date: "2026-04-17"
-description: "Fourier transforms of distributions: always exist, uniquely identify the distribution, and drive convergence theorems"
-categories:
-  - Statistical Foundations
-  - characteristic-function
-  - fourier
-  - convergence
----
-
 ## Introduction
 
 A **characteristic function** is the Fourier transform of a probability distribution. Unlike the moment generating function, the characteristic function always exists -- even for distributions without finite moments, like the Cauchy. Characteristic functions provide the cleanest proofs of classical limit theorems (CLT, LLN) and the most elegant derivations of closure properties of distributional families.

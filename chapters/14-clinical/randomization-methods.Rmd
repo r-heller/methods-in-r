@@ -1,14 +1,3 @@
----
-title: Randomisation Methods
-date: "2026-04-17"
-description: "Simple, block, and stratified randomisation for RCT allocation"
-categories:
-  - Clinical Biostatistics
-  - randomisation
-  - allocation
-  - trials
----
-
 ## Introduction
 
 Randomisation is the defining feature of an RCT: participants are allocated by chance rather than choice. Proper randomisation prevents selection bias (investigators cannot predict allocation) and ensures balance of known and unknown confounders in expectation. Several schemes trade simplicity, balance, and unpredictability.

@@ -1,15 +1,3 @@
----
-title: Post-Hoc Tests with Tukey HSD
-date: "2026-04-17"
-description: Pairwise comparisons after ANOVA with family-wise error control
-categories:
-  - Inferential Statistics
-  - post-hoc
-  - tukey-hsd
-  - pairwise
-  - family-wise-error
----
-
 ## Introduction
 
 When a one-way ANOVA rejects equality of means across groups, post-hoc tests identify which specific pairs differ. Tukey's HSD (honestly significant difference) is the default pairwise comparison test after ANOVA with equal sample sizes, controlling the family-wise error rate at the nominal $\alpha$.

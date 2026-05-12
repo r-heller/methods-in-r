@@ -1,14 +1,3 @@
----
-title: Metropolis-Hastings
-date: "2026-04-17"
-description: The foundational MCMC algorithm with proposal distribution and accept/reject rule
-categories:
-  - Bayesian Statistics
-  - metropolis-hastings
-  - mcmc
-  - proposal
----
-
 ## Introduction
 
 The Metropolis-Hastings algorithm is the original general-purpose MCMC sampler and remains the conceptual reference against which all subsequent algorithms are explained. Given only an unnormalised target density, it produces a Markov chain whose stationary distribution is that target by repeatedly proposing a candidate value and accepting or rejecting it based on a simple density-ratio rule. The trade-off is universality versus efficiency: MH works for any target one can evaluate, but tuning proposals for high-dimensional or strongly correlated posteriors becomes painful, which is why HMC has displaced random-walk MH for most modern Bayesian software.

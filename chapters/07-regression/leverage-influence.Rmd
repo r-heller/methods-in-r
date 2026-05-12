@@ -1,15 +1,3 @@
----
-title: Leverage and Influence
-date: "2026-04-17"
-description: "Hat values, DFBETAs, and Cook's distance for identifying influential observations"
-categories:
-  - "Regression & Modelling"
-  - leverage
-  - influence
-  - hat-values
-  - dfbeta
----
-
 ## Introduction
 
 Leverage and influence diagnostics identify observations whose removal would substantially change a regression fit. The two concepts are distinct: leverage measures how unusual an observation is in the predictor space, influence measures how much it actually affects the fitted coefficients. High leverage without a large residual is harmless; high residual without leverage produces a poor fit but not influential coefficients; only the combination of both produces an observation that disproportionately drives the regression.

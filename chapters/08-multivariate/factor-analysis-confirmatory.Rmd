@@ -1,15 +1,3 @@
----
-title: Confirmatory Factor Analysis
-date: "2026-04-17"
-description: "Testing a pre-specified factor structure against data, with chi-squared and incremental fit indices"
-categories:
-  - Multivariate Statistics
-  - cfa
-  - lavaan
-  - structural-equation
-  - fit-indices
----
-
 ## Introduction
 
 Confirmatory factor analysis (CFA) tests a pre-specified factor structure against data: which items load on which factors, which loadings are constrained to zero, and how factors correlate with each other. It is the measurement-model portion of structural equation modelling and the standard tool for validating questionnaire structures, latent-trait models in psychometrics, and multi-indicator latent constructs in clinical and behavioural research. Unlike exploratory factor analysis, CFA does not estimate which items belong to which factor — that decision is in the model — and instead estimates only the strength of the predetermined relationships and tests model-data fit.

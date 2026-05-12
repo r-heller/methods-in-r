@@ -1,15 +1,3 @@
----
-title: Principal Component Analysis
-date: "2026-04-17"
-description: "Dimensionality reduction by variance-maximising projection, with interpretation, scaling, and visualisation in R"
-categories:
-  - Multivariate Statistics
-  - pca
-  - dimensionality-reduction
-  - biplot
-  - multivariate
----
-
 ## Introduction
 
 Principal component analysis (PCA) takes a data matrix with many correlated variables and re-expresses it in a smaller number of uncorrelated components that capture most of the variance. It is used for exploratory visualisation, for compression, as a preprocessing step for regression and classification, and as a quality-control tool in high-dimensional experiments such as RNA-seq. It is not a model for the data; it is a change of basis.

@@ -1,15 +1,3 @@
----
-title: Interactive Plots with plotly
-date: "2026-04-17"
-description: Converting ggplot objects to interactive HTML plots via ggplotly()
-categories:
-  - Data Visualisation
-  - interactive
-  - plotly
-  - ggplotly
-  - html
----
-
 ## Introduction
 
 A static figure is what a journal prints; an interactive figure is what a colleague needs when exploring a result on a screen. `plotly::ggplotly()` converts an existing `ggplot` object into an HTML widget that supports hover tooltips, drag-to-zoom, panning, and selection brushing — without requiring any JavaScript. The result fits naturally into Quarto and RMarkdown reports, Shiny dashboards, and standalone HTML pages, and gives reviewers and collaborators a way to interrogate the data without exporting CSVs.

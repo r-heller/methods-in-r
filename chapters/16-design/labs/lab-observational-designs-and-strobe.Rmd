@@ -1,7 +1,3 @@
----
-title: "Observational designs and STROBE"
----
-
 <div class="callout callout-note">
 **Workflow lab** using the variant template:
 Goal → Approach → Execution → Check → Report.

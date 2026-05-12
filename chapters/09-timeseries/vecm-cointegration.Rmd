@@ -1,14 +1,3 @@
----
-title: VECM and Cointegration
-date: "2026-04-17"
-description: Vector error correction models for cointegrated series; Johansen trace and eigenvalue tests
-categories:
-  - Time Series Analysis
-  - vecm
-  - cointegration
-  - johansen
----
-
 ## Introduction
 
 Two or more non-stationary time series are *cointegrated* if some linear combination of them is stationary. The classic example is interest rates at different maturities: each rate is non-stationary (random-walk-like), but spreads are mean-reverting. A vector error-correction model (VECM) captures the short-run dynamics of cointegrated series while respecting the long-run equilibrium relationship; the Johansen procedure tests how many cointegrating relations exist and estimates them jointly with the dynamic parameters.

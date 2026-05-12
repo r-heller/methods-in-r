@@ -1,14 +1,3 @@
----
-title: Density Plots
-date: "2026-04-17"
-description: Smooth distribution display via kernel density estimation
-categories:
-  - Data Visualisation
-  - density
-  - kde
-  - distribution
----
-
 ## Introduction
 
 A density plot estimates the underlying probability density of a continuous variable via kernel smoothing, producing a smooth curve instead of the binned bars of a histogram. Densities are easier to compare across groups (overlaid translucent fills are more legible than dodged or transparent bars) and they sidestep the histogram's bin-boundary arbitrariness — at the cost of introducing a different arbitrary parameter, the bandwidth. Choosing a sensible bandwidth and being explicit about it is the main craft of density-plot design.

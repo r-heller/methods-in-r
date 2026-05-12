@@ -1,16 +1,3 @@
----
-title: Measures of Central Tendency
-date: "2026-04-17"
-description: "Mean, median, mode, and their robust cousins -- when each is appropriate and how to compute them in R"
-categories:
-  - Descriptive Statistics
-  - mean
-  - median
-  - mode
-  - trimmed-mean
-  - robust-statistics
----
-
 ## Introduction
 
 A measure of central tendency is a single number that summarises "where the data are". The three classical choices -- arithmetic mean, median, and mode -- are not interchangeable: each answers a slightly different question, and each is appropriate in a different context. Choosing the right one matters because readers of your results will form mental pictures of the data that the number implies.

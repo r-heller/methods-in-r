@@ -1,14 +1,3 @@
----
-title: Random Variables
-date: "2026-04-17"
-description: "Measurable functions from sample space to real numbers: the mathematical object behind every statistic"
-categories:
-  - Probability Theory
-  - random-variable
-  - measurable-function
-  - distribution
----
-
 ## Introduction
 
 A **random variable** is a function that assigns a real number to each outcome of a random experiment. The concept packages probabilistic thinking into the language of numbers -- means, variances, correlations -- and is the abstraction on which every statistical method rests.

@@ -1,14 +1,3 @@
----
-title: Cluster-Randomised Trials
-date: "2026-04-17"
-description: "Randomisation of clusters (clinics, schools) rather than individuals"
-categories:
-  - Clinical Biostatistics
-  - cluster-rct
-  - icc
-  - design-effect
----
-
 ## Introduction
 
 Cluster-randomised trials (CRTs) randomise groups -- clinics, schools, villages -- rather than individuals. Used when an intervention must be delivered at cluster level (implementation, educational campaign) or when contamination between individuals would bias a standard RCT. Clustering inflates variance and must be accounted for in sample-size and analysis.

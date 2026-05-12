@@ -1,15 +1,3 @@
----
-title: Power for the Log-Rank Test
-date: "2026-04-17"
-description: Event-based sample size for Kaplan-Meier comparisons via the log-rank test
-categories:
-  - "Sample Size & Power"
-  - power
-  - log-rank
-  - events
-  - accrual
----
-
 ## Introduction
 
 The log-rank test is the standard non-parametric test of equality of two (or more) survival functions and the most widely used inference tool in survival analysis. A central feature of its power calculation distinguishes it from sample-size analyses for $t$-tests, ANOVAs, or proportion comparisons: power depends on the total number of observed events across the two groups, not on the sample size directly. Event-based sample-size planning therefore separates the recruitment question (how many subjects to enrol) from the inferential question (how many events to observe), and links them through assumptions about event rates, accrual time, and follow-up duration. This decoupling is essential to realistic planning of survival trials.

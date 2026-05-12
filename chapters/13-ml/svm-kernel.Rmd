@@ -1,14 +1,3 @@
----
-title: Kernel SVMs
-date: "2026-04-17"
-description: Non-linear classification via the kernel trick with RBF and polynomial kernels
-categories:
-  - Machine Learning
-  - svm
-  - kernel
-  - rbf
----
-
 ## Introduction
 
 Kernel SVMs extend the linear SVM framework to non-linear decision boundaries via the kernel trick: replace every inner product $x_i^\top x_j$ in the dual formulation with a kernel function $K(x_i, x_j)$ that corresponds to an inner product in a high-dimensional (often infinite-dimensional) implicit feature space. The Radial Basis Function (RBF) kernel is the workhorse, capable of representing essentially any smooth decision boundary given enough training data and appropriate hyperparameter tuning.

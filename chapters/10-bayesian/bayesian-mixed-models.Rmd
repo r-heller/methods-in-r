@@ -1,14 +1,3 @@
----
-title: Bayesian Mixed Models
-date: "2026-04-17"
-description: "Multilevel regression with random effects, fit via Bayesian MCMC"
-categories:
-  - Bayesian Statistics
-  - bayesian-mixed
-  - multilevel
-  - random-effects
----
-
 ## Introduction
 
 Bayesian mixed models treat the random-effect variance components as parameters with their own priors instead of plug-in estimates from REML. The pay-off is most visible in small samples and at the boundary: ML and REML routinely return zero variance estimates when only a handful of clusters contribute, but a half-Normal or half-Cauchy prior keeps the variance away from zero in a principled way and propagates the resulting uncertainty into every fixed-effect interval. The cost is computational — sampling instead of optimising — but for any analysis that depends on credible variance components, that cost is a worthwhile investment.

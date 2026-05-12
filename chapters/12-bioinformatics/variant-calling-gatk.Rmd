@@ -1,14 +1,3 @@
----
-title: Variant Calling with GATK
-date: "2026-04-17"
-description: Short-variant detection from aligned BAMs via the GATK Best Practices pipeline
-categories:
-  - Bioinformatics
-  - gatk
-  - variants
-  - HaplotypeCaller
----
-
 ## Introduction
 
 Variant calling turns aligned reads into a list of single-nucleotide variants (SNVs) and small insertions/deletions (indels). GATK's HaplotypeCaller is the de facto standard: it locally reassembles regions with evidence of variation and emits probabilistic genotype calls in VCF format.

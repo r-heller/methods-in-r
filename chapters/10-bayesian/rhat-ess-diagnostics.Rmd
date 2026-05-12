@@ -1,15 +1,3 @@
----
-title: R-hat and ESS Diagnostics
-date: "2026-04-17"
-description: Convergence (R-hat) and effective sample size (ESS) for MCMC quality control
-categories:
-  - Bayesian Statistics
-  - rhat
-  - ess
-  - convergence
-  - autocorrelation
----
-
 ## Introduction
 
 An MCMC posterior summary is only as good as the chain that produced it. Two questions decide whether the draws are usable: have the chains converged on the same distribution, and how many independent observations is the autocorrelated chain actually worth? The first is answered by $\hat R$, the second by effective sample size (ESS). These two numbers, reported alongside every parameter in modern Bayesian output, are the minimum diagnostic checklist before any posterior interval is interpreted.

@@ -1,15 +1,3 @@
----
-title: "Welch's t-Test"
-date: "2026-04-17"
-description: "Two-sample t-test that does not assume equal variances; R's default"
-categories:
-  - Inferential Statistics
-  - welch
-  - t-test
-  - unequal-variances
-  - satterthwaite
----
-
 ## Introduction
 
 Welch's t-test is the standard two-sample mean-comparison test when variances across groups may differ. R's `t.test()` defaults to Welch (`var.equal = FALSE`). Decades of simulation evidence favour Welch as the default choice regardless of whether variances appear equal; the efficiency cost versus the equal-variance (Student) test is negligible when variances are equal, and the robustness gain is substantial when they are not.

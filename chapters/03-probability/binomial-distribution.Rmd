@@ -1,14 +1,3 @@
----
-title: The Binomial Distribution
-date: "2026-04-17"
-description: The count of successes in n independent Bernoulli trials with common probability p
-categories:
-  - Probability Theory
-  - binomial
-  - count
-  - normal-approximation
----
-
 ## Introduction
 
 The binomial distribution counts the number of successes in $n$ independent trials, each with the same probability $p$. It is the most common discrete distribution in applied statistics: responder counts in a trial, positive test results in a screen, correct classifications in an evaluation.

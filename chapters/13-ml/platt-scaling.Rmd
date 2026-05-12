@@ -1,14 +1,3 @@
----
-title: Platt Scaling
-date: "2026-04-17"
-description: "Logistic recalibration: mapping raw scores to calibrated probabilities"
-categories:
-  - Machine Learning
-  - platt-scaling
-  - calibration
-  - logistic
----
-
 ## Introduction
 
 Platt scaling (Platt, 1999) is a post-hoc calibration method that maps a classifier's raw scores onto well-calibrated probabilities by fitting a logistic regression from scores to true labels on a held-out validation set. It is the simplest and often best calibration method for SVMs, neural networks, and other classifiers whose mis-calibration is approximately monotone. The idea is to leave the classifier's ranking untouched while rescaling the score axis so that the predicted probability of class 1 matches the empirical class-1 rate.

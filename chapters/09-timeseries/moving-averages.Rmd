@@ -1,14 +1,3 @@
----
-title: Moving Averages
-date: "2026-04-17"
-description: Smoothing a time series by averaging over a sliding window
-categories:
-  - Time Series Analysis
-  - moving-average
-  - smoothing
-  - weighted
----
-
 ## Introduction
 
 A moving average smooths a time series by replacing each observation with an average of nearby values. It is the oldest and simplest tool for highlighting trend by suppressing high-frequency noise; it underpins more sophisticated techniques (X-11 decomposition, Henderson trend filters) and is fundamental to financial chart analysis. The choice between trailing, centred, and weighted moving averages governs the trade-off between smoothness and lag, and choosing the right window size for the application is the principal craft of moving-average smoothing.

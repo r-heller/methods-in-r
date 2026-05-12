@@ -1,14 +1,3 @@
----
-title: Heatmaps for RNA-seq
-date: "2026-04-17"
-description: Visualising expression patterns across genes and samples with clustering
-categories:
-  - Bioinformatics
-  - heatmap
-  - visualisation
-  - clustering
----
-
 ## Introduction
 
 Heatmaps compactly display an expression matrix as a colour grid with rows (genes) and columns (samples) optionally clustered hierarchically. For RNA-seq they are the standard visualisation for a differential-expression signature, a curated marker panel, or a pathway-of-interest gene set: colour intensity encodes scaled expression, dendrograms reveal structure, and annotation bars link sample columns to experimental metadata. Done well, a heatmap communicates more about the biological structure of an experiment than dozens of pages of statistical tables.

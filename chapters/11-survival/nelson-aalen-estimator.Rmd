@@ -1,14 +1,3 @@
----
-title: The Nelson-Aalen Estimator
-date: "2026-04-17"
-description: Non-parametric estimator of the cumulative hazard under right-censoring
-categories:
-  - Survival Analysis
-  - nelson-aalen
-  - cumulative-hazard
-  - estimator
----
-
 ## Introduction
 
 The Nelson-Aalen estimator is the standard non-parametric estimator of the cumulative hazard $H(t)$ for right-censored data. It is the natural counterpart of the Kaplan-Meier estimator: where KM directly targets the survival function, Nelson-Aalen targets the cumulative hazard, and the two are linked by $S(t) = \exp(-H(t))$. Nelson-Aalen has slightly better small-sample properties than Kaplan-Meier in the right tail and is the natural input for any analysis framed in terms of hazards rather than survival probabilities, including diagnostics for proportional hazards across groups.

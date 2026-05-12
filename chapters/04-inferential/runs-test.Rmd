@@ -1,14 +1,3 @@
----
-title: The Runs Test
-date: "2026-04-17"
-description: Testing randomness of a binary or dichotomised sequence via run lengths
-categories:
-  - Inferential Statistics
-  - runs-test
-  - randomness
-  - sequence
----
-
 ## Introduction
 
 The runs test is a non-parametric test of randomness in a sequence of binary outcomes (or continuous outcomes that have been dichotomised against a reference such as the median). A "run" is a maximal subsequence of identical symbols — for example, in the sequence HHTTTHHH the runs are HH, TTT, HHH, three runs in total. Under genuine randomness the number of runs follows a known distribution; too few runs indicate clustering of like outcomes (suggesting positive autocorrelation or a structural break), while too many runs indicate alternation (negative autocorrelation). The runs test is widely used in quality-control charts to detect assignable causes, in regression diagnostics to flag autocorrelated residuals, and in randomness testing of sequences from random-number generators or dice-rolling sequences.

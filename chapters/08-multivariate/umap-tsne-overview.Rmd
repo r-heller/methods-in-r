@@ -1,15 +1,3 @@
----
-title: "UMAP and t-SNE: Overview"
-date: "2026-04-17"
-description: "Modern non-linear dimensionality reduction for visualisation: UMAP, t-SNE, and their caveats"
-categories:
-  - Multivariate Statistics
-  - umap
-  - tsne
-  - embedding
-  - visualisation
----
-
 ## Introduction
 
 UMAP (uniform manifold approximation and projection) and t-SNE (t-distributed stochastic neighbour embedding) are the dominant non-linear dimensionality-reduction techniques for visualising very high-dimensional data — single-cell RNA sequencing, large image embeddings, language-model representations. They produce striking 2D or 3D scatter plots in which similar observations cluster together, and they are now near-default visualisations in many computational-biology and machine-learning pipelines. They also have well-documented pitfalls, and learning what they do *not* show is as important as learning to apply them.

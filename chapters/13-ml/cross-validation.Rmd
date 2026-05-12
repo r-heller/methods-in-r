@@ -1,15 +1,3 @@
----
-title: Cross-Validation
-date: "2026-04-17"
-description: "Estimating out-of-sample predictive performance honestly with k-fold, repeated, nested, and leave-one-out cross-validation"
-categories:
-  - Machine Learning
-  - cross-validation
-  - model-evaluation
-  - tidymodels
-  - resampling
----
-
 ## Introduction
 
 Cross-validation is the primary tool for estimating how well a predictive model will generalise to unseen data. The in-sample error -- the error of the fitted model on the data used to train it -- is almost always too optimistic. Cross-validation repeatedly splits the data into training and held-out portions, fits the model on the training portion, evaluates on the held-out portion, and averages the held-out performance as an estimate of true generalisation error.

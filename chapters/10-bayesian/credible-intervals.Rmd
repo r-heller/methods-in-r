@@ -1,14 +1,3 @@
----
-title: Credible Intervals
-date: "2026-04-17"
-description: "Bayesian analogue of confidence intervals: equal-tailed and highest-posterior-density regions"
-categories:
-  - Bayesian Statistics
-  - credible-interval
-  - hpd
-  - equal-tailed
----
-
 ## Introduction
 
 A credible interval is the Bayesian summary of posterior uncertainty most often reported alongside a point estimate. Unlike a confidence interval, whose probability statement refers to long-run frequency under hypothetical resampling, a credible interval supports the direct claim that "given the data and prior, there is a 95 % probability that the parameter lies inside this interval." That single sentence is the reason students consistently misinterpret confidence intervals — and the reason credible intervals are increasingly preferred in applied biomedical reporting.

@@ -1,14 +1,3 @@
----
-title: Truncated Regression
-date: "2026-04-17"
-description: Regression when observations are missing (not just censored) below or above a threshold
-categories:
-  - "Regression & Modelling"
-  - truncation
-  - truncated-normal
-  - sample-selection
----
-
 ## Introduction
 
 Truncated regression applies when observations outside a range are absent entirely from the dataset rather than being censored at the threshold. The distinction matters: censored data record a value at the threshold for observations that fall outside, while truncated data simply omit them. Examples: a study limited to hypertensive patients (no normotensive observations), an income survey of households above a threshold (no low-income data), a registry of high-grade tumours (no low-grade entries). Ordinary least squares on truncated data is biased because the conditional mean inside the truncation region is non-linear, even when the latent model is linear.

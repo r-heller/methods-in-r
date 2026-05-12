@@ -1,15 +1,3 @@
----
-title: Pseudoalignment with Salmon and Kallisto
-date: "2026-04-17"
-description: Fast transcript quantification without full alignment
-categories:
-  - Bioinformatics
-  - salmon
-  - kallisto
-  - pseudoalignment
-  - transcript-quantification
----
-
 ## Introduction
 
 Pseudo-alignment tools — Salmon, Kallisto, and the related selective-alignment variant in newer Salmon versions — quantify transcript-level expression without producing full BAM-file alignments. They match read $k$-mers to transcript fingerprints in an indexed reference and resolve multi-mappers via expectation-maximisation. The result is a 10-to-100-fold speedup over STAR or HISAT2 with comparable accuracy at the gene level, making pseudo-alignment the standard fast-path for RNA-seq quantification when isoform-level alignment is not the goal.

@@ -1,15 +1,3 @@
----
-title: "glmer: Generalised Mixed Models"
-date: "2026-04-17"
-description: "Extending mixed models to binary, count, and other GLM outcomes"
-categories:
-  - "Regression & Modelling"
-  - glmer
-  - glmm
-  - binary-mixed
-  - count-mixed
----
-
 ## Introduction
 
 `lme4::glmer()` fits generalised linear mixed models (GLMMs) — binary, count, and other non-Gaussian outcomes with random effects. The function inherits the random-effects formula syntax of `lmer()` and the family / link conventions of `glm()`, combining them into a single estimation problem. For binary outcomes (logistic mixed models), Poisson rates with cluster structure, and other GLM-style problems with repeated measures or hierarchical sampling, `glmer()` is the standard tool. The newer `glmmTMB` package is faster, more flexible (it handles overdispersed and zero-inflated families natively), and increasingly the recommended default.

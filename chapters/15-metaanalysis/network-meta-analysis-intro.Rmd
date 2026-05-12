@@ -1,14 +1,3 @@
----
-title: "Network Meta-Analysis: Introduction"
-date: "2026-04-17"
-description: Combining direct and indirect comparisons across multiple treatments
-categories:
-  - Meta-Analysis
-  - network-meta-analysis
-  - indirect
-  - mtc
----
-
 ## Introduction
 
 Network meta-analysis (NMA), or mixed-treatment comparison (MTC), pools evidence across studies comparing different pairs of treatments to estimate a coherent set of relative effects. It enables comparisons for which no direct head-to-head trials exist, provided indirect paths in the evidence network connect the treatments.

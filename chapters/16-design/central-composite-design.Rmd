@@ -1,14 +1,3 @@
----
-title: Central Composite Designs
-date: "2026-04-17"
-description: "Response-surface designs combining factorial, axial, and centre points"
-categories:
-  - Experimental Design
-  - ccd
-  - rsm
-  - axial
----
-
 ## Introduction
 
 The central composite design (CCD), introduced by Box and Wilson in 1951, is the workhorse of response-surface methodology and arguably the most influential design construction in industrial statistics. It augments a $2^k$ factorial with axial (or star) points placed along each factor axis at distance $\alpha$ from the design centre and a number of replicated centre points. Together these three components — factorial, axial, centre — provide enough information to fit a full second-order polynomial response surface in $k$ factors with substantially fewer runs than a $3^k$ full factorial would require, while still supporting estimation of curvature, lack-of-fit testing, and prediction-variance characterisation across the design region.

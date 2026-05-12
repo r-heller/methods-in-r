@@ -1,7 +1,3 @@
----
-title: "Systematic reviews and PRISMA"
----
-
 <div class="callout callout-note">
 **Workflow lab:** Goal → Approach → Execution → Check → Report.
 </div>

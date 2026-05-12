@@ -1,14 +1,3 @@
----
-title: XGBoost
-date: "2026-04-17"
-description: Regularised gradient boosting with sparsity awareness and early stopping
-categories:
-  - Machine Learning
-  - xgboost
-  - boosting
-  - regularisation
----
-
 ## Introduction
 
 XGBoost (eXtreme Gradient Boosting), introduced by Chen and Guestrin in 2016, extends classical gradient boosting with L1 and L2 regularisation of leaf weights, a second-order Taylor expansion of the loss, sparsity-aware split finding, and histogram-based methods that scale to billions of rows. It has dominated competitive machine-learning benchmarks on structured tabular data for nearly a decade and remains the strongest single off-the-shelf model for most regression and classification problems on tables.

@@ -1,15 +1,3 @@
----
-title: The Multivariate Normal Distribution
-date: "2026-04-17"
-description: Generalisation of the normal to random vectors; the keystone of multivariate analysis
-categories:
-  - Probability Theory
-  - multivariate-normal
-  - mvn
-  - covariance
-  - mahalanobis
----
-
 ## Introduction
 
 The multivariate normal (MVN) is the joint distribution that plays the same role for random vectors that the normal plays for random scalars. It is parameterised by a mean vector and a covariance matrix, and it underlies linear discriminant analysis, principal component analysis, Gaussian graphical models, and most of multivariate inference.

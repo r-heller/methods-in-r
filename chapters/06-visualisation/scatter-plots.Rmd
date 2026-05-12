@@ -1,15 +1,3 @@
----
-title: Scatter Plots
-date: "2026-04-17"
-description: "The bivariate continuous default: geom_point with overplotting strategies and trend lines"
-categories:
-  - Data Visualisation
-  - scatter
-  - geom_point
-  - bivariate
-  - overplotting
----
-
 ## Introduction
 
 A scatter plot is the default visualisation for the relationship between two continuous variables: each observation becomes a point, position encodes the value pair, and the eye reads correlation, clustering, and outliers directly. It is the first graphic to make whenever a regression or correlation is contemplated. The simplicity is also the trap: at modest sample sizes a scatter is informative, but at large $n$ overplotting hides density, and at small $n$ a few points are easy to misread as a strong relationship that disappears under any reasonable significance test.

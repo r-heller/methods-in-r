@@ -1,15 +1,3 @@
----
-title: Leave-One-Out Cross-Validation
-date: "2026-04-17"
-description: Efficient Bayesian LOO-CV via Pareto-smoothed importance sampling (PSIS-LOO)
-categories:
-  - Bayesian Statistics
-  - loo
-  - psis
-  - cross-validation
-  - model-comparison
----
-
 ## Introduction
 
 Leave-one-out cross-validation (LOO-CV) is the gold standard for estimating out-of-sample predictive performance, but exact LOO requires refitting the model once per observation — prohibitive for any Bayesian model that takes more than a few seconds to sample. Pareto-Smoothed Importance Sampling LOO (PSIS-LOO), introduced by Vehtari, Gelman, and Gabry, approximates exact LOO from a single full-data posterior using importance weights, while providing per-observation diagnostics that flag where the approximation breaks down. It has become the standard model-comparison tool for `brms`, `rstanarm`, and raw Stan workflows.

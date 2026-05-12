@@ -1,7 +1,3 @@
----
-title: "12. Bioinformatics"
----
-
 # Bioinformatics {#sec-ch-12-bioinformatics}
 
 RNA-seq differential expression, pathway and GO enrichment, and single-cell RNA-seq. The chapter assumes basic familiarity with `Bioconductor` and points back to the regression and ML chapters for the underlying machinery.

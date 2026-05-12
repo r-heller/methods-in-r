@@ -1,14 +1,3 @@
----
-title: Convolutions of Distributions
-date: "2026-04-17"
-description: "Distribution of a sum of independent random variables, computed via convolution integrals"
-categories:
-  - Probability Theory
-  - convolution
-  - sum
-  - closure
----
-
 ## Introduction
 
 The distribution of a sum of independent random variables is their **convolution**. Many standard distribution families are closed under convolution: sums of independent normals are normal, sums of independent Poissons are Poisson, sums of independent gammas (with the same rate) are gamma. This closure is what makes convolution a core operation in probability.

@@ -1,14 +1,3 @@
----
-title: Differential Expression with limma-voom
-date: "2026-04-17"
-description: Transforming counts for linear modelling with precision weights
-categories:
-  - Bioinformatics
-  - limma
-  - voom
-  - precision-weights
----
-
 ## Introduction
 
 limma-voom is one of the three dominant differential-expression methods for RNA-seq (alongside DESeq2 and edgeR). The voom step transforms raw counts onto the log-CPM scale and computes per-observation precision weights that account for the mean-variance trend characteristic of count data. The result is suitable input to limma's full linear-modelling framework, which adds the empirical-Bayes shrinkage of variance estimates that drives limma's power on small samples and complex designs.

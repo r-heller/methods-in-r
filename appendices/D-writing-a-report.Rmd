@@ -1,8 +1,6 @@
 ---
-title: "Writing a report"
 toc: true
 ---
-
 <div class="hero">
 <div class="kicker">
 APPENDIX · WRITING A REPORT

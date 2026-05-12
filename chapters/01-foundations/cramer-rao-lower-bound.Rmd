@@ -1,15 +1,3 @@
----
-title: The Cramer-Rao Lower Bound
-date: "2026-04-17"
-description: "The smallest variance an unbiased estimator can achieve, derived from Fisher information"
-categories:
-  - Statistical Foundations
-  - cramer-rao
-  - efficiency
-  - bound
-  - fisher-information
----
-
 ## Introduction
 
 The Cramer-Rao lower bound (CRLB) is a theoretical limit: no unbiased estimator of a parameter can have smaller variance than a value determined by the Fisher information. Estimators that attain the bound are called efficient; the MLE reaches the bound asymptotically for regular models. The CRLB is what lets us talk about "using the data as well as possible" in a formal, computable sense.

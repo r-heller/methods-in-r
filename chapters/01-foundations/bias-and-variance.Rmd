@@ -1,16 +1,3 @@
----
-title: Bias and Variance of Estimators
-date: "2026-04-17"
-description: "Decomposing an estimator's mean squared error into systematic bias and sampling variance"
-categories:
-  - Statistical Foundations
-  - bias
-  - variance
-  - mse
-  - estimator
-  - decomposition
----
-
 ## Introduction
 
 An estimator may differ from the truth for two reasons: systematically (it targets the wrong value on average) and randomly (it bounces around its average). Bias captures the first; variance captures the second. Together they determine how close the estimator is to the truth, as measured by mean squared error (MSE). Many important statistical choices -- between raw and shrinkage estimators, between parametric and non-parametric methods, between simple and flexible models -- are bias/variance trade-offs.

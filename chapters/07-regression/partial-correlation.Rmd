@@ -1,14 +1,3 @@
----
-title: Partial Correlation
-date: "2026-04-17"
-description: Correlation between two variables after removing the linear influence of others
-categories:
-  - "Regression & Modelling"
-  - partial-correlation
-  - confounding
-  - adjustment
----
-
 ## Introduction
 
 Partial correlation measures the linear association between two variables after removing the linear influence of one or more covariates from each. Where ordinary correlation captures bivariate association including any indirect effect through confounders, partial correlation isolates the direct linear relationship. It is the bivariate analogue of an adjusted regression coefficient and one of the simplest tools for thinking about confounding in observational data.

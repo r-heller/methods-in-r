@@ -1,15 +1,3 @@
----
-title: Power for Equivalence (TOST)
-date: "2026-04-17"
-description: Sample size for two-one-sided-tests equivalence testing within a pre-specified margin
-categories:
-  - "Sample Size & Power"
-  - power
-  - tost
-  - equivalence
-  - margin
----
-
 ## Introduction
 
 Power analysis for equivalence testing via the two-one-sided-tests (TOST) procedure requires that both one-sided null hypotheses — that the true effect lies below the lower equivalence bound and that it lies above the upper equivalence bound — be rejected at level $\alpha$. The required sample size depends on the equivalence margin (set by clinical or regulatory convention), the anticipated true effect (typically zero or near-zero for an honest equivalence claim), and the variance. TOST sample-size calculations are widely used in bioequivalence studies of generic drugs (where the regulatory margin is fixed at 80–125 % on the log scale), in non-inferiority trials reframed as equivalence, and in therapeutic-equivalence studies of competing devices or formulations.

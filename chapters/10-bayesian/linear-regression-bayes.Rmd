@@ -1,14 +1,3 @@
----
-title: Bayesian Linear Regression
-date: "2026-04-17"
-description: "Linear regression with priors on coefficients, fit via MCMC in brms or rstanarm"
-categories:
-  - Bayesian Statistics
-  - bayesian-regression
-  - brms
-  - rstanarm
----
-
 ## Introduction
 
 Bayesian linear regression keeps the same linear predictor and Normal residual structure as ordinary least squares but treats every parameter as a random variable with a prior. Inference returns a joint posterior over coefficients and the residual scale rather than a point estimate plus standard errors. The practical gain is direct: credible intervals carry the probability statement that students often (incorrectly) attribute to confidence intervals, predictions inherit propagated uncertainty automatically, and small-sample analyses no longer rely on asymptotic approximations of $t$ distributions.

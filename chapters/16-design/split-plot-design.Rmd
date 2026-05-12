@@ -1,14 +1,3 @@
----
-title: Split-Plot Designs
-date: "2026-04-17"
-description: Designs with hard-to-change and easy-to-change factors
-categories:
-  - Experimental Design
-  - split-plot
-  - mixed-effects
-  - hard-to-change
----
-
 ## Introduction
 
 Split-plot designs arise whenever some experimental factors are hard to change between runs while others are easy to change within a run. Oven temperature, pasture treatment, baking time, batch-level chemical additive, or instrument calibration are typically hard to change — they can be set once per batch but not freely between samples. By contrast, additive level within a batch, fertiliser sub-plot within a paddock, or sample-level annotation can be randomised within the larger group. Restricted randomisation of the hard-to-change factor at the whole-plot level and unrestricted randomisation of the easy-to-change factor within whole plots produces a design with two error strata, each requiring its own appropriate $F$-test denominator. Recognising the split-plot structure rather than ignoring it is essential to valid inference.

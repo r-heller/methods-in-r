@@ -1,15 +1,3 @@
----
-title: Permutation Tests
-date: "2026-04-17"
-description: Exact or Monte Carlo p-values via resampling under exchangeability
-categories:
-  - Inferential Statistics
-  - permutation
-  - randomisation
-  - exact
-  - resampling
----
-
 ## Introduction
 
 A permutation test evaluates a null hypothesis by comparing the observed test statistic to its distribution under random permutations of the group labels (or other exchangeable structure). It makes no distributional assumption about the data, only about **exchangeability** under the null.

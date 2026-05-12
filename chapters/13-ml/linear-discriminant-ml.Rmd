@@ -1,14 +1,3 @@
----
-title: Linear Discriminant as ML
-date: "2026-04-17"
-description: LDA as a classifier with shared Gaussian class-conditional covariance
-categories:
-  - Machine Learning
-  - lda
-  - classifier
-  - gaussian
----
-
 ## Introduction
 
 Linear Discriminant Analysis (LDA), introduced by Ronald Fisher in 1936, is one of the oldest classification methods and remains a strong baseline. It models each class as a multivariate Gaussian with a class-specific mean but a *shared* covariance matrix, and assigns each observation to the class with the highest posterior probability under those Gaussians. The resulting decision boundary is linear in the predictors. LDA is simple, well-calibrated by construction, and often competitive with logistic regression on small to moderate-sized datasets where class-conditional Gaussianity approximately holds.

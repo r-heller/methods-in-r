@@ -1,14 +1,3 @@
----
-title: Balanced Incomplete Block Designs
-date: "2026-04-17"
-description: BIBDs when block size is smaller than treatment count
-categories:
-  - Experimental Design
-  - bibd
-  - blocks
-  - incomplete
----
-
 ## Introduction
 
 Balanced incomplete block designs (BIBDs) allocate treatments to blocks when each block can hold fewer experimental units than the total number of treatments to be compared. The constraint arises constantly in practice — a litter of animals contains fewer pups than treatments, a panel of taste-testers has limited capacity per session, a microscopy slide accommodates only a few specimens, an oven processes a limited number of samples per run. The "balanced" property requires that every pair of treatments appears together in the same number $\lambda$ of blocks, ensuring that every pairwise treatment contrast is estimated with equal precision despite the block-level incompleteness. BIBDs are classical constructions in agricultural experimentation, sensory evaluation, and any setting where complete randomised blocks are physically impossible.

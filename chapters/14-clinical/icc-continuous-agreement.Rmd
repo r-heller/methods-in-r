@@ -1,14 +1,3 @@
----
-title: Intraclass Correlation Coefficient (ICC)
-date: "2026-04-17"
-description: Absolute agreement and consistency for continuous inter-rater reliability
-categories:
-  - Clinical Biostatistics
-  - icc
-  - reliability
-  - agreement
----
-
 ## Introduction
 
 The Intraclass Correlation Coefficient (ICC) quantifies inter-rater reliability on continuous measurements. Unlike Pearson's correlation, it penalises systematic rater bias (two raters who differ by a constant still have Pearson = 1 but ICC < 1). Several ICC forms reflect different study designs and questions.

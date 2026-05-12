@@ -1,15 +1,3 @@
----
-title: Power for Agreement (Kappa)
-date: "2026-04-17"
-description: "Sample size for Cohen's kappa as a precision-targeted or hypothesis-test planning quantity"
-categories:
-  - "Sample Size & Power"
-  - power
-  - kappa
-  - agreement
-  - reliability
----
-
 ## Introduction
 
 Cohen's kappa measures agreement beyond chance between two raters on a categorical scale and is the de facto standard for inter-rater reliability with categorical outcomes. Sample-size planning for a kappa-based reliability study addresses one of two distinct questions: how many subjects are needed to estimate kappa with a desired precision (a target 95 % confidence-interval half-width around the expected value), or how many subjects are needed to test a hypothesis about kappa (typically that kappa exceeds a benchmark value such as 0 or 0.6) with adequate power. Modern reliability-study protocols are increasingly precision-driven rather than hypothesis-driven, because a "kappa is greater than zero" claim conveys little practical information about a clinical instrument.

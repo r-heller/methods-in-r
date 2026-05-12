@@ -1,14 +1,3 @@
----
-title: Cumulative Meta-Analysis
-date: "2026-04-17"
-description: Sequentially pooling studies in the order they were published
-categories:
-  - Meta-Analysis
-  - cumulative
-  - sequential
-  - temporal
----
-
 ## Introduction
 
 Cumulative meta-analysis plots the running pooled estimate as studies are added one by one in chronological (or any pre-specified) order. Each successive pool incorporates one more study, producing a sequence of estimates that traces how the body of evidence evolved over time. The resulting forest plot reveals when the cumulative effect first crossed a meaningful threshold — clinical relevance, statistical significance, or stability — and whether later studies overturned, attenuated, or simply added precision to the early consensus. Cumulative meta-analysis is widely used in retrospective evidence syntheses to assess research efficiency: if the evidence had been pooled in real time, when would the answer have been clear, and how many subsequent confirmatory trials were arguably redundant?

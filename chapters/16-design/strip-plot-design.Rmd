@@ -1,14 +1,3 @@
----
-title: Strip-Plot Designs
-date: "2026-04-17"
-description: Designs with two hard-to-change factors applied to perpendicular strips
-categories:
-  - Experimental Design
-  - strip-plot
-  - hard-to-change
-  - mixed-effects
----
-
 ## Introduction
 
 Strip-plot designs — also known as split-block designs — apply two hard-to-change factors in perpendicular strips across a block, with the resulting factor combinations realised in the cells of the cross. They arise naturally in agricultural field experiments where one factor (e.g., irrigation level) is applied along rows and another (e.g., fertiliser type) along columns, in industrial manufacturing where two stages of processing each cover an entire pallet, and in food and pharmaceutical settings where two restrictions on randomisation operate in different directions. The defining feature is three independent error strata — one for the row factor, one for the column factor, and one for their interaction — each requiring its own appropriate $F$-test denominator.

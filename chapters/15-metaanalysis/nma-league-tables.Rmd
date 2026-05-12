@@ -1,14 +1,3 @@
----
-title: NMA League Tables
-date: "2026-04-17"
-description: Pairwise treatment contrasts in a compact triangular grid
-categories:
-  - Meta-Analysis
-  - league-table
-  - nma
-  - pairwise
----
-
 ## Introduction
 
 The league table is the standard summary display for a network meta-analysis (NMA). It packs every pairwise treatment contrast — direct, indirect, and mixed — into a single triangular or square grid, making the relative ranking of all interventions visible at a glance. Each diagonal cell labels a treatment; each off-diagonal cell reports the pooled contrast between row and column with its 95 % confidence (or credible) interval. League tables are now a standard reporting requirement in the PRISMA-NMA extension because they communicate the entire network's information in a way that no single forest plot can.

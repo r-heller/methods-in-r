@@ -1,14 +1,3 @@
----
-title: Effect (Deviation) Coding
-date: "2026-04-17"
-description: "Sum-to-zero contrasts: coefficients as deviations from the grand mean"
-categories:
-  - "Regression & Modelling"
-  - effect-coding
-  - deviation-contrast
-  - sum-to-zero
----
-
 ## Introduction
 
 Effect coding — also called deviation coding or sum-to-zero coding — represents a factor's levels as deviations from the grand mean rather than as differences from a single reference level. The intercept becomes the grand mean and each coefficient becomes a level-vs-grand-mean deviation, with all level deviations summing to zero. This symmetric interpretation is the right framing for factorial ANOVA and for any analysis where no single level is naturally privileged as "reference".

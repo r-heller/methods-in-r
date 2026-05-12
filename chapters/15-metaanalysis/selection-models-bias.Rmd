@@ -1,14 +1,3 @@
----
-title: Selection Models for Publication Bias
-date: "2026-04-17"
-description: Weighted-distribution models for adjusting meta-analysis for selection
-categories:
-  - Meta-Analysis
-  - selection
-  - publication-bias
-  - weighted
----
-
 ## Introduction
 
 Selection models address publication bias more rigorously than trim-and-fill or simple regression-based asymmetry tests. They posit an explicit weight function describing how the probability of publication depends on a study's $p$-value or effect magnitude, then re-estimate the pooled effect under that assumed selection mechanism to recover a bias-adjusted estimate. Where trim-and-fill is descriptive and triangular in its assumption, selection models are formally model-based and yield likelihood-ratio tests of the selection hypothesis itself. The cost is stronger parametric assumptions about the form of the selection process, which means selection models are most useful when the meta-analysis is large enough that the selection function can be reasonably identified from the data.

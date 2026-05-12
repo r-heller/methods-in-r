@@ -1,14 +1,3 @@
----
-title: "Slutsky's Theorem"
-date: "2026-04-17"
-description: Combining convergence in distribution and in probability for asymptotic arguments
-categories:
-  - Statistical Foundations
-  - slutsky
-  - asymptotic
-  - convergence
----
-
 ## Introduction
 
 Slutsky's theorem is one of the workhorse results of asymptotic statistics. It says that we can substitute a consistent estimator for a constant in an asymptotic statement, without changing the limiting distribution. This simple-sounding result is what makes the Wald statistic have an asymptotic standard-normal distribution, what justifies using the sample SD in place of the population SD in a t-statistic's denominator, and what underlies countless routine asymptotic arguments in applied work.

@@ -1,15 +1,3 @@
----
-title: One-Proportion Test
-date: "2026-04-17"
-description: Testing whether an observed proportion differs from a pre-specified reference; exact and score-based methods
-categories:
-  - Inferential Statistics
-  - proportion
-  - binomial
-  - wilson
-  - clopper-pearson
----
-
 ## Introduction
 
 The one-proportion test compares an observed success proportion $\hat{p}$ to a benchmark $p_0$. Applications: a phase II response rate compared to a historical control; a screening positive rate compared to a national reference; the success rate of a surgical procedure compared to a target.

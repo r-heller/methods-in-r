@@ -1,7 +1,3 @@
----
-title: "07. Regression & Modelling"
----
-
 # Regression & Modelling {#sec-ch-07-regression}
 
 Linear models, GLMs, GAMs, non-linear least squares, the ANOVA family, ANCOVA, robust regression, residual diagnostics, calibration, and decision-curve analysis. The chapter treats regression as a single object viewed from different angles.

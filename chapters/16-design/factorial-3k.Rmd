@@ -1,14 +1,3 @@
----
-title: 3^k Factorial Designs
-date: "2026-04-17"
-description: Full factorial experiments with k three-level factors
-categories:
-  - Experimental Design
-  - factorial
-  - 3k
-  - quadratic
----
-
 ## Introduction
 
 The $3^k$ factorial design uses three coded levels per factor — low ($-1$), middle ($0$), and high ($+1$) — and runs all $3^k$ combinations. The third level is what distinguishes the $3^k$ family from the simpler $2^k$ family: with three levels the design supports estimation of pure quadratic terms in each factor, and therefore the second-order polynomial approximation to a smooth response surface. The $3^k$ factorial is the simplest full-factorial construction that captures curvature and is the conceptual ancestor of the modern response-surface designs (central composite, Box-Behnken) that economise on the run count by replacing the dense $3^k$ grid with sparser alternatives carrying the same second-order information.

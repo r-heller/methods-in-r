@@ -1,14 +1,3 @@
----
-title: Hurdle Models
-date: "2026-04-17"
-description: "Two-part count models: binary decision for zero vs. non-zero, plus truncated count for positives"
-categories:
-  - "Regression & Modelling"
-  - hurdle
-  - truncated
-  - two-part
----
-
 ## Introduction
 
 Hurdle models split count outcomes into two distinct processes: a Bernoulli decision for zero versus non-zero, and a zero-truncated count distribution for the positive counts. They are appropriate when the question of "did anything happen?" is conceptually different from "given that something happened, how much?" — for example, healthcare visits (decided to see a doctor at all, then number of visits), insurance claims, hospital admissions for a rare condition.

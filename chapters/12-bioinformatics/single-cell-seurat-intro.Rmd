@@ -1,14 +1,3 @@
----
-title: Single-Cell with Seurat
-date: "2026-04-17"
-description: End-to-end workflow for single-cell RNA-seq analysis in Seurat
-categories:
-  - Bioinformatics
-  - scrnaseq
-  - seurat
-  - workflow
----
-
 ## Introduction
 
 Seurat is the most widely used R framework for single-cell RNA-seq (scRNA-seq) analysis. A standard Seurat workflow loads a count matrix from Cell Ranger or a similar source, performs quality control on per-cell metrics, normalises expression, selects variable features, scales, runs dimensionality reduction (PCA + UMAP/t-SNE), clusters cells, and identifies marker genes. The framework's strength is its end-to-end coverage and large user community; the alternative Bioconductor stack (`SingleCellExperiment` + `scran`) offers comparable functionality with tighter integration into the broader Bioconductor ecosystem.

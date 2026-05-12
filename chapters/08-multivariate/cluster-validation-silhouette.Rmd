@@ -1,13 +1,3 @@
----
-title: "Cluster Validation: Silhouette"
-date: "2026-04-17"
-description: Measuring how well each observation fits its assigned cluster relative to neighbouring clusters
-categories:
-  - Multivariate Statistics
-  - silhouette
-  - cluster-validation
----
-
 ## Introduction
 
 The silhouette is the most widely used internal validation metric for clustering. For each observation, it compares the mean distance to others in its own cluster against the mean distance to the nearest competing cluster, returning a value between $-1$ and $+1$. Values near 1 indicate observations comfortably inside their assigned cluster; values near 0 indicate ambiguous assignments on a cluster boundary; negative values indicate observations that would fit better in a different cluster. Averaging silhouettes across observations gives a single number summarising cluster quality without needing labels or external references.

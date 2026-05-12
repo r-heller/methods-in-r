@@ -1,13 +1,3 @@
----
-title: "Log-Rank Test: Details"
-date: "2026-04-17"
-description: Weighted and stratified log-rank test for comparing survival across groups
-categories:
-  - Survival Analysis
-  - log-rank
-  - survival-comparison
----
-
 ## Introduction
 
 The log-rank test is the standard non-parametric test for comparing survival across two or more groups in randomised trials and observational studies. It accumulates differences between observed and expected event counts at each event time across the follow-up window and reports a chi-squared statistic. The test is most powerful under proportional hazards — the alternative for which it was designed — but variants (weighted log-rank, stratified log-rank) extend its applicability to non-proportional or covariate-adjusted settings.

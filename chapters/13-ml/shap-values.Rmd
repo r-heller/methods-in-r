@@ -1,14 +1,3 @@
----
-title: SHAP Values
-date: "2026-04-17"
-description: Game-theoretic local feature attributions via Shapley values
-categories:
-  - Machine Learning
-  - shap
-  - shapley
-  - interpretability
----
-
 ## Introduction
 
 SHAP (SHapley Additive exPlanations; Lundberg & Lee, 2017) attributes each prediction to input features via the Shapley value from cooperative game theory. It is the only attribution method satisfying the combined axioms of local accuracy, consistency, and missingness. SHAP has become the standard for black-box model interpretability.

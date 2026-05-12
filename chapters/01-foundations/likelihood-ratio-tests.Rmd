@@ -1,15 +1,3 @@
----
-title: Likelihood Ratio Tests
-date: "2026-04-17"
-description: "Comparing nested models by the ratio of maximised likelihoods, with Wilks' asymptotic chi-squared"
-categories:
-  - Statistical Foundations
-  - likelihood-ratio
-  - wilks
-  - nested-models
-  - hypothesis-test
----
-
 ## Introduction
 
 The likelihood ratio test (LRT) compares two nested statistical models by the ratio of their maximised likelihoods. If the added parameters in the larger model help explain the data, the ratio departs from one by a predictable amount; Wilks' theorem gives that amount an asymptotic chi-squared distribution, turning the ratio into a usable p-value. LRTs underlie model-comparison tools throughout GLMs, mixed models, survival analysis, and beyond.

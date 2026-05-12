@@ -1,15 +1,3 @@
----
-title: Null and Alternative Hypotheses
-date: "2026-04-17"
-description: "Formulating H0 and H1, choosing one- vs two-sided tests, and avoiding post-hoc reformulation"
-categories:
-  - Inferential Statistics
-  - hypothesis
-  - "null"
-  - alternative
-  - one-sided
----
-
 ## Introduction
 
 Every hypothesis test begins with two hypotheses: a **null** that captures the status quo and an **alternative** that captures what we would conclude if the null is rejected. Stating both clearly, before the data arrive, is the crucial first step -- and a remarkably common source of error when skipped.

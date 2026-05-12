@@ -1,14 +1,3 @@
----
-title: Pivotal Quantities
-date: "2026-04-17"
-description: "Functions of data and parameter whose distribution does not depend on the parameter, and the CIs they produce"
-categories:
-  - Statistical Foundations
-  - pivot
-  - confidence-interval
-  - exact-inference
----
-
 ## Introduction
 
 A pivotal quantity -- or pivot -- is a function of the data and the parameter whose probability distribution does not depend on the parameter. The existence of a pivot is what makes exact confidence intervals possible: if $Q(X, \theta)$ has a known distribution, we can rearrange the probability statement about $Q$ into a probability statement about $\theta$, and that rearrangement is the CI.

@@ -1,15 +1,3 @@
----
-title: Friedman Test
-date: "2026-04-17"
-description: Non-parametric test for three or more paired / repeated measures
-categories:
-  - Inferential Statistics
-  - friedman
-  - repeated-measures
-  - ranks
-  - non-parametric
----
-
 ## Introduction
 
 The Friedman test, introduced by Milton Friedman in 1937, compares three or more paired or repeated measurements without requiring distributional assumptions about the underlying outcomes. It is the rank-based non-parametric analogue of the one-way repeated-measures ANOVA, making it the appropriate choice when the outcome is ordinal, when residuals are markedly non-Normal, or when sample size is too small for the parametric test's distributional assumptions to be defensible. Friedman's test is widely used in sensory-evaluation panels, in within-subject behavioural and clinical studies with small samples, and in agricultural block-design experiments where variance heterogeneity across blocks is a concern.

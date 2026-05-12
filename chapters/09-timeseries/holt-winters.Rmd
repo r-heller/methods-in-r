@@ -1,14 +1,3 @@
----
-title: Holt-Winters Method
-date: "2026-04-17"
-description: "Triple exponential smoothing with level, trend, and seasonal components"
-categories:
-  - Time Series Analysis
-  - holt-winters
-  - seasonal
-  - exponential-smoothing
----
-
 ## Introduction
 
 The Holt-Winters method extends exponential smoothing to handle both trend and seasonality via three coupled smoothing equations — level, trend, and seasonal — each with its own smoothing parameter. It is the seasonal generalisation of Holt's linear method and the conceptual ancestor of the modern ETS family. Its strength is interpretability and competitive forecasting performance with relatively few parameters; its weakness is the assumption of a fixed seasonal period and stable parameters across the entire series.

@@ -1,15 +1,3 @@
----
-title: Heatmaps
-date: "2026-04-17"
-description: "Matrix displays with colour-encoded cell values, optionally with row/column ordering"
-categories:
-  - Data Visualisation
-  - heatmap
-  - geom_tile
-  - pheatmap
-  - complexheatmap
----
-
 ## Introduction
 
 A heatmap displays a matrix as a grid of coloured cells, with numerical values encoded by colour. The geom is a workhorse across genomics (gene-expression matrices), clinical research (cross-tabulations of conditions and measurements), classifier evaluation (confusion matrices), and exploratory data analysis (correlation matrices). Two design choices dominate readability: the colour palette (sequential, diverging, or qualitative) and the row / column order, which often comes from hierarchical clustering on rows, columns, or both.

@@ -1,15 +1,3 @@
----
-title: Cochran-Mantel-Haenszel Test
-date: "2026-04-17"
-description: Stratified analysis of 2x2 tables across levels of a confounding variable
-categories:
-  - Inferential Statistics
-  - cmh
-  - stratified
-  - 2x2
-  - confounding
----
-
 ## Introduction
 
 The Cochran-Mantel-Haenszel (CMH) test combines 2x2 tables across levels of a stratifying variable, producing a pooled odds ratio and a single test of association adjusted for the stratifier. It is the categorical analogue of Mantel-Haenszel stratified analysis in epidemiology and of two-way ANOVA without interaction.

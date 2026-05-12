@@ -1,14 +1,3 @@
----
-title: Integration with Harmony
-date: "2026-04-17"
-description: Removing batch effects in scRNA-seq while preserving biological variation
-categories:
-  - Bioinformatics
-  - scrnaseq
-  - integration
-  - harmony
----
-
 ## Introduction
 
 Datasets from different batches, donors, or technologies cluster by batch rather than biology without correction. Integration methods align shared cell types across datasets while preserving dataset-specific populations. Harmony iteratively centres cell embeddings by batch; Seurat's CCA/RPCA anchors cells between batches.

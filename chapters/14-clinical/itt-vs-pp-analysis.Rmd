@@ -1,14 +1,3 @@
----
-title: ITT vs Per-Protocol Analysis
-date: "2026-04-17"
-description: Primary analyses under the intent-to-treat and per-protocol principles
-categories:
-  - Clinical Biostatistics
-  - itt
-  - per-protocol
-  - analysis
----
-
 ## Introduction
 
 The **intent-to-treat (ITT)** principle analyses participants according to their randomised assignment, irrespective of actual treatment received or adherence. It estimates the effect of *prescribing* the intervention under real-world conditions. **Per-protocol (PP)** restricts analysis to adherent participants and estimates the effect of *receiving* the intervention -- a different estimand.

@@ -1,14 +1,3 @@
----
-title: Bayesian Logistic Regression
-date: "2026-04-17"
-description: Logistic regression with MCMC-based posterior for binary outcomes
-categories:
-  - Bayesian Statistics
-  - bayesian-logistic
-  - binary
-  - brms
----
-
 ## Introduction
 
 Bayesian logistic regression keeps the same Bernoulli likelihood and logit link as the maximum-likelihood version but replaces the point estimate of each coefficient with a full posterior distribution. The biggest practical pay-off is robustness in small samples or in the presence of complete or quasi-complete separation, where MLE drifts to $\pm\infty$ but a weakly informative prior pulls the estimate to a finite, defensible value. The posterior also feeds directly into propagated uncertainty for predicted probabilities, an awkward computation in the frequentist world.

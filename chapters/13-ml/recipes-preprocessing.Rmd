@@ -1,14 +1,3 @@
----
-title: Preprocessing with recipes
-date: "2026-04-17"
-description: Leak-free feature engineering in tidymodels with recipes
-categories:
-  - Machine Learning
-  - recipes
-  - preprocessing
-  - tidymodels
----
-
 ## Introduction
 
 The `recipes` package in tidymodels defines preprocessing pipelines as a sequence of named steps — impute missing values, normalise numeric predictors, encode categoricals, apply PCA — that learn their parameters from training data and apply them consistently at prediction time. The principal benefit is leak-free preprocessing: imputation means, scaling parameters, and PCA loadings are estimated only on the training set, never on test or validation folds. Applying preprocessing globally before splitting (a frequent mistake) leaks information from test into training and produces optimistically biased performance estimates.

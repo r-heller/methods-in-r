@@ -1,14 +1,3 @@
----
-title: Augmented Dickey-Fuller Test
-date: "2026-04-17"
-description: Testing for unit roots / non-stationarity against a stationary alternative
-categories:
-  - Time Series Analysis
-  - adf
-  - unit-root
-  - stationarity
----
-
 ## Introduction
 
 The augmented Dickey-Fuller (ADF) test is the canonical test for unit roots in time series. A unit root corresponds to random-walk-like non-stationarity in which shocks have permanent effects on the level of the series; standard regression and ARIMA(p, 0, q) models give nonsense results when applied to such data. The ADF test asks whether a unit root is present and, if rejected, supports modelling the series as stationary (or trend-stationary). Pairing ADF with KPSS gives complementary information: the two tests have flipped null hypotheses, and agreement strengthens the verdict.

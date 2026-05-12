@@ -1,7 +1,3 @@
----
-title: "TRIPOD-AI — prediction models"
----
-
 # TRIPOD-AI — prediction models
 
 TRIPOD-AI — *Transparent Reporting of a multivariable prediction model for Individual Prognosis Or Diagnosis, AI extension* — covers prediction models, including those built with machine learning. The checklist is at <https://www.tripod-statement.org/>. The templates below cover model development, validation, calibration, and fairness reporting.

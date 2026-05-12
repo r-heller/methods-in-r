@@ -1,15 +1,3 @@
----
-title: Drug-Target Interaction Mining
-date: "2026-04-17"
-description: Integrating bioassay databases for drug-target identification
-categories:
-  - Bioinformatics
-  - drug
-  - target
-  - chembl
-  - pharmacology
----
-
 ## Introduction
 
 Drug-target interaction data -- which compounds bind which proteins at what affinity -- underpins target discovery and drug repositioning. Public databases (ChEMBL, DrugBank, PubChem, BindingDB, PharmGKB) archive millions of bioassay measurements; programmatic access lets users assemble custom interaction tables.

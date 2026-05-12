@@ -1,7 +1,3 @@
----
-title: "CONSORT — randomised trials"
----
-
 # CONSORT — randomised trials
 
 CONSORT — *Consolidated Standards of Reporting Trials* — covers randomised controlled trials. The 25-item checklist and flow diagram are at <https://www.consort-statement.org/>. The templates below cover the analytic methods most often used for primary and secondary endpoints in a trial.

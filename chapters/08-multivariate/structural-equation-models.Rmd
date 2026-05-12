@@ -1,15 +1,3 @@
----
-title: Structural Equation Models
-date: "2026-04-17"
-description: Combining measurement (CFA) and structural (path) components for latent-variable regression
-categories:
-  - Multivariate Statistics
-  - sem
-  - lavaan
-  - latent
-  - path-analysis
----
-
 ## Introduction
 
 Structural equation modelling (SEM) is the unified framework that integrates measurement (how observed items reflect underlying latent constructs) and structure (how latent constructs relate to each other) into a single estimation problem. It generalises confirmatory factor analysis (measurement only), path analysis (regressions among observed variables only), and multivariate regression. Modern psychometrics, organisational research, and increasingly clinical-outcomes work depend on SEM as the primary analytical tool because it isolates relationships among true constructs from those distorted by measurement error.

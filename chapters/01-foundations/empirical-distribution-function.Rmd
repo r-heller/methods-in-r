@@ -1,15 +1,3 @@
----
-title: The Empirical Distribution Function
-date: "2026-04-17"
-description: "The sample-based step-function estimator of the CDF, with the DKW inequality for its uniform error"
-categories:
-  - Statistical Foundations
-  - ecdf
-  - cdf
-  - dkw
-  - empirical-distribution
----
-
 ## Introduction
 
 The empirical distribution function (ECDF) is the simplest possible non-parametric estimator of a probability distribution: it puts mass $1/n$ at each observation and returns the resulting step-function CDF. Despite its simplicity, the ECDF is consistent uniformly for the true CDF (Glivenko-Cantelli), has a tight universal error bound (Dvoretzky-Kiefer-Wolfowitz), and underlies every non-parametric statistic built on ranks or percentiles.

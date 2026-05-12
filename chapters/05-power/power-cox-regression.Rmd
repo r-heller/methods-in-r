@@ -1,15 +1,3 @@
----
-title: Power for Cox Regression
-date: "2026-04-17"
-description: "Events-driven sample size: the number of events, not subjects, drives power"
-categories:
-  - "Sample Size & Power"
-  - power
-  - cox-regression
-  - events
-  - hazard-ratio
----
-
 ## Introduction
 
 In survival analysis, statistical power is driven by the number of **events**, not by the number of enrolled subjects. A Cox regression power calculation determines the required events and, from assumed accrual and follow-up, the number of subjects.

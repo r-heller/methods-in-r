@@ -1,8 +1,6 @@
 ---
-title: "Common errors"
 toc: true
 ---
-
 <div class="hero">
 <div class="kicker">
 APPENDIX · COMMON ERRORS

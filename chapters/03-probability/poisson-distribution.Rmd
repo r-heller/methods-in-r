@@ -1,14 +1,3 @@
----
-title: The Poisson Distribution
-date: "2026-04-17"
-description: Counts of rare events per unit time or space with rate λ
-categories:
-  - Probability Theory
-  - poisson
-  - count-data
-  - rate
----
-
 ## Introduction
 
 The Poisson distribution models counts of rare, independent events in a fixed window of time or space. Calls per hour, mutations per kilobase, photons per pixel, hospital admissions per day -- all naturally Poisson when the underlying rate is approximately constant and events do not cluster.

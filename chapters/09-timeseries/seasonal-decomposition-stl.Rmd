@@ -1,14 +1,3 @@
----
-title: Seasonal Decomposition (STL)
-date: "2026-04-17"
-description: Loess-based seasonal-trend decomposition robust to outliers
-categories:
-  - Time Series Analysis
-  - stl
-  - decomposition
-  - loess
----
-
 ## Introduction
 
 STL (Seasonal and Trend decomposition using Loess) is the most flexible classical decomposition method for time series. It separates a series into trend, seasonal, and remainder components using iterative locally-weighted regression (loess) smoothers. Three properties distinguish STL from alternatives: it handles any kind of seasonality (not just monthly or quarterly), it allows the seasonal pattern to change over time, and it is robust to outliers when run with the robust option enabled.

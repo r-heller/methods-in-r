@@ -1,15 +1,3 @@
----
-title: Microbiome Diversity Metrics
-date: "2026-04-17"
-description: Alpha and beta diversity measures for community comparison
-categories:
-  - Bioinformatics
-  - diversity
-  - shannon
-  - unifrac
-  - microbiome
----
-
 ## Introduction
 
 Diversity metrics summarise microbial community composition. **Alpha diversity** measures richness and evenness within a sample; **beta diversity** measures compositional dissimilarity between samples. Both are essential for comparing communities and detecting treatment, disease, or niche effects.

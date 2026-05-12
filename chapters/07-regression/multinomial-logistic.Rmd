@@ -1,14 +1,3 @@
----
-title: Multinomial Logistic Regression
-date: "2026-04-17"
-description: Regression for unordered categorical outcomes with three or more levels
-categories:
-  - "Regression & Modelling"
-  - multinomial
-  - categorical-outcome
-  - softmax
----
-
 ## Introduction
 
 Multinomial logistic regression extends binary logistic regression to outcomes with three or more unordered categories. Where binary logistic models the log-odds of one category vs another, multinomial models the log-relative-risk-ratios of each non-reference category against a chosen reference, simultaneously across all $k - 1$ contrasts. It is the standard tool for predicting voting choice, transportation mode, disease subtype, or any categorical outcome whose categories have no inherent ordering.

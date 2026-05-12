@@ -1,15 +1,3 @@
----
-title: Power for Linear Regression
-date: "2026-04-17"
-description: "Sample size for overall regression F and for individual coefficients via Cohen's f^2"
-categories:
-  - "Sample Size & Power"
-  - power
-  - linear-regression
-  - f-squared
-  - r-squared
----
-
 ## Introduction
 
 Power analysis for linear regression determines the sample size required to detect either an overall non-zero $R^2$ (via the omnibus $F$-test of the regression) or the incremental $R^2$ contributed by adding one or more predictors to a baseline model. Both questions are central to the design of observational and experimental studies that use multiple regression for inference: the omnibus power calculation tells you whether the model as a whole has a chance to be detected, and the incremental power calculation tells you whether a specific block of predictors of scientific interest will be detectable above and beyond control variables. Cohen's $f^2$ effect size unifies these calculations into a single non-central $F$-distribution framework.

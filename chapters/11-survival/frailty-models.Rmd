@@ -1,14 +1,3 @@
----
-title: Frailty Models
-date: "2026-04-17"
-description: "Random effects in survival: unobserved heterogeneity and clustered survival data"
-categories:
-  - Survival Analysis
-  - frailty
-  - random-effects
-  - clustered-survival
----
-
 ## Introduction
 
 A frailty model adds an unobserved multiplicative effect — the frailty — to the hazard, allowing the survival analogue of a random effect. Frailty captures two things: unmeasured heterogeneity at the individual level (the population mixture of "robust" and "fragile" subjects with different baseline hazards), and clustered survival data where observations within a unit (family, hospital, patient with recurrent events) share an unobserved common factor. Without it, standard errors are wrong for clustered data, and population-level hazard ratios are biased toward the null because of the selection-of-survivors effect.

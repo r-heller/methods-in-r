@@ -1,14 +1,3 @@
----
-title: rstanarm
-date: "2026-04-17"
-description: Pre-compiled Stan models with a frequentist-like R interface
-categories:
-  - Bayesian Statistics
-  - rstanarm
-  - stan
-  - bayesian-glm
----
-
 ## Introduction
 
 `rstanarm` is a sister package to `brms` from the Stan team. Where `brms` translates each formula into a fresh Stan program and compiles it on the fly, `rstanarm` ships with a fixed catalogue of pre-compiled models — `stan_lm`, `stan_glm`, `stan_glmer`, `stan_polr`, `stan_betareg`, and a handful of others — that match the most common R regression interfaces. The trade-off is straightforward: no compilation latency at fit time, weakly informative defaults curated by experts, and a learning curve identical to base-R modelling functions, in exchange for less flexibility when the model deviates from the standard catalogue.

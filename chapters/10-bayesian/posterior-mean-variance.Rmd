@@ -1,14 +1,3 @@
----
-title: Posterior Mean and Variance
-date: "2026-04-17"
-description: Point estimates and uncertainty summaries from a posterior distribution
-categories:
-  - Bayesian Statistics
-  - posterior
-  - point-estimate
-  - posterior-mean
----
-
 ## Introduction
 
 A Bayesian analysis returns a full posterior distribution, but applied work eventually demands a number to put in a sentence: a coefficient, a probability, an effect size. The posterior mean, median, and mode are the three most common point summaries, each motivated by a different decision-theoretic loss. The posterior variance and standard deviation quantify the uncertainty around the chosen point. Treating the posterior as the headline and the point estimate as a one-line summary derived from it is a more honest reporting style than collapsing the posterior to a single number first and worrying about uncertainty later.

@@ -1,14 +1,3 @@
----
-title: Crossover RCT Design
-date: "2026-04-17"
-description: Within-subject comparison across treatment periods with washout
-categories:
-  - Clinical Biostatistics
-  - crossover
-  - washout
-  - carryover
----
-
 ## Introduction
 
 A crossover randomised controlled trial assigns each participant to receive two or more treatments in sequence, separated by a washout period, so that every subject acts as their own control across the treatment comparison. The within-subject comparison removes between-subject variability — typically the dominant source of variance in clinical-pharmacology and chronic-disease studies — from the treatment estimate, giving the crossover design substantially more power than a parallel-group RCT of equal total sample size. Crossover designs are particularly common in early-phase clinical pharmacology, bioequivalence studies, sleep and migraine research, and other contexts in which the underlying condition is stable, treatment effects are reversible, and an adequate washout can eliminate pharmacological carryover.

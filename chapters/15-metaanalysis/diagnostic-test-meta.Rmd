@@ -1,14 +1,3 @@
----
-title: Meta-Analysis of Diagnostic Accuracy
-date: "2026-04-17"
-description: Bivariate and HSROC models for pooling diagnostic test performance
-categories:
-  - Meta-Analysis
-  - diagnostic
-  - bivariate
-  - hsroc
----
-
 ## Introduction
 
 Meta-analysis of diagnostic test accuracy pools per-study sensitivity and specificity to summarise how well a test discriminates disease from non-disease across multiple primary studies. Unlike meta-analysis of treatment effects, the two paired outcomes are intrinsically correlated: sensitivity and specificity are determined jointly by the test threshold, so a study choosing a stricter cut-off will trade higher specificity for lower sensitivity. Naively pooling each metric separately ignores this trade-off and produces estimates that misrepresent the test's underlying performance. The modern approach is bivariate random-effects modelling (Reitsma et al., 2005) or hierarchical summary ROC modelling (Rutter and Gatsonis, 2001), both of which respect the correlation structure and yield interpretable summary points and curves.

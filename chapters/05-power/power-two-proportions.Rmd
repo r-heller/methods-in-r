@@ -1,15 +1,3 @@
----
-title: Power for Two-Proportion Test
-date: "2026-04-17"
-description: Sample size for comparing proportions between two independent groups
-categories:
-  - "Sample Size & Power"
-  - power
-  - two-proportion
-  - cohen-h
-  - unequal-n
----
-
 ## Introduction
 
 Comparing proportions between two independent groups is one of the most common designs in clinical research, public-health epidemiology, and quality-control. Whenever the primary outcome is binary — event vs no event, response vs non-response, success vs failure — the trial's sample-size calculation reduces to a two-proportion power analysis. Several closely-related approaches are widely used: Cohen's arcsine-transformed effect size $h$ that maps cleanly to a Normal-approximation formula, direct sample-size formulas in the original-proportion scale (e.g., Kelsey's formula with continuity correction), and exact Fisher-based methods for rare events. The choice depends on the expected event rates, the desired allocation ratio, and the regulatory or methodological context.

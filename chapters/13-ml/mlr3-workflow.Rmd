@@ -1,14 +1,3 @@
----
-title: A Complete mlr3 Workflow
-date: "2026-04-17"
-description: "End-to-end modelling with mlr3: tasks, learners, resamplings, and tuning"
-categories:
-  - Machine Learning
-  - mlr3
-  - workflow
-  - tasks
----
-
 ## Introduction
 
 `mlr3` is the modern R6-based successor to `mlr`, a feature-complete machine-learning framework that abstracts around five core objects: Tasks (data + target + roles), Learners (algorithms), Resamplings (CV schemes), Tuners (search strategies), and Benchmarks (multi-learner comparisons). Like `tidymodels`, mlr3 provides a unified interface across dozens of underlying engines; unlike tidymodels, it uses R6 object-oriented classes rather than tibbles, giving more flexibility but a steeper learning curve.

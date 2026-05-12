@@ -1,15 +1,3 @@
----
-title: Poisson Regression
-date: "2026-04-17"
-description: Log-linear count regression with rates and offsets
-categories:
-  - "Regression & Modelling"
-  - poisson
-  - count-regression
-  - offset
-  - rate
----
-
 ## Introduction
 
 Poisson regression models count data with a log link, making it the canonical GLM for events per unit exposure: hospital admissions per month, mutations per kilobase, falls per resident-year. The log-linear structure means coefficients are interpretable as log-rate ratios, and the model accommodates varying exposures naturally through an offset term. The defining assumption — equidispersion, $\mathrm{Var}(Y) = \mathbb E[Y]$ — is also its main limitation: real count data are typically overdispersed, and either quasi-Poisson, negative binomial, or zero-inflated extensions are then required.

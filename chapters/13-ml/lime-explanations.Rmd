@@ -1,14 +1,3 @@
----
-title: LIME Explanations
-date: "2026-04-17"
-description: Local Interpretable Model-Agnostic Explanations via surrogate linear models
-categories:
-  - Machine Learning
-  - lime
-  - interpretability
-  - surrogate
----
-
 ## Introduction
 
 LIME (Ribeiro, Singh, Guestrin 2016) explains a single prediction by fitting a sparse linear model locally around the point of interest. Samples are perturbed near the observation, labelled with the black-box model, and weighted by distance; the linear surrogate's coefficients describe the local behaviour of the model.

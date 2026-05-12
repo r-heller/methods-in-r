@@ -1,14 +1,3 @@
----
-title: The Brier Score for Survival
-date: "2026-04-17"
-description: Time-dependent prediction loss combining calibration and discrimination
-categories:
-  - Survival Analysis
-  - brier-score
-  - prediction-loss
-  - calibration
----
-
 ## Introduction
 
 The Brier score for survival is a prediction-loss metric that combines calibration and discrimination into one number, evaluated at a chosen time horizon $t$. It generalises the binary Brier score to right-censored data via inverse-probability-of-censoring weights, so a model that predicts a survival probability $\hat S_i(t)$ for each subject can be assessed against the actual observed status at $t$. Unlike the C-index, which captures only ranking, the Brier score penalises miscalibrated probabilities — a model that ranks well but consistently overpredicts survival will score worse on Brier than on concordance.

@@ -1,15 +1,3 @@
----
-title: "Power Analysis: Introduction"
-date: "2026-04-17"
-description: The four quantities of power analysis and how they trade against each other in study design
-categories:
-  - "Sample Size & Power"
-  - power-analysis
-  - sample-size
-  - effect-size
-  - alpha
----
-
 ## Introduction
 
 Power analysis turns four quantities -- effect size, significance level, power, and sample size -- into a single equation: given any three, the fourth is determined. Every responsible study design pins down three of the four in advance to solve for the fourth (usually sample size). Skipping power analysis leaves studies under- or over-powered, with reputational and ethical consequences.

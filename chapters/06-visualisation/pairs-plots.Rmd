@@ -1,14 +1,3 @@
----
-title: Pairs Plots
-date: "2026-04-17"
-description: Scatterplot matrices for exploring pairwise relationships among several continuous variables
-categories:
-  - Data Visualisation
-  - pairs-plot
-  - ggpairs
-  - scatterplot-matrix
----
-
 ## Introduction
 
 A pairs plot — also called a scatterplot matrix — shows every pairwise scatter for a set of continuous variables in a single grid figure. Modern variants enrich the matrix with marginal histograms or densities along the diagonal and correlation coefficients (or other pairwise summaries) in the upper triangle. The result is the single most efficient exploratory diagnostic for a small-to-moderate set of variables: it surfaces non-linearity, outliers, subgroup separation, and multicollinearity in one pass.

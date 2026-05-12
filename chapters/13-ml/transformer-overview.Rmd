@@ -1,14 +1,3 @@
----
-title: "Transformers: Overview"
-date: "2026-04-17"
-description: Self-attention architectures underlying modern NLP and beyond
-categories:
-  - Machine Learning
-  - transformer
-  - attention
-  - seq2seq
----
-
 ## Introduction
 
 The Transformer architecture (Vaswani et al., 2017) replaced recurrent networks as the dominant sequence model. Its core mechanism is **self-attention**: each token attends to every other token in the sequence with learned weights. Transformers underpin BERT, GPT, T5, and modern LLMs, and have expanded into vision (ViT), audio (wav2vec2), and tabular domains.

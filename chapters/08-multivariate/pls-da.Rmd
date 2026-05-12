@@ -1,14 +1,3 @@
----
-title: PLS Discriminant Analysis
-date: "2026-04-17"
-description: PLS extended to classification via dummy-coded class indicators
-categories:
-  - Multivariate Statistics
-  - plsda
-  - classification
-  - mixomics
----
-
 ## Introduction
 
 PLS discriminant analysis (PLS-DA) extends partial least squares regression to classification by dummy-coding the class variable as a binary indicator matrix. It has become a standard tool in metabolomics, transcriptomics, and other omics disciplines because it handles the $p \gg n$ regime gracefully and, in its sparse variant, performs simultaneous classification and feature selection. The output — a small set of latent components plus the discriminant boundary in the projected space — is interpretable in a way that black-box classifiers (random forests, deep nets) often are not.

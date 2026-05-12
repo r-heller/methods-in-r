@@ -1,14 +1,3 @@
----
-title: Response Surface Methodology
-date: "2026-04-17"
-description: Optimising processes via second-order polynomial response surfaces
-categories:
-  - Experimental Design
-  - rsm
-  - optimisation
-  - second-order
----
-
 ## Introduction
 
 Response surface methodology (RSM), introduced by Box and Wilson in 1951, is a sequential experimental strategy for finding and characterising the optimum of a process response in the space of multiple controllable factors. RSM combines fractional or full factorial screening, steepest-ascent search, and second-order polynomial fitting near the optimum into a coherent workflow that has become standard practice in chemical engineering, food science, pharmaceutical formulation, manufacturing process improvement, and any setting where a smooth response surface must be navigated efficiently. Its hallmark is the staged, sequential character: each stage of experimentation informs the next, and only the final stage commits resources to the dense second-order designs needed for full characterisation.

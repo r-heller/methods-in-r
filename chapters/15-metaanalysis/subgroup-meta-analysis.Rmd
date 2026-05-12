@@ -1,14 +1,3 @@
----
-title: Subgroup Meta-Analysis
-date: "2026-04-17"
-description: Pooling within strata and testing for between-subgroup heterogeneity
-categories:
-  - Meta-Analysis
-  - subgroup
-  - heterogeneity
-  - moderator
----
-
 ## Introduction
 
 Subgroup meta-analysis partitions the included studies according to a pre-specified categorical moderator — intervention intensity (low vs high dose), population (paediatric vs adult), risk of bias (low vs unclear vs high), or any clinically meaningful split — and pools within each level. The within-subgroup pooled effects describe how the intervention behaves in each stratum, and a formal between-subgroup test assesses whether the moderator explains a measurable share of between-study heterogeneity. Subgroup analysis is the standard tool for categorical effect modification in evidence synthesis and is required by the Cochrane Handbook whenever the protocol pre-specifies a moderator hypothesis.

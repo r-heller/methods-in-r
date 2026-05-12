@@ -1,13 +1,3 @@
----
-title: Mahalanobis Distance
-date: "2026-04-17"
-description: Scale- and correlation-aware distance for multivariate data
-categories:
-  - Multivariate Statistics
-  - mahalanobis
-  - multivariate-outlier
----
-
 ## Introduction
 
 Mahalanobis distance is the multivariate generalisation of "how many standard deviations from the mean" that respects scale and correlation between variables. Where Euclidean distance treats each axis equally and ignores covariance, Mahalanobis pre-multiplies the deviation by the inverse covariance matrix, so directions with high variance contribute less and correlated directions are decorrelated before measurement. It is the foundation of multivariate outlier detection, the discriminant function in LDA and QDA, and Hotelling's $T^2$ statistic.

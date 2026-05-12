@@ -1,14 +1,3 @@
----
-title: Concordance and the C-Index
-date: "2026-04-17"
-description: Discrimination ability of a survival model measured by concordance probability
-categories:
-  - Survival Analysis
-  - c-index
-  - concordance
-  - discrimination
----
-
 ## Introduction
 
 Harrell's concordance index (C-index) generalises the ROC AUC to censored survival data. It is the probability that, for a randomly chosen pair of subjects, the one with the higher model-predicted risk actually fails first. The C-index is therefore the headline measure of *discrimination* for any survival model — Cox regression, parametric survival, machine-learning predictors — and the default reporting standard alongside the model's coefficients in clinical prediction-model papers.

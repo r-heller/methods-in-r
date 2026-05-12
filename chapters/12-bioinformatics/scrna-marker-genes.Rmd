@@ -1,14 +1,3 @@
----
-title: Finding Marker Genes
-date: "2026-04-17"
-description: Identifying cluster-specific genes for cell-type annotation
-categories:
-  - Bioinformatics
-  - scrnaseq
-  - markers
-  - DE
----
-
 ## Introduction
 
 Marker genes are genes differentially expressed in one cluster relative to others; they drive cell-type annotation, functional interpretation, and the connection between unsupervised clustering and known biology. Seurat's `FindMarkers` and `FindAllMarkers` implement the standard differential-expression tests (Wilcoxon rank-sum, MAST hurdle, DESeq2) on log-normalised or SCT-transformed data, per cluster, against either all other cells or a specified comparison cluster.

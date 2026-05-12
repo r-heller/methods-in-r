@@ -1,14 +1,3 @@
----
-title: Time-Dependent ROC
-date: "2026-04-17"
-description: ROC curves and AUC evaluated at specific follow-up times for survival predictions
-categories:
-  - Survival Analysis
-  - time-dependent-roc
-  - auc
-  - timeROC
----
-
 ## Introduction
 
 Time-dependent ROC extends classical ROC analysis to right-censored survival data. At each chosen evaluation time $t$, the analysis treats subjects observed to fail before $t$ as cases and subjects known to survive past $t$ as controls; subjects censored before $t$ are reweighted via inverse-probability-of-censoring weights. The resulting time-specific AUC summarises how well a continuous risk score (such as a Cox linear predictor) discriminates failures from survivors at $t$. It is the natural extension of the C-index to "what is the AUC at exactly one year" reporting.

@@ -1,14 +1,3 @@
----
-title: Converting Between Effect Sizes
-date: "2026-04-17"
-description: "Moving between standardised mean differences, correlations, and odds ratios"
-categories:
-  - Meta-Analysis
-  - effect-size
-  - conversion
-  - d-to-r
----
-
 ## Introduction
 
 A single meta-analysis often spans studies that report effect sizes in different metrics: some randomised trials report standardised mean differences (Cohen's $d$ or Hedges's $g$), some observational analyses report correlations ($r$), and some binary-outcome studies report odds ratios (OR) or risk ratios (RR). Pooling such heterogeneous evidence requires converting every per-study effect to a common metric — typically $d$ when most studies are continuous, OR when most are binary, or $r$ when most are correlational. Analytical conversion formulas, derived under standard latent-distribution assumptions, map between metrics together with their variances. Doing the conversion correctly — and documenting the assumptions — is critical because naively recycling an effect size between scales without proper variance propagation produces falsely precise pooled estimates.

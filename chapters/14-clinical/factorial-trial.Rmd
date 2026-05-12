@@ -1,14 +1,3 @@
----
-title: Factorial Trials
-date: "2026-04-17"
-description: Simultaneously evaluating multiple interventions via a factorial design
-categories:
-  - Clinical Biostatistics
-  - factorial
-  - interaction
-  - design
----
-
 ## Introduction
 
 Factorial trials test two or more interventions in a single experiment: participants are randomised to each factor independently, producing 2x2 (or higher) cells. The design is efficient if the interventions act independently (no interaction); otherwise the interaction itself becomes the primary finding.

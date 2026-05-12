@@ -1,14 +1,3 @@
----
-title: Contour Plots
-date: "2026-04-17"
-description: Isolines of a 2D scalar field or density
-categories:
-  - Data Visualisation
-  - contour
-  - 2d-density
-  - isolines
----
-
 ## Introduction
 
 A contour plot draws isolines — curves along which a scalar field is constant — over a 2D domain. The same geom serves two related purposes: visualising the joint density of paired observations, where the contours are level sets of a kernel-density estimate, and visualising a deterministic function $z = f(x, y)$, where the contours are mathematical isolines. Both uses share a common visual grammar — peaks, ridges, saddles — and contour plots remain one of the most compact ways to communicate where probability mass concentrates or where a function attains specific values.

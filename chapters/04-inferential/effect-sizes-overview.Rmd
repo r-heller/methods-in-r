@@ -1,15 +1,3 @@
----
-title: "Effect Sizes: Overview"
-date: "2026-04-17"
-description: Why effect sizes matter and which measures apply to which tests
-categories:
-  - Inferential Statistics
-  - effect-size
-  - cohen-d
-  - eta-squared
-  - reporting
----
-
 ## Introduction
 
 A p-value tells you how surprising the data are under the null; an effect size tells you how large the departure is. Publication guidelines (APA, CONSORT, etc.) require both. Large samples can make trivial effects statistically significant, and small samples can leave clinically meaningful effects undetected; the effect size is what distinguishes the two.

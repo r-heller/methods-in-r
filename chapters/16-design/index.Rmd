@@ -1,7 +1,3 @@
----
-title: "16. Experimental Design"
----
-
 # Experimental Design {#sec-ch-16-design}
 
 Study design across the spectrum: observational designs and STROBE, randomised trials, missing-data mechanisms and multiple imputation, mixed-effects models, DAGs and confounding, propensity scores, the g-methods family (IV, DiD, RDD, HTE), compartmental models for outbreaks, and the pre-registration / SAP / replication-crisis literature.

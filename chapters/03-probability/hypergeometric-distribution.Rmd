@@ -1,14 +1,3 @@
----
-title: The Hypergeometric Distribution
-date: "2026-04-17"
-description: Sampling without replacement from a finite population
-categories:
-  - Probability Theory
-  - hypergeometric
-  - without-replacement
-  - fisher-exact
----
-
 ## Introduction
 
 The hypergeometric distribution models the number of successes in a sample drawn without replacement from a finite population. It differs from the binomial by dependence across draws: removing a success reduces the probability of a subsequent success. It underlies Fisher's exact test and audit sampling.

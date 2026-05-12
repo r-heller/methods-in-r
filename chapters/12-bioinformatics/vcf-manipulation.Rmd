@@ -1,14 +1,3 @@
----
-title: VCF Manipulation
-date: "2026-04-17"
-description: "Reading, filtering, and subsetting VCF files in R and on the command line"
-categories:
-  - Bioinformatics
-  - vcf
-  - filtering
-  - variants
----
-
 ## Introduction
 
 VCF (Variant Call Format) is the standard tab-delimited format for representing genotype calls at genomic positions. Whether the data come from whole-genome sequencing, exome sequencing, genotyping arrays, or imputation, downstream analysis nearly always begins by reading, filtering, and subsetting a VCF. The `VariantAnnotation` Bioconductor package provides programmatic access in R; `bcftools` is the command-line workhorse for cohort-scale operations.

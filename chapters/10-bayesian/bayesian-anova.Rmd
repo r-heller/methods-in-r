@@ -1,14 +1,3 @@
----
-title: Bayesian ANOVA
-date: "2026-04-17"
-description: Posterior inference on group differences with credible intervals and contrast comparisons
-categories:
-  - Bayesian Statistics
-  - bayesian-anova
-  - contrast
-  - group-comparison
----
-
 ## Introduction
 
 Classical ANOVA reports an $F$-statistic, a $p$-value, and — if the omnibus is significant — pairwise comparisons with a multiple-testing correction tacked on. A Bayesian ANOVA replaces all of that with a single posterior distribution over the group means and any contrast you care to compute. There is no omnibus to clear before contrasts become legitimate, and there is no multiple-comparison adjustment to argue about, because every contrast already has its own honest credible interval reflecting the joint posterior of the parameters that compose it.

@@ -1,15 +1,3 @@
----
-title: The Central Limit Theorem
-date: "2026-04-17"
-description: "Why the sampling distribution of the mean is approximately normal, and what that means for everyday inference"
-categories:
-  - Statistical Foundations
-  - central-limit-theorem
-  - sampling-distribution
-  - normal-distribution
-  - inference
----
-
 ## Introduction
 
 The central limit theorem (CLT) is the single result that makes classical statistical inference work. It says that when you draw samples of size $n$ from a population with mean $\mu$ and finite variance $\sigma^2$, the distribution of the *sample mean* approaches a normal distribution with mean $\mu$ and variance $\sigma^2/n$ as $n$ grows -- and this is true regardless of the shape of the original population. Almost every t-test, z-test, and confidence interval for a mean rests on this theorem. Without it, the normal distribution would have no privileged role; with it, the normal is the attractor toward which sample means are pulled.

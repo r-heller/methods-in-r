@@ -1,14 +1,3 @@
----
-title: Minimum Detectable Effect
-date: "2026-04-17"
-description: Solving for the smallest effect that can be detected at a given sample size and power
-categories:
-  - "Sample Size & Power"
-  - mde
-  - detectable-effect
-  - power-analysis
----
-
 ## Introduction
 
 When the sample size for a study is constrained by budget, time, or availability of participants, the natural planning question is no longer "what $n$ achieves target power?" but instead "given my fixed $n$, what is the smallest effect I can reasonably hope to detect?" The minimum detectable effect (MDE) reverses the usual sample-size calculation, solving for the effect size at which power equals the target — typically 80 % — given the fixed $n$, $\alpha$, and analysis. Reporting an MDE is increasingly required for grant applications with constrained sample sizes, for pilot and exploratory studies, and for honest power-analysis reporting where a study cannot afford to enrol enough participants for the original target.

@@ -1,14 +1,3 @@
----
-title: Cross-Tabulations
-date: "2026-04-17"
-description: Two-way and higher-dimensional tables for joint distributions of categorical variables
-categories:
-  - Descriptive Statistics
-  - cross-tab
-  - contingency-table
-  - joint-distribution
----
-
 ## Introduction
 
 A cross-tabulation shows the joint distribution of two categorical variables. It is the first look at whether the variables are associated and is the input to chi-squared, Fisher's exact, and other tests of independence.

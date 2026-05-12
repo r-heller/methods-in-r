@@ -1,14 +1,3 @@
----
-title: Phillips-Perron Test
-date: "2026-04-17"
-description: Non-parametric adjustment of the Dickey-Fuller test for autocorrelation and heteroscedasticity
-categories:
-  - Time Series Analysis
-  - phillips-perron
-  - unit-root
-  - non-parametric
----
-
 ## Introduction
 
 The Phillips-Perron (PP) test is a unit-root test that modifies the Dickey-Fuller statistic to account for autocorrelation and heteroscedasticity in the errors non-parametrically. Where the augmented Dickey-Fuller test handles serial correlation by including lagged differences in the regression, PP applies a Newey-West long-run variance correction directly to the test statistic. The two approaches usually agree; PP is preferable when the lag specification of ADF is uncertain or when heteroscedasticity is suspected.

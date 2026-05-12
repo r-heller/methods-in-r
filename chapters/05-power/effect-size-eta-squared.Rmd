@@ -1,15 +1,3 @@
----
-title: "Effect Size: Eta-Squared"
-date: "2026-04-17"
-description: "Proportion of variance explained in ANOVA and its partial, generalised, and omega variants"
-categories:
-  - "Sample Size & Power"
-  - effect-size
-  - eta-squared
-  - anova
-  - variance-explained
----
-
 ## Introduction
 
 Eta-squared ($\eta^2$) is the standard effect-size measure for analysis of variance: the proportion of total variance in the outcome attributable to a factor. It complements the omnibus $F$-test, which reports significance, by quantifying magnitude — how much of the variability in the response is explained by the categorical factor of interest. Several variants of eta-squared are widely used in different ANOVA designs: classical $\eta^2$ in one-way designs, partial $\eta_p^2$ in factorial between-subjects designs, generalised $\eta_G^2$ in mixed designs that combine between- and within-subjects factors, and omega-squared $\omega^2$ as an unbiased alternative preferred in small samples. Reporting the appropriate variant alongside the $F$-test result is now standard in psychology, neuroscience, and clinical-trial publications.

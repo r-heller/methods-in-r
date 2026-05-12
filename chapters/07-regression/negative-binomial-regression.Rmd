@@ -1,14 +1,3 @@
----
-title: Negative Binomial Regression
-date: "2026-04-17"
-description: Count regression with explicit variance-dispersion parameter for overdispersed data
-categories:
-  - "Regression & Modelling"
-  - negative-binomial
-  - nb
-  - overdispersion
----
-
 ## Introduction
 
 Negative binomial (NB) regression is the standard remedy for overdispersed count data — counts whose variance exceeds the mean, which is most real-world count data once any unobserved heterogeneity is present. It generalises Poisson regression by adding a dispersion parameter $\theta$ that explicitly models the additional variance, so confidence intervals and tests respect the true uncertainty rather than the artificially narrow Poisson ones. For epidemiological count data, hospital admissions, ecological abundance counts, and almost any context where Poisson dispersion checks fail, NB is the natural next step.

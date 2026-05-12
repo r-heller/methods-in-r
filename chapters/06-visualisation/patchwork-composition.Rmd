@@ -1,14 +1,3 @@
----
-title: "Patchwork: Multi-Plot Composition"
-date: "2026-04-17"
-description: Composing multiple ggplot objects into a single figure with the patchwork package
-categories:
-  - Data Visualisation
-  - patchwork
-  - composition
-  - multi-panel
----
-
 ## Introduction
 
 Almost every journal-worthy figure is a composition: two or more panels arranged with shared legends, alphabetical tags, a unifying title, and aligned axes. Building such figures by hand with `gridExtra` or `cowplot` is verbose and brittle to layout changes. The `patchwork` package replaces that workflow with arithmetic-like operators that mirror the way the figure is read: `+` for "next to", `/` for "below", `|` for "in a row". Combined with `plot_layout()` for relative sizes and `plot_annotation()` for shared titles and tags, it is now the standard tool for assembling multi-panel `ggplot2` figures.

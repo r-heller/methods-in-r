@@ -1,15 +1,3 @@
----
-title: The Grammar of Graphics
-date: "2026-04-17"
-description: "Understanding ggplot2 as a layered grammar: data, mappings, geoms, stats, scales, coordinates, facets, and themes"
-categories:
-  - Data Visualisation
-  - ggplot2
-  - grammar-of-graphics
-  - visualisation
-  - layered-graphics
----
-
 ## Introduction
 
 `ggplot2` is the dominant plotting system in R because it is built on a principled grammar rather than an ad-hoc collection of plot types. Every plot is constructed from the same seven building blocks: data, aesthetic mappings, geometric objects (geoms), statistical transformations, scales, coordinate systems, and faceting. Once the grammar is internalised, the vast library of plot types reduces to a small set of decisions in a common vocabulary.

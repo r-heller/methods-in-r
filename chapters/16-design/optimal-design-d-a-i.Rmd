@@ -1,14 +1,3 @@
----
-title: "Optimal Designs: D, A, I"
-date: "2026-04-17"
-description: "D-, A-, I-, and G-optimality criteria for computer-generated designs"
-categories:
-  - Experimental Design
-  - optimal-design
-  - d-optimal
-  - criteria
----
-
 ## Introduction
 
 Computer-generated optimal designs minimise a chosen criterion on the information matrix. When a standard design does not fit constraints (irregular region, mixed-level factors, restricted runs), optimal designs are the primary recourse.

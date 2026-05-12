@@ -1,14 +1,3 @@
----
-title: Coefficient of Variation
-date: "2026-04-17"
-description: "Scale-free dispersion: the ratio of the standard deviation to the mean"
-categories:
-  - Descriptive Statistics
-  - coefficient-of-variation
-  - cv
-  - relative-dispersion
----
-
 ## Introduction
 
 The coefficient of variation (CV) is the ratio of the standard deviation to the mean, usually expressed as a percentage. It provides a scale-free measure of dispersion, useful for comparing variability across variables measured on different units or at very different magnitudes. In laboratory medicine, the CV is the standard metric for assay precision; a CV below 5% is typical for a clinical chemistry assay.

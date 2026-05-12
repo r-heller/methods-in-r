@@ -1,14 +1,3 @@
----
-title: "Jeffreys' Prior"
-date: "2026-04-17"
-description: Invariant reference prior proportional to the square root of the Fisher information
-categories:
-  - Bayesian Statistics
-  - jeffreys
-  - reference-prior
-  - invariance
----
-
 ## Introduction
 
 Jeffreys' prior is the classical "objective" or "reference" prior in Bayesian inference. Defined as proportional to the square root of the Fisher information, it has the elegant property of being invariant under monotone reparameterisation: the prior on a transformation $\eta = g(\theta)$ derived from the Jeffreys prior on $\theta$ equals the Jeffreys prior derived directly for $\eta$. This invariance — absent from a flat prior, which is parameterisation-dependent — is what historically made Jeffreys' rule the default attempt at a non-informative prior. In modern Bayesian practice, however, weakly informative priors have largely displaced it because they regularise small-sample inference more reliably and behave better in hierarchical models.

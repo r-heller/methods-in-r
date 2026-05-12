@@ -1,14 +1,3 @@
----
-title: Crossover Designs
-date: "2026-04-17"
-description: Within-subject comparison of treatments with washout and carryover consideration
-categories:
-  - Experimental Design
-  - crossover
-  - ab-ba
-  - carryover
----
-
 ## Introduction
 
 Crossover designs apply two or more treatments to each subject in sequence, separated by washout periods, so that every subject acts as their own control. The within-subject comparison gains substantial efficiency over parallel-group designs because between-subject variability — typically the largest component of variance in clinical-pharmacology studies — is removed from the treatment contrast. The simplest and most widely used crossover is the two-period two-treatment AB/BA design, in which half of the subjects receive treatment A in period 1 and B in period 2, and the other half receive the reverse sequence. Crossovers are standard in bioequivalence studies, in early-phase clinical pharmacology, and in many sensory and ergonomic experiments where conditions can be evaluated repeatedly on the same subject.

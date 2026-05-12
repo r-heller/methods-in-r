@@ -1,14 +1,3 @@
----
-title: KPSS Test
-date: "2026-04-17"
-description: Testing for stationarity (null) against a unit-root alternative
-categories:
-  - Time Series Analysis
-  - kpss
-  - stationarity
-  - unit-root
----
-
 ## Introduction
 
 The Kwiatkowski-Phillips-Schmidt-Shin (KPSS) test is the natural complement to the augmented Dickey-Fuller (ADF) test for assessing stationarity. The two tests have flipped null hypotheses: ADF tests a unit-root null against a stationary alternative; KPSS tests a stationary null against a unit-root alternative. Running both and comparing their conclusions gives a more robust verdict than either alone, because a single test that fails to reject is uninformative — failure to reject a unit-root null is not evidence of stationarity, and vice versa.

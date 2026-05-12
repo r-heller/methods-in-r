@@ -1,14 +1,3 @@
----
-title: Funnel Plots
-date: "2026-04-17"
-description: Visual inspection for small-study effects and publication bias
-categories:
-  - Meta-Analysis
-  - funnel-plot
-  - publication-bias
-  - asymmetry
----
-
 ## Introduction
 
 The funnel plot, introduced by Light and Pillemer in 1984, is the classical visual diagnostic for publication bias and small-study effects in meta-analysis. Each study contributes a single point whose horizontal coordinate is the effect estimate and whose vertical coordinate is precision (typically standard error or its inverse). Under the null of no bias and homogeneous true effect, the plot resembles a symmetric inverted funnel: large, precise studies cluster near the pooled estimate at the top and smaller, less precise studies fan out symmetrically below. Asymmetry — a visible empty zone in one of the two lower corners — is the canonical visual red flag that smaller studies with effects in one direction may be missing from the synthesis, often because they were never published.

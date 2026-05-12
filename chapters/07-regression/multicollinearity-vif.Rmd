@@ -1,15 +1,3 @@
----
-title: Multicollinearity and VIF
-date: "2026-04-17"
-description: "Variance inflation factors, condition numbers, and remedies for collinear predictors"
-categories:
-  - "Regression & Modelling"
-  - multicollinearity
-  - vif
-  - condition-number
-  - ridge
----
-
 ## Introduction
 
 Multicollinearity describes the situation in which predictors in a regression are strongly linearly related to each other. Coefficient estimates remain unbiased under multicollinearity, but their standard errors inflate, making individual effects hard to attribute reliably and producing the classic "the model is significant overall but no individual coefficient is" pattern. Diagnosing collinearity, deciding whether it matters for the inferential question, and choosing an appropriate remedy are routine parts of every multivariable regression workflow.

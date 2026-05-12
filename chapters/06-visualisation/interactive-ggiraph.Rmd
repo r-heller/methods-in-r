@@ -1,14 +1,3 @@
----
-title: Interactive Plots with ggiraph
-date: "2026-04-17"
-description: "Interactive SVG-based ggplot extensions with per-element hover, click, and selection"
-categories:
-  - Data Visualisation
-  - interactive
-  - ggiraph
-  - svg
----
-
 ## Introduction
 
 Where `plotly` translates `ggplot2` figures into a separate JavaScript engine, `ggiraph` keeps the original `ggplot2` rendering and adds SVG event handlers to individual elements — points, bars, polygons. The result is interactivity that preserves `ggplot2`'s native typography, themes, and palettes, with sharp vector output that scales cleanly to print and screen alike. Tooltips, click events, hover highlighting, and Shiny linkage come from a small set of `*_interactive` geoms that mirror their `ggplot2` counterparts.

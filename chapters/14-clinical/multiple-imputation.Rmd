@@ -1,14 +1,3 @@
----
-title: Multiple Imputation
-date: "2026-04-17"
-description: "Imputing multiple plausible values and combining via Rubin's rules"
-categories:
-  - Clinical Biostatistics
-  - multiple-imputation
-  - mice
-  - rubin
----
-
 ## Introduction
 
 Multiple imputation (MI; Rubin 1987) replaces each missing value with $m > 1$ plausible values drawn from the posterior predictive distribution of the missing data given the observed. The analysis is run on each of the $m$ completed datasets; Rubin's rules combine the results into a single inference reflecting both within-imputation and between-imputation uncertainty.

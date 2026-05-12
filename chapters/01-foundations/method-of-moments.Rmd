@@ -1,14 +1,3 @@
----
-title: The Method of Moments
-date: "2026-04-17"
-description: Estimate parameters by equating theoretical moments to their sample counterparts
-categories:
-  - Statistical Foundations
-  - method-of-moments
-  - estimator
-  - moments
----
-
 ## Introduction
 
 The method of moments (MoM) is the oldest systematic technique for parameter estimation. It replaces theoretical moments of a distribution with their sample counterparts and solves the resulting equations for the parameters. MoM estimators are typically consistent and easy to derive, making them useful both as standalone estimators and as starting values for more refined procedures like maximum likelihood.

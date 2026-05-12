@@ -1,13 +1,3 @@
----
-title: Schoenfeld Residuals
-date: "2026-04-17"
-description: Residuals that test the proportional-hazards assumption in Cox regression
-categories:
-  - Survival Analysis
-  - schoenfeld
-  - proportional-hazards
----
-
 ## Introduction
 
 Schoenfeld residuals are the standard diagnostic for the proportional-hazards (PH) assumption in Cox regression. They are computed at each event time as the difference between the failing subject's covariate value and the expected covariate value across the risk set. Under PH, Schoenfeld residuals are uncorrelated with time; a trend across time signals that the hazard ratio is itself time-varying, which violates the central assumption of the Cox model and invalidates a single-number hazard-ratio interpretation.

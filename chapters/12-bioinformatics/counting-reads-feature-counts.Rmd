@@ -1,14 +1,3 @@
----
-title: Counting Reads with featureCounts
-date: "2026-04-17"
-description: Assigning reads to genes or genomic features from a BAM file
-categories:
-  - Bioinformatics
-  - featurecounts
-  - htseq
-  - gene-counts
----
-
 ## Introduction
 
 After read alignment, the next step in most RNA-seq pipelines is summarising aligned reads into per-gene (or per-feature) count matrices for differential-expression analysis. `featureCounts` (in `Rsubread`) and HTSeq-count are the two standard tools; both consume BAM files plus a GTF annotation and produce a gene-by-sample count matrix. The choices that matter — strand-specificity, multi-mapper handling, paired-end mode, and meta-feature aggregation — directly affect downstream conclusions and must match the experimental library prep.

@@ -1,14 +1,3 @@
----
-title: Random Forests
-date: "2026-04-17"
-description: Bagging decision trees with random feature subsets for robust ensembles
-categories:
-  - Machine Learning
-  - random-forest
-  - bagging
-  - ensemble
----
-
 ## Introduction
 
 Random forests, introduced by Breiman in 2001, average predictions from many bootstrapped decision trees, each trained with a random subset of features considered at every split. Two sources of randomness — bootstrap row sampling and feature subsampling — decorrelate the trees and dramatically reduce variance compared with a single tree. The result is a strong off-the-shelf baseline for tabular data: minimal hyperparameter tuning, robust to outliers and irrelevant features, and providing free out-of-bag (OOB) error estimation as a side effect of the bootstrap.

@@ -1,14 +1,3 @@
----
-title: LightGBM
-date: "2026-04-17"
-description: Histogram-based leaf-wise gradient boosting for large datasets
-categories:
-  - Machine Learning
-  - lightgbm
-  - boosting
-  - histogram
----
-
 ## Introduction
 
 LightGBM (Ke et al., 2017) is a gradient-boosting framework engineered for very large datasets. It introduces several optimisations over XGBoost: histogram-based split finding (substantially faster than sorted-value enumeration), leaf-wise tree growth (deeper trees per leaf count than level-wise), Gradient-based One-Side Sampling (GOSS) that prioritises high-gradient instances during training, and Exclusive Feature Bundling (EFB) that combines mutually exclusive sparse features. The result is typically 3–5× faster than XGBoost with comparable or slightly better accuracy on large tabular data.

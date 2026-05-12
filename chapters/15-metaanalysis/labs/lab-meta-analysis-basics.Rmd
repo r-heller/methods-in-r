@@ -1,7 +1,3 @@
----
-title: "Meta-analysis basics"
----
-
 <div class="callout callout-note">
 **Inference lab:** Hypothesis → Visualise → Assumptions → Conduct → Conclude.
 </div>

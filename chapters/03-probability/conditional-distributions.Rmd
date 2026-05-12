@@ -1,14 +1,3 @@
----
-title: Conditional Distributions
-date: "2026-04-17"
-description: "The distribution of one random variable given the value of another, and conditional expectations"
-categories:
-  - Probability Theory
-  - conditional-distribution
-  - conditional-expectation
-  - tower-property
----
-
 ## Introduction
 
 A conditional distribution describes how one random variable behaves given a specific value (or values) of another. Conditional expectations are what regression models estimate; conditional variances quantify residual uncertainty. Together they are the language of predictive statistics.

@@ -1,14 +1,3 @@
----
-title: Bonferroni Correction
-date: "2026-04-17"
-description: Controlling family-wise error rate by dividing alpha across m tests
-categories:
-  - Inferential Statistics
-  - bonferroni
-  - multiple-testing
-  - family-wise-error
----
-
 ## Introduction
 
 When many hypothesis tests are performed simultaneously, the probability that at least one rejects a true null grows rapidly. The **Bonferroni correction** is the simplest, most conservative way to control the family-wise error rate (FWER): divide the target $\alpha$ by the number of tests.

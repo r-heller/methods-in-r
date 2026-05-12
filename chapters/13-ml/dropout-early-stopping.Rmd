@@ -1,14 +1,3 @@
----
-title: Dropout and Early Stopping
-date: "2026-04-17"
-description: Two of the most effective neural-network regularisation techniques
-categories:
-  - Machine Learning
-  - dropout
-  - early-stopping
-  - regularisation
----
-
 ## Introduction
 
 Neural networks with many parameters easily overfit. Dropout (Srivastava et al., 2014) randomly zeros activations during training, acting as implicit ensembling. Early stopping halts training when validation loss stops improving, preventing the model from memorising training noise. Both are simple, cheap, and among the most effective regularisation techniques for deep nets.

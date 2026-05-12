@@ -1,15 +1,3 @@
----
-title: Power for Diagnostic Accuracy
-date: "2026-04-17"
-description: Sample size for estimating sensitivity and specificity with adequate precision
-categories:
-  - "Sample Size & Power"
-  - power
-  - diagnostic-accuracy
-  - sensitivity
-  - specificity
----
-
 ## Introduction
 
 Sample-size planning for diagnostic studies typically targets **precision** (CI width) for sensitivity and specificity rather than power against a hypothesis. Separate calculations apply to diseased and non-diseased cohorts.

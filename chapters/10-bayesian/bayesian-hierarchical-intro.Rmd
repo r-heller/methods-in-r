@@ -1,15 +1,3 @@
----
-title: Bayesian Hierarchical Models
-date: "2026-04-17"
-description: Partial pooling through prior structure for grouped / multilevel data
-categories:
-  - Bayesian Statistics
-  - hierarchical
-  - multilevel
-  - partial-pooling
-  - shrinkage
----
-
 ## Introduction
 
 A hierarchical Bayesian model embeds the group-level parameters of a multilevel design inside a higher-level prior, so that the group-level estimates inform each other rather than being computed in isolation. The pay-off is partial pooling: groups with abundant data are estimated almost from their own observations, groups with little data are pulled toward the overall mean, and every estimate carries a credible interval that reflects both the within-group sample size and the between-group heterogeneity. This single mechanism resolves a long list of practical problems — small-sample variance, unbalanced designs, sparse counts — that frequentist mixed-effects models can only address by reweighting or by appealing to asymptotic theory.

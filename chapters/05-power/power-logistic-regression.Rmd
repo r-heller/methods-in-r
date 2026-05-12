@@ -1,15 +1,3 @@
----
-title: Power for Logistic Regression
-date: "2026-04-17"
-description: "Sample size for logistic regression: events per variable, odds-ratio detection, and simulation"
-categories:
-  - "Sample Size & Power"
-  - power
-  - logistic-regression
-  - odds-ratio
-  - epv
----
-
 ## Introduction
 
 Power analysis for logistic regression is less standardised than for linear models. Three approaches: (1) events-per-variable rule of thumb, (2) closed-form formulas for a single predictor, (3) simulation for complex models.

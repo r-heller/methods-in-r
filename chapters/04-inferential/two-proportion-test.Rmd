@@ -1,15 +1,3 @@
----
-title: Two-Proportion Test
-date: "2026-04-17"
-description: "Comparing two independent proportions; z-test and chi-squared equivalence, with risk difference and relative risk"
-categories:
-  - Inferential Statistics
-  - two-proportion
-  - z-test
-  - risk-difference
-  - relative-risk
----
-
 ## Introduction
 
 The two-proportion test compares success rates in two independent groups. Typical applications: treatment vs. control event rates, exposed vs. unexposed incidence, screen-positive rates across populations. The test comes in two algebraically equivalent forms -- a z-test on the difference and a 2x2 chi-squared -- and is typically reported together with a risk difference, relative risk, or odds ratio.

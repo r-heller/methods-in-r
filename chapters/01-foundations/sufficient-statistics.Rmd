@@ -1,14 +1,3 @@
----
-title: Sufficient Statistics
-date: "2026-04-17"
-description: "Summaries that capture every bit of information about a parameter, with the factorisation theorem and exponential family"
-categories:
-  - Statistical Foundations
-  - sufficiency
-  - factorisation-theorem
-  - exponential-family
----
-
 ## Introduction
 
 A statistic is **sufficient** for a parameter if it captures all the information in the data that is relevant to that parameter. Once a sufficient statistic is computed, the raw data have nothing left to add about the parameter. Sufficiency organises the theory of estimation: it explains why the sample mean is a complete summary for the normal mean, why the sum of successes suffices for the binomial proportion, and why the exponential family of distributions is central to modern statistical modelling.

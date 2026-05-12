@@ -1,15 +1,3 @@
----
-title: Mann-Whitney U Test
-date: "2026-04-17"
-description: Non-parametric two-sample test based on ranks; alternative to the independent t-test
-categories:
-  - Inferential Statistics
-  - mann-whitney
-  - wilcoxon-rank-sum
-  - non-parametric
-  - ranks
----
-
 ## Introduction
 
 The Mann-Whitney U test (equivalent to the Wilcoxon rank-sum test) compares two independent groups using ranks rather than raw values. It is the non-parametric analogue of the two-sample t-test, and is appropriate for ordinal outcomes or continuous data that clearly violate normality.

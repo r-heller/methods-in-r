@@ -1,15 +1,3 @@
----
-title: Order Statistics
-date: "2026-04-17"
-description: Distributions of the sorted sample and their role in quantile theory and robust estimation
-categories:
-  - Statistical Foundations
-  - order-statistics
-  - quantiles
-  - extremes
-  - range
----
-
 ## Introduction
 
 Given a sample $X_1, \ldots, X_n$, the **order statistics** are the sorted values $X_{(1)} \leq X_{(2)} \leq \ldots \leq X_{(n)}$. They are the raw material for the median, the quantiles, the range, the IQR, and many non-parametric and robust methods. Their distributional theory provides exact confidence intervals for quantiles and limiting distributions for extremes -- tools that analytical approaches to the mean cannot reach.

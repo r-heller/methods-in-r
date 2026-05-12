@@ -1,13 +1,3 @@
----
-title: Conditional Survival
-date: "2026-04-17"
-description: "Updating prognosis for survivors: P(T > t + s | T > s)"
-categories:
-  - Survival Analysis
-  - conditional-survival
-  - prognosis
----
-
 ## Introduction
 
 Conditional survival is the probability of surviving an additional time $t$ given that a patient has already survived to time $s$. It answers the clinically relevant question that absolute survival cannot: a five-year survival probability of 30 % at diagnosis says little to a patient who has already lived three years. The conditional five-year-from-now estimate may be 70 % or higher, dramatically updating the prognosis. Survivorship clinics, oncology long-term follow-up, and patient counselling all rely on conditional rather than unconditional survival.

@@ -1,14 +1,3 @@
----
-title: Skewness
-date: "2026-04-17"
-description: "Measuring the asymmetry of a distribution: sample estimators, interpretation, and typical values in applied data"
-categories:
-  - Descriptive Statistics
-  - skewness
-  - shape
-  - asymmetry
----
-
 ## Introduction
 
 Skewness is the third standardised moment of a distribution; it quantifies how asymmetric the distribution is around its mean. Zero skewness corresponds to perfect symmetry; positive skewness indicates a long right tail; negative skewness indicates a long left tail. Many biomedical variables (lab values, incubation times, survival times) are right-skewed; income and wealth distributions are classically right-skewed with very long tails.

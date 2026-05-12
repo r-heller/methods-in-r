@@ -1,14 +1,3 @@
----
-title: The Kalman Filter
-date: "2026-04-17"
-description: Recursive optimal estimation for linear-Gaussian state-space models
-categories:
-  - Time Series Analysis
-  - kalman
-  - filtering
-  - state-space
----
-
 ## Introduction
 
 The Kalman filter is the workhorse algorithm for state-space models with linear-Gaussian observation and transition equations. It recursively combines the previous state estimate with each new observation to produce an updated state estimate together with its uncertainty, in a closed-form Gaussian update that is provably optimal under the linear-Gaussian assumptions. Originally developed for aerospace tracking, it now underpins virtually every classical time-series filtering application — economic indicators, signal processing, target tracking, financial volatility estimation.

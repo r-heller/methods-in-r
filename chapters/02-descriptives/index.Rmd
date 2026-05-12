@@ -1,7 +1,3 @@
----
-title: "02. Descriptive Statistics"
----
-
 # Descriptive Statistics {#sec-ch-02-descriptives}
 
 Methods for summarising a dataset before any inference: Table 1 construction, numerical summaries, and visual exploratory data analysis. Most papers in biomedicine open with a Table 1 — this chapter covers what belongs in it and how to render it cleanly with `gtsummary`.

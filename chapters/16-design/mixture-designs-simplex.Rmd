@@ -1,14 +1,3 @@
----
-title: Simplex Lattice Mixture Designs
-date: "2026-04-17"
-description: Experimental designs for component-proportion factors that sum to 1
-categories:
-  - Experimental Design
-  - mixture
-  - simplex-lattice
-  - scheffe
----
-
 ## Introduction
 
 Mixture experiments study how a response depends on the relative proportions of two or more components in a blend, where the proportions are constrained to sum to one. They arise routinely in food formulation (recipes), paint and coating chemistry, pharmaceutical excipient blending, fuel formulation, and any setting in which the absolute amount is fixed and only the relative composition can vary. Because the simplex constraint $x_1 + \cdots + x_q = 1$ removes one degree of freedom, standard polynomial regression models are not directly applicable, and Scheffé's canonical polynomial forms — which omit the intercept and pure quadratic terms — are the appropriate functional family. Simplex-lattice designs are the foundational mixture-design construction and the natural starting point for any mixture experiment.

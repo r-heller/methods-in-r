@@ -1,14 +1,3 @@
----
-title: Ordinal Logistic Regression
-date: "2026-04-17"
-description: Regression for ordered categorical outcomes using the proportional-odds model
-categories:
-  - "Regression & Modelling"
-  - ordinal
-  - proportional-odds
-  - polr
----
-
 ## Introduction
 
 Ordinal logistic regression — most commonly the proportional-odds model — handles ordered categorical outcomes such as Likert-scale responses, disease severity grades, NYHA functional class, or cancer stage. It exploits the ordering via a cumulative-probability model: the cumulative odds of being in or below each category share the same set of regression coefficients across all cut-points. Multinomial logistic ignores the ordering and estimates separate coefficients for each non-reference category, which is wasteful when ordering is real and informative.

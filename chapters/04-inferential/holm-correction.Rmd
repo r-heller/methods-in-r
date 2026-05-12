@@ -1,15 +1,3 @@
----
-title: "Holm's Step-Down Correction"
-date: "2026-04-17"
-description: Sequential Bonferroni with uniformly greater power; controls FWER
-categories:
-  - Inferential Statistics
-  - holm
-  - sequential
-  - multiple-testing
-  - fwer
----
-
 ## Introduction
 
 Holm's (1979) step-down procedure controls the family-wise error rate (FWER) but is uniformly more powerful than Bonferroni. It tests the smallest p-value against $\alpha/m$, and each subsequent p-value against a progressively larger threshold as the earlier hypotheses are rejected.

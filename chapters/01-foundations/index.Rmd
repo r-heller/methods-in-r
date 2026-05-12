@@ -1,7 +1,3 @@
----
-title: "01. Statistical Foundations"
----
-
 # Statistical Foundations {#sec-ch-01-foundations}
 
 This chapter covers the prerequisites that every later chapter assumes: the scientific process, tidy data, the R/Quarto/`renv` toolchain, measurement quality, missingness, and reproducibility. If you have never built a project with `renv` or written a pre-registration, start here.

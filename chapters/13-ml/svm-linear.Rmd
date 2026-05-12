@@ -1,14 +1,3 @@
----
-title: Linear Support Vector Machines
-date: "2026-04-17"
-description: Large-margin classifiers with soft-margin slack and the C parameter
-categories:
-  - Machine Learning
-  - svm
-  - margin
-  - linear
----
-
 ## Introduction
 
 Linear support vector machines (SVMs) find the hyperplane that maximally separates classes with the largest possible margin. The soft-margin formulation introduced by Cortes and Vapnik in 1995 added slack variables to tolerate misclassified or margin-violating points, governed by a regularisation parameter $C$. Linear SVMs scale to very large sparse feature spaces (common in text classification, where bag-of-words gives millions of features) and are competitive with logistic regression on most tabular classification tasks.

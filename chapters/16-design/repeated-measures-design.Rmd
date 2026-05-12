@@ -1,14 +1,3 @@
----
-title: Repeated-Measures Designs
-date: "2026-04-17"
-description: "Designs with a within-subject factor: multiple measurements per unit"
-categories:
-  - Experimental Design
-  - repeated-measures
-  - within-subject
-  - mixed-effects
----
-
 ## Introduction
 
 Repeated-measures designs measure the same experimental unit at multiple time points or under multiple conditions. They gain statistical power relative to between-subject designs by removing the between-subject component of variance from the within-subject contrasts of interest, but they introduce a within-subject correlation structure that must be modelled correctly. The classical repeated-measures ANOVA requires sphericity and is restricted to balanced complete designs; the modern alternative is mixed-effects modelling with subject as a random effect, which accommodates unbalanced data, missing time points, and richer covariance structures while remaining valid under broader assumptions.

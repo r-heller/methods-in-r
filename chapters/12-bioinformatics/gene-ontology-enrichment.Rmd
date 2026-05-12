@@ -1,14 +1,3 @@
----
-title: Gene Ontology Enrichment
-date: "2026-04-17"
-description: Over-representation of GO terms in a differentially-expressed gene set
-categories:
-  - Bioinformatics
-  - GO
-  - enrichment
-  - ORA
----
-
 ## Introduction
 
 Gene Ontology (GO) enrichment asks whether a list of differentially-expressed genes is disproportionately annotated to specific GO terms — biological processes, molecular functions, or cellular components. It is the most common first-pass functional interpretation of an RNA-seq, proteomics, or single-cell DE list and is the entry point to pathway-level analysis. The dominant method is over-representation analysis (ORA) using Fisher's exact or hypergeometric tests; gene-set enrichment analysis (GSEA) extends to ranked gene lists without requiring a significance threshold.

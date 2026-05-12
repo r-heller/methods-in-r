@@ -1,14 +1,3 @@
----
-title: Bray-Curtis Dissimilarity
-date: "2026-04-17"
-description: The standard ecological distance metric for species-abundance community data
-categories:
-  - Multivariate Statistics
-  - bray-curtis
-  - ecological
-  - abundance
----
-
 ## Introduction
 
 Bray-Curtis dissimilarity is the default index for comparing ecological communities described by species-abundance data. It ranges from 0 when two samples share the same composition and abundances to 1 when they share no species at all, and unlike binary indices it makes use of the abundance information rather than collapsing it to presence/absence. Microbial ecology, plant community work, and any compositional dataset where rare and abundant species both contribute meaningful information typically reach for Bray-Curtis as the first dissimilarity to compute.

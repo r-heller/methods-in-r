@@ -1,14 +1,3 @@
----
-title: "Cohen's Kappa"
-date: "2026-04-17"
-description: Chance-corrected agreement between two raters on categorical data
-categories:
-  - Clinical Biostatistics
-  - kappa
-  - agreement
-  - reliability
----
-
 ## Introduction
 
 Cohen's kappa, introduced by Jacob Cohen in 1960, measures agreement between two raters on a categorical scale, with a correction for the agreement that would be expected by chance alone. Raw percent agreement can look impressive even when most of it reflects coincidence — two raters who both diagnose 90 % of patients as healthy will agree on at least 81 % of cases purely by chance. Kappa subtracts this chance baseline, leaving a more honest measure of the genuine signal in inter-rater agreement. It is now the de facto standard for inter-rater reliability on nominal categorical outcomes, widely used in imaging-rater studies, pathology grading, diagnostic-criteria validation, and any reliability assessment with two raters and a categorical scale.

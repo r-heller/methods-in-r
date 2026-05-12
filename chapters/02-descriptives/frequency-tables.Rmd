@@ -1,14 +1,3 @@
----
-title: Frequency Tables
-date: "2026-04-17"
-description: "Counting categorical and discrete-numeric variables: absolute, relative, and cumulative frequencies"
-categories:
-  - Descriptive Statistics
-  - frequency-table
-  - counts
-  - proportions
----
-
 ## Introduction
 
 A frequency table is the most basic summary of a categorical or discrete-numeric variable: for each distinct value, how many times it occurred (absolute frequency), what share of the sample it represents (relative frequency), and the running total up to and including that value (cumulative frequency). Frequency tables are the building blocks of chi-squared tests, goodness-of-fit analyses, and most epidemiological prevalence reporting.

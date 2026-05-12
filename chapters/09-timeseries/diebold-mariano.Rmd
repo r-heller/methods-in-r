@@ -1,13 +1,3 @@
----
-title: Diebold-Mariano Test
-date: "2026-04-17"
-description: Testing equality of forecast accuracy between two competing models
-categories:
-  - Time Series Analysis
-  - diebold-mariano
-  - forecast-comparison
----
-
 ## Introduction
 
 The Diebold-Mariano test compares the forecasting accuracy of two competing models on a held-out test window. Where naive accuracy comparisons (one model has lower MSE than another) ignore the statistical noise in the difference, the DM test treats the loss-difference series as a stochastic process and asks whether its mean is significantly non-zero. The test works with any loss function and accommodates the autocorrelation that multi-step-ahead forecast errors typically exhibit, making it the standard inferential tool for forecast comparisons.

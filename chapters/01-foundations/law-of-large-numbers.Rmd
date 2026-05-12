@@ -1,14 +1,3 @@
----
-title: The Law of Large Numbers
-date: "2026-04-17"
-description: "Why the sample mean converges to the population mean as the sample grows, in weak and strong forms"
-categories:
-  - Statistical Foundations
-  - law-of-large-numbers
-  - convergence
-  - consistency
----
-
 ## Introduction
 
 The law of large numbers (LLN) is the formal statement of an intuition most students bring to statistics on day one: averages settle down as you collect more data. The precise statement comes in two flavours -- the weak law and the strong law -- and its consequences flow through estimation theory, simulation methodology, and machine learning.

@@ -1,15 +1,3 @@
----
-title: Feature Selection
-date: "2026-04-17"
-description: "Filter, wrapper, and embedded strategies to reduce the feature space"
-categories:
-  - Machine Learning
-  - feature-selection
-  - filter
-  - wrapper
-  - embedded
----
-
 ## Introduction
 
 Feature selection retains the predictors most relevant to the target while discarding the rest. The benefits are simpler models, reduced over-fitting, faster inference, improved interpretability, and reduced annotation cost in some applications. Three families of methods coexist: filter (univariate tests, cheap and fast), wrapper (fit-and-evaluate, slow but thorough), and embedded (selection happens during fitting, balancing speed and quality). Modern ML pipelines almost always use embedded methods (lasso, tree importance, Boruta) because they integrate naturally with cross-validation.

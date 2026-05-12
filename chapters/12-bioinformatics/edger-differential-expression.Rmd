@@ -1,14 +1,3 @@
----
-title: Differential Expression with edgeR
-date: "2026-04-17"
-description: NB GLM-based differential expression with exactTest and quasi-likelihood F-test
-categories:
-  - Bioinformatics
-  - edger
-  - differential-expression
-  - glmqlftest
----
-
 ## Introduction
 
 edgeR is one of the three dominant RNA-seq differential-expression frameworks (alongside DESeq2 and limma-voom). It fits a negative-binomial generalised linear model to each gene's counts, with empirical-Bayes shrinkage borrowing information across genes to stabilise per-gene dispersion estimates. The combination of NB likelihood and shrinkage gives edgeR its characteristic strength on small samples and its competitive accuracy on standard RNA-seq experiments.

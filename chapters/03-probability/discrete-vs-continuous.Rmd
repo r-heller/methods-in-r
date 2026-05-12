@@ -1,15 +1,3 @@
----
-title: Discrete vs Continuous Variables
-date: "2026-04-17"
-description: Two fundamental kinds of random variable and the mixed case in between
-categories:
-  - Probability Theory
-  - discrete
-  - continuous
-  - mixed
-  - support
----
-
 ## Introduction
 
 Random variables come in two canonical kinds -- **discrete** (countable support) and **continuous** (uncountable support with a density). Most textbook distributions belong to one or the other. A subtler third category, **mixed**, combines discrete atoms with continuous parts and arises naturally in censored, truncated, or zero-inflated data.

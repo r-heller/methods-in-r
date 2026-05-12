@@ -1,14 +1,3 @@
----
-title: MANOVA
-date: "2026-04-17"
-description: "Multivariate analysis of variance: testing group differences across multiple correlated outcomes jointly"
-categories:
-  - Multivariate Statistics
-  - manova
-  - wilks-lambda
-  - multivariate-test
----
-
 ## Introduction
 
 MANOVA — multivariate analysis of variance — tests whether group means differ across several dependent variables simultaneously, accounting for the correlations among the outcomes. It is more powerful than running separate one-way ANOVAs when outcomes are correlated, because it pools information across the response set instead of testing each in isolation. It also controls Type I error at the family-wise level for the joint hypothesis, removing the need for multiple-comparison correction across a battery of univariate ANOVAs.

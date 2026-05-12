@@ -1,16 +1,3 @@
----
-title: Linear Regression Assumptions
-date: "2026-04-17"
-description: The four classical assumptions of linear regression and how to check each
-categories:
-  - "Regression & Modelling"
-  - assumptions
-  - linearity
-  - homoscedasticity
-  - normality
-  - independence
----
-
 ## Introduction
 
 Linear regression rests on four classical assumptions — linearity, independence, homoscedasticity, and Normality of residuals — each with characteristic diagnostics and remedies when violated. Distinguishing the four is essential because their failures have very different consequences: non-linearity biases coefficients, dependence deflates standard errors, heteroscedasticity gives unbiased coefficients with wrong SEs, and Normality matters mainly for small-sample inference. A responsible analysis checks all four and reports the verdict explicitly.

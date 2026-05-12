@@ -1,14 +1,3 @@
----
-title: Isotonic Regression Calibration
-date: "2026-04-17"
-description: Non-parametric monotone calibration via pool-adjacent-violators
-categories:
-  - Machine Learning
-  - isotonic
-  - calibration
-  - monotone
----
-
 ## Introduction
 
 Isotonic regression fits a monotone non-decreasing step function from classifier scores to observed probabilities. It is the non-parametric counterpart to Platt scaling: more flexible (no sigmoid assumption required) but requiring more validation data and more prone to over-fitting. It is the standard post-hoc calibration method for tree-ensemble classifiers (random forest, gradient boosting), whose mis-calibration patterns are often non-sigmoidal.

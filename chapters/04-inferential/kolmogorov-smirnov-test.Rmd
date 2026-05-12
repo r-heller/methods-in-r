@@ -1,14 +1,3 @@
----
-title: Kolmogorov-Smirnov Test
-date: "2026-04-17"
-description: CDF-based goodness-of-fit for one-sample and two-sample comparisons
-categories:
-  - Inferential Statistics
-  - kolmogorov-smirnov
-  - goodness-of-fit
-  - ecdf
----
-
 ## Introduction
 
 The Kolmogorov-Smirnov (KS) test compares an empirical distribution function (ECDF) against either a hypothesised theoretical CDF (one-sample test) or another empirical distribution (two-sample test). Its test statistic is the supremum of the absolute difference between the two CDFs, a measure of the largest vertical gap on a CDF plot. KS is the prototypical CDF-based goodness-of-fit test, valued for being fully non-parametric and distribution-free in the one-sample case (the null distribution of $D$ does not depend on the specific $F_0$ for continuous distributions). It is widely used as a quick distributional diagnostic and as a flexible two-sample test sensitive to differences in location, scale, and shape.

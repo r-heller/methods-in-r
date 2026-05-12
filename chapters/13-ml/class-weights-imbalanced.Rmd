@@ -1,14 +1,3 @@
----
-title: Class Weights for Imbalanced Data
-date: "2026-04-17"
-description: Loss-based weighting as an alternative to resampling
-categories:
-  - Machine Learning
-  - class-weights
-  - imbalanced
-  - loss
----
-
 ## Introduction
 
 Class weighting addresses imbalanced classification by scaling each observation's loss contribution inversely to its class frequency, giving the minority class more influence on the gradient or split decision. It achieves similar effects to SMOTE-style oversampling but without synthesising new data: simpler, deterministic, easier to reproduce, and natively supported by most classifiers (logistic regression, random forest, XGBoost, neural networks). For most imbalanced problems, class weights are the right starting point before reaching for resampling.

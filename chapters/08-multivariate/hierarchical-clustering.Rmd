@@ -1,15 +1,3 @@
----
-title: Hierarchical Clustering
-date: "2026-04-17"
-description: Agglomerative (bottom-up) clustering with various linkage criteria and dendrogram display
-categories:
-  - Multivariate Statistics
-  - hierarchical
-  - ward
-  - linkage
-  - dendrogram
----
-
 ## Introduction
 
 Hierarchical clustering builds a nested family of partitions: at the bottom every observation is its own cluster, at the top all observations form a single cluster, and intermediate levels correspond to all the partitions you might consider. Agglomerative methods (the practical default) merge the two closest clusters at each step until everything is connected; divisive methods reverse the process. The output is a dendrogram — a tree that can be cut at any height to produce a partition with the corresponding number of clusters. The dendrogram is the headline visual that distinguishes hierarchical clustering from partitioning methods.
