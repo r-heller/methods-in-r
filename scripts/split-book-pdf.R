@@ -61,22 +61,27 @@ for (f in html_files) {
 }
 cat("split-book-pdf: ", length(slug_title), " HTML slugs to match\n", sep = "")
 
-# 2) pdf text by page; look only at the TOP of each page so TOC pages
-# (which list every chapter title) don't all match every chapter.
-pages <- pdftools::pdf_text(book_pdf)
-n_pages <- length(pages)
-pages_top <- vapply(pages, function(p) {
-  p <- gsub("[\n\r]+", " ", p)
-  p <- clean(p)
-  substr(p, 1, 200)
+# 2) Per-page text grouped by font height. Chapter-heading pages have
+# the chapter title rendered in big text (height >= 18pt); TOC entries
+# are ~10pt. Scanning only the large-text content rules out TOC matches.
+data <- pdftools::pdf_data(book_pdf)
+n_pages <- length(data)
+HEIGHT_THRESHOLD <- 18  # PDF user-units; bookdown's chapter heading is much bigger
+
+page_big_text <- vapply(seq_along(data), function(i) {
+  df <- data[[i]]
+  if (is.null(df) || !nrow(df) || !"height" %in% names(df)) return("")
+  big <- df[!is.na(df$height) & df$height >= HEIGHT_THRESHOLD, ]
+  if (!nrow(big)) return("")
+  clean(paste(big$text, collapse = " "))
 }, character(1))
 
-# 3) for each slug, find first page whose TOP contains the title
+# 3) for each slug, first page whose LARGE-TEXT contains the title
 matches <- list()
 for (slug in names(slug_title)) {
   title <- slug_title[[slug]]
   if (nchar(title) < 3) next
-  hit <- which(vapply(pages_top,
+  hit <- which(vapply(page_big_text,
                       function(p) grepl(title, p, fixed = TRUE),
                       logical(1)))
   if (length(hit) == 0) next
