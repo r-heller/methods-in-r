@@ -61,12 +61,27 @@ for (f in html_files) {
 }
 cat("split-book-pdf: ", length(slug_title), " HTML slugs to match\n", sep = "")
 
-# 2) Per-page text grouped by font height. Chapter-heading pages have
-# the chapter title rendered in big text (height >= 18pt); TOC entries
-# are ~10pt. Scanning only the large-text content rules out TOC matches.
+# 2) Use pdftools::pdf_data with diagnostic logging so we can pick a
+# real font-height threshold for our specific bookdown PDF.
 data <- pdftools::pdf_data(book_pdf)
 n_pages <- length(data)
-HEIGHT_THRESHOLD <- 18  # PDF user-units; bookdown's chapter heading is much bigger
+
+# Diagnostic: top-5 height values seen in the PDF.
+all_heights <- unlist(lapply(data, function(df) if (!is.null(df) && nrow(df)) df$height else NULL))
+all_heights <- all_heights[!is.na(all_heights)]
+if (length(all_heights)) {
+  qs <- quantile(all_heights, c(0.5, 0.9, 0.99, 1.0), na.rm = TRUE)
+  cat(sprintf("split-book-pdf: heights summary  median=%.2f p90=%.2f p99=%.2f max=%.2f\n",
+              qs[1], qs[2], qs[3], qs[4]))
+}
+
+# Pick a threshold automatically: anything above the 99th percentile is
+# very likely chapter-heading text. Falls back to fixed 18 if data is
+# thin.
+HEIGHT_THRESHOLD <- if (length(all_heights) > 100) {
+  as.numeric(quantile(all_heights, 0.99, na.rm = TRUE))
+} else 18
+cat(sprintf("split-book-pdf: using HEIGHT_THRESHOLD = %.2f\n", HEIGHT_THRESHOLD))
 
 page_big_text <- vapply(seq_along(data), function(i) {
   df <- data[[i]]
@@ -75,6 +90,12 @@ page_big_text <- vapply(seq_along(data), function(i) {
   if (!nrow(big)) return("")
   clean(paste(big$text, collapse = " "))
 }, character(1))
+
+# Log which pages got big text (for debugging)
+nz <- which(nzchar(page_big_text))
+cat("split-book-pdf: pages with big text: ", length(nz),
+    " (first 10 page indices: ",
+    paste(head(nz, 10), collapse = ", "), ")\n", sep = "")
 
 # 3) for each slug, first page whose LARGE-TEXT contains the title
 matches <- list()
