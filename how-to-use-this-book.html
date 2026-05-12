@@ -4,18 +4,18 @@
 <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-<title>Welcome! | Methods in R</title>
+<title>How to use this book | Methods in R</title>
 <meta name="author" content="R. Heller">
-<meta name="description" content="A bench reference for biomedical authors and peer reviewers — every common method covered with R code, diagnostics, and reviewer-facing red flags.">
+<meta name="description" content="The book is organised around method topics, not courses. There are sixteen topic chapters, plus Chapter 0 (the decision tree), five reporting-template chapters, and five appendices.  0.1 Three...">
 <meta name="generator" content="bookdown 0.46 with bs4_book()">
-<meta property="og:title" content="Welcome! | Methods in R">
+<meta property="og:title" content="How to use this book | Methods in R">
 <meta property="og:type" content="book">
-<meta property="og:url" content="https://r-heller.github.io/methods-in-r/">
+<meta property="og:url" content="https://r-heller.github.io/methods-in-r/how-to-use-this-book.html">
 <meta property="og:image" content="https://r-heller.github.io/methods-in-r/images/cover.png">
-<meta property="og:description" content="A bench reference for biomedical authors and peer reviewers — every common method covered with R code, diagnostics, and reviewer-facing red flags.">
+<meta property="og:description" content="The book is organised around method topics, not courses. There are sixteen topic chapters, plus Chapter 0 (the decision tree), five reporting-template chapters, and five appendices.  0.1 Three...">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="Welcome! | Methods in R">
-<meta name="twitter:description" content="A bench reference for biomedical authors and peer reviewers — every common method covered with R code, diagnostics, and reviewer-facing red flags.">
+<meta name="twitter:title" content="How to use this book | Methods in R">
+<meta name="twitter:description" content="The book is organised around method topics, not courses. There are sixteen topic chapters, plus Chapter 0 (the decision tree), five reporting-template chapters, and five appendices.  0.1 Three...">
 <meta name="twitter:image" content="https://r-heller.github.io/methods-in-r/images/cover.png">
 <!-- JS --><script src="https://cdnjs.cloudflare.com/ajax/libs/clipboard.js/2.0.6/clipboard.min.js" integrity="sha256-inc5kl9MA1hkeYUt+EC3BhlIgyp/2jDIyBLS6k3UxPI=" crossorigin="anonymous"></script><script src="https://cdnjs.cloudflare.com/ajax/libs/fuse.js/6.4.6/fuse.js" integrity="sha512-zv6Ywkjyktsohkbp9bb45V6tEMoWhzFzXis+LrMehmJZZSys19Yxf1dopHx7WzIKxr5tK2dVcYmaCk2uqdjF4A==" crossorigin="anonymous"></script><script src="https://kit.fontawesome.com/6ecbd6c532.js" crossorigin="anonymous"></script><script src="libs/jquery-3.6.0/jquery-3.6.0.min.js"></script><meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 <link href="libs/bootstrap-4.6.0/bootstrap.min.css" rel="stylesheet">
@@ -75,12 +75,12 @@
 
       <nav aria-label="Table of contents"><h2>Table of contents</h2>
         <ul class="book-toc list-unstyled">
-<li><a class="active" href="index.html">Welcome!</a></li>
+<li><a class="" href="index.html">Welcome!</a></li>
 <li><a class="" href="impressum.html">Impressum</a></li>
 <li><a class="" href="acknowledgments.html">Acknowledgments</a></li>
 <li><a class="" href="notation.html">Notation</a></li>
 <li><a class="" href="about-the-author.html">About the author</a></li>
-<li><a class="" href="how-to-use-this-book.html">How to use this book</a></li>
+<li><a class="active" href="how-to-use-this-book.html">How to use this book</a></li>
 <li><a class="" href="sec-find-your-method.html"><span class="header-section-number">1</span> Find your method</a></li>
 <li><a class="" href="sec-ch-01-foundations.html"><span class="header-section-number">2</span> Statistical Foundations</a></li>
 <li><a class="" href="sec-ch-02-descriptives.html"><span class="header-section-number">3</span> Descriptive Statistics</a></li>
@@ -119,62 +119,71 @@
         </div>
       </nav>
 </div>
-  </header><main class="col-sm-12 col-md-9 col-lg-7" id="content"><!--bookdown:title:end--><!--bookdown:title:start--><div id="welcome" class="section level1 unnumbered">
-<h1>Welcome!<a class="anchor" aria-label="anchor" href="#welcome"><i class="fas fa-link"></i></a>
+  </header><main class="col-sm-12 col-md-9 col-lg-7" id="content"><div id="how-to-use-this-book" class="section level1 unnumbered">
+<h1>How to use this book<a class="anchor" aria-label="anchor" href="#how-to-use-this-book"><i class="fas fa-link"></i></a>
 </h1>
-<hr>
-<p><a href="https://r-heller.github.io/methods-in-r/" target="_blank"><img src="images/cover.png" width="250" align="right" alt="Methods in R cover" class="cover"></a> Welcome to <strong>“Methods in R: A Topic Reference for Biomedical Research and Peer Review”</strong>.</p>
-<p>This book is shaped for two readers it expects to serve in the same week: the <strong>author</strong> who has data in front of them and needs to pick a method, run it in R, and write the Methods paragraph; and the <strong>peer reviewer</strong> who has a manuscript on their desk and needs to know what a competent application of that method looks like, which diagnostics should have been reported, and what red flags to flag.</p>
-<p>The body covers sixteen topic areas — from foundations and inference through regression, survival, Bayesian methods, machine learning, bioinformatics, and study design — with hands-on labs that consolidate the methods of each area into a single runnable file. Every method page ends with a <em>For Reviewers</em> section: the misapplications, the missing diagnostics, the red flags in tables and figures, and the things to verify against the authors’ references and arithmetic. A final part, <em>Reporting Templates</em>, gives copy-paste Methods and Results paragraphs tagged by <strong>STROBE / CONSORT / TRIPOD-AI / PRISMA / ARRIVE</strong>.</p>
-<p>The book is not a textbook of statistics. It assumes you can read an R session and follow a method already named to you. Where it differs from the existing biostatistics shelf is in being optimised for lookup, not linear reading, and in pairing every method with a concrete review checklist.</p>
-<p><br></p>
-<div id="open-source-repository" class="section level2 unnumbered">
-<h2>Open Source Repository<a class="anchor" aria-label="anchor" href="#open-source-repository"><i class="fas fa-link"></i></a>
+<p>The book is organised around <strong>method topics</strong>, not courses. There are
+sixteen topic chapters, plus Chapter 0 (the decision tree),
+five reporting-template chapters, and five appendices.</p>
+<div id="three-reading-modes" class="section level2" number="0.1">
+<h2>
+<span class="header-section-number">0.1</span> Three reading modes<a class="anchor" aria-label="anchor" href="#three-reading-modes"><i class="fas fa-link"></i></a>
 </h2>
-<hr>
-<p>This book has been built using <a href="https://rmarkdown.rstudio.com/docs/"><strong>{rmarkdown}</strong></a> and <a href="https://bookdown.org/"><strong>{bookdown}</strong></a>. Formulas are rendered using <a href="http://docs.mathjax.org/en/latest/index.html">MathJax</a>. All source files are available on <strong>GitHub</strong>: <a href="https://github.com/r-heller/methods-in-r" class="uri">https://github.com/r-heller/methods-in-r</a>. You are free to fork, share, and reuse the contents under the <a href="LICENSE-CONTENT">CC BY-SA 4.0 license</a>.</p>
-<p><br></p>
+<p><strong>As an author with data.</strong>
+Open <a href="sec-find-your-method.html#sec-find-your-method">1</a>. Answer the question
+<em>“what are you trying to do?”</em> until you land on a method. Read the
+method page top to bottom: the R Implementation block runs; the Output
+&amp; Results section tells you what to read off; the Reporting Templates
+part has a paragraph you can paste into the Methods section of your
+paper.</p>
+<p><strong>As a peer reviewer.</strong>
+Search for the method by name and jump straight to the
+<strong>For Reviewers</strong> section at the bottom of the page. It tells you what
+should be in the Methods paragraph, which diagnostics should have been
+reported, and where the typical failures live. Then skim Theory and
+Assumptions to confirm the application is sound.</p>
+<p><strong>As a learner.</strong>
+Each topic chapter has labs under <code>chapters/&lt;topic&gt;/labs/</code>. Labs follow
+<em>Hypothesis → Visualise → Assumptions → Conduct → Conclude</em>. Work
+through them in order; the methods they exercise live in the same
+chapter and are linked from the labs.</p>
 </div>
-<div id="how-to-use-the-guide" class="section level2 unnumbered">
-<h2>How To Use The Guide<a class="anchor" aria-label="anchor" href="#how-to-use-the-guide"><i class="fas fa-link"></i></a>
+<div id="conventions" class="section level2" number="0.2">
+<h2>
+<span class="header-section-number">0.2</span> Conventions<a class="anchor" aria-label="anchor" href="#conventions"><i class="fas fa-link"></i></a>
 </h2>
-<hr>
 <ul>
-<li>
-<strong>Linear vs. lookup.</strong> If you already know the method, jump to its chapter. If not, start at Chapter <a href="sec-find-your-method.html#sec-find-your-method">1</a> and follow the decision tree.</li>
-<li>
-<strong>Where the code lives.</strong> Code in each method page and lab is display-only in the rendered book; copy it into an R session with the packages cited in that section attached. Reusable helpers are kept in <code>R/helpers.R</code> in the source repository.</li>
-<li>
-<strong>Per-chapter PDFs.</strong> Every chapter has a <em>Download this chapter (PDF)</em> button at the top of its page; the full set is also available at <code>pdf-chapters/</code>.</li>
-<li>
-<strong>Whole-book PDF and EPUB.</strong> Use the navbar <em>Download</em> menu for a single-file PDF or EPUB.</li>
-<li>
-<strong>Corrections and suggestions.</strong> Open an issue at <a href="https://github.com/r-heller/methods-in-r/issues" class="uri">https://github.com/r-heller/methods-in-r/issues</a>.</li>
+<li>All examples are R. The R Implementation block runs as written when
+the listed packages are installed. Seeds are pinned (<code>set.seed(2026)</code>
+for tutorials, <code>set.seed(42)</code> for some labs) so numbers reproduce.</li>
+<li>Every method page has the same ten sections, in this order:
+<em>Introduction · Prerequisites · Theory · Assumptions · R
+Implementation · Output &amp; Results · Interpretation · Practical Tips
+· Reporting · For Reviewers</em>.</li>
+<li>The Reporting Templates part is the <strong>only</strong> place with copy-paste
+Methods + Results prose. The reporting block on each method page
+links to the corresponding template entry.</li>
 </ul>
-<p><br></p>
 </div>
-<div id="contributing" class="section level2 unnumbered">
-<h2>Contributing<a class="anchor" aria-label="anchor" href="#contributing"><i class="fas fa-link"></i></a>
+<div id="what-this-book-is-not" class="section level2" number="0.3">
+<h2>
+<span class="header-section-number">0.3</span> What this book is not<a class="anchor" aria-label="anchor" href="#what-this-book-is-not"><i class="fas fa-link"></i></a>
 </h2>
-<hr>
-<p>Issues and pull requests are welcome — see <a href="https://github.com/r-heller/methods-in-r/blob/main/CONTRIBUTING.md">CONTRIBUTING.md</a>.
-<!-- TODO: name reviewers and contributors here once feedback is incorporated. --></p>
-<p><br></p>
+<p>It is not a linear introductory textbook. It does not derive every
+result from first principles. It does not cover SAS, Stata, SPSS, or
+Python. It does not host the interactive decision-tree wizard
+(Shiny apps remain on the live site).</p>
 </div>
-<div id="citation" class="section level2 unnumbered">
-<h2>Citation<a class="anchor" aria-label="anchor" href="#citation"><i class="fas fa-link"></i></a>
+<div id="building-locally" class="section level2" number="0.4">
+<h2>
+<span class="header-section-number">0.4</span> Building locally<a class="anchor" aria-label="anchor" href="#building-locally"><i class="fas fa-link"></i></a>
 </h2>
-<hr>
-<p>The suggested citation is:</p>
-<div class="boxempty">
-<p>
-<strong>Heller, R.</strong> (2026). <em>Methods in R: A Topic
-Reference for Biomedical Research and Peer Review</em> (Version 1.0.0).
-Self-published via GitHub Pages. <a href="https://r-heller.github.io/methods-in-r/" class="uri">https://r-heller.github.io/methods-in-r/</a>.
-</p>
-</div>
-<p>Download the reference as <a href="citation-files/citation.bib">BibTeX</a> or <a href="citation-files/citation.ris">.ris</a>.</p>
-<p><br></p>
+<div class="sourceCode" id="cb1"><pre class="sourceCode bash"><code class="sourceCode bash"><span id="cb1-1"><a href="how-to-use-this-book.html#cb1-1" tabindex="-1"></a><span class="fu">git</span> clone https://github.com/r-heller/methods-in-r</span>
+<span id="cb1-2"><a href="how-to-use-this-book.html#cb1-2" tabindex="-1"></a><span class="bu">cd</span> methods-in-r</span>
+<span id="cb1-3"><a href="how-to-use-this-book.html#cb1-3" tabindex="-1"></a><span class="ex">R</span> <span class="at">-e</span> <span class="st">'renv::restore()'</span></span>
+<span id="cb1-4"><a href="how-to-use-this-book.html#cb1-4" tabindex="-1"></a><span class="ex">quarto</span> render</span></code></pre></div>
+<p>Output goes to <code>docs/</code>. The HTML book is the canonical format; the PDF
+build is provided for offline reference.</p>
 
 </div>
 </div>
@@ -285,22 +294,22 @@ Self-published via GitHub Pages. <a href="https://r-heller.github.io/methods-in-
   This book was built by the <a href="https://bookdown.org/"><strong>bookdown</strong></a> R package.
 </div>
   <div class="chapter-nav">
-<div class="empty"></div>
-<div class="next"><a href="impressum.html">Impressum</a></div>
+<div class="prev"><a href="about-the-author.html">About the author</a></div>
+<div class="next"><a href="sec-find-your-method.html"><span class="header-section-number">1</span> Find your method</a></div>
 </div></main><div class="col-md-3 col-lg-2 d-none d-md-block sidebar sidebar-chapter">
     <nav id="toc" data-toggle="toc" aria-label="On this page"><h2>On this page</h2>
       <ul class="nav navbar-nav">
-<li><a class="nav-link" href="#welcome">Welcome!</a></li>
-<li><a class="nav-link" href="#open-source-repository">Open Source Repository</a></li>
-<li><a class="nav-link" href="#how-to-use-the-guide">How To Use The Guide</a></li>
-<li><a class="nav-link" href="#contributing">Contributing</a></li>
-<li><a class="nav-link" href="#citation">Citation</a></li>
+<li><a class="nav-link" href="#how-to-use-this-book">How to use this book</a></li>
+<li><a class="nav-link" href="#three-reading-modes"><span class="header-section-number">0.1</span> Three reading modes</a></li>
+<li><a class="nav-link" href="#conventions"><span class="header-section-number">0.2</span> Conventions</a></li>
+<li><a class="nav-link" href="#what-this-book-is-not"><span class="header-section-number">0.3</span> What this book is not</a></li>
+<li><a class="nav-link" href="#building-locally"><span class="header-section-number">0.4</span> Building locally</a></li>
 </ul>
 
       <div class="book-extra">
         <ul class="list-unstyled">
-<li><a id="book-source" href="https://github.com/r-heller/methods-in-r/blob/main/index.Rmd">View source <i class="fab fa-github"></i></a></li>
-          <li><a id="book-edit" href="https://github.com/r-heller/methods-in-r/edit/main/index.Rmd">Edit this page <i class="fab fa-github"></i></a></li>
+<li><a id="book-source" href="https://github.com/r-heller/methods-in-r/blob/main/how-to-use.Rmd">View source <i class="fab fa-github"></i></a></li>
+          <li><a id="book-edit" href="https://github.com/r-heller/methods-in-r/edit/main/how-to-use.Rmd">Edit this page <i class="fab fa-github"></i></a></li>
         </ul>
 </div>
     </nav>

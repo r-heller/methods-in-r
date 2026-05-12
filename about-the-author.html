@@ -4,17 +4,17 @@
 <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-<title>About the author | Find Your Method</title>
+<title>About the author | Methods in R</title>
 <meta name="author" content="R. Heller">
 <meta name="description" content="Raban Heller is a biomedical researcher and applied statistician. This book consolidates the method pages and labs from his earlier public repositories (CTTIR/courses, CTTIR/tutorials) into a...">
 <meta name="generator" content="bookdown 0.46 with bs4_book()">
-<meta property="og:title" content="About the author | Find Your Method">
+<meta property="og:title" content="About the author | Methods in R">
 <meta property="og:type" content="book">
 <meta property="og:url" content="https://r-heller.github.io/methods-in-r/about-the-author.html">
 <meta property="og:image" content="https://r-heller.github.io/methods-in-r/images/cover.png">
 <meta property="og:description" content="Raban Heller is a biomedical researcher and applied statistician. This book consolidates the method pages and labs from his earlier public repositories (CTTIR/courses, CTTIR/tutorials) into a...">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="About the author | Find Your Method">
+<meta name="twitter:title" content="About the author | Methods in R">
 <meta name="twitter:description" content="Raban Heller is a biomedical researcher and applied statistician. This book consolidates the method pages and labs from his earlier public repositories (CTTIR/courses, CTTIR/tutorials) into a...">
 <meta name="twitter:image" content="https://r-heller.github.io/methods-in-r/images/cover.png">
 <!-- JS --><script src="https://cdnjs.cloudflare.com/ajax/libs/clipboard.js/2.0.6/clipboard.min.js" integrity="sha256-inc5kl9MA1hkeYUt+EC3BhlIgyp/2jDIyBLS6k3UxPI=" crossorigin="anonymous"></script><script src="https://cdnjs.cloudflare.com/ajax/libs/fuse.js/6.4.6/fuse.js" integrity="sha512-zv6Ywkjyktsohkbp9bb45V6tEMoWhzFzXis+LrMehmJZZSys19Yxf1dopHx7WzIKxr5tK2dVcYmaCk2uqdjF4A==" crossorigin="anonymous"></script><script src="https://kit.fontawesome.com/6ecbd6c532.js" crossorigin="anonymous"></script><script src="libs/jquery-3.6.0/jquery-3.6.0.min.js"></script><meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
@@ -62,7 +62,7 @@
 
     <div class="d-flex align-items-start justify-content-between">
       <h1>
-        <a href="index.html" title="A topic reference for biomedical research and peer review">Find Your Method</a>:
+        <a href="index.html" title="A topic reference for biomedical research and peer review">Methods in R</a>:
         <small class="text-muted">A topic reference for biomedical research and peer review</small>
       </h1>
       <button class="btn btn-outline-primary d-lg-none ml-2 mt-1" type="button" data-toggle="collapse" data-target="#main-nav" aria-expanded="true" aria-controls="main-nav"><i class="fas fa-bars"></i><span class="sr-only">Show table of contents</span></button>
@@ -80,6 +80,7 @@
 <li><a class="" href="acknowledgments.html">Acknowledgments</a></li>
 <li><a class="" href="notation.html">Notation</a></li>
 <li><a class="active" href="about-the-author.html">About the author</a></li>
+<li><a class="" href="how-to-use-this-book.html">How to use this book</a></li>
 <li><a class="" href="sec-find-your-method.html"><span class="header-section-number">1</span> Find your method</a></li>
 <li><a class="" href="sec-ch-01-foundations.html"><span class="header-section-number">2</span> Statistical Foundations</a></li>
 <li><a class="" href="sec-ch-02-descriptives.html"><span class="header-section-number">3</span> Descriptive Statistics</a></li>
@@ -144,70 +145,6 @@ two share branding, build conventions (bookdown, <code>renv</code>, GitHub Pages
 deploy), and a preference for R-only worked examples over toy
 abstractions.</p>
 <!-- TODO: add affiliation, biography paragraph, and selected publications when available. -->
-
-<p>The book is organised around <strong>method topics</strong>, not courses. There are
-sixteen topic chapters, plus Chapter 0 (the decision tree),
-five reporting-template chapters, and five appendices.</p>
-</div>
-<div id="three-reading-modes" class="section level2" number="0.1">
-<h2>
-<span class="header-section-number">0.1</span> Three reading modes<a class="anchor" aria-label="anchor" href="#three-reading-modes"><i class="fas fa-link"></i></a>
-</h2>
-<p><strong>As an author with data.</strong>
-Open <a href="sec-find-your-method.html#sec-find-your-method">1</a>. Answer the question
-<em>“what are you trying to do?”</em> until you land on a method. Read the
-method page top to bottom: the R Implementation block runs; the Output
-&amp; Results section tells you what to read off; the Reporting Templates
-part has a paragraph you can paste into the Methods section of your
-paper.</p>
-<p><strong>As a peer reviewer.</strong>
-Search for the method by name and jump straight to the
-<strong>For Reviewers</strong> section at the bottom of the page. It tells you what
-should be in the Methods paragraph, which diagnostics should have been
-reported, and where the typical failures live. Then skim Theory and
-Assumptions to confirm the application is sound.</p>
-<p><strong>As a learner.</strong>
-Each topic chapter has labs under <code>chapters/&lt;topic&gt;/labs/</code>. Labs follow
-<em>Hypothesis → Visualise → Assumptions → Conduct → Conclude</em>. Work
-through them in order; the methods they exercise live in the same
-chapter and are linked from the labs.</p>
-</div>
-<div id="conventions" class="section level2" number="0.2">
-<h2>
-<span class="header-section-number">0.2</span> Conventions<a class="anchor" aria-label="anchor" href="#conventions"><i class="fas fa-link"></i></a>
-</h2>
-<ul>
-<li>All examples are R. The R Implementation block runs as written when
-the listed packages are installed. Seeds are pinned (<code>set.seed(2026)</code>
-for tutorials, <code>set.seed(42)</code> for some labs) so numbers reproduce.</li>
-<li>Every method page has the same ten sections, in this order:
-<em>Introduction · Prerequisites · Theory · Assumptions · R
-Implementation · Output &amp; Results · Interpretation · Practical Tips
-· Reporting · For Reviewers</em>.</li>
-<li>The Reporting Templates part is the <strong>only</strong> place with copy-paste
-Methods + Results prose. The reporting block on each method page
-links to the corresponding template entry.</li>
-</ul>
-</div>
-<div id="what-this-book-is-not" class="section level2" number="0.3">
-<h2>
-<span class="header-section-number">0.3</span> What this book is not<a class="anchor" aria-label="anchor" href="#what-this-book-is-not"><i class="fas fa-link"></i></a>
-</h2>
-<p>It is not a linear introductory textbook. It does not derive every
-result from first principles. It does not cover SAS, Stata, SPSS, or
-Python. It does not host the interactive decision-tree wizard
-(Shiny apps remain on the live site).</p>
-</div>
-<div id="building-locally" class="section level2" number="0.4">
-<h2>
-<span class="header-section-number">0.4</span> Building locally<a class="anchor" aria-label="anchor" href="#building-locally"><i class="fas fa-link"></i></a>
-</h2>
-<div class="sourceCode" id="cb1"><pre class="sourceCode bash"><code class="sourceCode bash"><span id="cb1-1"><a href="about-the-author.html#cb1-1" tabindex="-1"></a><span class="fu">git</span> clone https://github.com/r-heller/methods-in-r</span>
-<span id="cb1-2"><a href="about-the-author.html#cb1-2" tabindex="-1"></a><span class="bu">cd</span> methods-in-r</span>
-<span id="cb1-3"><a href="about-the-author.html#cb1-3" tabindex="-1"></a><span class="ex">R</span> <span class="at">-e</span> <span class="st">'renv::restore()'</span></span>
-<span id="cb1-4"><a href="about-the-author.html#cb1-4" tabindex="-1"></a><span class="ex">quarto</span> render</span></code></pre></div>
-<p>Output goes to <code>docs/</code>. The HTML book is the canonical format; the PDF
-build is provided for offline reference.</p>
 
 </div>
 </div>
@@ -319,16 +256,12 @@ build is provided for offline reference.</p>
 </div>
   <div class="chapter-nav">
 <div class="prev"><a href="notation.html">Notation</a></div>
-<div class="next"><a href="sec-find-your-method.html"><span class="header-section-number">1</span> Find your method</a></div>
+<div class="next"><a href="how-to-use-this-book.html">How to use this book</a></div>
 </div></main><div class="col-md-3 col-lg-2 d-none d-md-block sidebar sidebar-chapter">
     <nav id="toc" data-toggle="toc" aria-label="On this page"><h2>On this page</h2>
       <ul class="nav navbar-nav">
 <li><a class="nav-link" href="#about-the-author">About the author</a></li>
 <li><a class="nav-link" href="#sibling-volume">Sibling volume</a></li>
-<li><a class="nav-link" href="#three-reading-modes"><span class="header-section-number">0.1</span> Three reading modes</a></li>
-<li><a class="nav-link" href="#conventions"><span class="header-section-number">0.2</span> Conventions</a></li>
-<li><a class="nav-link" href="#what-this-book-is-not"><span class="header-section-number">0.3</span> What this book is not</a></li>
-<li><a class="nav-link" href="#building-locally"><span class="header-section-number">0.4</span> Building locally</a></li>
 </ul>
 
       <div class="book-extra">
@@ -346,7 +279,7 @@ build is provided for offline reference.</p>
 <footer class="bg-primary text-light mt-5"><div class="container"><div class="row">
 
   <div class="col-12 col-md-6 mt-3">
-    <p>"<strong>Find Your Method</strong>: A topic reference for biomedical research and peer review" was written by R. Heller. It was last built on 2026-05-12.</p>
+    <p>"<strong>Methods in R</strong>: A topic reference for biomedical research and peer review" was written by R. Heller. It was last built on 2026-05-12.</p>
   </div>
 
   <div class="col-12 col-md-6 mt-3">
