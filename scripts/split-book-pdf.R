@@ -43,9 +43,15 @@ slug_title <- list()
 for (f in html_files) {
   doc <- tryCatch(read_html(f, options = "RECOVER"), error = function(e) NULL)
   if (is.null(doc)) next
-  h1 <- xml_find_first(doc, "//main//h1[1] | //h1[1]")
-  if (inherits(h1, "xml_missing")) next
-  raw <- xml_text(h1, trim = TRUE)
+  # bs4_book sets <title> as "<page title> | <book title>" — split on " | "
+  # and take the left half (page-specific). Robust against the page also
+  # rendering the book title as its first <h1>.
+  tnode <- xml_find_first(doc, "//head/title")
+  if (inherits(tnode, "xml_missing")) next
+  raw <- xml_text(tnode, trim = TRUE)
+  if (grepl(" | ", raw, fixed = TRUE)) {
+    raw <- strsplit(raw, " | ", fixed = TRUE)[[1]][1]
+  }
   if (!nzchar(raw)) next
   slug <- tools::file_path_sans_ext(basename(f))
   slug_title[[slug]] <- clean(raw)
