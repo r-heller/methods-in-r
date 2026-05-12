@@ -62,6 +62,12 @@ jobs:
         run: Rscript -e 'bookdown::render_book("index.Rmd", output_format = "bookdown::pdf_book")'
         continue-on-error: true
 
+      - name: Split whole-book PDF into per-chapter PDFs
+        run: |
+          Rscript -e 'install.packages(c("pdftools","qpdf","xml2"), repos="https://cloud.r-project.org")'
+          Rscript scripts/split-book-pdf.R
+        continue-on-error: true
+
       # Per-chapter PDFs are rendered on demand by a separate manual
       # workflow (.github/workflows/per-chapter-pdfs.yml) — 687 chapters at
       # a few seconds each blow past the 90-min job ceiling and were
