@@ -86,10 +86,22 @@ This is the second book in the *…in R* series. The first is
 [`r-heller/strategy-in-r`](https://github.com/r-heller/strategy-in-r) —
 *Strategy in R: Game Theory, Simulation, and Machine Intelligence*.
 
+## Use of LLM tools
+
+Portions of this book were prepared with assistance from large language model tooling for
+narrowly defined, non-authorial tasks: copyediting, prose smoothing, Markdown/LaTeX formatting,
+scaffolding of boilerplate files (CI configs, build scripts), code refactoring. The tools used were [Chat AI](https://kisski.gwdg.de/leistungen/2-02-llm-service/),
+the LLM service of KISSKI (GWDG), and a self-hosted **Mistral Small (24B, Apache-2.0)** run locally via
+[Ollama](https://ollama.com/) and the `ollamar` R package — local inference only, with no data sent to
+third parties for the self-hosted model.
+
+All scientific claims, methodological choices, analyses, interpretations, and conclusions are the
+author's own. No LLM-generated text was incorporated without review and revision, and every reference
+was verified against its DOI, arXiv ID, or ISBN.
+
 ## License
 
-- Source code: [MIT](LICENSE)
-- Written content: [CC BY-SA 4.0](LICENSE-CONTENT) — attribution to *R. Heller, Methods in R*.
+The prose of this book is licensed under [CC BY 4.0](https://creativecommons.org/licenses/by/4.0/); all code (scripts, chunks, examples) is licensed under the [MIT License](LICENSE-CODE.md).
 
 ## Contributing
 

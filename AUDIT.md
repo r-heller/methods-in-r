@@ -32,7 +32,7 @@ Conversion from Quarto was completed in commit `3fad190` (see `GENERATION_LOG.md
 
 | File                       | Status | Notes                                                           |
 |----------------------------|--------|-----------------------------------------------------------------|
-| `00-impressum.Rmd`         | ✅     | Copyright, CC BY-SA 4.0, suggested citation, disclaimer, contact. |
+| `00-impressum.Rmd`         | ✅     | Copyright, CC BY 4.0, suggested citation, disclaimer, contact. |
 | `00-acknowledgments.Rmd`   | ✅     | Tooling + LLM-use subsection (commit `f124c08`).                |
 | `how-to-use.Rmd`           | ⚠️     | Present at repo root but not under `00-` prefix. Sidebar position is correct via explicit `_bookdown.yml` ordering. **Not renaming** to avoid churning 687 cross-links. |
 | `ch00-find-your-method.Rmd`| ✅     | Decision tree, anchored `{#sec-find-your-method}`.              |
@@ -59,10 +59,10 @@ Conversion from Quarto was completed in commit `3fad190` (see `GENERATION_LOG.md
 | `style/per-chapter-pdf-button.html`   | ✅     | Click handler that wires the per-chapter PDF buttons.       |
 | `renv.lock`                           | ✅     | Present at repo root.                                       |
 | `.Rprofile`                           | ✅     | Guarded `if (file.exists("renv/activate.R")) source(...)`.  |
-| `CITATION.cff`                        | ✅     | CFF 1.2.0; license `CC-BY-SA-4.0` to match `LICENSE-CONTENT`. |
+| `CITATION.cff`                        | ✅     | CFF 1.2.0; license `CC-BY-4.0` to match `LICENSE-CONTENT`. |
 | `citation.bib`                        | ✅     | Matches CITATION.cff.                                       |
 | `LICENSE`                             | ✅     | MIT (code).                                                 |
-| `LICENSE-CONTENT`                     | ✅     | CC BY-SA 4.0 (book prose). Deviates from CLAUDE.md default (CC BY 4.0); preserved from prior remote commit to respect existing licence choice. |
+| `LICENSE-CONTENT`                     | ✅     | CC BY 4.0 (book prose). Deviates from CLAUDE.md default (CC BY 4.0); preserved from prior remote commit to respect existing licence choice. |
 | `images/cover.png`                    | ✅     | 1280×2043, extracted from `Methods in R - Book Cover.pdf`.  |
 | `.github/social-preview.png`          | ✅     | 1280×640 landscape — needs manual upload via repo Settings → Social preview. |
 | `book.bib`                            | ❌→n/a  | Repo uses `references.bib` (279 lines, 100+ entries). `index.Rmd` `bibliography:` field already points to it. Not renaming to avoid breaking cross-refs and CI. |

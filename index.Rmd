@@ -34,7 +34,7 @@ The book is not a textbook of statistics. It assumes you can read an R session a
 
 ---
 
-This book has been built using [**{rmarkdown}**](https://rmarkdown.rstudio.com/docs/) and [**{bookdown}**](https://bookdown.org/). Formulas are rendered using [MathJax](http://docs.mathjax.org/en/latest/index.html). All source files are available on **GitHub**: <https://github.com/r-heller/methods-in-r>. You are free to fork, share, and reuse the contents under the [CC BY-SA 4.0 license](LICENSE-CONTENT).
+This book has been built using [**{rmarkdown}**](https://rmarkdown.rstudio.com/docs/) and [**{bookdown}**](https://bookdown.org/). Formulas are rendered using [MathJax](http://docs.mathjax.org/en/latest/index.html). All source files are available on **GitHub**: <https://github.com/r-heller/methods-in-r>. You are free to fork, share, and reuse the contents under the [CC BY 4.0 license](LICENSE-CONTENT).
 
 <br></br>
 
