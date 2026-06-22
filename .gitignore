@@ -57,3 +57,7 @@ desktop.ini
 
 # Quarto notebooks
 **/*.quarto_ipynb
+*.tmp
+*~
+*.bak
+*.orig
